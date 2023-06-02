@@ -42,6 +42,17 @@ border-bottom: 2px solid var(--lightBlue);
  padding-block: 0.5em;
 }
 
+
+
+
+/* Footer */
+footer{
+   display: flex;
+   justify-content: end;
+}
+
+
+/* Not Found/ 404 Page */
 .notFound{
    padding: 5em;
    text-align: center;

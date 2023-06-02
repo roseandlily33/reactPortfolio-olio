@@ -7,7 +7,6 @@ const Navbar = () => {
             color: '#98A4B3',
         }
     }
-
     return (
         <header className="header">
         <h1>Victoria Benoit</h1>
