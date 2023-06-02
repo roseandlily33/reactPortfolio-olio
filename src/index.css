@@ -6,8 +6,9 @@
    --darkGrey: #3D4249;
    --lightGrey: #98A4B3;
    --medBlue: #D7E9FF;
+   --lighterBlue: #E8F2FF;
    --lightBlue: #EEF3FF;
-   --white: #eeeeee;
+   --white: #f5f5f5;
    --borderRadius: 15px;
    --boxShadow: 5px 5px 5px 5px var(var(--lightGrey));
 }
@@ -18,17 +19,33 @@
 }
 body{
    background-color: var(--white);
-   font-size: 1em;
+   font-size: 0.8em;
    font-weight: 300;
    font-family: var(--mainFont);
 }
 /* Navbar */
 .header{
-
+display: flex;
+flex-direction: column;
+background-image: linear-gradient(var(--lightBlue), var(--lighterBlue), var(--medBlue));
+padding: 1em;
 }
 .header h1{
-   
+   text-align: center;
+   color: var(--darkGrey);
 }
 .navbar{
+ display: flex;
+ justify-content: space-between;
+ padding-block: 0.5em;
+ 
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
 
 }
