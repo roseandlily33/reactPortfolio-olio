@@ -5,9 +5,12 @@ My portfolio built with react
 Coming Soon
 
 ## Created With:
-React, Javascript, CSS ...
+React, npm package: react-router-dom, Javascript, CSS ...
 
 ## Vision Board:
+
+## Process of development:
+
 
 
 ## License:

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Frank+Ruhl+Libre:wght@300&family=Playfair+Display&display=swap');
+
+:root{
+   --headerFont: 'Bodoni Moda', serif;
+   --mainFont: 'Playfair Display', serif;
+   --darkGrey: #3D4249;
+   --lightGrey: #98A4B3;
+   --medBlue: #D7E9FF;
+   --lightBlue: #EEF3FF;
+   --white: #eeeeee;
+   --borderRadius: 15px;
+   --boxShadow: 5px 5px 5px 5px var(var(--lightGrey));
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: var(--white);
+   font-size: 1em;
+   font-weight: 300;
+   font-family: var(--mainFont);
+}
+/* Navbar */
+.header{
+
+}
+.header h1{
+   
+}
+.navbar{
+
+}
