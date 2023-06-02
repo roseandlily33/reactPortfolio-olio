@@ -7,7 +7,6 @@ import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import Resume from './pages/Resume';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -16,18 +15,12 @@ function App() {
     <div className="content">
       <Routes>
         <Route path="/" element={<AboutMe />}></Route>
-
         <Route path="/ContactMe" element={<ContactMe />}></Route>
-
-        <Route path="/Projects" element={<Projects />}></Route>
-
+        <Route path="/Portfolio" element={<Projects />}></Route>
         <Route path="/Resume" element={<Resume />}></Route>
-
         <Route path="*" element={<NotFound />}></Route>
-
       </Routes>
     </div>
-    
     <Footer />
    </div>
     </BrowserRouter>
