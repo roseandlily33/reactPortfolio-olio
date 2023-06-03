@@ -76,6 +76,39 @@ border-bottom: 2px solid var(--medBlue)
 
 
 /* Contact Me */
+.contactMe{
+   border-radius: var(--borderRadius);
+   box-shadow: var(--boxShadow);
+   padding: 2em;
+   width: 60%;
+   margin: 3em;
+}
+.contactMe h2{
+   
+   text-align: center;
+   font-family: var(--headerFont);
+   font-size: var(--headerSize);
+}
+.contactMe form{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   gap: 1em;
+  
+}
+.contactMe label{
+   font-size: var(--mainSize);
+}
+.contactMe input, textarea{
+   border-radius: var(--borderRadius);
+   border: 1px solid var(--medBlue);
+   padding: 0.5em;
+   width: 80%;
+}
+.contactMe button{
+   width: 30%;
+}
+
 
 /* Resume */
 .resume{

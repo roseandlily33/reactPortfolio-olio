@@ -5,7 +5,7 @@ My portfolio built with react
 Coming Soon
 
 ## Created With:
-React, npm package: react-router-dom, Javascript, CSS ...
+React, npm package: react-router-dom, Javascript, CSS, emailjs (the contact form will send me an email), 
 
 ## Vision Board:
 
