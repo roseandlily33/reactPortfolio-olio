@@ -1,5 +1,5 @@
 import {Outlet, NavLink } from "react-router-dom";
-import { useDownloadFile } from "react-downloadfile-hook";
+import 'animate.css';
 const Resume = () => {
     const downloadResume = () => {
         console.log('Downloaded resume clicked')
@@ -17,12 +17,11 @@ const Resume = () => {
                 <NavLink to="BackEnd" style={styles.NavLink} >Back End Skills</NavLink>
                 <NavLink to="Skills" style={styles.NavLink} >Other Skills</NavLink>
         </nav>
-
         <div>
             <Outlet />
             </div>
             <div className="download">
-        <h2>Download my resume:</h2>
+        <h2 className="animate__animated animate__shakeX" >Download my resume:</h2>
         <button id="downloadBtn" value="download" onClick={downloadResume}>Resume</button>
         </div>
 

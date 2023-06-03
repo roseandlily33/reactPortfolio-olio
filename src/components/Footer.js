@@ -1,5 +1,5 @@
-import github from '../images/icons8-github-bubbles/icons8-github-50.png';
-import linkedin from '../images/icons8-linkedin-bubbles/icons8-linkedin-50.png';
+import github from '../images/icons8-github-bubbles/icons8-github-100.png';
+import linkedin from '../images/icons8-linkedin-bubbles/icons8-linkedin-100.png';
 const Footer = () => {
     return (
         <footer>
