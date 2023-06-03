@@ -73,6 +73,28 @@ border-bottom: 2px solid var(--medBlue)
   padding: 1em 2em;
 }
 /*About Me */
+.aboutMe{
+   padding: 2em;
+   display: flex;
+   flex-direction: row;
+   gap: 2em;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 2em;
+
+}
+.info h2{
+   font-family: var(--headerFont);
+   font-weight: bold;
+   background-image: linear-gradient(90deg, var(--lightBlue), var(--yellow));
+   background-position: bottom;
+   background-size: 100% 30%;
+   background-repeat: no-repeat;
+}
 
 
 /* Contact Me */
