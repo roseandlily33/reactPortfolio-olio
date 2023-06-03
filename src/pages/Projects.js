@@ -6,12 +6,9 @@ const Projects = () => {
         {projectList.map(project => (
             <div className="project" key={project.id}>
                 <h3>{project.title}</h3>
+                <img src={project.img} height="200" width="350" alt={project.alt} />
             </div>
         ))}
-
-
-
-
     </div> );
 }
  
