@@ -4,13 +4,16 @@
    --headerFont: 'Bodoni Moda', serif;
    --mainFont: 'Playfair Display', serif;
    --darkGrey: #3D4249;
-   --lightGrey: #98A4B3;
+   --lightGrey: #abafb4;
    --medBlue: #D7E9FF;
+   --yellow: #F4DFA9;
    --lighterBlue: #E8F2FF;
    --lightBlue: #EEF3FF;
-   --white: #f5f5f5;
-   --borderRadius: 15px;
-   --boxShadow: 5px 5px 5px 5px var(var(--lightGrey));
+   --white: #fcfafa;
+   --borderRadius: 25px;
+   --boxShadow: 8px 6px 9px 2px var(--lightGrey);
+   --headerSize: 2em;
+   --mainSize: 1em;
 }
 *{
    margin: 0;
@@ -19,36 +22,114 @@
 }
 body{
    background-color: var(--white);
-   font-size: 0.8em;
+   font-size: 0.9em;
    font-weight: 300;
    font-family: var(--mainFont);
+}
+button{
+   background-color: var(--yellow);
+   color: var(--darkGrey);
+   padding: 1em 2em;
+   border-radius: var(--borderRadius);
+   border: none;
+}
+button:hover{
+   background-color: var(--lightGrey);
+   color: var(--yellow);
+
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
 }
 /* Navbar */
 .header{
 display: flex;
 flex-direction: column;
-background-image: linear-gradient(var(--lightBlue), var(--lighterBlue), var(--medBlue));
 padding: 1em;
-border-bottom: 2px solid var(--lightBlue);
+border-bottom: 2px solid var(--medBlue)
 }
 .header h1{
    text-align: center;
    color: var(--darkGrey);
    font-family: var(--headerFont);
+   font-size: var(--headerSize);
 }
 .navbar{
  display: flex;
  justify-content: space-between;
  padding-block: 0.5em;
 }
+.navbar h4:hover{
+   color: var(--yellow);
+}
+.active{
+  border: 2px solid var(--medBlue);
+  font-weight: bold;
+  border-radius: var(--borderRadius);
+  padding: 1em 2em;
+}
+/*About Me */
 
+
+/* Contact Me */
+
+/* Resume */
+.resume{
+   display: flex;
+   flex-direction: column;
+}
+.resumeNavbar{
+   display: flex;
+   gap: 1.2em;
+   font-size: 1.3em;
+   margin-bottom: 1em;
+   padding: 0.5em;
+}
+.resumeNavbar .active{
+   border: 2px solid var(--medBlue);
+   padding: 0.5em;
+}
+.frontEnd, .backEnd, .skills{
+   text-align: center;
+   gap: 2em;
+   box-shadow: var(--boxShadow);
+   border-radius: var(--borderRadius);
+   padding: 1em;
+   margin-bottom: 2em;
+}
+.frontEnd h3, .backEnd h3, .skills h3{
+   font-size: 1.5em;
+   font-family: var(--headerFont);
+}
+.frontEnd ul, .backEnd ul, .skills ul{
+   padding: 1em;
+}
+.frontEnd li, .backEnd li, .skills li{
+   list-style-type: none;
+   padding-block: 0.5em;
+}
+.download{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+#downloadBtn{
+   margin-left: 1em;
+}
+/* Projects */
 
 
 
 /* Footer */
 footer{
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
+   padding-right: 1em;
 }
 
 
@@ -59,7 +140,7 @@ footer{
    display: flex;
    gap: 1em;
    flex-direction: column;
-   font-size: 0.9em;
+   font-size: var(--mainSize);
    box-shadow: var(--boxShadow);
 }
 
@@ -70,5 +151,14 @@ footer{
 
 
 @media only screen and (min-width: 768px){
+   .header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 1em;
+   }
+   .navbar{
+     padding: 0;
+   }
 
 }
