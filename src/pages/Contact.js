@@ -5,7 +5,6 @@ const  ContactMe = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [error, setError] = useState('');
     const form = useRef();
     const handleFormSubmit =(e) => {
     e.preventDefault();
@@ -20,7 +19,6 @@ const  ContactMe = () => {
     setEmail('');
     setMessage('');
 }
-
     return (
          <div className="contactMe">
         <h2>Contact Me</h2>
@@ -32,15 +30,7 @@ const  ContactMe = () => {
             <label>Message:</label>
             <textarea type="text" name='message' rows="4" cols="40" value={message} onChange={(e) => setMessage(e.target.value)} required/>
             <button>Submit</button>
-
         </form>
-        <h5>{error}</h5>
-
-
-    
-    
-    
-    
      </div> );
 }
  

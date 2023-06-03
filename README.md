@@ -8,6 +8,7 @@ Coming Soon
 React, npm package: react-router-dom, Javascript, CSS, emailjs (the contact form will send me an email), 
 
 ## Vision Board:
+Coming soon 
 
 ## Process of development:
 
