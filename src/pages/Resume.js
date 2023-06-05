@@ -10,7 +10,6 @@ const Resume = () => {
             color: '#3D4249',
         }
     }
-
     return ( <div className="resume">
          <nav className="resumeNavbar">
                 <NavLink style={styles.NavLink} to="FrontEnd">Front End Skills</NavLink>
@@ -24,8 +23,6 @@ const Resume = () => {
         <h2 className="animate__animated animate__shakeX" >Download my resume:</h2>
         <button id="downloadBtn" value="download" onClick={downloadResume}>Resume</button>
         </div>
-
-
     </div> );
 }
  

@@ -16,22 +16,31 @@ function App() {
     <div className="App">
     <Navbar />
     <div className="content">
+  
       <Routes>
-        <Route index path="/" element={<AboutMe />}></Route>
+        <Route path="/" element={<AboutMe />}></Route>
+
         <Route path="/ContactMe" element={<ContactMe />}></Route>
+
         <Route path="/Portfolio" element={<Projects />}></Route>
+
         <Route path="/Resume" element={<Resume />}>
 
-      <Route path='FrontEnd' element={<FrontEnd />}></Route>          
+      <Route path='FrontEnd' element={<FrontEnd />}></Route>     
+
       <Route path='BackEnd' element={<BackEnd />}></Route>
+
       <Route path='Skills' element={<Skills/>}></Route>
+
         </Route>
-        <Route path="*" element={<NotFound />}></Route>
+      
       </Routes>
+     
     </div>
     <Footer />
    </div>
-    </BrowserRouter>
+   </BrowserRouter>
+    
   );
 }
 

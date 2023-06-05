@@ -62,6 +62,7 @@ border-bottom: 2px solid var(--medBlue)
  display: flex;
  justify-content: space-between;
  padding-block: 0.5em;
+ font-size: 0.7em;
 }
 .navbar h4:hover{
    color: var(--yellow);
@@ -76,7 +77,7 @@ border-bottom: 2px solid var(--medBlue)
 .aboutMe{
    padding: 2em;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    gap: 2em;
 }
 .info{
@@ -96,13 +97,12 @@ border-bottom: 2px solid var(--medBlue)
    background-repeat: no-repeat;
 }
 
-
 /* Contact Me */
 .contactMe{
    border-radius: var(--borderRadius);
    box-shadow: var(--boxShadow);
    padding: 2em;
-   width: 60%;
+   width: 100%;
    margin: 3em;
 }
 .contactMe h2{
@@ -127,9 +127,8 @@ border-bottom: 2px solid var(--medBlue)
    width: 80%;
 }
 .contactMe button{
-   width: 30%;
+   width: 60%;
 }
-
 
 /* Resume */
 .resume{
@@ -142,6 +141,7 @@ border-bottom: 2px solid var(--medBlue)
    font-size: 1.3em;
    margin-bottom: 1em;
    padding: 0.5em;
+   font-size: 0.8em;
 }
 .resumeNavbar .active{
    border: 2px solid var(--medBlue);
@@ -154,9 +154,10 @@ border-bottom: 2px solid var(--medBlue)
    border-radius: var(--borderRadius);
    padding: 1em;
    margin-bottom: 2em;
+ 
 }
 .frontEnd h3, .backEnd h3, .skills h3{
-   font-size: 1.5em;
+   font-size: 1em;
    font-family: var(--headerFont);
 }
 .frontEnd ul, .backEnd ul, .skills ul{
@@ -172,8 +173,11 @@ border-bottom: 2px solid var(--medBlue)
    align-items: center;
    justify-content: center;
 }
+.download h2{
+   font-size: 1em;
+}
 #downloadBtn{
-   margin-left: 1em;
+   margin-left: 0.6em;
 }
 /* Projects */
 .projects{
@@ -215,18 +219,15 @@ border-bottom: 2px solid var(--medBlue)
    transform: rotate(5deg) scale(1);
 }
 
-
 /* Footer */
 footer{
    display: flex;
-   justify-content: flex-end;
-   padding-right: 1em;
+   justify-content: center;
+   align-items: center;
 }
 footer a:hover{
    transform: scale(1.2);
 }
-
-
 
 /* Not Found/ 404 Page */
 .notFound{
@@ -241,19 +242,40 @@ footer a:hover{
 
 
 
-
-
-
-
 @media only screen and (min-width: 768px){
    .header{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin: 1em;
+   
    }
    .navbar{
      padding: 0;
+     font-size: var(--mainSize);
    }
+   .aboutMe{
+      flex-direction: row;
+   }
+   .contactMe{
+      width: 60%;
+   }
+   .contactMe button{
+      width: 30%;
+   }
+   .resumeNavbar{
+      font-size: 1.2em;
+   }
+   .frontEnd h3, .backEnd h3, .skills h3{
+      font-size: 1.3em;
+   }
+   .download h2{
+      font-size: 1.2em;
+   }
+   footer{
+      justify-content: flex-end;
+      padding-right: 1em;
+   }
+
 
 }

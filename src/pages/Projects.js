@@ -14,8 +14,6 @@ const Projects = () => {
                    <a href={project.github}>
                     <img src={githubIcon} alt={githubLink}/>
                     </a>
-                    
-                   
                 </div>
             </div>
         ))}

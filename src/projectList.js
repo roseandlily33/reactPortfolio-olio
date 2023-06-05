@@ -4,6 +4,7 @@ import JATE from './images/projects/JATE.png';
 import Weather from './images/projects/Weather.png';
 import Blog from './images/projects/Blog.png';
 import Football from './images/projects/Football.png';
+
 const projectList = [  
     { id: 1,
      title: 'Card Wise',
@@ -30,7 +31,8 @@ const projectList = [
         description: 'A Full Stack text editor built with some starter code',
         img: JATE,
         alt: 'Text editor application'
-     }, {
+     }, 
+     {
         id: 4,
         title: 'English Football Tracker',
         github: '',
@@ -38,7 +40,8 @@ const projectList = [
         description: 'A Front End Group Project, using 2 server side APIs',
         img: Football,
         alt: 'English foorball tracker application'
-     }, {
+     },
+      {
         id: 5,
         title: 'Cloudy with a chance of coding',
         github: 'https://github.com/roseandlily33/cloudyWithAChanceOfCoding',
@@ -46,7 +49,8 @@ const projectList = [
         description: 'A Front End weather application that uses openWeatherAPI',
         img: Weather,
         alt: 'Weather application'
-     }, {
+     }, 
+     {
         id: 6, 
         title: 'Shortcake Blog',
         github: 'https://github.com/roseandlily33/cuddly-happiness',
