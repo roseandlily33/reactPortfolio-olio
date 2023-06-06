@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/reactPortfolio-olio/static/css/main.8ac9bf8a.css",
+    "main.js": "/reactPortfolio-olio/static/js/main.a873dd51.js",
+    "static/media/CardWise.png": "/reactPortfolio-olio/static/media/CardWise.641c55ca7864421e1d98.png",
+    "static/media/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg": "/reactPortfolio-olio/static/media/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.bc455ad45f64402f4364.jpeg",
+    "static/media/Weather.png": "/reactPortfolio-olio/static/media/Weather.a0e7efd41e17bb71d5cb.png",
+    "static/media/Blog.png": "/reactPortfolio-olio/static/media/Blog.e44fe588fe4a9df9a41d.png",
+    "static/media/Quiz.png": "/reactPortfolio-olio/static/media/Quiz.bab12eaf399cfd04656c.png",
+    "static/media/Football.png": "/reactPortfolio-olio/static/media/Football.b620221be4f519d67686.png",
+    "static/media/JATE.png": "/reactPortfolio-olio/static/media/JATE.7f2fadbf0dfdde51fe98.png",
+    "index.html": "/reactPortfolio-olio/index.html",
+    "main.8ac9bf8a.css.map": "/reactPortfolio-olio/static/css/main.8ac9bf8a.css.map",
+    "main.a873dd51.js.map": "/reactPortfolio-olio/static/js/main.a873dd51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ac9bf8a.css",
+    "static/js/main.a873dd51.js"
+  ]
+}
