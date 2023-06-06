@@ -2,7 +2,7 @@
   "name": "reactportfolio1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://roseandlily33.github.io/reactPortfolio-olio",
+  "homepage": "https://roseandlily33.github.io",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
