@@ -1,5 +1,4 @@
 import {Outlet, NavLink } from "react-router-dom";
-import 'animate.css';
 const Resume = () => {
     const downloadResume = () => {
         console.log('Downloaded resume clicked')
@@ -10,6 +9,7 @@ const Resume = () => {
             color: '#3D4249',
         }
     }
+   
     return ( <div className="resume">
          <nav className="resumeNavbar">
                 <NavLink style={styles.NavLink} to="FrontEnd">Front End Skills</NavLink>
@@ -21,7 +21,7 @@ const Resume = () => {
             </div>
             <div className="download">
         <h2 className="animate__animated animate__shakeX" >Download my resume:</h2>
-        <button id="downloadBtn" value="download" onClick={downloadResume}>Resume</button>
+        <button id="downloadBtn" ><a href="VictoriaBenoitResume.pdf" download="VictoriaBenoitResume.pdf">Resume</a></button>
         </div>
     </div> );
 }
