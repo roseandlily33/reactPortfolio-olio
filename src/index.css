@@ -38,13 +38,7 @@ button:hover{
    color: var(--yellow);
 
 }
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 3em;
-}
+
 /* Navbar */
 .header{
 display: flex;
@@ -75,10 +69,16 @@ border-bottom: 2px solid var(--medBlue)
 }
 /*About Me */
 .aboutMe{
-   padding: 2em;
+   padding: 5em;
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
    gap: 2em;
+}
+.aboutMe img{
+   border-radius: var(--borderRadius);
+   border: 12px solid var(--medBlue);
 }
 .info{
   display: flex;
@@ -103,7 +103,6 @@ border-bottom: 2px solid var(--medBlue)
    box-shadow: var(--boxShadow);
    padding: 2em;
    width: 100%;
-   margin: 3em;
 }
 .contactMe h2{
    text-align: center;
@@ -115,7 +114,6 @@ border-bottom: 2px solid var(--medBlue)
    flex-direction: column; 
    align-items: center;
    gap: 1em;
-  
 }
 .contactMe label{
    font-size: var(--mainSize);
@@ -137,6 +135,8 @@ border-bottom: 2px solid var(--medBlue)
 }
 .resumeNavbar{
    display: flex;
+   align-items: center;
+   justify-content: center;
    gap: 1.2em;
    font-size: 1.3em;
    margin-bottom: 1em;
@@ -153,7 +153,9 @@ border-bottom: 2px solid var(--medBlue)
    box-shadow: var(--boxShadow);
    border-radius: var(--borderRadius);
    padding: 1em;
-   margin-bottom: 2em;
+   margin: 0 auto;
+   margin-inline: 3em;
+   margin-block: 2em;
  
 }
 .frontEnd h3, .backEnd h3, .skills h3{
@@ -257,19 +259,33 @@ footer a:hover{
    }
    .contactMe{
       width: 60%;
+      margin: 0 auto;
    }
    .contactMe button{
       width: 30%;
    }
    .resumeNavbar{
       font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
    }
    .frontEnd h3, .backEnd h3, .skills h3{
       font-size: 1.3em;
+      
+   }
+   .frontEnd, .backEnd, .skills{
+      margin: 0 auto;
+      width: 60%;
    }
    .download h2{
+      padding-top: 2em;
       font-size: 1.2em;
    }
+   #downloadBtn{
+      margin-top: 2em;
+   }
+
    footer{
       justify-content: flex-end;
       padding-right: 1em;
