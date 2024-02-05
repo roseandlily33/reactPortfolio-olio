@@ -6,7 +6,11 @@ const BackEnd = () => {
             <li>Node.js</li>
             <li>Express.js</li>
             <li>MySQL</li>
-            <li>MongoDB</li>
+            <li>MongoDB & Mongoose</li>
+            <li>GraphQL</li>
+            {/* <li>Docker</li> */}
+            {/* <li>Redix</li> */}
+            {/* <li>AWS </li> */}
         </ul>
     </div>
     );

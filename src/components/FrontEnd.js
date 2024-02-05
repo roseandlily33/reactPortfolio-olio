@@ -5,11 +5,15 @@ const FrontEnd  = () => {
     <ul>
         <li>HTML</li>
         <li>CSS</li>
+        <li>CSS Libraries: Bootstrap, Styled Components, Pure.css</li>
         <li>Javascript</li>
         <li>API's</li>
-        <li>Bootstrap</li>
+        {/* <li>TypeScript</li> */}
         <li>React</li>
-        <li>Pure.css</li>
+        <li>Redux</li>
+        {/* <li>React Native</li> */}
+        {/* <li>Next.js</li> */}
+      
     </ul>
     </div> );
 }
