@@ -1,23 +1,23 @@
-import projectList from "../projectList";
-import githubIcon from '../images/icons8-github-bubbles/icons8-github-50.png';
+import { projectListFrontEnd } from '../projectsFE';
+import { projectListGroups } from '../projectsGROUP';
+import { projectListMERN } from '../projectsMERN';
+import { useState } from 'react';
+import SingleProject from './EachProject';
+
 const Projects = () => {
-    const githubLink = 'Link to github repo';
-    const deployedLink = 'Link to deployed project';
+    const [projectList, setProjectList] = useState(projectListMERN);
+ 
     return ( 
-    <div className="projects">
-        {projectList.map(project => (
-            <div  className="project">
-               <a href={project.deployed} alt={deployedLink}> <img key={project.id} src={project.img} height="200" width="350" alt={project.alt} id="projPic"/></a>
-                <div className="projectInfo">
-                   <h3>{project.title}</h3>
-                   <p>{project.description}</p>
-                   <a href={project.github}>
-                    <img src={githubIcon} alt={githubLink}/>
-                    </a>
-                </div>
-            </div>
-        ))}
-    </div> );
+        <>
+        <div className="resumeNavbar">
+            <h3 onClick={() => setProjectList(projectListMERN)}>Full Stack Projects</h3>
+            <h3 onClick={() => setProjectList(projectListGroups)}>Group Projects</h3>
+            <h3 onClick={() => setProjectList(projectListFrontEnd)}>Front End Projects</h3>
+        </div>
+        
+        <SingleProject projectList={projectList} />
+        </>
+    );
 }
  
 export default Projects;

@@ -1,23 +1,20 @@
-import {Outlet, NavLink } from "react-router-dom";
+import { useState } from "react";
+import BackEnd from "../components/BackEnd";
+import FrontEnd from '../components/FrontEnd';
+import Skills from '../components/Skills';
+
 const Resume = () => {
-    const downloadResume = () => {
-        console.log('Downloaded resume clicked')
-    }
-    const styles = {
-        NavLink: {
-            textDecoration: 'none',
-            color: '#3D4249',
-        }
-    }
-   
-    return ( <div className="resume">
-         <nav className="resumeNavbar">
-                <NavLink style={styles.NavLink} to="FrontEnd">Front End Skills</NavLink>
-                <NavLink to="BackEnd" style={styles.NavLink} >Back End Skills</NavLink>
-                <NavLink to="Skills" style={styles.NavLink} >Other Skills</NavLink>
-        </nav>
+    const [skillState, setSkillState] = useState(FrontEnd);
+    return (
+        <div className="resume">
+        <div className="resumeNavbar">
+            <h3 onClick={() => setSkillState(FrontEnd)}>Front End</h3>
+            <h3 onClick={() => setSkillState(BackEnd)}>Back End</h3>
+            <h3 onClick={() => setSkillState(Skills)}>Other Skills</h3>
+       
+         </div>
+         {skillState}
         <div>
-            <Outlet />
             </div>
             <div className="download">
         <h2 className="animate__animated animate__shakeX" >Download my resume:</h2>

@@ -1,5 +1,6 @@
 const FrontEnd  = () => {
-    return (  <div className="frontEnd">
+    return ( 
+     <div className="frontEnd">
     <h3>Front End Skills and Frameworks:</h3>
     <ul>
         <li>HTML</li>
