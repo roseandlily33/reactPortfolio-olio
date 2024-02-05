@@ -1,5 +1,6 @@
 import CardWise from './images/projects/CardWise.png';
 import Football from './images/projects/Football.png';
+import Restaurant from './images/projects/Restaurant.png';
 
 
 export const projectListGroups = [
@@ -9,7 +10,7 @@ export const projectListGroups = [
        github: 'https://github.com/Valerigionetnoel/Restaurante-Trattoria',
        deployed: 'https://boiling-tundra-06853-1ddfd77a8dae.herokuapp.com/',
        description: 'A MERN Stack Group Project, for a restaurant user to create an account, leave reviews and make reservations',
-       img: CardWise,
+       img: Restaurant,
        alt: 'Restaurant application'
         
      },
