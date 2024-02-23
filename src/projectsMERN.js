@@ -26,7 +26,7 @@ import Boutique from './images/projects/Boutique.png';
         id: 3,
         title: 'Smart Brain',
         github: 'https://github.com/roseandlily33/space-brain',
-        deployed: '',
+        deployed: 'https://space-brain.onrender.com',
         description: 'Full Stack: React, Node.js, Knex.js, Clarafai API',
         img: SmartBrain,
         alt: 'Smart Brain Application'

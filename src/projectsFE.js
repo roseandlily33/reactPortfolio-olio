@@ -20,6 +20,24 @@ export const projectListFrontEnd = [
         img: Weather,
         alt: 'Weather application'
      }, 
+     {
+      id: 3,
+      title: 'Rose & Lily Bakery',
+      github: 'https://github.com/roseandlily33/makeMeACake?tab=readme-ov-file',
+      deployed: 'https://roseandlily33.github.io/makeMeACake/',
+      description: 'HTML/CSS/JS, creative project for a layout for a bakery',
+      img: '',
+      alt: 'Bakery Application'
+     }, 
+     {
+      id: 4,
+      title: 'Jammin Spotify Playlist',
+      github: '',
+      deployed: '',
+      description: 'React, Spotify API, create ur own spotify playlist that has all your favourite songs',
+      img: '',
+      alt: 'Jammin Application'
+     }
 
 
 ]
