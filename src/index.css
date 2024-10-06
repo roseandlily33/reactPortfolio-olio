@@ -53,6 +53,7 @@ h6, li, p{
 a{
    text-decoration: none;
    color: var(--darkPink);
+   font-size: 1rem;
 }
 button{
    background-color: var(--medPink);
@@ -68,10 +69,8 @@ button:hover{
 }
 /* For the active Navlink */
 .active{
-  border: 2px solid var(--darkPink);
+  color: var(--darkBrown);
   font-weight: bold;
-  border-radius: var(--borderRadius);
-  padding: 1em 2em;
 }
 
 /* Projects */
