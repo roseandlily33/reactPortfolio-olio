@@ -1,18 +1,17 @@
+import { EachSkill } from "./Skills.styles";
+
 const BackEnd = () => {
     return ( 
-        <div className="backEnd">
-        <h3>Back End Skills and Frameworks:</h3>
+        <EachSkill>
+        <h4>Back End Skills and Frameworks:</h4>
         <ul>
             <li>Node.js</li>
             <li>Express.js</li>
             <li>MySQL</li>
             <li>MongoDB & Mongoose</li>
             <li>GraphQL</li>
-            {/* <li>Docker</li> */}
-            {/* <li>Redix</li> */}
-            {/* <li>AWS </li> */}
         </ul>
-    </div>
+    </EachSkill>
     );
 }
  

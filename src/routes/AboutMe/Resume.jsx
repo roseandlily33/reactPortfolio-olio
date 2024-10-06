@@ -1,15 +1,12 @@
+import { ResumeSection } from "./AboutMe.styles";
 
 const Resume = () => {
     return (
-        <div className="resume">
-        
-        <div>
-            </div>
-            <div className="download">
-        <h2 className="animate__animated animate__shakeX" >Download my resume:</h2>
+        <ResumeSection>
+        <h3>Download my resume:</h3>
         <button id="downloadBtn" ><a href="VictoriaBenoitResume.pdf" download="VictoriaBenoitResume.pdf">Resume</a></button>
-        </div>
-    </div> );
+        </ResumeSection> 
+     ) ;
 }
  
 export default Resume;

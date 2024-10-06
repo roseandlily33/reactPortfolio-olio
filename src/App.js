@@ -23,7 +23,8 @@ const theme = {
       darkCream: '#DCD5C3',
       lightPink: '#DCCBC2',
       medPink: '#D4B2A8',
-      darkPink: '#C4A49E'
+      darkPink: '#C4A49E',
+      boxShadow: '5px 0px 7px 6px var(--lightGrey)'
   }
 }
 

@@ -1,8 +1,9 @@
+import { EachSkill } from "./Skills.styles";
 
 const OtherSkills = () => {
     return (
-        <div className="skills">
-        <h3>Other Skills and Experience:</h3>
+        <EachSkill>
+        <h4>Other Skills and Experience:</h4>
         <ul>
             <li>UX/UI Design</li>
             <li>SEO</li>
@@ -16,8 +17,9 @@ const OtherSkills = () => {
             <li>Communication</li>
             <li>Problem Solving</li>
             <li>Leadership Roles</li>
+            <li>Accessibility</li>
         </ul>
-    </div>
+    </EachSkill>
       );
 }
  

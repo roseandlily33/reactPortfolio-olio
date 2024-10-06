@@ -1,5 +1,6 @@
 import {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import { ContactMeSection } from './AboutMe.styles';
 
 const  ContactMe = () => {
     const [name, setName] = useState('');
@@ -20,8 +21,8 @@ const  ContactMe = () => {
     setMessage('');
 }
     return (
-         <div className="contactMe">
-        <h2>Contact Me</h2>
+        <ContactMeSection>
+        <h3>Contact Me</h3>
         <form ref={form} onSubmit={handleFormSubmit}>
             <label>Name: </label>
             <input type="text" value={name} name='name' onChange={(e) => setName(e.target.value)} required />
@@ -31,7 +32,8 @@ const  ContactMe = () => {
             <textarea type="text" name='message' rows="4" cols="40" value={message} onChange={(e) => setMessage(e.target.value)} required/>
             <button>Submit</button>
         </form>
-     </div> );
+        </ContactMeSection>
+     );
 }
  
 export default ContactMe;

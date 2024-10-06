@@ -43,24 +43,23 @@ h3{
 h4{
    font-size: 1.953rem;  
 }
-h5{
+h5,  label{
    font-size: 1.563rem;
 }
 h6, li, p{
-   font-size: 1.2rem;
+   font-size: 1.25rem;
 }
-
 a{
    text-decoration: none;
-   color: var(--darkPink);
    font-size: 1rem;
+   color: white;
 }
 button{
    background-color: var(--medPink);
-   color: var(--lightCream);
+   color: var(--white);
    padding: 1em 2em;
    border-radius: var(--borderRadius);
-   border: none;
+   border: 2px solid var(--white);
 }
 button:hover{
    background-color: var(--lightBrown);

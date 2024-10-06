@@ -2,7 +2,7 @@ import { AboutMePicture } from "./AboutMe.styles";
 const ImageAboutMe = () => {
     return ( 
         <AboutMePicture>
-            <h2>ABout me picture goes here</h2>
+            <h2>About me picture goes here</h2>
         </AboutMePicture>
      );
 }
