@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Frank+Ruhl+Libre:wght@300&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap');
 :root{
    --headerFont: 'Cinzel', serif;
    --mainFont: 'Fauna One', sans-serif;
-   /* --headerFont: 'Bodoni Moda', serif; */
-   /* --mainFont: 'Playfair Display', serif; */
-   --darkGrey: #3D4249;
-   --lightGrey: #abafb4;
-   --medBlue: #D7E9FF;
-   --yellow: #F4DFA9;
-   --lighterBlue: #E8F2FF;
-   --lightBlue: #EEF3FF;
-   --white: #fcfafa;
+   --black: #181713;
+   --darkBrown: #3A3126;
+   --medBrown: #695441;
+   --lightBrown: #B49884;
+   --lightGrey: #BDB6AC;
+   --white: #F6F6F6;
+   --lightCream:#EDEAE3;
+   --medCream: #E5DCCE;
+   --darkCream: #DCD5C3;
+   --lightPink: #DCCBC2;
+   --medPink: #D4B2A8;
+   --darkPink: #C4A49E;
    --borderRadius: 25px;
    --boxShadow: 12px 12px 19px 7px var(--lightGrey);
-   --headerSize: 2em;
-   --mainSize: 1em;
 }
 *{
    margin: 0;
@@ -24,168 +23,57 @@
    box-sizing: border-box;
 }
 body{
-   background-color: var(--white);
-   font-size: 0.9em;
+   background-color: var(--lightCream);
+   font-size: 16px;
    font-weight: 300;
+   color: var(--black);
    font-family: var(--mainFont);
 }
+h1{
+   font-size: 3.815rem;
+   font-family: var(--headerFont);
+}
+h2{
+   font-size: 3.052rem;
+   font-family: var(--headerFont);
+}
+h3{
+   font-size: 2.441rem;
+}
+h4{
+   font-size: 1.953rem;  
+}
+h5{
+   font-size: 1.563rem;
+}
+h6, li, p{
+   font-size: 1.2rem;
+}
+
 a{
    text-decoration: none;
-   color: var(--darkGrey);
+   color: var(--darkPink);
 }
 button{
-   background-color: var(--yellow);
-   color: var(--darkGrey);
+   background-color: var(--medPink);
+   color: var(--lightCream);
    padding: 1em 2em;
    border-radius: var(--borderRadius);
    border: none;
 }
 button:hover{
-   background-color: var(--lightGrey);
-   color: var(--yellow);
+   background-color: var(--lightBrown);
+   color: var(--darkBrown);
 
 }
-
-/* Navbar */
-.header{
-   
-}
-.header h1{
-   text-align: center;
-   color: var(--darkGrey);
-   font-family: var(--headerFont);
-   font-size: var(--headerSize);
-   font-weight: bold;
-}
-.navbar{
- display: flex;
- justify-content: space-between;
- padding-block: 0.5em;
- font-size: 0.7em;
-}
-.navbar h4:hover{
-   color: var(--yellow);
-}
+/* For the active Navlink */
 .active{
-  border: 2px solid var(--medBlue);
+  border: 2px solid var(--darkPink);
   font-weight: bold;
   border-radius: var(--borderRadius);
   padding: 1em 2em;
 }
-/*About Me */
-.aboutMe{
-   padding: 5em;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 2em;
-}
-.aboutMe img{
-   border-radius: var(--borderRadius);
-   border: 12px solid var(--medBlue);
-}
-.info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  gap: 2em;
 
-}
-.info h2{
-   font-family: var(--headerFont);
-   font-weight: bold;
-   background-image: linear-gradient(90deg, var(--lightBlue), var(--yellow));
-   background-position: bottom;
-   background-size: 100% 30%;
-   background-repeat: no-repeat;
-}
-
-/* Contact Me */
-.contactMe{
-   border-radius: var(--borderRadius);
-   box-shadow: var(--boxShadow);
-   padding: 2em;
-   width: 100%;
-}
-.contactMe h2{
-   text-align: center;
-   font-family: var(--headerFont);
-   font-size: var(--headerSize);
-}
-.contactMe form{
-   display: flex;
-   flex-direction: column; 
-   align-items: center;
-   gap: 1em;
-}
-.contactMe label{
-   font-size: var(--mainSize);
-}
-.contactMe input, textarea{
-   border-radius: var(--borderRadius);
-   border: 1px solid var(--medBlue);
-   padding: 0.5em;
-   width: 80%;
-}
-.contactMe button{
-   width: 60%;
-}
-
-/* Resume */
-.resume{
-   display: flex;
-   flex-direction: column;
-}
-.resumeNavbar{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 1.2em;
-   font-size: 1.3em;
-   margin-bottom: 1em;
-   padding: 0.5em;
-   font-size: 0.8em;
-}
-.resumeNavbar .active{
-   border: 2px solid var(--medBlue);
-   padding: 0.5em;
-}
-.frontEnd, .backEnd, .skills{
-   text-align: center;
-   gap: 2em;
-   box-shadow: var(--boxShadow);
-   border-radius: var(--borderRadius);
-   padding: 1em;
-   margin: 0 auto;
-   margin-inline: 3em;
-   margin-block: 2em;
- 
-}
-.frontEnd h3, .backEnd h3, .skills h3{
-   font-size: 1em;
-   font-family: var(--headerFont);
-}
-.frontEnd ul, .backEnd ul, .skills ul{
-   padding: 1em;
-}
-.frontEnd li, .backEnd li, .skills li{
-   list-style-type: none;
-   padding-block: 0.5em;
-}
-.download{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-}
-.download h2{
-   font-size: 1em;
-}
-#downloadBtn{
-   margin-left: 0.6em;
-}
 /* Projects */
 .projects{
    display: flex;
@@ -247,54 +135,3 @@ footer a:hover{
    box-shadow: var(--boxShadow);
 }
 
-@media only screen and (min-width: 768px){
-   .header{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 1em;
-   
-   }
-   .navbar{
-     padding: 0;
-     font-size: var(--mainSize);
-   }
-   .aboutMe{
-      flex-direction: row;
-   }
-   .contactMe{
-      width: 60%;
-      margin: 0 auto;
-   }
-   .contactMe button{
-      width: 30%;
-   }
-   .resumeNavbar{
-      font-size: 1.2em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .frontEnd h3, .backEnd h3, .skills h3{
-      font-size: 1.3em;
-      
-   }
-   .frontEnd, .backEnd, .skills{
-      margin: 0 auto;
-      width: 60%;
-   }
-   .download h2{
-      padding-top: 2em;
-      font-size: 1.2em;
-   }
-   #downloadBtn{
-      margin-top: 2em;
-   }
-
-   footer{
-      justify-content: flex-end;
-      padding-right: 1em;
-   }
-
-
-}

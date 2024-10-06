@@ -8,7 +8,7 @@ const  ContactMe = () => {
     const form = useRef();
     const handleFormSubmit =(e) => {
     e.preventDefault();
-    console.log('Submitting the form');
+    //console.log('Submitting the form');
     emailjs.sendForm('service_mu6c7oe', 'template_nijrfml', form.current, 'QJItZZ3zOkjdjFwZx')
     .then((result) => {
         console.log(result.text);
