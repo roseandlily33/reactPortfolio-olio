@@ -1,7 +1,7 @@
 import { useState } from "react";
-import BackEnd from "../components/BackEnd";
-import FrontEnd from '../components/FrontEnd';
-import Skills from '../components/Skills';
+import BackEnd from "../components/Skills/BackEnd";
+import FrontEnd from '../components/Skills/FrontEnd';
+import Skills from '../components/Skills/Skills';
 
 const Resume = () => {
     const [skillState, setSkillState] = useState(FrontEnd);

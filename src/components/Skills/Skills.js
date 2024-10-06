@@ -7,9 +7,9 @@ const Skills = () => {
         <li>SEO</li>
         <li>Cyber Security</li>
         <li>Testing</li>
-        {/* <li>Performance</li> */}
-        {/* <li>Sessions & JWT</li> */}
-        {/* <li>CI/CD </li> */}
+        <li>Performance</li>
+        <li>Sessions & JWT</li>
+        <li>CI/CD </li>
         <li>PWA's</li>
         <li>Organization</li>
         <li>Communication</li>
