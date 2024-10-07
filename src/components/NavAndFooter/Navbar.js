@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Logo from '../../images/VBLogo.svg';
 import { NavBarComponent, NavbarOuter } from "./Navbar.styles";
 
 const Navbar = () => {
@@ -13,7 +12,6 @@ const Navbar = () => {
     return (
     <NavbarOuter>
         <h1>Victoria Benoit</h1>
-    {/* <img src={Logo} alt="Victoria Benoit" /> */}
     <NavBarComponent>
        <NavLink to="/" style={styles.navLink}><h4>About Me</h4></NavLink>
        <NavLink to="/Projects" style={styles.navLink}><h4>Portfolio</h4></NavLink>

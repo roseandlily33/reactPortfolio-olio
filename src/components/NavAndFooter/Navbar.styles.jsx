@@ -6,7 +6,12 @@ export const NavbarOuter = styled.header`
    justify-content: space-between;
    align-items: center;
    padding-left: 1rem;
-   border-bottom: 2px solid ${({theme}) => theme.colors.medBrown};
+   margin-inline: 1rem;
+   padding-bottom: 1rem;
+   //border-bottom: 2px solid ${({theme}) => theme.colors.medBrown};
+   background-color: ${({theme}) => theme.colors.darkCream};
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
 `;
 
 export const NavBarComponent = styled.nav`

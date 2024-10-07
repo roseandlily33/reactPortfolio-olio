@@ -14,7 +14,7 @@ export const projectListGroups = [
         github: 'https://github.com/roseandlily33/SinglePriceGrid',
         depolyed: 'https://roseandlily33.github.io/SinglePriceGrid/',
         description: '',
-        img: 
+        img: ''
     }
 
 ]

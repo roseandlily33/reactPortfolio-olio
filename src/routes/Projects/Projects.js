@@ -1,7 +1,7 @@
-import { projectListFrontEnd } from '../projectsFE';
-import { projectListGroups } from '../projectsGROUP';
-import { projectListMERN } from '../projectsMERN';
-import SingleProject from './EachProject';
+import { projectListFrontEnd } from './projectsFE';
+import { projectListGroups } from './projectsGROUP';
+import { projectListMERN } from './projectsMERN';
+import SingleProject from '../../components/SingleProject/EachProject';
 import { ProjectComponentContainer,
     ProjectContainer
  } from "./Projects.styles";
