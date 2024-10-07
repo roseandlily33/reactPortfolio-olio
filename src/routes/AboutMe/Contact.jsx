@@ -30,7 +30,7 @@ const  ContactMe = () => {
             <input type="email" value={email} name='email' onChange={(e) => setEmail(e.target.value)} required/>
             <label>Message:</label>
             <textarea type="text" name='message' rows="4" cols="40" value={message} onChange={(e) => setMessage(e.target.value)} required/>
-            <button>Submit</button>
+            <button><span className='button-content'>SUBMIT</span></button>
         </form>
         </ContactMeSection>
      );

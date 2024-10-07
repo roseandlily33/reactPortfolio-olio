@@ -21,7 +21,7 @@ const theme = {
       white: '#F6F6F6',
       lightCream: '#F6F5F2',
       medCream: '#F3F2EE',
-      darkCream: '#F0EFE8',
+      darkCream: '#E6E5E0',
       lightestPink: '#F6A9BE',
       lightPink: '#F38CA9',
       medPink: '#F17496',
