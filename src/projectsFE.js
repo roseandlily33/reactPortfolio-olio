@@ -7,16 +7,16 @@ export const projectListFrontEnd = [
         title: 'Javascript Quiz',
         github: 'https://github.com/roseandlily33/Violet-Quizzlet',
         deployed: 'https://roseandlily33.github.io/Violet-Quizzlet/',
-        description: 'A front end quiz to test your knowledge',
+        description: 'A front end quiz application to test your knowledge on Javascript. Built with HTML, CSS and JS.',
         img: Quiz,
         alt: 'Javascript quiz application'
      },
       {
         id: 2,
-        title: 'Cloudy with a chance of coding',
+        title: 'Cloudy With A Chance Of Coding',
         github: 'https://github.com/roseandlily33/cloudyWithAChanceOfCoding',
         deployed: 'https://roseandlily33.github.io/cloudyWithAChanceOfCoding/',
-        description: 'A Front End weather application that uses openWeatherAPI',
+        description: 'A Front End weather application that uses openWeatherAPI. Built with HTML, CSS, and JS.',
         img: Weather,
         alt: 'Weather application'
      }, 
@@ -25,16 +25,16 @@ export const projectListFrontEnd = [
       title: 'Rose & Lily Bakery',
       github: 'https://github.com/roseandlily33/makeMeACake?tab=readme-ov-file',
       deployed: 'https://roseandlily33.github.io/makeMeACake/',
-      description: 'HTML/CSS/JS, creative project for a layout for a bakery',
+      description: 'HTML/CSS/JS, creative project of a layout for a bakery.',
       img: '',
       alt: 'Bakery Application'
      }, 
      {
       id: 4,
       title: 'Jammin Spotify Playlist',
-      github: '',
+      github: 'https://github.com/roseandlily33/silver-butterfly',
       deployed: '',
-      description: 'React, Spotify API, create ur own spotify playlist that has all your favourite songs',
+      description: 'React Application. Uses Spotify API to create your own spotify playlist that has all your favourite songs. Currently still under development.',
       img: '',
       alt: 'Jammin Application'
      }

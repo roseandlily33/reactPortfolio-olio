@@ -13,17 +13,20 @@ import Skills from "./components/Skills/Skills";
 const theme = {
   colors: {
       black: '#181713',
-      darkBrown: '#3A3126',
-      medBrown: '#695441',
-      lightBrown: '#B49884',
-      lightGrey: '#BDB6AC',
+      darkBrown: '#E43D12',
+      medBrown: '#FF7C15',
+      lightBrown: '#FF933D',
+      lightGrey: '#EBE9E1',
+      lightestBrown: '#FFAE6E',
       white: '#F6F6F6',
-      lightCream: '#EDEAE3',
-      medCream: '#E5DCCE',
-      darkCream: '#DCD5C3',
-      lightPink: '#DCCBC2',
-      medPink: '#D4B2A8',
-      darkPink: '#C4A49E',
+      lightCream: '#F6F5F2',
+      medCream: '#F3F2EE',
+      darkCream: '#F0EFE8',
+      lightestPink: '#F6A9BE',
+      lightPink: '#F38CA9',
+      medPink: '#F17496',
+      darkPink: '#ED4672',
+      yellow: '#FFB400',
       boxShadow: '5px 0px 7px 6px var(--lightGrey)'
   }
 }

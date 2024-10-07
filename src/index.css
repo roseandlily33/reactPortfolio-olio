@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 :root{
-   --headerFont: 'Cinzel', serif;
-   --mainFont: 'Fauna One', sans-serif;
+   /* --headerFont: 'Abril Fatface', serif;
+   --mainFont: 'Playfair', sans-serif; */
+   --headerFont: 'Oswald', serif;
+   --mainFont: 'Open Sans', sans-serif;
    --black: #181713;
-   --darkBrown: #3A3126;
-   --medBrown: #695441;
-   --lightBrown: #B49884;
-   --lightGrey: #BDB6AC;
+   --darkBrown: #E43D12;
+   --medBrown: #FF7C15;
+   --lightBrown: #FF933D;
+   --lightestBrown: #FFAE6E;
+   --yellow: #FFB400;
+   --lightGrey: #EBE9E1;
    --white: #F6F6F6;
-   --lightCream:#EDEAE3;
-   --medCream: #E5DCCE;
-   --darkCream: #DCD5C3;
-   --lightPink: #DCCBC2;
-   --medPink: #D4B2A8;
-   --darkPink: #C4A49E;
+   --lightCream:#F6F5F2;
+   --medCream: #F3F2EE;
+   --darkCream: #F0EFE8;
+   --lightestPink: #F6A9BE;
+   --lightPink: #F38CA9;
+   --medPink: #F17496;
+   --darkPink: #ED4672;
    --borderRadius: 25px;
    --boxShadow: 12px 12px 19px 7px var(--lightGrey);
 }
@@ -32,16 +39,26 @@ body{
 h1{
    font-size: 3.815rem;
    font-family: var(--headerFont);
+   font-weight: 400;
+   color: var(--darkBrown);
 }
 h2{
    font-size: 3.052rem;
+   font-weight: 400;
+   text-transform: capitalize;
    font-family: var(--headerFont);
 }
 h3{
    font-size: 2.441rem;
+   font-family: var(--headerFont);
+   font-weight: 400;
+   text-transform: capitalize;
+   letter-spacing: 0.1rem;
 }
 h4{
    font-size: 1.953rem;  
+   font-family: var(--headerFont);
+   font-weight: 300;
 }
 h5,  label{
    font-size: 1.563rem;
@@ -52,16 +69,20 @@ h6, li, p{
 a{
    text-decoration: none;
    font-size: 1rem;
-   color: white;
+   color: var(--white);
+   font-family: var(--headerFont);
 }
-button{
-   background-color: var(--medPink);
+button, .button{
+   background-color: var(--darkPink);
    color: var(--white);
    padding: 1em 2em;
    border-radius: var(--borderRadius);
-   border: 2px solid var(--white);
+   text-transform: uppercase;
+   letter-spacing: 0.3rem;
+   font-size: 1rem;
+   border: 2px solid var(--lightestPink);
 }
-button:hover{
+button:hover, .button:hover{
    background-color: var(--lightBrown);
    color: var(--darkBrown);
 
@@ -70,6 +91,13 @@ button:hover{
 .active{
   color: var(--darkBrown);
   font-weight: bold;
+  border: 4px solid var(--darkPink);
+  background-color: var(--lightestPink);
+  border-radius: 55px;
+  
+}
+.active a{
+   color: var(--white);
 }
 
 /* Projects */

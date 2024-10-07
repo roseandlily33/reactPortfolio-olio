@@ -21,18 +21,21 @@ export const AboutMeSkills = styled.section`
     aside{
         text-align: center;
     }
-    //border: 1px solid green;
+    
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 2rem;
 `;
 
 export const ResumeSection = styled.section`
     display: flex;
     gap: 5rem;
     justify-content: center;
-    background-color: ${({theme}) => theme.colors.medCream};
-    padding-block: 2rem;
+    background-color: ${({theme}) => theme.colors.lightPink};
+    padding-block: 4rem;
+    border-top: 5px solid  ${({theme}) => theme.colors.darkPink};
+    border-bottom:  5px solid  ${({theme}) => theme.colors.darkPink};
 `;
 
 // Contact me section
@@ -41,15 +44,18 @@ export const ContactMeSection = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: ${({theme}) => theme.colors.lightestBrown};
     form{
-        background-color: ${({theme}) => theme.colors.medCream};
+        background-color: ${({theme}) => theme.colors.white};
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 2rem;
         border-radius: 25px;
         width: 50%;
+        border: 2px solid ${({theme}) => theme.colors.medBrown};
     }
     label{
         color: ${({theme}) => theme.colors.medBrown};

@@ -5,7 +5,7 @@ import Restaurant from './images/projects/Restaurant.png';
 
 export const projectListGroups = [
     {
-        id: 1,
+       id: 1,
        title: 'Ristorante Trattoria',
        github: 'https://github.com/Valerigionetnoel/Restaurante-Trattoria',
        deployed: 'https://boiling-tundra-06853-1ddfd77a8dae.herokuapp.com/',

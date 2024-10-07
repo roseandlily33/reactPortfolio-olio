@@ -12,7 +12,8 @@ const Navbar = () => {
     }
     return (
     <NavbarOuter>
-    <img src={Logo} alt="Victoria Benoit" />
+        <h1>Victoria Benoit</h1>
+    {/* <img src={Logo} alt="Victoria Benoit" /> */}
     <NavBarComponent>
        <NavLink to="/" style={styles.navLink}><h4>About Me</h4></NavLink>
        <NavLink to="/Projects" style={styles.navLink}><h4>Portfolio</h4></NavLink>

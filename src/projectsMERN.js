@@ -9,7 +9,7 @@ import Boutique from './images/projects/Boutique.png';
         title: 'Shortcake Blog',
         github: 'https://github.com/roseandlily33/cuddly-happiness',
         deployed: 'https://whispering-bastion-54456.herokuapp.com/',
-        description: 'A Full Stack Application that uses authentication',
+        description: 'A Full Stack Application that uses authentication, Handlebars.js, CSS, Express, Sequelize',
         img: Blog,
         alt: 'Shortcake Blog Application'
      },
@@ -18,7 +18,7 @@ import Boutique from './images/projects/Boutique.png';
         title: 'Rose & Lily Boutique',
         github: 'https://github.com/roseandlily33/sunshine_boutique',
         deployed: 'https://65ba4085942a7100087be5bc--superb-croquembouche-bbcbcb.netlify.app/',
-        description: 'Full Stack: React, Redux, Styled Components, Firebase and Stripe',
+        description: 'E-Commerce Full Stack: React, Redux, Styled Components, Firebase and Stripe',
         img: Boutique,
         alt: 'Rose and Lily Boutique Application'
      },
@@ -33,21 +33,30 @@ import Boutique from './images/projects/Boutique.png';
      },
      {
         id: 4,
-        title: 'NASA - To the stars',
+        title: 'NASA - To The Stars',
         github: 'https://github.com/roseandlily33/space-doodle',
         deployed: '',
-        description: 'Full Stack App: Node, GraphQL, React',
+        description: 'See the names of different spaceships and see if the launch was a success or failure. Full Stack App using Node, GraphQL, React',
         img: NASA,
         alt: 'NASA Application'
 
      },
      {
         id: 5,
-        title: 'Lemon - Lime Coming Soon',
+        title: 'Lemon - Lime',
         github: 'https://github.com/roseandlily33/lemon-lime',
-        deployed: '',
+        deployed: 'https://lemon-lime.onrender.com',
         description: 'Full Stack: React, GraphQL, etc. ',
         img: SmartBrain,
         alt: 'Lemon Lime Application'
-     }
+     },
+     {
+      id: 6,
+      title: 'YODA Safety Services- Client Project',
+      github: '',
+      deployed: 'https://www.yodasafetyservices.com/',
+      description: 'Full Stack Application that I created for a client (Github repo is not availble for that reason). MERN Stack. You can create an account, take online training, purchase courses, and download your certificate from the course.',
+      img: '',
+      alt: 'YODA Application'
+   }
  ]

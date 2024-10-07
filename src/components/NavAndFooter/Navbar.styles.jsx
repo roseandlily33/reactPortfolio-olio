@@ -5,13 +5,8 @@ export const NavbarOuter = styled.header`
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   border-bottom: 2px solid ${({theme}) => theme.colors.lightGrey};
-   img{
-        height: 100px;
-        width: 300px;
-        padding-top: 1rem;
-        padding-left: 1rem;
-    }
+   padding-left: 1rem;
+   border-bottom: 2px solid ${({theme}) => theme.colors.medBrown};
 `;
 
 export const NavBarComponent = styled.nav`
