@@ -13,6 +13,7 @@ import Skills from "./components/Skills/Skills";
 const theme = {
   colors: {
       black: '#181713',
+      darkGrey: '#323232',
       darkBrown: '#E43D12',
       medBrown: '#FF7C15',
       lightBrown: '#FF933D',

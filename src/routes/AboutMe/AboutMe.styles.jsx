@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 // Very outer container
 export const AboutMeComponent = styled.main`
-   // border: 1px solid red;
     margin-inline: 1rem;
     margin-top: 1rem;
 `;
@@ -43,10 +42,39 @@ export const AboutMePicture = styled.section`
 `;
 //This is the part that has my pic and info about me
 export const AboutMeSection  = styled.section`
-    border: 1px solid yellow;
     border-radius: 25px;
     background-color: ${({theme}) => theme.colors.lightGrey};
     padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    h2{
+        color: ${({theme}) => theme.colors.darkPink};
+        border-bottom: 5px solid ${({theme}) => theme.colors.darkPink};
+        margin-bottom: 1rem;
+    }
+    a{
+        color: ${({theme}) => theme.colors.darkPink};
+        font-weight: bold;
+    }
+    a:hover{
+        color: ${({theme}) => theme.colors.yellow};
+    }
+    .left{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        height: 100%;
+        width: 80%;
+        border-radius: 25px;
+        border: 10px solid ${({theme}) => theme.colors.lightGrey};
+    }
+    .right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
 
 `;
 
@@ -72,7 +100,7 @@ export const ResumeSection = styled.section`
     align-items: center;
     background-color: ${({theme}) => theme.colors.lightestPink};
     padding-block: 4rem;
-    border: 6px solid  ${({theme}) => theme.colors.darkPink};
+    border: 10px solid  ${({theme}) => theme.colors.darkPink};
 `;
 
 // Contact me section
@@ -84,8 +112,8 @@ export const ContactMeSection = styled.section`
     gap: 2rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    background-color: ${({theme}) => theme.colors.lightBrown};
-    border: 5px solid ${({theme}) => theme.colors.lightestBrown};
+    background-color: ${({theme}) => theme.colors.lightGrey};
+   // border: 10px solid ${({theme}) => theme.colors.lightestBrown};
     form{
         background-color: white;
         display: flex;
@@ -93,8 +121,8 @@ export const ContactMeSection = styled.section`
         gap: 1rem;
         padding: 2rem;
         border-radius: 25px;
-        width: 50%;
-        border: 2px solid ${({theme}) => theme.colors.lightestBrown};
+        width: 70%;
+        border: 10px solid ${({theme}) => theme.colors.lightBrown};
     }
     label{
         color: ${({theme}) => theme.colors.medBrown};
