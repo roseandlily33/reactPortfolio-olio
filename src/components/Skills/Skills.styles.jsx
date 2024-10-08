@@ -8,10 +8,10 @@ export const EachSkill = styled.div`
     background-color: ${({theme}) => theme.colors.darkCream};
     padding-top: 1rem;
     box-shadow: ${({theme}) => theme.colors.boxShadow};
-    border-right: 10px solid ${({theme}) => theme.colors.darkBrown};
-    border-left: 10px solid ${({theme}) => theme.colors.lightBrown};
-    border-top: 6px solid ${({theme}) => theme.colors.darkPink};
-    border-bottom: 6px solid ${({theme}) => theme.colors.lightPink};
+    border-right: 14px solid ${({theme}) => theme.colors.darkPink};
+    border-left: 14px solid ${({theme}) => theme.colors.lightBrown};
+    border-top: 10px solid ${({theme}) => theme.colors.darkBrown};
+    border-bottom: 10px solid ${({theme}) => theme.colors.lightPink};
     h4{
         padding-bottom: 0.5rem;
     }
