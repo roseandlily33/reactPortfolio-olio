@@ -51,6 +51,22 @@ export const ProjectCard = styled.div`
     transition: all .5s;
     transform: rotate(5deg) scale(1);
     }
+    @media screen and (max-width: 1750px){
+        width: 35%;
+        height: 600px;
+    }
+    @media screen and (max-width: 1200px){
+        width: 45%;
+        height: 600px;
+    }
+    @media screen and (max-width: 1000px){
+        width: 80%;
+        height: 600px;
+    }
+    @media screen and (max-width: 800px){
+        width: 100%;
+        height: 600px;
+    }
 `;
 
 

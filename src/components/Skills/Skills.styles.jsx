@@ -19,4 +19,9 @@ export const EachSkill = styled.div`
         padding-bottom: 0.5rem;
         list-style-type: square;
     }
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
 `;

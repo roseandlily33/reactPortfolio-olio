@@ -86,6 +86,7 @@ export const AboutMeSkills = styled.section`
     
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
     border-radius: 25px;
