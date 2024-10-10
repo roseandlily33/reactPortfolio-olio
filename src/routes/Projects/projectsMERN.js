@@ -6,22 +6,24 @@ import YODA from '../../images/projects/YODA.png';
 import LemonLime from '../../images/projects/LemonLime.png';
  
  export const projectListMERN = [
+   // This one needs to be done on render, took it off heroku
     {
         id: 1, 
         title: 'Shortcake Blog',
         github: 'https://github.com/roseandlily33/cuddly-happiness',
-        deployed: 'https://whispering-bastion-54456.herokuapp.com/',
+        deployed: '',
         status: 'Completed',
         description: 'A Full Stack Application that uses authentication, Handlebars.js, CSS, Express, Sequelize',
         img: Blog,
         alt: 'Shortcake Blog Application'
      },
+       //   This one is working
      {
         id: 2,
         title: 'Rose & Lily Boutique',
         github: 'https://github.com/roseandlily33/sunshine_boutique',
-        deployed: 'https://65ba4085942a7100087be5bc--superb-croquembouche-bbcbcb.netlify.app/',
-        status: 'Completed',
+        deployed: 'https://superb-croquembouche-bbcbcb.netlify.app/',
+        status: 'Completed, but adding some new features',
         description: 'E-Commerce Full Stack: React, Redux, Styled Components, Firebase and Stripe',
         img: Boutique,
         alt: 'Rose and Lily Boutique Application'
@@ -40,13 +42,14 @@ import LemonLime from '../../images/projects/LemonLime.png';
         id: 4,
         title: 'NASA - To The Stars',
         github: 'https://github.com/roseandlily33/space-doodle',
-        deployed: '',
+        deployed: 'https://space-doodle-nasa.onrender.com',
         status: 'Complete',
         description: 'See the names of different spaceships and see if the launch was a success or failure. Full Stack App using Node, GraphQL, React',
         img: NASA,
         alt: 'NASA Application'
 
      },
+   //   This one is almost completed for deployment
      {
         id: 5,
         title: 'Lemon - Lime',
@@ -57,6 +60,7 @@ import LemonLime from '../../images/projects/LemonLime.png';
         img: LemonLime,
         alt: 'Lemon Lime Application'
      },
+   // This one is completed
      {
       id: 6,
       title: 'YODA Safety Services- Client Project',

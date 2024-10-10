@@ -4,6 +4,7 @@ import Restaurant from '../../images/projects/Restaurant.png';
 
 
 export const projectListGroups = [
+    // This one is not going yet
     {
        id: 1,
        title: 'Ristorante Trattoria',
@@ -13,8 +14,8 @@ export const projectListGroups = [
        img: Restaurant,
        status: 'Completed - Needs the deployed link',
        alt: 'Restaurant application'
-        
      },
+    //  This one is not going
       { id: 2,
        title: 'Card Wise',
        github: 'https://github.com/Pilotguide9897/CardWise',
@@ -24,6 +25,7 @@ export const projectListGroups = [
        img: CardWise,
        alt: 'Flip card application'
       },
+      // This one is not going
       {
         id: 3,
         title: 'English Football Tracker',
