@@ -2,6 +2,7 @@ import Quiz from '../../images/projects/Quiz.png';
 import Weather from '../../images/projects/Weather.png';
 
 export const projectListFrontEnd = [  
+  // Small issue with the score not showing up at the end
     {
         id: 1,
         title: 'Javascript Quiz',
@@ -12,6 +13,7 @@ export const projectListFrontEnd = [
         img: Quiz,
         alt: 'Javascript quiz application'
      },
+     //This one is working
       {
         id: 2,
         title: 'Cloudy With A Chance Of Coding',
@@ -22,6 +24,7 @@ export const projectListFrontEnd = [
         img: Weather,
         alt: 'Weather application'
      }, 
+     // This one is sort of working missing pictures
      {
       id: 3,
       title: 'Rose & Lily Bakery',
@@ -32,16 +35,15 @@ export const projectListFrontEnd = [
       img: '',
       alt: 'Bakery Application'
      }, 
+     //Up on render and is working - project is not finished
      {
       id: 4,
       title: 'Jammin Spotify Playlist',
       github: 'https://github.com/roseandlily33/silver-butterfly',
       status: 'Currently Under Development',
-      deployed: '',
+      deployed: 'https://silver-butterfly.onrender.com',
       description: 'React Application. Uses Spotify API to create your own spotify playlist that has all your favourite songs. Currently still under development.',
       img: '',
       alt: 'Jammin Application'
      }
-
-
 ]

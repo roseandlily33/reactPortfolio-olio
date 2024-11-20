@@ -6,20 +6,40 @@ import YODA from '../../images/projects/YODA.png';
 import LemonLime from '../../images/projects/LemonLime.png';
  
  export const projectListMERN = [
-   // This one needs to be done on render, took it off heroku
+  {
+    id: 1,
+    title: 'Lemon - Lime',
+    github: 'https://github.com/roseandlily33/lemon-lime',
+    deployed: 'https://lemon-lime.onrender.com',
+    status: 'Currently Under Development - Almost Complete',
+    description: 'Recipe Application, where you can create an account, share, edit and delete recipes, favorite recipes, see new recipes, search for recipes. Full Stack: React, GraphQL, etc.',
+    img: LemonLime,
+    technologies: [
+      'bcrypt', 'cors', 'cookie-parser', 'dotenv', 'express', 
+      'helmet', 'mongodb', 'mongoose', 'morgan', 'sharp', 'tinify',
+      'Auth0', 'cloudinary', 'tanstack query', 'react', 'react-router-dom',
+      'styled-components', 'uuid'
+    ],
+    alt: 'Lemon Lime Application'
+    },
+    // This one is completed
     {
-        id: 1, 
-        title: 'Shortcake Blog',
-        github: 'https://github.com/roseandlily33/cuddly-happiness',
-        deployed: '',
-        status: 'Completed',
-        description: 'A Full Stack Application that uses authentication, Handlebars.js, CSS, Express, Sequelize',
-        img: Blog,
-        alt: 'Shortcake Blog Application'
-     },
-       //   This one is working
+    id: 2,
+    title: 'YODA Safety Services- Client Project',
+    github: '',
+    deployed: 'https://www.yodasafetyservices.com/',
+    description: 'Full Stack Application that I created for a client (Github repo is not availble for that reason). MERN Stack. You can create an account, take online training, purchase courses, and download your certificate from the course.',
+    img: YODA,
+    technologies:['bcrypt', 'cors', 'dotenv',
+      'express', 'helmet', 'mongodb', 'mongoose', 'helmet',
+      'morgan', 'jsonwebtoken', 'multer', 'nodemailer', 'nodemailer-express-handlebars',
+      'uuid', 'styled-components', 'react', 'react-router-dom'
+    ],
+    status: 'Currently Under Development',
+    alt: 'YODA Application'
+  },
      {
-        id: 2,
+        id: 3,
         title: 'Rose & Lily Boutique',
         github: 'https://github.com/roseandlily33/sunshine_boutique',
         deployed: 'https://superb-croquembouche-bbcbcb.netlify.app/',
@@ -28,47 +48,26 @@ import LemonLime from '../../images/projects/LemonLime.png';
         img: Boutique,
         alt: 'Rose and Lily Boutique Application'
      },
-   //   {
-   //      id: 3,
-   //      title: 'Smart Brain',
-   //      github: 'https://github.com/roseandlily33/space-brain',
-   //      deployed: 'https://space-brain.onrender.com',
-   //      description: 'Full Stack: React, Node.js, Knex.js, Clarafai API',
-   //      status: 'Not Complte - May take this out ',
-   //      img: SmartBrain,
-   //      alt: 'Smart Brain Application'
-   //   },
      {
-        id: 4,
-        title: 'NASA - To The Stars',
-        github: 'https://github.com/roseandlily33/space-doodle',
-        deployed: 'https://space-doodle-nasa.onrender.com',
-        status: 'Complete',
-        description: 'See the names of different spaceships and see if the launch was a success or failure. Full Stack App using Node, GraphQL, React',
-        img: NASA,
-        alt: 'NASA Application'
+      id: 4,
+      title: 'NASA - To The Stars',
+      github: 'https://github.com/roseandlily33/space-doodle',
+      deployed: 'https://space-doodle-nasa.onrender.com',
+      status: 'Complete',
+      description: 'See the names of different spaceships and see if the launch was a success or failure. Full Stack App using Node, GraphQL, React',
+      img: NASA,
+      alt: 'NASA Application'
 
-     },
-   //   This one is almost completed for deployment
+   },
+    // This one needs to be done on render, took it off heroku
      {
-        id: 5,
-        title: 'Lemon - Lime',
-        github: 'https://github.com/roseandlily33/lemon-lime',
-        deployed: 'https://lemon-lime.onrender.com',
-        status: 'Currently Under Development - Almost Complete',
-        description: 'Recipe Application, where you can create an account, share, edit and delete recipes, favorite recipes, see new recipes, search for recipes. Full Stack: React, GraphQL, etc.',
-        img: LemonLime,
-        alt: 'Lemon Lime Application'
-     },
-   // This one is completed
-     {
-      id: 6,
-      title: 'YODA Safety Services- Client Project',
-      github: '',
-      deployed: 'https://www.yodasafetyservices.com/',
-      description: 'Full Stack Application that I created for a client (Github repo is not availble for that reason). MERN Stack. You can create an account, take online training, purchase courses, and download your certificate from the course.',
-      img: YODA,
-      status: 'Currently Under Development - Almost Complete',
-      alt: 'YODA Application'
-   }
+      id: 6, 
+      title: 'Shortcake Blog',
+      github: 'https://github.com/roseandlily33/cuddly-happiness',
+      deployed: '',
+      status: 'Completed - Needs the deployed link',
+      description: 'A Full Stack Application that uses authentication, Handlebars.js, CSS, Express, Sequelize',
+      img: Blog,
+      alt: 'Shortcake Blog Application'
+   },
  ]

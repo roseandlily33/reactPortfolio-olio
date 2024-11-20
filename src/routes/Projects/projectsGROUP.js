@@ -25,7 +25,7 @@ export const projectListGroups = [
        img: CardWise,
        alt: 'Flip card application'
       },
-      // This one is not going
+      // This one is sort of going - need to get the github repo
       {
         id: 3,
         title: 'English Football Tracker',
