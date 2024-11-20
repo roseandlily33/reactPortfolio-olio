@@ -7,7 +7,7 @@ Welcome to my portfolio
 - NOTE: Some of the group applications have been taken down and are not under my control, feel free to check out the attatched repo to those projects
 
 ## Deployed Link:
-[My Portfolio](https://roseandlily33.github.io/reactPortfolio-olio/)
+[My Portfolio](https://reactportfolio-olio.onrender.com)
 
 ## Created With:
 React, npm package: react-router-dom, Javascript, CSS, emailjs.
