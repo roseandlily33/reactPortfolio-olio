@@ -1,29 +1,16 @@
-import githubIcon from '../../images/icons8-github-bubbles/icons8-github-50.png';
-import { EachProjectContainer,
-    ProjectCard
- } from './EachProject.styles';
-const SingleProject = ({projectList}) => {
-    const githubLink = 'Link to github repo';
-    const deployedLink = 'Link to deployed project';
+
+const SingleProject = ({projectList, openModal}) => {
     return ( 
-     <EachProjectContainer>
+        <>
         {projectList?.map(project => (
-            <ProjectCard>
-               <a href={project?.deployed} alt={deployedLink}> <img key={project?.id} src={project?.img} height="200" width="350" alt={project?.alt} id="projPic"/></a>
-                <div className="projectInfo">
-                   <h4 className='bold'>{project?.title}</h4>
-                   <p className='bold'>Status Of Project: <span>{project?.status}</span></p>
-
-                   <p>{project?.description}</p>
-                   {project.github && 
-                   <a href={project?.github}>
-                   <img src={githubIcon} alt={githubLink}/>
-                   </a>}
-                </div>
-            </ProjectCard>
+            <div id="certContainer" key={project.id} onClick={() => openModal(project)}>
+                <img key={project?.id} src={project?.img} alt={project?.alt} />
+                   <h5>{project?.title}</h5>
+                   <p>Status: {project?.status === true ? <span style={{color: '#5CB85C'}}>Complete</span> : <span style={{color: '#e6b607'}}>Under Development</span>}</p>
+                   <p>{project?.type}</p>
+            </div>
         ))}
-    </EachProjectContainer> 
-
+        </>
      );
 }
  

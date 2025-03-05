@@ -11,33 +11,48 @@ export const EachProjectContainer = styled.div`
     align-items: center;
 `;
 export const ProjectCard = styled.div`
-    width: 32%;
-    height: 500px;
-    padding: 2rem;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background-color: ${({theme}) => theme.colors.lightGrey};
-    padding-top: 1rem;
+    width: 28%;
+    height: 450px;
+    /* padding: 2rem; */
+    /* border-top-right-radius: 25px;/ */
+    border-radius: 25px;
+    /* border-bottom-left-radius: 25px; */
+    /* padding-top: 1rem; */
     box-shadow: ${({theme}) => theme.colors.boxShadow};
-    border-right: 14px solid ${({theme}) => theme.colors.darkPink};
-    border-left: 14px solid ${({theme}) => theme.colors.lightBrown};
-    border-top: 10px solid ${({theme}) => theme.colors.darkBrown};
-    border-bottom: 10px solid ${({theme}) => theme.colors.lightPink};
+    /* border-right: 7px solid ${({theme}) => theme.colors.darkPink}; */
+    /* border-left: 7px solid ${({theme}) => theme.colors.lightBrown}; */
+    /* border-top: 5px solid ${({theme}) => theme.colors.darkBrown}; */
+    /* border-bottom: 5px solid ${({theme}) => theme.colors.lightPink}; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    img{
-        width: 100%;
-        border-radius: 15px;
+    justify-content: flex-start;
+    background-color:  ${({theme}) => theme.colors.lightCream};
+    #projPic {
+        min-width: 100%;
+        max-width: 100%;
+        /* min-height: 50%; */
+        max-height: 70%;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        /* border-radius: 15px; */
+    }
+    #projPic:hover{
+        filter: grayscale(100%);
+        transition: all .5s;
     }
     .bold{
         font-weight: 550;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
     }
     span{
         font-weight: normal;
     }
     p{
         margin-top: 0.5rem;
+        padding-left: 0.5rem;
+        margin-bottom: 0.5rem;
+
     }
     a{
         float: right;
@@ -45,11 +60,6 @@ export const ProjectCard = styled.div`
     }
     a:hover{
         transform: scale(1.3);
-    }
-    #projPic:hover{
-    filter: grayscale(100%);
-    transition: all .5s;
-    transform: rotate(5deg) scale(1);
     }
     @media screen and (max-width: 1750px){
         width: 35%;
@@ -66,7 +76,7 @@ export const ProjectCard = styled.div`
     @media screen and (max-width: 800px){
         width: 100%;
         height: 600px;
-    }
+    } 
 `;
 
 

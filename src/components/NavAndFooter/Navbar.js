@@ -13,8 +13,9 @@ const Navbar = () => {
     <NavbarOuter>
         <h1>Victoria Benoit</h1>
     <NavBarComponent>
-       <NavLink to="/" style={styles.navLink}><h4>About Me</h4></NavLink>
-       <NavLink to="/Projects" style={styles.navLink}><h4>Portfolio</h4></NavLink>
+       <NavLink to="/" style={styles.navLink}>About Me</NavLink>
+       <NavLink to="/Projects" style={styles.navLink}>Portfolio</NavLink>
+       <NavLink to="/Certificates" style={styles.navLink}>Certificates</NavLink>
     </NavBarComponent>
     </NavbarOuter>
       );

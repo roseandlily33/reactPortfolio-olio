@@ -16,6 +16,8 @@ export const projectListFrontEndMentor = [
         deployed: 'https://roseandlily33.github.io/four-card-feature/',
         description: 'Four Card Feature - HTML/CSS',
         img: Card4,
+        type: 'Front End',
+        status: true,
     },
     {
         id: 2,
@@ -23,7 +25,9 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/SinglePriceGrid',
         depolyed: 'https://roseandlily33.github.io/SinglePriceGrid/',
         description: 'Single Price Grid Challenge - HTML/CSS',
-        img: Community
+        img: Community,
+        type: 'Front End',
+        status: true,
     }, 
     {
         id: 3,
@@ -31,7 +35,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/QR-Code-Component',
         depolyed: 'https://roseandlily33.github.io/QR-Code-Component/',
         description: 'QR Code Component - HTML/CSS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: QRCode
     },
     {
@@ -40,7 +45,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/3-Column-Component',
         depolyed: 'https://roseandlily33.github.io/3-Column-Component/',
         description: '3-Column Component - HTML/CSS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: Card3
     },
     {
@@ -49,7 +55,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/product-preview-card',
         depolyed: 'https://roseandlily33.github.io/product-preview-card/',
         description: 'Product Preview Card - HTML/CSS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: CardPic
     },
     // Duplicate add a new one instead
@@ -68,7 +75,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/fuzzy-disco-news-webpage',
         depolyed: 'https://roseandlily33.github.io/fuzzy-disco-news-webpage/',
         description: 'Disco News - HTML/CSS',
-        status: 'Completed  - Needs read me',
+        status: true,
+        type: 'Front End',
         img: DiscoNews
     },
     {
@@ -77,7 +85,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/thePurpleBlotch',
         depolyed: 'https://roseandlily33.github.io/thePurpleBlotch/',
         description: 'Purple Blob - HTML/CSS/JS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: PurpleBlob
     }
     ,
@@ -87,7 +96,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/sniffleSignUp',
         depolyed: 'https://roseandlily33.github.io/sniffleSignUp/',
         description: 'Sign Up Component- HTML/CSS/JS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: SignUp
     }
     ,
@@ -97,7 +107,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/order-summary-component',
         depolyed: 'https://roseandlily33.github.io/order-summary-component/',
         description: 'Purple Blob - HTML/CSS/JS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: OrderSummary
     }
     ,
@@ -107,9 +118,8 @@ export const projectListFrontEndMentor = [
         github: 'https://github.com/roseandlily33/NFT-Product-Preview-Card',
         depolyed: 'https://roseandlily33.github.io/NFT-Product-Preview-Card/',
         description: 'NFT Preview Card - HTML/CSS/JS',
-        status: 'Completed',
+        status: true,
+        type: 'Front End',
         img: NFT
     }
-
-
 ]

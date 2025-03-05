@@ -9,6 +9,8 @@ const SummaryComponent = () => {
             </div>
             <div className="right">
             <h2>Hi, I'm Victoria!</h2>
+            <section>
+                <div>
                 <p> I am a MERN Full Stack Developer,
                 <br />
                 I'm passionate in front end development and love designing, CSS, and REACT.
@@ -22,6 +24,13 @@ const SummaryComponent = () => {
                  I have worked with CI/CD pipelines, testing, deployment mainly to render, 
                  desigining and creating applications with accessibility in mind.
                 </p>
+                </div>
+                <div>
+            <button id="downloadBtn" ><a className="button-content" href="VictoriaBenoitResume.pdf" download="VictoriaBenoitResume.pdf">Resume</a></button>
+            </div>
+                </section>
+
+
             </div>
             
         </AboutMeSection>

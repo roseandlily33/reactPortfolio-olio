@@ -11,9 +11,10 @@ import LemonLime from '../../images/projects/LemonLime.png';
     title: 'Lemon - Lime',
     github: 'https://github.com/roseandlily33/lemon-lime',
     deployed: 'https://lemon-lime.onrender.com',
-    status: 'Currently Under Development - Almost Complete',
+    status: true,
     description: 'Recipe Application, where you can create an account, share, edit and delete recipes, favorite recipes, see new recipes, search for recipes. Full Stack: React, GraphQL, etc.',
     img: LemonLime,
+    type: 'MERN',
     technologies: [
       'bcrypt', 'cors', 'cookie-parser', 'dotenv', 'express', 
       'helmet', 'mongodb', 'mongoose', 'morgan', 'sharp', 'tinify',
@@ -25,17 +26,18 @@ import LemonLime from '../../images/projects/LemonLime.png';
     // This one is completed
     {
     id: 2,
-    title: 'YODA Safety Services- Client Project',
+    title: 'YODA Safety Services - Client Project',
     github: '',
     deployed: 'https://www.yodasafetyservices.com/',
     description: 'Full Stack Application that I created for a client (Github repo is not availble for that reason). MERN Stack. You can create an account, take online training, purchase courses, and download your certificate from the course.',
     img: YODA,
+    type: 'MERN',
     technologies:['bcrypt', 'cors', 'dotenv',
       'express', 'helmet', 'mongodb', 'mongoose', 'helmet',
       'morgan', 'jsonwebtoken', 'multer', 'nodemailer', 'nodemailer-express-handlebars',
       'uuid', 'styled-components', 'react', 'react-router-dom'
     ],
-    status: 'Currently Under Development',
+    status: false,
     alt: 'YODA Application'
   },
      {
@@ -43,9 +45,10 @@ import LemonLime from '../../images/projects/LemonLime.png';
         title: 'Rose & Lily Boutique',
         github: 'https://github.com/roseandlily33/sunshine_boutique',
         deployed: 'https://superb-croquembouche-bbcbcb.netlify.app/',
-        status: 'Completed, but adding some new features',
+        status: true,
         description: 'E-Commerce Full Stack: React, Redux, Styled Components, Firebase and Stripe',
         img: Boutique,
+        type: 'MERN',
         alt: 'Rose and Lily Boutique Application'
      },
      {
@@ -53,9 +56,10 @@ import LemonLime from '../../images/projects/LemonLime.png';
       title: 'NASA - To The Stars',
       github: 'https://github.com/roseandlily33/space-doodle',
       deployed: 'https://space-doodle-nasa.onrender.com',
-      status: 'Complete',
+      status: true,
       description: 'See the names of different spaceships and see if the launch was a success or failure. Full Stack App using Node, GraphQL, React',
       img: NASA,
+      type: 'MERN',
       alt: 'NASA Application'
 
    },
@@ -65,9 +69,10 @@ import LemonLime from '../../images/projects/LemonLime.png';
       title: 'Shortcake Blog',
       github: 'https://github.com/roseandlily33/cuddly-happiness',
       deployed: '',
-      status: 'Completed - Needs the deployed link',
+      status: true,
       description: 'A Full Stack Application that uses authentication, Handlebars.js, CSS, Express, Sequelize',
       img: Blog,
+      type: 'Full Stack',
       alt: 'Shortcake Blog Application'
    },
  ]

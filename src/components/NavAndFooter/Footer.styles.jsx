@@ -12,4 +12,6 @@ export const FooterComponent = styled.footer`
    background-color: ${({theme}) => theme.colors.darkCream};
    border-top-left-radius: 25px;
    border-top-right-radius: 25px;
+   box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1);
+
 `;

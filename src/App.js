@@ -5,10 +5,7 @@ import Navbar from "./components/NavAndFooter/Navbar";
 import Footer from './components/NavAndFooter/Footer';
 import AboutMe from './routes/AboutMe/AboutMe';
 import Projects from './routes/Projects/Projects';
-import ContactMe from './routes/AboutMe/Contact';
-import FrontEnd from "./components/Skills/FrontEnd";
-import BackEnd from "./components/Skills/BackEnd";
-import Skills from "./components/Skills/Skills";
+import Certificates from './routes/Certificates/Certificates';
 
 const theme = {
   colors: {
@@ -41,6 +38,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<AboutMe />}></Route>
         <Route path="/Projects" element={<Projects />}></Route>
+        <Route path="/Certificates" element={<Certificates />}></Route>
       </Routes>
       <Footer />
       </BrowserRouter>

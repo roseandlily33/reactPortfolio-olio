@@ -4,16 +4,13 @@ import OtherSkills from "./OtherSkills";
 import { AboutMeSkills } from "../../routes/AboutMe/AboutMe.styles";
 const SkillsComponent = () => {
     return (  
-      <>
-         <aside style={{textAlign: 'center'}}>
-            <h2>skills</h2>
-          </aside>
+        <div style={{paddingTop: '2rem'}}>
         <AboutMeSkills>
         <FrontEnd />
         <BackEnd />
         <OtherSkills />
         </AboutMeSkills>
-        </>
+        </div>
   );
 }
  

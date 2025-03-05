@@ -4,7 +4,6 @@ import SummaryComponent from "./Summary";
 import ImageAboutMe from "./ImageAboutMe";
 import ContactMe from "./Contact";
 import SkillsComponent from "../../components/Skills/Skills";
-import Resume from "./Resume";
 
 const AboutMe = () => {
     return (
@@ -12,7 +11,6 @@ const AboutMe = () => {
             <ImageAboutMe />
             <SummaryComponent />
             <SkillsComponent />
-            <Resume />
             <ContactMe />
         </AboutMeComponent>
         
