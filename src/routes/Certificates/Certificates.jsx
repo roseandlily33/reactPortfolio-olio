@@ -45,7 +45,7 @@ const Certificates = () => {
                     <img src={cert.photo} alt={cert.title} />
                     <h5>{cert.title}</h5>
                     <p>{cert.provider}</p>
-                    <p>{cert.date}</p>
+                    <p style={{fontStyle: 'italic'}}>{cert.date}</p>
                 </div>
             )
         }
