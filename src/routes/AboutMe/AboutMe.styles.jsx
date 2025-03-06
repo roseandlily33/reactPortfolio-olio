@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const AboutMeComponent = styled.main`
     margin-inline: 1rem;
     margin-top: 1rem;
+    height: 100%;
 `;
 // Top container with the picture
 export const AboutMePicture = styled.section`
@@ -99,6 +100,18 @@ export const AboutMeSection  = styled.section`
     #downloadBtn a {
         color: ${({theme}) => theme.colors.lightGrey};
     }
+    @media screen and (max-width: 768px){
+    flex-direction: column-reverse;
+    .right {
+        width: 100%;
+    }
+    .left {
+        display: none;
+    }
+    #downloadBtn {
+        margin-top: 2rem;
+    }
+    }
 
 `;
 
@@ -153,6 +166,21 @@ export const ContactMeSection = styled.section`
         border: 3px solid  ${({theme}) => theme.colors.darkPink};
         border-radius: 25px;
         padding: 1rem;
+    }
+    @media screen and (max-width: 768px){
+    gap: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    form{
+        gap: 0.5rem;
+        padding: 1rem;
+        margin-inline: 1rem;
+    }
+    input, textarea {
+        padding: 0.5rem;
+        width: 100%;
+    }
     }
 
 `;

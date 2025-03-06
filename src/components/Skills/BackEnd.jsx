@@ -3,7 +3,7 @@ import { EachSkill } from "./Skills.styles";
 const BackEnd = () => {
     return ( 
         <EachSkill>
-        <h4>Back End Skills and Frameworks:</h4>
+        <h4 style={{color: 'var(--darkPink)'}}>Back End Skills and Frameworks:</h4>
         <ul>
             <li>Node.js</li>
             <li>Express.js</li>

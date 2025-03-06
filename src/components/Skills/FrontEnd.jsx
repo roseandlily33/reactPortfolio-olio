@@ -2,7 +2,7 @@ import { EachSkill } from "./Skills.styles";
 const FrontEnd  = () => {
     return ( 
      <EachSkill>
-    <h4>Front End Skills and Frameworks:</h4>
+    <h4 style={{color: 'var(--darkBrown)'}}>Front End Skills and Frameworks:</h4>
     <ul>
         <li>HTML</li>
         <li>CSS</li>

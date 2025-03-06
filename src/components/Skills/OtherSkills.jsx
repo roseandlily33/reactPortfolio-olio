@@ -3,7 +3,7 @@ import { EachSkill } from "./Skills.styles";
 const OtherSkills = () => {
     return (
         <EachSkill>
-        <h4>Other Skills and Experience:</h4>
+        <h4 style={{color: 'var(--medBrown)'}}>Other Skills and Experience:</h4>
         <ul>
             <li>UX/UI Design</li>
             <li>SEO</li>

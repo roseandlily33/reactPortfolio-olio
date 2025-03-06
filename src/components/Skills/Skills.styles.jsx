@@ -9,22 +9,20 @@ export const EachSkill = styled.div`
     padding-top: 1rem;
     box-shadow: ${({theme}) => theme.colors.boxShadow};
     box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1);
-
-    /* border-right: 14px solid ${({theme}) => theme.colors.darkPink}; */
     border: 5px solid ${({theme}) => theme.colors.yellow};
-    /* border-top: 10px solid ${({theme}) => theme.colors.darkBrown}; */
-    /* border-bottom: 10px solid ${({theme}) => theme.colors.lightPink}; */
     border-radius: 25px;
     h4 {
         padding-bottom: 0.5rem;
+        letter-spacing: 0.1rem;
     }
     li{
         padding-bottom: 0.5rem;
         list-style-type: square;
     }
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1023px){
         flex-direction: column;
         width: 100%;
         height: auto;
     }
+
 `;

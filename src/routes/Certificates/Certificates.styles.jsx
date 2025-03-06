@@ -32,7 +32,7 @@ export const CertificateContainer = styled.main`
     font-weight: 550;
   }
   #certContainer {
-    width: 30%;
+    min-width: 450px;
     margin-block: 1rem;
   }
   #certContainer img {
@@ -42,11 +42,47 @@ export const CertificateContainer = styled.main`
     min-height: 250px;
     border-radius: 15px;
     height: 350px;
+    box-shadow: 2px 4px 2px 3px rgba(0,0,0,0.1);
   }
   #certContainer img:hover{
     transform: scale(1.05);
     filter: grayscale(100%);
     transition: all .5s;
-    
+  }
+  @media screen and (max-width: 1500px){
+    #certContainer {
+    min-width: 350px;
+    max-width: 350px;
+  }
+  #certContainer img {
+    min-width: 350px;
+    max-height: 250px;
+    max-width: 350px;
+    min-height: 250px;
+  }
+  }
+  @media screen and (max-width: 1024px){
+    #certContainer {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  #certContainer img {
+    min-width: 250px;
+    max-height: 150px;
+    max-width: 250px;
+    min-height: 150px;
+  }
+  }
+  @media screen and (max-width: 500px){
+    #certContainer {
+    min-width: 150px;
+    max-width: 150px;
+  }
+  #certContainer img {
+    min-width: 150px;
+    max-height: 100px;
+    max-width: 150px;
+    min-height: 100px;
+  }
   }
 `;
