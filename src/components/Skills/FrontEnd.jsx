@@ -7,10 +7,14 @@ const FrontEnd  = () => {
         <li>HTML</li>
         <li>CSS</li>
         <li>CSS Libraries: Bootstrap, Styled Components, Pure.css</li>
+        <li>Responsive Design</li>
         <li>Javascript</li>
         <li>API's</li>
         <li>React</li>
-        <li>Redux</li>
+        <li>Redux & Tanstack Query</li>
+        <li>JWT's</li>
+        <li>Paypal</li>
+        <li>Visuals: Image Compression, Pdfs</li>
     </ul>
     </EachSkill> );
 }

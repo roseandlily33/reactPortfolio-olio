@@ -9,7 +9,11 @@ const BackEnd = () => {
             <li>Express.js</li>
             <li>MySQL</li>
             <li>MongoDB & Mongoose</li>
+            <li>AWS Amazon</li>
             <li>GraphQL</li>
+            <li>Multer, bcrypt</li>
+            <li>xlsx files</li>
+            <li>Winston</li>
         </ul>
     </EachSkill>
     );

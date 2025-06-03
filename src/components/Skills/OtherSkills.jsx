@@ -8,6 +8,7 @@ const OtherSkills = () => {
             <li>UX/UI Design</li>
             <li>SEO</li>
             <li>Cyber Security</li>
+            <li>Cors</li>
             <li>Testing</li>
             <li>Performance</li>
             <li>Sessions & JWT</li>
@@ -18,6 +19,7 @@ const OtherSkills = () => {
             <li>Problem Solving</li>
             <li>Leadership Roles</li>
             <li>Accessibility</li>
+            <li>Emails: MJML, Handlebars, nodemailer, react-email, </li>
         </ul>
     </EachSkill>
       );
