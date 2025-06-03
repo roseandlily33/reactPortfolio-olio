@@ -18,7 +18,11 @@ const CaseStudies = () => {
       <EachCaseStudyContainer>
         {/* Add in the case studies here */}
         {caseStudies.map((study, index) => (
-          <div id="certContainer" key={index}>
+          <div
+            id="certContainer"
+            key={index}
+            
+          >
             <img
               src={study.src}
               alt={study.title}

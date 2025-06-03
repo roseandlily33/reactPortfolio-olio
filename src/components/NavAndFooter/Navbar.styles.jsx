@@ -19,6 +19,11 @@ export const NavbarOuter = styled.header`
   transform: translateY(0) rotateX(0deg);
   transform-origin: top;
   transition: transform 0.5s ease;
+  background-color: var(--lightCream);
+  background-image: radial-gradient(circle, rgba(240, 128, 160, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &.scrolled-up {
     transform: translateY(-100%) rotateX(-90deg); /* Flip up */

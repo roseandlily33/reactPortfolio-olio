@@ -3,14 +3,12 @@ import { AboutMeComponent } from "./AboutMe.styles";
 import SummaryComponent from "./Summary";
 import ImageAboutMe from "./ImageAboutMe";
 import ContactMe from "./Contact";
-import SkillsComponent from "../../components/Skills/Skills";
 
 const AboutMe = () => {
     return (
         <AboutMeComponent>
             <ImageAboutMe />
             <SummaryComponent />
-            <SkillsComponent />
             <ContactMe />
         </AboutMeComponent>
         

@@ -11,12 +11,9 @@ export const CertificateContainer = styled.main`
     justify-content: space-evenly;
     gap: 2rem;
     height: 100%;
-    /* border: 2px solid green; */
-    background: linear-gradient(
-      135deg,
-      var(--lightCream) 50%,
-      var(--lightGrey) 50%
-    );
+    padding-top: 3rem;
+    background-color: #F4EBEB;
+    /* border: 1px solid red; */
   }
   select {
     /* padding: 0.5rem; */
@@ -30,6 +27,9 @@ export const CertificateContainer = styled.main`
   #certContainer {
     min-width: 450px;
     margin-block: 1rem;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeIn 1s ease forwards;
   }
   #certContainer img {
     min-width: 450px;
@@ -46,6 +46,16 @@ export const CertificateContainer = styled.main`
     }
     50% {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 25px var(--darkPink);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
     }
   }
   #certContainer img:hover {

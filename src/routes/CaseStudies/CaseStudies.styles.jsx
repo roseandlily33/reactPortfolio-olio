@@ -6,15 +6,15 @@ export const EachCaseStudyContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* border: 2px solid orange; */
   gap: 2rem;
-  background-color: ${({ theme }) => theme.colors.lightGrey};
   height: 100%;
   padding: 2rem;
-  margin: 2rem auto;
-  background: linear-gradient(135deg, var(--lightCream) 50%, var(--lightGrey) 50%);
+  background-color: #F4EBEB;
+
+  /* background: linear-gradient(135deg, var(--lightCream) 50%, var(--lightGrey) 50%); */
 
   div {
     /* border: 1px solid red; */
@@ -99,13 +99,13 @@ export const EachCaseStudyContainer = styled.div`
 
 export const TopContainer = styled.div`
   background-color: var(--lightCream);
-  padding: 1rem;
-  margin: 2rem auto;
-  /* border: 5px solid; */
-  /* border-image: linear-gradient(45deg, var(--lightPink), var(--darkPink), var(--yellow)) 1; */
-  /* border-radius: 25px; */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23F38CA9' fill-opacity='0.1' d='M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,240C672,256,768,256,864,240C960,224,1056,192,1152,160C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem;
+  /* margin: 2rem auto; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  /* border: 1px solid red; */
   h2 {
     color: var(--darkPink);
     text-align: center;

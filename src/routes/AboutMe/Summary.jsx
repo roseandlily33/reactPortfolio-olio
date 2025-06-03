@@ -1,5 +1,4 @@
 import { AboutMeSection } from "./AboutMe.styles";
-import { Link } from "react-router-dom";
 import MyImage from "../../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg";
 const SummaryComponent = () => {
   return (
