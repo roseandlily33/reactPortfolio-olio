@@ -1,32 +1,36 @@
 import React from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
-
+import YodaPic from "../../images/projects/YODA.png";
+import { TopContainer, EachCaseStudyContainer } from "./CaseStudies.styles";
 const CaseStudies = () => {
   const caseStudies = [
     {
       title: "Yoda Safety Services",
       link: "/CaseStudies/YodaCaseStudy",
+      src: YodaPic,
     },
   ];
   return (
     <CertificateContainer>
-      <h2>Case Studies</h2>
-      {/* Add in the case studies here */}
-      {caseStudies.map((study, index) => (
-        <div
-          key={index}
-          style={{
-            border: "1px solid #ccc",
-            padding: "1rem",
-            margin: "1rem 0",
-          }}
-        >
-          <h4>{study.title}</h4>
-          <a href={study.link} style={{ color: "orange" }}>
-            Read More
-          </a>
-        </div>
-      ))}
+      <TopContainer>
+        <h2>Case Studies</h2>
+      </TopContainer>
+      <EachCaseStudyContainer>
+        {/* Add in the case studies here */}
+        {caseStudies.map((study, index) => (
+          <div id="certContainer" key={index}>
+            <img
+              src={study.src}
+              alt={study.title}
+              style={{ width: "100%", height: "auto" }}
+            />
+            <h4>{study.title}</h4>
+            <a href={study.link} style={{ color: "orange" }}>
+              Read More
+            </a>
+          </div>
+        ))}
+      </EachCaseStudyContainer>
     </CertificateContainer>
   );
 };

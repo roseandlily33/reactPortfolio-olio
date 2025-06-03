@@ -1,300 +1,343 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
-   /* --headerFont: 'Abril Fatface', serif;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* --headerFont: 'Abril Fatface', serif;
    --mainFont: 'Playfair', sans-serif; */
-   --titleFont: 'Pacifico', cursive;
-   --headerFont: 'Raleway', sans-serif;
-   --mainFont: 'Open Sans', sans-serif;
-   --black: #181713;
-   --darkBrown: #E43D12;
-   --medBrown: #FF7C15;
-   --lightBrown: #FF933D;
-   --lightestBrown: #FFAE6E;
-   --yellow: #FFB400;
-   --lightGrey: #EBE9E1;
-   --darkGrey: #323232;
-   --white: #F6F6F6;
-   --lightCream:#F6F5F2;
-   --medCream: #F3F2EE;
-   --darkCream: #E6E5E0;
-   --lightestPink: #F6A9BE;
-   --lightPink: #F38CA9;
-   --medPink: #F17496;
-   --darkPink: #ED4672;
-   --borderRadius: 25px;
-   --boxShadow: 12px 12px 19px 7px var(--lightGrey);
+  --titleFont: "Pacifico", cursive;
+  --headerFont: "Raleway", sans-serif;
+  --mainFont: "Open Sans", sans-serif;
+  --black: #181713;
+  --darkBrown: #e43d12;
+  --medBrown: #ff7c15;
+  --lightBrown: #ff933d;
+  --lightestBrown: #ffae6e;
+  --yellow: #ffb400;
+  --lightGrey: #ebe9e1;
+  --darkGrey: #323232;
+  --white: #f6f6f6;
+  --lightCream: #f6f5f2;
+  --medCream: #f3f2ee;
+  --darkCream: #e6e5e0;
+  --lightestPink: #f6a9be;
+  --lightPink: #f38ca9;
+  --medPink: #f17496;
+  --darkPink: #ed4672;
+  --borderRadius: 25px;
+  --boxShadow: 12px 12px 19px 7px var(--lightGrey);
 }
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-   background-color: var(--lightCream);
-   /* background-color: var(--darkCream); */
-   font-size: 16px;
-   font-weight: 300;
-   color: var(--darkGrey);
-   font-family: var(--mainFont);
+body {
+  background-color: var(--lightCream);
+  /* background-color: var(--darkCream); */
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--darkGrey);
+  font-family: var(--mainFont);
 }
-h1{
-   font-size: 2.986rem;
-   font-family: var(--titleFont);
-   font-weight: 400;
-   color: var(--darkBrown);
+h1 {
+  font-size: 2.986rem;
+  font-family: var(--titleFont);
+  font-weight: 400;
+  color: var(--darkBrown);
 }
-h2{
-   font-size: 2.488rem;
-   font-weight: 400;
-   text-transform: uppercase;
-   font-family: var(--headerFont);
+h2 {
+  font-size: 2.488rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--headerFont);
 }
-h3{
-   font-size: 2.074rem;
-   font-family: var(--headerFont);
-   font-weight: 400;
-   text-transform: uppercase;
-   letter-spacing: 0.1rem;
+h3 {
+  font-size: 2.074rem;
+  font-family: var(--headerFont);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
- h3::after {
-      display: block;
-      width: 100%;
-      content: '';
-      border-bottom: 5px solid var(--medBrown);
+h3::after {
+  display: block;
+  width: 100%;
+  content: "";
+  border-bottom: 5px solid var(--medBrown);
 }
-h4{
-   font-size: 1.728rem; 
-   font-family: var(--headerFont);
-   font-weight: 300;
+h4 {
+  font-size: 1.728rem;
+  font-family: var(--headerFont);
+  font-weight: 300;
 }
-h5,  label{
-   font-size: 1.44rem;
+h5,
+label {
+  font-size: 1.44rem;
 }
-h6, li, p{
-   font-size: 1.2rem;
+h6,
+li,
+p {
+  font-size: 1.2rem;
 }
 a {
-   text-decoration: none;
-   font-size: 1rem;
-   color: var(--white);
-   font-family: var(--headerFont);
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--white);
+  font-family: var(--headerFont);
 }
-
-
 
 /* For the active Navlink */
 .active {
   color: var(--darkBrown);
+  position: relative;
   border: 3px solid var(--darkPink);
-  /* background-color: var(--lightestPink); */
-  border-radius: 20px;
-  box-shadow: 2px 4px 2px 3px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  background: none;
+  overflow: hidden; /* Ensures the pseudo-elements stay within the border */
 }
-.active span {
-   color: var(--darkBrown);
+
+.active::before,
+.active::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: var(--lightPink);
+  width: 10px;
+  height: 10px;
+  animation: moveAround 4s infinite ease-in-out;
 }
-.active:hover {
-   border: 3px solid var(--medBrown);
+
+.active::before {
+  animation-delay: 0s; /* Start immediately */
+}
+
+.active::after {
+  animation-delay: 2s; /* Start halfway through the animation */
+}
+
+/* Keyframes for moving the dots around the border */
+@keyframes moveAround {
+  0% {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  25% {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  75% {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+  }
+  100% {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* Footer */
-footer{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer a:hover{
-   transform: scale(1.2);
+footer a:hover {
+  transform: scale(1.2);
 }
 
 /* Not Found/ 404 Page */
-.notFound{
-   padding: 5em;
-   text-align: center;
-   display: flex;
-   gap: 1em;
-   flex-direction: column;
-   font-size: var(--mainSize);
-   box-shadow: var(--boxShadow);
+.notFound {
+  padding: 5em;
+  text-align: center;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  font-size: var(--mainSize);
+  box-shadow: var(--boxShadow);
 }
 
 /* SMALLEST SCREENS */
-@media screen and (width <= 768px){
-   body{
-       font-size: 16px;
-       overflow-x: hidden;
-     }
-     /* 1.067 Minor Second with a 16px body */
-    
-     p{
-       font-size: 1rem;
-     }
-     span, .italicSpan{
-       font-size: 0.9rem;
+@media screen and (width <= 768px) {
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  /* 1.067 Minor Second with a 16px body */
 
-     }
-     a{
-       font-size: 1rem;
-       font-family: 'Noto_Sans', sans-serif;
-     }
-     main{
-       height: 100vh;
-     }
-     textarea{
-       resize: none;
-       height: 50px;
-       width: 150px;
-     }
-     label{
-       font-size: 1rem;
-     }
-     .thumbnail{
-       max-width: 200px;
-       min-width: 200px;
-       width: 200px;
-       max-height: 150px;
-       min-height: 150px;
-       height: auto;
-     }
-     .icon{
-       height: 30px;
-       width: 30px;
-     }
-     .iconMenu{
-       height: 35px;
-       width: 35px;
-     }
+  p {
+    font-size: 1rem;
+  }
+  span,
+  .italicSpan {
+    font-size: 0.9rem;
+  }
+  a {
+    font-size: 1rem;
+    font-family: "Noto_Sans", sans-serif;
+  }
+  main {
+    height: 100vh;
+  }
+  textarea {
+    resize: none;
+    height: 50px;
+    width: 150px;
+  }
+  label {
+    font-size: 1rem;
+  }
+  .thumbnail {
+    max-width: 200px;
+    min-width: 200px;
+    width: 200px;
+    max-height: 150px;
+    min-height: 150px;
+    height: auto;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  .iconMenu {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 /* Base font size for the entire document */
 html {
- font-size: 16px; /* 1rem = 16px */
+  font-size: 16px; /* 1rem = 16px */
 }
 
 /* Small Screens (Mobile) */
 @media screen and (min-width: 300px) and (max-width: 600px) {
- body {
-   overflow-x: hidden;
-   border: 1px solid red;
- }
- label {
-   font-size: 0.875rem; /* 14px */
- }
- button {
-   font-size: 1rem; /* 16px */
- }
- h1{
-   font-size: 1.3rem;
- }
- h2{
-   font-size: 1.2rem;
- }
- #welcome {
-  font-size: 3rem;
-  padding-left: 1rem;
- }
- h3{
-   font-size: 1.15rem;
- }
- h4{
-   font-size: 1.1rem;
- }
- h5{
-   font-size: 1rem;
- }
- h6{
-   font-size: 1rem;
- }
- p {
-   font-size: 1rem;
- }
- a {
-   font-size: 0.5rem;
- }
+  body {
+    overflow-x: hidden;
+    /* border: 1px solid red; */
+  }
+  label {
+    font-size: 0.875rem; /* 14px */
+  }
+  button {
+    font-size: 1rem; /* 16px */
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  #welcome {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 0.5rem;
+  }
 }
 
 /* Medium Screens (Tablet) */
 @media screen and (min-width: 601px) and (max-width: 1440px) {
- body {
-   font-size: 16px; /* 18px */
-   border: 1px solid blue;
- }
- p {
-   font-size: 1rem; /* 18px */
- }
- span {
-   font-size: 1rem;
- }
- label {
-   font-size: 1rem; /* 16px */
- }
- button {
-   font-size: 1.125rem; /* 18px */
- }
- h1{
-   font-size: 1.55rem;
- }
- h2{
-   font-size: 1.45rem;
- }
- h3{
-   font-size: 1.35rem;
- }
- h4{
-   font-size: 1.25rem;
- }
- h5{
-   font-size: 1.15rem;
- }
- h6{
-   font-size: 1.05rem;
- } 
- a {
-   font-size: 0.8rem;
- }
+  body {
+    font-size: 16px; /* 18px */
+    /* border: 1px solid blue; */
+  }
+  p {
+    font-size: 1rem; /* 18px */
+  }
+  span {
+    font-size: 1rem;
+  }
+  label {
+    font-size: 1rem; /* 16px */
+  }
+  button {
+    font-size: 1.125rem; /* 18px */
+  }
+  h1 {
+    font-size: 1.55rem;
+  }
+  h2 {
+    font-size: 1.45rem;
+  }
+  h3 {
+    font-size: 1.35rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+  h6 {
+    font-size: 1.05rem;
+  }
+  a {
+    font-size: 0.8rem;
+  }
 }
 
 /* Large Screens (Desktop) */
 @media screen and (min-width: 1440px) {
- body {
-   border: 1px solid purple;
- }
- h1 {
-   font-size: 2.5rem; /* 50px */
- }
- h2 {
-   font-size: 2.25rem; /* 45px */
-   
- }
- h3 {
-   font-size: 2rem; /* 40px */
- }
- h4 {
-   font-size: 1.75rem; /* 35px */
- }
- h5 {
-   font-size: 1.625rem; /* 32.5px */
- }
- h6 {
-   font-size: 1.5rem; /* 30px */
- }
- p {
-   font-size: 1.25rem; /* 20px */
- }
- label {
-   font-size: 1.125rem; /* 18px */
- }
- button {
-   font-size: 1.25rem; /* 20px */
- } 
- a {
-   font-size: 1rem;
- }
- /* h1{
+  body {
+    /* border: 1px solid purple; */
+  }
+  h1 {
+    font-size: 2.5rem; /* 50px */
+  }
+  h2 {
+    font-size: 2.25rem; /* 45px */
+  }
+  h3 {
+    font-size: 2rem; /* 40px */
+  }
+  h4 {
+    font-size: 1.75rem; /* 35px */
+  }
+  h5 {
+    font-size: 1.625rem; /* 32.5px */
+  }
+  h6 {
+    font-size: 1.5rem; /* 30px */
+  }
+  p {
+    font-size: 1.25rem; /* 20px */
+  }
+  label {
+    font-size: 1.125rem; /* 18px */
+  }
+  button {
+    font-size: 1.25rem; /* 20px */
+  }
+  a {
+    font-size: 1rem;
+  }
+  /* h1{
    font-size: 1.476rem;
  }
  h2{

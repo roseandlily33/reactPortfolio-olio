@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CertificateContainer } from "../../Certificates/Certificates.styles";
 import { YodaCaseStudyInfoData } from "./YodaCaseStudyInfoData";
 import TabButton from "../../../components/Buttons/TabButton.component";
+import { EachCaseStudyContainer, TopContainer } from "../CaseStudies.styles";
 
 const YodaCaseStudy = () => {
   const [selectedTab, setSelectedTab] = useState(0); // Track the selected tab
@@ -14,16 +15,21 @@ const YodaCaseStudy = () => {
 
   return (
     <CertificateContainer>
-      <h2>Case Studies</h2>
-      {/* Tabs Navigation */}
-      <div className="tabs">
-        {YodaCaseStudyInfoData.map((caseStudy) => (
-          <TabButton span={caseStudy.tabName} onClick={handleTabClick} />
-        ))}
-      </div>
+      <TopContainer>
+        <h2>Case Studies</h2>
+        {/* Tabs Navigation */}
+        <div className="tabs">
+          {YodaCaseStudyInfoData.map((caseStudy, index) => (
+            <TabButton
+              span={caseStudy.tabName}
+              onClick={() => handleTabClick(index)}
+            />
+          ))}
+        </div>
+      </TopContainer>
 
       {/* Case Study Content */}
-      <section>
+      <EachCaseStudyContainer>
         <div>
           <h3>Overview</h3>
           <p>{selectedCaseStudy.overview}</p>
@@ -58,7 +64,7 @@ const YodaCaseStudy = () => {
                         </>
                     )}
                 </p> */}
-      </section>
+      </EachCaseStudyContainer>
     </CertificateContainer>
   );
 };

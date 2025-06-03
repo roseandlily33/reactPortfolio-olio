@@ -1,25 +1,33 @@
+// Also include:
+// 1. key metrics and results
+// 2. challenges faced during development
+// 3. lessons learned
+// 4. screenshos
+// 5. timeline 
+// 6. tools and frameworks used
+// 7. Accessibility features
 export const YodaCaseStudyInfoData = [
-  {
-    title: "Yoda Safety Services Case Study",
-    overview:
-      "Yoda Safety Services is a company that provides safety services to various industries. The goal of this case study is to showcase the development of a web application that helps Yoda Safety Services manage their operations more efficiently.",
-    problem:
-      "Yoda Safety Services faced challenges in managing their operations, including scheduling, reporting, and communication with clients. They needed a solution that would streamline these processes and improve overall efficiency.",
-    solution:
-      "The solution was to develop a web application that allows Yoda Safety Services to manage their operations in one place. The application includes features for scheduling, reporting, and client communication.",
-    technologiesUsed:
-      "The project utilized React for the front-end, Node.js and Express.js for the back-end, and MongoDB for the database.",
-    conclusion:
-      "The web application has significantly improved the efficiency of Yoda Safety Services' operations, allowing them to focus more on providing quality service to their clients.",
-    futureImprovements:
-      "Future improvements could include adding more features based on user feedback and integrating with other tools used by Yoda Safety Services.",
-    links: {
-      website: "https://yodasafetyservices.com",
-      github: "",
-    },
-    tabName: "Overall Challenge",
-    image: "https://example.com/yoda-safety-services-image.jpg",
-  },
+//   {
+//     title: "Yoda Safety Services Case Study",
+//     overview:
+//       "Yoda Safety Services is a company that provides safety services to various industries. The goal of this case study is to showcase the development of a web application that helps Yoda Safety Services manage their operations more efficiently.",
+//     problem:
+//       "Yoda Safety Services faced challenges in managing their operations, including scheduling, reporting, and communication with clients. They needed a solution that would streamline these processes and improve overall efficiency.",
+//     solution:
+//       "The solution was to develop a web application that allows Yoda Safety Services to manage their operations in one place. The application includes features for scheduling, reporting, and client communication.",
+//     technologiesUsed:
+//       "The project utilized React for the front-end, Node.js and Express.js for the back-end, and MongoDB for the database.",
+//     conclusion:
+//       "The web application has significantly improved the efficiency of Yoda Safety Services' operations, allowing them to focus more on providing quality service to their clients.",
+//     futureImprovements:
+//       "Future improvements could include adding more features based on user feedback and integrating with other tools used by Yoda Safety Services.",
+//     links: {
+//       website: "https://yodasafetyservices.com",
+//       github: "",
+//     },
+//     tabName: "Overall Challenge",
+//     image: "https://example.com/yoda-safety-services-image.jpg",
+//   },
   // payment integration
   {
     title: "Payment Integration Case Study",

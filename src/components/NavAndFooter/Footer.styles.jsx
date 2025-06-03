@@ -8,11 +8,11 @@ export const FooterComponent = styled.footer`
    padding-left: 1rem;
    margin-inline: 1rem;
    margin-top: 2rem;
-   padding-top: 1rem;
-   background-color: ${({theme}) => theme.colors.lightGrey};
-   border-top-left-radius: 25px;
-   border-top-right-radius: 25px;
-   box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1);
+   /* padding-top: 1rem; */
+   background-color: var(--lightCream);
+   /* border-top-left-radius: 25px; */
+   /* border-top-right-radius: 25px; */
+   /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
    @media screen and (max-width: 768px){
     margin-inline: 0.5rem;
    }
