@@ -16,13 +16,14 @@ export const CertificateContainer = styled.main`
     /* border: 1px solid red; */
   }
   select {
-    /* padding: 0.5rem; */
+    padding: 0.5rem;
     border-radius: 15px;
     border: 3px solid ${({ theme }) => theme.colors.medBrown};
-    background-color: ${({ theme }) => theme.colors.medCream};
+    background-color: #f7b064;
     box-shadow: ${({ theme }) => theme.boxShadow};
     text-transform: uppercase;
     font-weight: 550;
+
   }
   #certContainer {
     min-width: 450px;

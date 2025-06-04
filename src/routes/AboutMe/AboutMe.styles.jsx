@@ -24,10 +24,10 @@ export const AboutMePicture = styled.section`
     text-transform: uppercase;
     background-image: linear-gradient(
     -225deg,
-    ${({theme}) => theme.colors.lightPink} 0%,
-    ${({theme}) => theme.colors.darkPink} 29%,
-    ${({theme}) => theme.colors.medBrown} 67%,
-    ${({theme}) => theme.colors.yellow} 100%
+    ${({ theme }) => theme.colors.lightPink} 0%,
+    ${({ theme }) => theme.colors.darkPink} 29%,
+    ${({ theme }) => theme.colors.medBrown} 67%,
+    ${({ theme }) => theme.colors.yellow} 100%
     );
   background-size: auto auto;
   background-clip: border-box;
@@ -51,25 +51,25 @@ export const AboutMePicture = styled.section`
 
 `;
 //This is the part that has my pic and info about me
-export const AboutMeSection  = styled.section`
-    border-radius: 25px;
-    background-color: ${({theme}) => theme.colors.lightGrey};
+export const AboutMeSection = styled.section`
+    /* border-radius: 25px; */
+    /* background-color: ${({ theme }) => theme.colors.lightGrey}; */
     padding: 1rem;
     display: flex;
     gap: 2rem;
-    box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
 
     h2{
-        color: ${({theme}) => theme.colors.darkPink};
-        border-bottom: 5px solid ${({theme}) => theme.colors.darkPink};
+        color: ${({ theme }) => theme.colors.darkPink};
+        border-bottom: 5px solid ${({ theme }) => theme.colors.darkPink};
         margin-bottom: 1rem;
     }
     a{
-        color: ${({theme}) => theme.colors.darkPink};
+        color: ${({ theme }) => theme.colors.darkPink};
         font-weight: bold;
     }
     a:hover{
-        color: ${({theme}) => theme.colors.yellow};
+        color: ${({ theme }) => theme.colors.yellow};
     }
     .left{
         width: 50%;
@@ -80,7 +80,7 @@ export const AboutMeSection  = styled.section`
         height: 100%;
         width: 80%;
         border-radius: 25px;
-        border: 10px solid ${({theme}) => theme.colors.lightGrey};
+        border: 10px solid ${({ theme }) => theme.colors.lightGrey};
     }
     .right{
         width: 50%;
@@ -98,7 +98,7 @@ export const AboutMeSection  = styled.section`
         width: 100%;
     }
     #downloadBtn a {
-        color: ${({theme}) => theme.colors.lightGrey};
+        color: ${({ theme }) => theme.colors.lightGrey};
     }
     @media screen and (max-width: 768px){
     flex-direction: column-reverse;
@@ -127,62 +127,95 @@ export const AboutMeSkills = styled.section`
 
 // Contact me section
 export const ContactMeSection = styled.section`
+  position: relative; /* Allows bubbles to float within the section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  overflow: hidden; /* Ensures bubbles stay within the section */
+
+  h3 {
+    color: ${({ theme }) => theme.colors.darkPink};
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease; /* Adds a smooth transition to the text color */
+  }
+
+  form {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    border-radius: 25px;
-    gap: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    background-color: ${({theme}) => theme.colors.lightGrey};
-    box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+  }
 
-    h3 {
-        margin-inline: 2rem;
-        color: ${({theme}) => theme.colors.darkPink};
-        letter-spacing: 0.2rem;
+  input,
+  textarea {
+    border: 2px solid ${({ theme }) => theme.colors.medBrown};
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease; /* Adds a smooth shadow transition */
+    &:focus {
+      box-shadow: 0 0 10px ${({ theme }) => theme.colors.darkPink};
     }
-    h3::after {
-        display: none;
-    }
-   // border: 10px solid ${({theme}) => theme.colors.lightestBrown};
-    form{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 2rem;
-        border-radius: 25px;
-        width: 95%;
-        margin-inline: 2rem;
+  }
 
-        /* border: 10px solid ${({theme}) => theme.colors.lightBrown}; */
-    }
-    label{
-        color: ${({theme}) => theme.colors.medBrown};
-        font-weight: 400;
-    }
-    input, textarea{
-        border: 3px solid  ${({theme}) => theme.colors.darkPink};
-        border-radius: 25px;
-        padding: 1rem;
-    }
-    @media screen and (max-width: 768px){
-    gap: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-    form{
-        gap: 0.5rem;
-        padding: 1rem;
-        margin-inline: 1rem;
-    }
-    input, textarea {
-        padding: 0.5rem;
-        width: 100%;
-    }
-    }
+  button {
+    background-color: ${({ theme }) => theme.colors.darkPink};
+    color: ${({ theme }) => theme.colors.lightCream};
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.yellow};
+      transform: scale(1.05); /* Adds a hover scaling effect */
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: ${({ theme }) => theme.colors.lightPink};
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: float 6s infinite ease-in-out;
+  }
+
+  &::before {
+    top: -30px;
+    left: 20%;
+    animation-delay: 0s;
+  }
+
+  &::after {
+    bottom: -50px;
+    right: 20%;
+    animation-delay: 3s;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-40px) scale(1.5);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
 `;
 
 

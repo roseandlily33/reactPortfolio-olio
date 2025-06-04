@@ -11,6 +11,7 @@ export const PrimaryButtonContainer = styled.button`
   color: var(--white);
   border: none;
   cursor: pointer;
+  border: 2px solid red;
 
   a {
     color: var(--white);

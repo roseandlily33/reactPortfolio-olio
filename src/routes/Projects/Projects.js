@@ -1,6 +1,7 @@
 import { projectListFrontEnd } from "./projectsFE";
 import { projectListGroups } from "./projectsGROUP";
 import { TopContainer } from "../CaseStudies/CaseStudies.styles";
+import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 import { projectListMERN } from "./projectsMERN";
 import { projectListBackEnd } from "./projectsBE";
 import { projectListFrontEndMentor } from "./projectsFEM";
@@ -65,7 +66,7 @@ const Projects = () => {
           contentLabel="Certificate Modal"
           style={{
             content: {
-              top: "50%",
+              top: "55%",
               left: "50%",
               right: "auto",
               bottom: "auto",
@@ -80,13 +81,13 @@ const Projects = () => {
             },
           }}
         >
-          <button onClick={closeModal}>Close</button>
+          <PrimaryButton span="close" onClick={closeModal}/>
           <img
-            src={selectedProject.img}
-            alt={selectedProject.alt}
+            src={selectedProject?.img}
+            alt={selectedProject?.alt}
             style={{ width: "100%", padding: "2rem" }}
           />
-          <h3 style={{ color: "var(--darkPink)" }}>{selectedProject.title}</h3>
+          <h3 style={{ color: "var(--darkPink)" }}>{selectedProject?.title}</h3>
           <h5 className="bold" style={{ marginTop: "1rem" }}>
             Status:{" "}
             {selectedProject?.status === true ? (

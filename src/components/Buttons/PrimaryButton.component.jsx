@@ -2,7 +2,7 @@ import React from "react";
 import { PrimaryButtonContainer } from "./PrimaryButton.styles";
 const PrimaryButton = ({ onClick, span }) => {
   return (
-    <PrimaryButtonContainer onClick={onClick}>{span}</PrimaryButtonContainer>
+    <PrimaryButtonContainer onClick={() => onClick()}>{span}</PrimaryButtonContainer>
   );
 };
 

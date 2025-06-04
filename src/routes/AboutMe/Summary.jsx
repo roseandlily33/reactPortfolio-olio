@@ -1,6 +1,14 @@
 import { AboutMeSection } from "./AboutMe.styles";
 import MyImage from "../../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg";
+import PrimaryButton from '../../components/Buttons/PrimaryButton.component';
 const SummaryComponent = () => {
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/path/to/VictoriaBenoitResume.pdf"; // Replace with the actual path to your resume file
+    link.download = "VictoriaBenoitResume.pdf"; // The name of the file when downloaded
+    link.click();
+  };
+
   return (
     <AboutMeSection>
       <div className="left">
@@ -38,15 +46,7 @@ const SummaryComponent = () => {
             technologies.
           </div>
           <div>
-            <button id="downloadBtn">
-              <a
-                className="button-content"
-                href="VictoriaBenoitResume.pdf"
-                download="VictoriaBenoitResume.pdf"
-              >
-                Resume
-              </a>
-            </button>
+            <PrimaryButton span="resume" onClick={downloadResume} />
           </div>
         </section>
       </div>

@@ -2,6 +2,7 @@ import { CertificateContainer } from "./Certificates.styles";
 import { CertList } from "./Certs";
 import { useState } from "react";
 import Modal from "react-modal";
+import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 import { TopContainer } from "../CaseStudies/CaseStudies.styles";
 
 const Certificates = () => {
@@ -66,7 +67,7 @@ const Certificates = () => {
           contentLabel="Certificate Modal"
           style={{
             content: {
-              top: "50%",
+              top: "55%",
               left: "50%",
               right: "auto",
               bottom: "auto",
@@ -81,9 +82,8 @@ const Certificates = () => {
             },
           }}
         >
-          <button style={{ marginBottom: "1rem" }} onClick={closeModal}>
-            Close
-          </button>
+          <PrimaryButton onClick={closeModal} span="Close" />
+          
           <br />
           <img
             src={selectedCert.photo}
