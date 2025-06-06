@@ -1,6 +1,7 @@
 import React from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import YodaPic from "../../images/projects/YODA.png";
+import Logo from './bloom_and_berry/bloom_images/Logo.png';
 import { TopContainer, EachCaseStudyContainer } from "./CaseStudies.styles";
 const CaseStudies = () => {
   const caseStudies = [
@@ -9,6 +10,11 @@ const CaseStudies = () => {
       link: "/CaseStudies/YodaCaseStudy",
       src: YodaPic,
     },
+    {
+      title: "Berry & Bloom  ",
+      link: "/CaseStudies/BerryAndBloom",
+      src: Logo,
+    }
   ];
   return (
     <CertificateContainer>
