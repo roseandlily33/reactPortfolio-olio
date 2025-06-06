@@ -27,6 +27,8 @@ import Secure from "../../images/certificates/codecademy/CC_SECURE.png";
 import SQLinj from "../../images/certificates/codecademy/CC_SQLINJ.png";
 import WebBasics from "../../images/certificates/codecademy/CC_WEB_BASICS.png";
 import CrossSite from "../../images/certificates/codecademy/CC_XSS.png";
+// import GenerativeAi from "../../images/certificates/codecademy/CC_GENERATIVE_AI.png";
+// import IntroAI from "../../images/certificates/codecademy/CC_INTRO_AI.png";
 // Ztm Certs
 import zcss from "../../images/certificates/ztm/ZTM_CSS.png";
 import zsecurity from "../../images/certificates/ztm/ZTM_Cybersecurity.png";
@@ -73,7 +75,35 @@ import uxcomponents2 from "../../images/certificates/uxui/UX_UI_Components.png";
 import uxwireframing from "../../images/certificates/uxui/UX_Wireframing.png";
 import uxwriting from "../../images/certificates/uxui/UX_Writing.png";
 
+// Other
+import IT_PRO from "../../images/certificates/other/IT_PRO.jpeg";
+import UNB from "../../images/certificates/other/UNB.jpeg";
+
 export const CertList = [
+  {
+    id: 1001,
+    photo: IT_PRO,
+    title: "IT Professional",
+    provider: "Center for Distance Education",
+    date: "2021",
+    tags: ["Tecnical Support", "Networking", "Security"],
+  },
+  {
+    id: 1002,
+    photo: UNB,
+    title: "UNB Coding Boot Camp",
+    provider: "University of New Brunswick",
+    date: "2023",
+    tags: ["Front End", "Back End", "HTML", "CSS", "Javascript"],
+  },
+  {
+    id: 1003,
+    photo: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+    title: "Certified Safety Officer",
+    provider: "Yoda Safety Services Inc.",
+    date: "2025",
+    tags: ["Safety"],
+  },
   {
     id: 0,
     photo: FSCert,
@@ -213,7 +243,7 @@ export const CertList = [
     photo: FEandBE,
     title: "Connecting Front End & Back End",
     provider: "Codecademy",
-    date: "october 28, 2024",
+    date: "October 28, 2024",
     tags: ["Front End", "Back End"],
   },
   {

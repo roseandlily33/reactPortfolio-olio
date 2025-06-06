@@ -36,7 +36,7 @@ const Navbar = () => {
           About Me
         </NavLink>
         <NavLink to="/Projects" style={styles.navLink}>
-          Portfolio
+          Projects
         </NavLink>
         <NavLink to="/Skills" style={styles.navLink}>
           Skills

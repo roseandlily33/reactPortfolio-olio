@@ -7,71 +7,51 @@
 // 6. tools and frameworks used
 // 7. Accessibility features
 export const YodaCaseStudyInfoData = [
-//   {
-//     title: "Yoda Safety Services Case Study",
-//     overview:
-//       "Yoda Safety Services is a company that provides safety services to various industries. The goal of this case study is to showcase the development of a web application that helps Yoda Safety Services manage their operations more efficiently.",
-//     problem:
-//       "Yoda Safety Services faced challenges in managing their operations, including scheduling, reporting, and communication with clients. They needed a solution that would streamline these processes and improve overall efficiency.",
-//     solution:
-//       "The solution was to develop a web application that allows Yoda Safety Services to manage their operations in one place. The application includes features for scheduling, reporting, and client communication.",
-//     technologiesUsed:
-//       "The project utilized React for the front-end, Node.js and Express.js for the back-end, and MongoDB for the database.",
-//     conclusion:
-//       "The web application has significantly improved the efficiency of Yoda Safety Services' operations, allowing them to focus more on providing quality service to their clients.",
-//     futureImprovements:
-//       "Future improvements could include adding more features based on user feedback and integrating with other tools used by Yoda Safety Services.",
-//     links: {
-//       website: "https://yodasafetyservices.com",
-//       github: "",
-//     },
-//     tabName: "Overall Challenge",
-//     image: "https://example.com/yoda-safety-services-image.jpg",
-//   },
   // payment integration
   {
     title: "Payment Integration Case Study",
     overview:
-      "This case study focuses on integrating a payment system into a web application to facilitate secure transactions.",
+      "This case study focuses on integrating a payment system into Yoda Safety Services to facilitate secure transactions in order for users and companies to purchase courses. The user needed to be able to purchase a variety of courses for themselves, and their employer needed to be able to purcahse courses for the employees. Which ended up being a serperate page for both types of users, including seperate backend routes. Users are able to see their purchased courses within their profile, and companies are able to see the courses purchased for their employees within their profile. They have immediate access to the course, and can start learning right away. They will recieve a payment confirmation, and once the certificate is expiring they will recieve and email notification",
     problem:
-      "The application needed a reliable and secure way to handle payments, ensuring user data protection and compliance with financial regulations.",
+      "The application needed a reliable and secure way to handle payments, ensuring user data protection and compliance with financial regulations. As well as a way for users to purchase courses, and for companies to purchase courses for their employees.",
     solution:
-      "The solution involved integrating a payment gateway that supports various payment methods, including credit cards and digital wallets.",
+      "The solution involved integrating paypal to accept payments, providing a easy and secure checkout process for users.",
     technologiesUsed:
-      "Technologies used include Stripe for payment processing, React for the front-end, and Node.js for the back-end.",
+      "Technologies used is Paypal, may implement stripe in the future.",
     conclusion:
-      "The integration has enabled seamless transactions, enhancing user experience and trust in the application.",
+      "The integration has enabled transactions allowing users to purchase courses directly through the application, enhancing user experience and increasing revenue for Yoda Safety Services.",
+    keyMetrics: "Increased course sales by 10% within the first month of integration. (Key note: Yoda Safety Services is a new company)",
     futureImprovements:
-      "Future improvements could include adding support for more payment methods and enhancing security features.",
+      "Future improvements will include adding more methods of payment, such as Stripe.",
     links: {
-      website: "https://example.com/payment-integration",
+      website: "https://yodasafetyservices.com",
       github: "",
     },
     tabName: "Payment",
     image: "https://example.com/payment-integration-image.jpg",
   },
   // user authentication
-  {
-    title: "User Authentication Case Study",
-    overview:
-      "This case study explores the implementation of a user authentication system in a web application to ensure secure access.",
-    problem:
-      "The application required a robust authentication system to protect user data and restrict access to authorized users only.",
-    solution:
-      "The solution involved implementing JWT (JSON Web Tokens) for secure user authentication and session management.",
-    technologiesUsed:
-      "Technologies used include Node.js for the back-end, Express.js for routing, and MongoDB for user data storage.",
-    conclusion:
-      "The authentication system has successfully secured user access, providing peace of mind regarding data protection.",
-    futureImprovements:
-      "Future improvements could include multi-factor authentication and enhanced password policies.",
-    links: {
-      website: "https://example.com/user-authentication",
-      github: "",
-    },
-    tabName: "Authentication",
-    image: "https://example.com/user-authentication-image.jpg",
-  },
+  // {
+  //   title: "User Authentication Case Study",
+  //   overview:
+  //     "This case study explores the implementation of a user authentication system in a web application to ensure secure access.",
+  //   problem:
+  //     "The application required a robust authentication system to protect user data and restrict access to authorized users only.",
+  //   solution:
+  //     "The solution involved implementing JWT (JSON Web Tokens) for secure user authentication and session management.",
+  //   technologiesUsed:
+  //     "Technologies used include Node.js for the back-end, Express.js for routing, and MongoDB for user data storage.",
+  //   conclusion:
+  //     "The authentication system has successfully secured user access, providing peace of mind regarding data protection.",
+  //   futureImprovements:
+  //     "Future improvements could include multi-factor authentication and enhanced password policies.",
+  //   links: {
+  //     website: "https://example.com/user-authentication",
+  //     github: "",
+  //   },
+  //   tabName: "Authentication",
+  //   image: "https://example.com/user-authentication-image.jpg",
+  // },
   // user profile management
   {
     title: "User Profile Management Case Study",
