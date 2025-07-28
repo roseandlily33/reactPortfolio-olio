@@ -110,7 +110,7 @@ const SkillsPage = () => {
         <h2>Skills</h2>
 
         <div className="tabs">
-          {Object.keys(skills).map((category) => (
+          {Object.keys(skills)?.map((category) => (
             <TabButton
               key={category}
               span={category}
@@ -123,17 +123,17 @@ const SkillsPage = () => {
       <EachCaseStudyContainer>
         <StarLegend />
         <SkillList>
-          {skills[activeTab].map((skill, index) => (
+          {skills[activeTab]?.map((skill, index) => (
             <SkillItem key={index}>
               <SkillInfo>
                 <p className="skill-icon">
-                  {skill.icon}
-                  <span className="skill-name">{skill.name}</span>
+                  {skill?.icon}
+                  <span className="skill-name">{skill?.name}</span>
                 </p>
               </SkillInfo>
               <SkillRating>
-                {[...Array(3)].map((_, i) =>
-                  i < skill.rating ? <FaStar key={i} /> : <FaRegStar key={i} />
+                {[...Array(3)]?.map((_, i) =>
+                  i < skill?.rating ? <FaStar key={i} /> : <FaRegStar key={i} />
                 )}
               </SkillRating>
             </SkillItem>

@@ -7,6 +7,7 @@ import Alg from "../../images/certificates/codecademy/CC_ALG.png";
 import Defending from "../../images/certificates/codecademy/CC_DEFENDING.png";
 import DesigningDB from "../../images/certificates/codecademy/CC_DESIGN_DB.png";
 import DesignCC from "../../images/certificates/codecademy/CC_DESIGN.png";
+import DesignPath from "../../images/certificates/codecademy/CC_Design_Path.png";
 import Devops from "../../images/certificates/codecademy/CC_DEVOPS.png";
 import Express from "../../images/certificates/codecademy/CC_EXPRESS.png";
 import FEandBE from "../../images/certificates/codecademy/CC_FE_BE.png";
@@ -86,7 +87,8 @@ export const CertList = [
     title: "IT Professional",
     provider: "Center for Distance Education",
     date: "2021",
-    tags: ["Tecnical Support", "Networking", "Security"],
+    important: true,
+    tags: ["Technical Support", "Networking", "Security"],
   },
   {
     id: 1002,
@@ -94,22 +96,25 @@ export const CertList = [
     title: "UNB Coding Boot Camp",
     provider: "University of New Brunswick",
     date: "2023",
+    important: true,
     tags: ["Front End", "Back End", "HTML", "CSS", "Javascript"],
   },
-  {
-    id: 1003,
-    photo: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
-    title: "Certified Safety Officer",
-    provider: "Yoda Safety Services Inc.",
-    date: "2025",
-    tags: ["Safety"],
-  },
+  // {
+  //   id: 1003,
+  //   photo: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+  //   title: "Certified Safety Officer",
+  //   provider: "Yoda Safety Services Inc.",
+  //   date: "2025",
+  //   important: true,
+  //   tags: ["Safety"],
+  // },
   {
     id: 0,
     photo: FSCert,
     title: "Full Stack Engineer",
     provider: "Codecademy",
     date: "June 2, 2025",
+    important: true,
     tags: [
       "Front End",
       "Back End",
@@ -127,6 +132,7 @@ export const CertList = [
     title: "Front End Engineer",
     provider: "Codecademy",
     date: "November 14, 2024",
+    important: true,
     tags: ["Front End", "HTML", "CSS", "Javascript"],
   },
   {
@@ -135,11 +141,13 @@ export const CertList = [
     title: "Back End Engineer",
     provider: "Codecademy",
     date: "March 3, 2025",
+    important: true,
     tags: ["Back End", "Node", "Express", "SQL"],
   },
   {
     id: 110,
     photo: zjtos,
+    important: true,
     title: "Junior to Senior",
     provider: "Zero To Mastery",
     date: "June 8, 2024",
@@ -159,6 +167,7 @@ export const CertList = [
     photo: zwebDev,
     title: "Web Development",
     provider: "Zero To Mastry",
+    important: true,
     date: "June 8, 2024",
     tags: [
       "Front End",
@@ -170,6 +179,15 @@ export const CertList = [
       "SQL",
       "CSS",
     ],
+  },
+  {
+    if: 45246,
+    photo: DesignPath,
+    title: "UX Designer Career Path",
+    provider: "Codecademy",
+    date: "July 28, 2025",
+    important: true,
+    tags: ["Design (UX/UI)"],
   },
   {
     id: 3,
@@ -396,6 +414,7 @@ export const CertList = [
     title: "Complete Web & Mobile Designer",
     provider: "Zero To Mastery",
     date: "December 1, 2023",
+    important: true,
     tags: ["Design (UX/UI)"],
   },
   {
@@ -443,6 +462,7 @@ export const CertList = [
     photo: zseo,
     title: "Search Engine Optimization",
     provider: "Zero To Mastery",
+    important: true,
     date: "January 1, 2024",
     tags: ["SEO"],
   },

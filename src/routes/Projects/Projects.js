@@ -10,10 +10,28 @@ import { useState } from "react";
 import Modal from "react-modal";
 import GithubIcon from "../../images/icons8-github-bubbles/icons8-github-50.png";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
+import TabButton from "../../components/Buttons/TabButton.component";
+
+const tabOptions = [
+  { key: "mern", label: "Main MERN Applications" },
+  {
+    key: "frontend",
+    label: "Front End Projects (Coursework & Side Projects)",
+  },
+  {
+    key: "backend",
+    label: "Back End Projects (Coursework & Side Projects)",
+  },
+  {
+    key: "mentor",
+    label: "Frontend Mentor Challenges",
+  },
+];
 
 const Projects = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeTab, setActiveTab] = useState("mern");
 
   const openModal = (cert) => {
     setSelectedProject(cert);
@@ -25,40 +43,44 @@ const Projects = () => {
     setSelectedProject(null);
   };
 
+  let projectList;
+  switch (activeTab) {
+    case "mern":
+      projectList = projectListMERN;
+      break;
+    case "frontend":
+      projectList = projectListFrontEnd;
+      break;
+    case "backend":
+      projectList = projectListBackEnd;
+      break;
+    case "mentor":
+      projectList = projectListFrontEndMentor;
+      break;
+    default:
+      projectList = [];
+  }
+
   return (
     <>
-      {/* <ProjectComponentContainer> */}
       <CertificateContainer>
         <TopContainer>
           <h2>Projects</h2>
+          <div className="tabs">
+            {tabOptions.map((tab) => (
+              <TabButton
+                key={tab.key}
+                span={tab.label}
+                onClick={() => setActiveTab(tab.key)}
+                isActive={activeTab === tab.key}
+              />
+            ))}
+          </div>
         </TopContainer>
-        {/* <select onChange={tagChange} value={selectedTag}>
-            <option value="">All Tags</option>
-            {filteredTags.map((tag, index) => {
-                return (
-                    <option key={index} value={tag}>{tag}</option>
-                )
-            }
-            )}
-        </select> */}
         <section>
-          <SingleProject projectList={projectListMERN} openModal={openModal} />
-          <SingleProject
-            projectList={projectListFrontEnd}
-            openModal={openModal}
-          />
-          <SingleProject
-            projectList={projectListBackEnd}
-            openModal={openModal}
-          />
-          {/* <SingleProject projectList={projectListGroups} openModal={openModal}/> */}
-          <SingleProject
-            projectList={projectListFrontEndMentor}
-            openModal={openModal}
-          />
+          <SingleProject projectList={projectList} openModal={openModal} />
         </section>
       </CertificateContainer>
-      {/* </ProjectComponentContainer > */}
       {selectedProject && (
         <Modal
           isOpen={modalIsOpen}
@@ -81,7 +103,7 @@ const Projects = () => {
             },
           }}
         >
-          <PrimaryButton span="close" onClick={closeModal}/>
+          <PrimaryButton span="close" onClick={closeModal} />
           <img
             src={selectedProject?.img}
             alt={selectedProject?.alt}
@@ -97,9 +119,9 @@ const Projects = () => {
             )}
           </h5>
           <h6>{selectedProject?.type}</h6>
-          <p style={{ marginTop: "1rem" }}>{selectedProject.description}</p>
+          <p style={{ marginTop: "1rem" }}>{selectedProject?.description}</p>
           <p style={{ marginTop: "1rem" }}>
-            Technologies: {selectedProject?.technologies.map((t) => t + ", ")}{" "}
+            Technologies: {selectedProject?.technologies?.map((t) => t + ", ")}{" "}
           </p>
           <div
             style={{

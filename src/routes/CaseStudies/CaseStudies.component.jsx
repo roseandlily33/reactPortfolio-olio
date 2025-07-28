@@ -23,19 +23,19 @@ const CaseStudies = () => {
       </TopContainer>
       <EachCaseStudyContainer>
         {/* Add in the case studies here */}
-        {caseStudies.map((study, index) => (
+        {caseStudies?.map((study, index) => (
           <div
             id="certContainer"
             key={index}
             
           >
             <img
-              src={study.src}
-              alt={study.title}
+              src={study?.src}
+              alt={study?.title}
               style={{ width: "100%", height: "auto" }}
             />
-            <h4>{study.title}</h4>
-            <a href={study.link} style={{ color: "orange" }}>
+            <h4>{study?.title}</h4>
+            <a href={study?.link} style={{ color: "orange" }}>
               Read More
             </a>
           </div>

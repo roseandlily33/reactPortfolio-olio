@@ -15,11 +15,11 @@ const TechStack = () => {
     <TechStackContainer>
       <h3>Tech Stack & Process</h3>
       <div className="title-stack">
-        {techStack.map((tech, index) => (
+        {techStack?.map((tech, index) => (
           <div>
             <p>
-              {tech.name}
-              <span className="tech-icon">{tech.icon}</span>
+              {tech?.name}
+              <span className="tech-icon">{tech?.icon}</span>
             </p>
           </div>
         ))}

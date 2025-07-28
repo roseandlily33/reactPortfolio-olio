@@ -1,9 +1,11 @@
 import { CertificateContainer } from "./Certificates.styles";
 import { CertList } from "./Certs";
 import { useState } from "react";
-import Modal from "react-modal";
-import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
+
 import { TopContainer } from "../CaseStudies/CaseStudies.styles";
+import SelectedCertificate from "./SelectedCertificate";
+import CertificateList from "./CertificateList";
+import CertificateSelect from "./CertificateSelect";
 
 const Certificates = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -13,11 +15,6 @@ const Certificates = () => {
   const openModal = (cert) => {
     setSelectedCert(cert);
     setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-    setSelectedCert(null);
   };
 
   const tagChange = (e) => {
@@ -30,68 +27,24 @@ const Certificates = () => {
       <CertificateContainer>
         <TopContainer>
           <h2>Certificates</h2>
-          <select onChange={tagChange} value={selectedTag}>
-            <option value="">All Tags</option>
-            {filteredTags.map((tag, index) => {
-              return (
-                <option key={index} value={tag}>
-                  {tag}
-                </option>
-              );
-            })}
-          </select>
-        </TopContainer>
-        <section>
-          {CertList.filter(
-            (cert) => selectedTag === "" || cert.tags.includes(selectedTag)
-          ).map((cert) => {
-            return (
-              <div
-                id="certContainer"
-                key={cert.id}
-                onClick={() => openModal(cert)}
-              >
-                <img src={cert.photo} alt={cert.title} />
-                <h5>{cert.title}</h5>
-                <p>{cert.provider}</p>
-                <p style={{ fontStyle: "italic" }}>{cert.date}</p>
-              </div>
-            );
-          })}
-        </section>
-      </CertificateContainer>
-      {selectedCert && (
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Certificate Modal"
-          style={{
-            content: {
-              top: "55%",
-              left: "50%",
-              right: "auto",
-              bottom: "auto",
-              marginRight: "-50%",
-              transform: "translate(-50%, -50%)",
-              padding: "2rem",
-              width: "90%",
-              height: "90%",
-              borderRadius: "25px",
-              backgroundColor: "var(--lightCream)",
-              border: "none",
-            },
-          }}
-        >
-          <PrimaryButton onClick={closeModal} span="Close" />
-          
-          <br />
-          <img
-            src={selectedCert.photo}
-            alt={selectedCert.title}
-            style={{ width: "100%" }}
+          <CertificateSelect
+            tagChange={tagChange}
+            selectedTag={selectedTag}
+            filteredTags={filteredTags}
           />
-        </Modal>
-      )}
+        </TopContainer>
+        <CertificateList
+          openModal={openModal}
+          CertList={CertList}
+          selectedTag={selectedTag}
+        />
+      </CertificateContainer>
+      <SelectedCertificate
+        modalIsOpen={modalIsOpen}
+        selectedCert={selectedCert}
+        setSelectedCert={setSelectedCert}
+        setModalIsOpen={setModalIsOpen}
+      />
     </>
   );
 };

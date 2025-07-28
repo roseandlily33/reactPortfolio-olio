@@ -12,7 +12,7 @@ export const EachCaseStudyContainer = styled.div`
   gap: 2rem;
   height: 100%;
   padding: 2rem;
-  background-color: #F4EBEB;
+  background-color: #f4ebeb;
 
   /* background: linear-gradient(135deg, var(--lightCream) 50%, var(--lightGrey) 50%); */
 
@@ -102,10 +102,9 @@ export const TopContainer = styled.div`
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23F38CA9' fill-opacity='0.1' d='M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,240C672,256,768,256,864,240C960,224,1056,192,1152,160C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
   background-size: cover;
   background-position: center;
-  padding: 5rem;
-  /* margin: 2rem auto; */
+  padding: 5rem 2rem 2rem 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* border: 1px solid red; */
+
   h2 {
     color: var(--darkPink);
     text-align: center;
@@ -114,7 +113,51 @@ export const TopContainer = styled.div`
 
   .tabs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .tabs > * {
+    min-width: 120px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    color: var(--darkPink);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  .tabs > *.active {
+    background: var(--medPink);
+    color: var(--white);
+  }
+
+  @media (max-width: 700px) {
+    padding: 2.5rem 0.5rem 1rem 0.5rem;
+    .tabs > * {
+      min-width: 90px;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 1.5rem 0.2rem 0.5rem 0.2rem;
+    .tabs {
+      gap: 0.5rem;
+    }
+    .tabs > * {
+      min-width: 70px;
+      font-size: 0.95rem;
+      padding: 0.4rem 0.7rem;
+    }
   }
 `;

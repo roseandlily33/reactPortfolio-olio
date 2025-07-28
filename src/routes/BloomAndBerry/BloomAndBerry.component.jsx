@@ -37,14 +37,14 @@ const BloomAndBerryPage = () => {
             bringing together the best of nature's bounty.
           </p>
           <div>
-            {juiceFlavors.map((juice) => (
-              <div key={juice.id} className="juice">
+            {juiceFlavors?.map((juice) => (
+              <div key={juice?.id} className="juice">
                 <h4>
-                  {juice.emoji} {juice.name}
+                  {juice?.emoji} {juice?.name}
                 </h4>
-                <p className="italic">{juice.ingredients}</p>
-                <p>{juice.description}</p>
-                <p>{juice.details}</p>
+                <p className="italic">{juice?.ingredients}</p>
+                <p>{juice?.description}</p>
+                <p>{juice?.details}</p>
               </div>
             ))}
           </div>

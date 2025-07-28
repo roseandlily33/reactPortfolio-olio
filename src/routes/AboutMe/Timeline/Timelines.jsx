@@ -13,11 +13,11 @@ const Timeline = () => {
 
     return (
         <TimelineContainer>
-            {events.map((event, index) => (
+            {events?.map((event, index) => (
                 <TimelineItem key={index}>
                     <div className="bubble"></div>
-                    <h4>{event.year}</h4>
-                    <p>{event.description}</p>
+                    <h4>{event?.year}</h4>
+                    <p>{event?.description}</p>
                 </TimelineItem>
             ))}
         </TimelineContainer>
