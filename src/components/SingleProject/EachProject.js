@@ -7,6 +7,13 @@ const SingleProject = ({ projectList, openModal }) => {
           key={project.id}
           onClick={() => openModal(project)}
         >
+          {project?.important && (
+            <div className="important-badge">
+              <span role="img" aria-label="star">
+                ★
+              </span>
+            </div>
+          )}
           <img key={project?.id} src={project?.img} alt={project?.alt} />
           <h5>{project?.title}</h5>
           <p>

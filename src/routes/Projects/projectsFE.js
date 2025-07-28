@@ -20,6 +20,7 @@ export const projectListFrontEnd = [
         description: 'A front end quiz application to test your knowledge on Javascript. Built with HTML, CSS and JS.',
         img: Quiz,
         type: 'Front End',
+        important: true,
         alt: 'Javascript quiz application'
      },
       {
@@ -31,6 +32,7 @@ export const projectListFrontEnd = [
         description: 'A Front End weather application that uses openWeatherAPI. Built with HTML, CSS, and JS.',
         img: Weather,
         type: 'Front End',
+        important: true,
         alt: 'Weather application'
      }, 
      // This one is sort of working missing pictures
@@ -55,6 +57,7 @@ export const projectListFrontEnd = [
       description: 'React Application. Uses Spotify API to create your own spotify playlist that has all your favourite songs. Currently still under development.',
       img: Jammin,
       type: 'Front End',
+      important: true,
       alt: 'Jammin Application'
      },
      {

@@ -1,6 +1,6 @@
 import { AboutMeSection } from "./AboutMe.styles";
 import MyImage from "../../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg";
-import PrimaryButton from '../../components/Buttons/PrimaryButton.component';
+import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 const SummaryComponent = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
@@ -45,7 +45,7 @@ const SummaryComponent = () => {
             me with a diverse skill set spanning front-end, back-end, and DevOps
             technologies.
           </div>
-          <div>
+          <div style={{ marginTop: "1rem" }}>
             <PrimaryButton span="resume" onClick={downloadResume} />
           </div>
         </section>

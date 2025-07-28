@@ -11,27 +11,51 @@ export const SkillList = styled.ul`
 export const SkillItem = styled.li`
   display: flex;
   border-bottom: 1px solid #cac7c7;
-  /* border: 1px solid blue; */
   width: 100%;
+  align-items: center;
+  padding: 0.5rem 0;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0;
+  }
 `;
 
 export const SkillInfo = styled.div`
-  /* border: 2px solid green; */
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
   .skill-icon {
     padding-top: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--darkPink);
     display: flex;
     gap: 1rem;
   }
 
   .skill-name {
-    font-size: 1.2rem;
     font-weight: 500;
     color: var(--darkGrey);
+    word-break: break-word;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+
+    .skill-icon {
+      padding-top: 0.5rem;
+      font-size: 1.2rem;
+      gap: 0.5rem;
+    }
+    .skill-name {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -50,8 +74,8 @@ export const SkillRating = styled.p`
 `;
 
 export const StarLegendContainer = styled.div`
-/* border: 1px solid #cac7c7; */
-   .skill-icon {
+  /* border: 1px solid #cac7c7; */
+  .skill-icon {
     color: var(--darkPink);
     display: flex;
     align-items: center;
@@ -101,7 +125,7 @@ export const TechStackContainer = styled.div`
     display: flex;
     font-weight: 500;
   }
-  svg{
+  svg {
     color: var(--lightPink);
     display: flex;
     align-items: center;
@@ -110,7 +134,6 @@ export const TechStackContainer = styled.div`
     /* border: 1px solid red; */
   }
   .overview {
-
   }
   h4 {
     font-size: 1.2rem;
@@ -125,5 +148,4 @@ export const TechStackContainer = styled.div`
     line-height: 1.5;
     margin-bottom: 1rem;
   }
- 
 `;

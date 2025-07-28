@@ -12,6 +12,7 @@ export const projectListMERN = [
     github: "https://github.com/roseandlily33/lemon-lime",
     deployed: "https://lemon-lime.onrender.com",
     status: true,
+    important: true,
     description:
       "A full-featured recipe management platform built with the MERN stack and MongoDB. Users can create accounts, share, edit, and delete recipes, favorite and search for recipes, and discover new dishes. Integrated image optimization and secure authentication for a seamless experience.",
     keyFeatures: [
@@ -57,6 +58,7 @@ export const projectListMERN = [
     github: "",
     deployed: "https://www.yodasafetyservices.com/",
     status: true,
+    important: true,
     description:
       "A custom-built training and certification platform for YODA Safety Services. Enables users to create accounts, enroll in online safety courses, purchase training, and download certificates. Built for scalability and security, with a focus on user experience.",
     keyFeatures: [
@@ -104,6 +106,7 @@ export const projectListMERN = [
     github: "https://github.com/roseandlily33/sunshine_boutique",
     deployed: "https://superb-croquembouche-bbcbcb.netlify.app/",
     status: true,
+    important: true,
     description:
       "An e-commerce platform for a boutique shop, featuring product browsing, shopping cart, and secure checkout. Built with React, Redux, and Firebase for real-time updates and Stripe for payments.",
     keyFeatures: [
@@ -138,6 +141,7 @@ export const projectListMERN = [
     github: "https://github.com/roseandlily33/space-doodle",
     deployed: "https://space-doodle-nasa.onrender.com",
     status: true,
+    important: true,
     description:
       "A space exploration dashboard using live NASA data. Users can view spaceship names, launch statuses, and mission outcomes. Built with Node, GraphQL, and React for a dynamic, interactive experience.",
     keyFeatures: [
@@ -160,6 +164,7 @@ export const projectListMERN = [
   //   github: "https://github.com/roseandlily33/cuddly-happiness",
   //   deployed: "",
   //   status: true,
+  // important: true,
   //   description:
   //     "A full stack blogging platform with user authentication, post creation/editing, and comment functionality. Built with Handlebars.js, Express, Sequelize, and custom CSS for a clean, user-friendly experience.",
   //   keyFeatures: [
