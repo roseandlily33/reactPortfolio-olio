@@ -3,26 +3,26 @@ import emailjs from "@emailjs/browser";
 import { ContactMeSection } from "./AboutMe.styles";
 import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 
-// List of services for the dropdown
+// List of services for the dropdown (alphabetical order)
 const contactServices = [
+  "API Integration",
+  "Blog Setup",
+  "Branding & Logo Design",
+  "Content Management System (CMS)",
+  "Cyber Security Review",
+  "Custom Email Solutions",
   "Design Consultation",
-  "Launch (Basic)",
+  "E-Commerce Integration",
   "Elevate (Basic + Backend)",
+  "Hosting & Deployment",
+  "Launch (Basic)",
+  "Maintenance & Support",
+  "Performance Optimization",
   "Scale (Full App)",
+  "SEO Setup",
+  "Training & Documentation",
   "UI/UX Audit",
   "Website Redesign",
-  "Performance Optimization",
-  "SEO Setup",
-  "E-Commerce Integration",
-  "Blog Setup",
-  "API Integration",
-  "Maintenance & Support",
-  "Content Management System (CMS)",
-  "Branding & Logo Design",
-  "Hosting & Deployment",
-  "Training & Documentation",
-  "Cyber Security Review",
-  "Custom Email Solutions"
 ];
 
 const ContactMe = () => {
@@ -59,7 +59,8 @@ const ContactMe = () => {
     <ContactMeSection>
       <h3>Let’s Build Something Amazing Together</h3>
       <p style={{ marginBottom: "1rem" }}>
-        Interested in working with me? Select what you need and tell me about your project!
+        Interested in working with me? Select what you need and tell me about
+        your project!
       </p>
       <form ref={form} onSubmit={handleFormSubmit}>
         <label>Name: </label>
@@ -91,7 +92,7 @@ const ContactMe = () => {
             border: "1px solid var(--medBrown)",
             fontFamily: "var(--headerFont)",
             color: "var(--medBrown)",
-            background: "#fff"
+            background: "#fff",
           }}
         >
           <option value="" disabled>

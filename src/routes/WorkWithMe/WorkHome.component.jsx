@@ -1,15 +1,16 @@
 import React from "react";
+import ContactMe from '../AboutMe/Contact';
+import PackagesComponent from "./Packages/Packages.component";
+import ServicesComponent from "./Packages/Services.component";
 
 const WorkHome = () => {
   return (
-    <div>
+    <main>
       <h1>Work With Me</h1>
-      <p>
-        Welcome to the Work With Me page! Here, you can find information about
-        my services, rates, and how to get in touch for collaborations or
-        projects.
-      </p>
-    </div>
+      <PackagesComponent />
+      <ServicesComponent />
+      <ContactMe />
+    </main>
   );
 };
 export default WorkHome;
