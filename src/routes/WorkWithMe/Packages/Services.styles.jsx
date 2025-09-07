@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ServicesSection = styled.section`
-  background: var(--darkPink);
+  background: var(--lightGrey);
   padding: 4rem 2rem 3rem 2rem;
   width: 100%;
   min-height: 100vh;
@@ -12,7 +12,7 @@ export const ServicesSection = styled.section`
 `;
 
 export const ServicesTitle = styled.h2`
-  color: var(--white);
+  color: var(--medGrey);
   font-family: var(--headerFont);
   font-size: 2.2rem;
   margin-bottom: 2.5rem;

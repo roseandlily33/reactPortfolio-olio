@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
-  background: var(--darkPink);
+  background: var(--lightGrey);
   padding: 4rem 2rem 3rem 2rem;
   width: 100%;
   min-height: 70vh;
@@ -70,6 +70,8 @@ export const PackageFeatures = styled.ul`
   padding-left: 1.2rem;
   li {
     margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -80,4 +82,41 @@ export const PackageIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const ComesWithSection = styled.section`
+  margin-top: 4rem;
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(241,116,150,0.10);
+  padding: 2.5rem 2rem;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const ComesWithTitle = styled.h4`
+  color: var(--darkPink);
+  font-family: var(--headerFont);
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+`;
+
+export const ComesWithListStyled = styled.ul`
+  margin: 0 0 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+`;
+
+export const ComesWithItem = styled.li`
+  color: var(--darkBrown);
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
 `;
