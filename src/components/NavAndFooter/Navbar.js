@@ -38,6 +38,9 @@ const Navbar = () => {
         <NavLink to="/Projects" style={styles.navLink}>
           Projects
         </NavLink>
+         <NavLink to="/Work" style={styles.navLink}>
+          Work with Me
+        </NavLink>
         <NavLink to="/Skills" style={styles.navLink}>
           Skills
         </NavLink>

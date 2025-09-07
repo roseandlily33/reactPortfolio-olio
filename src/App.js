@@ -9,6 +9,7 @@ import Certificates from './routes/Certificates/Certificates';
 import CaseStudies from './routes/CaseStudies/CaseStudies.component';
 import YodaCaseStudy from './routes/CaseStudies/yoda_case_study/YodaCaseStudy.component';
 import SkillsPage from './routes/Skills/SkillsPage.component';
+import WorkHome from './routes/WorkWithMe/WorkHome.component';
 import BloomAndBerry from './routes/CaseStudies/bloom_and_berry/BloomBerry.component';
 import BloomAndBerryPage from './routes/BloomAndBerry/BloomAndBerry.component';
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/Projects" element={<Projects />}></Route>
         <Route path="/Certificates" element={<Certificates />}></Route>
         <Route path="/Skills" element={<SkillsPage />}></Route>
+        <Route path="/Work" element={<WorkHome />}></Route>
         <Route path="/CaseStudies" element={<CaseStudies />}></Route>
         <Route path="/CaseStudies/YodaCaseStudy" element={<YodaCaseStudy />}></Route>
         <Route path="/CaseStudies/BerryAndBloom" element={<BloomAndBerry />}></Route>
