@@ -1,7 +1,7 @@
 import React from "react";
 import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 import Modal from "react-modal";
-import GithubIcon from "../../images/icons8-github-bubbles/icons8-github-50.png";
+import { FaGithub } from "react-icons/fa"; // Use react-icons for GitHub
 
 const SelectedProject = ({ selectedProject, modalIsOpen, closeModal }) => {
   return (
@@ -34,7 +34,16 @@ const SelectedProject = ({ selectedProject, modalIsOpen, closeModal }) => {
             },
           }}
         >
-          <PrimaryButton span="close" onClick={closeModal} />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-end",
+              marginBottom: "1rem",
+            }}
+          >
+            <PrimaryButton span="close" onClick={closeModal} />
+          </div>
           {selectedProject?.img && (
             <img
               src={selectedProject.img}
@@ -88,7 +97,7 @@ const SelectedProject = ({ selectedProject, modalIsOpen, closeModal }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={GithubIcon} alt="Link to github repo" />
+                  <FaGithub size={32} style={{ color: "var(--medPink)" }} />
                 </a>
               )}
             </div>

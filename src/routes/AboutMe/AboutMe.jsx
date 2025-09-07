@@ -3,6 +3,7 @@ import { AboutMeComponent } from "./AboutMe.styles";
 import SummaryComponent from "./Summary";
 import ImageAboutMe from "./ImageAboutMe";
 import ContactMe from "./Contact";
+import IDSection from "./ID";
 // import BestProjects from "./Carousels/BestProjects.component";
 // import BestCertificates from './Carousels/BestCertificates.component';
 import Timeline from "./Timeline/Timelines";
@@ -11,6 +12,7 @@ const AboutMe = () => {
     return (
         <AboutMeComponent>
             <ImageAboutMe />
+            <IDSection />
             <SummaryComponent />
             <Timeline />
             {/* <BestProjects /> */}

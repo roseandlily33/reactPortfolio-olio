@@ -1,53 +1,72 @@
 import { AboutMeSection } from "./AboutMe.styles";
-import MyImage from "../../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg";
 import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
+
 const SummaryComponent = () => {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/path/to/VictoriaBenoitResume.pdf"; // Replace with the actual path to your resume file
-    link.download = "VictoriaBenoitResume.pdf"; // The name of the file when downloaded
+    link.href = "/path/to/VictoriaBenoitResume.pdf"; // Replace with your actual resume path
+    link.download = "VictoriaBenoitResume.pdf";
     link.click();
   };
 
   return (
     <AboutMeSection>
-      <div className="left">
-        <img src={MyImage} alt="Victoria" />
-      </div>
-      <div className="right">
-        <h2>Hi, I'm Victoria!</h2>
+      <div
+        style={{
+          background: "rgba(255,255,255,0.7)",
+          boxShadow: "0 4px 24px rgba(241,116,150,0.10)",
+          padding: "2.5rem 2rem",
+          width: "100%",
+          borderRadius: "24px",
+          margin: "0 auto",
+        }}
+      >
+        <h2 style={{ marginBottom: "1.5rem" }}>Hi, I'm Victoria!</h2>
         <section>
-          <div>
-            I am a passionate and dedicated MERN Full Stack Developer with over
-            two years of experience designing and building robust, user-friendly
-            applications. My expertise lies in front-end development, where I
-            excel in crafting visually appealing and responsive designs using
-            CSS, React, and modern UI/UX design principles. I have a strong
-            foundation in back-end technologies, including Node.js, Express.js,
-            and databases like MySQL and MongoDB, enabling me to develop
-            scalable and secure applications.
-            <br />
-            Throughout my career, I have worked on large-scale projects for
-            clients, collaborated on team-based applications, and delivered
-            personal projects that showcase my creativity and technical skills.
-            My experience includes integrating PayPal payment systems, designing
-            accessible and inclusive applications, and implementing security
-            best practices to safeguard user data. I have also worked
-            extensively with CI/CD pipelines, ensuring seamless deployment and
-            testing processes, and have deployed applications to platforms like
-            Render.
-            <br />
-            In addition to development, I have a keen interest in email systems,
-            having worked with tools like MJML, Handlebars, and Nodemailer to
-            create dynamic and engaging email templates. My commitment to
-            excellence is reflected in my certifications from the University of
-            New Brunswick, Codecademy, and Zero to Mastery, which have equipped
-            me with a diverse skill set spanning front-end, back-end, and DevOps
-            technologies.
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}
+          >
+            <p
+              style={{ fontSize: "1.15rem", color: "#b23a48", fontWeight: 600 }}
+            >
+              MERN Full Stack Developer & UX/UI Enthusiast
+            </p>
+            <p>
+              I specialize in building beautiful, accessible, and
+              high-performing web applications. With 4+ years of hands-on
+              experience, I bring ideas to life using React, Node.js, and a
+              passion for user-centered design.
+            </p>
+            <ul style={{ margin: "0 0 1rem 1.2rem", color: "#6d4c41" }}>
+              <li>Front-end: React, CSS, Responsive Design, UI/UX</li>
+              <li>Back-end: Node.js, Express, MongoDB, MySQL</li>
+              <li>DevOps: CI/CD, secure deployments, cloud hosting</li>
+              <li>Specialties: Accessibility, SEO, Email Systems</li>
+            </ul>
+            <p>
+              I’ve collaborated on client projects, led redesigns, and delivered
+              solutions that are both creative and robust. My toolkit includes
+              everything from payment integrations to custom email templates
+              (MJML, Handlebars, Nodemailer).
+            </p>
+            <p>
+              Certified by the University of New Brunswick, Codecademy, and Zero
+              to Mastery, I’m always learning and staying ahead of industry
+              trends.
+            </p>
+            <p
+              style={{
+                fontStyle: "italic",
+                color: "#b23a48",
+                marginTop: "0.5rem",
+              }}
+            >
+              “Let’s turn your vision into a web experience people love.”
+            </p>
           </div>
-          <div style={{ marginTop: "1rem" }}>
-            <PrimaryButton span="resume" onClick={downloadResume} />
-          </div>
+          {/* <div style={{ textAlign: "center", width: "100%" }}>
+            <PrimaryButton span="Download Resume" onClick={downloadResume} />
+          </div> */}
         </section>
       </div>
     </AboutMeSection>

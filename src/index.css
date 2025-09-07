@@ -222,11 +222,37 @@ footer a:hover {
   }
 }
 
-/* Base font size for the entire document */
 html {
-  font-size: 16px; /* 1rem = 16px */
+  font-size: 16px; 
 }
-
+.pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--medBrown);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.4em 1.6em; 
+  font-size: 1rem;
+  font-family: var(--headerFont);
+  cursor: pointer;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  transition: background 0.2s;
+  min-width: 0;
+  white-space: normal; 
+  text-align: center;
+  word-break: break-word; 
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.pill input[type="checkbox"] {
+  accent-color: var(--darkBrown);
+  margin-right: 0.5em;
+}
+.pill:active,
+.pill:focus-within {
+  background: var(--darkBrown);
+}
 /* Small Screens (Mobile) */
 @media screen and (min-width: 300px) and (max-width: 600px) {
   body {
@@ -312,9 +338,6 @@ html {
 
 /* Large Screens (Desktop) */
 @media screen and (min-width: 1440px) {
-  body {
-    /* border: 1px solid purple; */
-  }
   h1 {
     font-size: 2.3rem; /* Reduced from 2.5rem */
   }
