@@ -11,6 +11,5 @@ export const ComesWithList = [
     // "1 Month Post-Launch Support",
     "Branding Consultation",
     "Updates & Design Previews",
-    "Ongoing Maintenance Options",
     "404 & Error Page Setup",
 ];

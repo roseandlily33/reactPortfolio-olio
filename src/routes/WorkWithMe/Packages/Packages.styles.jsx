@@ -25,10 +25,11 @@ export const PackagesGrid = styled.div`
 `;
 
 export const PackageCard = styled.div`
-  background: rgba(255, 255, 255, 0.7);
+  background: ${({ $bg }) => $bg || "rgba(255,255,255,0.7)"};
   backdrop-filter: blur(8px) saturate(120%);
   border-radius: 24px;
-  box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
+  border: 2.5px solid ${({ $border }) => $border || "var(--darkPink)"};
+  box-shadow: 0 4px 24px rgba(241, 116, 150, 0.10);
   padding: 2.5rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -44,10 +45,12 @@ export const PackageCard = styled.div`
 `;
 
 export const PackageTitle = styled.h3`
-  color: var(--darkPink);
   font-family: var(--headerFont);
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 `;
 
 export const PackagePrice = styled.div`
@@ -76,7 +79,6 @@ export const PackageFeatures = styled.ul`
 `;
 
 export const PackageIcon = styled.div`
-  color: var(--darkBrown);
   font-size: 2.5rem;
   margin-bottom: 0.7rem;
   display: flex;
