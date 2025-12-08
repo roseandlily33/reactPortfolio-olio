@@ -9,20 +9,23 @@ const contactServices = [
   "Blog Setup",
   "Branding & Logo Design",
   "Content Management System (CMS)",
-  "Cyber Security Review",
   "Custom Email Solutions",
-  "Design Consultation",
+  "Cyber Security Review",
+  "Elevate Package",
   "E-Commerce Integration",
-  "Elevate (Basic + Backend)",
   "Hosting & Deployment",
-  "Launch (Basic)",
+  "Launch Package",
   "Maintenance & Support",
+  "Map Package",
+  "Mini Retainer",
+  "Momentum Retainer",
   "Performance Optimization",
-  "Scale (Full App)",
+  "Scale Package",
   "SEO Setup",
   "Training & Documentation",
   "UI/UX Audit",
   "Website Redesign",
+  "Boost Retainer"
 ];
 
 const ContactMe = () => {

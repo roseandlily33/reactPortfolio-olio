@@ -9,18 +9,33 @@ export const PackagesSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid red;
+  h2 {
+    margin-bottom: 4rem;
+  }
 `;
 
 export const PackagesGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: 2.5rem;
   width: 100%;
-  max-width: 1200px;
+  overflow-x: auto;
+  padding: 2rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* border: 2px solid blue; */
 
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  & > div {
+    flex: 0 0 340px;
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: 600px) {
+    gap: 1.2rem;
+    & > div {
+      flex: 0 0 90vw;
+      max-width: 95vw;
+    }
   }
 `;
 

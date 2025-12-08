@@ -16,12 +16,14 @@ const RetainerComponent = () => (
   <RetainerSection>
     <RetainerTitle>Retainer Packages</RetainerTitle>
     <RetainerGrid>
-      {Retainer.filter(r => r.title).map((ret, idx) => (
-        <RetainerCard key={ret.title || idx}>
-          <RetainerCardTitle>{ret.title}</RetainerCardTitle>
+      {Retainer.map((ret, idx) => (
+        <RetainerCard key={ret.name || idx}>
+          <RetainerCardTitle>
+            {ret.name} <span style={{ fontWeight: 400, fontSize: "1rem", marginLeft: "0.5em" }}>{ret.base}</span>
+          </RetainerCardTitle>
           {ret.price && (
             <RetainerPrice>
-              <strong>Starting at:</strong> ${ret.price}
+              <strong>Starting at:</strong> {ret.price}
             </RetainerPrice>
           )}
           <RetainerDescription>{ret.description}</RetainerDescription>
@@ -40,5 +42,3 @@ const RetainerComponent = () => (
 );
 
 export default RetainerComponent;
- 
-export default RetainerCards;

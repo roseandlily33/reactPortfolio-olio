@@ -14,9 +14,10 @@ export const RetainerTitle = styled.h2`
   color: var(--darkPink);
   font-family: var(--headerFont);
   font-size: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
   letter-spacing: 0.08em;
   text-align: center;
+  border: 2px solid red;
 `;
 
 export const RetainerGrid = styled.div`

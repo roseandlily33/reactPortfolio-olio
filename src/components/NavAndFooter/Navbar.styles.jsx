@@ -1,14 +1,16 @@
 import styled from 'styled-components';
+import { useState } from 'react';
 
 export const NavbarOuter = styled.header`
   position: sticky;
   top: 0;
   z-index: 1000;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative; 
   padding-left: 1rem;
   margin-inline: 1rem;
   padding-bottom: 1rem;
@@ -34,7 +36,6 @@ export const NavbarOuter = styled.header`
   }
 
   @media screen and (max-width: 768px){
-    flex-direction: column;
     margin-inline: 0.5rem;
    }
 
@@ -65,12 +66,69 @@ export const NavbarOuter = styled.header`
   }
 `;
 
+export const Hamburger = styled.button`
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+
+  span {
+    width: 28px;
+    height: 4px;
+    background: var(--darkPink);
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+  }
+`;
+
+export const MobileMenu = styled.nav`
+  display: none;
+
+  @media (max-width: 900px) {
+    display: ${({ open }) => (open ? "flex" : "none")};
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    left: 1rem;
+    background: var(--lightCream);
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 32px rgba(241,116,150,0.10);
+    padding: 1.5rem 1rem 1rem 1rem;
+    z-index: 1100;
+
+    a {
+      margin: 0.7rem 0;
+      font-size: 1.1rem;
+      color: var(--darkGrey);
+      text-align: left;
+    }
+  }
+`;
+
 export const NavBarComponent = styled.nav`
   display: flex;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
   padding-block: 0.5em;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
   a {
     text-transform: uppercase;
     font-weight: 500;
@@ -93,4 +151,22 @@ export const NavBarComponent = styled.nav`
     }
   }
 `;
+
+const Navbar = ({ navLinks }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <NavbarOuter>
+      <Hamburger onClick={() => setMenuOpen(open => !open)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+      <NavBarComponent className="desktop">{navLinks}</NavBarComponent>
+      <MobileMenu open={menuOpen}>{navLinks}</MobileMenu>
+    </NavbarOuter>
+  );
+};
+
+export default Navbar;
 

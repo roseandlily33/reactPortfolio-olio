@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { NavBarComponent, NavbarOuter } from "./Navbar.styles";
+import {
+  NavBarComponent,
+  NavbarOuter,
+  Hamburger,
+  MobileMenu,
+} from "./Navbar.styles";
 
 const Navbar = () => {
   const [scrollDirection, setScrollDirection] = useState("scrolled-down");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setScrollDirection("scrolled-up"); // User is scrolling down
+        setScrollDirection("scrolled-up");
       } else {
-        setScrollDirection("scrolled-down"); // User is scrolling up
+        setScrollDirection("scrolled-down");
       }
       lastScrollY = window.scrollY;
     };
@@ -28,29 +34,71 @@ const Navbar = () => {
       padding: "0.5rem",
     },
   };
+
+  const navLinks = (
+    <>
+      <NavLink to="/" style={styles.navLink} onClick={() => setMenuOpen(false)}>
+        About Me
+      </NavLink>
+      <NavLink
+        to="/Skills"
+        style={styles.navLink}
+        onClick={() => setMenuOpen(false)}
+      >
+        Skills
+      </NavLink>
+      <NavLink
+        to="/Projects"
+        style={styles.navLink}
+        onClick={() => setMenuOpen(false)}
+      >
+        Projects
+      </NavLink>
+      <NavLink
+        to="/CaseStudies"
+        style={styles.navLink}
+        onClick={() => setMenuOpen(false)}
+      >
+        Case Studies
+      </NavLink>
+      <NavLink
+        to="/Certificates"
+        style={styles.navLink}
+        onClick={() => setMenuOpen(false)}
+      >
+        Certificates
+      </NavLink>
+      <NavLink
+        to="/Work"
+        style={{
+          ...styles.navLink,
+          background: "var(--darkPink)",
+          color: "#fff",
+          borderRadius: "999px",
+          padding: "0.5em 1.2em",
+          fontWeight: 600,
+          marginLeft: "0.7em",
+          boxShadow: "0 2px 12px rgba(241,116,150,0.12)",
+          border: "2px solid var(--darkPink)",
+          transition: "background 0.2s, color 0.2s",
+        }}
+        onClick={() => setMenuOpen(false)}
+      >
+        Work with Me
+      </NavLink>
+    </>
+  );
+
   return (
     <NavbarOuter className={scrollDirection}>
       <h1>Victoria Benoit</h1>
-      <NavBarComponent>
-        <NavLink to="/" style={styles.navLink}>
-          About Me
-        </NavLink>
-        <NavLink to="/Projects" style={styles.navLink}>
-          Projects
-        </NavLink>
-         <NavLink to="/Work" style={styles.navLink}>
-          Work with Me
-        </NavLink>
-        <NavLink to="/Skills" style={styles.navLink}>
-          Skills
-        </NavLink>
-        <NavLink to="/CaseStudies" style={styles.navLink}>
-          Case Studies
-        </NavLink>
-        <NavLink to="/Certificates" style={styles.navLink}>
-          Certificates
-        </NavLink>
-      </NavBarComponent>
+      <Hamburger onClick={() => setMenuOpen((open) => !open)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+      <NavBarComponent className="desktop">{navLinks}</NavBarComponent>
+      <MobileMenu open={menuOpen}>{navLinks}</MobileMenu>
     </NavbarOuter>
   );
 };
