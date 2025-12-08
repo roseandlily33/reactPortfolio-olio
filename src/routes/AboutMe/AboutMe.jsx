@@ -1,24 +1,22 @@
-// import photo from '../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg';
 import { AboutMeComponent } from "./AboutMe.styles";
 import SummaryComponent from "./Summary";
 import ImageAboutMe from "./ImageAboutMe";
 import IDSection from "./ID";
-// import BestProjects from "./Carousels/BestProjects.component";
-// import BestCertificates from './Carousels/BestCertificates.component';
 import Timeline from "./Timeline/Timelines";
+import CertificatesPreview from "./Certificates/CertificatesPreview.component";
+import SkillsPreview from "./Skills/SkillsPreview.component";
 
 const AboutMe = () => {
-    return (
-        <AboutMeComponent>
-            <ImageAboutMe />
-            <IDSection />
-            <SummaryComponent />
-            <Timeline />
-            {/* <BestProjects /> */}
-            {/* <BestCertificates /> */}
-        </AboutMeComponent>
-        
-    );
-}
- 
+  return (
+    <AboutMeComponent>
+      <ImageAboutMe /> 
+      <IDSection />
+      <SummaryComponent />
+      <SkillsPreview />
+      <CertificatesPreview />
+      <Timeline />
+    </AboutMeComponent>
+  );
+};
+
 export default AboutMe;

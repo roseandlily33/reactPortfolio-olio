@@ -41,13 +41,6 @@ const Navbar = () => {
         About Me
       </NavLink>
       <NavLink
-        to="/Skills"
-        style={styles.navLink}
-        onClick={() => setMenuOpen(false)}
-      >
-        Skills
-      </NavLink>
-      <NavLink
         to="/Projects"
         style={styles.navLink}
         onClick={() => setMenuOpen(false)}
@@ -60,13 +53,6 @@ const Navbar = () => {
         onClick={() => setMenuOpen(false)}
       >
         Case Studies
-      </NavLink>
-      <NavLink
-        to="/Certificates"
-        style={styles.navLink}
-        onClick={() => setMenuOpen(false)}
-      >
-        Certificates
       </NavLink>
       <NavLink
         to="/Work"

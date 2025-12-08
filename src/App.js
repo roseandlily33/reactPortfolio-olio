@@ -61,7 +61,7 @@ function App() {
               path="/BloomAndBerry"
               element={<BloomAndBerryPage />}
             ></Route>
-            <Route path="/Ariel" element={<ArielHome />}></Route>
+            <Route path="/CaseStudies/Ariel" element={<ArielHome />}></Route>
             <Route path="*" element={<h1>Page Not Found</h1>}></Route>
           </Routes>
           <Footer />
