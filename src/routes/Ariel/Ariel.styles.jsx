@@ -1,23 +1,34 @@
 import styled from "styled-components";
 
 export const ArielMain = styled.main`
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 32px;
-  box-shadow: 0 4px 32px rgba(241, 116, 150, 0.1);
+  width: 90vw;
+  /* max-width: 1400px; */
+  margin: 3rem auto 3rem auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(
+    120deg,
+    var(--lightPink) 0%,
+    var(--lightCream) 100%
+  );
+  border-radius: 40px;
+  box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
+  align-items: center;
 `;
 
 export const Section = styled.section`
+  width: 100%;
   margin-bottom: 2.5rem;
-  padding: 2rem 1.5rem;
-  background: rgba(246, 245, 242, 0.7);
-  border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(241, 116, 150, 0.08);
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 28px;
+  box-shadow: 0 2px 24px rgba(241, 116, 150, 0.1);
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
+  }
 `;
 
 export const PaletteCarousel = styled.div`
@@ -26,11 +37,12 @@ export const PaletteCarousel = styled.div`
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
+  margin-top: 2rem;
 
   & > div {
     flex: 0 0 340px;
     scroll-snap-align: start;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.97);
     border-radius: 18px;
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     padding: 1.2rem;
@@ -55,7 +67,7 @@ export const PaletteCarousel = styled.div`
     object-fit: cover;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     gap: 1rem;
     & > div {
       min-width: 80vw;
@@ -80,11 +92,12 @@ export const PhaseCarousel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
 
   & > div {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.97);
     border-radius: 18px;
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     padding: 1.2rem;
@@ -110,9 +123,10 @@ export const PhaseCarousel = styled.div`
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
+    border: 2px solid var(--lightPink);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     & > div {
       min-width: 90vw;
       max-width: 95vw;
@@ -164,6 +178,7 @@ export const CarouselImageModal = styled.div`
     max-height: 90vh;
     border-radius: 18px;
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
+    border: 3px solid var(--medPink);
   }
 `;
 
@@ -188,4 +203,61 @@ export const CollapsibleText = styled.p`
   margin-bottom: 1.2rem;
   line-height: 1.6;
   transition: max-height 0.3s;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+`;
+
+export const TestimonialSection = styled.section`
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--lightPink) 0%,
+    var(--lightestPink) 100%
+  );
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
+  padding: 2rem 2.5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: italic;
+  color: var(--darkPink);
+  font-size: 1.25rem;
+`;
+
+export const CTASection = styled.section`
+  width: 100%;
+  background: linear-gradient(90deg, var(--medPink) 0%, var(--lightPink) 100%);
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
+  padding: 2.5rem 2.5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.3rem;
+
+  button {
+    background: var(--darkPink);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.7em 2em;
+    font-size: 1.15rem;
+    font-family: var(--headerFont);
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.2s, color 0.2s, transform 0.18s;
+
+    &:hover {
+      background: var(--medPink);
+      color: var(--darkBrown);
+      transform: scale(1.05);
+    }
+  }
 `;

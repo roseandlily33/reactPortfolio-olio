@@ -2,7 +2,14 @@ import React from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import YodaPic from "../../images/projects/YODA.png";
 import Logo from "./bloom_and_berry/bloom_images/Logo.png";
-import { TopContainer } from "./CaseStudies.styles";
+import {
+  TopContainer,
+  CaseStudiesGrid,
+  CaseStudyCard,
+  CaseStudyImage,
+  CaseStudyTitle,
+  CaseStudyButton,
+} from "./CaseStudies.styles";
 import { useNavigate } from "react-router-dom";
 
 const CaseStudies = () => {
@@ -14,9 +21,14 @@ const CaseStudies = () => {
       src: YodaPic,
     },
     {
-      title: "Berry & Bloom  ",
+      title: "Berry & Bloom",
       link: "/CaseStudies/BerryAndBloom",
       src: Logo,
+    },
+    {
+      title: "Ariel Boesener Performance Horses",
+      link: "/CaseStudies/Ariel",
+      src: "",
     },
   ];
   return (
@@ -24,29 +36,29 @@ const CaseStudies = () => {
       <TopContainer>
         <h2>Case Studies</h2>
       </TopContainer>
-      <section
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        {/* Add in the case studies here */}
-        {caseStudies?.map((study, index) => (
-          <div id="certContainer" key={index}>
-            <img
-              src={study?.src}
-              alt={study?.title}
-              style={{ width: "100%", height: "auto", cursor: "pointer" }}
-              onClick={() => navigate(study.link)}
-            />
-            <h4>{study?.title}</h4>
-            <a href={study?.link} style={{ color: "orange" }}>
+      <CaseStudiesGrid>
+        {caseStudies.map((study, index) => (
+          <CaseStudyCard key={index}>
+            {study.src ? (
+              <CaseStudyImage
+                src={study.src}
+                alt={study.title}
+                onClick={() => navigate(study.link)}
+              />
+            ) : (
+              <CaseStudyImage
+                src="https://via.placeholder.com/300x180/FFD6E0/3D4249?text=No+Image"
+                alt="No image available"
+                onClick={() => navigate(study.link)}
+              />
+            )}
+            <CaseStudyTitle>{study.title}</CaseStudyTitle>
+            <CaseStudyButton onClick={() => navigate(study.link)}>
               Read More
-            </a>
-          </div>
+            </CaseStudyButton>
+          </CaseStudyCard>
         ))}
-      </section>
+      </CaseStudiesGrid>
     </CertificateContainer>
   );
 };

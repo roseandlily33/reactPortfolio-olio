@@ -161,3 +161,72 @@ export const TopContainer = styled.div`
     }
   }
 `;
+
+export const CaseStudiesGrid = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  justify-items: center;
+`;
+
+export const CaseStudyCard = styled.div`
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+  max-width: 370px;
+  width: 100%;
+  transition: transform 0.18s, box-shadow 0.18s;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
+  }
+`;
+
+export const CaseStudyImage = styled.img`
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
+  cursor: pointer;
+  background: var(--lightPink);
+`;
+
+export const CaseStudyTitle = styled.h4`
+  color: var(--darkPink);
+  font-size: 1.25rem;
+  font-family: var(--headerFont);
+  margin-bottom: 0.8rem;
+  text-align: center;
+`;
+
+export const CaseStudyButton = styled.button`
+  background: var(--darkPink);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7em 2em;
+  font-size: 1.08rem;
+  font-family: var(--headerFont);
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s, transform 0.18s;
+
+  &:hover {
+    background: var(--medPink);
+    color: var(--darkBrown);
+    transform: scale(1.05);
+  }
+`;
