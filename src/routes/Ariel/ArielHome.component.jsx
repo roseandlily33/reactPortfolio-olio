@@ -1,23 +1,51 @@
-import Phase1Ariel from "./Phase1.component";
-import Phase2Ariel from "./Phase2.component";
-import ColorPalettesAriel from "./ColourPalettes.component";
+import SideMenu from "./SideMenu/SideMenu.component";
+import ColorPalettesAriel from "./ColourPalette/ColourPalettes.component";
 import BeforeAndAfter from "./BeforeAndAfter/BeforeAndAfter.component";
 import GoalAriel from "./Goal/Goal.component";
+import Phases from "./Phases/Phases.component";
 import ProcessTimelineAriel from "./Timeline/TimelineAriel.component";
-import { ArielMain } from "./Ariel.styles";
+import { ArielMain, ArielLayout } from "./Ariel.styles";
+import Testimonial from "./Testimonial/Testimonial.component";
+import CTASection from "./CTA/Cta.component";
+
+const sectionIds = [
+  "goal",
+  "before-after",
+  "timeline",
+  "color-palettes",
+  "phases",
+  "testimonial",
+  "cta",
+];
 
 const ArielHome = () => {
   return (
-    <ArielMain>
-      <GoalAriel />
-      <BeforeAndAfter />
-      <ProcessTimelineAriel />
-      <ColorPalettesAriel />
-      <Phase1Ariel />
-      <Phase2Ariel />
-      {/* Testimonial */}
-      {/* CTA Section */}
-    </ArielMain>
+    <ArielLayout>
+      <SideMenu sectionIds={sectionIds} />
+      <ArielMain>
+        <section id="goal">
+          <GoalAriel />
+        </section>
+        <section id="before-after">
+          <BeforeAndAfter />
+        </section>
+        <section id="timeline">
+          <ProcessTimelineAriel />
+        </section>
+        <section id="color-palettes">
+          <ColorPalettesAriel />
+        </section>
+        <section id="phases">
+          <Phases />
+        </section>
+        <section id="testimonial">
+          <Testimonial />
+        </section>
+        <section id="cta">
+          <CTASection />
+        </section>
+      </ArielMain>
+    </ArielLayout>
   );
 };
 

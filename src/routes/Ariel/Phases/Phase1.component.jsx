@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import HomeA from './ArielImages/Phase2/HomeA.png';
-import HomeV from './ArielImages/Phase2/HomeV.png';
-import TrainingA from './ArielImages/Phase2/TrainingA.png';
-import TrainingV from './ArielImages/Phase2/TrainingV.png';
+import FooterA from "../ArielImages/Phase1/FooterA.png";
+import HomeA from "../ArielImages/Phase1/HomeA.png";
+import InfoA from "../ArielImages/Phase1/InfoA.png";
+import ShopA from "../ArielImages/Phase1/ShopA.png";
+import TrainingA from "../ArielImages/Phase1/TrainingA.png";
+import HomeV from "../ArielImages/Phase1/HomeV.png";
+import TrainingV from "../ArielImages/Phase1/TrainingV.png";
 import {
   Section,
   PhaseCarousel,
@@ -11,16 +14,19 @@ import {
   CarouselImageModal,
   ExpandButton,
   CollapsibleText,
-} from "./Ariel.styles";
+} from "../Ariel.styles";
 
 const beforeImages = [
-  { src: HomeA, alt: "Original Home Page (Phase 2)" },
-  { src: TrainingA, alt: "Original Training Page (Phase 2)" },
+  { src: HomeA, alt: "Original Home Page" },
+  { src: InfoA, alt: "Original Info Page" },
+  { src: ShopA, alt: "Original Shop Page" },
+  { src: TrainingA, alt: "Original Training Page" },
+  { src: FooterA, alt: "Original Footer" },
 ];
 
 const afterImages = [
-  { src: HomeV, alt: "Redesigned Home Page (Phase 2)" },
-  { src: TrainingV, alt: "Redesigned Training Page (Phase 2)" },
+  { src: HomeV, alt: "Redesigned Home Page" },
+  { src: TrainingV, alt: "Redesigned Training Page" },
 ];
 
 const ImageCarousel = ({ images }) => {
@@ -84,14 +90,14 @@ const CollapsibleParagraph = ({ children, maxLength = 220 }) => {
   );
 };
 
-const phase2Text =
-  "Ariel started implementing the new color palette, fonts, and many of the recommendations. She added new content and reorganized some pages, combining and removing others for clarity. I reviewed the updated site and provided a new list of recommendations based on the changes. The website began to take shape, with improved colors, fonts, and a more cohesive brand experience.";
+const phase1Text =
+  "Ariel began with a self-made design for her website. I created mockups, color palettes, font options, and a logo to help unify her brand. After a phone call, we discussed her target audience, identified pages that could be combined or removed, and improved the UX of the navigation. I reviewed the entire site and provided a detailed list of recommendations and ideas for content and organization.";
 
-const Phase2Ariel = () => {
+const Phase1Ariel = () => {
   return (
     <Section>
-      <h3>Phase 2 – September 13, 2025</h3>
-      <CollapsibleParagraph>{phase2Text}</CollapsibleParagraph>
+      <h3>Phase 1 – September 7, 2025</h3>
+      <CollapsibleParagraph>{phase1Text}</CollapsibleParagraph>
       <h4>Before (Ariel's Original Designs)</h4>
       <ImageCarousel images={beforeImages} />
       <h4>After (My Redesigned Pages)</h4>
@@ -100,4 +106,4 @@ const Phase2Ariel = () => {
   );
 };
 
-export default Phase2Ariel;
+export default Phase1Ariel;

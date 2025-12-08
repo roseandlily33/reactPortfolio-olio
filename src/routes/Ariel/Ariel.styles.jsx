@@ -1,21 +1,27 @@
 import styled from "styled-components";
 
+export const ArielLayout = styled.div`
+  display: flex;
+  align-items: flex-start;
+  width: 100vw;
+  /* max-width: 1600px; */
+  margin: 0 auto;
+  padding: 1rem;
+`;
+
 export const ArielMain = styled.main`
-  width: 90vw;
+  /* width: 80vw; */
   /* max-width: 1400px; */
-  margin: 3rem auto 3rem auto;
+  /* margin: 3rem auto 3rem auto; */
   padding: 3rem 2rem;
-  background: linear-gradient(
-    120deg,
-    var(--lightPink) 0%,
-    var(--lightCream) 100%
-  );
+  background: var( --lightestPink);
   border-radius: 40px;
   box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
+  /* border: 2px solid red; */
 `;
 
 export const Section = styled.section`
