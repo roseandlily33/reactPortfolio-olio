@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const BloomStudyCase = styled.div`
   display: flex;
@@ -9,13 +9,16 @@ export const BloomStudyCase = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   padding: 2rem;
-  background-color: #F4EBEB;
+  background-color: #f4ebeb;
   div {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    min-width: 100%;
+  }
+  section {
+    border: 2px solid red;
   }
   h3 {
     color: var(--darkPink);
@@ -50,7 +53,6 @@ export const BloomStudyCase = styled.div`
     flex-direction: column;
     gap: 0.2rem;
     border-bottom: 1px solid var(--medPink);
-
   }
   .juice p {
     line-height: 1;
@@ -102,5 +104,4 @@ export const BloomStudyCase = styled.div`
       box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
     }
   }
-
 `;

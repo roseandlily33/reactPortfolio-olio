@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Take layout and main from here
 export const ArielLayout = styled.div`
   display: flex;
   align-items: flex-start;
