@@ -3,8 +3,40 @@
 import NASA from "../../../images/projects/NASA.png";
 import Boutique from "../../../images/projects/Boutique.png";
 import LemonLime from "../../../images/projects/LemonLime.png";
+import DesignTemplate from "../../../images/projects/DesignTempalte.png";
 
 export const projectListMERN = [
+  {
+    id: 0,
+    title: "Design Template",
+    github: "https://github.com/roseandlily33/design-template/",
+    deployed: "https://design-template-1rg9.onrender.com",
+    status: true,
+    important: true,
+    description:
+      "A fully customized design template platform built with the specifications that I desired as I design. All of the selected choices like font styles, colours etc all come together on a predesigned template to aid in decision making",
+    keyFeatures: [
+      "3 sets of interchangable options for: Colours, Fonts, ",
+      "Accessibility chart for each colour palette",
+      "Font Scale Chart (Desktop, Tablet, Mobile)",
+      "Export the necessary design choices for projects",
+      "Spacing Scale Chart",
+      "Button Creation: Primary, Secondary, Tertiary",
+      "Logo insertion",
+      "Border Radius Selection",
+      "Account to save projects",
+    ],
+    role: "Sole developer: designed and implemented both frontend and backend.",
+    challenges: [
+      "Having the ability to have more than 1 set of fonts, colours etc",
+      "Displaying the selected colour var on the template",
+      "Authentication with cookies (new for this project)"
+    ],
+    img: DesignTemplate,
+    type: "Next.js & MongoDB",
+    technologies: ["Next.js", "Node", "express", "Mongo-DB"],
+    alt: "Design Template",
+  },
   {
     id: 1,
     title: "Lemon - Lime",
