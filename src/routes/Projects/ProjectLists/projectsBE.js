@@ -1,4 +1,4 @@
-import NoPhoto from '../../images/projects/NoPhoto.jpg';
+import NoPhoto from '../../../images/projects/NoPhoto.jpg';
 
 export const projectListBackEnd = [  
       {

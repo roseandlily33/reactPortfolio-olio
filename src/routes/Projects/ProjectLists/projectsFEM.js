@@ -1,13 +1,13 @@
-import Card3 from '../../images/frontEndMentor/3Card.png';
-import Card4 from '../../images/frontEndMentor/4Card.png';
-import CardPic from '../../images/frontEndMentor/CardComponent.png';
-import DiscoNews from '../../images/frontEndMentor/DiscoWeb.png';
-import NFT from '../../images/frontEndMentor/NFT.png';
-import Community from '../../images/frontEndMentor/Community.png';
-import PurpleBlob from '../../images/frontEndMentor/PurpleBlob.png';
-import QRCode from '../../images/frontEndMentor/QrCard.png';
-import OrderSummary from '../../images/frontEndMentor/OrderSummary.png';
-import SignUp from '../../images/frontEndMentor/SignUp.png';
+import Card3 from '../../../images/frontEndMentor/3Card.png';
+import Card4 from '../../../images/frontEndMentor/4Card.png';
+import CardPic from '../../../images/frontEndMentor/CardComponent.png';
+import DiscoNews from '../../../images/frontEndMentor/DiscoWeb.png';
+import NFT from '../../../images/frontEndMentor/NFT.png';
+import Community from '../../../images/frontEndMentor/Community.png';
+import PurpleBlob from '../../../images/frontEndMentor/PurpleBlob.png';
+import QRCode from '../../../images/frontEndMentor/QrCard.png';
+import OrderSummary from '../../../images/frontEndMentor/OrderSummary.png';
+import SignUp from '../../../images/frontEndMentor/SignUp.png';
 
 export const projectListFrontEndMentor = [
     { 

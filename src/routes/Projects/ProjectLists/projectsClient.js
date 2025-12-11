@@ -1,0 +1,108 @@
+import YODA from "../../../images/projects/YODA.png";
+import AB from "../../Ariel/ArielImages/Phase2/HomeV.png";
+import IP from "../../InspectionPal/IPImages/FinalHome.png";
+
+export const projectListClient = [
+  {
+    id: 1,
+    title: "YODA Safety Services",
+    github: "",
+    deployed: "https://www.yodasafetyservices.com/",
+    status: true,
+    important: true,
+    description:
+      "A custom-built training and certification platform for YODA Safety Services. Enables users to create accounts, enroll in online safety courses, purchase training, and download certificates. Built for scalability and security, with a focus on user experience.",
+    keyFeatures: [
+      "Course enrollment and progress tracking",
+      "Secure online payments and certificate downloads",
+      "Automated email notifications and reminders",
+      "Company Management",
+      "Subcontractor Management",
+      "Responsive design for mobile and desktop",
+      "Admin dashboard for course and user management",
+      "Interactive Form Upload & Instance System",
+    ],
+    role: "Lead developer: collaborated with client to define requirements, built and deployed the platform.",
+    challenges: [
+      "integrated secure payment processing",
+      "automated certificate generation",
+      "implemented user authentication and authorization, with different types of users",
+      "working with iframes, pdfs, images and packages that support those",
+    ],
+
+    img: YODA,
+    type: "MERN",
+    technologies: [
+      "bcrypt",
+      "cors",
+      "dotenv",
+      "express",
+      "helmet",
+      "mongodb",
+      "mongoose",
+      "morgan",
+      "jsonwebtoken",
+      "multer",
+      "nodemailer",
+      "nodemailer-express-handlebars",
+      "uuid",
+      "styled-components",
+      "react",
+      "react-router-dom",
+    ],
+    alt: "YODA Application",
+  },
+  {
+    id: 2,
+    title: "Ariel Boesener Performance Horses",
+    github: "",
+    deployed: "https://www.arielboesenerperformancehorses.com/",
+    status: false,
+    important: true,
+    description:
+      "A design project for Ariel Boesener Performance Horses. A responsive website built to showcase Ariel's training services, achievements, and available horses for sale. Focused on clean design and user experience.",
+    keyFeatures: [
+      "Responsive design for mobile and desktop",
+      "Gallery of training services and available horses",
+      "Hierarchy of content for easy navigation",
+      "Navigation Improvements",
+    ],
+    role: "UX/UI Designer: collaborated with client to create design mockups",
+    challenges: [
+      "Client Branding was corrected, new colour and font system",
+      "Navigation was restructured for better user experience",
+      "Ensuring responsive design across devices",
+      "Ensuring consistent design elements across the site",
+    ],
+
+    img: AB,
+    type: "Design",
+    alt: "Ariel Boesener Performance Horses Application",
+  },
+  {
+    id: 3,
+    title: "InspectionPal",
+    github: "",
+    deployed: "https://www.inspectionpal.com/",
+    status: true,
+    important: true,
+    description: "Front End Gatsby site for InspectionPal. Full redesign, and ",
+    keyFeatures: [
+      "Responsive Design",
+      "SEO Optimization",
+      "Custom animations & transitions",
+      "Accessibility Improvements",
+      "Performance optimization (lazy loading, image compression)",
+    ],
+    role: "Lead developer: collaborated with client to define requirements, built and deployed the platform.",
+    challenges: [
+      "Coming up with a cohesive design that matches the brand",
+      "Ensuring responsive design across devices",
+      "Optimizing performance for fast load times",
+    ],
+    img: IP,
+    type: "FE",
+    technologies: ["styled-components", "gatsby"],
+    alt: "InspectionPal Application",
+  },
+];

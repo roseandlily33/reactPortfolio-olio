@@ -1,17 +1,20 @@
-import { projectListFrontEnd } from "./projectsFE";
+import { projectListFrontEnd } from "./ProjectLists/projectsFE";
 // import { projectListGroups } from "./projectsGROUP";
 import { TopContainer } from "../CaseStudies/CaseStudies.styles";
-import { projectListMERN } from "./projectsMERN";
-import { projectListBackEnd } from "./projectsBE";
-import { projectListFrontEndMentor } from "./projectsFEM";
+import { projectListMERN } from "./ProjectLists/projectsMERN";
+import { projectListBackEnd } from "./ProjectLists/projectsBE";
+import { projectListFrontEndMentor } from "./ProjectLists/projectsFEM";
+import { projectListClient } from "./ProjectLists/projectsClient";
 import SingleProject from "../../components/SingleProject/EachProject";
 import { useState } from "react";
-import SelectedProject from "./SelectedProject";
+import SelectedProject from "./ModalForProject/SelectedProject";
 
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import TabButton from "../../components/Buttons/TabButton.component";
 
 const tabOptions = [
+  { key: "client", label: "Client Applications" },
+
   { key: "mern", label: "Main MERN Applications" },
   {
     key: "frontend",
@@ -30,7 +33,7 @@ const tabOptions = [
 const Projects = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [activeTab, setActiveTab] = useState("mern");
+  const [activeTab, setActiveTab] = useState("client");
 
   const openModal = (cert) => {
     setSelectedProject(cert);
@@ -46,6 +49,9 @@ const Projects = () => {
   switch (activeTab) {
     case "mern":
       projectList = projectListMERN;
+      break;
+    case "client":
+      projectList = projectListClient;
       break;
     case "frontend":
       projectList = projectListFrontEnd;

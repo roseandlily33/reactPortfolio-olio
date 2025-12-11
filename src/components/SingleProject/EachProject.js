@@ -1,8 +1,17 @@
+import { ProjectCard } from "./EachProject.styles";
+
 const SingleProject = ({ projectList, openModal }) => {
   return (
-    <section>
+    <section
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "2rem",
+        justifyContent: "space-around",
+      }}
+    >
       {projectList?.map((project) => (
-        <div
+        <ProjectCard
           id="certContainer"
           key={project.id}
           onClick={() => openModal(project)}
@@ -14,18 +23,24 @@ const SingleProject = ({ projectList, openModal }) => {
               </span>
             </div>
           )}
-          <img key={project?.id} src={project?.img} alt={project?.alt} />
-          <h5>{project?.title}</h5>
-          <p>
-            Status:{" "}
-            {project?.status === true ? (
-              <span style={{ color: "#5CB85C" }}>Complete</span>
-            ) : (
-              <span style={{ color: "#e6b607" }}>Under Development</span>
-            )}
-          </p>
-          <p>{project?.type}</p>
-        </div>
+          <div className="project-image-wrapper">
+            <img id="projPic" src={project?.img} alt={project?.alt} />
+          </div>
+          <div className="project-details">
+            <h5>{project?.title}</h5>
+            <div className="project-status-type">
+              <span className="project-status">
+                Status:{" "}
+                {project?.status === true ? (
+                  <span style={{ color: "#5CB85C" }}>Complete</span>
+                ) : (
+                  <span style={{ color: "#e6b607" }}>Under Development</span>
+                )}
+              </span>
+              <span className="project-type">{project?.type}</span>
+            </div>
+          </div>
+        </ProjectCard>
       ))}
     </section>
   );

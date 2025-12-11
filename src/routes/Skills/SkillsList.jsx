@@ -40,7 +40,7 @@ export const skills = {
     { name: "Redux & Tanstack Query", icon: <SiRedux />, rating: 2 },
     { name: "JWTs", icon: <FaRegStar />, rating: 2 },
     { name: "Paypal", icon: <FaPaypal />, rating: 2 },
-    { name: "Gatsby", icon: <SiGatsby />, rating: 1 },
+    { name: "Gatsby", icon: <SiGatsby />, rating: 3 },
     {
       name: "Visuals: Image Compression, PDFs",
       icon: <FaRegStar />,

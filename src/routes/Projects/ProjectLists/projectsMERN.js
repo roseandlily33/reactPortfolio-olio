@@ -1,9 +1,8 @@
 // import Blog from "../../images/projects/Blog.png";
 //import SmartBrain from './images/projects/SmartBrain.png';
-import NASA from "../../images/projects/NASA.png";
-import Boutique from "../../images/projects/Boutique.png";
-import YODA from "../../images/projects/YODA.png";
-import LemonLime from "../../images/projects/LemonLime.png";
+import NASA from "../../../images/projects/NASA.png";
+import Boutique from "../../../images/projects/Boutique.png";
+import LemonLime from "../../../images/projects/LemonLime.png";
 
 export const projectListMERN = [
   {
@@ -51,54 +50,6 @@ export const projectListMERN = [
       "uuid",
     ],
     alt: "Lemon Lime Application",
-  },
-  {
-    id: 2,
-    title: "YODA Safety Services - Client Project",
-    github: "",
-    deployed: "https://www.yodasafetyservices.com/",
-    status: true,
-    important: true,
-    description:
-      "A custom-built training and certification platform for YODA Safety Services. Enables users to create accounts, enroll in online safety courses, purchase training, and download certificates. Built for scalability and security, with a focus on user experience.",
-    keyFeatures: [
-      "Course enrollment and progress tracking",
-      "Secure online payments and certificate downloads",
-      "Automated email notifications and reminders",
-      "Company Management",
-      "Subcontractor Management",
-      "Responsive design for mobile and desktop",
-      "Admin dashboard for course and user management",
-    ],
-    role: "Lead developer: collaborated with client to define requirements, built and deployed the platform.",
-    challenges: [
-      "integrated secure payment processing",
-      "automated certificate generation",
-      "implemented user authentication and authorization, with different types of users",
-      "working with iframes, pdfs, images and packages that support those",
-    ],
-
-    img: YODA,
-    type: "MERN",
-    technologies: [
-      "bcrypt",
-      "cors",
-      "dotenv",
-      "express",
-      "helmet",
-      "mongodb",
-      "mongoose",
-      "morgan",
-      "jsonwebtoken",
-      "multer",
-      "nodemailer",
-      "nodemailer-express-handlebars",
-      "uuid",
-      "styled-components",
-      "react",
-      "react-router-dom",
-    ],
-    alt: "YODA Application",
   },
   {
     id: 3,

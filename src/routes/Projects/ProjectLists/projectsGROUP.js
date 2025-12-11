@@ -1,6 +1,6 @@
-import CardWise from '../../images/projects/CardWise.png';
-import Football from '../../images/projects/Football.png';
-import Restaurant from '../../images/projects/Restaurant.png';
+import CardWise from '../../../images/projects/CardWise.png';
+import Football from '../../../images/projects/Football.png';
+import Restaurant from '../../../images/projects/Restaurant.png';
 
 
 export const projectListGroups = [

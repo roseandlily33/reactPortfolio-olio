@@ -1,87 +1,121 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const EachProjectContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-inline: 1rem;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-`;
 export const ProjectCard = styled.div`
-    width: 28%;
-    height: 450px;
-    /* padding: 2rem; */
-    /* border-top-right-radius: 25px;/ */
-    border-radius: 25px;
-    /* border-bottom-left-radius: 25px; */
-    /* padding-top: 1rem; */
-    box-shadow: ${({theme}) => theme.colors.boxShadow};
-    /* border-right: 7px solid ${({theme}) => theme.colors.darkPink}; */
-    /* border-left: 7px solid ${({theme}) => theme.colors.lightBrown}; */
-    /* border-top: 5px solid ${({theme}) => theme.colors.darkBrown}; */
-    /* border-bottom: 5px solid ${({theme}) => theme.colors.lightPink}; */
+  max-width: 26%;
+  max-height: 350px;
+  border-radius: 25px;
+  box-shadow: ${({ theme }) => theme.colors.boxShadow};
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: ${({ theme }) => theme.colors.lightCream};
+
+  .project-image-wrapper {
+    min-width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+
+  #projPic {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    transition: filter 0.5s;
+  }
+  #projPic:hover {
+    filter: grayscale(100%);
+  }
+
+  .project-details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    background-color:  ${({theme}) => theme.colors.lightCream};
-    #projPic {
-        min-width: 100%;
-        max-width: 100%;
-        /* min-height: 50%; */
-        max-height: 70%;
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
-        /* border-radius: 15px; */
-    }
-    #projPic:hover{
-        filter: grayscale(100%);
-        transition: all .5s;
-    }
-    .bold{
-        font-weight: 550;
-        padding-top: 0.5rem;
-        padding-left: 0.5rem;
-    }
-    span{
-        font-weight: normal;
-    }
-    p{
-        margin-top: 0.5rem;
-        padding-left: 0.5rem;
-        margin-bottom: 0.5rem;
+    align-items: flex-start;
+    padding: 1rem 1.2rem 0.5rem 1.2rem;
+    gap: 0.3rem;
+    flex: 1;
+  }
 
-    }
-    a{
-        float: right;
-         padding-block: 0.5em;
-    }
-    a:hover{
-        transform: scale(1.3);
-    }
-    @media screen and (max-width: 1750px){
-        width: 35%;
-        height: 600px;
-    }
-    @media screen and (max-width: 1200px){
-        width: 45%;
-        height: 600px;
-    }
-    @media screen and (max-width: 1000px){
-        width: 80%;
-        height: 600px;
-    }
-    @media screen and (max-width: 800px){
-        width: 100%;
-        height: 600px;
-    } 
+  h5 {
+    font-size: 1.18rem;
+    font-family: var(--headerFont);
+    color: var(--darkPink);
+    font-weight: 600;
+    margin: 0 0 0.2rem 0;
+    text-align: left;
+    letter-spacing: 0.01em;
+    width: 100%;
+  }
+
+  .project-status-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+  }
+
+  .project-status {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .project-type {
+    font-size: 0.98rem;
+    color: var(--medPink);
+    font-weight: 500;
+    background: rgba(241, 116, 150, 0.08);
+    border-radius: 999px;
+    padding: 0.2em 0.8em;
+    letter-spacing: 0.01em;
+  }
+
+  .bold {
+    font-weight: 550;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  span {
+    font-weight: normal;
+  }
+  p {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    float: right;
+    padding-block: 0.5em;
+  }
+  a:hover {
+    transform: scale(1.3);
+  }
+  @media screen and (max-width: 1750px) {
+    width: 35%;
+    height: 600px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 45%;
+    height: 600px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+    height: 600px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    height: 600px;
+  }
 `;
-
-
-
-
- 
-
- 
