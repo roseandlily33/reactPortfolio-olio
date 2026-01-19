@@ -3,14 +3,50 @@
 import NASA from "../../../images/projects/NASA.png";
 import Boutique from "../../../images/projects/Boutique.png";
 import LemonLime from "../../../images/projects/LemonLime.png";
-import DesignTemplate from "../../../images/projects/DesignTempalte.png";
+import DesignTemplate from "../../../images/projects/DesignTemplate.png";
+import AlgoAtlas from "../../../images/projects/AlgoAtlas.png";
 
 export const projectListMERN = [
+  {
+    id: 22,
+    title: "AlgoAtlas",
+    github: "https://github.com/roseandlily33/algoatlas",
+    deployed: "https://algoatlas.onrender.com",
+    status: false,
+    important: true,
+    description:
+      "A algorithm practice platform build with Next.js and MongoDB. Users can create accounts, practice algorithms, track their progress, and discover new challenges. Integrated code editor and secure authentication for a seamless experience. * Responsive Design not complete",
+    keyFeatures: [
+      "User authentication and authorization with Auth0",
+      "Algorithm practice and tracking",
+      "Code editor integration",
+    ],
+    role: "Sole developer: designed, built, and deployed the entire application.",
+    challenges: [
+      "Code editor integration for seamless algorithm practice",
+      "Database schema design for algorithms and user profiles",
+    ],
+    img: AlgoAtlas,
+    type: "Next.js & MongoDB",
+    technologies: [
+      "bcrypt",
+      "cors",
+      "cookie-parser",
+      "dotenv",
+      "express",
+      "helmet",
+      "mongodb",
+      "mongoose",
+      "morgan",
+      "react",
+    ],
+    alt: "AlgoAtlas Application",
+  },
   {
     id: 0,
     title: "Design Template",
     github: "https://github.com/roseandlily33/design-template/",
-    deployed: "https://design-template-1rg9.onrender.com",
+    deployed: "https://design-template-eotn.onrender.com",
     status: true,
     important: true,
     description:
@@ -30,7 +66,7 @@ export const projectListMERN = [
     challenges: [
       "Having the ability to have more than 1 set of fonts, colours etc",
       "Displaying the selected colour var on the template",
-      "Authentication with cookies (new for this project)"
+      "Authentication with cookies (new for this project)",
     ],
     img: DesignTemplate,
     type: "Next.js & MongoDB",
