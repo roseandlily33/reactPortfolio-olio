@@ -44,14 +44,14 @@ body {
   font-family: var(--mainFont);
 }
 h1 {
-  font-size: 2.986rem;
+  font-size: 3rem;
   font-family: var(--titleFont);
-  font-weight: 400;
+  font-weight: 700;
   color: var(--darkBrown);
 }
 h2 {
   font-size: 2.488rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: var(--headerFont);
 }
@@ -267,7 +267,7 @@ html {
     font-size: 1rem; /* 16px */
   }
   h1 {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.2rem;
@@ -315,7 +315,7 @@ html {
     font-size: 1.125rem; /* 18px */
   }
   h1 {
-    font-size: 1.55rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.45rem;
@@ -340,7 +340,7 @@ html {
 /* Large Screens (Desktop) */
 @media screen and (min-width: 1440px) {
   h1 {
-    font-size: 2.3rem; /* Reduced from 2.5rem */
+    font-size: 3.3rem; /* Reduced from 2.5rem */
   }
   h2 {
     font-size: 2.05rem; /* Reduced from 2.25rem */

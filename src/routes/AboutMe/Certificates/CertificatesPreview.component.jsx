@@ -18,9 +18,9 @@ const CertificatesPreview = () => {
 
   return (
     <CertificatesPreviewSection>
-      <h2>Highlighted Certificates</h2>
+      <h2 style={{ color: "var(--darkPink)" }}>Highlighted Certificates</h2>
       <CertificatesGrid>
-        {importantCerts.map((cert) => (
+        {importantCerts?.map((cert) => (
           <CertificateCard key={cert.id}>
             <CertificateImage src={cert.photo} alt={cert.title} />
             <CertificateTitle>{cert.title}</CertificateTitle>

@@ -1,6 +1,8 @@
 import { ProjectCard } from "./EachProject.styles";
+import { useNavigate } from "react-router-dom";
 
 const SingleProject = ({ projectList, openModal }) => {
+  const navigate = useNavigate();
   return (
     <section
       style={{
@@ -14,7 +16,7 @@ const SingleProject = ({ projectList, openModal }) => {
         <ProjectCard
           id="certContainer"
           key={project.id}
-          onClick={() => openModal(project)}
+          onClick={() => navigate(`/Project/${project.id}`)}
         >
           {project?.important && (
             <div className="important-badge">

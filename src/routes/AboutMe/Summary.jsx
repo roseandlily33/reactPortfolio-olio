@@ -29,7 +29,7 @@ const SummaryComponent = () => {
             <p
               style={{ fontSize: "1.15rem", color: "#b23a48", fontWeight: 600 }}
             >
-              MERN Full Stack Developer & UX/UI Enthusiast
+              MERN Full Stack Developer & UX/UI Designer
             </p>
             <p>
               I specialize in building beautiful, accessible, and

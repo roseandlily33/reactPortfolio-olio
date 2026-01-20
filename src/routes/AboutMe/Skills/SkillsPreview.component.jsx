@@ -11,12 +11,12 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const getTopSkills = () => {
-  // Get top 3 from Frontend, Backend, Other, SoftSkills (rating 3)
-  const topFrontend = skills.Frontend.filter((s) => s.rating === 3).slice(0, 3);
-  const topBackend = skills.Backend.filter((s) => s.rating === 3).slice(0, 2);
-  const topOther = skills.Other.filter((s) => s.rating === 3).slice(0, 1);
-  const topSoft = skills.SoftSkills.filter((s) => s.rating === 3).slice(0, 2);
-  return [...topFrontend, ...topBackend, ...topOther, ...topSoft];
+  return [
+    ...skills.Frontend.filter((s) => s.top),
+    ...skills.Backend.filter((s) => s.top),
+    ...skills.Other.filter((s) => s.top),
+    ...skills.SoftSkills.filter((s) => s.top),
+  ];
 };
 
 const SkillsPreview = () => {

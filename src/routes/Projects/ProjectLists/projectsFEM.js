@@ -11,7 +11,7 @@ import SignUp from '../../../images/frontEndMentor/SignUp.png';
 
 export const projectListFrontEndMentor = [
     { 
-        id: 1,
+        id: 301,
         github: 'https://github.com/roseandlily33/four-card-feature',
         deployed: 'https://roseandlily33.github.io/four-card-feature/',
         description: 'Four Card Feature - HTML/CSS',
@@ -20,7 +20,7 @@ export const projectListFrontEndMentor = [
         status: true,
     },
     {
-        id: 2,
+        id: 302,
         title: 'Single Price Grid',
         github: 'https://github.com/roseandlily33/SinglePriceGrid',
         depolyed: 'https://roseandlily33.github.io/SinglePriceGrid/',
@@ -30,7 +30,7 @@ export const projectListFrontEndMentor = [
         status: true,
     }, 
     {
-        id: 3,
+        id: 303,
         title: 'QR-Code Component',
         github: 'https://github.com/roseandlily33/QR-Code-Component',
         depolyed: 'https://roseandlily33.github.io/QR-Code-Component/',
@@ -40,7 +40,7 @@ export const projectListFrontEndMentor = [
         img: QRCode
     },
     {
-        id: 4,
+        id: 304,
         title: '3-Column Component',
         github: 'https://github.com/roseandlily33/3-Column-Component',
         depolyed: 'https://roseandlily33.github.io/3-Column-Component/',
@@ -50,7 +50,7 @@ export const projectListFrontEndMentor = [
         img: Card3
     },
     {
-        id: 5,
+        id: 305,
         title: 'Product Preview Card',
         github: 'https://github.com/roseandlily33/product-preview-card',
         depolyed: 'https://roseandlily33.github.io/product-preview-card/',
@@ -70,7 +70,7 @@ export const projectListFrontEndMentor = [
     //     img: ''
     // },
     {
-        id: 7,
+        id: 307,
         title: 'Disco News',
         github: 'https://github.com/roseandlily33/fuzzy-disco-news-webpage',
         depolyed: 'https://roseandlily33.github.io/fuzzy-disco-news-webpage/',
@@ -80,7 +80,7 @@ export const projectListFrontEndMentor = [
         img: DiscoNews
     },
     {
-        id: 8,
+        id: 308,
         title: 'Purple Blob Component',
         github: 'https://github.com/roseandlily33/thePurpleBlotch',
         depolyed: 'https://roseandlily33.github.io/thePurpleBlotch/',
@@ -91,7 +91,7 @@ export const projectListFrontEndMentor = [
     }
     ,
     {
-        id: 9,
+        id: 309,
         title: 'Intro Component with Sign Up',
         github: 'https://github.com/roseandlily33/sniffleSignUp',
         depolyed: 'https://roseandlily33.github.io/sniffleSignUp/',
@@ -102,7 +102,7 @@ export const projectListFrontEndMentor = [
     }
     ,
     {
-        id: 10,
+        id: 310,
         title: 'Order Summary Component',
         github: 'https://github.com/roseandlily33/order-summary-component',
         depolyed: 'https://roseandlily33.github.io/order-summary-component/',
@@ -113,7 +113,7 @@ export const projectListFrontEndMentor = [
     }
     ,
     {
-        id: 11,
+        id: 311,
         title: 'NFT Product Preview Card',
         github: 'https://github.com/roseandlily33/NFT-Product-Preview-Card',
         depolyed: 'https://roseandlily33.github.io/NFT-Product-Preview-Card/',

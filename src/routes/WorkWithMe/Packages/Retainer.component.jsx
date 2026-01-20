@@ -6,9 +6,11 @@ import {
   RetainerGrid,
   RetainerCard,
   RetainerCardTitle,
+  RetainerCardBase,
   RetainerPrice,
   RetainerDescription,
   RetainerFeatures,
+  RetainerIncludes,
 } from "./Retainer.styles";
 import { Retainer } from "./RetainerInfo";
 
@@ -18,23 +20,35 @@ const RetainerComponent = () => (
     <RetainerGrid>
       {Retainer.map((ret, idx) => (
         <RetainerCard key={ret.name || idx}>
-          <RetainerCardTitle>
-            {ret.name} <span style={{ fontWeight: 400, fontSize: "1rem", marginLeft: "0.5em" }}>{ret.base}</span>
-          </RetainerCardTitle>
+          <RetainerCardTitle>{ret.name}</RetainerCardTitle>
+          <RetainerCardBase>
+            {ret.base}
+            <span className="base-line" />
+          </RetainerCardBase>
           {ret.price && (
             <RetainerPrice>
               <strong>Starting at:</strong> {ret.price}
             </RetainerPrice>
           )}
           <RetainerDescription>{ret.description}</RetainerDescription>
-          <RetainerFeatures>
-            {ret.features.map((feature, i) => (
-              <li key={i}>
-                <FaCheckCircle style={{ color: "var(--darkPink)", marginRight: "0.5em" }} />
-                {feature}
-              </li>
-            ))}
-          </RetainerFeatures>
+          <RetainerIncludes>
+            <summary>
+              Includes {" "}
+              <span className="chev">⌄</span>
+            </summary>
+            <div className="includes-content">
+              <RetainerFeatures>
+                {ret.features.map((feature, i) => (
+                  <li key={i}>
+                    <FaCheckCircle
+                      style={{ color: "var(--darkPink)", marginRight: "0.5em" }}
+                    />
+                    {feature}
+                  </li>
+                ))}
+              </RetainerFeatures>
+            </div>
+          </RetainerIncludes>
         </RetainerCard>
       ))}
     </RetainerGrid>

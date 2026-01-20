@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
-  background: var(--lightGrey);
+  /* background: var(--lightGrey); */
+  background-color: #f4ebeb;
   padding: 4rem 2rem 3rem 2rem;
   width: 100%;
   min-height: 70vh;
@@ -9,7 +10,7 @@ export const PackagesSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
+  /* removed debug border for cleaner look */
   h2 {
     margin-bottom: 4rem;
   }
@@ -40,12 +41,37 @@ export const PackagesGrid = styled.div`
 `;
 
 export const PackageCard = styled.div`
-  background: ${({ $bg }) => $bg || "rgba(255,255,255,0.7)"};
-  backdrop-filter: blur(8px) saturate(120%);
-  border-radius: 24px;
-  border: 2.5px solid ${({ $border }) => $border || "var(--darkPink)"};
-  box-shadow: 0 4px 24px rgba(241, 116, 150, 0.10);
-  padding: 2.5rem 2rem 2rem 2rem;
+  /* 8. Animated floating bubbles background */
+  /* .bubbles-bg {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.18;
+    filter: blur(1.2px);
+    animation: float-bubble 7s linear infinite;
+  } */
+  /* .bubble1 { width: 60px; height: 60px; left: 10%; top: 50px; background: ${({ $accent }) => ($accent ? `${$accent}55` : "#f1749622")}; animation-delay: 0s; } */
+  /* .bubble2 { width: 38px; height: 38px; left: 70%; top: 20px; background: ${({ $accent }) => ($accent ? `${$accent}33` : "#ed467222")}; animation-delay: 2s; } */
+  /* .bubble3 { width: 24px; height: 24px; left: 40%; top: 30px; background: ${({ $accent }) => ($accent ? `${$accent}44` : "#f6a9be22")}; animation-delay: 4s; } */
+  @keyframes float-bubble {
+    0% { transform: translateY(0) scale(1); opacity: 0.18; }
+    60% { opacity: 0.28; }
+    100% { transform: translateY(-120%) scale(1.15); opacity: 0.10; }
+  }
+  background: ${({ $bg }) => $bg || "rgba(255,255,255,0.15)"};
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.2rem 1.8rem 1.6rem 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -53,19 +79,67 @@ export const PackageCard = styled.div`
   max-width: 400px;
   width: 100%;
   transition: transform 0.18s;
-  &:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
+  position: relative;
+  padding-top: 2.05rem;
+  /* 6. Subtle noise/texture overlay */
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    opacity: 0.18;
+    z-index: 1;
+    background-image: url("https://www.transparenttextures.com/patterns/symphony.png");
+  }
+
+  /* 5. Glass reflection overlay */
+  .glass-reflection {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    width: 80%;
+    height: 22%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.04) 100%);
+    border-radius: 0 0 80px 80px / 0 0 40px 40px;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.7;
+    filter: blur(0.5px);
+  }
+
+  /* accent bar at the top (gradient from accent color to softer pink) */
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 8px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: ${({ $accent, $accentSoft }) =>
+    `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
+    z-index: 2;
+    transition: background 0.5s cubic-bezier(0.77,0,0.18,1);
+  }
+  &:hover::before {
+    background: ${({ $accent }) =>
+    `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
   }
 `;
 
 export const PackageTitle = styled.h3`
   font-family: var(--headerFont);
-  font-size: 1.7rem;
+  font-size: 1.85rem;
+  font-weight: 800;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: ${({ $titleColor }) => $titleColor || "inherit"};
 `;
 
 export const PackagePrice = styled.div`
@@ -76,7 +150,7 @@ export const PackagePrice = styled.div`
 `;
 
 export const PackageDescription = styled.p`
-  color: var(--medBrown);
+  color: var(--darkGrey);
   font-size: 1.1rem;
   margin-bottom: 1rem;
 `;
@@ -94,18 +168,70 @@ export const PackageFeatures = styled.ul`
 `;
 
 export const PackageIcon = styled.div`
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   margin-bottom: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: ${({ $titleColor }) => $titleColor || "inherit"};
+  position: relative;
+  z-index: 3;
+  /* Remove icon's own circle, now handled by .circle-accent */
+`;
+
+/* Collapsible "Includes" area using native details/summary */
+export const PackageDetails = styled.details`
+  width: 100%;
+  margin-top: 0.8rem;
+  summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: ${({ $accent }) => $accent || "var(--darkPink)"};
+    font-weight: 600;
+    background: transparent;
+    padding: 0.25rem 0;
+    outline: none;
+  }
+  .chev {
+    display: inline-block;
+    transition:
+      transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
+      color 180ms;
+    font-size: 1.15rem;
+    color: ${({ $accent }) => $accent || "var(--darkGrey)"};
+    will-change: transform, color;
+  }
+  summary:hover .chev {
+    color: ${({ $accent }) => $accent || "var(--darkPink)"};
+    transform: scale(1.25) rotate(10deg);
+  }
+  &[open] .chev {
+    transform: rotate(180deg) scale(1.15);
+    color: ${({ $accent }) => $accent || "var(--darkPink)"};
+  }
+  .includes-content {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 360ms cubic-bezier(0.77, 0, 0.18, 1),
+      padding 260ms cubic-bezier(0.77, 0, 0.18, 1);
+    padding-top: 0;
+  }
+  &[open] .includes-content {
+    max-height: 480px; /* large enough to show the list */
+    padding-top: 0.75rem;
+  }
 `;
 
 export const ComesWithSection = styled.section`
   margin-top: 4rem;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(241,116,150,0.10);
+  box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
   padding: 2.5rem 2rem;
   max-width: 900px;
   width: 100%;

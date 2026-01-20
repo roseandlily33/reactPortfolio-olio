@@ -18,10 +18,11 @@ export const SkillsPreviewSection = styled.section`
 
 export const SkillsGrid = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: scroll;
+  max-width: 100%;
   gap: 1.5rem;
-  justify-content: center;
-  margin: 2rem 0 1.5rem 0;
+  margin-top: 1.5rem;
+  padding: 1rem;
 `;
 
 export const SkillCard = styled.div`
@@ -70,7 +71,10 @@ export const SeeSkillsButton = styled.button`
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
   cursor: pointer;
   margin-top: 1.5rem;
-  transition: background 0.2s, color 0.2s, transform 0.18s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.18s;
 
   &:hover {
     background: var(--medPink);

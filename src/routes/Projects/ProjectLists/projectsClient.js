@@ -4,7 +4,7 @@ import IP from "../../InspectionPal/IPImages/FinalHome.png";
 
 export const projectListClient = [
   {
-    id: 1,
+    id: 501,
     title: "YODA Safety Services",
     github: "",
     deployed: "https://www.yodasafetyservices.com/",
@@ -53,7 +53,7 @@ export const projectListClient = [
     alt: "YODA Application",
   },
   {
-    id: 2,
+    id: 502,
     title: "Ariel Boesener Performance Horses",
     github: "",
     deployed: "https://www.arielboesenerperformancehorses.com/",
@@ -80,7 +80,7 @@ export const projectListClient = [
     alt: "Ariel Boesener Performance Horses Application",
   },
   {
-    id: 3,
+    id: 503,
     title: "InspectionPal",
     github: "",
     deployed: "https://www.inspectionpal.com/",

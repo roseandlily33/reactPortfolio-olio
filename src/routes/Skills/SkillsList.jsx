@@ -26,17 +26,17 @@ import {
 export const skills = {
   Frontend: [
     { name: "HTML", icon: <FaHtml5 />, rating: 3 },
-    { name: "CSS", icon: <FaCss3Alt />, rating: 3 },
+    { name: "CSS", icon: <FaCss3Alt />, rating: 3, top: true },
     {
       name: "CSS Libraries: Bootstrap, Styled Components, Pure.css",
       icon: <SiStyledcomponents />,
       rating: 3,
     },
     { name: "Responsive Design", icon: <FaRegStar />, rating: 3 },
-    { name: "JavaScript", icon: <SiJavascript />, rating: 3 },
+    { name: "JavaScript", icon: <SiJavascript />, rating: 3, top: true },
     { name: "APIs", icon: <FaRegStar />, rating: 3 },
-    { name: "React", icon: <FaReact />, rating: 3 },
-    { name: "Next.js", icon: <RiNextjsFill />, rating: 1 },
+    { name: "React", icon: <FaReact />, rating: 3, top: true },
+    { name: "Next.js", icon: <RiNextjsFill />, rating: 3, top: true },
     { name: "Redux & Tanstack Query", icon: <SiRedux />, rating: 2 },
     { name: "JWTs", icon: <FaRegStar />, rating: 2 },
     { name: "Paypal", icon: <FaPaypal />, rating: 2 },
@@ -48,10 +48,10 @@ export const skills = {
     },
   ],
   Backend: [
-    { name: "Node.js", icon: <FaNodeJs />, rating: 3 },
+    { name: "Node.js", icon: <FaNodeJs />, rating: 3, top: true },
     { name: "Express.js", icon: <SiExpress />, rating: 3 },
     { name: "MySQL", icon: <SiMysql />, rating: 2 },
-    { name: "MongoDB & Mongoose", icon: <SiMongodb />, rating: 3 },
+    { name: "MongoDB & Mongoose", icon: <SiMongodb />, rating: 3, top: true },
     { name: "AWS Amazon", icon: <FaAws />, rating: 2 },
     { name: "GraphQL", icon: <SiGraphql />, rating: 1 },
     { name: "Multer", icon: <FaNodeJs />, rating: 2 },
@@ -61,7 +61,7 @@ export const skills = {
     { name: "Database Design", icon: <FaRegStar />, rating: 2 },
   ],
   Other: [
-    { name: "UX/UI Design", icon: <FaRegStar />, rating: 3 },
+    { name: "UX/UI Design", icon: <FaRegStar />, rating: 3, top: true },
     { name: "SEO", icon: <FaRegStar />, rating: 2 },
     { name: "Cyber Security", icon: <FaRegStar />, rating: 2 },
     { name: "CORS", icon: <FaRegStar />, rating: 1 },

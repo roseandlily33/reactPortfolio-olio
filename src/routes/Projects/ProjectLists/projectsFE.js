@@ -12,7 +12,7 @@ import Password from "../../../images/projects/Password.png";
 
 export const projectListFrontEnd = [
   {
-    id: 1,
+    id: 401,
     title: "Javascript Quiz",
     github: "https://github.com/roseandlily33/Violet-Quizzlet",
     deployed: "https://roseandlily33.github.io/Violet-Quizzlet/",
@@ -25,7 +25,7 @@ export const projectListFrontEnd = [
     alt: "Javascript quiz application",
   },
   {
-    id: 2,
+    id: 402,
     title: "Cloudy With A Chance Of Coding",
     github: "https://github.com/roseandlily33/cloudyWithAChanceOfCoding",
     deployed: "https://roseandlily33.github.io/cloudyWithAChanceOfCoding/",
@@ -39,7 +39,7 @@ export const projectListFrontEnd = [
   },
   // This one is sort of working missing pictures
   {
-    id: 3,
+    id: 403,
     title: "Rose & Lily Bakery",
     github: "https://github.com/roseandlily33/makeMeACake",
     deployed: "https://roseandlily33.github.io/makeMeACake/",
@@ -51,7 +51,7 @@ export const projectListFrontEnd = [
   },
   //Up on render and is working - project is not finished
   {
-    id: 4,
+    id: 404,
     title: "Jammin Spotify Playlist",
     github: "https://github.com/roseandlily33/silver-butterfly",
     status: true,
@@ -64,7 +64,7 @@ export const projectListFrontEnd = [
     alt: "Jammin Application",
   },
   {
-    id: 5,
+    id: 405,
     title: "Magic 8 Ball",
     github: "https://github.com/roseandlily33/8away",
     status: true,
@@ -75,7 +75,7 @@ export const projectListFrontEnd = [
     alt: "Magic 8 Ball",
   },
   {
-    id: 6,
+    id: 406,
     title: "Random Quote Generator",
     github: "https://github.com/roseandlily33/potential-carnival",
     status: true,
@@ -86,7 +86,7 @@ export const projectListFrontEnd = [
     alt: "Quote Generator",
   },
   {
-    id: 7,
+    id: 407,
     title: "Picture in Picture",
     github: "https://github.com/roseandlily33/double-picture",
     status: true,
@@ -98,7 +98,7 @@ export const projectListFrontEnd = [
     alt: "Picture in Picture",
   },
   {
-    id: 8,
+    id: 408,
     title: "Inifity Scroll",
     github: "https://github.com/roseandlily33/toInfinityAndBeyond/tree/main",
     status: false,
@@ -109,7 +109,7 @@ export const projectListFrontEnd = [
     alt: "Infinity Scroll",
   },
   {
-    id: 9,
+    id: 409,
     title: "Password Generator",
     github: "https://github.com/roseandlily33/PaSSw0rd-Gen3rat0r892",
     status: true,
@@ -131,7 +131,7 @@ export const projectListFrontEnd = [
   //   alt: 'Busy Bee Scheduler'
   //  },
   {
-    id: 9,
+    id: 410,
     title: "Make Me a Cake",
     github: "https://github.com/roseandlily33/makeMeACake",
     status: true,

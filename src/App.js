@@ -13,6 +13,7 @@ import WorkHome from "./routes/WorkWithMe/WorkHome.component";
 import BloomAndBerry from "./routes/CaseStudies/bloom_and_berry/BloomBerry.component";
 import BloomAndBerryPage from "./routes/BloomAndBerry/BloomAndBerry.component";
 import ArielHome from "./routes/Ariel/ArielHome.component";
+import Project from "./routes/Project/Project.component";
 
 const theme = {
   colors: {
@@ -45,6 +46,7 @@ function App() {
           <Routes>
             <Route index path="/" element={<AboutMe />}></Route>
             <Route path="/Projects" element={<Projects />}></Route>
+            <Route path="/Project/:id" element={<Project />}></Route>
             <Route path="/Certificates" element={<Certificates />}></Route>
             <Route path="/Skills" element={<SkillsPage />}></Route>
             <Route path="/Work" element={<WorkHome />}></Route>

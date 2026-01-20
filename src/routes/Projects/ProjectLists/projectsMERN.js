@@ -8,7 +8,7 @@ import AlgoAtlas from "../../../images/projects/AlgoAtlas.png";
 
 export const projectListMERN = [
   {
-    id: 22,
+    id: 1022,
     title: "AlgoAtlas",
     github: "https://github.com/roseandlily33/algoatlas",
     deployed: "https://algoatlas.onrender.com",
@@ -43,7 +43,7 @@ export const projectListMERN = [
     alt: "AlgoAtlas Application",
   },
   {
-    id: 0,
+    id: 100,
     title: "Design Template",
     github: "https://github.com/roseandlily33/design-template/",
     deployed: "https://design-template-eotn.onrender.com",
@@ -74,7 +74,7 @@ export const projectListMERN = [
     alt: "Design Template",
   },
   {
-    id: 1,
+    id: 101,
     title: "Lemon - Lime",
     github: "https://github.com/roseandlily33/lemon-lime",
     deployed: "https://lemon-lime.onrender.com",
@@ -120,7 +120,7 @@ export const projectListMERN = [
     alt: "Lemon Lime Application",
   },
   {
-    id: 3,
+    id: 103,
     title: "Rose & Lily Boutique",
     github: "https://github.com/roseandlily33/sunshine_boutique",
     deployed: "https://superb-croquembouche-bbcbcb.netlify.app/",
@@ -155,7 +155,7 @@ export const projectListMERN = [
     alt: "Rose and Lily Boutique Application",
   },
   {
-    id: 4,
+    id: 104,
     title: "NASA - To The Stars",
     github: "https://github.com/roseandlily33/space-doodle",
     deployed: "https://space-doodle-nasa.onrender.com",
