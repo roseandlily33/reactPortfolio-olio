@@ -3,7 +3,7 @@
 // 2. challenges faced during development
 // 3. lessons learned
 // 4. screenshos
-// 5. timeline 
+// 5. timeline
 // 6. tools and frameworks used
 // 7. Accessibility features
 export const YodaCaseStudyInfoData = [
@@ -11,7 +11,7 @@ export const YodaCaseStudyInfoData = [
   {
     title: "Payment Integration Case Study",
     overview:
-      "This case study focuses on integrating a payment system into Yoda Safety Services to facilitate secure transactions in order for users and companies to purchase courses. The user needed to be able to purchase a variety of courses for themselves, and their employer needed to be able to purcahse courses for the employees. Which ended up being a serperate page for both types of users, including seperate backend routes. Users are able to see their purchased courses within their profile, and companies are able to see the courses purchased for their employees within their profile. They have immediate access to the course, and can start learning right away. They will recieve a payment confirmation, and once the certificate is expiring they will recieve and email notification",
+      "This case study focuses on integrating a payment system into Yoda Safety Services to facilitate secure transactions in order for users and companies to purchase courses. The user needed to be able to purchase a variety of courses for themselves, and their employer needed to be able to purcahse courses for the employees. Which ended up being a serperate page for both types of users, including seperate backend routes. Users are able to see their purchased courses within their profile, and companies are able to see the courses purchased for their employees within their profile. They have immediate access to the course, and can start learning right away. They will recieve a payment confirmation, and once the certificate is expiring they will recieve and email notification.",
     problem:
       "The application needed a reliable and secure way to handle payments, ensuring user data protection and compliance with financial regulations. As well as a way for users to purchase courses, and for companies to purchase courses for their employees.",
     solution:
@@ -20,7 +20,8 @@ export const YodaCaseStudyInfoData = [
       "Technologies used is Paypal, may implement stripe in the future.",
     conclusion:
       "The integration has enabled transactions allowing users to purchase courses directly through the application, enhancing user experience and increasing revenue for Yoda Safety Services.",
-    keyMetrics: "Increased course sales by 10% within the first month of integration. (Key note: Yoda Safety Services is a new company)",
+    keyMetrics:
+      "Increased course sales by 10% within the first month of integration. (Key note: Yoda Safety Services is a new company)",
     futureImprovements:
       "Future improvements will include adding more methods of payment, such as Stripe.",
     links: {
@@ -56,66 +57,42 @@ export const YodaCaseStudyInfoData = [
   {
     title: "User Profile Management Case Study",
     overview:
-      "This case study focuses on developing a user profile management system that allows users to create, update, and manage their profiles.",
+      "This case study focuses on developing a user profile management system that allows users to create, update, delete, and manage their profiles. While combining in types of users, such as regular users and company users. Depending on the type of user they are allowed certain permissions that other users are not allowed to have.",
     problem:
-      "Users needed a way to manage their personal information, preferences, and settings within the application.",
+      "Users needed a way to manage their personal information, preferences, and settings within the application. As well as to manager other users accounts if they were in the same company as them and had permissions to do so.",
     solution:
-      "The solution involved creating a user profile management system with features for editing personal information, changing passwords, and managing preferences.",
+      "The solution involved creating a user profile management system with features for editing personal information, changing passwords, and managing preferences. As well as another tier to manager the company - that included managing courses, forms, adding and removing employees, to change the status of the employee if needed, and viewing employee progress. Other requirements were seeing who has done training, getting certificates with the ability to download them as well as sending training reminders.",
     technologiesUsed:
-      "Technologies used include React for the front-end, Node.js for the back-end, and MongoDB for storing user profiles.",
+      "Technologies used include React for the front-end, Node.js for the back-end, and MongoDB for storing user profiles. ",
     conclusion:
-      "The user profile management system has improved user engagement and satisfaction by providing a personalized experience.",
+      "The user profile management system has improved user engagement and satisfaction by providing a personalized experience. With an easy-to-use interface for managing profiles and company accounts.",
     futureImprovements:
       "Future improvements could include adding social media integration and enhanced privacy settings.",
     links: {
       website: "https://example.com/user-profile-management",
       github: "",
     },
+    keyMetrics: "Verbal feedback from users.",
     tabName: "User Profile ",
     image: "https://example.com/user-profile-management-image.jpg",
-  },
-  // deployment
-  {
-    title: "Deployment Case Study",
-    overview:
-      "This case study covers the deployment of a web application to a production environment, ensuring it is accessible to users.",
-    problem:
-      "The application needed to be deployed in a way that ensures high availability, scalability, and security.",
-    solution:
-      "The solution involved deploying the application using Docker containers and hosting it on a cloud platform like AWS or Heroku.",
-    technologiesUsed:
-      "Technologies used include Docker for containerization, AWS for hosting, and Nginx for reverse proxy.",
-    conclusion:
-      "The deployment has made the application accessible to users worldwide, with improved performance and reliability.",
-    futureImprovements:
-      "Future improvements could include setting up CI/CD pipelines for automated deployments and monitoring.",
-    links: {
-      website: "https://example.com/deployment",
-      github: "",
-    },
-    tabName: "Deployment",
-    image: "https://example.com/deployment-image.jpg",
   },
   // UX/UI Design
   {
     title: "UX/UI Design Case Study",
     overview:
-      "This case study explores the design process of creating a user-friendly and visually appealing interface for a web application.",
+      "This case study explores the design process of creating a user-friendly and visually appealing interface for a web application. That was able to handle the complexity and different sections that were needed for different types of users. ",
     problem:
-      "The application needed a design that enhances user experience, making it intuitive and easy to navigate.",
+      "The application needed a design that enhances user experience, making it intuitive and easy to navigate. Some challenges that occured were the organization of courses, showing what courses the user had completed, which ones were in progress, and ones that were getting close or expired. As well as a clean cohesive way to take the course that would not be overwhelming for the user, specifically the quiz which could be 50+ questions, ensuring the user would not miss a question. Another challenge was designing the forms section, the different user types made it so they only had certain permissions to view and fill out forms. Companies needed to be able to see which employees had filled out which forms, and have a way to see all forms, query forms and manage them.",
     solution:
-      "The solution involved conducting user research, creating wireframes, and designing a responsive layout using modern design principles.",
+      "The solutions for the quiz included a multi-step process where the user could see their progress, and easily navigate back and forth between questions. For the forms section, a clean layout with clear sections for different types of forms, and a dashboard for companies to manage employee forms.",
     technologiesUsed:
       "Technologies used include Figma for design prototyping, CSS for styling, and React for implementing the design.",
     conclusion:
       "The UX/UI design has significantly improved user satisfaction and engagement with the application.",
     futureImprovements:
       "Future improvements could include A/B testing for design variations and incorporating user feedback into future updates.",
-    links: {
-      website: "https://example.com/ux-ui-design",
-      github: "",
-    },
     tabName: "UX/UI",
-    image: "https://example.com/ux-ui-design-image.jpg",
+    keyMetrics:
+      "User satisfaction was conducted through verbal feedback from customers.",
   },
 ];

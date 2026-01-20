@@ -3,6 +3,12 @@ import { CertificateContainer } from "../../Certificates/Certificates.styles";
 import { YodaCaseStudyInfoData } from "./YodaCaseStudyInfoData";
 import TabButton from "../../../components/Buttons/TabButton.component";
 import { EachCaseStudyContainer, TopContainer } from "../CaseStudies.styles";
+import {
+  SectionHeader,
+  SubHeader,
+  SectionText,
+  SectionList,
+} from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
 
 const YodaCaseStudy = () => {
   const [selectedTab, setSelectedTab] = useState(0); // Track the selected tab
@@ -31,39 +37,33 @@ const YodaCaseStudy = () => {
       {/* Case Study Content */}
       <EachCaseStudyContainer>
         <div>
-          <h3>Overview</h3>
-          <p>{selectedCaseStudy.overview}</p>
+          <h2 style={{ color: "var(--darkPink)", marginBottom: "1rem" }}>
+            Overview
+          </h2>
+          <h4 style={{marginBottom: '1rem', color: 'var(--darkPink)'}}>{selectedCaseStudy?.title}</h4>
+          <SectionText>{selectedCaseStudy?.overview}</SectionText>
         </div>
         <div>
-          <h3>Problem</h3>
-          <p>{selectedCaseStudy.problem}</p>
+          <SectionHeader>Problem</SectionHeader>
+          <SectionText>{selectedCaseStudy?.problem}</SectionText>
         </div>
         <div>
-          <h3>Solution</h3>
-          <p>{selectedCaseStudy.solution}</p>
+          <SectionHeader>Solution</SectionHeader>
+          <SectionText>{selectedCaseStudy?.solution}</SectionText>
         </div>
         <div>
-          <h3>Technologies Used</h3>
-          <p>{selectedCaseStudy.technologiesUsed}</p>
+          <SectionHeader>Technologies Used</SectionHeader>
+          <SectionText>{selectedCaseStudy?.technologiesUsed}</SectionText>
+        </div>
+
+        <div>
+          <SectionHeader>Key Metrics</SectionHeader>
+          <SectionText>{selectedCaseStudy?.keyMetrics}</SectionText>
         </div>
         <div>
-          <h3>Conclusion</h3>
-          <p>{selectedCaseStudy.conclusion}</p>
+          <SectionHeader>Conclusion</SectionHeader>
+          <SectionText>{selectedCaseStudy?.conclusion}</SectionText>
         </div>
-        {/* <h3>Links</h3> */}
-        {/* <p>
-                    <a href={selectedCaseStudy.links.website} target="_blank" rel="noopener noreferrer">
-                        Website
-                    </a>
-                    {selectedCaseStudy.links.github && (
-                        <>
-                            {' | '}
-                            <a href={selectedCaseStudy.links.github} target="_blank" rel="noopener noreferrer">
-                                GitHub
-                            </a>
-                        </>
-                    )}
-                </p> */}
       </EachCaseStudyContainer>
     </CertificateContainer>
   );
