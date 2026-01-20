@@ -1,41 +1,71 @@
+import React from "react";
+import {
+  FaBullhorn,
+  FaFlagCheckered,
+  FaBullseye,
+  FaMapSigns,
+} from "react-icons/fa";
+import {
+  SectionHeader,
+  SubHeader,
+  SectionText,
+  SectionList,
+} from "./CampaignBB.styles";
+
 const CampaignBB = () => {
   return (
     <>
-      <h3>Market Campaign Strategy</h3>
-      <h4>Campaign Title</h4>
-      <p>“Drink What You Bloom”</p>
-      <h4>Campaign Goals</h4>
-      <p>
-        Awareness: Introduce Berry & Bloom as a juice brand to both local and
-        online audiences. Engagement: Build a flower-loving, health-conscious
-        community. Conversion: Drive purchases online and in-store. Retention:
-        Cultivate brand loyalty with storytelling and charm.
-      </p>
-      <h4>Tactics by Channel</h4>
-      <div style={{ marginBottom: "1rem" }}>
-        <h5>Local Activation</h5>
-        <ul>
-          <li>Pop-up Juice Bar</li>
-          <li>Flower & Juice Paring Day</li>
-          <li>Collaborations with local businesses</li>
-        </ul>
-      </div>
-      <div style={{ marginBottom: "1rem" }}>
-        <h5>Retail & Product Strategy</h5>
-        <ul>
-          <li>Limited Editions</li>
-          <li>Gift Bundles</li>
-          <li>In store display</li>
-        </ul>
-      </div>
-      <div style={{ marginBottom: "1rem" }}>
-        <h5>Public relations & Press</h5>
-        <ul>
-          <li>Launch Party</li>
-          <li>Pitch to local outlet</li>
-          <li>Story feature</li>
-        </ul>
-      </div>
+      {/* <CaseStudySection> */}
+        <SectionHeader>
+          <FaBullhorn /> Market Campaign Strategy
+        </SectionHeader>
+        <SubHeader>
+          <FaFlagCheckered /> Campaign Title
+        </SubHeader>
+        <SectionText>“Drink What You Bloom”</SectionText>
+        <SubHeader>
+          <FaBullseye /> Campaign Goals
+        </SubHeader>
+        <SectionText>
+          <strong>Awareness:</strong> Introduce Berry & Bloom as a juice brand
+          to both local and online audiences.
+          <br />
+          <strong>Engagement:</strong> Build a flower-loving, health-conscious
+          community.
+          <br />
+          <strong>Conversion:</strong> Drive purchases online and in-store.
+          <br />
+          <strong>Retention:</strong> Cultivate brand loyalty with storytelling
+          and charm.
+        </SectionText>
+        <SubHeader>
+          <FaMapSigns /> Tactics by Channel
+        </SubHeader>
+        <div>
+          <SubHeader as="h5">Local Activation</SubHeader>
+          <SectionList>
+            <li>Pop-up Juice Bar</li>
+            <li>Flower & Juice Paring Day</li>
+            <li>Collaborations with local businesses</li>
+          </SectionList>
+        </div>
+        <div>
+          <SubHeader as="h5">Retail & Product Strategy</SubHeader>
+          <SectionList>
+            <li>Limited Editions</li>
+            <li>Gift Bundles</li>
+            <li>In store display</li>
+          </SectionList>
+        </div>
+        <div>
+          <SubHeader as="h5">Public relations & Press</SubHeader>
+          <SectionList>
+            <li>Launch Party</li>
+            <li>Pitch to local outlet</li>
+            <li>Story feature</li>
+          </SectionList>
+        </div>
+      {/* </CaseStudySection> */}
     </>
   );
 };

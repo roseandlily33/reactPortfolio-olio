@@ -1,30 +1,75 @@
-import { OverviewSection } from "./OverviewBB.styles";
+import React from "react";
+import {
+  SectionHeader,
+  SubHeader,
+  SectionText,
+} from "../Campaign/CampaignBB.styles";
+import { FaSeedling, FaBookOpen, FaUserFriends, FaHeart } from "react-icons/fa";
 
 const OverviewBB = () => {
   return (
-    <OverviewSection>
-      <h2>Case Study for Bloom & Berry</h2>
+    <>
+      <SectionHeader
+        as="h2"
+        style={{
+          textTransform: "uppercase",
+          fontWeight: 400,
+          fontSize: "2rem",
+          letterSpacing: "0.04em",
+          marginBottom: "0.5rem",
+        }}
+      >
+        <FaSeedling
+          style={{
+            marginRight: 12,
+            fontSize: "1.3em",
+            verticalAlign: "middle",
+          }}
+        />
+        Case Study for Bloom & Berry
+      </SectionHeader>
       <a
         href="/BloomAndBerry"
         className="completed-link"
         target="_blank"
         rel="noopener noreferrer"
+        style={{
+          background: "var(--darkPink)",
+          color: "#fff",
+          fontWeight: 700,
+          textDecoration: "none",
+          borderRadius: 999,
+          padding: "0.5em 1.3em",
+          fontSize: "1rem",
+          fontFamily: "var(--headerFont)",
+          boxShadow: "0 2px 12px rgba(241, 116, 150, 0.12)",
+          marginBottom: "1.2rem",
+          marginTop: "0.5rem",
+          display: "inline-block",
+          border: "2px solid var(--medPink)",
+        }}
       >
         See Completed Version &rarr; <br />
-        <span style={{ fontWeight: 500, fontSize: "0.98rem" }}>
-          (View the full, finished project here!)
-        </span>
       </a>
-      <h3>Overview</h3>
-      <p>
+      <SectionHeader>
+        <FaBookOpen
+          style={{
+            marginRight: 10,
+            fontSize: "1.1em",
+            verticalAlign: "middle",
+          }}
+        />
+        Overview
+      </SectionHeader>
+      <SectionText>
         Berry & Bloom is a whimsical, flower-powered juice company based in
         Sacramento, California. This portfolio project was created for a
         fictional brand, with all assets generated using Dall-E and Chat-GPT.
         The goal was to design a vibrant, nature-inspired juice brand from
         scratch, including visual identity, marketing strategy, and product
         concepts.
-      </p>
-      <p>
+      </SectionText>
+      <SectionText>
         Founded by longtime florists Lil & Phill, Berry & Bloom blossoms from
         their beloved flower shop into a juice venture inspired by nature’s most
         beautiful gifts—blooms and botanicals. The brand blends florals and
@@ -32,21 +77,34 @@ const OverviewBB = () => {
         and creativity. Berry & Bloom embraces a whimsical, botanical aesthetic,
         using a soft palette of purple, pink, yellow, and green with swirly
         script fonts, delicate illustrations, and a warm, handcrafted tone.
-      </p>
-      <h4>Owners Story Angle</h4>
-      <p>
+      </SectionText>
+      <SubHeader>
+        <FaUserFriends
+          style={{ marginRight: 8, fontSize: "1em", verticalAlign: "middle" }}
+        />
+        Owners Story Angle
+      </SubHeader>
+      <SectionText>
         Lil & Phill, longtime Sacramento florists, blend their passion for
         blooms into refreshing, garden-inspired juice blends. The brand blooms
         from their beloved flower shop, bringing floral artistry into every
         bottle.
-      </p>
-      <h4>Brand Essence</h4>
-      <p>
+      </SectionText>
+      <SubHeader>
+        <FaHeart
+          style={{ marginRight: 8, fontSize: "1em", verticalAlign: "middle" }}
+        />
+        Brand Essence
+      </SubHeader>
+      <SectionText>
         A whimsical, botanical brand fusing florals and fruits into a joyful,
         health-forward juice experience.
-        <span className="italic"> “From petal to press made with love.”</span>
-      </p>
-    </OverviewSection>
+        <span style={{ fontStyle: "italic", color: "var(--medPink)" }}>
+          {" "}
+          “From petal to press made with love.”
+        </span>
+      </SectionText>
+    </>
   );
 };
 

@@ -11,16 +11,16 @@ import { CertificateContainer } from "../Certificates/Certificates.styles";
 import TabButton from "../../components/Buttons/TabButton.component";
 
 const tabOptions = [
-  { key: "client", label: "Client Applications" },
+  { key: "client", label: "Client" },
 
-  { key: "mern", label: "Main MERN Applications" },
+  { key: "mern", label: "Main MERN " },
   {
     key: "frontend",
-    label: "Front End Projects (Coursework & Side Projects)",
+    label: "Front End ",
   },
   {
     key: "backend",
-    label: "Back End Projects (Coursework & Side Projects)",
+    label: "Back End ",
   },
   {
     key: "mentor",

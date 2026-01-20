@@ -2,6 +2,7 @@ import React from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import YodaPic from "../../images/projects/YODA.png";
 import Logo from "./bloom_and_berry/bloom_images/Logo.png";
+import Ariel from "../Ariel/ArielImages/TrainingCapture.png";
 import {
   TopContainer,
   CaseStudiesGrid,
@@ -28,7 +29,7 @@ const CaseStudies = () => {
     {
       title: "Ariel Boesener Performance Horses",
       link: "/CaseStudies/Ariel",
-      src: "",
+      src: Ariel,
     },
   ];
   return (

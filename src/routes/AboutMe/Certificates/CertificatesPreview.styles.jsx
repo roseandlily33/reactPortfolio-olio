@@ -31,7 +31,7 @@ export const CertificatesGrid = styled.div`
 export const CertificateCard = styled.div`
   background: rgba(255, 255, 255, 0.95);
   border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.10);
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   padding: 1.2rem 1.5rem;
   min-width: 270px;
   max-width: 220px;
@@ -39,12 +39,14 @@ export const CertificateCard = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  transition: transform 0.18s, box-shadow 0.18s;
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s;
+  border: 2px solid var(--medPink);
 
   &:hover {
     transform: scale(1.06);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    border: 2px solid var(--medPink);
   }
 `;
 
@@ -54,7 +56,7 @@ export const CertificateImage = styled.img`
   object-fit: contain;
   border-radius: 10px;
   margin-bottom: 0.7rem;
-  box-shadow: 0 2px 8px rgba(241, 116, 150, 0.10);
+  box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
 `;
 
 export const CertificateTitle = styled.div`
@@ -70,7 +72,7 @@ export const CertificateTitle = styled.div`
 
 export const CertificateProvider = styled.div`
   font-size: 1rem;
-  color: var(--medBrown);
+  /* color: var(--medBrown); */
   text-align: center;
   font-family: var(--mainFont);
   font-weight: 500;
@@ -91,7 +93,10 @@ export const SeeCertificatesButton = styled.button`
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
   cursor: pointer;
   margin-top: 1.5rem;
-  transition: background 0.2s, color 0.2s, transform 0.18s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.18s;
 
   &:hover {
     background: var(--medPink);

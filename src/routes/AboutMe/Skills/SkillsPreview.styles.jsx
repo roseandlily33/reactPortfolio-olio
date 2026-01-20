@@ -1,16 +1,9 @@
 import styled from "styled-components";
 
 export const SkillsPreviewSection = styled.section`
-  background: linear-gradient(
-    120deg,
-    var(--lightPink) 0%,
-    var(--lightCream) 100%
-  );
-  border-radius: 32px;
-  box-shadow: 0 4px 32px rgba(241, 116, 150, 0.1);
   padding: 2.5rem 1.5rem;
   margin: 2rem auto;
-  max-width: 900px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

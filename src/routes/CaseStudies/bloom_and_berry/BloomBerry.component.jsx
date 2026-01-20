@@ -1,5 +1,5 @@
 import React from "react";
-import { ArielLayout, ArielMain } from "../../Ariel/Ariel.styles";
+import { ArielLayout, ArielMain, Section } from "../../Ariel/Ariel.styles";
 import BBSideMenu from "./BBSideMenu.component";
 
 import OverviewBB from "./Overview/OverviewBB.component";
@@ -14,21 +14,21 @@ const BloomAndBerry = () => {
     <ArielLayout>
       <BBSideMenu />
       <ArielMain>
-        <div id="overview">
+        <Section id="overview">
           <OverviewBB />
-        </div>
-        <div id="campaign">
+        </Section>
+        <Section id="campaign">
           <CampaignBB />
-        </div>
-        <div id="content-strategy">
+        </Section>
+        <Section id="content-strategy">
           <ContentStrategyBB />
-        </div>
-        <div id="flavors">
+        </Section>
+        <Section id="flavors">
           <JuiceBB />
-        </div>
-        <div id="gallery">
+        </Section>
+        <Section id="gallery">
           <GalleryBB />
-        </div>
+        </Section>
       </ArielMain>
     </ArielLayout>
   );

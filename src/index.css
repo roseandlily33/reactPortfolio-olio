@@ -13,8 +13,8 @@
   --darkBrown: #e43d12;
   --medBrown: #ff7c15;
   --lightBrown: #ff933d;
-  --lightestBrown: #ffae6e;
-  --darkOrange: #FF8C40;
+  --lightestBrown: #ffe4c2;
+  --darkOrange: #ff8c40;
   --yellow: #ffb400;
   --lightGrey: #ebe9e1;
   --medGrey: #8f8e8e;
@@ -224,7 +224,7 @@ footer a:hover {
 }
 
 html {
-  font-size: 16px; 
+  font-size: 16px;
 }
 .pill {
   display: inline-flex;
@@ -232,7 +232,7 @@ html {
   background: var(--medBrown);
   color: #fff;
   border-radius: 999px;
-  padding: 0.4em 1.6em; 
+  padding: 0.4em 1.6em;
   font-size: 1rem;
   font-family: var(--headerFont);
   cursor: pointer;
@@ -240,9 +240,9 @@ html {
   margin-bottom: 0.5em;
   transition: background 0.2s;
   min-width: 0;
-  white-space: normal; 
+  white-space: normal;
   text-align: center;
-  word-break: break-word; 
+  word-break: break-word;
   box-sizing: border-box;
   max-width: 100%;
 }

@@ -6,6 +6,7 @@ export const projectListClient = [
   {
     id: 501,
     title: "YODA Safety Services",
+    year: "2024 - Present",
     github: "",
     deployed: "https://www.yodasafetyservices.com/",
     status: true,
@@ -56,6 +57,7 @@ export const projectListClient = [
     id: 502,
     title: "Ariel Boesener Performance Horses",
     github: "",
+    year: "2025 - Present",
     deployed: "https://www.arielboesenerperformancehorses.com/",
     status: false,
     important: true,
@@ -78,11 +80,14 @@ export const projectListClient = [
     img: AB,
     type: "Design",
     alt: "Ariel Boesener Performance Horses Application",
+    testimonial:
+      "Working with Victoria Benoit was absolutely transformative for the function and overall experience of my website. Victoria applied an incredible eye for detail, focusing on making the layout more attractive and the overall presentation genuinely eye-catching. Beyond the aesthetics, the improvements to user flow were paramount. She optimized the navigation, making the site dramatically more user-friendly. My website now looks highly professional and provides a seamless experience for visitors. If you are looking for a design expert to refine your project and elevate it from good to outstanding, I highly recommend Victoria! - Ariel Boesener",
   },
   {
     id: 503,
     title: "InspectionPal",
     github: "",
+    year: "2025",
     deployed: "https://www.inspectionpal.com/",
     status: true,
     important: true,
