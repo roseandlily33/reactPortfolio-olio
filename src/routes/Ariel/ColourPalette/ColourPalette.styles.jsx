@@ -1,48 +1,5 @@
 import styled from "styled-components";
 
-export const PaletteSection = styled.section`
-  width: 100%;
-  margin-bottom: 2.5rem;
-  padding: 2.5rem 2rem;
-  background: #fff;
-  border-radius: 28px;
-  box-shadow: 0 2px 24px rgba(241, 116, 150, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  h2 {
-    font-size: 2.488rem;
-    font-family: var(--headerFont);
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--darkPink);
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.04em;
-  }
-
-  ul {
-    margin-bottom: 2rem;
-    padding-left: 1.2rem;
-    color: var(--darkGrey);
-    font-size: 1.08rem;
-    line-height: 1.7;
-    li {
-      margin-bottom: 0.7rem;
-    }
-    strong {
-      color: var(--darkPink);
-    }
-  }
-
-  p {
-    font-size: 1.08rem;
-    color: var(--darkGrey);
-    margin-top: 1.5rem;
-    line-height: 1.6;
-  }
-`;
-
 export const PaletteCarousel = styled.div`
   display: flex;
   gap: 2rem;

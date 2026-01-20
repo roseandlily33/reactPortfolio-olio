@@ -1,31 +1,33 @@
 import ColourPalette from "../ArielImages/ColourPalette/Options.png";
 import FontExamples from "../ArielImages/ColourPalette/FontOptions.png";
 import OtherOptions from "../ArielImages/ColourPalette/Example.png";
+import { PaletteCarousel, PaletteCaption } from "./ColourPalette.styles";
 import {
-  PaletteSection,
-  PaletteCarousel,
-  PaletteCaption,
-} from "./ColourPalette.styles";
+  SectionHeader,
+  SubHeader,
+  SectionText,
+  SectionList,
+} from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
 
 const ColorPalettesAriel = () => (
-  <PaletteSection>
-    <h2>Color Palette Exploration</h2>
-    <ul>
-      <li>
+  <>
+    <SectionHeader>Color Palette Exploration</SectionHeader>
+    <SectionList>
+      <SectionText>
         <strong>Black & White:</strong> High fashion, clean, modern, and
         luxurious. Less approachable and may lose the equestrian sport
         connection.
-      </li>
-      <li>
+      </SectionText>
+      <SectionText>
         <strong>Navy & Gold:</strong> Traditional, elegant, and timeless. Gold
         adds warmth and pairs well with equestrian imagery. Best fit for the
         target demographic.
-      </li>
-      <li>
+      </SectionText>
+      <SectionText>
         <strong>Teal & Rust:</strong> Inspired by the original palette. Unique
         but less aligned with the brand’s goals.
-      </li>
-    </ul>
+      </SectionText>
+    </SectionList>
     <PaletteCarousel>
       <div>
         <img src={ColourPalette} alt="Color Palette Options" />
@@ -46,11 +48,12 @@ const ColorPalettesAriel = () => (
         </PaletteCaption>
       </div>
     </PaletteCarousel>
-    <p>
+    <SubHeader>Decision</SubHeader>
+    <SectionText>
       After reviewing options, Navy & Gold was chosen for its elegance and
       connection to the audience.
-    </p>
-  </PaletteSection>
+    </SectionText>
+  </>
 );
 
 export default ColorPalettesAriel;

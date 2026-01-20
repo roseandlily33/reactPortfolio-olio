@@ -1,34 +1,5 @@
 import styled from "styled-components";
 
-export const BeforeAfterSection = styled.section`
-  width: 100%;
-  margin-bottom: 2.5rem;
-  padding: 2.5rem 2rem;
-  background: #fff;
-  border-radius: 28px;
-  box-shadow: 0 2px 24px rgba(241, 116, 150, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  h2 {
-    font-size: 2.488rem;
-    font-family: var(--headerFont);
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--darkPink);
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.04em;
-  }
-
-  p {
-    font-size: 1.08rem;
-    color: var(--darkGrey);
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
-  }
-`;
-
 export const BeforeAfterCaption = styled.div`
   font-size: 1rem;
   color: var(--medGrey);

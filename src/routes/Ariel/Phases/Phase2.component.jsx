@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import HomeA from '../ArielImages/Phase2/HomeA.png';
-import HomeV from '../ArielImages/Phase2/HomeV.png';
-import TrainingA from '../ArielImages/Phase2/TrainingA.png';
-import TrainingV from '../ArielImages/Phase2/TrainingV.png';
+import HomeA from "../ArielImages/Phase2/HomeA.png";
+import HomeV from "../ArielImages/Phase2/HomeV.png";
+import TrainingA from "../ArielImages/Phase2/TrainingA.png";
+import TrainingV from "../ArielImages/Phase2/TrainingV.png";
 import {
-  Section,
   PhaseCarousel,
   PhaseCaption,
   CarouselNav,
@@ -12,6 +11,12 @@ import {
   ExpandButton,
   CollapsibleText,
 } from "../Ariel.styles";
+import {
+  SectionHeader,
+  SubHeader,
+  SectionText,
+  SectionList,
+} from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
 
 const beforeImages = [
   { src: HomeA, alt: "Original Home Page (Phase 2)" },
@@ -89,14 +94,14 @@ const phase2Text =
 
 const Phase2Ariel = () => {
   return (
-    <Section>
-      <h3>Phase 2 – September 13, 2025</h3>
+    <>
+      <SectionHeader>Phase 2 – September 13, 2025</SectionHeader>
       <CollapsibleParagraph>{phase2Text}</CollapsibleParagraph>
-      <h4>Before (Ariel's Original Designs)</h4>
+      <SubHeader>Before (Ariel's Original Designs)</SubHeader>
       <ImageCarousel images={beforeImages} />
-      <h4>After (My Redesigned Pages)</h4>
+      <SubHeader>After (My Redesigned Pages)</SubHeader>
       <ImageCarousel images={afterImages} />
-    </Section>
+    </>
   );
 };
 

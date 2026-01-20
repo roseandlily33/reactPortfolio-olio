@@ -1,9 +1,13 @@
-import { TestimonialSection, TestimonialText } from "./Tetstimonial.styles";
+import {
+  SectionHeader,
+  SectionText,
+} from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
 
 const Testimonial = () => {
   return (
-    <TestimonialSection>
-      <TestimonialText>
+    <>
+      <SectionHeader>Testimonial</SectionHeader>
+      <SectionText>
         Working with Victoria Benoit was absolutely transformative for the
         function and overall experience of my website. Victoria applied an
         incredible eye for detail, focusing on making the layout more attractive
@@ -13,9 +17,9 @@ const Testimonial = () => {
         website now looks highly professional and provides a seamless experience
         for visitors. If you are looking for a design expert to refine your
         project and elevate it from good to outstanding, I highly recommend
-        Victoria!
-      </TestimonialText>
-    </TestimonialSection>
+        Victoria! <strong>- Ariel Boesener</strong>
+      </SectionText>
+    </>
   );
 };
 

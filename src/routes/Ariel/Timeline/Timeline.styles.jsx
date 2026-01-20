@@ -1,27 +1,5 @@
 import styled from "styled-components";
 
-export const TimelineSection = styled.section`
-  width: 100%;
-  margin-bottom: 2.5rem;
-  padding: 2.5rem 2rem;
-  background: #fff;
-  border-radius: 28px;
-  box-shadow: 0 2px 24px rgba(241, 116, 150, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  h2 {
-    font-size: 2.488rem;
-    font-family: var(--headerFont);
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--darkPink);
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.04em;
-  }
-`;
-
 export const TimelineList = styled.ul`
   list-style: none;
   padding: 0;
@@ -42,9 +20,9 @@ export const TimelineItem = styled.li`
   color: var(--darkGrey);
   line-height: 1.7;
   transition: box-shadow 0.18s;
-  border-left: 6px solid var(--darkPink);
+  border: 2px solid var(--darkPink);
 
-  &:before {
+  /* &:before {
     content: "";
     position: absolute;
     left: 1.2rem;
@@ -55,7 +33,7 @@ export const TimelineItem = styled.li`
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 0 0 2px var(--medPink);
-  }
+  } */
 
   strong {
     color: var(--darkPink);

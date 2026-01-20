@@ -7,7 +7,6 @@ import TrainingA from "../ArielImages/Phase1/TrainingA.png";
 import HomeV from "../ArielImages/Phase1/HomeV.png";
 import TrainingV from "../ArielImages/Phase1/TrainingV.png";
 import {
-  Section,
   PhaseCarousel,
   PhaseCaption,
   CarouselNav,
@@ -15,6 +14,10 @@ import {
   ExpandButton,
   CollapsibleText,
 } from "../Ariel.styles";
+import {
+  SectionHeader,
+  SubHeader,
+} from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
 
 const beforeImages = [
   { src: HomeA, alt: "Original Home Page" },
@@ -95,14 +98,14 @@ const phase1Text =
 
 const Phase1Ariel = () => {
   return (
-    <Section>
-      <h3>Phase 1 – September 7, 2025</h3>
+    <>
+      <SectionHeader>Phase 1 – September 7, 2025</SectionHeader>
       <CollapsibleParagraph>{phase1Text}</CollapsibleParagraph>
-      <h4>Before (Ariel's Original Designs)</h4>
+      <SubHeader>Before (Ariel's Original Designs)</SubHeader>
       <ImageCarousel images={beforeImages} />
-      <h4>After (My Redesigned Pages)</h4>
+      <SubHeader>After (My Redesigned Pages)</SubHeader>
       <ImageCarousel images={afterImages} />
-    </Section>
+    </>
   );
 };
 

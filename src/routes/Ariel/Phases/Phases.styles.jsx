@@ -1,34 +1,5 @@
 import styled from "styled-components";
 
-export const PhaseSection = styled.section`
-  width: 100%;
-  margin-bottom: 2.5rem;
-  padding: 2.5rem 2rem;
-  background: #fff;
-  border-radius: 28px;
-  box-shadow: 0 2px 24px rgba(241, 116, 150, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  h3 {
-    font-size: 2rem;
-    font-family: var(--headerFont);
-    font-weight: 400;
-    color: var(--darkPink);
-    margin-bottom: 0.7rem;
-    letter-spacing: 0.03em;
-  }
-
-  h4 {
-    font-size: 1.15rem;
-    color: var(--darkPink);
-    margin-top: 1.5rem;
-    margin-bottom: 0.4rem;
-    font-family: var(--headerFont);
-  }
-`;
-
 export const PhaseCarousel = styled.div`
   display: flex;
   align-items: center;
@@ -141,7 +112,7 @@ export const ExpandButton = styled.button`
 
 export const CollapsibleText = styled.p`
   font-size: 1.08rem;
-  color: var(--medBrown);
+  color: var(--grey);
   margin-bottom: 1.2rem;
   line-height: 1.6;
   transition: max-height 0.3s;

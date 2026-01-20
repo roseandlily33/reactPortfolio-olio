@@ -206,13 +206,10 @@ export const ExpandButton = styled.button`
 
 export const CollapsibleText = styled.p`
   font-size: 1.08rem;
-  color: var(--medBrown);
+  color: var(--grey);
   margin-bottom: 1.2rem;
   line-height: 1.6;
   transition: max-height 0.3s;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
-  padding: 1rem 1.2rem;
 `;
 
 export const TestimonialSection = styled.section`

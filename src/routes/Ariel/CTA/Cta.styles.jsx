@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-export const CTASection = styled.section`
-  width: 100%;
-  background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
-  padding: 2.5rem 2.5rem;
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--darkPink);
-  font-size: 1.22rem;
-`;
-
 export const CTAButton = styled.button`
   background: var(--darkPink);
   color: #fff;
