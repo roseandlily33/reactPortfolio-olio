@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
-  background-color: #f4ebeb;
+  background-color: var(--pinkBackground);
   /* padding: 4rem 2rem 1rem 2rem; */
   padding: 5rem 2rem;
   width: 100%;
@@ -12,7 +12,7 @@ export const PackagesSection = styled.section`
   h2 {
     /* margin-bottom: 2rem; */
     margin-bottom: 0.8rem;
-    font-weight: 800;
+    font-weight: 700;
     /* border: 1px solid red; */
     width: 100%;
     text-align: left;
@@ -79,7 +79,11 @@ export const PackageCard = styled.div`
     top: 0;
     width: 80%;
     height: 22%;
-    background: linear-gradient(120deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.04) 100%);
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.22) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    );
     border-radius: 0 0 80px 80px / 0 0 40px 40px;
     z-index: 3;
     pointer-events: none;
@@ -98,25 +102,26 @@ export const PackageCard = styled.div`
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background: ${({ $accent, $accentSoft }) =>
-    `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
+      `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
     z-index: 2;
-    transition: background 0.5s cubic-bezier(0.77,0,0.18,1);
+    transition: background 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   }
   &:hover::before {
     background: ${({ $accent }) =>
-    `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
+      `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
   }
 `;
 
 export const PackageTitle = styled.h3`
   font-family: var(--headerFont);
   font-size: 1.85rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
   letter-spacing: 0.06em;
   color: ${({ $titleColor }) => $titleColor || "inherit"};
 `;
@@ -124,12 +129,12 @@ export const PackageTitle = styled.h3`
 export const PackagePrice = styled.div`
   color: var(--darkBrown);
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 750;
   margin-bottom: 0.7rem;
 `;
 
 export const PackageDescription = styled.p`
-  color: var(--darkGrey);
+  /* color: var(--darkGrey); */
   font-size: 1.1rem;
   margin-bottom: 1rem;
 `;
@@ -188,7 +193,7 @@ export const PackageDetails = styled.details`
       transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
       color 180ms;
     font-size: 1.15rem;
-    color: ${({ $accent }) => $accent || "var(--darkGrey)"};
+    color: ${({ $accent }) => $accent || "var(--darkBerry)"};
     will-change: transform, color;
   }
   summary:hover .chev {

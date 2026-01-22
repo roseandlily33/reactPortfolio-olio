@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const RetainerSection = styled.section`
-  background: #fff3e6;
+  background: var(--orangeBackground);
   padding: 5rem 2rem;
   width: 100%;
   box-sizing: border-box;
@@ -62,10 +62,6 @@ export const RetainerCard = styled.div`
     opacity: 0.18;
     z-index: 1;
     background-image: url("https://www.transparenttextures.com/patterns/symphony.png");
-  }
-  &:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 10px 30px rgba(241, 116, 150, 0.13);
   }
 `;
 

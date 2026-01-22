@@ -116,7 +116,7 @@ const ServicesComponent = () => {
           <ServiceCard key={service.title}>
             <ServiceIcon>{iconMap[service.title] || <FaCogs />}</ServiceIcon>
             <ServiceTitle>{service.title}</ServiceTitle>
-            <div>{service.description}</div>
+            <div style={{textAlign: 'center'}}>{service.description}</div>
           </ServiceCard>
         ))}
       </ServicesGrid>

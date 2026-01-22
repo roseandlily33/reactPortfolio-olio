@@ -12,7 +12,7 @@ export const CertificateContainer = styled.main`
     gap: 2rem;
     height: 100%;
     padding-top: 3rem;
-    background-color: #f4ebeb;
+    background-color: var(--pinkBackground);
     /* border: 1px solid red; */
   }
   select {

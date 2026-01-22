@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NotSureSection = styled.section`
-  background: #fff;
+  background: #ffffff;
   padding: 2.2rem 1.5rem;
   /* margin: 2.5rem 0; */
   width: 100%;
@@ -18,10 +18,10 @@ export const NotSureTitleRow = styled.div`
   margin-bottom: 1.1rem;
 `;
 
-export const NotSureTitle = styled.h3`
+export const NotSureTitle = styled.h4`
   color: var(--darkPink);
   font-family: var(--headerFont);
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 800;
   margin: 0;
 `;
@@ -39,7 +39,7 @@ export const NotSureItem = styled.li`
   margin-bottom: 1.15rem;
   font-size: 1.08rem;
   line-height: 1.6;
-  color: var(--darkGrey);
+  /* color: var(--darkGrey); */
   font-weight: 500;
   .pkg-label {
     color: var(--darkPink);

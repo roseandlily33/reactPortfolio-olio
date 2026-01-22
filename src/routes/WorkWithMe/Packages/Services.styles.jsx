@@ -63,10 +63,6 @@ export const ServiceCard = styled.div`
   width: 100%;
   scroll-snap-align: start;
   transition: transform 0.18s;
-  &:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-  }
 `;
 
 export const ServiceIcon = styled.div`

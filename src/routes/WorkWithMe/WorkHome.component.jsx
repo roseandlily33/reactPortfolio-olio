@@ -13,6 +13,7 @@ const WorkHome = () => {
     <AboutMeComponent>
       <TopContainer>
         <h2>Work With Me</h2>
+        <p>Thoughtful design and development for growing businesses</p>
       </TopContainer>
       <PackagesComponent />
       <NotSure />

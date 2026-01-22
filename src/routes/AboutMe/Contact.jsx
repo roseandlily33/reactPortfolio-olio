@@ -5,6 +5,8 @@ import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 
 // List of services for the dropdown (alphabetical order, matches current offerings)
 const contactServices = [
+  // Uncertain option
+  "I'm not sure yet (let's chat)",
   // Packages
   "Design Foundation",
   "Website Essentials",
@@ -64,7 +66,7 @@ const ContactMe = () => {
   return (
     <ContactMeSection>
       <h3>Let’s Build Something Amazing Together</h3>
-      <p style={{ marginBottom: "1rem" }}>
+      <p style={{ marginBottom: "0.5rem", fontWeight: "400", fontSize: "1.1rem" }}>
         Interested in working with me? Select what you need and tell me about
         your project!
       </p>
@@ -90,19 +92,18 @@ const ContactMe = () => {
           name="service"
           value={selectedService}
           onChange={(e) => setSelectedService(e.target.value)}
-          required
           style={{
             marginBottom: "1rem",
             padding: "0.5rem",
             borderRadius: "999px",
-            border: "1px solid var(--medBrown)",
+            border: "2.5px solid var(--medBrown)",
             fontFamily: "var(--headerFont)",
             color: "var(--medBrown)",
             background: "#fff",
           }}
         >
-          <option value="" disabled>
-            Select a service...
+          <option value="">
+            Select a service (or choose "I'm not sure yet")
           </option>
           {contactServices.map((service) => (
             <option key={service} value={service}>

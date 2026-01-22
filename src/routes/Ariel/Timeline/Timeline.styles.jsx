@@ -17,7 +17,7 @@ export const TimelineItem = styled.li`
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   padding: 1.5rem 1.5rem 1.5rem 3.5rem;
   font-size: 1.08rem;
-  color: var(--darkGrey);
+  /* color: var(--darkGrey); */
   line-height: 1.7;
   transition: box-shadow 0.18s;
   border: 2px solid var(--darkPink);

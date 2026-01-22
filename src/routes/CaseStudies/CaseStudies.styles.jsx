@@ -12,7 +12,7 @@ export const EachCaseStudyContainer = styled.div`
   gap: 2rem;
   height: 100%;
   padding: 2rem;
-  background-color: #f4ebeb;
+  background-color: var(--pinkBackground);
 
   /* background: linear-gradient(135deg, var(--lightCream) 50%, var(--lightGrey) 50%); */
 
@@ -108,7 +108,14 @@ export const TopContainer = styled.div`
   h2 {
     color: var(--darkPink);
     text-align: center;
+    font-weight: 700;
     margin-bottom: 1rem;
+  }
+  p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--medBrown);
+    font-style: italic;
   }
 
   .tabs {

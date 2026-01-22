@@ -28,13 +28,9 @@ const IDSection = () => {
       <IDCardContainer>
         <IDPhoto>
           <img src={MyImage} alt="Victoria" />
-          {/* <span style={{ color: "#ccc", fontSize: "1.2rem" }}>Your Photo</span> */}
         </IDPhoto>
         <IDInfo>
-          <IDName>
-            {/* <FaUser /> */}
-            Victoria Benoit
-          </IDName>
+          <IDName>Victoria Benoit</IDName>
           <IDOccupation>
             <FaBriefcase />
             Full Stack &amp; UX/UI Developer
@@ -77,6 +73,104 @@ const IDSection = () => {
             </a>
           </IDSocials>
         </IDInfo>
+        {/* New Section: How I Work & What I'm Known For */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.7rem",
+            borderLeft: "6px solid var(--medPink)",
+            paddingLeft: "2rem",
+            minWidth: "220px",
+            maxWidth: "320px",
+          }}
+        >
+          <div>
+            <h4
+              style={{
+                color: "var(--darkPink)",
+                fontWeight: 700,
+                marginBottom: "0.7rem",
+                fontSize: "1.13rem",
+              }}
+            >
+              How I Work
+            </h4>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                color: "var(--darkBerry)",
+                fontWeight: 600,
+              }}
+            >
+              {[
+                "Strategy before design",
+                "Design with intention",
+                "Accessibility baked in",
+                "Support beyond launch",
+              ].map((item) => (
+                <li
+                  key={item}
+                  style={{
+                    marginBottom: "0.5rem",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.6rem",
+                  }}
+                >
+                  <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+                    ▸
+                  </span>{" "}
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4
+              style={{
+                color: "var(--darkPink)",
+                fontWeight: 700,
+                marginBottom: "0.7rem",
+                fontSize: "1.13rem",
+              }}
+            >
+              What I’m Known For
+            </h4>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                color: "var(--darkBerry)",
+                fontWeight: 600,
+              }}
+            >
+              {["Clear, thoughtful interfaces", "Clean, maintainable code"].map(
+                (item) => (
+                  <li
+                    key={item}
+                    style={{
+                      marginBottom: "0.5rem",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.6rem",
+                    }}
+                  >
+                    <span
+                      style={{ color: "var(--medPink)", fontSize: "1.1rem" }}
+                    >
+                      ▸
+                    </span>{" "}
+                    {item}
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
+        </div>
       </IDCardContainer>
     </section>
   );

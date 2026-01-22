@@ -18,7 +18,17 @@ export const AboutMePicture = styled.section`
     position: relative;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: 1rem;
+  }
+  p {
+    position: relative;
+    z-index: 1;
+    left: 1rem;
+    color: ${({ theme }) => theme.colors.lightPink};
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    font-style: italic;
   }
   .animate-charcter {
     text-transform: uppercase;
@@ -60,7 +70,7 @@ export const AboutMeSection = styled.section`
 
   h2 {
     color: ${({ theme }) => theme.colors.darkPink};
-    border-bottom: 5px solid ${({ theme }) => theme.colors.darkPink};
+    /* border-bottom: 5px solid ${({ theme }) => theme.colors.darkPink}; */
     margin-bottom: 1rem;
   }
   a {
@@ -140,10 +150,8 @@ export const ContactMeSection = styled.section`
     color: ${({ theme }) => theme.colors.darkPink};
     font-size: 2.2rem;
     font-weight: 800;
-    margin-bottom: 1.3rem;
     letter-spacing: 0.08em;
     text-align: center;
-    border-bottom: 4px solid ${({ theme }) => theme.colors.medBrown};
     padding-bottom: 0.5rem;
     transition: color 0.3s ease;
   }
@@ -151,7 +159,7 @@ export const ContactMeSection = styled.section`
   form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 100%;
     max-width: 600px;
     align-items: center;
@@ -168,11 +176,11 @@ export const ContactMeSection = styled.section`
   }
 
   input,
-  textarea {
+  select {
     border: 2.5px solid ${({ theme }) => theme.colors.medBrown};
     border-radius: 999px;
-    padding: 1.1rem 1.2rem;
-    font-size: 1.08rem;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     font-weight: 600;
@@ -181,6 +189,30 @@ export const ContactMeSection = styled.section`
     transition:
       box-shadow 0.3s,
       border-color 0.3s;
+    font-family: var(--headerFont), inherit;
+    &:focus {
+      box-shadow: 0 0 16px ${({ theme }) => theme.colors.darkPink};
+      border-color: ${({ theme }) => theme.colors.darkPink};
+    }
+  }
+
+  textarea {
+    border: 2.5px solid ${({ theme }) => theme.colors.medBrown};
+    border-radius: 22px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.darkGrey};
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
+    transition:
+      box-shadow 0.3s,
+      border-color 0.3s;
+    font-family: var(--headerFont), inherit;
+    resize: vertical;
+    min-height: 90px;
+    max-height: 220px;
     &:focus {
       box-shadow: 0 0 16px ${({ theme }) => theme.colors.darkPink};
       border-color: ${({ theme }) => theme.colors.darkPink};
@@ -260,10 +292,15 @@ export const ContactMeSection = styled.section`
       font-size: 1rem;
     }
     input,
+    select {
+      font-size: 1rem;
+      padding: 0.6rem 0.8rem;
+      border-radius: 14px;
+    }
     textarea {
       font-size: 1rem;
-      padding: 0.8rem 1rem;
-      border-radius: 18px;
+      padding: 0.6rem 0.8rem;
+      border-radius: 14px;
     }
     button {
       font-size: 1rem;

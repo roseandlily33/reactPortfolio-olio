@@ -23,7 +23,7 @@ const JuiceFlavorSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  color: ${({ textColor }) => textColor || "var(--darkGrey)"};
+  color: ${({ textColor }) => textColor || "var(--darkBerry)"};
   .italic {
     font-style: italic;
     opacity: 0.85;

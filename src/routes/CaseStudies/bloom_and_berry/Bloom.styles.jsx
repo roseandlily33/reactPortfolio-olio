@@ -9,7 +9,7 @@ export const BloomStudyCase = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   padding: 2rem;
-  background-color: #f4ebeb;
+  background-color: var(--pinkBackground);
   div {
     border: 1px solid red;
     display: flex;

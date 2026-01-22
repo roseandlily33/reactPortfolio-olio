@@ -206,7 +206,7 @@ export const ProjectDetailImportant = styled.span`
 
 export const ProjectDetailDescription = styled.p`
   font-size: 1.08rem;
-  color: var(--darkGrey);
+  /* color: var(--darkGrey); */
   margin-bottom: 0.5rem;
   line-height: 1.6;
   font-weight: 350;
@@ -254,7 +254,7 @@ export const ProjectDetailList = styled.ul`
 export const ProjectTestimonial = styled.p`
   background: var(--lightestBrown);
   border-left: 5px solid var(--medBrown);
-  color: var(--darkGrey);
+  /* color: var(--darkGrey); */
   font-style: italic;
   font-size: 1.08rem;
   margin: 1.2rem 0 0.5rem 0;

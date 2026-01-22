@@ -38,7 +38,7 @@ export const SkillInfo = styled.div`
 
   .skill-name {
     font-weight: 500;
-    color: var(--darkGrey);
+    /* color: var(--darkGrey); */
     word-break: break-word;
     font-size: 1.1rem;
   }
@@ -83,7 +83,7 @@ export const StarLegendContainer = styled.div`
     /* border: 1px solid red; */
   }
   span {
-    color: var(--darkGrey);
+    /* color: var(--darkGrey); */
     font-style: italic;
     font-size: 0.9rem;
   }
@@ -97,7 +97,7 @@ export const TechStackContainer = styled.div`
   /* border: 1px solid orange; */
   /* gap: 2rem; */
   width: 100%;
-  background-color: #f4ebeb;
+  background-color: var(--pinkBackground);
 
   h3 {
     margin-bottom: 3rem;
@@ -143,7 +143,7 @@ export const TechStackContainer = styled.div`
   }
   .overview p {
     font-size: 1.1rem;
-    color: var(--darkGrey);
+    /* color: var(--darkGrey); */
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1rem;

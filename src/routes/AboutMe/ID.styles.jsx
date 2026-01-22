@@ -4,14 +4,12 @@ export const IDCardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: rgba(241, 116, 150, 0.7); /* var(--medPink) with opacity */
-  backdrop-filter: blur(8px) saturate(120%);
-  border-radius: 32px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  background: var(--pinkBackground);
+  /* border-radius: 32px; */
   padding: 3rem 4rem;
   margin: 2.5rem auto;
   gap: 3rem;
-  max-width: 1050px;
+  /* max-width: 1050px; */
   width: 100%;
 `;
 
@@ -20,7 +18,7 @@ export const IDPhoto = styled.div`
   height: 220px;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,17 +43,17 @@ export const IDRow = styled.div`
   align-items: center;
   gap: 1.2rem;
   font-size: 1.1rem;
-  color: var(--white);
+  color: var(--darkBerry);
   font-family: var(--headerFont);
   svg {
-    color: var(--darkPink);
+    color: var(--medBrown);
     min-width: 24px;
     min-height: 24px;
   }
 `;
 
 export const IDName = styled.h2`
-  color: var(--white);
+  color: var(--darkBerry);
   font-size: 2.2rem;
   text-transform: capitalize;
   margin: 0 0 0.2rem 0;
@@ -63,12 +61,12 @@ export const IDName = styled.h2`
   align-items: center;
   gap: 1.2rem;
   svg {
-    color: var(--darkPink);
+    color: var(--medBrown);
   }
 `;
 
 export const IDOccupation = styled.h4`
-  color: var(--white);
+  color: var(--darkBerry);
   font-family: var(--headerFont);
   font-size: 1.35rem;
   margin: 0 0 0.2rem 0;
@@ -77,7 +75,7 @@ export const IDOccupation = styled.h4`
   align-items: center;
   gap: 1.2rem;
   svg {
-    color: var(--darkPink);
+    color: var(--medBrown);
   }
 `;
 
@@ -93,7 +91,9 @@ export const IDSocials = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s, color 0.2s;
+    transition:
+      background 0.2s,
+      color 0.2s;
     &:hover {
       background: var(--darkPink);
       color: var(--white);
@@ -106,7 +106,7 @@ export const IDSocials = styled.div`
 `;
 
 export const IDCatchPhrase = styled.div`
-  color: var(--white);
+  color: var(--darkBerry);
   font-family: var(--headerFont);
   font-size: 1.1rem;
   font-style: italic;
@@ -115,12 +115,12 @@ export const IDCatchPhrase = styled.div`
   align-items: center;
   gap: 1.2rem;
   svg {
-    color: var(--darkPink);
+    color: var(--medBrown);
   }
 `;
 
 export const IDKeyAspects = styled.div`
-  color: var(--white);
+  /* color: var(--); */
   font-family: var(--mainFont);
   font-size: 1rem;
   margin-top: 0.2rem;
@@ -128,11 +128,11 @@ export const IDKeyAspects = styled.div`
   flex-wrap: wrap;
   gap: 0.5rem;
   span {
-    background: rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.18);
     border-radius: 12px;
     padding: 0.2rem 0.8rem;
     font-size: 0.98rem;
-    color: var(--white);
+    /* color: var(--darkBerry); */
     font-family: var(--headerFont);
     letter-spacing: 0.03em;
   }

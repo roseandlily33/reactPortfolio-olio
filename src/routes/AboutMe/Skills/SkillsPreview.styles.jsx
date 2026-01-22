@@ -46,7 +46,7 @@ export const SkillIcon = styled.div`
 
 export const SkillName = styled.div`
   font-size: 1.1rem;
-  color: var(--darkGrey);
+  /* color: var(--darkGrey); */
   text-align: center;
   font-family: var(--headerFont);
   font-weight: 500;

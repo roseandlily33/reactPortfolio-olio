@@ -27,6 +27,10 @@
   --lightPink: #f38ca9;
   --medPink: #f17496;
   --darkPink: #ed4672;
+  --pinkBackground: #f4ebeb;
+  --orangeBackground: #fff3e6;
+  --berry: #b23a48;
+  --darkBerry: #6d4c41;
   --borderRadius: 25px;
   --boxShadow: 12px 12px 19px 7px var(--lightGrey);
 }
@@ -40,7 +44,7 @@ body {
   /* background-color: var(--darkCream); */
   font-size: 16px;
   font-weight: 400;
-  color: var(--darkGrey);
+  color: var(--darkBerry);
   font-family: var(--mainFont);
 }
 h1 {
@@ -62,12 +66,12 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
-h3::after {
+/* h3::after {
   display: block;
   width: 100%;
   content: "";
   border-bottom: 5px solid var(--medBrown);
-}
+} */
 h4 {
   font-size: 1.728rem;
   font-family: var(--headerFont);

@@ -73,16 +73,9 @@ const PackagesComponent = () => (
             $accent={color.border}
             $accentSoft={color.bg}
           >
-            <div className="bubbles-bg">
-              <div className="bubble bubble1" />
-              <div className="bubble bubble2" />
-              <div className="bubble bubble3" />
-            </div>
             <PackageIcon $titleColor={color.title}>{color.icon}</PackageIcon>
             <PackageTitle $titleColor={color.title}>{pkg.title}</PackageTitle>
-            <PackagePrice>
-              <strong>Starting at:</strong> {pkg.startingAt}
-            </PackagePrice>
+            <PackagePrice>Starting at: {pkg.startingAt}</PackagePrice>
             {pkg.timeline && (
               <div
                 style={{
