@@ -7,7 +7,7 @@ export const IDCardContainer = styled.div`
   background: var(--pinkBackground);
   /* border-radius: 32px; */
   padding: 3rem 4rem;
-  margin: 2.5rem auto;
+  /* margin: 2.5rem auto; */
   gap: 3rem;
   /* max-width: 1050px; */
   width: 100%;
@@ -42,9 +42,7 @@ export const IDRow = styled.div`
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  font-size: 1.1rem;
-  color: var(--darkBerry);
-  font-family: var(--headerFont);
+  font-weight: 500;
   svg {
     color: var(--medBrown);
     min-width: 24px;
@@ -53,7 +51,8 @@ export const IDRow = styled.div`
 `;
 
 export const IDName = styled.h2`
-  color: var(--darkBerry);
+  /* color: var(--darkBerry); */
+  color: var(--darkPink);
   font-size: 2.2rem;
   text-transform: capitalize;
   margin: 0 0 0.2rem 0;
@@ -66,11 +65,10 @@ export const IDName = styled.h2`
 `;
 
 export const IDOccupation = styled.h4`
-  color: var(--darkBerry);
   font-family: var(--headerFont);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   margin: 0 0 0.2rem 0;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -128,7 +126,7 @@ export const IDKeyAspects = styled.div`
   flex-wrap: wrap;
   gap: 0.5rem;
   span {
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.48);
     border-radius: 12px;
     padding: 0.2rem 0.8rem;
     font-size: 0.98rem;

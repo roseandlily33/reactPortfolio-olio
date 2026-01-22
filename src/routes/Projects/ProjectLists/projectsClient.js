@@ -10,6 +10,7 @@ export const projectListClient = [
     github: "",
     deployed: "https://www.yodasafetyservices.com/",
     status: true,
+    showMainPage: true,
     important: true,
     description:
       "A custom-built training and certification platform for YODA Safety Services. Enables users to create accounts, enroll in online safety courses, purchase training, and download certificates. Built for scalability and security, with a focus on user experience.",
@@ -60,6 +61,7 @@ export const projectListClient = [
     year: "2025 - Present",
     deployed: "https://www.arielboesenerperformancehorses.com/",
     status: false,
+    showMainPage: true,
     important: true,
     description:
       "A design project for Ariel Boesener Performance Horses. A responsive website built to showcase Ariel's training services, achievements, and available horses for sale. Focused on clean design and user experience.",
@@ -90,6 +92,7 @@ export const projectListClient = [
     year: "2025",
     deployed: "https://www.inspectionpal.com/",
     status: true,
+    showMainPage: true,
     important: true,
     description: "Front End Gatsby site for InspectionPal. Full redesign, and ",
     keyFeatures: [

@@ -61,18 +61,10 @@ export const AboutMePicture = styled.section`
 `;
 //This is the part that has my pic and info about me
 export const AboutMeSection = styled.section`
-  /* border-radius: 25px; */
-  /* background-color: ${({ theme }) => theme.colors.lightGrey}; */
-  padding: 1rem;
   display: flex;
-  gap: 2rem;
-  /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
-
-  h2 {
-    color: ${({ theme }) => theme.colors.darkPink};
-    /* border-bottom: 5px solid ${({ theme }) => theme.colors.darkPink}; */
-    margin-bottom: 1rem;
-  }
+  justify-content: space-evenly;
+  background: #fff;
+  padding: 3rem;
   a {
     color: ${({ theme }) => theme.colors.darkPink};
     font-weight: bold;
@@ -103,6 +95,58 @@ export const AboutMeSection = styled.section`
     height: 100%;
     /* border: 1px solid green; */
   }
+  .eachCard {
+    background: var(--orangeBackground);
+    border-radius: var(--borderRadius);
+    border: 2.5px solid var(--lightBrown);
+    box-shadow: 0 4px 18px 0 rgba(60, 40, 20, 0.07);
+    padding: 1.6rem 1.7rem 1.3rem 1.7rem;
+    flex: 1 1 320px;
+    min-width: 280px;
+    max-width: 420px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+    /* justify-content: space-between; */
+  }
+  .cardIcon {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.3rem;
+    font-size: 2.1rem;
+    color: var(--medPink);
+    opacity: 0.85;
+    pointer-events: none;
+  }
+  .cardTitle {
+    color: var(--darkBrown);
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.7rem;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    color: var(--darkBrown);
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.7rem;
+    text-transform: capitalize;
+  }
+  p, span, li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .bold {
+    font-weight: 700;
+    color: var(--medBrown);
+  }
+
   #downloadBtn {
     width: 100%;
   }
@@ -129,7 +173,7 @@ export const AboutMeSkills = styled.section`
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 `;
 
 // Contact me section
@@ -142,8 +186,6 @@ export const ContactMeSection = styled.section`
   padding: 2.8rem 2rem 2.8rem 2rem;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(14px) saturate(120%);
-  border-radius: 32px;
-  box-shadow: 0 8px 32px rgba(241, 116, 150, 0.1);
   overflow: hidden;
 
   h3 {

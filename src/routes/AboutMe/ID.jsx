@@ -50,10 +50,10 @@ const IDSection = () => {
             <span>Accessibility</span>
             <span>SEO</span>
           </IDKeyAspects>
-          <IDCatchPhrase>
+          {/* <IDCatchPhrase>
             <FaStar style={{ marginRight: "0.4rem" }} />
             "Turning ideas into beautiful, functional web experiences."
-          </IDCatchPhrase>
+          </IDCatchPhrase> */}
           <IDSocials>
             <a
               href="https://github.com/roseandlily33"
@@ -81,8 +81,8 @@ const IDSection = () => {
             gap: "1.7rem",
             borderLeft: "6px solid var(--medPink)",
             paddingLeft: "2rem",
-            minWidth: "220px",
-            maxWidth: "320px",
+            minWidth: "320px",
+            maxWidth: "420px",
           }}
         >
           <div>

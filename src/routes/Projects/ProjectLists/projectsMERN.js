@@ -13,6 +13,7 @@ export const projectListMERN = [
     github: "https://github.com/roseandlily33/algoatlas",
     deployed: "https://algoatlas.onrender.com",
     status: false,
+    showMainPage: true,
     important: true,
     description:
       "A algorithm practice platform build with Next.js and MongoDB. Users can create accounts, practice algorithms, track their progress, and discover new challenges. Integrated code editor and secure authentication for a seamless experience. * Responsive Design not complete",
@@ -49,6 +50,7 @@ export const projectListMERN = [
     deployed: "https://design-template-eotn.onrender.com",
     status: true,
     important: true,
+    showMainPage: true,
     description:
       "A fully customized design template platform built with the specifications that I desired as I design. All of the selected choices like font styles, colours etc all come together on a predesigned template to aid in decision making",
     keyFeatures: [
@@ -80,6 +82,7 @@ export const projectListMERN = [
     deployed: "https://lemon-lime.onrender.com",
     status: true,
     important: true,
+    showMainPage: true,
     description:
       "A full-featured recipe management platform built with the MERN stack and MongoDB. Users can create accounts, share, edit, and delete recipes, favorite and search for recipes, and discover new dishes. Integrated image optimization and secure authentication for a seamless experience.",
     keyFeatures: [

@@ -10,7 +10,6 @@ export const TimelineContainer = styled.div`
   background-position: bottom; /* Positions the background image at the bottom */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: cover; /* Ensures the image covers the container */
-  border-radius: var(--borderRadius);
   overflow: hidden;
 `;
 

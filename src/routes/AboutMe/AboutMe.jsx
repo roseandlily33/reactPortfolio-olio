@@ -3,18 +3,20 @@ import SummaryComponent from "./Summary";
 import ImageAboutMe from "./ImageAboutMe";
 import IDSection from "./ID";
 import Timeline from "./Timeline/Timelines";
-import CertificatesPreview from "./Certificates/CertificatesPreview.component";
 import SkillsPreview from "./Skills/SkillsPreview.component";
+import ProjectsPreview from "./Projects/ProjectsPreview.component";
+import CTA from "./CTA/CTA.component";
 
 const AboutMe = () => {
   return (
     <AboutMeComponent>
-      <ImageAboutMe /> 
+      <ImageAboutMe />
       <IDSection />
       <SummaryComponent />
       <SkillsPreview />
-      <CertificatesPreview />
+      <ProjectsPreview />
       <Timeline />
+      <CTA />
     </AboutMeComponent>
   );
 };

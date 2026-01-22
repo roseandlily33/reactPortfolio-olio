@@ -15,6 +15,7 @@ export const CertificatesPreviewSection = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  background: var(--pinkBackground);
 `;
 
 export const CertificatesGrid = styled.div`
