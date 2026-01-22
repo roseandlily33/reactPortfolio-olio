@@ -124,41 +124,66 @@ export const AboutMeSkills = styled.section`
 
 // Contact me section
 export const ContactMeSection = styled.section`
-  position: relative; /* Allows bubbles to float within the section */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  backdrop-filter: blur(10px);
-  overflow: hidden; /* Ensures bubbles stay within the section */
+  gap: 2.5rem;
+  padding: 2.8rem 2rem 2.8rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px) saturate(120%);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(241, 116, 150, 0.1);
+  overflow: hidden;
 
   h3 {
     color: ${({ theme }) => theme.colors.darkPink};
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    transition: color 0.3s ease; /* Adds a smooth transition to the text color */
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+    border-bottom: 4px solid ${({ theme }) => theme.colors.medBrown};
+    padding-bottom: 0.5rem;
+    transition: color 0.3s ease;
   }
 
   form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
     max-width: 600px;
+    align-items: center;
+  }
+
+  label {
+    color: ${({ theme }) => theme.colors.darkPink};
+    font-weight: 700;
+    font-size: 1.18rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    align-self: flex-start;
   }
 
   input,
   textarea {
-    border: 2px solid ${({ theme }) => theme.colors.medBrown};
-    border-radius: 10px;
-    padding: 1rem;
-    font-size: 1rem;
+    border: 2.5px solid ${({ theme }) => theme.colors.medBrown};
+    border-radius: 999px;
+    padding: 1.1rem 1.2rem;
+    font-size: 1.08rem;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: box-shadow 0.3s ease; /* Adds a smooth shadow transition */
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.darkGrey};
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
+    transition:
+      box-shadow 0.3s,
+      border-color 0.3s;
     &:focus {
-      box-shadow: 0 0 10px ${({ theme }) => theme.colors.darkPink};
+      box-shadow: 0 0 16px ${({ theme }) => theme.colors.darkPink};
+      border-color: ${({ theme }) => theme.colors.darkPink};
     }
   }
 
@@ -166,17 +191,21 @@ export const ContactMeSection = styled.section`
     background-color: ${({ theme }) => theme.colors.darkPink};
     color: ${({ theme }) => theme.colors.lightCream};
     border: none;
-    border-radius: 10px;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    border-radius: 999px;
+    padding: 1rem 2.2rem;
+    font-size: 1.18rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
     cursor: pointer;
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     transition:
-      transform 0.3s ease,
-      background-color 0.3s ease;
+      transform 0.3s,
+      background-color 0.3s;
 
     &:hover {
       background-color: ${({ theme }) => theme.colors.yellow};
-      transform: scale(1.05); /* Adds a hover scaling effect */
+      color: ${({ theme }) => theme.colors.darkBrown};
+      transform: scale(1.06);
     }
   }
 
@@ -184,24 +213,24 @@ export const ContactMeSection = styled.section`
   &::after {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: ${({ theme }) => theme.colors.lightPink};
     border-radius: 50%;
-    opacity: 0.5;
-    animation: float 6s infinite ease-in-out;
+    opacity: 0.4;
+    animation: float 7s infinite ease-in-out;
   }
 
   &::before {
-    top: -30px;
-    left: 20%;
+    top: -40px;
+    left: 18%;
     animation-delay: 0s;
   }
 
   &::after {
-    bottom: -50px;
-    right: 20%;
-    animation-delay: 3s;
+    bottom: -60px;
+    right: 18%;
+    animation-delay: 3.5s;
   }
 
   @keyframes float {
@@ -209,10 +238,37 @@ export const ContactMeSection = styled.section`
       transform: translateY(0) scale(1);
     }
     50% {
-      transform: translateY(-40px) scale(1.5);
+      transform: translateY(-50px) scale(1.5);
     }
     100% {
       transform: translateY(0) scale(1);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem 0.5rem;
+    border-radius: 18px;
+    h3 {
+      font-size: 1.35rem;
+      padding-bottom: 0.3rem;
+    }
+    form {
+      gap: 1rem;
+      max-width: 100%;
+    }
+    label {
+      font-size: 1rem;
+    }
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+      border-radius: 18px;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 18px;
     }
   }
 `;

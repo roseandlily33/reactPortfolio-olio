@@ -39,7 +39,7 @@ body {
   background-color: var(--lightCream);
   /* background-color: var(--darkCream); */
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--darkGrey);
   font-family: var(--mainFont);
 }

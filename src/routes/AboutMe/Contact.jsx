@@ -3,29 +3,32 @@ import emailjs from "@emailjs/browser";
 import { ContactMeSection } from "./AboutMe.styles";
 import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
 
-// List of services for the dropdown (alphabetical order)
+// List of services for the dropdown (alphabetical order, matches current offerings)
 const contactServices = [
-  "API Integration",
-  "Blog Setup",
-  "Branding & Logo Design",
-  "Content Management System (CMS)",
-  "Custom Email Solutions",
-  "Cyber Security Review",
-  "Elevate Package",
-  "E-Commerce Integration",
-  "Hosting & Deployment",
-  "Launch Package",
-  "Maintenance & Support",
-  "Map Package",
-  "Mini Retainer",
-  "Momentum Retainer",
-  "Performance Optimization",
-  "Scale Package",
-  "SEO Setup",
-  "Training & Documentation",
+  // Packages
+  "Design Foundation",
+  "Website Essentials",
+  "Professional Website",
+  "Custom Platform",
+  // Retainers
+  "Mini - Monthly Retainer",
+  "Boost - Quarterly Retainer",
+  "Momentum - Annual Retainer",
+  // Services
   "UI/UX Audit",
   "Website Redesign",
-  "Boost Retainer"
+  "Performance Optimization",
+  "SEO Setup",
+  "E-Commerce Integration",
+  "Blog Setup",
+  "API Integration",
+  "Maintenance & Support",
+  "Content Management System (CMS)",
+  "Branding & Logo Design",
+  "Hosting & Deployment",
+  "Training & Documentation",
+  "Cyber Security Review",
+  "Custom Email Solutions",
 ];
 
 const ContactMe = () => {
@@ -42,7 +45,7 @@ const ContactMe = () => {
         "service_mu6c7oe",
         "template_nijrfml",
         form.current,
-        "QJItZZ3zOkjdjFwZx"
+        "QJItZZ3zOkjdjFwZx",
       )
       .then(
         (result) => {
@@ -50,7 +53,7 @@ const ContactMe = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
     setName("");
     setEmail("");

@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const ServicesSection = styled.section`
   background: var(--lightGrey);
-  padding: 4rem 2rem 3rem 2rem;
+  /* padding: 4rem 2rem 3rem 2rem; */
+  padding: 5rem 2rem;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -15,9 +16,12 @@ export const ServicesTitle = styled.h2`
   color: var(--medGrey);
   font-family: var(--headerFont);
   font-size: 2.2rem;
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 1.5rem; */
+  margin-bottom: 0.8rem;
   letter-spacing: 0.08em;
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  font-weight: 800;
 `;
 
 export const ServicesGrid = styled.div`

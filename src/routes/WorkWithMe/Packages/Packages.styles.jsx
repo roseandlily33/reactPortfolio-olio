@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
-  /* background: var(--lightGrey); */
   background-color: #f4ebeb;
-  padding: 4rem 2rem 3rem 2rem;
+  /* padding: 4rem 2rem 1rem 2rem; */
+  padding: 5rem 2rem;
   width: 100%;
-  min-height: 70vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* removed debug border for cleaner look */
   h2 {
-    margin-bottom: 4rem;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: left;
   }
 `;
 
@@ -41,31 +44,7 @@ export const PackagesGrid = styled.div`
 `;
 
 export const PackageCard = styled.div`
-  /* 8. Animated floating bubbles background */
-  /* .bubbles-bg {
-    position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
-    width: 100%; height: 100%;
-    z-index: 1;
-    pointer-events: none;
-    overflow: hidden;
-  }
-  .bubble {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.18;
-    filter: blur(1.2px);
-    animation: float-bubble 7s linear infinite;
-  } */
-  /* .bubble1 { width: 60px; height: 60px; left: 10%; top: 50px; background: ${({ $accent }) => ($accent ? `${$accent}55` : "#f1749622")}; animation-delay: 0s; } */
-  /* .bubble2 { width: 38px; height: 38px; left: 70%; top: 20px; background: ${({ $accent }) => ($accent ? `${$accent}33` : "#ed467222")}; animation-delay: 2s; } */
-  /* .bubble3 { width: 24px; height: 24px; left: 40%; top: 30px; background: ${({ $accent }) => ($accent ? `${$accent}44` : "#f6a9be22")}; animation-delay: 4s; } */
-  @keyframes float-bubble {
-    0% { transform: translateY(0) scale(1); opacity: 0.18; }
-    60% { opacity: 0.28; }
-    100% { transform: translateY(-120%) scale(1.15); opacity: 0.10; }
-  }
-  background: ${({ $bg }) => $bg || "rgba(255,255,255,0.15)"};
+  background: ${({ $bg }) => $bg || "rgba(255,255,255,0.35)"};
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 16px;
@@ -165,6 +144,13 @@ export const PackageFeatures = styled.ul`
     display: flex;
     align-items: center;
   }
+  svg {
+    font-size: 1em !important;
+    min-width: 1em;
+    min-height: 1em;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
 `;
 
 export const PackageIcon = styled.div`
@@ -222,7 +208,7 @@ export const PackageDetails = styled.details`
     padding-top: 0;
   }
   &[open] .includes-content {
-    max-height: 480px; /* large enough to show the list */
+    max-height: 1200px; /* large enough to show the list */
     padding-top: 0.75rem;
   }
 `;

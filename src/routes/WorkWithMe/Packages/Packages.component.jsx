@@ -20,7 +20,7 @@ import {
 import { PackageInfo } from "./PackageInfo";
 import { RetainerTitle } from "./Retainer.styles";
 
-const glassBg = "rgba(255,255,255,0.15)";
+const glassBg = "rgba(255,255,255,0.45)";
 const colorMap = {
   "Design Foundation": {
     bg: glassBg,
@@ -51,8 +51,16 @@ const colorMap = {
 const PackagesComponent = () => (
   <PackagesSection>
     <RetainerTitle>Project Packages</RetainerTitle>
+    <p style={{ fontWeight: 500, marginBottom: "1.5rem" }}>
+      All package prices are listed as starting rates and reflect the base
+      investment for each project type. Final pricing may vary depending on your
+      specific needs, project complexity, and any additional features or
+      customizations. Each package includes a set of core deliverables, with
+      opportunities for add-ons or further collaboration. For a tailored quote
+      or to discuss which package best fits your goals, please get in touch!
+    </p>
     <PackagesGrid>
-      {PackageInfo.map((pkg) => {
+      {PackageInfo?.map((pkg) => {
         const colorKey = Object.keys(colorMap).find((key) =>
           pkg.title.toLowerCase().includes(key.toLowerCase()),
         );
