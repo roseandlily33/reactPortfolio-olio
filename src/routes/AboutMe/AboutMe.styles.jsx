@@ -137,7 +137,9 @@ export const AboutMeSection = styled.section`
     margin-bottom: 0.7rem;
     text-transform: capitalize;
   }
-  p, span, li {
+  p,
+  span,
+  li {
     font-size: 1rem;
     margin-bottom: 0.5rem;
     padding-right: 0.5rem;
@@ -178,6 +180,104 @@ export const AboutMeSkills = styled.section`
 
 // Contact me section
 export const ContactMeSection = styled.section`
+  .contact-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+  .contact-form-col {
+    flex: 2;
+    min-width: 270px;
+    max-width: 420px;
+    padding-right: 2rem;
+    border-right: 4px solid var(--darkPink);
+  }
+  .contact-info-col {
+    flex: 1.2;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+    margin-top: 0.2rem;
+    /* border: 2px solid red; */
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    font-family: var(--headerFont);
+    font-size: 1.13rem;
+    color: var(--medBrown);
+    width: 100%;
+  }
+  .contact-info .contact-row-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.1rem;
+  }
+  .contact-info a {
+    color: var(--medPink);
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.13rem;
+    line-height: 1.5;
+    transition: color 0.2s;
+  }
+  .contact-info a:hover {
+    color: var(--darkPink);
+  }
+  .contact-info .contact-label {
+    font-weight: 600;
+    color: var(--darkBrown);
+    margin-right: 0.13rem;
+    font-size: 1.03rem;
+  }
+  .contact-info svg {
+    font-size: 1.13rem;
+    color: var(--medBrown);
+    vertical-align: middle;
+    flex-shrink: 0;
+    margin-right: 0.05em;
+    transition: color 0.2s, transform 0.2s;
+  }
+  .contact-info .icon-link-row {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 0.2rem 0 0.1rem 0;
+    padding-top: 0.2rem;
+    border-top: 1px solid var(--lightGrey);
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .contact-info .icon-link {
+    color: var(--medPink);
+    font-size: 1.13rem;
+    transition: color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background: none;
+    padding: 0.13rem;
+  }
+  .contact-info .icon-link:hover {
+    color: var(--darkPink);
+    background: rgba(241, 116, 150, 0.08);
+    transform: scale(1.11);
+  }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -319,6 +419,18 @@ export const ContactMeSection = styled.section`
     }
   }
 
+  @media screen and (max-width: 900px) {
+    .contact-row {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+    .contact-form-col,
+    .contact-info-col {
+      max-width: 100%;
+      min-width: 0;
+    }
+  }
   @media screen and (max-width: 768px) {
     padding: 1.5rem 0.5rem;
     border-radius: 18px;
