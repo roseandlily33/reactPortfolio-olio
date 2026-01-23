@@ -4,7 +4,7 @@ export const IDCardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: var(--pinkBackground);
+  background: var(--lightPinkBackground);
   /* border-radius: 32px; */
   padding: 3rem 4rem;
   /* margin: 2.5rem auto; */

@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const SkillsPreviewSection = styled.section`
-  padding: 2.5rem 1.5rem;
-  margin: 2rem auto;
+  padding: 4rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--lightYellowBackground);
 `;
 
 export const SkillsGrid = styled.div`
   display: flex;
   overflow-x: scroll;
   max-width: 100%;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 1.5rem;
   padding: 1rem;
 `;

@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import {
   TopContainer,
-  EachCaseStudyContainer,
 } from "../CaseStudies/CaseStudies.styles";
-import TabButton from "../../components/Buttons/TabButton.component";
+import { FaCode, FaDatabase, FaPaintBrush, FaCogs } from "react-icons/fa";
 import StarLegend from "./Legend.component";
 import {
   SkillList,
   SkillItem,
   SkillInfo,
   SkillRating,
+  SkillsTabsLegendCard,
+  TabsPillRow,
+  PillTab,
+  StarLegendCard,
+  SkillsContainer,
 } from "./SkillsPage.styles";
 import { FaRegStar, FaStar } from "react-icons/fa";
 
@@ -24,19 +28,36 @@ const SkillsPage = () => {
     <CertificateContainer>
       <TopContainer>
         <h2>Skills</h2>
-        <div className="tabs">
-          {Object.keys(skills)?.map((category) => (
-            <TabButton
-              key={category}
-              span={category}
-              onClick={() => setActiveTab(category)}
-              isActive={activeTab === category}
-            />
-          ))}
-        </div>
       </TopContainer>
-      <EachCaseStudyContainer>
-        <StarLegend />
+      <TechStack />
+
+      <SkillsContainer>
+        <SkillsTabsLegendCard>
+          <TabsPillRow>
+            {Object.keys(skills)?.map((category) => {
+              let icon = <FaCogs />;
+              if (category.toLowerCase().includes("front")) icon = <FaCode />;
+              else if (category.toLowerCase().includes("back"))
+                icon = <FaDatabase />;
+              else if (category.toLowerCase().includes("design"))
+                icon = <FaPaintBrush />;
+              return (
+                <PillTab
+                  key={category}
+                  className={activeTab === category ? "active" : ""}
+                  onClick={() => setActiveTab(category)}
+                >
+                  {icon}
+                  <span>{category}</span>
+                </PillTab>
+              );
+            })}
+          </TabsPillRow>
+          <StarLegendCard>
+            <StarLegend />
+          </StarLegendCard>
+        </SkillsTabsLegendCard>
+
         <SkillList>
           {skills[activeTab]?.map((skill, index) => (
             <SkillItem key={index}>
@@ -48,14 +69,17 @@ const SkillsPage = () => {
               </SkillInfo>
               <SkillRating>
                 {[...Array(3)]?.map((_, i) =>
-                  i < skill?.rating ? <FaStar key={i} /> : <FaRegStar key={i} />
+                  i < skill?.rating ? (
+                    <FaStar key={i} />
+                  ) : (
+                    <FaRegStar key={i} />
+                  ),
                 )}
               </SkillRating>
             </SkillItem>
           ))}
         </SkillList>
-        <TechStack />
-      </EachCaseStudyContainer>
+      </SkillsContainer>
     </CertificateContainer>
   );
 };

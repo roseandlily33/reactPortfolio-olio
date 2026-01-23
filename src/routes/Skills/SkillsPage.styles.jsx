@@ -1,4 +1,98 @@
 import styled from "styled-components";
+export const SkillsTabsLegendCard = styled.div`
+  background: var(--lightCream);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
+  padding: 1.5em 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2em 1em;
+  }
+`;
+
+export const TabsPillRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: auto;
+  min-width: 180px;
+  @media (max-width: 900px) {
+    width: 100%;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+`;
+export const StarLegendCard = styled.div`
+  padding: 1.1em 1.5em;
+  min-width: 220px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @media (max-width: 900px) {
+    margin-left: 0;
+    min-width: 0;
+    max-width: 100%;
+  }
+`;
+
+export const PillTab = styled.button`
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: var(--medPink);
+  border: none;
+  border-radius: 999px;
+  padding: 0.5em 1.5em;
+  font-size: 1.08rem;
+  font-family: var(--headerFont);
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
+  cursor: pointer;
+  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s; */
+  outline: none;
+  svg {
+    color: var(--lightPink);
+    font-size: 1.2em;
+    margin-right: 0.2em;
+  }
+  &.active,
+  &:hover {
+    background: var(--lightPinkBackground);
+    color: var(--darkPink);
+    box-shadow: 0 4px 16px rgba(241, 116, 150, 0.13);
+  }
+`;
+
+export const SkillsHeaderRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+`;
 
 export const SkillList = styled.ul`
   list-style: none;
@@ -74,19 +168,32 @@ export const SkillRating = styled.p`
 `;
 
 export const StarLegendContainer = styled.div`
-  /* border: 1px solid #cac7c7; */
   .skill-icon {
     color: var(--darkPink);
     display: flex;
     align-items: center;
     gap: 1rem;
-    /* border: 1px solid red; */
   }
   span {
-    /* color: var(--darkGrey); */
     font-style: italic;
     font-size: 0.9rem;
   }
+`;
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  /* margin: 2rem auto; */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  /* border: 2px solid orange; */
+  gap: 2rem;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--pinkBackground);
 `;
 
 export const TechStackContainer = styled.div`
@@ -101,7 +208,11 @@ export const TechStackContainer = styled.div`
 
   h3 {
     margin-bottom: 3rem;
-    animation: fadeIn 1s ease-in-out;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    color: var(--darkPink);
+    /* animation: fadeIn 1s ease-in-out; */
   }
   .title-stack {
     display: flex;
@@ -120,10 +231,8 @@ export const TechStackContainer = styled.div`
   }
   p {
     /* border: 1px solid orange; */
-    color: var(--darkPink);
     font-size: 1.5rem;
     display: flex;
-    font-weight: 500;
   }
   svg {
     color: var(--lightPink);
@@ -139,7 +248,7 @@ export const TechStackContainer = styled.div`
     font-size: 1.2rem;
     color: var(--darkBrown);
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-block: 1rem;
   }
   .overview p {
     font-size: 1.1rem;

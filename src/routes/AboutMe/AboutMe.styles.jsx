@@ -63,7 +63,8 @@ export const AboutMePicture = styled.section`
 export const AboutMeSection = styled.section`
   display: flex;
   justify-content: space-evenly;
-  background: #fff;
+  background-color: #fff;
+  /* border: 2px solid red; */
   padding: 3rem;
   a {
     color: ${({ theme }) => theme.colors.darkPink};
@@ -248,7 +249,9 @@ export const ContactMeSection = styled.section`
     vertical-align: middle;
     flex-shrink: 0;
     margin-right: 0.05em;
-    transition: color 0.2s, transform 0.2s;
+    transition:
+      color 0.2s,
+      transform 0.2s;
   }
   .contact-info .icon-link-row {
     display: flex;
@@ -263,7 +266,9 @@ export const ContactMeSection = styled.section`
   .contact-info .icon-link {
     color: var(--medPink);
     font-size: 1.13rem;
-    transition: color 0.2s, transform 0.2s;
+    transition:
+      color 0.2s,
+      transform 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;

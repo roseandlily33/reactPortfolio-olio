@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const CTASection = styled.section`
   background: linear-gradient(120deg, var(--orangeBackground) 60%, var(--pinkBackground) 100%);
-  box-shadow: 0 6px 32px 0 rgba(241, 116, 150, 0.10);
+  /* box-shadow: 0 6px 32px 0 rgba(241, 116, 150, 0.10); */
   padding: 4.5rem 2rem 2.2rem 2rem;
   /* margin: 3rem auto 2.5rem auto; */
   display: flex;

@@ -48,6 +48,13 @@ const Navbar = () => {
         Projects
       </NavLink>
       <NavLink
+        to="/Skills"
+        style={styles.navLink}
+        onClick={() => setMenuOpen(false)}
+      >
+        Skills
+      </NavLink>
+      <NavLink
         to="/CaseStudies"
         style={styles.navLink}
         onClick={() => setMenuOpen(false)}

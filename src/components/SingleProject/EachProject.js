@@ -31,15 +31,54 @@ const SingleProject = ({ projectList, openModal }) => {
           <div className="project-details">
             <h5>{project?.title}</h5>
             <div className="project-status-type">
-              <span className="project-status">
-                Status:{" "}
-                {project?.status === true ? (
-                  <span style={{ color: "#5CB85C" }}>Complete</span>
-                ) : (
-                  <span style={{ color: "#e6b607" }}>Under Development</span>
-                )}
+              <span
+                className={
+                  "status-badge " +
+                  (project?.status === true ? "complete" : "in-progress")
+                }
+                style={{
+                  display: "inline-block",
+                  padding: "0.18em 1.1em",
+                  borderRadius: "999px",
+                  fontSize: "1.08rem",
+                  fontWeight: 700,
+                  fontFamily: "var(--headerFont)",
+                  background:
+                    project?.status === true
+                      ? "#eafbe7"
+                      : "var(--lightYellowBackground)",
+                  color:
+                    project?.status === true ? "var(--green)" : "var(--yellow)",
+                  letterSpacing: "0.01em",
+                  minWidth: 110,
+                  textAlign: "center",
+                  lineHeight: 1.2,
+                  marginRight: "0.7em",
+                }}
+              >
+                {project?.status === true ? "Complete" : "Under Development"}
               </span>
-              <span className="project-type">{project?.type}</span>
+              {project?.type && (
+                <span
+                  className="project-type"
+                  style={{
+                    display: "inline-block",
+                    fontSize: "1.08rem",
+                    color: "var(--medPink)",
+                    fontWeight: 700,
+                    fontFamily: "var(--headerFont)",
+                    background: "rgba(241, 116, 150, 0.08)",
+                    borderRadius: "999px",
+                    padding: "0.18em 1.1em",
+                    letterSpacing: "0.01em",
+                    minWidth: 110,
+                    textAlign: "center",
+                    lineHeight: 1.2,
+                  }}
+                >
+                  {project?.type}
+                </span>
+              )}
             </div>
           </div>
         </ProjectCard>

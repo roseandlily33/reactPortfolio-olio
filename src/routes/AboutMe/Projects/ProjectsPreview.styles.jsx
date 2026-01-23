@@ -4,8 +4,8 @@ export const CertificatesPreviewSection = styled.section`
   /* background: #fff; */
   /* border-radius: var(--borderRadius); */
   /* box-shadow: 0 4px 32px rgba(241, 116, 150, 0.10); */
-  padding: 2rem 2rem 2.5rem 2rem;
-  margin: 2rem auto;
+  padding: 4rem;
+  /* margin: 2rem auto; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ export const CertificatesPreviewSection = styled.section`
 
 export const CertificatesGrid = styled.div`
   display: flex;
-  gap: 1.2rem;
+  gap: 2rem;
   overflow-x: auto;
   flex-wrap: nowrap;
   max-width: 100%;

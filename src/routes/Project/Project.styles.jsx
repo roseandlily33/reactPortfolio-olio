@@ -62,7 +62,7 @@ export const ProjectDetailHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.7rem;
+  gap: 1rem;
   margin-bottom: 1.2rem;
   position: relative;
   h1 {
@@ -75,15 +75,19 @@ export const ProjectDetailHeader = styled.div`
     gap: 1.2rem;
   }
   .featured-badge {
-    background: var(--lightestBrown);
+    display: inline-block;
+    background: var(--orangeBackground);
     color: var(--medBrown);
-    font-size: 1.02rem;
+    font-size: 1.08rem;
     font-weight: 700;
+    font-family: var(--headerFont);
     border-radius: 999px;
     padding: 0.18em 1.1em;
-    margin-left: 0.7em;
     box-shadow: 0 2px 8px rgba(255, 140, 64, 0.08);
-    display: inline-flex;
+    letter-spacing: 0.01em;
+    min-width: 110px;
+    text-align: center;
+    line-height: 1.2;
     align-items: center;
     gap: 0.5em;
     position: relative;
@@ -91,15 +95,15 @@ export const ProjectDetailHeader = styled.div`
   }
   .project-detail-links {
     display: flex;
-    gap: 1.2rem;
+    gap: 2rem;
     a {
-      color: var(--darkPink);
+      color: var(--darkBrown);
       font-weight: 600;
       text-decoration: underline;
       font-size: 1.08rem;
       transition: color 0.2s;
       &:hover {
-        color: var(--medPink);
+        color: var(--yellow);
       }
     }
   }
@@ -114,6 +118,12 @@ export const ProjectDetailHeader = styled.div`
       margin-left: 0;
     }
   }
+`;
+
+export const ProjectDetailsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const ProjectDetailMain = styled.div`
@@ -169,56 +179,85 @@ export const ProjectDetailStatusType = styled.div`
 
 export const ProjectDetailStatus = styled.span`
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  .complete {
-    color: #5cb85c;
-    font-weight: 600;
-  }
-  .in-progress {
-    color: #e6b607;
-    font-weight: 600;
+  .status-badge {
+    display: inline-block;
+    padding: 0.18em 1.1em;
+    border-radius: 999px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    font-family: var(--headerFont);
+    background: var(--lightPinkBackground);
+    letter-spacing: 0.01em;
+    box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
+    line-height: 1.2;
+    min-width: 110px;
+    text-align: center;
+    &.complete {
+      color: var(--green);
+      background: #eafbe7;
+    }
+    &.in-progress {
+      color: var(--yellow);
+      background: var(--lightYellowBackground);
+    }
   }
 `;
 
 export const ProjectDetailType = styled.span`
-  font-size: 0.98rem;
+  display: inline-block;
+  font-size: 1.08rem;
   color: var(--medPink);
-  font-weight: 500;
+  font-weight: 700;
+  font-family: var(--headerFont);
   background: rgba(241, 116, 150, 0.08);
   border-radius: 999px;
-  padding: 0.2em 0.8em;
+  padding: 0.18em 1.1em;
   letter-spacing: 0.01em;
+  min-width: 110px;
+  text-align: center;
+  line-height: 1.2;
 `;
 
 export const ProjectDetailImportant = styled.span`
-  font-size: 1rem;
+  display: inline-block;
+  font-size: 1.08rem;
   color: var(--darkPink);
-  font-weight: 600;
+  font-weight: 700;
+  font-family: var(--headerFont);
   background: rgba(241, 116, 150, 0.1);
   border-radius: 999px;
-  padding: 0.2em 0.8em;
+  padding: 0.18em 1.1em;
   margin-bottom: 0.5rem;
-  display: inline-block;
+  letter-spacing: 0.01em;
+  min-width: 110px;
+  text-align: center;
+  line-height: 1.2;
 `;
 
 export const ProjectDetailDescription = styled.p`
-  font-size: 1.08rem;
-  /* color: var(--darkGrey); */
   margin-bottom: 0.5rem;
   line-height: 1.6;
-  font-weight: 350;
 `;
 
 export const ProjectDetailRole = styled.p`
   font-size: 1.01rem;
-  color: var(--darkPink);
+  /* color: var(--darkPink); */
 `;
 
 export const ProjectDetailSection = styled.div`
   /* margin: 1.2rem 0 0.5rem 0; */
+  background: var(--lightestGrey);
+  padding: 1.5rem 1.8rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
 `;
 
 export const ProjectDetailSectionTitle = styled.h4`
@@ -235,7 +274,7 @@ export const ProjectDetailList = styled.ul`
   li {
     position: relative;
     font-size: 1rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     font-weight: 350;
     padding-left: 1.7em;
   }
@@ -251,26 +290,15 @@ export const ProjectDetailList = styled.ul`
     display: inline-block;
   }
 `;
-export const ProjectTestimonial = styled.p`
-  background: var(--lightestBrown);
-  border-left: 5px solid var(--medBrown);
-  /* color: var(--darkGrey); */
-  font-style: italic;
-  font-size: 1.08rem;
-  margin: 1.2rem 0 0.5rem 0;
-  padding: 1.1em 1.3em 1.1em 1.5em;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
-  position: relative;
-  border: 2px solid red;
-  &:before {
-    content: "\201C";
-    font-size: 2.5rem;
-    color: var(--medBrown);
-    position: absolute;
-    left: 0.5em;
-    top: 0.2em;
-    opacity: 0.3;
-    font-family: serif;
-  }
+export const ProjectTestimonial = styled.div`
+  /* border-left: 5px solid var(--medPink); */
+  /* color: var(--berry); */
+  /* font-style: italic; */
+  line-height: 1.6;
+  /* font-size: 1.08rem; */
+  /* margin: 1.2rem 0 0.5rem 0; */
+  /* padding: 1.1em 1.3em 1.1em 1.5em; */
+  /* border-radius: 18px; */
+  /* box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07); */
+  /* position: relative; */
 `;

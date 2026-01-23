@@ -26,27 +26,9 @@ export const TimelineItem = styled.div`
   p {
     font-size: 1rem;
   }
-/* 
-  .bubble {
-    position: absolute;
-    left: -1.5rem;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    background-color: var(--lightPink);
-    border-radius: 50%;
-    animation: float 6s infinite ease-in-out;
+  &:hover {
+    background-color: var(--pinkBackground);
+    transition: background-color 0.3s ease;
   }
 
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  } */
 `;

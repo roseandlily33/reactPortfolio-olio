@@ -23,6 +23,11 @@ export const projectListFrontEnd = [
     type: "Front End",
     important: true,
     alt: "Javascript quiz application",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   {
     id: 402,
@@ -36,6 +41,11 @@ export const projectListFrontEnd = [
     type: "Front End",
     important: true,
     alt: "Weather application",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: ["openWeatherAPI"],
+    },
   },
   // This one is sort of working missing pictures
   {
@@ -48,6 +58,11 @@ export const projectListFrontEnd = [
     img: NoPhoto,
     type: "Front End",
     alt: "Bakery Application",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   //Up on render and is working - project is not finished
   {
@@ -62,6 +77,11 @@ export const projectListFrontEnd = [
     type: "Front End",
     important: true,
     alt: "Jammin Application",
+    technologies: {
+      frontend: ["React", "CSS"],
+      backend: [],
+      extra: ["Spotify API"],
+    },
   },
   {
     id: 405,
@@ -73,6 +93,11 @@ export const projectListFrontEnd = [
     img: Magic8,
     type: "Front End",
     alt: "Magic 8 Ball",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   {
     id: 406,
@@ -84,6 +109,11 @@ export const projectListFrontEnd = [
     img: Quote,
     type: "Front End",
     alt: "Quote Generator",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   {
     id: 407,
@@ -96,6 +126,11 @@ export const projectListFrontEnd = [
     img: Pictureinpicture,
     type: "Front End",
     alt: "Picture in Picture",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   {
     id: 408,
@@ -107,6 +142,11 @@ export const projectListFrontEnd = [
     img: NoPhoto,
     type: "Front End",
     alt: "Infinity Scroll",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   {
     id: 409,
@@ -118,6 +158,11 @@ export const projectListFrontEnd = [
     img: Password,
     type: "Front End",
     alt: "Password Generator",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
   //  {
   //   id: 9,
@@ -140,5 +185,10 @@ export const projectListFrontEnd = [
     img: NoPhoto,
     type: "Front End",
     alt: "Make me a cake",
+    technologies: {
+      frontend: ["HTML", "CSS", "JS"],
+      backend: [],
+      extra: [],
+    },
   },
 ];

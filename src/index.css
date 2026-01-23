@@ -16,6 +16,7 @@
   --lightestBrown: #ffe4c2;
   --darkOrange: #ff8c40;
   --yellow: #ffb400;
+  --lightestGrey: #f0efed;
   --lightGrey: #ebe9e1;
   --medGrey: #8f8e8e;
   --darkGrey: #323232;
@@ -28,7 +29,10 @@
   --medPink: #f17496;
   --darkPink: #ed4672;
   --pinkBackground: #f4ebeb;
+  --lightPinkBackground: #ffeaea;
+  --green: #4bbf6b; /* Complimentary green for status badge */
   --orangeBackground: #fff3e6;
+  --lightYellowBackground: #fff7d6;
   --berry: #b23a48;
   --darkBerry: #6d4c41;
   --borderRadius: 25px;

@@ -34,24 +34,25 @@ export const projectListClient = [
 
     img: YODA,
     type: "MERN",
-    technologies: [
-      "bcrypt",
-      "cors",
-      "dotenv",
-      "express",
-      "helmet",
-      "mongodb",
-      "mongoose",
-      "morgan",
-      "jsonwebtoken",
-      "multer",
-      "nodemailer",
-      "nodemailer-express-handlebars",
-      "uuid",
-      "styled-components",
-      "react",
-      "react-router-dom",
-    ],
+    technologies: {
+      frontend: ["react", "react-router-dom", "styled-components"],
+      backend: [
+        "express",
+        "mongodb",
+        "mongoose",
+        "morgan",
+        "helmet",
+        "dotenv",
+        "bcrypt",
+        "cors",
+        "jsonwebtoken",
+        "multer",
+        "nodemailer",
+        "nodemailer-express-handlebars",
+        "uuid",
+      ],
+      extra: [],
+    },
     alt: "YODA Application",
   },
   {
@@ -84,6 +85,11 @@ export const projectListClient = [
     alt: "Ariel Boesener Performance Horses Application",
     testimonial:
       "Working with Victoria Benoit was absolutely transformative for the function and overall experience of my website. Victoria applied an incredible eye for detail, focusing on making the layout more attractive and the overall presentation genuinely eye-catching. Beyond the aesthetics, the improvements to user flow were paramount. She optimized the navigation, making the site dramatically more user-friendly. My website now looks highly professional and provides a seamless experience for visitors. If you are looking for a design expert to refine your project and elevate it from good to outstanding, I highly recommend Victoria! - Ariel Boesener",
+    technologies: {
+      frontend: [],
+      backend: [],
+      extra: [],
+    },
   },
   {
     id: 503,
@@ -110,7 +116,11 @@ export const projectListClient = [
     ],
     img: IP,
     type: "FE",
-    technologies: ["styled-components", "gatsby"],
+    technologies: {
+      frontend: ["styled-components"],
+      backend: [],
+      extra: ["gatsby"],
+    },
     alt: "InspectionPal Application",
   },
 ];
