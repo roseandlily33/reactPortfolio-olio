@@ -1,3 +1,5 @@
+import React, { useRef, useState, useEffect } from "react";
+
 import {
   FaRocket,
   FaChartLine,
@@ -5,6 +7,7 @@ import {
   FaMapMarkedAlt,
   FaCheckCircle,
   FaClock,
+  FaChevronRight,
 } from "react-icons/fa";
 import {
   PackagesSection,
@@ -48,73 +51,105 @@ const colorMap = {
   },
 };
 
-const PackagesComponent = () => (
-  <PackagesSection>
-    <RetainerTitle>Project Packages</RetainerTitle>
-    <p style={{ fontWeight: 500, marginBottom: "1.5rem" }}>
-      All package prices are listed as starting rates and reflect the base
-      investment for each project type. Final pricing may vary depending on your
-      specific needs, project complexity, and any additional features or
-      customizations. Each package includes a set of core deliverables, with
-      opportunities for add-ons or further collaboration. For a tailored quote
-      or to discuss which package best fits your goals, please get in touch!
-    </p>
-    <PackagesGrid>
-      {PackageInfo?.map((pkg) => {
-        const colorKey = Object.keys(colorMap).find((key) =>
-          pkg.title.toLowerCase().includes(key.toLowerCase()),
-        );
-        const color = colorMap[colorKey] || colorMap.Launch;
-        return (
-          <PackageCard
-            key={pkg.title}
-            $bg={color.bg}
-            $border={color.border}
-            $accent={color.border}
-            $accentSoft={color.bg}
-          >
-            <PackageIcon $titleColor={color.title}>{color.icon}</PackageIcon>
-            <PackageTitle $titleColor={color.title}>{pkg.title}</PackageTitle>
-            <PackagePrice>Starting at: {pkg.startingAt}</PackagePrice>
-            {pkg.timeline && (
-              <div
-                style={{
-                  color: color.title,
-                  fontWeight: 500,
-                  marginBottom: "0.7rem",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.5em",
-                }}
-              >
-                <FaClock style={{ marginRight: "0.3em" }} />
-                {pkg.timeline}
-              </div>
-            )}
-            <PackageDescription>{pkg.description}</PackageDescription>
+const PackagesComponent = () => {
+  const gridRef = useRef();
+  const [showArrow, setShowArrow] = useState(false);
 
-            <PackageDetails>
-              <summary>
-                Includes <span className="chev">⌄</span>
-              </summary>
-              <div className="includes-content">
-                <PackageFeatures>
-                  {pkg.features.map((feature, i) => (
-                    <li key={i}>
-                      <FaCheckCircle
-                        style={{ color: color.title, marginRight: "0.5em" }}
-                      />
-                      {feature}
-                    </li>
-                  ))}
-                </PackageFeatures>
-              </div>
-            </PackageDetails>
-          </PackageCard>
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (!grid) return;
+    const checkScroll = () => {
+      if (grid.scrollWidth > grid.clientWidth) {
+        // Show arrow if not scrolled to end
+        setShowArrow(
+          grid.scrollLeft + grid.clientWidth < grid.scrollWidth - 10,
         );
-      })}
-    </PackagesGrid>
-  </PackagesSection>
-);
+      } else {
+        setShowArrow(false);
+      }
+    };
+    checkScroll();
+    grid.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+    return () => {
+      grid.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("resize", checkScroll);
+    };
+  }, []);
+
+  return (
+    <PackagesSection>
+      <RetainerTitle>Project Packages</RetainerTitle>
+      <p style={{ fontWeight: 500, marginBottom: "1.5rem" }}>
+        All package prices are listed as starting rates and reflect the base
+        investment for each project type. Final pricing may vary depending on
+        your specific needs, project complexity, and any additional features or
+        customizations. Each package includes a set of core deliverables, with
+        opportunities for add-ons or further collaboration. For a tailored quote
+        or to discuss which package best fits your goals, please get in touch!
+      </p>
+      <PackagesGrid ref={gridRef}>
+        {showArrow && (
+          <span className="scroll-arrow">
+            <FaChevronRight />
+          </span>
+        )}
+        {PackageInfo?.map((pkg) => {
+          const colorKey = Object.keys(colorMap).find((key) =>
+            pkg.title.toLowerCase().includes(key.toLowerCase()),
+          );
+          const color = colorMap[colorKey] || colorMap.Launch;
+          return (
+            <PackageCard
+              key={pkg.title}
+              $bg={color.bg}
+              $border={color.border}
+              $accent={color.border}
+              $accentSoft={color.bg}
+            >
+              <PackageIcon $titleColor={color.title}>{color.icon}</PackageIcon>
+              <PackageTitle $titleColor={color.title}>{pkg.title}</PackageTitle>
+              <PackagePrice>Starting at: {pkg.startingAt}</PackagePrice>
+              {pkg.timeline && (
+                <div
+                  style={{
+                    color: color.title,
+                    fontWeight: 500,
+                    marginBottom: "0.7rem",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.5em",
+                  }}
+                >
+                  <FaClock style={{ marginRight: "0.3em" }} />
+                  {pkg.timeline}
+                </div>
+              )}
+              <PackageDescription>{pkg.description}</PackageDescription>
+
+              <PackageDetails>
+                <summary>
+                  Includes <span className="chev">⌄</span>
+                </summary>
+                <div className="includes-content">
+                  <PackageFeatures>
+                    {pkg.features.map((feature, i) => (
+                      <li key={i}>
+                        <FaCheckCircle
+                          style={{ color: color.title, marginRight: "0.5em" }}
+                        />
+                        {feature}
+                      </li>
+                    ))}
+                  </PackageFeatures>
+                </div>
+              </PackageDetails>
+            </PackageCard>
+          );
+        })}
+      </PackagesGrid>
+    </PackagesSection>
+  );
+};
 
 export default PackagesComponent;

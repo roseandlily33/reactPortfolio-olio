@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const ProjectComponentContainer = styled.main`
   margin: 1rem;
+  @media (max-width: 900px) {
+    margin: 0.5rem;
+  }
+  @media (max-width: 600px) {
+    margin: 0.2rem;
+  }
 `;
 
 export const ProjectContainer = styled.section`
@@ -19,5 +25,23 @@ export const ProjectContainer = styled.section`
     padding-left: 1rem;
     letter-spacing: 0.3rem;
     color: ${({ theme }) => theme.colors.darkPink};
+    font-size: 2rem;
+  }
+  @media (max-width: 900px) {
+    border-radius: 18px;
+    padding: 0.7rem;
+    h2 {
+      font-size: 1.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  @media (max-width: 600px) {
+    border-radius: 12px;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    h2 {
+      font-size: 1.1rem;
+      padding-left: 0.2rem;
+    }
   }
 `;

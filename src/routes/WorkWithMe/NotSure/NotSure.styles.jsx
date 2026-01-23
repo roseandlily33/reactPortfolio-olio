@@ -16,6 +16,7 @@ export const NotSureTitleRow = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 1.1rem;
+
 `;
 
 export const NotSureTitle = styled.h4`
@@ -51,6 +52,14 @@ export const NotSureItem = styled.li`
     color: var(--medGrey);
     font-weight: 400;
     font-size: 1.04rem;
+  }
+    @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--lightGrey);
+    /* border: 2px solid red; */
   }
 `;
 

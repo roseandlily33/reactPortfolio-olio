@@ -68,9 +68,7 @@ const Projects = () => {
             ))}
           </div>
         </TopContainer>
-        <section>
           <SingleProject projectList={projectList} />
-        </section>
       </CertificateContainer>
     </>
   );

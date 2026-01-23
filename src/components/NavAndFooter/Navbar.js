@@ -85,13 +85,21 @@ const Navbar = () => {
   return (
     <NavbarOuter className={scrollDirection}>
       <h1>Victoria Benoit</h1>
-      <Hamburger onClick={() => setMenuOpen((open) => !open)}>
+      <Hamburger
+        className={menuOpen ? "open" : ""}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+        aria-controls="mobile-menu"
+        onClick={() => setMenuOpen((open) => !open)}
+      >
         <span />
         <span />
         <span />
       </Hamburger>
       <NavBarComponent className="desktop">{navLinks}</NavBarComponent>
-      <MobileMenu open={menuOpen}>{navLinks}</MobileMenu>
+      <MobileMenu id="mobile-menu" open={menuOpen}>
+        {navLinks}
+      </MobileMenu>
     </NavbarOuter>
   );
 };

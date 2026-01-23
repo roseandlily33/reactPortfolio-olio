@@ -71,23 +71,40 @@ export const Hamburger = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 38px;
-  height: 38px;
-  background: none;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.85);
   border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(241,116,150,0.13);
   cursor: pointer;
   z-index: 1200;
-
+  transition: background 0.2s, box-shadow 0.2s;
+  position: relative;
+  &:hover, &:focus {
+    background: var(--lightPinkBackground);
+    box-shadow: 0 4px 20px rgba(241,116,150,0.18);
+  }
   span {
-    width: 28px;
+    width: 26px;
     height: 4px;
     background: var(--darkPink);
-    margin: 3px 0;
+    margin: 3.5px 0;
     border-radius: 2px;
-    transition: 0.3s;
+    transition: 0.35s cubic-bezier(0.68,-0.55,0.27,1.55);
     display: block;
+    position: relative;
   }
-
+  &.open span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+  &.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0.5);
+  }
+  &.open span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
   @media (max-width: 900px) {
     display: flex;
   }

@@ -1,21 +1,22 @@
 import styled from "styled-components";
 export const SkillsTabsLegendCard = styled.div`
   background: var(--lightCream);
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
-  padding: 1.5em 2em;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(241, 116, 150, 0.13);
+  padding: 2.2em 2.5em 2.5em 2.5em;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-
-  gap: 2.5rem;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+  margin-bottom: 2.5rem;
   width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
   @media (max-width: 900px) {
-    flex-direction: column;
+    padding: 1.2em 0.5em 1.5em 0.5em;
     gap: 1.2rem;
-    padding: 1.2em 1em;
   }
 `;
 
@@ -26,27 +27,27 @@ export const TabsPillRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  width: auto;
-  min-width: 180px;
+  width: 100%;
+  margin-bottom: 1.5rem;
   @media (max-width: 900px) {
-    width: 100%;
     gap: 0.7rem;
     margin-bottom: 1rem;
   }
 `;
 export const StarLegendCard = styled.div`
-  padding: 1.1em 1.5em;
-  min-width: 220px;
-  max-width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
+  padding: 1.5em 2em;
   width: 100%;
-  margin-left: auto;
+  max-width: 420px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.2rem;
   @media (max-width: 900px) {
-    margin-left: 0;
-    min-width: 0;
+    padding: 1em 0.7em;
     max-width: 100%;
   }
 `;
@@ -58,20 +59,23 @@ export const PillTab = styled.button`
   color: var(--medPink);
   border: none;
   border-radius: 999px;
-  padding: 0.5em 1.5em;
-  font-size: 1.08rem;
+  padding: 0.6em 1.7em;
+  font-size: 1.13rem;
   font-family: var(--headerFont);
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
   cursor: pointer;
-  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s; */
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
   outline: none;
   svg {
     color: var(--lightPink);
-    font-size: 1.2em;
-    margin-right: 0.2em;
+    font-size: 1.25em;
+    margin-right: 0.4em;
   }
-  &.active,
+  &.activeTab,
   &:hover {
     background: var(--lightPinkBackground);
     color: var(--darkPink);
@@ -107,11 +111,11 @@ export const SkillItem = styled.li`
   border-bottom: 1px solid #cac7c7;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
   padding: 0.5rem 0;
 
   @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
     padding: 0.7rem 0;
   }
 `;
@@ -203,6 +207,7 @@ export const TechStackContainer = styled.div`
   justify-content: center;
   /* border: 1px solid orange; */
   /* gap: 2rem; */
+  padding: 1rem;
   width: 100%;
   background-color: var(--pinkBackground);
 
@@ -252,9 +257,16 @@ export const TechStackContainer = styled.div`
   }
   .overview p {
     font-size: 1.1rem;
-    /* color: var(--darkGrey); */
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 600px) {
+    .overview p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
   }
 `;

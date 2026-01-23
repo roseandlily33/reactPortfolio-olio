@@ -31,6 +31,7 @@ export const CertificateContainer = styled.main`
     transform: translateY(20px);
     animation: fadeIn 1s ease forwards;
     position: relative;
+    /* border: 2px solid red; */
   }
   #certContainer img {
     min-width: 450px;
@@ -44,10 +45,14 @@ export const CertificateContainer = styled.main`
   @keyframes glow {
     0%,
     100% {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 15px var(--lightPink);
+      box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2),
+        0 0 15px var(--lightPink);
     }
     50% {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 25px var(--darkPink);
+      box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2),
+        0 0 25px var(--darkPink);
     }
   }
   @keyframes fadeIn {
@@ -67,7 +72,7 @@ export const CertificateContainer = styled.main`
     animation: glow 2s infinite;
   }
   #certContainer:hover .important-badge {
-    transform: scale(1.10);
+    transform: scale(1.1);
     transition: transform 0.4s;
   }
   .important-badge {
@@ -115,6 +120,17 @@ export const CertificateContainer = styled.main`
       max-height: 150px;
       max-width: 250px;
       min-height: 150px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    section {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 1rem;
+      height: 100%;
+      padding-top: 1rem;
+      /* border: 1px solid red; */
     }
   }
   @media screen and (max-width: 500px) {

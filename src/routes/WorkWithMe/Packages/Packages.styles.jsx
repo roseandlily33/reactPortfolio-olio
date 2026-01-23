@@ -27,6 +27,7 @@ export const PackagesGrid = styled.div`
   padding: 2rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  position: relative;
   /* border: 2px solid blue; */
 
   & > div {
@@ -34,8 +35,56 @@ export const PackagesGrid = styled.div`
     scroll-snap-align: start;
   }
 
+  .scroll-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(241,116,150,0.13);
+    width: 2.3em;
+    height: 2.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkPink);
+    font-size: 2rem;
+    opacity: 0.85;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    user-select: none;
+  }
+  .scroll-arrow.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+  }
+
+  @media (max-width: 900px) {
+    gap: 1.5rem;
+    padding: 1.2rem 0.5rem;
+    .scroll-arrow {
+      right: 0.2rem;
+      width: 2em;
+      height: 2em;
+      font-size: 1.5rem;
+    }
+    & > div {
+      flex: 0 0 80vw;
+      max-width: 90vw;
+    }
+  }
   @media (max-width: 600px) {
     gap: 1.2rem;
+    padding: 0.7rem 0.1rem;
+    .scroll-arrow {
+      right: 0.1rem;
+      width: 1.7em;
+      height: 1.7em;
+      font-size: 1.1rem;
+    }
     & > div {
       flex: 0 0 90vw;
       max-width: 95vw;
@@ -102,13 +151,13 @@ export const PackageCard = styled.div`
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background: ${({ $accent, $accentSoft }) =>
-      `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
+    `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
     z-index: 2;
     transition: background 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   }
   &:hover::before {
     background: ${({ $accent }) =>
-      `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
+    `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
   }
 `;
 

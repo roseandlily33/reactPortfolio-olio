@@ -44,7 +44,7 @@ const SkillsPage = () => {
               return (
                 <PillTab
                   key={category}
-                  className={activeTab === category ? "active" : ""}
+                  className={activeTab === category ? "activeTab" : ""}
                   onClick={() => setActiveTab(category)}
                 >
                   {icon}
