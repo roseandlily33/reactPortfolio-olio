@@ -31,15 +31,8 @@ export const TimelineLine = styled.div`
   z-index: 1;
   transform: translateY(-50%);
   overflow: hidden;
-  @media (max-width: 900px) {
-    left: 50%;
-    right: auto;
-    top: 7%;
-    bottom: 7%;
-    width: 6px;
-    height: calc(100% - 14%);
-    background: linear-gradient(180deg, #f17496 0%, #f7b267 50%, #b388eb 100%);
-    transform: translateX(-50%);
+   @media (max-width: 900px) {
+    display: none;
   }
   /* No after, just the pink gradient base */
 `;
@@ -64,38 +57,18 @@ export const TimelineLineWhite = styled.div`
     top: 0;
     height: 100%;
     width: ${({ steps, activeStep }) =>
-      activeStep < 0
-        ? "0%"
-        : steps === 1
-          ? "100%"
-          : `${(activeStep / (steps - 1)) * 100}%`};
+    activeStep < 0
+      ? "0%"
+      : steps === 1
+        ? "100%"
+        : `${(activeStep / (steps - 1)) * 100}%`};
     background: #fff;
     border-radius: 3px;
     transition: width 1s cubic-bezier(0.4, 1.4, 0.6, 1);
     z-index: 2;
   }
-  @media (max-width: 900px) {
-    left: 50%;
-    right: auto;
-    top: 7%;
-    bottom: 7%;
-    width: 6px;
-    height: calc(100% - 14%);
-    background: transparent;
-    transform: translateX(-50%);
-    &::after {
-      width: 100%;
-      height: ${({ steps, activeStep }) =>
-        activeStep < 0
-          ? "0%"
-          : steps === 1
-            ? "100%"
-            : `${(activeStep / (steps - 1)) * 100}%`};
-      left: 0;
-      top: 0;
-      background: #fff;
-      transition: height 1s cubic-bezier(0.4, 1.4, 0.6, 1);
-    }
+   @media (max-width: 900px) {
+    display: none;
   }
 `;
 
@@ -111,12 +84,20 @@ export const TimelineStep = styled.div`
   margin-top: 0;
   /* border: 1px solid red; */
   @media (max-width: 900px) {
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     min-width: 0;
     max-width: none;
-    margin: 2.5rem 0;
+    margin: 2rem 0 1.2rem 0;
     align-items: flex-start;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    & > div, & > h4, & > p {
+      margin-bottom: 0.4rem;
+      margin-right: 0;
+      text-align: left;
+    }
   }
 `;
 
@@ -135,6 +116,9 @@ export const TimelineGlow = styled.div`
     opacity 0.3s,
     box-shadow 0.3s;
   z-index: 2;
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export const TimelineNumber = styled.div`
@@ -154,8 +138,7 @@ export const TimelineNumber = styled.div`
   z-index: 3;
   position: relative;
   @media (max-width: 900px) {
-    margin-bottom: 0;
-    margin-right: 1.1rem;
+     display: none;
   }
 `;
 

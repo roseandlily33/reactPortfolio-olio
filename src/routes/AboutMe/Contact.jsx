@@ -7,7 +7,6 @@ import {
   FaPhoneAlt,
   FaGithub,
   FaLinkedin,
-  FaGlobe,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 

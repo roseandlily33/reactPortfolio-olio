@@ -275,32 +275,36 @@ html {
     font-size: 1rem; /* 16px */
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #welcome {
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding-left: 1rem;
   }
   h3 {
-    font-size: 1.15rem;
+    font-size: 0.97rem;
   }
   h4 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
   h6 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
   }
   a {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
+  }
+  label {
+    font-size: 0.8rem;
   }
 }
 
