@@ -1,5 +1,5 @@
 import React from "react";
-import MyImage from "../../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg";
+import MyImage from "../../../images/1F431994-4D99-4CA6-8049-1D03C3A8D143_1_105_c.jpeg";
 import {
   FaBriefcase,
   FaMapMarkerAlt,

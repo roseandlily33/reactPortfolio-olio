@@ -7,6 +7,15 @@ export const SkillsPreviewSection = styled.section`
   flex-direction: column;
   align-items: center;
   background-color: var(--lightYellowBackground);
+  h2 {
+    font-size: 2rem;
+    color: var(--darkPink);
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export const SkillsGrid = styled.div`
@@ -46,10 +55,9 @@ export const SkillIcon = styled.div`
 
 export const SkillName = styled.div`
   font-size: 1.1rem;
-  /* color: var(--darkGrey); */
   text-align: center;
   font-family: var(--headerFont);
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 export const SeeSkillsButton = styled.button`

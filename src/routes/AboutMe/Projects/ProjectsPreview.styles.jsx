@@ -16,6 +16,15 @@ export const CertificatesPreviewSection = styled.section`
   background-size: cover;
   overflow: hidden;
   background: var(--pinkBackground);
+  h2 {
+    font-size: 2rem;
+    color: var(--darkPink);
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export const CertificatesGrid = styled.div`
@@ -61,8 +70,8 @@ export const CertificateImage = styled.img`
 `;
 
 export const CertificateTitle = styled.div`
-  font-size: 1.13rem;
-  color: var(--darkPink);
+  font-size: 1.1rem;
+  /* color: var(--darkPink); */
   text-align: center;
   font-family: var(--headerFont);
   font-weight: 700;

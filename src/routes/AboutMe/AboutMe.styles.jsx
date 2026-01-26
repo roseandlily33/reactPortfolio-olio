@@ -104,40 +104,6 @@ export const AboutMeSection = styled.section`
     height: 100%;
     /* border: 1px solid green; */
   }
-  .eachCard {
-    background: var(--orangeBackground);
-    border-radius: var(--borderRadius);
-    border: 2.5px solid var(--lightBrown);
-    box-shadow: 0 4px 18px 0 rgba(60, 40, 20, 0.07);
-    padding: 1.6rem 1.7rem 1.3rem 1.7rem;
-    flex: 1 1 320px;
-    min-width: 280px;
-    max-width: 420px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    position: relative;
-    /* justify-content: space-between; */
-  }
-  .cardIcon {
-    position: absolute;
-    top: 1.1rem;
-    right: 1.3rem;
-    font-size: 2.1rem;
-    color: var(--medPink);
-    opacity: 0.85;
-    pointer-events: none;
-  }
-  .cardTitle {
-    color: var(--darkBrown);
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    margin-bottom: 0.7rem;
-    text-transform: capitalize;
-  }
-
   h3 {
     color: var(--darkBrown);
     font-size: 2.2rem;

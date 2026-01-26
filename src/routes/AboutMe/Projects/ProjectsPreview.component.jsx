@@ -24,7 +24,7 @@ const ProjectsPreview = () => {
 
   return (
     <CertificatesPreviewSection>
-      <h2 style={{ color: "var(--darkPink)" }}>Highlighted Projects</h2>
+      <h2>Top Projects</h2>
       <CertificatesGrid>
         {importantCerts?.map((cert) => (
           <CertificateCard key={cert.id} onClick={() => navigate(`/Project/${cert.id}`)}>

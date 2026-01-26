@@ -25,7 +25,7 @@ const SkillsPreview = () => {
 
   return (
     <SkillsPreviewSection>
-      <h2 style={{ color: "var(--darkPink)" }}>Top Skills</h2>
+      <h2>Top Skills</h2>
       <SkillsGrid>
         {topSkills.map((skill, idx) => (
           <SkillCard key={skill.name + idx}>
