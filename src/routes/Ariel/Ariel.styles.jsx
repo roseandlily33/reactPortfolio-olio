@@ -3,26 +3,40 @@ import styled from "styled-components";
 // Take layout and main from here
 export const ArielLayout = styled.div`
   display: flex;
-  align-items: flex-start;
-  width: 100vw;
+  /* align-items: flex-start; */
+  width: 100%;
+  min-height: 100%;
   /* max-width: 1600px; */
   margin: 0 auto;
   padding: 1rem;
+  box-sizing: border-box;
 `;
 
 export const ArielMain = styled.main`
-  /* width: 80vw; */
-  /* max-width: 1400px; */
-  /* margin: 3rem auto 3rem auto; */
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
   padding: 3rem 2rem;
-  background: var( --lightestPink);
+  background: var(--lightestPink);
   border-radius: 40px;
   box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-  /* border: 2px solid red; */
+  min-height: 100vh;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 900px;
+  }
+  @media screen and (max-width: 1100px) {
+    max-width: 700px;
+  }
+  @media screen and (max-width: 768px) {
+    /* max-width: 100vw; */
+    width: 100%;
+    padding: 1rem;
+  }
 `;
 
 export const Section = styled.section`
@@ -256,7 +270,10 @@ export const CTASection = styled.section`
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
     cursor: pointer;
     margin-top: 1.5rem;
-    transition: background 0.2s, color 0.2s, transform 0.18s;
+    transition:
+      background 0.2s,
+      color 0.2s,
+      transform 0.18s;
 
     &:hover {
       background: var(--medPink);

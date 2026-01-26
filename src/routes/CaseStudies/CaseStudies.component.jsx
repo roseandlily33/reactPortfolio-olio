@@ -38,24 +38,24 @@ const CaseStudies = () => {
         <h2>Case Studies</h2>
       </TopContainer>
       <CaseStudiesGrid>
-        {caseStudies.map((study, index) => (
+        {caseStudies?.map((study, index) => (
           <CaseStudyCard key={index}>
-            {study.src ? (
+            {study?.src ? (
               <CaseStudyImage
-                src={study.src}
-                alt={study.title}
-                onClick={() => navigate(study.link)}
+                src={study?.src}
+                alt={study?.title}
+                onClick={() => navigate(study?.link)}
               />
             ) : (
               <CaseStudyImage
                 src="https://via.placeholder.com/300x180/FFD6E0/3D4249?text=No+Image"
                 alt="No image available"
-                onClick={() => navigate(study.link)}
+                onClick={() => navigate(study?.link)}
               />
             )}
-            <CaseStudyTitle>{study.title}</CaseStudyTitle>
-            <CaseStudyButton onClick={() => navigate(study.link)}>
-              Read More
+            <CaseStudyTitle>{study?.title}</CaseStudyTitle>
+            <CaseStudyButton onClick={() => navigate(study?.link)}>
+              View Case Study
             </CaseStudyButton>
           </CaseStudyCard>
         ))}

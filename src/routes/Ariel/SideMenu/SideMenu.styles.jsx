@@ -15,6 +15,9 @@ export const SideMenuContainer = styled.nav`
   flex-direction: column;
   gap: 1.2rem;
   z-index: 100;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
 `;
 
 export const SideMenuLink = styled.button`
