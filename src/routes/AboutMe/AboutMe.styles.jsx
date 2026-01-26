@@ -9,7 +9,7 @@ export const AboutMeComponent = styled.main`
 // Top container with the picture
 export const AboutMePicture = styled.section`
   border-radius: 25px;
-  box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
   margin-bottom: 2rem;
   svg {
     border-radius: 25px;
@@ -56,6 +56,14 @@ export const AboutMePicture = styled.section`
   @keyframes textclip {
     to {
       background-position: 200% center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h2 {
+      left:0;
+    }
+    p {
+      font-size: 1rem;
     }
   }
 `;

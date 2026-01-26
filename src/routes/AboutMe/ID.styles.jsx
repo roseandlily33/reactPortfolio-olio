@@ -11,6 +11,11 @@ export const IDCardContainer = styled.div`
   gap: 3rem;
   /* max-width: 1050px; */
   width: 100%;
+  @media screen and (max-width: 768px) {
+    /* border:  2px solid red; */
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
 `;
 
 export const IDPhoto = styled.div`
@@ -101,19 +106,8 @@ export const IDSocials = styled.div`
       height: 32px;
     }
   }
-`;
-
-export const IDCatchPhrase = styled.div`
-  color: var(--darkBerry);
-  font-family: var(--headerFont);
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-top: 0.2rem;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  svg {
-    color: var(--medBrown);
+  @media screen and (max-width: 768px) {
+    justify-content: end;
   }
 `;
 
@@ -136,19 +130,44 @@ export const IDKeyAspects = styled.div`
   }
 `;
 
-// Responsive
-export const IDCardResponsive = styled(IDCardContainer)`
-  @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1.2rem;
-    max-width: 98vw;
+export const IDRightSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  border-left: 6px solid var(--medPink);
+  padding-left: 2rem;
+  min-width: 320px;
+  max-width: 420px;
+  div {
   }
-  ${IDPhoto} {
+  h4 {
+    color: var(--darkPink);
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--darkBerry);
+    font-weight: 600;
+  }
+  li {
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
   }
-  ${IDInfo} {
-    width: 100%;
+  span {
+    color: var(--medPink);
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 768px) {
+    border-left: none;
+    padding-left: 0;
+    min-width: 100%;
+    border-top: 2px solid var(--lightPink);
+    padding-top: 2.5rem;
   }
 `;

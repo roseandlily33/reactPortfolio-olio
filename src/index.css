@@ -105,7 +105,10 @@ li {
 }
 
 /* For the active Navlink */
-.active {
+
+nav a.active:not(h1 a),
+.desktop a.active,
+#mobile-menu a.active {
   color: var(--darkBrown);
   position: relative;
   border: 3px solid var(--darkPink);
@@ -114,8 +117,12 @@ li {
   overflow: hidden; /* Ensures the pseudo-elements stay within the border */
 }
 
-.active::before,
-.active::after {
+nav a.active:not(h1 a)::before,
+.desktop a.active::before,
+#mobile-menu a.active::before,
+nav a.active:not(h1 a)::after,
+.desktop a.active::after,
+#mobile-menu a.active::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -125,11 +132,15 @@ li {
   animation: moveAround 4s infinite ease-in-out;
 }
 
-.active::before {
+nav a.active:not(h1 a)::before,
+.desktop a.active::before,
+#mobile-menu a.active::before {
   animation-delay: 0s; /* Start immediately */
 }
 
-.active::after {
+nav a.active:not(h1 a)::after,
+.desktop a.active::after,
+#mobile-menu a.active::after {
   animation-delay: 2s; /* Start halfway through the animation */
 }
 
@@ -346,6 +357,9 @@ html {
   }
   a {
     font-size: 0.8rem;
+  }
+  #welcome {
+    font-size: 4rem;
   }
 }
 

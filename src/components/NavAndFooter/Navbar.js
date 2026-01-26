@@ -84,7 +84,9 @@ const Navbar = () => {
 
   return (
     <NavbarOuter className={scrollDirection}>
-      <h1>Victoria Benoit</h1>
+      <NavLink to="/">
+        <h1>Victoria Benoit</h1>
+      </NavLink>
       <Hamburger
         className={menuOpen ? "open" : ""}
         aria-label={menuOpen ? "Close menu" : "Open menu"}
