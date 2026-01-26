@@ -5,6 +5,7 @@ export const SummarySection = styled.section`
   justify-content: space-evenly;
   background-color: #fff;
   padding: 3rem;
+  gap: 1rem;
   p,
   span,
   li {
@@ -16,7 +17,7 @@ export const SummarySection = styled.section`
     font-weight: 700;
     color: var(--medBrown);
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem;
@@ -37,7 +38,7 @@ export const EachCard = styled.div`
   flex-direction: column;
   gap: 1.2rem;
   position: relative;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     min-width: 100%;
     max-width: 100%;
     padding: 1.4rem 1.2rem 1rem 1.2rem;
@@ -61,7 +62,7 @@ export const CardTitle = styled.h3`
   letter-spacing: 0.02em;
   margin-bottom: 0.7rem;
   text-transform: capitalize;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     font-size: 1.8rem;
   }
 `;

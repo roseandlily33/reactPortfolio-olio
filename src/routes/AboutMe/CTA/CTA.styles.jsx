@@ -37,6 +37,26 @@ export const CTASection = styled.section`
       margin-bottom: 0.2rem;
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 2.2rem 0.7rem 1.2rem 0.7rem;
+    .cta-content {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .cta-text {
+      gap: 0.7rem;
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.1rem;
+      }
+      .cta-subtext {
+        font-size: 0.97rem;
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
 `;
 
 export const CTABannerIcon = styled.div`
@@ -51,6 +71,14 @@ export const CTABannerIcon = styled.div`
   svg {
     color: #fff;
     font-size: 2.3rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 48px;
+    height: 48px;
+    svg {
+      font-size: 1.3rem;
+    }
   }
 `;
 
@@ -88,19 +116,14 @@ export const CTAButton = styled.button`
       color: var(--darkPink);
     }
   }
-`;
 
-export const CTALink = styled.a`
-  margin-top: 0.7rem;
-  color: var(--medPink);
-  font-size: 1.05rem;
-  font-family: var(--headerFont);
-  font-weight: 600;
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.2s;
-  &:hover {
-    color: var(--darkPink);
+  @media (max-width: 768px) {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    .cta-arrow {
+      font-size: 1.1em;
+      margin-left: 0.3em;
+    }
   }
 `;
 
@@ -132,6 +155,20 @@ export const CTATrusted = styled.div`
       }
       a:hover {
         color: var(--darkPink);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 1.1rem;
+    span {
+      font-size: 0.93rem;
+      margin-right: 0.4rem;
+    }
+    ul {
+      gap: 0.6rem;
+      li {
+        font-size: 0.97rem;
       }
     }
   }

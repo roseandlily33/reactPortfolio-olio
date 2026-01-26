@@ -4,7 +4,6 @@ import {
   CTAButton,
   CTABannerIcon,
   CTATrusted,
-  CTALink,
 } from "./CTA.styles";
 import { FaHandshake } from "react-icons/fa";
 
