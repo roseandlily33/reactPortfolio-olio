@@ -1,17 +1,10 @@
-import { ProjectCard } from "./EachProject.styles";
+import { ProjectCard, EntityContainer } from "./EachProject.styles";
 import { useNavigate } from "react-router-dom";
 
-const SingleProject = ({ projectList, openModal }) => {
+const SingleProject = ({ projectList }) => {
   const navigate = useNavigate();
   return (
-    <section
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "2rem",
-        justifyContent: "space-around",
-      }}
-    >
+    <EntityContainer>
       {projectList?.map((project) => (
         <ProjectCard
           // id="certContainer"
@@ -34,7 +27,7 @@ const SingleProject = ({ projectList, openModal }) => {
             <img id="projPic" src={project?.img} alt={project?.alt} />
           </div>
           <div className="project-details">
-            <h5>{project?.title}</h5>
+            <h5 style={{ marginBottom: "0.5rem" }}>{project?.title}</h5>
             <div className="project-status-type">
               <span
                 className={
@@ -88,7 +81,7 @@ const SingleProject = ({ projectList, openModal }) => {
           </div>
         </ProjectCard>
       ))}
-    </section>
+    </EntityContainer>
   );
 };
 

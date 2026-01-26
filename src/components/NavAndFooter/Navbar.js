@@ -55,6 +55,13 @@ const Navbar = () => {
         Skills
       </NavLink>
       <NavLink
+        to="/Certificates"
+        style={styles.navLink}
+        onClick={() => setMenuOpen(false)}
+      >
+        Certificates
+      </NavLink>
+      <NavLink
         to="/CaseStudies"
         style={styles.navLink}
         onClick={() => setMenuOpen(false)}
