@@ -33,7 +33,8 @@ export const BeforeAfterImageWrapper = styled.div`
     max-width: 320px;
     max-height: 220px;
     object-fit: cover;
-    border-radius: 14px;
+    /* border-radius: 14px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     cursor: pointer;
     border: 2px solid var(--lightPink);
@@ -69,7 +70,8 @@ export const FullscreenModal = styled.div`
   img {
     max-width: 92vw;
     max-height: 92vh;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
     border: 3px solid var(--medPink);
     background: #fff;

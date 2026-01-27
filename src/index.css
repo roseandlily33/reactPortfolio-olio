@@ -9,34 +9,55 @@
   --titleFont: "Pacifico", cursive;
   --headerFont: "Raleway", sans-serif;
   --mainFont: "Open Sans", sans-serif;
-  --black: #181713;
-  --darkBrown: #e43d12;
-  --medBrown: #ff7c15;
-  --lightBrown: #ff933d;
-  --lightestBrown: #ffe4c2;
-  --darkOrange: #ff8c40;
-  --yellow: #ffb400;
+   --lightCream: #f6f5f2;
+  --medCream: #f3f2ee;
+  --darkCream: #e6e5e0;
+  --white: #f6f6f6;
   --lightestGrey: #f0efed;
   --lightGrey: #ebe9e1;
   --medGrey: #8f8e8e;
   --darkGrey: #323232;
-  --white: #f6f6f6;
-  --lightCream: #f6f5f2;
-  --medCream: #f3f2ee;
-  --darkCream: #e6e5e0;
+  --black: #181713;
+  /* Berries for fonts */
+  --berry: #b23a48;
+  --darkBerry: #6d4c41;
+  /* Oranges */
+  --orangeBackground: #fff3e6;
+  --lightestBrown: #ffe4c2;
+  --lightBrown: #ff933d;
+  --medBrown: #ff7c15;
+  --darkOrange: #ff8c40;
+  --darkBrown: #e43d12;
+  /* Pinks */
+  --lightPinkBackground: #ffeaea;
   --lightestPink: #f6a9be;
   --lightPink: #f38ca9;
   --medPink: #f17496;
   --darkPink: #ed4672;
   --pinkBackground: #f4ebeb;
-  --lightPinkBackground: #ffeaea;
-  --green: #4bbf6b; /* Complimentary green for status badge */
-  --orangeBackground: #fff3e6;
+  /* Yellow & Accent */
   --lightYellowBackground: #fff7d6;
-  --berry: #b23a48;
-  --darkBerry: #6d4c41;
+  --yellow: #ffb400;
+  --green: #4bbf6b;
   --borderRadius: 25px;
   --boxShadow: 12px 12px 19px 7px var(--lightGrey);
+  /* Spacing Scale */
+  --spacing-xxxs: 0.15rem;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 0.75rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  --spacing-xxxl: 4rem;
+  --spacing-xxxxl: 6rem;
+  --spacing-xxxxxl: 8rem;
+  --spacing-xxxxxxl: 12rem;
+  --spacing-xxxxxxxl: 16rem;
+  --spacing-xxxxxxxxl: 24rem;
+  /* Border Radius */
+  --borderRadius: 24px;
 }
 * {
   margin: 0;
@@ -250,7 +271,7 @@ html {
   align-items: center;
   background: var(--medBrown);
   color: #fff;
-  border-radius: 999px;
+  border-radius: var(--borderRadius);
   padding: 0.4em 1.6em;
   font-size: 1rem;
   font-family: var(--headerFont);
@@ -411,7 +432,8 @@ label {
 input,
 select {
   border: 1.5px solid var(--lightPink);
-  border-radius: 999px;
+  /* border-radius: 999px; */
+  border-radius: var(--borderRadius);
   padding: 0.7rem 1rem;
   font-size: 1rem;
   width: 100%;
@@ -432,7 +454,8 @@ select:focus {
 
 textarea {
   border: 1.5px solid var(--lightPink);
-  border-radius: 22px;
+  /* border-radius: 22px; */
+  border-radius: var(--borderRadius);
   padding: 0.7rem 1rem;
   font-size: 1rem;
   width: 100%;
@@ -452,3 +475,6 @@ textarea:focus {
   box-shadow: 0 0 10px var(--lightPink);
   border-color: var(--darkPink);
 }
+/* New Fonts sizes:
+ */
+ 

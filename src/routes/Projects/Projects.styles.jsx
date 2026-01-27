@@ -14,7 +14,8 @@ export const ProjectContainer = styled.section`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.darkCream};
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  border-radius: var(--borderRadius);
   padding: 1rem;
   margin-top: 1rem;
   /* border: 2px solid red; */
@@ -28,7 +29,8 @@ export const ProjectContainer = styled.section`
     font-size: 2rem;
   }
   @media (max-width: 900px) {
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     padding: 0.7rem;
     h2 {
       font-size: 1.5rem;
@@ -36,7 +38,7 @@ export const ProjectContainer = styled.section`
     }
   }
   @media (max-width: 600px) {
-    border-radius: 12px;
+    /* border-radius: 12px; */
     padding: 0.3rem;
     margin-top: 0.5rem;
     h2 {

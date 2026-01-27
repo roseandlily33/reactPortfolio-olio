@@ -10,7 +10,8 @@ export const PhaseCarousel = styled.div`
 
   & > div {
     background: rgba(255, 255, 255, 0.97);
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     padding: 1.2rem;
     display: flex;
@@ -30,7 +31,8 @@ export const PhaseCarousel = styled.div`
     max-width: 500px;
     height: auto;
     max-height: 400px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    border-radius: var(--borderRadius);
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
@@ -91,7 +93,8 @@ export const CarouselImageModal = styled.div`
   img {
     max-width: 92vw;
     max-height: 92vh;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
     border: 3px solid var(--medPink);
     background: #fff;
@@ -120,6 +123,7 @@ export const CollapsibleText = styled.p`
   line-height: 1.6;
   transition: max-height 0.3s;
   background: rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
+  /* border-radius: 12px; */
+  border-radius: var(--borderRadius);
   padding: 1rem 1.2rem;
 `;

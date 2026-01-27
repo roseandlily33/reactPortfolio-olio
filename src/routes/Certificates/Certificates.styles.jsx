@@ -17,7 +17,8 @@ export const CertificateContainer = styled.main`
   }
   select {
     padding: 0.5rem;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border-radius: var(--borderRadius);
     border: 3px solid ${({ theme }) => theme.colors.medBrown};
     background-color: #f7b064;
     box-shadow: ${({ theme }) => theme.boxShadow};
@@ -38,7 +39,8 @@ export const CertificateContainer = styled.main`
     max-height: 450px;
     max-width: 450px;
     min-height: 250px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border-radius: var(--borderRadius);
     height: 350px;
     box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.1);
   }
@@ -127,7 +129,8 @@ export const CertificateContainer = styled.main`
   @media screen and (max-width: 1024px) {
     #certContainer {
         background-color: ${({ theme }) => theme.colors.lightCream};
-        border-radius: 22px;
+        /* border-radius: 22px; */
+        border-radius: var(--borderRadius);
         box-shadow: 0 4px 24px rgba(241, 116, 150, 0.13), 0 1.5px 6px rgba(60, 60, 60, 0.04);
         display: flex;
         flex-direction: column;
@@ -234,7 +237,8 @@ export const CertificateContainer = styled.main`
           font-weight: 700;
           font-family: var(--headerFont);
           background: rgba(241, 116, 150, 0.08);
-          border-radius: 999px;
+          /* border-radius: 999px; */
+          border-radius: var(--borderRadius);
           padding: 0.18em 1.1em;
           letter-spacing: 0.01em;
           min-width: 110px;

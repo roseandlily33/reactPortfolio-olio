@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { FaCode, FaDatabase, FaPaintBrush, FaCogs } from "react-icons/fa";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import {
   TopContainer,
 } from "../CaseStudies/CaseStudies.styles";
-import { FaCode, FaDatabase, FaPaintBrush, FaCogs } from "react-icons/fa";
 import StarLegend from "./Legend.component";
 import {
   SkillList,
@@ -23,6 +23,15 @@ import { skills } from "./SkillsList";
 
 const SkillsPage = () => {
   const [activeTab, setActiveTab] = useState("Frontend");
+
+  // Category icon mapping
+  const categoryIcons = {
+    Frontend: <FaCode className="category-bg-icon" />,
+    Backend: <FaDatabase className="category-bg-icon" />,
+    Design: <FaPaintBrush className="category-bg-icon" />,
+    Other: <FaCogs className="category-bg-icon" />,
+    SoftSkills: <FaCogs className="category-bg-icon" />,
+  };
 
   return (
     <CertificateContainer>
@@ -58,27 +67,30 @@ const SkillsPage = () => {
           </StarLegendCard>
         </SkillsTabsLegendCard>
 
-        <SkillList>
-          {skills[activeTab]?.map((skill, index) => (
-            <SkillItem key={index}>
-              <SkillInfo>
-                <p className="skill-icon">
-                  {skill?.icon}
-                  <span className="skill-name">{skill?.name}</span>
-                </p>
-              </SkillInfo>
-              <SkillRating>
-                {[...Array(3)]?.map((_, i) =>
-                  i < skill?.rating ? (
-                    <FaStar key={i} />
-                  ) : (
-                    <FaRegStar key={i} />
-                  ),
-                )}
-              </SkillRating>
-            </SkillItem>
-          ))}
-        </SkillList>
+        <div className="category-bg-wrapper">
+          {categoryIcons[activeTab]}
+          <SkillList>
+            {skills[activeTab]?.map((skill, index) => (
+              <SkillItem key={index}>
+                <SkillInfo>
+                  <p className="skill-icon">
+                    {skill?.icon}
+                    <span className="skill-name">{skill?.name}</span>
+                  </p>
+                </SkillInfo>
+                <SkillRating>
+                  {[...Array(3)]?.map((_, i) =>
+                    i < skill?.rating ? (
+                      <FaStar key={i} />
+                    ) : (
+                      <FaRegStar key={i} />
+                    ),
+                  )}
+                </SkillRating>
+              </SkillItem>
+            ))}
+          </SkillList>
+        </div>
       </SkillsContainer>
     </CertificateContainer>
   );

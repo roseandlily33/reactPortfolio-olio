@@ -22,7 +22,8 @@ export const IDPhoto = styled.div`
   width: 170px;
   height: 220px;
   background: #fff;
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
@@ -32,7 +33,8 @@ export const IDPhoto = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
   }
 `;
 

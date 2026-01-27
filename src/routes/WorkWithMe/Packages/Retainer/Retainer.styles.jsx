@@ -36,7 +36,8 @@ export const RetainerCard = styled.div`
   background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 16px;
+  /* border-radius: 16px; */
+  border-radius: var(--borderRadius);
   border: none;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 2.2rem 1.8rem 1.6rem 1.8rem;
@@ -56,7 +57,8 @@ export const RetainerCard = styled.div`
     pointer-events: none;
     position: absolute;
     inset: 0;
-    border-radius: 16px;
+    /* border-radius: 16px; */
+    border-radius: var(--borderRadius);
     opacity: 0.18;
     z-index: 1;
     background-image: url("https://www.transparenttextures.com/patterns/symphony.png");

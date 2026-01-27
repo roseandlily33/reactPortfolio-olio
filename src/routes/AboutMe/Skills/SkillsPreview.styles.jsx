@@ -29,7 +29,8 @@ export const SkillsGrid = styled.div`
 
 export const SkillCard = styled.div`
   background: rgba(255, 255, 255, 0.85);
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   padding: 1.2rem 1.5rem;
   min-width: 160px;
@@ -64,7 +65,8 @@ export const SeeSkillsButton = styled.button`
   background: var(--darkPink);
   color: #fff;
   border: none;
-  border-radius: 999px;
+  /* border-radius: 999px; */
+  border-radius: var(--borderRadius);
   padding: 0.7em 2em;
   font-size: 1.15rem;
   font-family: var(--headerFont);

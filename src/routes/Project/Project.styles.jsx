@@ -4,7 +4,8 @@ export const ProjectDetailContainer = styled.div`
   max-width: 1100px;
   margin: 2.5rem auto;
   background: #fff;
-  border-radius: 28px;
+  /* border-radius: 28px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 4px 32px rgba(241, 116, 150, 0.1);
   padding: 2.5rem 2rem;
   display: flex;
@@ -81,7 +82,8 @@ export const ProjectDetailHeader = styled.div`
     font-size: 1.08rem;
     font-weight: 700;
     font-family: var(--headerFont);
-    border-radius: 999px;
+    /* border-radius: 999px; */
+    border-radius: var(--borderRadius);
     padding: 0.18em 1.1em;
     box-shadow: 0 2px 8px rgba(255, 140, 64, 0.08);
     letter-spacing: 0.01em;
@@ -149,7 +151,8 @@ export const ProjectDetailImageWrapper = styled.div`
   width: 100%;
   height: 260px;
   overflow: hidden;
-  border-radius: 18px;
+  /* border-radius: 18px; */
+
   background: #f8f8f8;
   display: flex;
   align-items: center;
@@ -166,7 +169,8 @@ export const ProjectDetailImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
 `;
 
 export const ProjectDetailInfo = styled.div`
@@ -266,7 +270,8 @@ export const ProjectDetailSection = styled.div`
   /* margin: 1.2rem 0 0.5rem 0; */
   background: var(--lightestGrey);
   padding: 1.5rem 1.8rem;
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   display: flex;
   flex-direction: column;

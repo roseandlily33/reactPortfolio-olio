@@ -5,7 +5,8 @@ export const PrimaryButtonContainer = styled.button`
   overflow: hidden;
   height: 3rem;
   padding: 0 2rem;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
+  border-radius: var(--borderRadius);
   background: var(--darkPink);
   background-size: 400%;
   color: var(--white);
@@ -37,7 +38,8 @@ export const PrimaryButtonContainer = styled.button`
     transform-origin: 0 50%;
     width: 100%;
     height: inherit;
-    border-radius: inherit;
+    /* border-radius: inherit; */
+    border-radius: var(--borderRadius);
     background: linear-gradient(82.3deg, var(--yellow), var(--medBrown) 94.3%);
     transition: all 0.475s;
   }

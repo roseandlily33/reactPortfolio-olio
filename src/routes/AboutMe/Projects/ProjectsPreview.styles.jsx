@@ -40,7 +40,8 @@ export const CertificatesGrid = styled.div`
 
 export const CertificateCard = styled.div`
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   padding: 1.2rem 1.5rem;
   min-width: 270px;
@@ -64,7 +65,8 @@ export const CertificateImage = styled.img`
   width: 80px;
   height: 80px;
   object-fit: contain;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: var(--borderRadius);
   margin-bottom: 0.7rem;
   box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
 `;
@@ -95,7 +97,8 @@ export const SeeCertificatesButton = styled.button`
   background: var(--darkPink);
   color: #fff;
   border: none;
-  border-radius: 999px;
+  /* border-radius: 999px; */
+  border-radius: var(--borderRadius);
   padding: 0.7em 2em;
   font-size: 1.08rem;
   font-family: var(--headerFont);

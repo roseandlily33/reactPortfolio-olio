@@ -1,7 +1,8 @@
 import styled from "styled-components";
 export const SkillsTabsLegendCard = styled.div`
   background: var(--lightCream);
-  border-radius: 22px;
+  /* border-radius: 22px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 6px 32px rgba(241, 116, 150, 0.13);
   padding: 2.2em 2.5em 2.5em 2.5em;
   display: flex;
@@ -14,6 +15,28 @@ export const SkillsTabsLegendCard = styled.div`
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  // Faded category icon background wrapper
+  /* .category - bg - wrapper {
+  position: relative;
+  width: 100 %;
+  min - height: 320px;
+}
+.category - bg - icon {
+  position: absolute;
+  top: 50 %;
+  left: 50 %;
+  transform: translate(-50 %, -50 %);
+  font - size: 10rem;
+  color: var(--lightPinkBackground);
+  opacity: 0.25;
+  pointer - events: none;
+  z - index: 0;
+  user - select: none;
+}
+.category - bg - wrapper ul {
+  position: relative;
+  z - index: 1;
+} */
   @media (max-width: 900px) {
     padding: 1.2em 0.5em 1.5em 0.5em;
     gap: 1.2rem;
@@ -36,7 +59,8 @@ export const TabsPillRow = styled.div`
 `;
 export const StarLegendCard = styled.div`
   background: #fff;
-  border-radius: 16px;
+  /* border-radius: 16px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
   padding: 1.5em 2em;
   width: 100%;
@@ -205,55 +229,100 @@ export const TechStackContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid orange; */
-  /* gap: 2rem; */
-  padding: 1rem;
+  padding: 1.5rem 0.5rem 2.5rem 0.5rem;
   width: 100%;
   background-color: var(--pinkBackground);
 
-  h3 {
-    margin-bottom: 3rem;
+  .accent-heading {
+    color: var(--darkPink);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
     text-align: left;
     width: 100%;
-    font-weight: 600;
-    color: var(--darkPink);
-    /* animation: fadeIn 1s ease-in-out; */
   }
+
+  .section-card {
+    background: #fff;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
+    padding: 1.5em 2em;
+    margin-bottom: 2.2rem;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    position: relative;
+  }
+
   .title-stack {
     display: flex;
     flex-direction: row;
     align-items: start;
     gap: 0.3rem;
-    /* border: 1px solid red; */
-    padding: 0;
-    margin: 0;
     width: 100%;
   }
-  div {
-    /* border: 1px solid green; */
-    /* width: 10%; */
-    width: auto;
+  .animated-icon {
+    transition:
+      transform 0.18s,
+      color 0.18s;
+    will-change: transform, color;
   }
-  p {
-    /* border: 1px solid orange; */
-    font-size: 1.5rem;
-    display: flex;
+  .animated-icon:hover {
+    transform: scale(1.25) rotate(-8deg);
+    color: var(--darkPink);
   }
-  svg {
-    color: var(--lightPink);
-    display: flex;
+
+  .tools-platforms {
+    background: var(--lightPinkBackground);
+    border: 1.5px solid var(--lightPink);
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
     align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    /* border: 1px solid red; */
+    padding: 1.2em 1.5em;
   }
+  .tools-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7em;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 0.2em;
+  }
+  .tool-pill {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    color: var(--darkPink);
+    border-radius: 999px;
+    border: 1.2px solid var(--lightPink);
+    padding: 0.35em 1.1em;
+    font-size: 1.01rem;
+    font-family: var(--headerFont);
+    font-weight: 600;
+    box-shadow: 0 1px 6px rgba(241, 116, 150, 0.07);
+    cursor: default;
+    transition:
+      background 0.2s,
+      color 0.2s,
+      box-shadow 0.2s;
+    min-width: 0;
+    white-space: nowrap;
+    margin-bottom: 0.2em;
+    gap: 0.5em;
+  }
+  .tool-icon {
+    font-size: 1.15em;
+    margin-right: 0.3em;
+  }
+
   .overview {
-  }
-  h4 {
-    font-size: 1.2rem;
-    color: var(--darkBrown);
-    font-weight: 500;
-    margin-block: 1rem;
+    width: 100%;
   }
   .overview p {
     font-size: 1.1rem;
@@ -261,12 +330,51 @@ export const TechStackContainer = styled.div`
     line-height: 1.5;
     margin-bottom: 1rem;
   }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.2rem;
+    background: var(--darkPink);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.7em 1.7em;
+    font-size: 1.1rem;
+    font-family: var(--headerFont);
+    font-weight: 700;
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.13);
+    cursor: pointer;
+    z-index: 100;
+    transition:
+      background 0.2s,
+      color 0.2s,
+      box-shadow 0.2s;
+    opacity: 0.92;
+  }
+  .back-to-top:hover {
+    background: var(--lightPink);
+    color: var(--darkPink);
+    opacity: 1;
+  }
+
   @media screen and (max-width: 600px) {
+    .section-card {
+      padding: 1em 0.5em;
+      margin-bottom: 1.2rem;
+    }
     .overview p {
       font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
       margin-bottom: 1rem;
+    }
+    .accent-heading {
+      font-size: 1.3rem;
+    }
+    .back-to-top {
+      bottom: 1.1rem;
+      right: 1.1rem;
+      font-size: 0.98rem;
+      padding: 0.5em 1.1em;
     }
   }
 `;

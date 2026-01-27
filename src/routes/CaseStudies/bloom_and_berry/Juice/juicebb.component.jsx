@@ -16,7 +16,8 @@ import styled from "styled-components";
 
 const JuiceFlavorSection = styled.div`
   background: ${({ color }) => color || "#fff"};
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   margin-bottom: 1.2rem;
   padding: 1.2rem 1rem;
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);

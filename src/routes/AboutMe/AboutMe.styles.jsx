@@ -8,11 +8,13 @@ export const AboutMeComponent = styled.main`
 `;
 // Top container with the picture
 export const AboutMePicture = styled.section`
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  border-radius: var(--borderRadius);
   /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
   margin-bottom: 2rem;
   svg {
-    border-radius: 25px;
+    /* border-radius: 25px; */
+    border-radius: var(--borderRadius);
   }
   h2 {
     position: relative;
@@ -89,7 +91,8 @@ export const AboutMeSection = styled.section`
   img {
     height: 100%;
     width: 80%;
-    border-radius: 25px;
+    /* border-radius: 25px; */
+    border-radius: var(--borderRadius);
     border: 10px solid ${({ theme }) => theme.colors.lightGrey};
   }
   .right {

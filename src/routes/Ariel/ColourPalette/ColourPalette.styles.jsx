@@ -12,7 +12,8 @@ export const PaletteCarousel = styled.div`
     flex: 0 0 340px;
     scroll-snap-align: start;
     background: rgba(255, 255, 255, 0.97);
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     padding: 1.2rem;
     display: flex;
@@ -30,7 +31,8 @@ export const PaletteCarousel = styled.div`
   img {
     width: 100%;
     max-width: 260px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    border-radius: var(--borderRadius);
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;

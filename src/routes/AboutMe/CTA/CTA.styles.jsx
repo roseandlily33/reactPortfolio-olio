@@ -86,7 +86,8 @@ export const CTAButton = styled.button`
   background: linear-gradient(90deg, var(--medBrown) 0%, var(--medPink) 100%);
   color: #fff;
   border: none;
-  border-radius: 999px;
+  /* border-radius: 999px; */
+  border-radius: var(--borderRadius);
   padding: 1.1rem 2.8rem;
   font-size: 1.35rem;
   font-family: var(--headerFont);

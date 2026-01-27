@@ -13,7 +13,8 @@ export const TimelineList = styled.ul`
 export const TimelineItem = styled.li`
   position: relative;
   background: rgba(255, 255, 255, 0.97);
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   padding: 1.5rem 1.5rem 1.5rem 3.5rem;
   font-size: 1.08rem;

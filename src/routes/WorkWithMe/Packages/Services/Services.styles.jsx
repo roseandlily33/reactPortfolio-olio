@@ -68,7 +68,8 @@ export const ServicesGrid = styled.div`
 export const ServiceCard = styled.div`
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px) saturate(120%);
-  border-radius: 24px;
+  /* border-radius: 24px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   display: flex;

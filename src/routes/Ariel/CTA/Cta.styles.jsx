@@ -4,7 +4,8 @@ export const CTAButton = styled.button`
   background: var(--darkPink);
   color: #fff;
   border: none;
-  border-radius: 999px;
+  /* border-radius: 999px; */
+  border-radius: var(--borderRadius);
   padding: 0.7em 2em;
   font-size: 1.15rem;
   font-family: var(--headerFont);

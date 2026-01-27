@@ -99,7 +99,8 @@ export const PackageCard = styled.div`
   background: ${({ $bg }) => $bg || "rgba(255,255,255,0.35)"};
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 16px;
+  /* border-radius: 16px; */
+  border-radius: var(--borderRadius);
   border: none;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 2.2rem 1.8rem 1.6rem 1.8rem;
@@ -118,7 +119,8 @@ export const PackageCard = styled.div`
     pointer-events: none;
     position: absolute;
     inset: 0;
-    border-radius: 16px;
+    /* border-radius: 16px; */
+    border-radius: var(--borderRadius);
     opacity: 0.18;
     z-index: 1;
     background-image: url("https://www.transparenttextures.com/patterns/symphony.png");
@@ -292,7 +294,8 @@ export const PackageDetails = styled.details`
 export const ComesWithSection = styled.section`
   margin-top: 4rem;
   background: rgba(255, 255, 255, 0.85);
-  border-radius: 24px;
+  /* border-radius: 24px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
   padding: 2.5rem 2rem;
   max-width: 900px;

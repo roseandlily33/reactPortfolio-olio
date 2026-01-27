@@ -12,7 +12,8 @@ export const EntityContainer = styled.section`
 export const ProjectCard = styled.div`
   max-width: 26%;
   min-width: 260px;
-  border-radius: 22px;
+  /* border-radius: 22px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 4px 24px rgba(241, 116, 150, 0.13), 0 1.5px 6px rgba(60, 60, 60, 0.04);
   display: flex;
   flex-direction: column;
@@ -162,7 +163,8 @@ export const ProjectCard = styled.div`
   @media screen and (max-width: 1200px) {
     min-width: 45%;
     max-width: 48%;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     .project-image-wrapper {
       border-top-right-radius: 18px;
       border-top-left-radius: 18px;
@@ -176,7 +178,8 @@ export const ProjectCard = styled.div`
   @media screen and (max-width: 900px) {
     max-width: 98%;
     min-width: 0;
-    border-radius: 14px;
+    /* border-radius: 14px; */
+    border-radius: var(--borderRadius);
     .project-image-wrapper {
       border-top-right-radius: 14px;
       border-top-left-radius: 14px;
@@ -195,7 +198,8 @@ export const ProjectCard = styled.div`
   @media screen and (max-width: 600px) {
     max-width: 100%;
     min-width: 0;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: var(--borderRadius);
     .project-image-wrapper {
       border-top-right-radius: 8px;
       border-top-left-radius: 8px;

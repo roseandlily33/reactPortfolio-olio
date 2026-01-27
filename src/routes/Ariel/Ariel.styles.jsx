@@ -21,7 +21,8 @@ export const ArielMain = styled.main`
   box-sizing: border-box;
   padding: 3rem 2rem;
   background: var(--lightestPink);
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
   display: flex;
   flex-direction: column;
@@ -42,7 +43,8 @@ export const Section = styled.section`
   margin-bottom: 2rem;
   padding: 2.5rem 2rem;
   background: rgba(255, 255, 255, 0.92);
-  border-radius: 25px;
+  /* border-radius: 25px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 24px rgba(241, 116, 150, 0.1);
   transition: box-shadow 0.2s;
   &:hover {
@@ -62,7 +64,8 @@ export const PaletteCarousel = styled.div`
     flex: 0 0 340px;
     scroll-snap-align: start;
     background: rgba(255, 255, 255, 0.97);
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     padding: 1.2rem;
     display: flex;
@@ -80,7 +83,8 @@ export const PaletteCarousel = styled.div`
   img {
     width: 100%;
     max-width: 260px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    border-radius: var(--borderRadius);
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
@@ -117,7 +121,8 @@ export const PhaseCarousel = styled.div`
 
   & > div {
     background: rgba(255, 255, 255, 0.97);
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     padding: 1.2rem;
     display: flex;
@@ -137,7 +142,8 @@ export const PhaseCarousel = styled.div`
     max-width: 500px;
     height: auto;
     max-height: 400px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    border-radius: var(--borderRadius);
     margin-bottom: 1rem;
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
@@ -195,7 +201,8 @@ export const CarouselImageModal = styled.div`
   img {
     max-width: 90vw;
     max-height: 90vh;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
     border: 3px solid var(--medPink);
   }
@@ -231,7 +238,8 @@ export const TestimonialSection = styled.section`
     var(--lightPink) 0%,
     var(--lightestPink) 100%
   );
-  border-radius: 24px;
+  /* border-radius: 24px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
   padding: 2rem 2.5rem;
   margin: 2rem 0;
@@ -246,7 +254,8 @@ export const TestimonialSection = styled.section`
 export const CTASection = styled.section`
   width: 100%;
   background: linear-gradient(90deg, var(--medPink) 0%, var(--lightPink) 100%);
-  border-radius: 24px;
+  /* border-radius: 24px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
   padding: 2.5rem 2.5rem;
   margin: 2rem 0;
@@ -260,7 +269,8 @@ export const CTASection = styled.section`
     background: var(--darkPink);
     color: #fff;
     border: none;
-    border-radius: 999px;
+    /* border-radius: 999px; */
+    border-radius: var(--borderRadius);
     padding: 0.7em 2em;
     font-size: 1.15rem;
     font-family: var(--headerFont);

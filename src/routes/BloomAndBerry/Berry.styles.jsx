@@ -88,7 +88,8 @@ export const BerryAboutUs = styled.section`
   width: 80%;
   text-align: center;
   background-color: #fdfaf6;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-radius: var(--borderRadius);
   padding-block: 4rem;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -151,14 +152,16 @@ export const BerryOurJuices = styled.section`
   width: 80%;
   text-align: center;
   background-color: #fdfaf6;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
   .juice {
     margin-bottom: 1.5rem;
     padding: 1rem;
     background-color: #fff;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: var(--borderRadius);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
     h4 {

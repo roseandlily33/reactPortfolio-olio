@@ -50,7 +50,8 @@ export const ContactInfo = styled.div`
   font-size: 1.13rem;
   color: var(--darkBerry);
   background: var(--lightPinkBackground);
-  border-radius: 18px;
+  /* border-radius: 18px; */
+  border-radius: var(--borderRadius);
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   width: 100%;

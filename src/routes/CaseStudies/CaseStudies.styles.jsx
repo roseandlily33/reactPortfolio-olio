@@ -182,7 +182,8 @@ display: flex;
 
 export const CaseStudyCard = styled.div`
   background: rgba(255, 255, 255, 0.92);
-  border-radius: 24px;
+  /* border-radius: 24px; */
+  border-radius: var(--borderRadius);
   box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
   padding: 0 0 1.5rem 0;
   display: flex;
@@ -228,7 +229,8 @@ export const CaseStudyButton = styled.button`
   background: var(--darkPink);
   color: #fff;
   border: none;
-  border-radius: 999px;
+  /* border-radius: 999px; */
+  border-radius: var(--borderRadius);
   padding: 0.7em 2em;
   font-size: 1.08rem;
   font-family: var(--headerFont);
