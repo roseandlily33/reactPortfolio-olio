@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NotSureSection = styled.section`
   background: #ffffff;
-  padding: 2.2rem 1.5rem;
+  padding: var(--spacing-xl) var(--spacing-l);
   /* margin: 2.5rem 0; */
   width: 100%;
   box-sizing: border-box;
@@ -15,8 +15,7 @@ export const NotSureSection = styled.section`
 export const NotSureTitleRow = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 1.1rem;
-
+  margin-bottom: var(--spacing-m);
 `;
 
 export const NotSureTitle = styled.h4`
@@ -37,7 +36,7 @@ export const NotSureList = styled.ul`
 export const NotSureItem = styled.li`
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1.15rem;
+  margin-bottom: var(--spacing-m);
   font-size: 1.08rem;
   line-height: 1.6;
   /* color: var(--darkGrey); */
@@ -46,18 +45,18 @@ export const NotSureItem = styled.li`
     color: var(--darkPink);
     font-weight: 700;
     font-size: 1.08rem;
-    margin-right: 0.18em;
+    margin-right: var(--spacing-xxxs);
   }
   .pkg-desc {
     color: var(--medGrey);
     font-weight: 400;
     font-size: 1.04rem;
   }
-    @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1600px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.6rem;
-    padding-bottom: 1rem;
+    gap: var(--spacing-xs);
+    padding-bottom: var(--spacing-m);
     border-bottom: 1px solid var(--lightGrey);
     /* border: 2px solid red; */
   }
@@ -65,11 +64,11 @@ export const NotSureItem = styled.li`
 
 export const NotSureDot = styled.span`
   display: inline-block;
-  width: 0.85em;
-  height: 0.85em;
+  width: var(--spacing-s);
+  height: var(--spacing-s);
   border-radius: 50%;
-  margin-right: 0.7em;
-  margin-top: 0.45em;
+  margin-right: var(--spacing-s);
+  margin-top: var(--spacing-xs);
   background: ${({ color }) => color || "var(--darkPink)"};
   flex-shrink: 0;
 `;

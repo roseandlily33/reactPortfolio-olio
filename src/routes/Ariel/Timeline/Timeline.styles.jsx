@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const TimelineList = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 2rem 0 0 0;
+  margin: var(--spacing-xl) 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: var(--spacing-xl); 
   width: 100%;
 `;
 
@@ -16,7 +16,7 @@ export const TimelineItem = styled.li`
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-  padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+  padding: var(--spacing-l) var(--spacing-l) var(--spacing-l) var(--spacing-xxl);    
   font-size: 1.08rem;
   /* color: var(--darkGrey); */
   line-height: 1.7;
@@ -41,7 +41,7 @@ export const TimelineItem = styled.li`
     font-size: 1.13rem;
     font-family: var(--headerFont);
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-xs); 
     letter-spacing: 0.01em;
   }
 `;

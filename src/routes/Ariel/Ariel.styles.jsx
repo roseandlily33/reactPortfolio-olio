@@ -6,12 +6,11 @@ export const ArielLayout = styled.div`
   /* align-items: flex-start; */
   width: 100%;
   min-height: 100%;
-  gap: 1rem;
+  gap: var(--spacing-m);
   /* max-width: 1600px; */
   margin: 0 auto;
-  padding: 1rem;
+  padding: var(--spacing-m);
   box-sizing: border-box;
-
 `;
 
 export const ArielMain = styled.main`
@@ -19,29 +18,28 @@ export const ArielMain = styled.main`
   /* max-width: 1000px; */
   width: 85%;
   box-sizing: border-box;
-  padding: 3rem 2rem;
+  padding: var(--spacing-xxl) var(--spacing-xl);
   background: var(--lightestPink);
   /* border-radius: 25px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--spacing-xl);
   align-items: center;
   min-height: 100vh;
-  @media screen and (max-width: 950px){
+  @media screen and (max-width: 950px) {
     width: 100%;
-    padding: 2rem 1rem;
-    gap: 1rem;
+    padding: var(--spacing-xl) var(--spacing-m);
+    gap: var(--spacing-m);
     height: 100%;
   }
-
 `;
 
 export const Section = styled.section`
   width: 100%;
-  margin-bottom: 2rem;
-  padding: 2.5rem 2rem;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xxl) var(--spacing-xl);
   background: rgba(255, 255, 255, 0.92);
   /* border-radius: 25px; */
   border-radius: var(--borderRadius);
@@ -54,12 +52,11 @@ export const Section = styled.section`
 
 export const PaletteCarousel = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: var(--spacing-xl);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
-  margin-top: 2rem;
-
+  padding-bottom: var(--spacing-l);
+  margin-top: var(--spacing-xl);
   & > div {
     flex: 0 0 340px;
     scroll-snap-align: start;
@@ -67,7 +64,7 @@ export const PaletteCarousel = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-    padding: 1.2rem;
+    padding: var(--spacing-m);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,17 +82,17 @@ export const PaletteCarousel = styled.div`
     max-width: 260px;
     /* border-radius: 12px; */
     border-radius: var(--borderRadius);
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-m);
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
   }
 
   @media (max-width: 900px) {
-    gap: 1rem;
+    gap: var(--spacing-m);
     & > div {
       min-width: 80vw;
       max-width: 90vw;
-      padding: 0.7rem;
+      padding: var(--spacing-s);
     }
     img {
       max-width: 80vw;
@@ -104,10 +101,10 @@ export const PaletteCarousel = styled.div`
 `;
 
 export const PaletteCaption = styled.p`
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: var(--medGrey);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-xs);
   font-style: italic;
 `;
 
@@ -115,16 +112,16 @@ export const PhaseCarousel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 1.5rem;
+  gap: var(--spacing-l);
+  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-l);
 
   & > div {
     background: rgba(255, 255, 255, 0.97);
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-    padding: 1.2rem;
+    padding: var(--spacing-m);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +141,7 @@ export const PhaseCarousel = styled.div`
     max-height: 400px;
     /* border-radius: 12px; */
     border-radius: var(--borderRadius);
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-m);
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
@@ -155,7 +152,7 @@ export const PhaseCarousel = styled.div`
     & > div {
       min-width: 60vw;
       max-width: 60vw;
-      padding: 0.7rem;
+      padding: var(--spacing-s);
     }
     img {
       max-width: 60vw;
@@ -164,10 +161,10 @@ export const PhaseCarousel = styled.div`
 `;
 
 export const PhaseCaption = styled.p`
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: var(--medGrey);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-xs);
   font-style: italic;
 `;
 
@@ -178,7 +175,7 @@ export const CarouselNav = styled.button`
   color: var(--darkPink);
   cursor: pointer;
   align-self: center;
-  padding: 0 1rem;
+  padding: 0 var(--spacing-m);
   transition: color 0.2s;
   &:hover {
     color: var(--yellow);
@@ -213,9 +210,9 @@ export const ExpandButton = styled.button`
   border: none;
   color: var(--darkPink);
   font-weight: 500;
-  margin-left: 0.5em;
+  margin-left: var(--spacing-xs);
   cursor: pointer;
-  font-size: 1em;
+  font-size: var(--spacing-m);
   text-decoration: underline;
   transition: color 0.2s;
   &:hover {
@@ -224,9 +221,9 @@ export const ExpandButton = styled.button`
 `;
 
 export const CollapsibleText = styled.p`
-  font-size: 1.08rem;
+  /* font-size: 1.08rem; */
   color: var(--grey);
-  margin-bottom: 1.2rem;
+  margin-bottom: var(--spacing-m);
   line-height: 1.6;
   transition: max-height 0.3s;
 `;
@@ -241,8 +238,8 @@ export const TestimonialSection = styled.section`
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
-  padding: 2rem 2.5rem;
-  margin: 2rem 0;
+  padding: var(--spacing-xl) var(--spacing-xxl);
+  margin: var(--spacing-xl) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,8 +254,8 @@ export const CTASection = styled.section`
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
-  padding: 2.5rem 2.5rem;
-  margin: 2rem 0;
+  padding: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +268,7 @@ export const CTASection = styled.section`
     border: none;
     /* border-radius: 999px; */
     border-radius: var(--borderRadius);
-    padding: 0.7em 2em;
+    padding: var(--spacing-s) var(--spacing-xl);
     font-size: 1.15rem;
     font-family: var(--headerFont);
     font-weight: 600;

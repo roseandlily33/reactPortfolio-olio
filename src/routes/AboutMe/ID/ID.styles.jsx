@@ -6,14 +6,14 @@ export const IDCardContainer = styled.div`
   justify-content: flex-start;
   background: var(--lightPinkBackground);
   /* border-radius: 32px; */
-  padding: 3rem 4rem;
+  padding: var(--spacing-xxl) var(--spacing-xxxl);
   /* margin: 2.5rem auto; */
-  gap: 3rem;
+  gap: var(--spacing-xxl);
   /* max-width: 1050px; */
   width: 100%;
   @media screen and (max-width: 768px) {
     /* border:  2px solid red; */
-    padding: 2rem 1rem;
+    padding: var(--spacing-xl) var(--spacing-m);
     flex-direction: column;
   }
 `;
@@ -41,14 +41,14 @@ export const IDPhoto = styled.div`
 export const IDInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: var(--spacing-s);
   flex: 1;
 `;
 
 export const IDRow = styled.div`
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: var(--spacing-m);
   font-weight: 500;
   svg {
     color: var(--medBrown);
@@ -60,12 +60,12 @@ export const IDRow = styled.div`
 export const IDName = styled.h2`
   /* color: var(--darkBerry); */
   color: var(--darkPink);
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   text-transform: capitalize;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 var(--spacing-xxs) 0;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: var(--spacing-m);
   svg {
     color: var(--medBrown);
   }
@@ -73,12 +73,12 @@ export const IDName = styled.h2`
 
 export const IDOccupation = styled.h4`
   font-family: var(--headerFont);
-  font-size: 1.25rem;
-  margin: 0 0 0.2rem 0;
+  /* font-size: 1.25rem; */
+  margin: 0 0 var(--spacing-xxs) 0;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: var(--spacing-m);
   svg {
     color: var(--medBrown);
   }
@@ -86,13 +86,13 @@ export const IDOccupation = styled.h4`
 
 export const IDSocials = styled.div`
   display: flex;
-  gap: 1.2rem;
-  margin-top: 0.7rem;
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-s);
   a {
     color: var(--medPink);
     background: var(--white);
     border-radius: 50%;
-    padding: 0.4rem;
+    padding: var(--spacing-xs);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,14 +117,14 @@ export const IDKeyAspects = styled.div`
   /* color: var(--); */
   font-family: var(--mainFont);
   font-size: 1rem;
-  margin-top: 0.2rem;
+  margin-top: var(--spacing-xxxs);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: var(--spacing-xxs);
   span {
     background: rgba(255, 255, 255, 0.48);
     border-radius: 12px;
-    padding: 0.2rem 0.8rem;
+    padding: var(--spacing-xxxs) var(--spacing-s);
     font-size: 0.98rem;
     /* color: var(--darkBerry); */
     font-family: var(--headerFont);
@@ -135,9 +135,9 @@ export const IDKeyAspects = styled.div`
 export const IDRightSide = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.7rem;
+  gap: var(--spacing-l);
   border-left: 6px solid var(--medPink);
-  padding-left: 2rem;
+  padding-left: var(--spacing-xl);
   min-width: 320px;
   max-width: 420px;
   div {
@@ -145,8 +145,8 @@ export const IDRightSide = styled.div`
   h4 {
     color: var(--darkPink);
     font-weight: 700;
-    margin-bottom: 0.7rem;
-    font-size: 1.3rem;
+    margin-bottom: var(--spacing-s);
+    /* font-size: 1.3rem; */
   }
   ul {
     list-style: none;
@@ -156,10 +156,10 @@ export const IDRightSide = styled.div`
     font-weight: 600;
   }
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-xs);
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: var(--spacing-xs);
   }
   span {
     color: var(--medPink);
@@ -170,6 +170,6 @@ export const IDRightSide = styled.div`
     padding-left: 0;
     min-width: 100%;
     border-top: 2px solid var(--lightPink);
-    padding-top: 2.5rem;
+    padding-top: var(--spacing-lx);
   }
 `;

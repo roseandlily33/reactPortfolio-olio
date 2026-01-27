@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
@@ -44,9 +43,9 @@ export const PackagesGrid = styled.div`
     right: 0.5rem;
     transform: translateY(-50%);
     z-index: 10;
-    background: rgba(255,255,255,0.85);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(241,116,150,0.13);
+    box-shadow: 0 2px 8px rgba(241, 116, 150, 0.13);
     width: 2.3em;
     height: 2.3em;
     display: flex;
@@ -156,13 +155,13 @@ export const PackageCard = styled.div`
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background: ${({ $accent, $accentSoft }) =>
-    `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
+      `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
     z-index: 2;
     transition: background 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   }
   &:hover::before {
     background: ${({ $accent }) =>
-    `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
+      `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
   }
 
   @media (max-width: 768px) {
@@ -201,30 +200,30 @@ export const PackagePrice = styled.div`
   /* color: var(--darkBrown); */
   color: var(--darkBerry);
   font-size: 1.3rem;
-  font-weight: 750;
-  margin-bottom: 0.7rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
 `;
 
 export const PackageDescription = styled.p`
   /* color: var(--darkGrey); */
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-m);
 `;
 
 export const PackageFeatures = styled.ul`
   color: var(--darkBrown);
-  font-size: 1rem;
+  font-size: var(--spacing-m);
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: var(--spacing-m);
   li {
-    margin-bottom: 0.4rem;
+    margin-bottom: var(--spacing-xs);
     display: flex;
     align-items: center;
   }
   svg {
-    font-size: 1em !important;
-    min-width: 1em;
-    min-height: 1em;
+    font-size: var(--spacing-m) !important;
+    min-width: var(--spacing-m);
+    min-height: var(--spacing-m);
     vertical-align: middle;
     flex-shrink: 0;
   }
@@ -232,7 +231,7 @@ export const PackageFeatures = styled.ul`
 
 export const PackageIcon = styled.div`
   font-size: 1.9rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-m);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,19 +244,19 @@ export const PackageIcon = styled.div`
 /* Collapsible "Includes" area using native details/summary */
 export const PackageDetails = styled.details`
   width: 100%;
-  margin-top: 0.8rem;
+  margin-top: var(--spacing-s);
   summary {
     list-style: none;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-m);
     /* color: ${({ $accent }) => $accent || "var(--darkPink)"}; */
     color: var(--darkBerry);
     font-weight: 600;
     background: transparent;
-    padding: 0.25rem 0;
+    padding: var(--spacing-xxs) 0;
     outline: none;
   }
   .chev {
@@ -265,7 +264,7 @@ export const PackageDetails = styled.details`
     transition:
       transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
       color 180ms;
-    font-size: 1.15rem;
+    font-size: var(--spacing-m);
     color: ${({ $accent }) => $accent || "var(--darkBerry)"};
     will-change: transform, color;
   }
@@ -287,17 +286,17 @@ export const PackageDetails = styled.details`
   }
   &[open] .includes-content {
     max-height: 1200px; /* large enough to show the list */
-    padding-top: 0.75rem;
+    padding-top: var(--spacing-s);
   }
 `;
 
 export const ComesWithSection = styled.section`
-  margin-top: 4rem;
+  margin-top: var(--spacing-xxxl);
   background: rgba(255, 255, 255, 0.85);
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
-  padding: 2.5rem 2rem;
+  padding: var(--spacing-xl);
   max-width: 900px;
   width: 100%;
   display: flex;
@@ -309,13 +308,13 @@ export const ComesWithTitle = styled.h4`
   color: var(--darkPink);
   font-family: var(--headerFont);
   font-size: 1.3rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: var(--spacing-m);
   display: flex;
   align-items: center;
 `;
 
 export const ComesWithListStyled = styled.ul`
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 var(--spacing-l) 0;
   padding-left: 0;
   list-style: none;
   width: 100%;
@@ -324,28 +323,28 @@ export const ComesWithListStyled = styled.ul`
 export const ComesWithItem = styled.li`
   color: var(--darkBrown);
   font-size: 1.05rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: var(--spacing-s);
   display: flex;
   align-items: center;
 `;
 export const TimelineBadge = styled.span`
   display: inline-flex;
   align-items: center;
-  gap: 0.4em;
-  background: ${({ $bg }) => $bg || 'var(--lightPink)'};
-  color: ${({ $color }) => $color || 'var(--darkPink)'};
-  font-size: 0.98rem;
+  gap: var(--spacing-xs);
+  background: ${({ $bg }) => $bg || "var(--lightPink)"};
+  color: ${({ $color }) => $color || "var(--darkPink)"};
+  font-size: var(--spacing-m);
   font-weight: 600;
   border-radius: 999px;
-  padding: 0.28em 0.85em 0.28em 0.7em;
-  margin-bottom: 0.7rem;
-  box-shadow: 0 1px 6px rgba(241,116,150,0.10);
+  padding: var(--spacing-xs) var(--spacing-s);
+  margin-bottom: var(--spacing-s);
+  box-shadow: 0 1px 6px rgba(241, 116, 150, 0.1);
   letter-spacing: 0.01em;
   position: relative;
   z-index: 2;
   svg {
-    font-size: 1em;
-    margin-right: 0.3em;
+    font-size: var(--spacing-m);
+    margin-right: var(--spacing-xs);
     vertical-align: middle;
   }
 `;

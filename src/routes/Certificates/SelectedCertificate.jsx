@@ -27,13 +27,13 @@ const SelectedCertificate = ({
               bottom: "auto",
               marginRight: "-50%",
               transform: "translate(-50%, -50%)",
-              padding: "2.5rem 2rem 2rem 2rem",
+              padding: "var(--spacing-xl) ",
               width: "100%",
               maxWidth: "900px",
               minWidth: "320px",
               height: "auto",
               maxHeight: "90vh",
-              borderRadius: "25px",
+              borderRadius: "var(--borderRadius)",
               backgroundColor: "var(--lightCream)",
               border: "1.5px solid var(--medBrown)",
               boxShadow:
@@ -67,13 +67,13 @@ const SelectedCertificate = ({
                 maxWidth: "700px",
                 minWidth: "180px",
                 height: "auto",
-                borderRadius: "15px",
+                borderRadius: "var(--borderRadius)",
                 boxShadow:
                   "0 4px 24px rgba(241,116,150,0.13), 0 1.5px 6px rgba(60,60,60,0.08)",
-                marginBottom: "1.5rem",
+                marginBottom: "var(--spacing-l) ",
                 objectFit: "contain",
                 background: "#fff",
-                padding: "0.5rem 0.5rem 0.5rem 0.5rem",
+                padding: "var(--spacing-xs) ",
                 zIndex: 5,
               }}
             />
@@ -83,7 +83,7 @@ const SelectedCertificate = ({
                 fontFamily: "var(--headerFont)",
                 color: "var(--darkPink)",
                 fontWeight: 700,
-                margin: "0 0 0.7rem 0",
+                margin: "0 0 var(--spacing-s)  0",
                 textAlign: "center",
                 letterSpacing: "0.01em",
                 width: "100%",
@@ -100,12 +100,12 @@ const SelectedCertificate = ({
                   fontFamily: "var(--headerFont)",
                   background: "rgba(241, 116, 150, 0.08)",
                   borderRadius: "999px",
-                  padding: "0.18em 1.1em",
+                  padding: "var(--spacing-xxxs)  var(--spacing-m) ",
                   letterSpacing: "0.01em",
                   minWidth: 110,
                   textAlign: "center",
                   lineHeight: 1.2,
-                  marginBottom: "0.2em",
+                  marginBottom: "var(--spacing-xxs) ",
                   display: "inline-block",
                 }}
               >
@@ -116,8 +116,8 @@ const SelectedCertificate = ({
                   fontSize: "1.01rem",
                   fontFamily: "var(--headerFont)",
                   fontWeight: 500,
-                  marginTop: "0.1em",
-                  marginBottom: "0.2em",
+                  marginTop: "var(--spacing-xxs) ",
+                  marginBottom: "var(--spacing-xxs) ",
                   display: "inline-block",
                 }}
               >

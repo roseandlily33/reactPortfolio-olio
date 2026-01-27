@@ -5,9 +5,9 @@ export const ContactRow = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: 2.5rem;
+  gap: var(--spacing-xxl);
   width: 100%;
-  margin: 2rem 0 0 0;
+  margin: var(--spacing-xl) 0 0 0;
   @media screen and (max-width: 900px) {
     flex-direction: column;
     gap: 1.5rem;
@@ -19,7 +19,7 @@ export const ContactFormCol = styled.div`
   flex: 2;
   min-width: 270px;
   max-width: 420px;
-  padding-right: 2rem;
+  padding-right: var(--spacing-xxl);
   border-right: 4px solid var(--darkPink);
   @media screen and (max-width: 900px) {
     max-width: 100%;
@@ -33,9 +33,9 @@ export const ContactInfoCol = styled.div`
   max-width: 420px;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: var(--spacing-l);
   align-items: flex-start;
-  margin-top: 0.2rem;
+  margin-top: var(--spacing-xxs);
   @media screen and (max-width: 900px) {
     max-width: 100%;
     min-width: 0;
@@ -45,14 +45,14 @@ export const ContactInfoCol = styled.div`
 export const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: var(--spacing-s);
   font-family: var(--headerFont);
   font-size: 1.13rem;
   color: var(--darkBerry);
   background: var(--lightPinkBackground);
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
-  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  padding: var(--spacing-l);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   width: 100%;
   .contact-row-item {
@@ -61,7 +61,7 @@ export const ContactInfo = styled.div`
     svg {
       color: var(--darkBerry);
       font-size: 1.18rem;
-      margin-right: 0.4em;
+      margin-right: var(--spacing-xs);
       vertical-align: middle;
       transition: color 0.2s;
     }
@@ -72,7 +72,7 @@ export const ContactInfo = styled.div`
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--spacing-xs);
     font-size: 1.13rem;
     line-height: 1.5;
     transition: color 0.2s;
@@ -86,15 +86,15 @@ export const ContactInfo = styled.div`
   .contact-label {
     font-weight: 600;
     color: var(--darkBerry);
-    margin-right: 0.13rem;
+    margin-right: var(--spacing-xxxs);
     font-size: 1.03rem;
   }
   .icon-link-row {
     display: flex;
     align-items: center;
-    gap: 0.7rem;
-    margin: 0.2rem 0 0.1rem 0;
-    padding-top: 0.2rem;
+    gap: var(--spacing-s);
+    margin: var(--spacing-xxs) 0 var(--spacing-xxxs) 0;
+    padding-top: var(--spacing-xxs);
     border-top: 1px solid var(--lightGrey);
     width: 100%;
     justify-content: flex-start;
@@ -109,11 +109,11 @@ export const ContactInfo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.1rem;
-    height: 2.1rem;
+    width: var(--spacing-xl);
+    height: var(--spacing-xl);
     border-radius: 50%;
     background: none;
-    padding: 0.13rem;
+    padding: var(--spacing-xxxs);
   }
   .icon-link:hover {
     color: var(--darkPink);
@@ -127,8 +127,8 @@ export const ContactMeSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
-  padding: 2.8rem 2rem 2.8rem 2rem;
+  gap: var(--spacing-l);
+  padding: var(--spacing-xxl) var(--spacing-xl) var(--spacing-xxl) var(--spacing-l);
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(14px) saturate(120%);
   overflow: hidden;
@@ -179,19 +179,19 @@ export const ContactMeSection = styled.section`
     font-weight: 800;
     letter-spacing: 0.08em;
     text-align: center;
-    padding-bottom: 0.2rem;
+    padding-bottom: var(--spacing-xxs);
     transition: color 0.3s ease;
-    font-size: 2.1rem;
+    /* font-size: 2.1rem; */
     text-transform: capitalize;
     @media screen and (max-width: 768px) {
-      font-size: 1.55rem;
+      /* font-size: 1.55rem; */
       text-transform: capitalize;
-      padding-bottom: 0.1rem;
+      padding-bottom: var(--spacing-xxxs);
     }
   }
 
   .contact-intro {
-    margin-bottom: 0.2rem;
+    margin-bottom: var(--spacing-xxxs);
     font-weight: 400;
     font-size: 1.08rem;
     text-align: center;
@@ -199,14 +199,14 @@ export const ContactMeSection = styled.section`
     max-width: 600px;
     @media screen and (max-width: 768px) {
       font-size: 1.01rem;
-      margin-bottom: 0.1rem;
+      margin-bottom: var(--spacing-xxxs);
     }
   }
 
   form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--spacing-m);
     width: 100%;
     max-width: 600px;
     align-items: center;

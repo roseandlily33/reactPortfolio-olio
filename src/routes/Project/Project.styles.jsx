@@ -2,27 +2,27 @@ import styled from "styled-components";
 
 export const ProjectDetailContainer = styled.div`
   max-width: 1100px;
-  margin: 2.5rem auto;
+  margin: var(--spacing-xl) auto;
   background: #fff;
   /* border-radius: 28px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 4px 32px rgba(241, 116, 150, 0.1);
-  padding: 2.5rem 2rem;
+  padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: var(--spacing-xl);
   @media screen and (max-width: 600px) {
-    margin: 1.5rem;
-    padding: 1.8rem 1.2rem;
-    gap: 1.8rem;
+    margin: var(--spacing-l);
+    padding: var(--spacing-xl) var(--spacing-l);
+    gap: var(--spacing-xl);
   }
 `;
 export const ProjectBreadcrumbs = styled.nav`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
+  font-size: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
   /* padding: 0.5em 0.2em; */
   width: fit-content;
   /* border: 1px solid red; */
@@ -31,9 +31,9 @@ export const ProjectBreadcrumbs = styled.nav`
     text-decoration: none;
     font-weight: 600;
     font-family: var(--headerFont);
-    font-size: 1rem;
+    /* font-size: 1rem; */
     /* padding: 0.32em 1.1em; */
-    margin: 0 0.1em;
+    margin: 0 var(--spacing-xxs);
     transition:
       background 0.2s,
       color 0.2s;
@@ -42,19 +42,19 @@ export const ProjectBreadcrumbs = styled.nav`
     color: var(--medBrown);
     font-weight: 700;
     font-size: 1rem;
-    padding: 0.18em 0.7em;
-    margin: 0 0.1em;
+    padding: var(--spacing-xxxs) var(--spacing-xs);
+    margin: 0 var(--spacing-xxs);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   @media screen and (max-width: 600px) {
-    font-size: 0.9rem;
+    font-size: var(--spacing-m);
     padding: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-xs);
     a,
     span {
-      padding: 0.2rem;
+      padding: var(--spacing-xxs);
     }
   }
 `;
@@ -63,17 +63,17 @@ export const ProjectDetailHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
+  gap: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
   position: relative;
   h1 {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     font-family: var(--headerFont);
     color: var(--darkPink);
-    margin-bottom: 0.2rem;
+    margin-bottom: var(--spacing-xxs);
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: var(--spacing-m);
   }
   .featured-badge {
     display: inline-block;
@@ -84,22 +84,22 @@ export const ProjectDetailHeader = styled.div`
     font-family: var(--headerFont);
     /* border-radius: 999px; */
     border-radius: var(--borderRadius);
-    padding: 0.18em 1.1em;
+    padding: var(--spacing-xxxs) var(--spacing-m);
     box-shadow: 0 2px 8px rgba(255, 140, 64, 0.08);
     letter-spacing: 0.01em;
     min-width: 110px;
     text-align: center;
     line-height: 1.2;
     align-items: center;
-    gap: 0.5em;
+    gap: var(--spacing-xs);
     position: relative;
     top: 0;
-    margin-right: 0.7em;
+    margin-right: var(--spacing-s);
     /* Unified badge style */
   }
   .project-detail-links {
     display: flex;
-    gap: 2rem;
+    gap: var(--spacing-xl);
     a {
       color: var(--darkBrown);
       font-weight: 600;
@@ -113,10 +113,10 @@ export const ProjectDetailHeader = styled.div`
   }
   @media screen and (max-width: 600px) {
     h1 {
-      font-size: 1.8rem;
+      /* font-size: 1.8rem; */
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
+      gap: var(--spacing-m);
     }
     .featured-badge {
       margin-left: 0;
@@ -131,17 +131,17 @@ export const ProjectDetailsContainer = styled.div`
   /* border: 2px solid red; */
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-l);
   }
 `;
 
 export const ProjectDetailMain = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: var(--spacing-xxl);
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-l);
   }
 `;
 
@@ -177,15 +177,15 @@ export const ProjectDetailInfo = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: var(--spacing-xs);
 `;
 
 export const ProjectDetailStatusType = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 0.2rem;
+  gap: var(--spacing-m);
+  margin-bottom: var(--spacing-xxs);
 `;
 
 export const ProjectDetailStatus = styled.span`
@@ -193,10 +193,10 @@ export const ProjectDetailStatus = styled.span`
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: var(--spacing-xs);
   .status-badge {
     display: inline-block;
-    padding: 0.18em 1.1em;
+    padding: var(--spacing-xxxs) var(--spacing-m);
     border-radius: 999px;
     font-size: 1.08rem;
     font-weight: 700;
@@ -205,7 +205,7 @@ export const ProjectDetailStatus = styled.span`
     min-width: 110px;
     text-align: center;
     line-height: 1.2;
-    margin-right: 0.7em;
+    margin-right: var(--spacing-s);
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
     background: var(--lightPinkBackground);
     align-items: center;
@@ -229,12 +229,12 @@ export const ProjectDetailType = styled.span`
   font-family: var(--headerFont);
   background: rgba(241, 116, 150, 0.08);
   border-radius: 999px;
-  padding: 0.18em 1.1em;
+  padding: var(--spacing-xxxs) var(--spacing-m);
   letter-spacing: 0.01em;
   min-width: 110px;
   text-align: center;
   line-height: 1.2;
-  margin-right: 0.7em;
+  margin-right: var(--spacing-s);
   box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
   align-items: center;
   /* Unified badge style */
@@ -248,8 +248,8 @@ export const ProjectDetailImportant = styled.span`
   font-family: var(--headerFont);
   background: rgba(241, 116, 150, 0.1);
   border-radius: 999px;
-  padding: 0.18em 1.1em;
-  margin-bottom: 0.5rem;
+  padding: var(--spacing-xxxs) var(--spacing-m);
+  margin-bottom: var(--spacing-xs);
   letter-spacing: 0.01em;
   min-width: 110px;
   text-align: center;
@@ -257,7 +257,7 @@ export const ProjectDetailImportant = styled.span`
 `;
 
 export const ProjectDetailDescription = styled.p`
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
   line-height: 1.6;
 `;
 
@@ -269,41 +269,40 @@ export const ProjectDetailRole = styled.p`
 export const ProjectDetailSection = styled.div`
   /* margin: 1.2rem 0 0.5rem 0; */
   background: var(--lightestGrey);
-  padding: 1.5rem 1.8rem;
+  padding: var(--spacing-l) var(--spacing-xl);
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  
+  gap: var(--spacing-m);
 `;
 
 export const ProjectDetailSectionTitle = styled.h4`
-  margin-bottom: 0.3rem;
+  margin-bottom: var(--spacing-xxs);
   font-weight: 600;
   color: var(--darkPink);
 `;
 
 export const ProjectDetailList = styled.ul`
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-m);
   padding-left: 0;
   list-style: none;
   li {
     position: relative;
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-xs);
     font-weight: 350;
-    padding-left: 1.7em;
+    padding-left: var(--spacing-l);
   }
   li::before {
     content: "";
     position: absolute;
-    left: 0.3em;
-    top: 0.6em;
-    width: 0.7em;
-    height: 0.7em;
+    left: var(--spacing-xxxs) ;
+    top: var(--spacing-s) ;
+    width:var(--spacing-s) ;
+    height: var(--spacing-s); 
     border-radius: 50%;
     background: var(--medBrown);
     display: inline-block;

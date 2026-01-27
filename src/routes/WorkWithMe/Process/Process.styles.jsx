@@ -11,12 +11,12 @@ export const TimelineWrapper = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   min-height: 260px;
-  padding: 2.5rem 0 1.5rem 0;
+  padding: var(--spacing-xl) 0 var(--spacing-l) 0;
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
     min-height: 0;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: var(--spacing-l) 0 var(--spacing-l) 0;
   }
 `;
 
@@ -31,7 +31,7 @@ export const TimelineLine = styled.div`
   z-index: 1;
   transform: translateY(-50%);
   overflow: hidden;
-   @media (max-width: 900px) {
+  @media (max-width: 900px) {
     display: none;
   }
   /* No after, just the pink gradient base */
@@ -57,17 +57,17 @@ export const TimelineLineWhite = styled.div`
     top: 0;
     height: 100%;
     width: ${({ steps, activeStep }) =>
-    activeStep < 0
-      ? "0%"
-      : steps === 1
-        ? "100%"
-        : `${(activeStep / (steps - 1)) * 100}%`};
+      activeStep < 0
+        ? "0%"
+        : steps === 1
+          ? "100%"
+          : `${(activeStep / (steps - 1)) * 100}%`};
     background: #fff;
     border-radius: 3px;
     transition: width 1s cubic-bezier(0.4, 1.4, 0.6, 1);
     z-index: 2;
   }
-   @media (max-width: 900px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -88,13 +88,15 @@ export const TimelineStep = styled.div`
     width: 100%;
     min-width: 0;
     max-width: none;
-    margin: 2rem 0 1.2rem 0;
+    margin: var(--spacing-xl) 0 var(--spacing-m) 0;
     align-items: flex-start;
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
-    & > div, & > h4, & > p {
-      margin-bottom: 0.4rem;
+    & > div,
+    & > h4,
+    & > p {
+      margin-bottom: var(--spacing-xs);
       margin-right: 0;
       text-align: left;
     }
@@ -105,8 +107,8 @@ export const TimelineGlow = styled.div`
   position: absolute;
   top: 12%;
   left: 50%;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: var(--spacing-xxl);
+  height: var(--spacing-xxl);
   border-radius: 50%;
   filter: blur(8px);
   opacity: 0;
@@ -122,36 +124,36 @@ export const TimelineGlow = styled.div`
 `;
 
 export const TimelineNumber = styled.div`
-  width: 2.3rem;
-  height: 2.3rem;
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: var(--spacing-m);
   font-weight: 700;
   color: #fff;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0 var(--spacing-s);
   border: 3px solid;
   background: #f17496;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   z-index: 3;
   position: relative;
   @media (max-width: 900px) {
-     display: none;
+    display: none;
   }
 `;
 
 export const TimelineIcon = styled.div`
   font-size: 2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: var(--spacing-s);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
   @media (max-width: 900px) {
     margin-bottom: 0;
-    margin-right: 1.1rem;
+    margin-right: var(--spacing-m);
   }
 `;
 
@@ -159,7 +161,7 @@ export const TimelineTitle = styled.h4`
   color: var(--darkPink);
   font-family: var(--headerFont);
   font-size: 1.13rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: var(--spacing-xs);
   text-align: center;
   font-weight: 700;
   z-index: 3;
@@ -170,7 +172,7 @@ export const TimelineTitle = styled.h4`
 
 export const TimelineDesc = styled.p`
   /* color: var(--medBrown); */
-  font-size: 0.98rem;
+  font-size: var(--spacing-m);
   text-align: center;
   margin: 0;
   font-weight: 500;
@@ -182,26 +184,26 @@ export const TimelineDesc = styled.p`
 
 export const ProcessSectionContainer = styled.section`
   background-color: var(--pinkBackground);
-  padding: 5rem 2rem;
+  padding: var(--spacing-xxxl) var(--spacing-xl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   h3 {
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-xl);
     font-weight: 800;
     width: 100%;
     text-align: left;
-    font-size: 2.1rem;
+    /* font-size: 2.1rem; */
     letter-spacing: 0.04em;
     color: var(--darkPink);
     text-transform: capitalize;
   }
   @media screen and (max-width: 768px) {
-    padding: 3rem 2rem;
+    padding: var(--spacing-xxl) var(--spacing-xl);
     h3 {
-      margin-bottom: 0.5rem;
+      margin-bottom: var(--spacing-xxs);
     }
   }
 `;
@@ -209,17 +211,17 @@ export const ProcessSectionContainer = styled.section`
 export const ProcessGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.2rem;
+  gap: var(--spacing-xl);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   @media (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: var(--spacing-l);
   }
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: var(--spacing-m);
   }
 `;
 
@@ -228,7 +230,7 @@ export const ProcessCard = styled.div`
   /* border-radius: 22px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
-  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  padding: var(--spacing-xl) var(--spacing-l) var(--spacing-l) var(--spacing-l);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,8 +251,8 @@ export const ProcessCard = styled.div`
 `;
 
 export const ProcessNumber = styled.div`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -258,13 +260,13 @@ export const ProcessNumber = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 1.1rem;
+  margin-bottom: var(--spacing-m);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 `;
 
 export const ProcessIcon = styled.div`
   font-size: 2.2rem;
-  margin-bottom: 1.1rem;
+  margin-bottom: var(--spacing-m);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,7 +276,7 @@ export const ProcessTitle = styled.h4`
   color: var(--darkPink);
   font-family: var(--headerFont);
   font-size: 1.18rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: var(--spacing-s);
   text-align: center;
   font-weight: 700;
 `;

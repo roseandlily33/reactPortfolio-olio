@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const RetainerSection = styled.section`
   background: var(--orangeBackground);
-  padding: 5rem 2rem;
+  padding: var(--spacing-xxxl) var(--spacing-xl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -15,7 +15,7 @@ export const RetainerTitle = styled.h2`
   color: var(--darkPink);
   font-family: var(--headerFont);
   /* font-size: 2rem; */
-  margin-bottom: 0.8rem;
+  margin-bottom: var(--spacing-s);
   letter-spacing: 0.08em;
   text-align: left;
   width: 100%;
@@ -24,11 +24,11 @@ export const RetainerTitle = styled.h2`
 
 export const RetainerGrid = styled.div`
   display: flex;
-  gap: 2.5rem;
+  gap: var(--spacing-xxl);
   width: 100%;
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--spacing-xl);
   }
 `;
 
@@ -40,7 +40,7 @@ export const RetainerCard = styled.div`
   border-radius: var(--borderRadius);
   border: none;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 2.2rem 1.8rem 1.6rem 1.8rem;
+  padding: var(--spacing-xl) var(--spacing-l);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -72,7 +72,7 @@ export const RetainerCardTitle = styled.h2`
   color: var(--darkPink);
   font-family: var(--headerFont);
   font-size: 1.55rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
   font-weight: 800;
   display: block;
   text-transform: uppercase;
@@ -81,34 +81,34 @@ export const RetainerCardTitle = styled.h2`
 export const RetainerCardBase = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  font-size: 1.05rem;
+  gap: var(--spacing-s);
+  font-size: var(--spacing-m);
   color: var(--medBrown);
   font-weight: 500;
-  margin-bottom: 0.6rem;
+  margin-bottom: var(--spacing-s);
   .base-line {
     display: inline-block;
     height: 2px;
     width: 32px;
     background: #ff8c40;
     border-radius: 2px;
-    margin-left: 0.7em;
+    margin-left: var(--spacing-s);
   }
 `;
 
 export const RetainerIncludes = styled.details`
   width: 100%;
-  margin-top: 0.8rem;
+  margin-top: var(--spacing-s);
   summary {
     list-style: none;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 0.5em;
+    gap: var(--spacing-xs);
     color: var(--medBerry);
     font-weight: 600;
     background: transparent;
-    padding: 0.18rem 0;
+    padding: var(--spacing-xxxs) 0;
     outline: none;
     font-size: 1.09rem;
     position: relative;
@@ -118,7 +118,7 @@ export const RetainerIncludes = styled.details`
   .chev {
     display: inline-flex;
     align-items: center;
-    margin-left: 0.1em;
+    margin-left: var(--spacing-xxxs);
     transition:
       transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
       color 180ms;
@@ -126,7 +126,7 @@ export const RetainerIncludes = styled.details`
     color: var(--darkBerry);
     will-change: transform, color;
     line-height: 1;
-    height: 1.25em;
+    height: var(--spacing-m);
   }
   summary:hover,
   summary:focus {
@@ -151,7 +151,7 @@ export const RetainerIncludes = styled.details`
   }
   &[open] .includes-content {
     max-height: 480px;
-    padding-top: 0.75rem;
+    padding-top: var(--spacing-s);
   }
 `;
 
@@ -159,22 +159,22 @@ export const RetainerPrice = styled.div`
   color: var(--darkBrown);
   font-size: 1.15rem;
   font-weight: bold;
-  margin-bottom: 0.7rem;
+  margin-bottom: var(--spacing-s);
 `;
 
 export const RetainerDescription = styled.p`
   /* color: var(--medBrown); */
-  font-size: 1.05rem;
-  margin-bottom: 1rem;
+  font-size: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
 `;
 
 export const RetainerFeatures = styled.ul`
   /* color: var(--darkBrown); */
-  font-size: 1rem;
+  font-size: var(--spacing-m);
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: var(--spacing-m);
   li {
-    margin-bottom: 0.4rem;
+    margin-bottom: var(--spacing-xs);
     display: flex;
     align-items: center;
   }

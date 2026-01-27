@@ -3,17 +3,17 @@ import styled from "styled-components";
 export const SectionHeader = styled.h3`
   color: var(--darkPink);
   font-family: var(--headerFont);
-  font-size: 1.5rem;
+  font-size: var(--spacing-l);
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: var(--spacing-xl);
   display: flex;
   align-items: center;
-  gap: 0.7em;
+  gap:var(--spacing-s); 
   width: 100%;
   white-space: nowrap;
   overflow-x: auto;
   text-overflow: ellipsis;
-  padding: 0.1em 0.1em 0.1em 0;
+  padding: var(--spacing-xxxs) ;
   box-sizing: border-box;
   svg {
     color: var(--darkPink);
@@ -26,7 +26,7 @@ export const SectionHeader = styled.h3`
     white-space: normal;
     overflow-x: visible;
     text-overflow: unset;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-m);
   }
 `;
 
@@ -34,10 +34,10 @@ export const SubHeader = styled.h4`
   color: var(--medBrown);
   font-size: 1.13rem;
   font-weight: 600;
-  margin: 0.7em 0 0.2em 0;
+  margin: var(--spacing-s)  0 var(--spacing-xxs) 0;
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: var(--spacing-xs); 
   svg {
     color: var(--medBrown);
     font-size: 1.1em;
@@ -48,7 +48,7 @@ export const SectionText = styled.p`
   /* color: var(--darkGrey); */
   font-size: 1.05rem;
   font-weight: 400;
-  margin-bottom: 0.5em;
+  margin-bottom: var(--spacing-s);
   line-height: 1.6;
   @media (max-width: 600px) {
     font-size: 0.98rem;
@@ -58,21 +58,21 @@ export const SectionText = styled.p`
 export const SectionList = styled.ul`
 	list-style: none;
 	padding-left: 0;
-	margin: 0.2em 0 0.7em 0;
+	margin: var(--spacing-s) 0 var(--spacing-xl) 0;
 	li {
 		position: relative;
-		font-size: 1.01rem;
+		font-size: var(--spacing-m);
 		/* color: var(--darkGrey); */
 		font-weight: 400;
-		padding-left: 1.6em;
-		margin-bottom: 0.3em;
+		padding-left: var(--spacing-l); 
+		margin-bottom: var(--spacing-xxs);
 	}
 	li::before {
 		content: "\2022";
 		color: var(--darkPink);
 		position: absolute;
-		left: 0.2em;
-		font-size: 1.2em;
-		top: 0.1em;
+		left: var(--spacing-xxs); 
+		font-size: var(--spacing-m);
+		top: var(--spacing-xxxs); 
 	}
 `;

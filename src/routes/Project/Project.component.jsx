@@ -200,9 +200,9 @@ const Project = () => {
       {visibleTabs.length > 0 && (
         <div
           style={{
-            margin: "1.5rem 0 0.5rem 0",
+            margin: "var(--spacing-l)  0 var(--spacing-s) 0",
             display: "flex",
-            gap: "1rem",
+            gap: "var(--spacing-m) ",
           }}
         >
           {visibleTabs.map((tab) => (
@@ -215,7 +215,7 @@ const Project = () => {
                 color: activeTab === tab.key ? "#fff" : "var(--darkPink)",
                 border: "none",
                 borderRadius: "999px",
-                padding: "0.4em 1.3em",
+                padding: "var(--spacing-xs) var(--spacing-m)",
                 fontWeight: 600,
                 fontSize: "1.05rem",
                 boxShadow:
@@ -244,7 +244,7 @@ const Project = () => {
                   fontWeight: 600,
                   color: 'var(--medPink)',
                   fontSize: '1.05em',
-                  marginBottom: '0.2em',
+                  marginBottom: 'var(--spacing-xxs) ',
                   textTransform: 'capitalize',
                   display: 'flex',
                   alignItems: 'center',

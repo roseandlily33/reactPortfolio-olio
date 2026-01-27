@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const TabButtonContainer = styled.button`
-  padding: 0.5rem 1.5rem;
-  margin: 0 0.5rem;
+  padding: var(--spacing-xs) var(--spacing-l);
+  margin: 0 var(--spacing-xs);
   font-size: 1rem;
   font-family: var(--headerFont);
   font-weight: 600;

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { useState } from 'react';
+import styled from "styled-components";
+import { useState } from "react";
 
 export const NavbarOuter = styled.header`
   position: sticky;
@@ -10,7 +10,7 @@ export const NavbarOuter = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative; 
+  position: relative;
   padding-left: 1rem;
   margin-inline: 1rem;
   padding-bottom: 1rem;
@@ -22,10 +22,16 @@ export const NavbarOuter = styled.header`
   transform-origin: top;
   transition: transform 0.5s ease;
   background-color: var(--lightCream);
-  background-image: radial-gradient(circle, rgba(240, 128, 160, 0.2) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    rgba(240, 128, 160, 0.2) 1px,
+    transparent 1px
+  );
   background-size: 20px 20px;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: var(--spacing-m);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   &.scrolled-up {
     transform: translateY(-100%) rotateX(-90deg); /* Flip up */
@@ -35,9 +41,9 @@ export const NavbarOuter = styled.header`
     transform: translateY(0) rotateX(0deg); /* Flip down */
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     margin-inline: 0.5rem;
-   }
+  }
 
   @keyframes bubbleUp {
     0% {
@@ -52,8 +58,13 @@ export const NavbarOuter = styled.header`
 
   h1 {
     font-family: var(--titleFont);
-    font-size: 2rem;
-    background: linear-gradient(45deg, var(--lightPink), var(--darkPink), var(--medBrown));
+    /* font-size: 2rem; */
+    background: linear-gradient(
+      45deg,
+      var(--lightPink),
+      var(--darkPink),
+      var(--medBrown)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -73,25 +84,28 @@ export const Hamburger = styled.button`
   align-items: center;
   width: 44px;
   height: 44px;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.85);
   border: none;
   border-radius: 50%;
-  box-shadow: 0 2px 12px rgba(241,116,150,0.13);
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.13);
   cursor: pointer;
   z-index: 1200;
-  transition: background 0.2s, box-shadow 0.2s;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
   position: relative;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background: var(--lightPinkBackground);
-    box-shadow: 0 4px 20px rgba(241,116,150,0.18);
+    box-shadow: 0 4px 20px rgba(241, 116, 150, 0.18);
   }
   span {
     width: 26px;
     height: 4px;
     background: var(--darkPink);
-    margin: 3.5px 0;
+    margin: var(--spacing-xxxs) 0;
     border-radius: 2px;
-    transition: 0.35s cubic-bezier(0.68,-0.55,0.27,1.55);
+    transition: 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     display: block;
     position: relative;
   }
@@ -118,17 +132,17 @@ export const MobileMenu = styled.nav`
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: 1rem;
-    left: 1rem;
+    right: var(--spacing-m);
+    left: var(--spacing-m);
     background: var(--lightCream);
     border-radius: 0 0 18px 18px;
-    box-shadow: 0 8px 32px rgba(241,116,150,0.10);
-    padding: 1.5rem 1rem 1rem 1rem;
+    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.1);
+    padding: var(--spacing-m);
     z-index: 1100;
 
     a {
-      margin: 0.7rem 0;
-      font-size: 1.1rem;
+      margin: var(--spacing-s) 0;
+      /* font-size: 1.1rem; */
       color: var(--darkGrey);
       text-align: left;
     }
@@ -140,7 +154,7 @@ export const NavBarComponent = styled.nav`
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  padding-block: 0.5em;
+  padding-block: var(--spacing-xs);
 
   @media (max-width: 900px) {
     display: none;
@@ -160,7 +174,8 @@ export const NavBarComponent = styled.nav`
   }
 
   @keyframes bounce {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0);
     }
     50% {
@@ -174,7 +189,7 @@ const Navbar = ({ navLinks }) => {
 
   return (
     <NavbarOuter>
-      <Hamburger onClick={() => setMenuOpen(open => !open)}>
+      <Hamburger onClick={() => setMenuOpen((open) => !open)}>
         <span />
         <span />
         <span />
@@ -186,4 +201,3 @@ const Navbar = ({ navLinks }) => {
 };
 
 export default Navbar;
-

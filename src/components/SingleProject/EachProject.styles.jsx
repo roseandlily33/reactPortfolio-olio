@@ -14,17 +14,23 @@ export const ProjectCard = styled.div`
   min-width: 260px;
   /* border-radius: 22px; */
   border-radius: var(--borderRadius);
-  box-shadow: 0 4px 24px rgba(241, 116, 150, 0.13), 0 1.5px 6px rgba(60, 60, 60, 0.04);
+  box-shadow:
+    0 4px 24px rgba(241, 116, 150, 0.13),
+    0 1.5px 6px rgba(60, 60, 60, 0.04);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: ${({ theme }) => theme.colors.lightCream};
   position: relative;
-  transition: box-shadow 0.25s, transform 0.18s;
+  transition:
+    box-shadow 0.25s,
+    transform 0.18s;
   overflow: hidden;
   margin-bottom: 2rem;
   &:hover {
-    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.19), 0 2px 8px rgba(60, 60, 60, 0.07);
+    box-shadow:
+      0 8px 32px rgba(241, 116, 150, 0.19),
+      0 2px 8px rgba(60, 60, 60, 0.07);
     transform: translateY(-4px) scale(1.025);
   }
 
@@ -57,7 +63,7 @@ export const ProjectCard = styled.div`
     max-height: 22px;
     display: block;
     color: #fff;
-    filter: drop-shadow(0 1px 2px rgba(60,60,60,0.08));
+    filter: drop-shadow(0 1px 2px rgba(60, 60, 60, 0.08));
     margin: auto;
   }
 
@@ -72,7 +78,9 @@ export const ProjectCard = styled.div`
     justify-content: center;
     background: #fff;
     border-bottom: 1px solid #f7e6ed;
-    transition: border-radius 0.2s, height 0.2s;
+    transition:
+      border-radius 0.2s,
+      height 0.2s;
   }
 
   #projPic {
@@ -92,8 +100,9 @@ export const ProjectCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 1.2rem 0.7rem 1.2rem;
-    gap: 0.5rem;
+    padding: var(--spacing-m) var(--spacing-l) var(--spacing-xs)
+      var(--spacing-m);
+    gap: var(--spacing-xs);
     flex: 1;
   }
 
@@ -102,7 +111,7 @@ export const ProjectCard = styled.div`
     font-family: var(--headerFont);
     color: var(--darkPink);
     font-weight: 700;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 var(--spacing-xs) 0;
     text-align: left;
     letter-spacing: 0.01em;
     width: 100%;
@@ -112,46 +121,46 @@ export const ProjectCard = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.2rem;
-    margin-bottom: 0.2rem;
+    gap: var(--spacing-l);
+    margin-bottom: var(--spacing-xxxs);
     width: 100%;
   }
 
   .project-status {
-    font-size: 1rem;
+    font-size: var(--spacing-m);
     font-weight: 500;
     color: var(--grey);
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: var(--spacing-xxxs);
   }
 
   .project-type {
-    font-size: 0.98rem;
+    font-size: var(--spacing-m);
     color: var(--medPink);
     font-weight: 500;
     background: rgba(241, 116, 150, 0.08);
     border-radius: 999px;
-    padding: 0.2em 0.8em;
+    padding: var(--spacing-s);
     letter-spacing: 0.01em;
   }
 
   .bold {
     font-weight: 550;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
+    padding-top: var(--spacing-xs);
+    padding-left: var(--spacing-xs);
   }
   span {
     font-weight: normal;
   }
   p {
-    margin-top: 0.5rem;
-    padding-left: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: var(--spacing-xs);
+    padding-left: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
   }
   a {
     float: right;
-    padding-block: 0.5em;
+    padding-block: var(--spacing-xs);
   }
   a:hover {
     transform: scale(1.3);
@@ -191,9 +200,9 @@ export const ProjectCard = styled.div`
       object-position: top;
     }
     .project-details {
-      padding: 1rem 0.7rem 0.4rem 0.7rem;
+      padding: var(--spacing-m) var(--spacing-s) var(--spacing-xxs)
+        var(--spacing-s);
     }
-    
   }
   @media screen and (max-width: 600px) {
     max-width: 100%;
@@ -211,8 +220,8 @@ export const ProjectCard = styled.div`
       object-position: top;
     }
     .project-details {
-      padding: 1rem 0.4rem 0.3rem 0.4rem;
+      padding: var(--spacing-m) var(--spacing-xs) var(--spacing-xxs)
+        var(--spacing-xs);
     }
-   
   }
 `;

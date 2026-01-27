@@ -5,37 +5,39 @@ export const BloomStudyCase = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: var(--spacing-xl); 
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   height: 100%;
-  padding: 2rem;
+  padding: var(--spacing-xl);
   background-color: var(--pinkBackground);
   div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: start;
     min-width: 100%;
   }
-  section {
-    border: 2px solid red;
-  }
+  /* section { */
+    /* border: 2px solid red; */
+  /* } */
   h3 {
     color: var(--darkPink);
-    margin-bottom: 1rem;
-    font-weight: 600;
+    margin-bottom: var(--spacing-m);
+    /* font-weight: 600; */
     animation: fadeIn 1s ease-in-out;
   }
   h4 {
     color: var(--medPink);
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    margin-bottom: var(--spacing-xs); 
+    /* font-weight: 500; */
     animation: fadeIn 1s ease-in-out;
   }
   h5 {
     color: var(--medBrown);
-    font-weight: 300;
-    margin-bottom: 0.5rem;
+    /* font-weight: 300; */
+    margin-bottom: var(--spacing-xs); 
     font-style: italic;
     animation: fadeIn 1s ease-in-out;
   }
@@ -43,15 +45,15 @@ export const BloomStudyCase = styled.div`
   p {
     line-height: 1.8;
     text-align: justify;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-l); 
     animation: slideIn 0.8s ease-in-out;
   }
   .juice {
     /* border: 2px solid red; */
-    padding-top: 1rem;
+    padding-top: var(--spacing-m);
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: var(--spacing-xxxs);
     border-bottom: 1px solid var(--medPink);
   }
   .juice p {
@@ -87,16 +89,18 @@ export const BloomStudyCase = styled.div`
   /* Buttons for links */
   a {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    margin: 1rem 0.5rem;
-    font-size: 1rem;
+    padding: var(--spacing-s) var(--spacing-l);
+    margin: var(--spacing-m) var(--spacing-xs);
+    font-size: var(--spacing-m);
     font-weight: bold;
     color: var(--white);
     background-color: var(--darkPink);
     border-radius: var(--borderRadius);
     text-decoration: none;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
       background-color: var(--medPink);

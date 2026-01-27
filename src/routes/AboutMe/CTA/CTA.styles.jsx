@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const CTASection = styled.section`
   background: linear-gradient(120deg, var(--orangeBackground) 60%, var(--pinkBackground) 100%);
   /* box-shadow: 0 6px 32px 0 rgba(241, 116, 150, 0.10); */
-  padding: 4.5rem 2rem 2.2rem 2rem;
+  padding: var(--spacing-xxxl ) var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
   /* margin: 3rem auto 2.5rem auto; */
   display: flex;
   flex-direction: column;
@@ -10,11 +10,11 @@ export const CTASection = styled.section`
   .cta-content {
     display: flex;
     align-items: center;
-    gap: 2.2rem;
+    gap: var(--spacing-xl);
     width: 100%;
     @media (max-width: 600px) {
       flex-direction: column;
-      gap: 1.2rem;
+      gap: var(--spacing-m);
     }
   }
   .cta-text {
@@ -22,38 +22,38 @@ export const CTASection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.1rem;
+    gap: var(--spacing-m);
     h2 {
       font-family: var(--headerFont);
-      font-size: 2.1rem;
+      /* font-size: 2.1rem; */
       color: var(--darkBrown);
       font-weight: 800;
-      margin-bottom: 0.2rem;
+      margin-bottom: var(--spacing-xxxs);
     }
     .cta-subtext {
       color: var(--medGrey);
       font-size: 1.1rem;
       font-family: var(--mainFont);
-      margin-bottom: 0.2rem;
+      margin-bottom: var(--spacing-xxxs);
     }
   }
 
   @media (max-width: 768px) {
-    padding: 2.2rem 0.7rem 1.2rem 0.7rem;
+    padding: var(--spacing-xl) var(--spacing-s) var(--spacing-l) var(--spacing-s);
     .cta-content {
       flex-direction: column;
-      gap: 1rem;
+      gap: var(--spacing-m);
       align-items: flex-start;
     }
     .cta-text {
-      gap: 0.7rem;
+      gap: var(--spacing-s);
       h2 {
-        font-size: 1.25rem;
-        margin-bottom: 0.1rem;
+        /* font-size: 1.25rem; */
+        margin-bottom: var(--spacing-xxxs);
       }
       .cta-subtext {
         font-size: 0.97rem;
-        margin-bottom: 0.1rem;
+        margin-bottom: var(--spacing-xxxs);
       }
     }
   }
@@ -88,7 +88,7 @@ export const CTAButton = styled.button`
   border: none;
   /* border-radius: 999px; */
   border-radius: var(--borderRadius);
-  padding: 1.1rem 2.8rem;
+  padding: var(--spacing-m) var(--spacing-xxl);
   font-size: 1.35rem;
   font-family: var(--headerFont);
   font-weight: 700;
@@ -101,11 +101,11 @@ export const CTAButton = styled.button`
     color 0.3s;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: var(--spacing-s);
   .cta-arrow {
     font-size: 1.5em;
     font-weight: 900;
-    margin-left: 0.5em;
+    margin-left: var(--spacing-xs);
     color: var(--yellow);
     transition: color 0.3s;
   }
@@ -119,34 +119,34 @@ export const CTAButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    padding: 0.7rem 1.3rem;
+    padding: var(--spacing-m) var(--spacing-xxl);
     font-size: 1rem;
     .cta-arrow {
       font-size: 1.1em;
-      margin-left: 0.3em;
+      margin-left: var(--spacing-xs);
     }
   }
 `;
 
 export const CTATrusted = styled.div`
-  margin-top: 2.2rem;
+  margin-top: var(--spacing-l);
   width: 100%;
   span {
     color: var(--medGrey);
     font-size: 1.05rem;
     font-family: var(--headerFont);
     font-weight: 600;
-    margin-right: 0.7rem;
+    margin-right: var(--spacing-xs);
   }
   ul {
     display: inline-flex;
-    gap: 1.2rem;
+    gap: var(--spacing-l);
     list-style: none;
     margin: 0;
     padding: 0;
     li {
       font-family: var(--headerFont);
-      font-size: 1.1rem;
+      /* font-size: 1.1rem; */
       color: var(--medBrown);
       font-weight: 700;
       a {
@@ -161,13 +161,13 @@ export const CTATrusted = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-top: 1.1rem;
+    margin-top: var(--spacing-m);
     span {
       font-size: 0.93rem;
-      margin-right: 0.4rem;
+      margin-right: var(--spacing-xs)
     }
     ul {
-      gap: 0.6rem;
+      gap: var(--spacing-xs)
       li {
         font-size: 0.97rem;
       }

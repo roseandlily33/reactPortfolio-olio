@@ -4,13 +4,13 @@ export const SkillsTabsLegendCard = styled.div`
   /* border-radius: 22px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 6px 32px rgba(241, 116, 150, 0.13);
-  padding: 2.2em 2.5em 2.5em 2.5em;
+  padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.2rem;
-  margin-bottom: 2.5rem;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
   width: 100%;
   max-width: 900px;
   margin-left: auto;
@@ -38,23 +38,23 @@ export const SkillsTabsLegendCard = styled.div`
   z - index: 1;
 } */
   @media (max-width: 900px) {
-    padding: 1.2em 0.5em 1.5em 0.5em;
-    gap: 1.2rem;
+    padding: var(--spacing-m) var(--spacing-xs);
+    gap: var(--spacing-m);
   }
 `;
 
 export const TabsPillRow = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 1.1rem;
+  gap: var(--spacing-m);
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-l);
   @media (max-width: 900px) {
-    gap: 0.7rem;
-    margin-bottom: 1rem;
+    gap: var(--spacing-s);
+    margin-bottom: var(--spacing-m);
   }
 `;
 export const StarLegendCard = styled.div`
@@ -62,16 +62,16 @@ export const StarLegendCard = styled.div`
   /* border-radius: 16px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
-  padding: 1.5em 2em;
+  padding: var(--spacing-l) var(--spacing-xl);
   width: 100%;
   max-width: 420px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: var(--spacing-m);
   @media (max-width: 900px) {
-    padding: 1em 0.7em;
+    padding: var(--spacing-m) var(--spacing-s);
     max-width: 100%;
   }
 `;
@@ -83,7 +83,7 @@ export const PillTab = styled.button`
   color: var(--medPink);
   border: none;
   border-radius: 999px;
-  padding: 0.6em 1.7em;
+  padding: var(--spacing-s) var(--spacing-l);
   font-size: 1.13rem;
   font-family: var(--headerFont);
   font-weight: 600;
@@ -97,7 +97,7 @@ export const PillTab = styled.button`
   svg {
     color: var(--lightPink);
     font-size: 1.25em;
-    margin-right: 0.4em;
+    margin-right: var(--spacing-xs);
   }
   &.activeTab,
   &:hover {
@@ -112,12 +112,12 @@ export const SkillsHeaderRow = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: var(--spacing-xl);
   flex-wrap: wrap;
   width: 100%;
   @media (max-width: 700px) {
     flex-direction: column;
-    gap: 1.2rem;
+    gap: var(--spacing-m);
     align-items: stretch;
   }
 `;
@@ -136,11 +136,11 @@ export const SkillItem = styled.li`
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: var(--spacing-xs) 0;
 
   @media (max-width: 600px) {
     /* flex-direction: column; */
-    padding: 0.7rem 0;
+    padding: var(--spacing-s) 0;
   }
 `;
 
@@ -148,14 +148,14 @@ export const SkillInfo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: var(--spacing-m);
 
   .skill-icon {
-    padding-top: 1.5rem;
+    padding-top: var(--spacing-l);
     font-size: 1.5rem;
     color: var(--darkPink);
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-m);
   }
 
   .skill-name {
@@ -168,15 +168,15 @@ export const SkillInfo = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.3rem;
+    gap: var(--spacing-xxs);
 
     .skill-icon {
-      padding-top: 0.5rem;
+      padding-top: var(--spacing-xs);
       font-size: 1.2rem;
-      gap: 0.5rem;
+      gap: var(--spacing-xs);
     }
     .skill-name {
-      font-size: 1rem;
+      font-size: var(--spacing-m);
     }
   }
 `;
@@ -184,9 +184,9 @@ export const SkillInfo = styled.div`
 export const SkillRating = styled.p`
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: var(--spacing-xs);
   /* border: 1px solid purple; */
-  padding-top: 1.5rem;
+  padding-top: var(--spacing-l);
 
   svg {
     font-size: 1.5rem;
@@ -200,7 +200,7 @@ export const StarLegendContainer = styled.div`
     color: var(--darkPink);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-m);
   }
   span {
     font-style: italic;
@@ -212,15 +212,15 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: var(--spacing-xl);
   /* margin: 2rem auto; */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
   /* border: 2px solid orange; */
-  gap: 2rem;
+  gap: var(--spacing-xl);
   height: 100%;
-  padding: 2rem;
+  padding: var(--spacing-xl);
   background-color: var(--pinkBackground);
 `;
 
@@ -229,7 +229,8 @@ export const TechStackContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 0.5rem 2.5rem 0.5rem;
+  padding: var(--spacing-l) var(--spacing-xs) var(--spacing-xl)
+    var(--spacing-xs);
   width: 100%;
   background-color: var(--pinkBackground);
 
@@ -248,8 +249,8 @@ export const TechStackContainer = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
-    padding: 1.5em 2em;
-    margin-bottom: 2.2rem;
+    padding: var(--spacing-l) var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
     width: 100%;
     max-width: 900px;
     margin-left: auto;
@@ -257,7 +258,7 @@ export const TechStackContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.2rem;
+    gap: var(--spacing-m);
     position: relative;
   }
 
@@ -265,7 +266,7 @@ export const TechStackContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: start;
-    gap: 0.3rem;
+    gap: var(--spacing-xxs);
     width: 100%;
   }
   .animated-icon {
@@ -284,15 +285,15 @@ export const TechStackContainer = styled.div`
     border: 1.5px solid var(--lightPink);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
     align-items: center;
-    padding: 1.2em 1.5em;
+    padding: var(--spacing-m) var(--spacing-l);
   }
   .tools-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.7em;
+    gap: var(--spacing-s);
     width: 100%;
     justify-content: flex-start;
-    margin-top: 0.2em;
+    margin-top: var(--spacing-xxs);
   }
   .tool-pill {
     display: inline-flex;
@@ -301,7 +302,7 @@ export const TechStackContainer = styled.div`
     color: var(--darkPink);
     border-radius: 999px;
     border: 1.2px solid var(--lightPink);
-    padding: 0.35em 1.1em;
+    padding: var(--spacing-xs) var(--spacing-m);
     font-size: 1.01rem;
     font-family: var(--headerFont);
     font-weight: 600;
@@ -313,12 +314,12 @@ export const TechStackContainer = styled.div`
       box-shadow 0.2s;
     min-width: 0;
     white-space: nowrap;
-    margin-bottom: 0.2em;
-    gap: 0.5em;
+    margin-bottom: var(--spacing-xxs);
+    gap: var(--spacing-xs);
   }
   .tool-icon {
     font-size: 1.15em;
-    margin-right: 0.3em;
+    margin-right: var(--spacing-xxs);
   }
 
   .overview {
@@ -328,18 +329,18 @@ export const TechStackContainer = styled.div`
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-m);
   }
 
   .back-to-top {
     position: fixed;
-    bottom: 2.2rem;
-    right: 2.2rem;
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
     background: var(--darkPink);
     color: #fff;
     border: none;
     border-radius: 999px;
-    padding: 0.7em 1.7em;
+    padding: var(--spacing-s) var(--spacing-l);
     font-size: 1.1rem;
     font-family: var(--headerFont);
     font-weight: 700;
@@ -360,21 +361,21 @@ export const TechStackContainer = styled.div`
 
   @media screen and (max-width: 600px) {
     .section-card {
-      padding: 1em 0.5em;
-      margin-bottom: 1.2rem;
+      padding: var(--spacing-m) var(--spacing-xs);
+      margin-bottom: var(--spacing-l);
     }
     .overview p {
       font-size: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: var(--spacing-m);
     }
     .accent-heading {
       font-size: 1.3rem;
     }
     .back-to-top {
-      bottom: 1.1rem;
-      right: 1.1rem;
+      bottom: var(--spacing-m);
+      right: var(--spacing-m);
       font-size: 0.98rem;
-      padding: 0.5em 1.1em;
+      padding: var(--spacing-xs) var(--spacing-m);
     }
   }
 `;
