@@ -6,45 +6,43 @@ export const ArielLayout = styled.div`
   /* align-items: flex-start; */
   width: 100%;
   min-height: 100%;
+  gap: 1rem;
   /* max-width: 1600px; */
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
+
 `;
 
 export const ArielMain = styled.main`
-  width: 100%;
-  max-width: 1000px;
+  /* width: 100%; */
+  /* max-width: 1000px; */
+  width: 85%;
   box-sizing: border-box;
   padding: 3rem 2rem;
   background: var(--lightestPink);
-  border-radius: 40px;
+  border-radius: 25px;
   box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   min-height: 100vh;
-
-  @media screen and (max-width: 1200px) {
-    max-width: 900px;
-  }
-  @media screen and (max-width: 1100px) {
-    max-width: 700px;
-  }
-  @media screen and (max-width: 768px) {
-    /* max-width: 100vw; */
+  @media screen and (max-width: 950px){
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    height: 100%;
   }
+
 `;
 
 export const Section = styled.section`
   width: 100%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   padding: 2.5rem 2rem;
   background: rgba(255, 255, 255, 0.92);
-  border-radius: 28px;
+  border-radius: 25px;
   box-shadow: 0 2px 24px rgba(241, 116, 150, 0.1);
   transition: box-shadow 0.2s;
   &:hover {
@@ -149,12 +147,12 @@ export const PhaseCarousel = styled.div`
 
   @media (max-width: 900px) {
     & > div {
-      min-width: 90vw;
-      max-width: 95vw;
+      min-width: 60vw;
+      max-width: 60vw;
       padding: 0.7rem;
     }
     img {
-      max-width: 90vw;
+      max-width: 60vw;
     }
   }
 `;

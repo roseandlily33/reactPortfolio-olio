@@ -45,13 +45,29 @@ export const PaletteCarousel = styled.div`
 
   @media (max-width: 900px) {
     gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     & > div {
       min-width: 80vw;
       max-width: 90vw;
       padding: 0.7rem;
+      scroll-snap-align: start;
+      /* Add a little margin for swipe affordance */
+      margin-right: 0.5rem;
     }
     img {
       max-width: 80vw;
+    }
+    /* Show a subtle scrollbar on mobile */
+    &::-webkit-scrollbar {
+      height: 6px;
+      background: rgba(241,116,150,0.08);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--medPink);
+      border-radius: 4px;
     }
   }
 `;

@@ -5,17 +5,18 @@ export const SideMenuContainer = styled.nav`
   top: 100px;
   left: 0;
   height: fit-content;
-  min-width: 220px;
+  /* min-width: 220px; */
+  width: 15%;
   background: #fff;
   border-radius: 24px;
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
   padding: 2rem 1.2rem;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   z-index: 100;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 950px){
     display: none;
   }
 `;

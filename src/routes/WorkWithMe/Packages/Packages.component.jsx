@@ -88,6 +88,20 @@ const PackagesComponent = () => {
         opportunities for add-ons or further collaboration. For a tailored quote
         or to discuss which package best fits your goals, please get in touch!
       </p>
+      <h3
+        style={{
+          fontFamily: "var(--headerFont)",
+          fontSize: "1.35rem",
+          fontWeight: 700,
+          marginBottom: "1.2rem",
+          color: "var(--darkOrange)",
+          textTransform: "capitalize",
+          textAlign: "left",
+          width: "100%",
+        }}
+      >
+        Explore Options
+      </h3>
       <PackagesGrid ref={gridRef}>
         {showArrow && (
           <span className="scroll-arrow">

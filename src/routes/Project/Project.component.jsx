@@ -106,7 +106,7 @@ const Project = () => {
             <ProjectDetailStatus>
               {project.important && (
                 <span className="featured-badge" aria-label="Featured Project">
-                  ★ Featured
+                  Featured
                 </span>
               )}
               <span

@@ -45,7 +45,6 @@ const ImageCarousel = ({ images }) => {
           <img
             src={images[current].src}
             alt={images[current].alt}
-            style={{ maxWidth: "500px", cursor: "pointer", width: "500px" }}
             onClick={() => setModalOpen(true)}
           />
           <PhaseCaption>{images[current].alt}</PhaseCaption>

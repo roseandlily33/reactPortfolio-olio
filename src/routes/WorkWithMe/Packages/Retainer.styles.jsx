@@ -14,7 +14,7 @@ export const RetainerSection = styled.section`
 export const RetainerTitle = styled.h2`
   color: var(--darkPink);
   font-family: var(--headerFont);
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 0.8rem;
   letter-spacing: 0.08em;
   text-align: left;

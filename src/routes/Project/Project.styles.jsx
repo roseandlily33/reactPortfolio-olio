@@ -91,7 +91,9 @@ export const ProjectDetailHeader = styled.div`
     align-items: center;
     gap: 0.5em;
     position: relative;
-    top: -2px;
+    top: 0;
+    margin-right: 0.7em;
+    /* Unified badge style */
   }
   .project-detail-links {
     display: flex;
@@ -124,6 +126,11 @@ export const ProjectDetailsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  /* border: 2px solid red; */
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 `;
 
 export const ProjectDetailMain = styled.div`
@@ -190,12 +197,14 @@ export const ProjectDetailStatus = styled.span`
     font-size: 1.08rem;
     font-weight: 700;
     font-family: var(--headerFont);
-    background: var(--lightPinkBackground);
     letter-spacing: 0.01em;
-    box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
-    line-height: 1.2;
     min-width: 110px;
     text-align: center;
+    line-height: 1.2;
+    margin-right: 0.7em;
+    box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
+    background: var(--lightPinkBackground);
+    align-items: center;
     &.complete {
       color: var(--green);
       background: #eafbe7;
@@ -204,6 +213,7 @@ export const ProjectDetailStatus = styled.span`
       color: var(--yellow);
       background: var(--lightYellowBackground);
     }
+    /* Unified badge style */
   }
 `;
 
@@ -220,6 +230,10 @@ export const ProjectDetailType = styled.span`
   min-width: 110px;
   text-align: center;
   line-height: 1.2;
+  margin-right: 0.7em;
+  box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
+  align-items: center;
+  /* Unified badge style */
 `;
 
 export const ProjectDetailImportant = styled.span`

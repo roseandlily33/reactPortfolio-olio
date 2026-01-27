@@ -26,6 +26,7 @@ export const SectionHeader = styled.h3`
     white-space: normal;
     overflow-x: visible;
     text-overflow: unset;
+    margin-bottom: 1rem;
   }
 `;
 

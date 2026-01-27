@@ -159,6 +159,15 @@ export const PackageCard = styled.div`
     background: ${({ $accent }) =>
     `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
   }
+
+  @media (max-width: 600px) {
+    min-width: 200px;
+    max-width: 200px;
+    width: 50%;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    padding-top: 1.1rem;
+    border: 2px solid red;
+  }
 `;
 
 export const PackageTitle = styled.h3`

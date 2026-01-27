@@ -36,16 +36,19 @@ export const PhaseCarousel = styled.div`
     object-fit: cover;
     cursor: pointer;
     border: 2px solid var(--lightPink);
+    transition: max-width 0.2s;
   }
 
-  @media (max-width: 900px) {
-    & > div {
-      min-width: 90vw;
-      max-width: 95vw;
-      padding: 0.7rem;
-    }
+  @media (max-width: 600px) {
     img {
-      max-width: 90vw;
+      max-width: 260px;
+      max-height: 220px;
+    }
+     & > div {
+      min-width: 50vw;
+      max-width: 50vw;
+      border: 2px solid red;
+      padding: 0.7rem;
     }
   }
 `;

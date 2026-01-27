@@ -169,12 +169,15 @@ export const TopContainer = styled.div`
 `;
 
 export const CaseStudiesGrid = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+display: flex;
   gap: 2.5rem;
   width: 100%;
   padding: 2rem 1rem;
   justify-items: center;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const CaseStudyCard = styled.div`
