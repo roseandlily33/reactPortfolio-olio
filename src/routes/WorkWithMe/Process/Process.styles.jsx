@@ -169,7 +169,7 @@ export const TimelineTitle = styled.h4`
 `;
 
 export const TimelineDesc = styled.p`
-  color: var(--medBrown);
+  /* color: var(--medBrown); */
   font-size: 0.98rem;
   text-align: center;
   margin: 0;
@@ -189,7 +189,7 @@ export const ProcessSectionContainer = styled.section`
   flex-direction: column;
   align-items: center;
   h3 {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2rem;
     font-weight: 800;
     width: 100%;
     text-align: left;
@@ -197,6 +197,12 @@ export const ProcessSectionContainer = styled.section`
     letter-spacing: 0.04em;
     color: var(--darkPink);
     text-transform: capitalize;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 3rem 2rem;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
   }
 `;
 

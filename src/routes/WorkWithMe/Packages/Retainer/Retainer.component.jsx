@@ -25,12 +25,9 @@ const RetainerComponent = () => (
         fontWeight: 500,
       }}
     >
-      Retainer packages provide ongoing support and updates for your website,
-      with flexible options to fit your needs. Pricing reflects the base
-      investment for each retainer tier and includes a set number of support
-      hours. Additional hours or services beyond the included scope may be
-      billed separately. For a custom support plan or to discuss which retainer
-      is right for you, please reach out!
+      Retainer packages offer ongoing support and updates for your website.
+      Choose the tier that fits your needs—extra hours or services can be added
+      anytime.
     </p>
     <RetainerGrid>
       {Retainer.map((ret, idx) => (

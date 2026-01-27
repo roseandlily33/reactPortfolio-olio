@@ -113,7 +113,7 @@ export const TopContainer = styled.div`
   p{
     text-align: center;
     font-size: 1.2rem;
-    color: var(--medBrown);
+    /* color: var(--medBrown); */
     font-style: italic;
   }
 

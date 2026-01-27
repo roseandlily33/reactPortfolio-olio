@@ -22,7 +22,7 @@ import {
   ServiceIcon,
   ServicesTitle,
   ServiceTitle,
-} from "./Services.styles";
+} from "./Services.styles.jsx";
 import { ServicesList } from "./Services.jsx";
 
 const iconMap = {
@@ -80,10 +80,9 @@ const ServicesComponent = () => {
     <ServicesSection>
       <ServicesTitle>Other Services</ServicesTitle>
       <p style={{ fontWeight: 500, marginBottom: "1.5rem" }}>
-        The following services can be added to any project package or requested
-        as standalone solutions. If you need something not listed here, or want
-        to discuss a custom add-on, please reach out—I'm happy to tailor my
-        services to your needs!
+        These services can be added to any project or requested on their own.
+        Need something custom? Just ask—I’m happy to tailor solutions to your
+        needs!
       </p>
       <div style={{ display: "flex", gap: "1.2rem", marginBottom: "2rem" }}>
         {tabOrder.map((tab) => (
@@ -116,7 +115,7 @@ const ServicesComponent = () => {
           <ServiceCard key={service.title}>
             <ServiceIcon>{iconMap[service.title] || <FaCogs />}</ServiceIcon>
             <ServiceTitle>{service.title}</ServiceTitle>
-            <div style={{textAlign: 'center'}}>{service.description}</div>
+            <div style={{ textAlign: "center" }}>{service.description}</div>
           </ServiceCard>
         ))}
       </ServicesGrid>

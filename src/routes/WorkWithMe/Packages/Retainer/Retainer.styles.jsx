@@ -23,13 +23,11 @@ export const RetainerTitle = styled.h2`
 `;
 
 export const RetainerGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 2.5rem;
   width: 100%;
-
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 2rem;
   }
 `;
@@ -62,6 +60,9 @@ export const RetainerCard = styled.div`
     opacity: 0.18;
     z-index: 1;
     background-image: url("https://www.transparenttextures.com/patterns/symphony.png");
+  }
+  @media (max-width: 900px) {
+    min-width: 100%;
   }
 `;
 
@@ -99,36 +100,44 @@ export const RetainerIncludes = styled.details`
   summary {
     list-style: none;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.7rem;
-    color: var(--medBrown);
+    gap: 0.5em;
+    color: var(--medBerry);
     font-weight: 600;
     background: transparent;
     padding: 0.18rem 0;
     outline: none;
-    font-size: 1.05rem;
+    font-size: 1.09rem;
     position: relative;
+    transition: color 0.2s;
+    vertical-align: middle;
   }
-  /* .includes-line {
-    display: inline-block;
-    height: 2px;
-    width: 24px;
-    background: #FF8C40;
-    border-radius: 2px;
-    margin-left: 0.6em;
-  } */
   .chev {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.1em;
     transition:
       transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
       color 180ms;
-    font-size: 1.05rem;
-    color: var(--medBrown);
+    font-size: 1.25rem;
+    color: var(--darkBerry);
     will-change: transform, color;
+    line-height: 1;
+    height: 1.25em;
+  }
+  summary:hover,
+  summary:focus {
+    color: var(--darkPink);
+  }
+  summary:hover .chev,
+  summary:focus .chev {
+    color: var(--darkPink);
+    transform: scale(1.18) rotate(10deg);
   }
   &[open] .chev {
-    transform: rotate(180deg);
+    transform: rotate(180deg) scale(1.08);
+    color: var(--darkPink);
   }
   .includes-content {
     max-height: 0;

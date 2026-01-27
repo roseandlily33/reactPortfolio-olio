@@ -55,20 +55,22 @@ const NotSure = () => (
     <NotSureList>
       {packageDescriptions.map((pkg) => (
         <NotSureItem key={pkg.label}>
-          <span
-            style={{
-              color: pkg.color,
-              marginRight: "0.6em",
-              fontSize: "1.35em",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            {pkg.icon}
-          </span>
-          <span className="pkg-label" style={{ color: pkg.color }}>
-            {pkg.label}:
-          </span>{" "}
+          <div style={{ display: "flex" }}>
+            <span
+              style={{
+                color: pkg.color,
+                marginRight: "0.6em",
+                fontSize: "1.35em",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              {pkg.icon}
+            </span>
+            <span className="pkg-label" style={{ color: pkg.color }}>
+              {pkg.label}:
+            </span>{" "}
+          </div>
           <span className="pkg-desc">{pkg.desc}</span>
         </NotSureItem>
       ))}

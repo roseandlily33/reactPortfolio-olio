@@ -396,3 +396,59 @@ html {
     font-size: 0.8rem; /* Reduced from 1rem */
   }
 }
+
+/* For Forms */
+label {
+  color: var(--darkPink);
+  font-weight: 700;
+  font-size: 1.18rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  align-self: flex-start;
+}
+
+input,
+select {
+  border: 1.5px solid var(--lightPink);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  color: var(--darkBerry);
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.05);
+  transition:
+    box-shadow 0.3s,
+    border-color 0.3s;
+  font-family: var(--headerFont), inherit;
+}
+input:focus,
+select:focus {
+  box-shadow: 0 0 10px var(--lightPink);
+  border-color: var(--darkPink);
+}
+
+textarea {
+  border: 1.5px solid var(--lightPink);
+  border-radius: 22px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  color: var(--darkBerry);
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.05);
+  transition:
+    box-shadow 0.3s,
+    border-color 0.3s;
+  font-family: var(--headerFont), inherit;
+  resize: vertical;
+  min-height: 90px;
+  max-height: 220px;
+}
+textarea:focus {
+  box-shadow: 0 0 10px var(--lightPink);
+  border-color: var(--darkPink);
+}

@@ -9,13 +9,19 @@ export const ServicesSection = styled.section`
   flex-direction: column;
   align-items: center;
   position: relative;
+  gap: 1rem;
+  p {
+    text-align: left;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
   @media (max-width: 900px) {
-    padding: 1.5rem 0.7rem;
+    padding: 2rem 1rem;
     &::before, &::after {
       display: none !important;
     }
     p {
-      text-align: center !important;
+      /* text-align: center !important; */
     }
   }
 `;
@@ -23,7 +29,7 @@ export const ServicesSection = styled.section`
 export const ServicesTitle = styled.h2`
   color: var(--medGrey);
   font-family: var(--headerFont);
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   /* margin-bottom: 1.5rem; */
   margin-bottom: 0.8rem;
   letter-spacing: 0.08em;

@@ -1,8 +1,8 @@
 import React from "react";
-import ContactMe from "../AboutMe/Contact";
-import PackagesComponent from "./Packages/Packages.component";
-import ServicesComponent from "./Packages/Services.component";
-import RetainerComponent from "./Packages/Retainer.component";
+import ContactMe from "../AboutMe/ContactForm/Contact";
+import PackagesComponent from "./Packages/PackagesInfo/Packages.component";
+import ServicesComponent from "./Packages/Services/Services.component";
+import RetainerComponent from "./Packages/Retainer/Retainer.component";
 import { AboutMeComponent } from "../AboutMe/AboutMe.styles";
 import ProcessSection from "./Process/Process.component";
 import NotSure from "./NotSure/NotSure.component";

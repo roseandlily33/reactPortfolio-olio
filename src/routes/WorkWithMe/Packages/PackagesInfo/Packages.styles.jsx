@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
@@ -32,7 +33,9 @@ export const PackagesGrid = styled.div`
 
   & > div {
     flex: 0 0 340px;
+    max-width: 100vw;
     scroll-snap-align: start;
+    /* border: 2px solid red; */
   }
 
   .scroll-arrow {
@@ -52,7 +55,7 @@ export const PackagesGrid = styled.div`
     color: var(--darkPink);
     font-size: 2rem;
     opacity: 0.85;
-    pointer-events: none;
+    pointer-events: auto;
     transition: opacity 0.4s;
     user-select: none;
   }
@@ -62,7 +65,7 @@ export const PackagesGrid = styled.div`
     transition: opacity 0.4s;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     gap: 1.5rem;
     padding: 1.2rem 0.5rem;
     .scroll-arrow {
@@ -72,8 +75,8 @@ export const PackagesGrid = styled.div`
       font-size: 1.5rem;
     }
     & > div {
-      flex: 0 0 80vw;
-      max-width: 90vw;
+      flex: 0 0 70vw;
+      max-width: 70vw;
     }
   }
   @media (max-width: 600px) {
@@ -86,8 +89,8 @@ export const PackagesGrid = styled.div`
       font-size: 1.1rem;
     }
     & > div {
-      flex: 0 0 90vw;
-      max-width: 95vw;
+      flex: 0 0 70vw;
+      max-width: 70vw;
     }
   }
 `;
@@ -103,7 +106,7 @@ export const PackageCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 270px;
+  min-width: 220px;
   max-width: 400px;
   width: 100%;
   transition: transform 0.18s;
@@ -160,13 +163,21 @@ export const PackageCard = styled.div`
     `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
   }
 
-  @media (max-width: 600px) {
-    min-width: 200px;
-    max-width: 200px;
-    width: 50%;
+  @media (max-width: 768px) {
+    min-width: 180px;
+    max-width: 80vw;
+    width: 80vw;
     padding: 1.2rem 0.7rem 1rem 0.7rem;
     padding-top: 1.1rem;
-    border: 2px solid red;
+  }
+  @media (max-width: 600px) {
+    min-width: 140px;
+    max-width: 90vw;
+    width: 90vw;
+    padding: 1rem 0.4rem 0.8rem 0.4rem;
+    padding-top: 0.8rem;
+    /* Remove debug border */
+    border: none;
   }
 `;
 
@@ -174,7 +185,7 @@ export const PackageTitle = styled.h3`
   font-family: var(--headerFont);
   font-size: 1.85rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -185,7 +196,8 @@ export const PackageTitle = styled.h3`
 `;
 
 export const PackagePrice = styled.div`
-  color: var(--darkBrown);
+  /* color: var(--darkBrown); */
+  color: var(--darkBerry);
   font-size: 1.3rem;
   font-weight: 750;
   margin-bottom: 0.7rem;
@@ -218,7 +230,7 @@ export const PackageFeatures = styled.ul`
 
 export const PackageIcon = styled.div`
   font-size: 1.9rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +251,8 @@ export const PackageDetails = styled.details`
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    color: ${({ $accent }) => $accent || "var(--darkPink)"};
+    /* color: ${({ $accent }) => $accent || "var(--darkPink)"}; */
+    color: var(--darkBerry);
     font-weight: 600;
     background: transparent;
     padding: 0.25rem 0;
@@ -311,4 +324,25 @@ export const ComesWithItem = styled.li`
   margin-bottom: 0.7rem;
   display: flex;
   align-items: center;
+`;
+export const TimelineBadge = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  background: ${({ $bg }) => $bg || 'var(--lightPink)'};
+  color: ${({ $color }) => $color || 'var(--darkPink)'};
+  font-size: 0.98rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.28em 0.85em 0.28em 0.7em;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 1px 6px rgba(241,116,150,0.10);
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 2;
+  svg {
+    font-size: 1em;
+    margin-right: 0.3em;
+    vertical-align: middle;
+  }
 `;

@@ -1,7 +1,13 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ContactMeSection } from "./AboutMe.styles";
-import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
+import {
+  ContactMeSection,
+  ContactRow,
+  ContactFormCol,
+  ContactInfoCol,
+  ContactInfo,
+} from "./Contact.styles";
+import PrimaryButton from "../../../components/Buttons/PrimaryButton.component";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -9,36 +15,7 @@ import {
   FaLinkedin,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-
-// List of services for the dropdown (alphabetical order, matches current offerings)
-const contactServices = [
-  // Uncertain option
-  "I'm not sure yet (let's chat)",
-  // Packages
-  "Design Foundation",
-  "Website Essentials",
-  "Professional Website",
-  "Custom Platform",
-  // Retainers
-  "Mini - Monthly Retainer",
-  "Boost - Quarterly Retainer",
-  "Momentum - Annual Retainer",
-  // Services
-  "UI/UX Audit",
-  "Website Redesign",
-  "Performance Optimization",
-  "SEO Setup",
-  "E-Commerce Integration",
-  "Blog Setup",
-  "API Integration",
-  "Maintenance & Support",
-  "Content Management System (CMS)",
-  "Branding & Logo Design",
-  "Hosting & Deployment",
-  "Training & Documentation",
-  "Cyber Security Review",
-  "Custom Email Solutions",
-];
+import { contactServices } from "./ContactServices";
 
 const ContactMe = () => {
   const [name, setName] = useState("");
@@ -73,18 +50,11 @@ const ContactMe = () => {
   return (
     <ContactMeSection>
       <h3>Let’s Build Something Amazing Together</h3>
-      <p
-        style={{
-          marginBottom: "0.5rem",
-          fontWeight: "400",
-          fontSize: "1.1rem",
-        }}
-      >
-        Interested in working with me? Select what you need and tell me about
-        your project!
-      </p>
-      <div className="contact-row">
-        <div className="contact-form-col">
+      <div className="contact-intro">
+        Ready to start your project or have questions? Select a service or just say hello—let’s connect and make something great!
+      </div>
+      <ContactRow>
+        <ContactFormCol>
           <form ref={form} onSubmit={handleFormSubmit}>
             <label>Name: </label>
             <input
@@ -132,9 +102,9 @@ const ContactMe = () => {
               onClick={handleFormSubmit}
             />
           </form>
-        </div>
-        <div className="contact-info-col">
-          <div className="contact-info">
+        </ContactFormCol>
+        <ContactInfoCol>
+          <ContactInfo>
             <div className="contact-row-item">
               <a
                 href="mailto:vrose834@email.com"
@@ -181,9 +151,9 @@ const ContactMe = () => {
                 <FaLinkedin />
               </a>
             </div>
-          </div>
-        </div>
-      </div>
+          </ContactInfo>
+        </ContactInfoCol>
+      </ContactRow>
     </ContactMeSection>
   );
 };

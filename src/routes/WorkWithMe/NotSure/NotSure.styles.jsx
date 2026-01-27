@@ -53,7 +53,7 @@ export const NotSureItem = styled.li`
     font-weight: 400;
     font-size: 1.04rem;
   }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1600px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.6rem;
