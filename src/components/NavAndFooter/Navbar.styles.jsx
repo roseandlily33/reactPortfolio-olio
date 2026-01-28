@@ -105,7 +105,7 @@ export const Hamburger = styled.button`
   span {
     width: 26px;
     height: 4px;
-    background: var(--darkPink);
+    background: var(--pink-4);
     margin: var(--spacing-xxxs) 0;
     border-radius: 2px;
     transition: 0.35s cubic-bezier(0.68, -0.55, 0.27, 1.55);

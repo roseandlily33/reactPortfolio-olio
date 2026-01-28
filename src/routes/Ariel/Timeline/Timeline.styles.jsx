@@ -21,23 +21,10 @@ export const TimelineItem = styled.li`
   /* color: var(--darkGrey); */
   line-height: 1.7;
   transition: box-shadow 0.18s;
-  border: 2px solid var(--darkPink);
-
-  /* &:before {
-    content: "";
-    position: absolute;
-    left: 1.2rem;
-    top: 1.7rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    background: var(--darkPink);
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 2px var(--medPink);
-  } */
+  border: 2px solid var(--pink-5);
 
   strong {
-    color: var(--darkPink);
+    color: var(--pink-5);
     font-size: 1.13rem;
     font-family: var(--headerFont);
     display: block;

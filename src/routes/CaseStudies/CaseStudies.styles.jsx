@@ -70,7 +70,7 @@ export const EachCaseStudyContainer = styled.div`
     font-size: var(--spacing-m);
     font-weight: bold;
     color: var(--white);
-    background-color: var(--darkPink);
+    background-color: var(--pink-4);
     border-radius: var(--borderRadius);
     text-decoration: none;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
@@ -79,7 +79,7 @@ export const EachCaseStudyContainer = styled.div`
       transform 0.3s ease;
 
     &:hover {
-      background-color: var(--medPink);
+      background-color: var(--pink-5);
       transform: translateY(-3px);
       box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
     }
@@ -104,7 +104,7 @@ export const EachCaseStudyContainer = styled.div`
 `;
 
 export const TopContainer = styled.div`
-  background-color: var(--lightCream);
+  background-color: var(--grey-2);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23F38CA9' fill-opacity='0.1' d='M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,240C672,256,768,256,864,240C960,224,1056,192,1152,160C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
   background-size: cover;
   background-position: center;
@@ -143,7 +143,7 @@ export const TopContainer = styled.div`
     background: var(--white);
     border-radius: var(--spacing-xl);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    color: var(--darkPink);
+    color: var(--pink-5);
     cursor: pointer;
     transition:
       background 0.2s,
@@ -153,7 +153,7 @@ export const TopContainer = styled.div`
   }
 
   .tabs > *.active {
-    background: var(--medPink);
+    background: var(--pink-3);
     color: var(--white);
   }
 
@@ -243,7 +243,7 @@ export const CaseStudyTitle = styled.h6`
 `;
 
 export const CaseStudyButton = styled.button`
-  background: var(--darkPink);
+  background: var(--pink-5);
   color: #fff;
   border: none;
   /* border-radius: 999px; */
@@ -261,7 +261,7 @@ export const CaseStudyButton = styled.button`
     transform 0.18s;
 
   &:hover {
-    background: var(--medPink);
+    background: var(--pink-5);
     color: var(--darkBrown);
     transform: scale(1.05);
   }

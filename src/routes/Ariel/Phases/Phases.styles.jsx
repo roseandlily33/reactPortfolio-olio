@@ -4,16 +4,16 @@ export const PhaseCarousel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 1.5rem;
+  gap: var(--spacing-l);
+  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-l);
 
   & > div {
     background: rgba(255, 255, 255, 0.97);
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-    padding: 1.2rem;
+    padding: var(--spacing-m);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +33,11 @@ export const PhaseCarousel = styled.div`
     max-height: 400px;
     /* border-radius: 12px; */
     border-radius: var(--borderRadius);
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-m);
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid var(--lightPink);
+    border: 2px solid var(--pink-2);
     transition: max-width 0.2s;
   }
 
@@ -49,28 +49,28 @@ export const PhaseCarousel = styled.div`
      & > div {
       min-width: 50vw;
       max-width: 50vw;
-      border: 2px solid red;
-      padding: 0.7rem;
+      /* border: 2px solid red; */
+      padding: var(--spacing-s);
     }
   }
 `;
 
 export const PhaseCaption = styled.p`
-  font-size: 1rem;
-  color: var(--medGrey);
+  font-size: var(--spacing-m);
+  color: var(--grey-7);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-xs);
   font-style: italic;
 `;
 
 export const CarouselNav = styled.button`
   background: none;
   border: none;
-  font-size: 2.2rem;
-  color: var(--darkPink);
+  font-size: var(--spacing-xl);
+  color: var(--pink-5);
   cursor: pointer;
   align-self: center;
-  padding: 0 1rem;
+  padding: 0 var(--spacing-m);
   transition: color 0.2s;
   &:hover {
     color: var(--yellow);
@@ -96,7 +96,7 @@ export const CarouselImageModal = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    border: 3px solid var(--medPink);
+    border: 3px solid var(--pink-2);
     background: #fff;
   }
 `;
@@ -104,11 +104,11 @@ export const CarouselImageModal = styled.div`
 export const ExpandButton = styled.button`
   background: none;
   border: none;
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-weight: 500;
-  margin-left: 0.5em;
+  margin-left: var(--spacing-xs);
   cursor: pointer;
-  font-size: 1em;
+  font-size: var(--spacing-m);
   text-decoration: underline;
   transition: color 0.2s;
   &:hover {
@@ -117,13 +117,13 @@ export const ExpandButton = styled.button`
 `;
 
 export const CollapsibleText = styled.p`
-  font-size: 1.08rem;
-  color: var(--grey);
-  margin-bottom: 1.2rem;
+  font-size: var(--spacing-m);
+  color: var(--grey-7);
+  margin-bottom: var(--spacing-m);
   line-height: 1.6;
   transition: max-height 0.3s;
   background: rgba(255, 255, 255, 0.7);
   /* border-radius: 12px; */
   border-radius: var(--borderRadius);
-  padding: 1rem 1.2rem;
+  padding: var(--spacing-m) var(--spacing-l);
 `;

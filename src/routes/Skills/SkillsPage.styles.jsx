@@ -102,7 +102,7 @@ export const PillTab = styled.button`
   &.activeTab,
   &:hover {
     background: var(--lightPinkBackground);
-    color: var(--darkPink);
+    color: var(--pink-5);
     box-shadow: 0 4px 16px rgba(241, 116, 150, 0.13);
   }
 `;
@@ -153,7 +153,7 @@ export const SkillInfo = styled.div`
   .skill-icon {
     padding-top: var(--spacing-l);
     font-size: 1.5rem;
-    color: var(--darkPink);
+    color: var(--pink-5);
     display: flex;
     gap: var(--spacing-m);
   }
@@ -190,14 +190,14 @@ export const SkillRating = styled.p`
 
   svg {
     font-size: 1.5rem;
-    color: var(--darkPink);
+    color: var(--pink-5);
     /* border: 1px solid red; */
   }
 `;
 
 export const StarLegendContainer = styled.div`
   .skill-icon {
-    color: var(--darkPink);
+    color: var(--pink-5);
     display: flex;
     align-items: center;
     gap: var(--spacing-m);
@@ -235,10 +235,10 @@ export const TechStackContainer = styled.div`
   background-color: var(--pinkBackground);
 
   .accent-heading {
-    color: var(--darkPink);
+    color: var(--pink-5);
     font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 1.2rem;
+    /* letter-spacing: 0.03em; */
+    margin-bottom: var(--spacing-m);
     font-size: 2rem;
     text-align: left;
     width: 100%;
@@ -277,12 +277,12 @@ export const TechStackContainer = styled.div`
   }
   .animated-icon:hover {
     transform: scale(1.25) rotate(-8deg);
-    color: var(--darkPink);
+    color: var(--pink-4);
   }
 
   .tools-platforms {
     background: var(--lightPinkBackground);
-    border: 1.5px solid var(--lightPink);
+    border: 1.5px solid var(--pink-2);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
     align-items: center;
     padding: var(--spacing-m) var(--spacing-l);
@@ -299,9 +299,9 @@ export const TechStackContainer = styled.div`
     display: inline-flex;
     align-items: center;
     background: #fff;
-    color: var(--darkPink);
+    color: var(--pink-5);
     border-radius: 999px;
-    border: 1.2px solid var(--lightPink);
+    border: 1.2px solid var(--pink-2);
     padding: var(--spacing-xs) var(--spacing-m);
     font-size: 1.01rem;
     font-family: var(--headerFont);
@@ -336,7 +336,7 @@ export const TechStackContainer = styled.div`
     position: fixed;
     bottom: var(--spacing-xl);
     right: var(--spacing-xl);
-    background: var(--darkPink);
+    background: var(--pink-5);
     color: #fff;
     border: none;
     border-radius: 999px;
@@ -354,8 +354,8 @@ export const TechStackContainer = styled.div`
     opacity: 0.92;
   }
   .back-to-top:hover {
-    background: var(--lightPink);
-    color: var(--darkPink);
+    background: var(--pink-2);
+    color: var(--pink-5);
     opacity: 1;
   }
 

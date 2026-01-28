@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
 export const BeforeAfterCaption = styled.div`
-  font-size: 1rem;
-  color: var(--medGrey);
-  margin-bottom: 1.2rem;
+  font-size:var(--spacing-m);
+  color: var(--grey-6);
+  margin-bottom: var(--spacing-m);
 `;
 
 export const BeforeAfterImages = styled.div`
   display: flex;
-  gap: 2.5rem;
+  gap: var(--spacing-xxl);
   width: 100%;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-xl);
 
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-xl);
     align-items: center;
   }
 `;
@@ -37,21 +37,20 @@ export const BeforeAfterImageWrapper = styled.div`
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
     cursor: pointer;
-    border: 2px solid var(--lightPink);
+    border: 2px solid var(--pink-2);
     transition: box-shadow 0.18s, border 0.18s;
     &:hover {
       box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-      border: 2px solid var(--darkPink);
+      border: 2px solid var(--pink-5);
     }
   }
 `;
 
 export const BeforeAfterLabel = styled.div`
   font-size: 1.08rem;
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-weight: 600;
-  margin-bottom: 0.7rem;
-  letter-spacing: 0.03em;
+  margin-bottom: var(--spacing-s);
 `;
 
 export const FullscreenModal = styled.div`
@@ -73,7 +72,7 @@ export const FullscreenModal = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    border: 3px solid var(--medPink);
+    border: 3px solid var(--pink-2);
     background: #fff;
   }
 `;

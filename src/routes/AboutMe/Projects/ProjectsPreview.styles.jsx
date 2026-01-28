@@ -61,7 +61,7 @@ export const CertificateTitle = styled.p`
 `;
 
 export const SeeCertificatesButton = styled.button`
-  background: var(--darkPink);
+  background: var(--pink-5);
   color: #fff;
   border: none;
   /* border-radius: 999px; */
@@ -79,8 +79,8 @@ export const SeeCertificatesButton = styled.button`
     transform 0.18s;
 
   &:hover {
-    background: var(--medPink);
-    color: var(--darkBrown);
+    background: var(--pink-3);
+    color: var(--orange-5);
     transform: scale(1.05);
   }
 `;

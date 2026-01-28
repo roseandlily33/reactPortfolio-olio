@@ -8,8 +8,8 @@ import Labels from "../bloom_images/Labels.png";
 
 const GalleryBB = () => {
   const stylesForH4 = {
-    marginBottom: "0.5rem",
-    color: "var(--darkPink)",
+    marginBottom: "var(--spacing-xs);",
+    color: "var(--pink-4)",
     fontWeight: "500",
   };
   return (

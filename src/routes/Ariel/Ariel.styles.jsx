@@ -19,7 +19,7 @@ export const ArielMain = styled.main`
   width: 85%;
   box-sizing: border-box;
   padding: var(--spacing-xxl) var(--spacing-xl);
-  background: var(--lightestPink);
+  background: var(--pink-2);
   /* border-radius: 25px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
@@ -102,7 +102,7 @@ export const PaletteCarousel = styled.div`
 
 export const PaletteCaption = styled.p`
   /* font-size: 1rem; */
-  color: var(--medGrey);
+  color: var(grey-6);
   text-align: center;
   margin-top: var(--spacing-xs);
   font-style: italic;
@@ -145,7 +145,7 @@ export const PhaseCarousel = styled.div`
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid var(--lightPink);
+    border: 2px solid var(--pink-2);
   }
 
   @media (max-width: 900px) {
@@ -162,7 +162,7 @@ export const PhaseCarousel = styled.div`
 
 export const PhaseCaption = styled.p`
   /* font-size: 1rem; */
-  color: var(--medGrey);
+  color: var(--grey-6);
   text-align: center;
   margin-top: var(--spacing-xs);
   font-style: italic;
@@ -172,7 +172,7 @@ export const CarouselNav = styled.button`
   background: none;
   border: none;
   font-size: 2.2rem;
-  color: var(--darkPink);
+  color: var(--pink-5);
   cursor: pointer;
   align-self: center;
   padding: 0 var(--spacing-m);
@@ -201,14 +201,14 @@ export const CarouselImageModal = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    border: 3px solid var(--medPink);
+    border: 3px solid var(--pink-3);
   }
 `;
 
 export const ExpandButton = styled.button`
   background: none;
   border: none;
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-weight: 500;
   margin-left: var(--spacing-xs);
   cursor: pointer;
@@ -222,7 +222,7 @@ export const ExpandButton = styled.button`
 
 export const CollapsibleText = styled.p`
   /* font-size: 1.08rem; */
-  color: var(--grey);
+  color: var(--grey-6);
   margin-bottom: var(--spacing-m);
   line-height: 1.6;
   transition: max-height 0.3s;
@@ -232,8 +232,8 @@ export const TestimonialSection = styled.section`
   width: 100%;
   background: linear-gradient(
     90deg,
-    var(--lightPink) 0%,
-    var(--lightestPink) 100%
+    var(--pink-2) 0%,
+    var(--pink-3) 100%
   );
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);
@@ -244,13 +244,13 @@ export const TestimonialSection = styled.section`
   flex-direction: column;
   align-items: center;
   font-style: italic;
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-size: 1.25rem;
 `;
 
 export const CTASection = styled.section`
   width: 100%;
-  background: linear-gradient(90deg, var(--medPink) 0%, var(--lightPink) 100%);
+  background: linear-gradient(90deg, var(--pink-2) 0%, var(--pink-3) 100%);
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 16px rgba(241, 116, 150, 0.1);
@@ -263,7 +263,7 @@ export const CTASection = styled.section`
   font-size: 1.3rem;
 
   button {
-    background: var(--darkPink);
+    background: var(--pink-5);
     color: #fff;
     border: none;
     /* border-radius: 999px; */
@@ -274,7 +274,7 @@ export const CTASection = styled.section`
     font-weight: 600;
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin-top: var(--spacing-l);
     transition:
       background 0.2s,
       color 0.2s,

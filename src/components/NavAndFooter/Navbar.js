@@ -30,8 +30,8 @@ const Navbar = () => {
   const styles = {
     navLink: {
       textDecoration: "none",
-      color: "#3D4249",
-      padding: "0.5rem",
+      color: "var(--grey-7)",
+      padding: "var(--spacing-s)",
     },
   };
 
@@ -72,14 +72,14 @@ const Navbar = () => {
         to="/Work"
         style={{
           ...styles.navLink,
-          background: "var(--darkPink)",
+          background: "var(--pink-5)",
           color: "#fff",
           borderRadius: "999px",
-          padding: "0.5em 1.2em",
+          padding: "var(--spacing-s) var(--spacing-m)",
           fontWeight: 600,
-          marginLeft: "0.7em",
+          marginLeft: "var(--spacing-s)",
           boxShadow: "0 2px 12px rgba(241,116,150,0.12)",
-          border: "2px solid var(--darkPink)",
+          border: "2px solid var(--pink-5)",
           transition: "background 0.2s, color 0.2s",
         }}
         onClick={() => setMenuOpen(false)}

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 // Very outer container
 export const AboutMeComponent = styled.main`
-  margin-inline: 1rem;
-  margin-top: 1rem;
+  margin-inline: var(--spacing-m);
+  margin-top: var(--spacing-m);
   height: 100%;
 `;
 // Top container with the picture
@@ -11,7 +11,7 @@ export const AboutMePicture = styled.section`
   /* border-radius: 25px; */
   border-radius: var(--borderRadius);
   /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
   svg {
     /* border-radius: 25px; */
     border-radius: var(--borderRadius);
@@ -20,12 +20,12 @@ export const AboutMePicture = styled.section`
     position: relative;
     z-index: 1;
     top: 0;
-    left: 1rem;
+    left: var(--spacing-m);
   }
   p {
     position: relative;
     z-index: 1;
-    left: 1rem;
+    left: var(--spacing-m);
     color: ${({ theme }) => theme.colors.lightPink};
     font-size: 1.3rem;
     font-weight: 500;
@@ -36,10 +36,10 @@ export const AboutMePicture = styled.section`
     text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
-      ${({ theme }) => theme.colors.lightPink} 0%,
-      ${({ theme }) => theme.colors.darkPink} 29%,
-      ${({ theme }) => theme.colors.medBrown} 67%,
-      ${({ theme }) => theme.colors.yellow} 100%
+      var(--pink-1) 0%,
+      var(--pink-5) 29%,
+      var(--orange-5) 67%,
+      var(--yellow) 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -52,7 +52,7 @@ export const AboutMePicture = styled.section`
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-size: 8rem;
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-xl);
   }
 
   @keyframes textclip {
@@ -64,9 +64,6 @@ export const AboutMePicture = styled.section`
     h2 {
       left:0;
     }
-    p {
-      font-size: 1rem;
-    }
   }
 `;
 //This is the part that has my pic and info about me
@@ -75,13 +72,13 @@ export const AboutMeSection = styled.section`
   justify-content: space-evenly;
   background-color: #fff;
   /* border: 2px solid red; */
-  padding: 3rem;
+  padding: var(--spacing-xxl);
   a {
-    color: ${({ theme }) => theme.colors.darkPink};
+    color: var(--pink-5);
     font-weight: bold;
   }
   a:hover {
-    color: ${({ theme }) => theme.colors.yellow};
+    color: var(--yellow);
   }
   .left {
     width: 50%;
@@ -93,7 +90,7 @@ export const AboutMeSection = styled.section`
     width: 80%;
     /* border-radius: 25px; */
     border-radius: var(--borderRadius);
-    border: 10px solid ${({ theme }) => theme.colors.lightGrey};
+    border: 10px solid var(--grey-2);
   }
   .right {
     width: 50%;
@@ -108,30 +105,26 @@ export const AboutMeSection = styled.section`
     /* border: 1px solid green; */
   }
   h3 {
-    color: var(--darkBrown);
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    margin-bottom: 0.7rem;
+    margin-bottom: var(--spacing-s);
     text-transform: capitalize;
   }
   p,
   span,
   li {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding-right: 0.5rem;
+    margin-bottom: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
   }
   .bold {
     font-weight: 700;
-    color: var(--medBrown);
+    color: var(--orange-5);
   }
 
   #downloadBtn {
     width: 100%;
   }
   #downloadBtn a {
-    color: ${({ theme }) => theme.colors.lightGrey};
+    color: var(--grey-2);
   }
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
@@ -142,7 +135,7 @@ export const AboutMeSection = styled.section`
       display: none;
     }
     #downloadBtn {
-      margin-top: 2rem;
+      margin-top: var(--spacing-l);
     }
   }
 `;
@@ -152,6 +145,6 @@ export const AboutMeSkills = styled.section`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: var(--spacing-xl);
   /* margin-bottom: 3rem; */
 `;

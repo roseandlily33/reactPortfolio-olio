@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PackagesSection = styled.section`
   background-color: var(--pinkBackground);
   /* padding: 4rem 2rem 1rem 2rem; */
-  padding: 5rem 2rem;
+  padding: var(--spacing-xxxxl) var(--spacing-xl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -11,7 +11,7 @@ export const PackagesSection = styled.section`
   align-items: center;
   h2 {
     /* margin-bottom: 2rem; */
-    margin-bottom: 0.8rem;
+    margin-bottom: var(--spacing-s);
     font-weight: 700;
     /* border: 1px solid red; */
     width: 100%;
@@ -21,10 +21,10 @@ export const PackagesSection = styled.section`
 
 export const PackagesGrid = styled.div`
   display: flex;
-  gap: 2.5rem;
+  gap: var(--spacing-xxl);
   width: 100%;
   overflow-x: auto;
-  padding: 2rem;
+  padding: var(--spacing-xl);
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   position: relative;
@@ -40,7 +40,7 @@ export const PackagesGrid = styled.div`
   .scroll-arrow {
     position: absolute;
     top: 50%;
-    right: 0.5rem;
+    right: var(--spacing-xs);
     transform: translateY(-50%);
     z-index: 10;
     background: rgba(255, 255, 255, 0.85);
@@ -51,7 +51,7 @@ export const PackagesGrid = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--darkPink);
+    color: var(--pink-5);
     font-size: 2rem;
     opacity: 0.85;
     pointer-events: auto;
@@ -65,13 +65,13 @@ export const PackagesGrid = styled.div`
   }
 
   @media (max-width: 768px) {
-    gap: 1.5rem;
-    padding: 1.2rem 0.5rem;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-m) var(--spacing-xs);
     .scroll-arrow {
-      right: 0.2rem;
-      width: 2em;
-      height: 2em;
-      font-size: 1.5rem;
+      right: var(--spacing-xxxs);
+      width: var(--spacing-xl);
+      height: var(--spacing-xl);
+      font-size: var(--spacing-xl);
     }
     & > div {
       flex: 0 0 70vw;
@@ -79,13 +79,13 @@ export const PackagesGrid = styled.div`
     }
   }
   @media (max-width: 600px) {
-    gap: 1.2rem;
-    padding: 0.7rem 0.1rem;
+    gap: var(--spacing-m);
+    padding: var(--spacing-s) var(--spacing-xxs);
     .scroll-arrow {
-      right: 0.1rem;
-      width: 1.7em;
-      height: 1.7em;
-      font-size: 1.1rem;
+      right: var(--spacing-xxxs);
+      width: var(--spacing-l);
+      height: var(--spacing-l);
+      font-size: var(--spacing-m);
     }
     & > div {
       flex: 0 0 70vw;
@@ -102,7 +102,7 @@ export const PackageCard = styled.div`
   border-radius: var(--borderRadius);
   border: none;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 2.2rem 1.8rem 1.6rem 1.8rem;
+  padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -111,7 +111,7 @@ export const PackageCard = styled.div`
   width: 100%;
   transition: transform 0.18s;
   position: relative;
-  padding-top: 2.05rem;
+  padding-top: var(--spacing-xl);
   /* 6. Subtle noise/texture overlay */
   &::after {
     content: "";
@@ -155,28 +155,28 @@ export const PackageCard = styled.div`
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background: ${({ $accent, $accentSoft }) =>
-      `linear-gradient(90deg, ${$accent || "var(--darkPink)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
+      `linear-gradient(90deg, ${$accent || "var(--pink-5)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
     z-index: 2;
     transition: background 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   }
   &:hover::before {
     background: ${({ $accent }) =>
-      `linear-gradient(90deg, ${$accent || "var(--darkPink)"} 0%, #fff0 100%)`};
+      `linear-gradient(90deg, ${$accent || "var(--pink-5)"} 0%, #fff0 100%)`};
   }
 
   @media (max-width: 768px) {
     min-width: 180px;
     max-width: 80vw;
     width: 80vw;
-    padding: 1.2rem 0.7rem 1rem 0.7rem;
-    padding-top: 1.1rem;
+    padding: var(--spacing-m) var(--spacing-s);
+    padding-top: var(--spacing-m);
   }
   @media (max-width: 600px) {
     min-width: 140px;
     max-width: 90vw;
     width: 90vw;
-    padding: 1rem 0.4rem 0.8rem 0.4rem;
-    padding-top: 0.8rem;
+    padding:  var(--spacing-s) var(--spacing-xs);
+    padding-top: var(--spacing-s);
     /* Remove debug border */
     border: none;
   }
@@ -186,19 +186,19 @@ export const PackageTitle = styled.h3`
   font-family: var(--headerFont);
   font-size: 1.85rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-s);
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: var(--spacing-xs);
   /* text-transform: uppercase; */
   text-transform: capitalize;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: ${({ $titleColor }) => $titleColor || "inherit"};
 `;
 
 export const PackagePrice = styled.div`
   /* color: var(--darkBrown); */
-  color: var(--darkBerry);
+  color: var(--pink-7);
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: var(--spacing-xs);
@@ -211,7 +211,7 @@ export const PackageDescription = styled.p`
 `;
 
 export const PackageFeatures = styled.ul`
-  color: var(--darkBrown);
+  color: var(--orange-6);
   font-size: var(--spacing-m);
   margin: 0;
   padding-left: var(--spacing-m);
@@ -253,7 +253,7 @@ export const PackageDetails = styled.details`
     align-items: center;
     gap: var(--spacing-m);
     /* color: ${({ $accent }) => $accent || "var(--darkPink)"}; */
-    color: var(--darkBerry);
+    color: var(--pink-7);
     font-weight: 600;
     background: transparent;
     padding: var(--spacing-xxs) 0;
@@ -265,16 +265,16 @@ export const PackageDetails = styled.details`
       transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
       color 180ms;
     font-size: var(--spacing-m);
-    color: ${({ $accent }) => $accent || "var(--darkBerry)"};
+    color: ${({ $accent }) => $accent || "var(--pink-7)"};
     will-change: transform, color;
   }
   summary:hover .chev {
-    color: ${({ $accent }) => $accent || "var(--darkPink)"};
+    color: ${({ $accent }) => $accent || "var(--pink-5)"};
     transform: scale(1.25) rotate(10deg);
   }
   &[open] .chev {
     transform: rotate(180deg) scale(1.15);
-    color: ${({ $accent }) => $accent || "var(--darkPink)"};
+    color: ${({ $accent }) => $accent || "var(--pink-5)"};
   }
   .includes-content {
     max-height: 0;
@@ -305,7 +305,7 @@ export const ComesWithSection = styled.section`
 `;
 
 export const ComesWithTitle = styled.h4`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   font-size: 1.3rem;
   margin-bottom: var(--spacing-m);
@@ -321,7 +321,7 @@ export const ComesWithListStyled = styled.ul`
 `;
 
 export const ComesWithItem = styled.li`
-  color: var(--darkBrown);
+  color: var(--orange-6);
   font-size: 1.05rem;
   margin-bottom: var(--spacing-s);
   display: flex;
@@ -331,8 +331,8 @@ export const TimelineBadge = styled.span`
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
-  background: ${({ $bg }) => $bg || "var(--lightPink)"};
-  color: ${({ $color }) => $color || "var(--darkPink)"};
+  background: ${({ $bg }) => $bg || "var(--pink-2)"};
+  color: ${({ $color }) => $color || "var(--pink-5)"};
   font-size: var(--spacing-m);
   font-weight: 600;
   border-radius: 999px;

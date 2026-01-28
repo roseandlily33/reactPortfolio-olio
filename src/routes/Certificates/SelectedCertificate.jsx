@@ -34,8 +34,8 @@ const SelectedCertificate = ({
               height: "auto",
               maxHeight: "90vh",
               borderRadius: "var(--borderRadius)",
-              backgroundColor: "var(--lightCream)",
-              border: "1.5px solid var(--medBrown)",
+              backgroundColor: "var(--grey-2)",
+              border: "1.5px solid var(--orange-4)",
               boxShadow:
                 "0 8px 40px 0 rgba(60,60,60,0.18), 0 1.5px 6px rgba(241,116,150,0.10)",
               overflow: "auto",
@@ -81,7 +81,7 @@ const SelectedCertificate = ({
               style={{
                 fontSize: "1.35rem",
                 fontFamily: "var(--headerFont)",
-                color: "var(--darkPink)",
+                color: "var(--pink-5)",
                 fontWeight: 700,
                 margin: "0 0 var(--spacing-s)  0",
                 textAlign: "center",
@@ -95,7 +95,7 @@ const SelectedCertificate = ({
               <span
                 style={{
                   fontSize: "1.08rem",
-                  color: "var(--medPink)",
+                  color: "var(--pink-4)",
                   fontWeight: 700,
                   fontFamily: "var(--headerFont)",
                   background: "rgba(241, 116, 150, 0.08)",

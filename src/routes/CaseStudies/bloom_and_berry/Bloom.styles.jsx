@@ -23,19 +23,19 @@ export const BloomStudyCase = styled.div`
     /* border: 2px solid red; */
   /* } */
   h3 {
-    color: var(--darkPink);
+    color: var(--pink-5);
     margin-bottom: var(--spacing-m);
     /* font-weight: 600; */
     animation: fadeIn 1s ease-in-out;
   }
   h4 {
-    color: var(--medPink);
+    color: var(--pink-4);
     margin-bottom: var(--spacing-xs); 
     /* font-weight: 500; */
     animation: fadeIn 1s ease-in-out;
   }
   h5 {
-    color: var(--medBrown);
+    color: var(--orange-4);
     /* font-weight: 300; */
     margin-bottom: var(--spacing-xs); 
     font-style: italic;
@@ -54,7 +54,7 @@ export const BloomStudyCase = styled.div`
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xxxs);
-    border-bottom: 1px solid var(--medPink);
+    border-bottom: 1px solid var(--pink-4);
   }
   .juice p {
     line-height: 1;
@@ -94,7 +94,7 @@ export const BloomStudyCase = styled.div`
     font-size: var(--spacing-m);
     font-weight: bold;
     color: var(--white);
-    background-color: var(--darkPink);
+    background-color: var(--pink-5);
     border-radius: var(--borderRadius);
     text-decoration: none;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
@@ -103,7 +103,7 @@ export const BloomStudyCase = styled.div`
       transform 0.3s ease;
 
     &:hover {
-      background-color: var(--medPink);
+      background-color: var(--pink-2);
       transform: translateY(-3px);
       box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
     }

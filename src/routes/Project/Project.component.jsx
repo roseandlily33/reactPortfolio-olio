@@ -212,7 +212,7 @@ const Project = () => {
               style={{
                 background:
                   activeTab === tab.key ? "var(--medPink)" : "#f8f8f8",
-                color: activeTab === tab.key ? "#fff" : "var(--darkPink)",
+                color: activeTab === tab.key ? "#fff" : "var(--pink-4)",
                 border: "none",
                 borderRadius: "999px",
                 padding: "var(--spacing-xs) var(--spacing-m)",

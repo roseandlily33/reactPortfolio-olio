@@ -16,7 +16,7 @@ const OverviewBB = () => {
           fontWeight: 400,
           fontSize: "2rem",
           letterSpacing: "0.04em",
-          marginBottom: "0.5rem",
+          marginBottom: "var(--spacing-xs);",
         }}
       >
         <FaSeedling
@@ -34,19 +34,19 @@ const OverviewBB = () => {
         target="_blank"
         rel="noopener noreferrer"
         style={{
-          background: "var(--darkPink)",
+          background: "var(--pink-4)",
           color: "#fff",
           fontWeight: 700,
           textDecoration: "none",
           borderRadius: 999,
-          padding: "0.5em 1.3em",
+          padding: "var(--spacing-xs) var(--spacing-l)",
           fontSize: "1rem",
           fontFamily: "var(--headerFont)",
           boxShadow: "0 2px 12px rgba(241, 116, 150, 0.12)",
-          marginBottom: "1.2rem",
-          marginTop: "0.5rem",
+          marginBottom: "var(--spacing-m);",
+          marginTop: "var(--spacing-xs)",
           display: "inline-block",
-          border: "2px solid var(--medPink)",
+          border: "2px solid var(--pink-4)",
         }}
       >
         See Completed Version &rarr; <br />
@@ -99,7 +99,7 @@ const OverviewBB = () => {
       <SectionText>
         A whimsical, botanical brand fusing florals and fruits into a joyful,
         health-forward juice experience.
-        <span style={{ fontStyle: "italic", color: "var(--medPink)" }}>
+        <span style={{ fontStyle: "italic", color: "var(--pink-3)" }}>
           {" "}
           “From petal to press made with love.”
         </span>

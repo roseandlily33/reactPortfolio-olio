@@ -19,10 +19,10 @@ export const NotSureTitleRow = styled.div`
 `;
 
 export const NotSureTitle = styled.h4`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   /* font-size: 1.25rem; */
-  font-weight: 800;
+  font-weight: 700;
   margin: 0;
 `;
 
@@ -42,13 +42,13 @@ export const NotSureItem = styled.li`
   /* color: var(--darkGrey); */
   font-weight: 500;
   .pkg-label {
-    color: var(--darkPink);
+    color: var(--pink-5);
     font-weight: 700;
     font-size: 1.08rem;
     margin-right: var(--spacing-xxxs);
   }
   .pkg-desc {
-    color: var(--medGrey);
+    color: var(--grey-7);
     font-weight: 400;
     font-size: 1.04rem;
   }
@@ -57,7 +57,7 @@ export const NotSureItem = styled.li`
     align-items: flex-start;
     gap: var(--spacing-xs);
     padding-bottom: var(--spacing-m);
-    border-bottom: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--grey-7);
     /* border: 2px solid red; */
   }
 `;
@@ -69,6 +69,6 @@ export const NotSureDot = styled.span`
   border-radius: 50%;
   margin-right: var(--spacing-s);
   margin-top: var(--spacing-xs);
-  background: ${({ color }) => color || "var(--darkPink)"};
+  background: ${({ color }) => color || "var(--pink-5)"};
   flex-shrink: 0;
 `;

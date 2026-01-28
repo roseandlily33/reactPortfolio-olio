@@ -10,7 +10,7 @@ export const ContactRow = styled.div`
   margin: var(--spacing-xl) 0 0 0;
   @media screen and (max-width: 900px) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-l);
     align-items: stretch;
   }
 `;
@@ -20,7 +20,7 @@ export const ContactFormCol = styled.div`
   min-width: 270px;
   max-width: 420px;
   padding-right: var(--spacing-xxl);
-  border-right: 4px solid var(--darkPink);
+  border-right: 4px solid var(--pink-5);
   @media screen and (max-width: 900px) {
     max-width: 100%;
     min-width: 0;
@@ -48,7 +48,7 @@ export const ContactInfo = styled.div`
   gap: var(--spacing-s);
   font-family: var(--headerFont);
   font-size: 1.13rem;
-  color: var(--darkBerry);
+  color: var(--pink-7);
   background: var(--lightPinkBackground);
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
@@ -56,10 +56,10 @@ export const ContactInfo = styled.div`
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   width: 100%;
   .contact-row-item {
-    color: var(--darkBerry);
+    color: var(--pink-6);
     font-weight: 500;
     svg {
-      color: var(--darkBerry);
+      color: var(--pink-7);
       font-size: 1.18rem;
       margin-right: var(--spacing-xs);
       vertical-align: middle;
@@ -67,7 +67,7 @@ export const ContactInfo = styled.div`
     }
   }
   a {
-    color: var(--darkBerry);
+    color: var(--pink-7);
     font-weight: 700;
     text-decoration: none;
     display: flex;
@@ -78,14 +78,14 @@ export const ContactInfo = styled.div`
     transition: color 0.2s;
   }
   a:hover {
-    color: var(--darkPink);
+    color: var(--pink-4);
     svg {
-      color: var(--darkPink);
+      color: var(--pink-5);
     }
   }
   .contact-label {
     font-weight: 600;
-    color: var(--darkBerry);
+    color: var(--pink-6);
     margin-right: var(--spacing-xxxs);
     font-size: 1.03rem;
   }
@@ -95,12 +95,12 @@ export const ContactInfo = styled.div`
     gap: var(--spacing-s);
     margin: var(--spacing-xxs) 0 var(--spacing-xxxs) 0;
     padding-top: var(--spacing-xxs);
-    border-top: 1px solid var(--lightGrey);
+    border-top: 1px solid var(--grey-3);
     width: 100%;
     justify-content: flex-start;
   }
   .icon-link {
-    color: var(--darkBerry);
+    color: var(--pink-7);
     font-size: 1.13rem;
     transition:
       color 0.2s,
@@ -116,7 +116,7 @@ export const ContactInfo = styled.div`
     padding: var(--spacing-xxxs);
   }
   .icon-link:hover {
-    color: var(--darkPink);
+    color: var(--pink-5);
     background: rgba(241, 116, 150, 0.08);
     transform: scale(1.11);
   }
@@ -146,7 +146,7 @@ export const ContactMeSection = styled.section`
     position: absolute;
     width: 120px;
     height: 120px;
-    background-color: ${({ theme }) => theme.colors.lightPink};
+    background-color: var(--pink-2);
     border-radius: 50%;
     opacity: 0.4;
     animation: float 7s infinite ease-in-out;
@@ -175,17 +175,12 @@ export const ContactMeSection = styled.section`
   /* } */
 
   h3 {
-    color: ${({ theme }) => theme.colors.darkPink};
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    color: var(--pink-5);
     text-align: center;
     padding-bottom: var(--spacing-xxs);
     transition: color 0.3s ease;
-    /* font-size: 2.1rem; */
     text-transform: capitalize;
     @media screen and (max-width: 768px) {
-      /* font-size: 1.55rem; */
-      text-transform: capitalize;
       padding-bottom: var(--spacing-xxxs);
     }
   }
@@ -195,7 +190,7 @@ export const ContactMeSection = styled.section`
     font-weight: 400;
     font-size: 1.08rem;
     text-align: center;
-    color: var(--darkBerry);
+    color: var(--pink-7);
     max-width: 600px;
     @media screen and (max-width: 768px) {
       font-size: 1.01rem;

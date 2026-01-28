@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const PaletteCarousel = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: var(--spacing-xl);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
-  margin-top: 2rem;
+  padding-bottom: var(--spacing-m);
+  margin-top: var(--spacing-xl);
 
   & > div {
     flex: 0 0 340px;
@@ -15,7 +15,7 @@ export const PaletteCarousel = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-    padding: 1.2rem;
+    padding: var(--spacing-m);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,26 +37,26 @@ export const PaletteCarousel = styled.div`
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid var(--lightPink);
+    border: 2px solid var(--pink-3);
     transition: box-shadow 0.18s, border 0.18s;
     &:hover {
       box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-      border: 2px solid var(--darkPink);
+      border: 2px solid var(--pink-5);
     }
   }
 
   @media (max-width: 900px) {
-    gap: 1rem;
+    gap: var(--spacing-m);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     & > div {
       min-width: 80vw;
       max-width: 90vw;
-      padding: 0.7rem;
+      padding: var(--spacing-s);
       scroll-snap-align: start;
       /* Add a little margin for swipe affordance */
-      margin-right: 0.5rem;
+      margin-right: var(--spacing-xs);
     }
     img {
       max-width: 80vw;
@@ -75,9 +75,9 @@ export const PaletteCarousel = styled.div`
 `;
 
 export const PaletteCaption = styled.p`
-  font-size: 1rem;
-  color: var(--medGrey);
+  font-size: var(--spacing-m);
+  color: var(--grey-7);
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-xs);
   font-style: italic;
 `;
