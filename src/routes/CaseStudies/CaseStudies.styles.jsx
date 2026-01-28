@@ -13,7 +13,7 @@ export const EachCaseStudyContainer = styled.div`
   /* border: 2px solid orange; */
   gap: var(--spacing-xl);
   height: 100%;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-l);
   background-color: var(--pinkBackground);
 
   /* background: linear-gradient(135deg, var(--lightCream) 50%, var(--lightGrey) 50%); */
@@ -27,7 +27,7 @@ export const EachCaseStudyContainer = styled.div`
   }
 
   h3 {
-    color: var(--darkPink);
+    /* color: var(--pink-5); */
     margin-bottom: var(--spacing-l);
     animation: fadeIn 1s ease-in-out;
   }
@@ -115,7 +115,7 @@ export const TopContainer = styled.div`
     box-shadow 0.3s ease;
 
   h2 {
-    color: var(--darkPink);
+    color: var(--pink-5);
     text-align: center;
     margin-bottom: var(--spacing-m);
   }
@@ -198,7 +198,6 @@ export const CaseStudyCard = styled.div`
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
-  padding: 0 0 var(--spacing-l) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,12 +231,15 @@ export const CaseStudyImage = styled.img`
   display: block;
 `;
 
-export const CaseStudyTitle = styled.h4`
-  color: var(--darkPink);
-  font-family: var(--headerFont);
-  margin: var(--spacing-s);
-  font-weight: 600;
-  text-align: center;
+export const CaseStudyTitle = styled.h6`
+    font-family: var(--headerFont);
+    color: var(--pink-4);
+    font-weight: 600;
+    margin: var(--spacing-s) ;
+    text-align: center;
+    letter-spacing: 0.01em;
+    width: 100%;
+    /* border: 2px solid red; */
 `;
 
 export const CaseStudyButton = styled.button`

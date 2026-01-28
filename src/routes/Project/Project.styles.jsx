@@ -27,10 +27,9 @@ export const ProjectBreadcrumbs = styled.nav`
   width: fit-content;
   /* border: 1px solid red; */
   a {
-    color: var(--medBrown);
+    color: var(--orange-5);
     text-decoration: none;
     font-weight: 600;
-    font-family: var(--headerFont);
     /* font-size: 1rem; */
     /* padding: 0.32em 1.1em; */
     margin: 0 var(--spacing-xxs);
@@ -39,7 +38,7 @@ export const ProjectBreadcrumbs = styled.nav`
       color 0.2s;
   }
   span {
-    color: var(--medBrown);
+    color: var(--orange-5);
     font-weight: 700;
     font-size: 1rem;
     padding: var(--spacing-xxxs) var(--spacing-xs);
@@ -66,10 +65,9 @@ export const ProjectDetailHeader = styled.div`
   gap: var(--spacing-m);
   margin-bottom: var(--spacing-m);
   position: relative;
-  h1 {
-    /* font-size: 2.2rem; */
+  h2 {
     font-family: var(--headerFont);
-    color: var(--darkPink);
+    color: var(--pink-5);
     margin-bottom: var(--spacing-xxs);
     display: flex;
     align-items: center;
@@ -78,11 +76,10 @@ export const ProjectDetailHeader = styled.div`
   .featured-badge {
     display: inline-block;
     background: var(--orangeBackground);
-    color: var(--medBrown);
+    color: var(--orange-5);
     font-size: 1.08rem;
     font-weight: 700;
     font-family: var(--headerFont);
-    /* border-radius: 999px; */
     border-radius: var(--borderRadius);
     padding: var(--spacing-xxxs) var(--spacing-m);
     box-shadow: 0 2px 8px rgba(255, 140, 64, 0.08);
@@ -95,13 +92,12 @@ export const ProjectDetailHeader = styled.div`
     position: relative;
     top: 0;
     margin-right: var(--spacing-s);
-    /* Unified badge style */
   }
   .project-detail-links {
     display: flex;
     gap: var(--spacing-xl);
     a {
-      color: var(--darkBrown);
+      color: var(--orange-7);
       font-weight: 600;
       text-decoration: underline;
       font-size: 1.08rem;
@@ -112,8 +108,7 @@ export const ProjectDetailHeader = styled.div`
     }
   }
   @media screen and (max-width: 600px) {
-    h1 {
-      /* font-size: 1.8rem; */
+    h2 {
       flex-direction: column;
       align-items: flex-start;
       gap: var(--spacing-m);
@@ -128,7 +123,6 @@ export const ProjectDetailsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* border: 2px solid red; */
   @media (max-width: 900px) {
     flex-direction: column;
     gap: var(--spacing-l);
@@ -151,9 +145,7 @@ export const ProjectDetailImageWrapper = styled.div`
   width: 100%;
   height: 260px;
   overflow: hidden;
-  /* border-radius: 18px; */
-
-  background: #f8f8f8;
+  background: var(--grey-1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,7 +161,6 @@ export const ProjectDetailImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 18px; */
   border-radius: var(--borderRadius);
 `;
 
@@ -224,7 +215,7 @@ export const ProjectDetailStatus = styled.span`
 export const ProjectDetailType = styled.span`
   display: inline-block;
   font-size: 1.08rem;
-  color: var(--medPink);
+  color: var(--pink-4);
   font-weight: 700;
   font-family: var(--headerFont);
   background: rgba(241, 116, 150, 0.08);
@@ -243,7 +234,7 @@ export const ProjectDetailType = styled.span`
 export const ProjectDetailImportant = styled.span`
   display: inline-block;
   font-size: 1.08rem;
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-weight: 700;
   font-family: var(--headerFont);
   background: rgba(241, 116, 150, 0.1);
@@ -281,7 +272,7 @@ export const ProjectDetailSection = styled.div`
 export const ProjectDetailSectionTitle = styled.h4`
   margin-bottom: var(--spacing-xxs);
   font-weight: 600;
-  color: var(--darkPink);
+  color: var(--pink-4);
 `;
 
 export const ProjectDetailList = styled.ul`
@@ -299,24 +290,15 @@ export const ProjectDetailList = styled.ul`
   li::before {
     content: "";
     position: absolute;
-    left: var(--spacing-xxxs) ;
-    top: var(--spacing-s) ;
-    width:var(--spacing-s) ;
-    height: var(--spacing-s); 
+    left: var(--spacing-xxxs);
+    top: var(--spacing-s);
+    width: var(--spacing-s);
+    height: var(--spacing-s);
     border-radius: 50%;
-    background: var(--medBrown);
+    background: var(--orange-5);
     display: inline-block;
   }
 `;
 export const ProjectTestimonial = styled.div`
-  /* border-left: 5px solid var(--medPink); */
-  /* color: var(--berry); */
-  /* font-style: italic; */
   line-height: 1.6;
-  /* font-size: 1.08rem; */
-  /* margin: 1.2rem 0 0.5rem 0; */
-  /* padding: 1.1em 1.3em 1.1em 1.5em; */
-  /* border-radius: 18px; */
-  /* box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07); */
-  /* position: relative; */
 `;

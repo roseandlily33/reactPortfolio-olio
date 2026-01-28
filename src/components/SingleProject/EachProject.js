@@ -27,7 +27,9 @@ const SingleProject = ({ projectList }) => {
             <img id="projPic" src={project?.img} alt={project?.alt} />
           </div>
           <div className="project-details">
-            <h5 style={{ marginBottom: "0.5rem" }}>{project?.title}</h5>
+            <h6 style={{ marginBottom: "var(--spacing-xs)" }}>
+              {project?.title}
+            </h6>
             <div className="project-status-type">
               <span
                 className={
@@ -36,7 +38,7 @@ const SingleProject = ({ projectList }) => {
                 }
                 style={{
                   display: "inline-block",
-                  padding: "0.18em 1.1em",
+                  padding: "var(--spacing-xxs) var(--spacing-m)",
                   borderRadius: "999px",
                   fontSize: "1.08rem",
                   fontWeight: 700,
@@ -51,7 +53,7 @@ const SingleProject = ({ projectList }) => {
                   minWidth: 110,
                   textAlign: "center",
                   lineHeight: 1.2,
-                  marginRight: "0.7em",
+                  marginRight: "var(--spacing-s",
                 }}
               >
                 {project?.status === true ? "Complete" : "Under Development"}
@@ -61,13 +63,13 @@ const SingleProject = ({ projectList }) => {
                   className="project-type"
                   style={{
                     display: "inline-block",
-                    fontSize: "1.08rem",
-                    color: "var(--medPink)",
+                    fontSize: "1rem",
+                    color: "var(--pink-4)",
                     fontWeight: 700,
                     fontFamily: "var(--headerFont)",
                     background: "rgba(241, 116, 150, 0.08)",
                     borderRadius: "999px",
-                    padding: "0.18em 1.1em",
+                    padding: "var(--spacing-xxs) var(--spacing-m)",
                     letterSpacing: "0.01em",
                     minWidth: 110,
                     textAlign: "center",

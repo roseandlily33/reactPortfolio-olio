@@ -23,17 +23,15 @@ export const CTASection = styled.section`
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-m);
-    h2 {
+    h3 {
       font-family: var(--headerFont);
       /* font-size: 2.1rem; */
-      color: var(--darkBrown);
+      color: var(--orange-5);
       font-weight: 800;
       margin-bottom: var(--spacing-xxxs);
     }
     .cta-subtext {
-      color: var(--medGrey);
-      font-size: 1.1rem;
-      font-family: var(--mainFont);
+      color: var(--grey-8);
       margin-bottom: var(--spacing-xxxs);
     }
   }
@@ -47,9 +45,8 @@ export const CTASection = styled.section`
     }
     .cta-text {
       gap: var(--spacing-s);
-      h2 {
-        /* font-size: 1.25rem; */
-        margin-bottom: var(--spacing-xxxs);
+      h3 {
+        margin-bottom: var(--spacing-xxs);
       }
       .cta-subtext {
         font-size: 0.97rem;
@@ -60,7 +57,7 @@ export const CTASection = styled.section`
 `;
 
 export const CTABannerIcon = styled.div`
-  background: linear-gradient(135deg, var(--medPink) 60%, var(--medBrown) 100%);
+  background: linear-gradient(135deg, var(--pink-5) 60%, var(--orange-4) 100%);
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -83,7 +80,7 @@ export const CTABannerIcon = styled.div`
 `;
 
 export const CTAButton = styled.button`
-  background: linear-gradient(90deg, var(--medBrown) 0%, var(--medPink) 100%);
+  background: linear-gradient(90deg, var(--orange-4) 0%, var(--pink-5) 100%);
   color: #fff;
   border: none;
   /* border-radius: 999px; */
@@ -110,11 +107,11 @@ export const CTAButton = styled.button`
     transition: color 0.3s;
   }
   &:hover {
-    background: linear-gradient(90deg, var(--medPink) 0%, var(--medBrown) 100%);
+    background: linear-gradient(90deg, var(--pink-5) 0%, var(--orange-4) 100%);
     color: var(--yellow);
     transform: scale(1.06);
     .cta-arrow {
-      color: var(--darkPink);
+      color: var(--pink-4);
     }
   }
 
@@ -132,7 +129,8 @@ export const CTATrusted = styled.div`
   margin-top: var(--spacing-l);
   width: 100%;
   span {
-    color: var(--medGrey);
+    color: var(--grey-8);
+    margin-bottom: var(--spacing-s);
     font-size: 1.05rem;
     font-family: var(--headerFont);
     font-weight: 600;
@@ -147,15 +145,15 @@ export const CTATrusted = styled.div`
     li {
       font-family: var(--headerFont);
       /* font-size: 1.1rem; */
-      color: var(--medBrown);
+      color: var(--orange-4);
       font-weight: 700;
       a {
-        color: var(--medBrown);
+        color: var(--orange-4);
         text-decoration: none;
         transition: color 0.2s;
       }
       a:hover {
-        color: var(--darkPink);
+        color: var(--pink-4);
       }
     }
   }

@@ -100,7 +100,7 @@ const Project = () => {
         <span>{project?.title ?? "Project"}</span>
       </ProjectBreadcrumbs>
       <ProjectDetailHeader>
-        <h1>{project?.title}</h1>
+        <h2>{project?.title}</h2>
         <ProjectDetailsContainer>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
             <ProjectDetailStatus>
@@ -174,7 +174,7 @@ const Project = () => {
           <p style={{ fontWeight: "500" }}>{project?.year}</p>
           <ProjectDetailStatusType>
             {CaseStudies[project?.title] && (
-              <p style={{ color: "var(--berry)" }}>
+              <p style={{ color: "var(--orange-6)" }}>
                 See case study for more information about goals, process, and
                 outcomes.
               </p>
@@ -225,7 +225,7 @@ const Project = () => {
                 cursor: "pointer",
                 transition: "background 0.2s, color 0.2s",
               }}
-            // aria-selected removed for lint compliance
+              // aria-selected removed for lint compliance
             >
               {tab.icon}
               {tab.label}
@@ -239,32 +239,65 @@ const Project = () => {
           <ProjectDetailSectionTitle>Technologies:</ProjectDetailSectionTitle>
           {Object.entries(project.technologies).map(([category, techs]) =>
             techs && techs.length > 0 ? (
-              <div key={category} style={{ marginBottom: '0.7em' }}>
-                <div style={{
-                  fontWeight: 600,
-                  color: 'var(--medPink)',
-                  fontSize: '1.05em',
-                  marginBottom: 'var(--spacing-xxs) ',
-                  textTransform: 'capitalize',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 8
-                }}>
-                  {category === 'frontend' && <FaTools style={{ color: 'var(--lightPink)', marginRight: 4 }} title="Frontend" />}
-                  {category === 'backend' && <FaPuzzlePiece style={{ color: 'var(--lightPink)', marginRight: 4 }} title="Backend" />}
-                  {category === 'extra' && <FaStar style={{ color: 'var(--lightPink)', marginRight: 4 }} title="Extra" />}
+              <div key={category} style={{ marginBottom: "0.7em" }}>
+                <div
+                  style={{
+                    fontWeight: 600,
+                    color: "var(--medPink)",
+                    fontSize: "1.05em",
+                    marginBottom: "var(--spacing-xxs) ",
+                    textTransform: "capitalize",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "var(--spacing-xxs)",
+                  }}
+                >
+                  {category === "frontend" && (
+                    <FaTools
+                      style={{
+                        color: "var(--pink-1)",
+                        marginRight: "var(--spacing-s)",
+                      }}
+                      title="Frontend"
+                    />
+                  )}
+                  {category === "backend" && (
+                    <FaPuzzlePiece
+                      style={{
+                        color: "var(--pink-1)",
+                        marginRight: "var(--spacing-s)",
+                      }}
+                      title="Backend"
+                    />
+                  )}
+                  {category === "extra" && (
+                    <FaStar
+                      style={{
+                        color: "var(--pink-1)",
+                        marginRight: "var(--spacing-s)",
+                      }}
+                      title="Extra"
+                    />
+                  )}
                   {category}
                 </div>
                 <ProjectDetailList>
                   {techs.map((tech, idx) => (
-                    <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                    <li
+                      key={idx}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "var(--spacing-xxs)",
+                      }}
+                    >
                       {/* Optionally add a tech icon here if you want to map specific techs to icons */}
                       <span style={{ fontWeight: 500 }}>{tech}</span>
                     </li>
                   ))}
                 </ProjectDetailList>
               </div>
-            ) : null
+            ) : null,
           )}
         </ProjectDetailSection>
       )}

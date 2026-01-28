@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CertificateContainer = styled.main`
   margin: 0 auto;
-  width: 98%;
+  width:100%;
   height: 100%;
   /* border: 2px solid red; */
   section {
@@ -11,7 +11,7 @@ export const CertificateContainer = styled.main`
     justify-content: space-evenly;
     gap: var(--spacing-xl);
     height: 100%;
-    padding-top: var(--spacing-xxl);
+    padding-top: var(--spacing-xxxxl);
     background-color: var(--pinkBackground);
     /* border: 1px solid red; */
   }
@@ -19,7 +19,7 @@ export const CertificateContainer = styled.main`
     padding: var(--spacing-xs);
     /* border-radius: 15px; */
     border-radius: var(--borderRadius);
-    border: 3px solid ${({ theme }) => theme.colors.medBrown};
+    border: 3px solid var(--orange-5);
     background-color: #f7b064;
     box-shadow: ${({ theme }) => theme.boxShadow};
     text-transform: uppercase;
@@ -49,12 +49,12 @@ export const CertificateContainer = styled.main`
     100% {
       box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.2),
-        0 0 15px var(--lightPink);
+        0 0 15px var(--pink-2);
     }
     50% {
       box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.2),
-        0 0 25px var(--darkPink);
+        0 0 25px var(--pink-5);
     }
   }
   @keyframes fadeIn {
@@ -128,7 +128,7 @@ export const CertificateContainer = styled.main`
   }
   @media screen and (max-width: 1024px) {
     #certContainer {
-      background-color: ${({ theme }) => theme.colors.lightCream};
+      background-color: var(--grey-2);
       /* border-radius: 22px; */
       border-radius: var(--borderRadius);
       box-shadow:
@@ -197,13 +197,13 @@ export const CertificateContainer = styled.main`
         width: 100%;
         height: 210px;
         overflow: hidden;
-        border-top-right-radius: 22px;
-        border-top-left-radius: 22px;
+        border-top-right-radius: var(--borderRadius);
+        border-top-left-radius: var(--borderRadius);
         display: flex;
         align-items: center;
         justify-content: center;
         background: #fff;
-        border-bottom: 1px solid #f7e6ed;
+        border-bottom: 1px solid var(--grey-1);
         transition:
           border-radius 0.2s,
           height 0.2s;
@@ -213,8 +213,8 @@ export const CertificateContainer = styled.main`
         height: 100%;
         object-fit: cover;
         object-position: top;
-        border-top-right-radius: 22px;
-        border-top-left-radius: 22px;
+        border-top-right-radius: var(--borderRadius);
+        border-top-left-radius: var(--borderRadius);
         transition: filter 0.5s;
       }
       img:hover {
@@ -233,7 +233,7 @@ export const CertificateContainer = styled.main`
       h5 {
         /* font-size: 1.22rem; */
         font-family: var(--headerFont);
-        color: var(--darkPink);
+        color: var(--pink-4);
         font-weight: 700;
         margin: 0 0 var(--spacing-xs) 0;
         text-align: left;
@@ -242,7 +242,7 @@ export const CertificateContainer = styled.main`
       }
       .certificate-provider {
         font-size: 1.08rem;
-        color: var(--medPink);
+        color: var(--pink-4);
         font-weight: 700;
         font-family: var(--headerFont);
         background: rgba(241, 116, 150, 0.08);
@@ -258,7 +258,7 @@ export const CertificateContainer = styled.main`
       }
       .certificate-date {
         font-size: 1.01rem;
-        color: var(--medBrown);
+        color: var(--orange-4);
         font-family: var(--headerFont);
         font-weight: 500;
         margin-top: var(--spacing-xxxs);

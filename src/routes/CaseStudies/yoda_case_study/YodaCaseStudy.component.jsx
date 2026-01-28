@@ -37,10 +37,10 @@ const YodaCaseStudy = () => {
       {/* Case Study Content */}
       <EachCaseStudyContainer>
         <div>
-          <h2 style={{ color: "var(--darkPink)", marginBottom: "1rem" }}>
+          <h3 style={{ color: "var(--orange-6)", marginBottom: "1rem" }}>
             Overview
-          </h2>
-          <h4 style={{marginBottom: '1rem', color: 'var(--darkPink)'}}>{selectedCaseStudy?.title}</h4>
+          </h3>
+          <h4 style={{marginBottom: 'var(--spacing-m)', color: 'var(--orange-5)'}}>{selectedCaseStudy?.title}</h4>
           <SectionText>{selectedCaseStudy?.overview}</SectionText>
         </div>
         <div>

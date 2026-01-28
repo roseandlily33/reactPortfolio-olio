@@ -8,17 +8,17 @@ const Footer = () => {
   return (
     <FooterComponent>
       {/* Logo or Name */}
-      <h1
+      <h3
         style={{
           fontFamily: "var(--titleFont)",
-          color: "var(--darkPink)",
-          marginBottom: "0.5rem",
+          color: "var(--pink-5)",
+          marginBottom: "var(--spacing-xs)",
         }}
       >
         Victoria Benoit
-      </h1>
+      </h3>
       {/* Social Icons */}
-      <div style={{ marginBottom: "0.5rem" }}>
+      <div style={{ marginBottom: "var(--spacing-xs)" }}>
         <a
           href="https://github.com/roseandlily33"
           target="_blank"
@@ -27,7 +27,7 @@ const Footer = () => {
         >
           <FaGithub
             size={36}
-            style={{ marginRight: "1rem", color: "var(--medPink)" }}
+            style={{ marginRight: "var(--spacing-m)", color: "var(--pink-3)" }}
           />
         </a>
         <a
@@ -36,64 +36,64 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin size={36} style={{ color: "var(--medPink)" }} />
+          <FaLinkedin size={36} style={{ color: "var(--pink-3)" }} />
         </a>
       </div>
       {/* Footer Navigation */}
       <nav
         style={{
-          marginBottom: "0.5rem",
+          marginBottom: "var(--spacing-xs)",
           display: "flex",
-          gap: "1rem",
+          gap: "var(--spacing-m)",
           flexWrap: "wrap",
           justifyContent: "center",
         }}
       >
-        <NavLink to="/" style={{ color: "var(--darkPink)" }}>
+        <NavLink to="/" style={{ color: "var(--pink-5)" }}>
           About Me
         </NavLink>
-        <NavLink to="/Projects" style={{ color: "var(--darkPink)" }}>
+        <NavLink to="/Projects" style={{ color: "var(--pink-5)" }}>
           Projects
         </NavLink>
-        <NavLink to="/Work" style={{ color: "var(--darkPink)" }}>
+        <NavLink to="/Work" style={{ color: "var(--pink-5)" }}>
           Work with Me
         </NavLink>
-        <NavLink to="/Skills" style={{ color: "var(--darkPink)" }}>
+        <NavLink to="/Skills" style={{ color: "var(--pink-5)" }}>
           Skills
         </NavLink>
-        <NavLink to="/CaseStudies" style={{ color: "var(--darkPink)" }}>
+        <NavLink to="/CaseStudies" style={{ color: "var(--pink-5)" }}>
           Case Studies
         </NavLink>
-        <NavLink to="/Certificates" style={{ color: "var(--darkPink)" }}>
+        <NavLink to="/Certificates" style={{ color: "var(--pink-5)" }}>
           Certificates
         </NavLink>
       </nav>
       {/* Contact Info */}
       <div
         style={{
-          marginBottom: "0.5rem",
-          color: "var(--medGrey)",
-          fontSize: "1rem",
+          marginBottom: "var(--spacing-xs)",
+          color: "var(--grey-7)",
+          fontSize: "var(--spacing-m)",
         }}
       >
         <span>
           Email:{" "}
-          <a href="mailto:vrose834@email.com" style={{ color: "var(--medPink)" }}>
+          <a href="mailto:vrose834@email.com" style={{ color: "var(--pink-4)" }}>
             vrose834@gmail.com
           </a>
         </span>
         <span style={{ marginLeft: "1.5rem" }}>
           Phone:{" "}
-          <a href="tel:9028171001" style={{ color: "var(--medPink)" }}>
+          <a href="tel:9028171001" style={{ color: "var(--pink-4)" }}>
             902-817-1001
           </a>
         </span>
       </div>
       <div
         style={{
-          color: "var(--medGrey)",
-          fontSize: "0.95rem",
-          marginTop: "0.5rem",
+          color: "var(--grey-7)",
+          fontSize: "var(--spacing-m)",
+          marginTop: "var(--spacing-xs)",
         }}
       >
         &copy; {currentYear} Victoria Benoit. All rights reserved.

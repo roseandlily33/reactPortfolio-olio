@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionHeader = styled.h3`
-  color: var(--darkPink);
+  color: var(--orange-7);
   font-family: var(--headerFont);
   font-size: var(--spacing-l);
   font-weight: 700;
@@ -16,7 +16,7 @@ export const SectionHeader = styled.h3`
   padding: var(--spacing-xxxs) ;
   box-sizing: border-box;
   svg {
-    color: var(--darkPink);
+    color: var(--orange-7);
     font-size: 1.2em;
     vertical-align: middle;
     flex-shrink: 0;
@@ -31,7 +31,7 @@ export const SectionHeader = styled.h3`
 `;
 
 export const SubHeader = styled.h4`
-  color: var(--medBrown);
+  color: var(--orange-6);
   font-size: 1.13rem;
   font-weight: 600;
   margin: var(--spacing-s)  0 var(--spacing-xxs) 0;
@@ -39,7 +39,7 @@ export const SubHeader = styled.h4`
   align-items: center;
   gap: var(--spacing-xs); 
   svg {
-    color: var(--medBrown);
+    color: var(--orange-6);
     font-size: 1.1em;
   }
 `;
@@ -69,7 +69,7 @@ export const SectionList = styled.ul`
 	}
 	li::before {
 		content: "\2022";
-		color: var(--darkPink);
+		color: var(--pink-5);
 		position: absolute;
 		left: var(--spacing-xxs); 
 		font-size: var(--spacing-m);

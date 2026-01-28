@@ -22,7 +22,7 @@ const CTA = () => {
           <FaHandshake />
         </CTABannerIcon>
         <div className="cta-text">
-          <h2>Let’s Build Something Great Together!</h2>
+          <h3>Let’s Build Something Great Together!</h3>
           <p className="cta-subtext">
             From idea to launch, I help brands and people create web experiences
             that stand out and convert.

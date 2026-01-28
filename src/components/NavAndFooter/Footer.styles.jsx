@@ -9,7 +9,7 @@ export const FooterComponent = styled.footer`
   margin-inline: var(--spacing-m);
   margin-top: var(--spacing-xl);
   /* padding-top: 1rem; */
-  background-color: var(--lightCream);
+  background-color: var(--grey-2);
   background-image: radial-gradient(
     circle,
     rgba(240, 128, 160, 0.2) 1px,

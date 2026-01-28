@@ -4,8 +4,8 @@ export const EntityContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
-  padding: 3rem 1rem 4rem 1rem;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacin-m) var(--spacing-xxl) var(--spacing-m);
   background-color: var(--pinkBackground);
 `;
 
@@ -26,7 +26,7 @@ export const ProjectCard = styled.div`
     box-shadow 0.25s,
     transform 0.18s;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
   &:hover {
     box-shadow:
       0 8px 32px rgba(241, 116, 150, 0.19),
@@ -106,11 +106,11 @@ export const ProjectCard = styled.div`
     flex: 1;
   }
 
-  h5 {
+  h6 {
     /* font-size: 1.22rem; */
     font-family: var(--headerFont);
-    color: var(--darkPink);
-    font-weight: 700;
+    color: var(--pink-4);
+    font-weight: 600;
     margin: 0 0 var(--spacing-xs) 0;
     text-align: left;
     letter-spacing: 0.01em;
@@ -129,7 +129,7 @@ export const ProjectCard = styled.div`
   .project-status {
     font-size: var(--spacing-m);
     font-weight: 500;
-    color: var(--grey);
+    color: var(--grey-5);
     display: flex;
     align-items: center;
     gap: var(--spacing-xxxs);
@@ -137,7 +137,7 @@ export const ProjectCard = styled.div`
 
   .project-type {
     font-size: var(--spacing-m);
-    color: var(--medPink);
+    color: var(--pink-4);
     font-weight: 500;
     background: rgba(241, 116, 150, 0.08);
     border-radius: 999px;

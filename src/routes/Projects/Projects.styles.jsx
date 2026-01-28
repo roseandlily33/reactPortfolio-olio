@@ -13,7 +13,7 @@ export const ProjectComponentContainer = styled.main`
 export const ProjectContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.darkCream};
+  background-color: var(--grey-2);
   /* border-radius: 25px; */
   border-radius: var(--borderRadius);
   padding:var(--spacing-m) ;
@@ -22,10 +22,8 @@ export const ProjectContainer = styled.section`
   //border: 5px solid ${({ theme }) => theme.colors.medBrown};
   h2 {
     margin-block: var(--spacing-m) ;
-    font-weight: 600;
     padding-left: var(--spacing-m) ;
-    letter-spacing: 0.3rem;
-    color: ${({ theme }) => theme.colors.darkPink};
+    color: var(--pink-5);
     /* font-size: 2rem; */
   }
   @media (max-width: 900px) {

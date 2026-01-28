@@ -84,18 +84,19 @@ const CertificateList = ({ openModal, CertList, selectedTag }) => {
                 overflow: "hidden",
               }}
             >
-              <h5
+              <h6
                 style={{
                   fontFamily: "var(--headerFont)",
-                  color: "var(--darkPink)",
-                  fontWeight: 700,
-                  margin: "0 0 var(--spacing-s) 0",
+                  color: "var(--pink-4)",
+                  fontWeight: 600,
+                  margin: "0 0 var(--spacing-xs) 0",
+                  textAlign: "left",
                   letterSpacing: "0.01em",
                   width: "100%",
                 }}
               >
                 {cert?.title}
-              </h5>
+              </h6>
               <div
                 style={{
                   display: "flex",
