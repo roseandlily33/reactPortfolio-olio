@@ -29,8 +29,7 @@
   --darkOrange: #ff8c40;
   --darkBrown: #e43d12;
   /* Pinks */
-  --lightPinkBackground: #ffeaea;
-  --lightestPink: #f6a9be;
+
   --lightPink: #f38ca9;
   --medPink: #f17496;
   --darkPink: #ed4672;
@@ -68,6 +67,8 @@
   --grey-7: #a4a29b;
   --grey-8: #898780;
   --yellow2: #2c2a2a;
+  --lightPinkBackground: #ffeaea;
+  --lightestPink: #f6a9be;
   --pink-1: #ffafd1;
   --pink-2: #fc94b5;
   --pink-3: #f87799;
@@ -96,61 +97,18 @@
 body {
   background-color: var(--lightCream);
   /* background-color: var(--darkCream); */
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 400;
-  color: var(--darkBerry);
+  color: var(--pink-8);
   font-family: var(--mainFont);
-}
-h1 {
-  font-size: 3rem;
-  font-family: var(--titleFont);
-  font-weight: 700;
-  color: var(--darkBrown);
-}
-h2 {
-  font-size: 2.488rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: var(--headerFont);
-}
-h3 {
-  font-size: 2.074rem;
-  font-family: var(--headerFont);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
-/* h3::after {
-  display: block;
-  width: 100%;
-  content: "";
-  border-bottom: 5px solid var(--medBrown);
-} */
-h4 {
-  font-size: 1.728rem;
-  font-family: var(--headerFont);
-  font-weight: 300;
-}
-h5,
-label {
-  font-size: 1.44rem;
-}
-h6,
-li,
-p {
-  font-size: 1.2rem;
 }
 a {
   text-decoration: none;
-  font-size: 1rem;
-  color: var(--white);
-  font-family: var(--headerFont);
 }
 li {
   list-style: none;
 }
 .italic {
-  color: var(--medGrey);
   font-style: italic;
 }
 
@@ -261,7 +219,8 @@ footer a:hover {
   }
   a {
     font-size: 1rem;
-    font-family: "Noto_Sans", sans-serif;
+    font-family: var(--mainFont);
+    text-decoration: none;
   }
   main {
     height: 100vh;
@@ -384,7 +343,7 @@ textarea:focus {
 /* New Fonts sizes:
  */
 
- /* Desktop styles */
+/* Desktop styles */
 h1 {
   font-size: 4.3rem;
   font-weight: 700;
@@ -485,6 +444,9 @@ blockquote {
     letter-spacing: 0.2rem;
     color: #ee6e11;
   }
+  #welcome {
+    font-size: 2.5rem;
+  }
 
   h3 {
     font-size: 2.449rem;
@@ -548,7 +510,6 @@ blockquote {
     letter-spacing: 0rem;
     color: #8e1b00;
   }
-
 }
 
 /* Mobile styles */
@@ -564,11 +525,15 @@ blockquote {
 
   h2 {
     font-size: 2.437rem;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: none;
     line-height: 1.4;
     letter-spacing: 0rem;
     color: #ee6e11;
+  }
+  #welcome {
+    font-size: 3rem;
+    margin-left: 1rem;
   }
 
   h3 {
@@ -576,7 +541,7 @@ blockquote {
     font-weight: 600;
     text-transform: none;
     line-height: 1.4;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.03rem;
     color: #bc2b4d;
   }
 
@@ -633,5 +598,4 @@ blockquote {
     letter-spacing: 0rem;
     color: #7e0021;
   }
-
 }

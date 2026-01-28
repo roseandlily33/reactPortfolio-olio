@@ -4,44 +4,43 @@ export const SummarySection = styled.section`
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
-  padding: 3rem;
-  gap: 1rem;
+  padding: var(--spacing-xl);
+  gap: var(--spacing-m);
   p,
   span,
   li {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding-right: 0.5rem;
+    margin-bottom: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
   }
-   .bold {
+  .bold {
     font-weight: 700;
-    color: var(--medBrown);
+    color: var(--orange-6);
   }
   @media screen and (max-width: 900px) {
     flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
+    gap: var(--spacing-m);
+    padding: var(--spacing-m);
   }
 `;
 
 export const EachCard = styled.div`
   background: var(--orangeBackground);
   border-radius: var(--borderRadius);
-  border: 2.5px solid var(--lightBrown);
+  border: 2.5px solid var(--orange-2);
   box-shadow: 0 4px 18px 0 rgba(60, 40, 20, 0.07);
-  padding: 1.6rem 1.7rem 1.3rem 1.7rem;
+  padding: var(--spacing-m);
   flex: 1 1 320px;
   min-width: 280px;
   max-width: 420px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: var(--spacing-m);
   position: relative;
   @media screen and (max-width: 900px) {
     min-width: 100%;
     max-width: 100%;
-    padding: 1.4rem 1.2rem 1rem 1.2rem;
+    padding: var(--spacing-l) var(--spacing-m) var(--spacing-m) var(--spacing-m);
   }
 `;
 
@@ -50,19 +49,13 @@ export const CardIcon = styled.div`
   top: 1.1rem;
   right: 1.3rem;
   font-size: 2.1rem;
-  color: var(--medPink);
+  color: var(--orange-3);
   opacity: 0.85;
   pointer-events: none;
 `;
 
-export const CardTitle = styled.h3`
-  color: var(--darkBrown);
-  font-size: 2.2rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.7rem;
+export const CardTitle = styled.h4`
+  color: var(--orange-6);
+  margin-bottom: var(--spacing-s);
   text-transform: capitalize;
-  @media screen and (max-width: 900px) {
-    font-size: 1.8rem;
-  }
 `;

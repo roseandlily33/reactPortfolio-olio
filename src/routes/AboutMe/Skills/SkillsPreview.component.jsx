@@ -25,7 +25,7 @@ const SkillsPreview = () => {
 
   return (
     <SkillsPreviewSection>
-      <h2>Top Skills</h2>
+      <h4>Top Skills</h4>
       <SkillsGrid>
         {topSkills.map((skill, idx) => (
           <SkillCard key={skill.name + idx}>

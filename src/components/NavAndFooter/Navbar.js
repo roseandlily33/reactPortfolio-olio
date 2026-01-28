@@ -92,7 +92,7 @@ const Navbar = () => {
   return (
     <NavbarOuter className={scrollDirection}>
       <NavLink to="/">
-        <h1>Victoria Benoit</h1>
+        <h2>Victoria Benoit</h2>
       </NavLink>
       <Hamburger
         className={menuOpen ? "open" : ""}

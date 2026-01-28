@@ -1,12 +1,10 @@
 import React from "react";
-import { CertList } from "../../Certificates/Certs";
 import {
   CertificatesPreviewSection,
   CertificatesGrid,
   CertificateCard,
   CertificateImage,
   CertificateTitle,
-  CertificateProvider,
   SeeCertificatesButton,
 } from "./ProjectsPreview.styles";
 import { useNavigate } from "react-router-dom";
@@ -24,13 +22,12 @@ const ProjectsPreview = () => {
 
   return (
     <CertificatesPreviewSection>
-      <h2>Top Projects</h2>
+      <h4>Top Projects</h4>
       <CertificatesGrid>
         {importantCerts?.map((cert) => (
           <CertificateCard key={cert.id} onClick={() => navigate(`/Project/${cert.id}`)}>
             <CertificateImage src={cert.img} alt={cert.title} />
             <CertificateTitle>{cert.title}</CertificateTitle>
-            <CertificateProvider>{cert.provider}</CertificateProvider>
           </CertificateCard>
         ))}
       </CertificatesGrid>

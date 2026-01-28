@@ -7,21 +7,21 @@ export const NavbarOuter = styled.header`
   z-index: 1000;
   overflow: visible;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-left: 1rem;
-  margin-inline: 1rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-color: var(--lightCream);
+  padding-left: var(--spacing-m);
+  margin-inline: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
+  padding-top: var(--spacing-m);
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  background-color: var(--grey-2);
   transform: translateY(0) rotateX(0deg);
   transform-origin: top;
   transition: transform 0.5s ease;
-  background-color: var(--lightCream);
+  background-color: var(--grey-2);
   background-image: radial-gradient(
     circle,
     rgba(240, 128, 160, 0.2) 1px,
@@ -41,8 +41,9 @@ export const NavbarOuter = styled.header`
     transform: translateY(0) rotateX(0deg); /* Flip down */
   }
 
-  @media screen and (max-width: 768px) {
-    margin-inline: 0.5rem;
+  @media screen and (max-width: 900px) {
+    margin-inline: var(--spacing-xs);
+    flex-direction: row;
   }
 
   @keyframes bubbleUp {
@@ -56,23 +57,25 @@ export const NavbarOuter = styled.header`
     }
   }
 
-  h1 {
+  h2 {
     font-family: var(--titleFont);
     /* font-size: 2rem; */
     background: linear-gradient(
       45deg,
-      var(--lightPink),
-      var(--darkPink),
-      var(--medBrown)
+      var(--orange-5),
+      var(--pink-5),
+      var(--orange-5)
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     transition: transform 0.3s ease; /* Optional hover effect */
+    /* border: 2px solid blue; */
+    padding: var(--spacing-m);
   }
 
-  h1:hover {
+  h2:hover {
     transform: scale(1.1); /* Slight zoom on hover */
   }
 `;
@@ -134,7 +137,7 @@ export const MobileMenu = styled.nav`
     top: 100%;
     right: var(--spacing-m);
     left: var(--spacing-m);
-    background: var(--lightCream);
+    background: var(--grey-2);
     border-radius: 0 0 18px 18px;
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.1);
     padding: var(--spacing-m);
@@ -143,7 +146,6 @@ export const MobileMenu = styled.nav`
     a {
       margin: var(--spacing-s) 0;
       /* font-size: 1.1rem; */
-      color: var(--darkGrey);
       text-align: left;
     }
   }
@@ -161,13 +163,9 @@ export const NavBarComponent = styled.nav`
   }
 
   a {
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.04rem;
     text-decoration: none;
-    color: var(--darkGrey);
     transition: transform 0.2s ease;
-
     &:hover {
       animation: bounce 0.5s ease;
     }

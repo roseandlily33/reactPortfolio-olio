@@ -1,20 +1,14 @@
 import styled from "styled-components";
 
 export const SkillsPreviewSection = styled.section`
-  padding: 4rem;
+  padding: var(--spacing-xl);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--lightYellowBackground);
-  h2 {
-    font-size: 2rem;
-    color: var(--darkPink);
-  }
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 1.8rem;
-    }
+  h4 {
+    color: var(--pink-5);
   }
 `;
 
@@ -22,9 +16,9 @@ export const SkillsGrid = styled.div`
   display: flex;
   overflow-x: scroll;
   max-width: 100%;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  padding: 1rem;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-m);
+  padding: var(--spacing-m);
 `;
 
 export const SkillCard = styled.div`
@@ -32,37 +26,35 @@ export const SkillCard = styled.div`
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-  padding: 1.2rem 1.5rem;
+  padding: var(--spacing-m) var(--spacing-l);
   min-width: 160px;
   max-width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.18s;
-  border: 2px solid var(--medPink);
+  border: 2px solid var(--pink-4);
 
   &:hover {
     transform: scale(1.06);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    border-color: var(--darkPink);
+    border-color: var(--pink-2);
   }
 `;
 
 export const SkillIcon = styled.div`
   font-size: 2.5rem;
-  color: var(--darkPink);
-  margin-bottom: 0.7rem;
+  color: var(--pink-5);
+  margin-bottom: var(--spacing-s);
 `;
 
-export const SkillName = styled.div`
-  font-size: 1.1rem;
+export const SkillName = styled.p`
   text-align: center;
-  font-family: var(--headerFont);
   font-weight: 600;
 `;
 
 export const SeeSkillsButton = styled.button`
-  background: var(--darkPink);
+  background: var(--pink-5);
   color: #fff;
   border: none;
   /* border-radius: 999px; */
@@ -73,7 +65,7 @@ export const SeeSkillsButton = styled.button`
   font-weight: 600;
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
   cursor: pointer;
-  margin-top: 1.5rem;
+  margin-top: var(--spacing-m);
   transition:
     background 0.2s,
     color 0.2s,

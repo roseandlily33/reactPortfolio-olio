@@ -32,7 +32,7 @@ const SummaryComponent = () => {
         <CardTitle>What I do</CardTitle>
         <ul>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             <span>
@@ -41,7 +41,7 @@ const SummaryComponent = () => {
             </span>
           </li>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             <span>
@@ -50,7 +50,7 @@ const SummaryComponent = () => {
             </span>
           </li>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             <span>
@@ -59,7 +59,7 @@ const SummaryComponent = () => {
             </span>
           </li>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             <span>
@@ -79,19 +79,19 @@ const SummaryComponent = () => {
         <CardTitle>What I care about</CardTitle>
         <ul>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             People-first design &amp; accessibility
           </li>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             <span>Performance, SEO, and clean code</span>
           </li>
           <li>
-            <span style={{ color: "var(--medPink)", fontSize: "1.1rem" }}>
+            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
               ▸
             </span>
             <span>Collaboration, learning, and creative solutions</span>

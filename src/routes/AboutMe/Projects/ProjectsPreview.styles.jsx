@@ -1,45 +1,34 @@
 import styled from "styled-components";
 
 export const CertificatesPreviewSection = styled.section`
-  /* background: #fff; */
-  /* border-radius: var(--borderRadius); */
-  /* box-shadow: 0 4px 32px rgba(241, 116, 150, 0.10); */
-  padding: var(--spacing-xxxl);
-  /* margin: 2rem auto; */
+  padding: var(--spacing-xl);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+
   background: var(--pinkBackground);
-  h2 {
-    color: var(--darkPink);
+  h4 {
+    color: var(--pink-5);
   }
 `;
 
 export const CertificatesGrid = styled.div`
   display: flex;
-  gap: var(--spacing-xl);
-  overflow-x: auto;
-  flex-wrap: nowrap;
+  overflow-x: scroll;
   max-width: 100%;
-  flex-direction: row;
-  margin-top: var(--spacing-l);
-  padding: var(--spacing-m) var(--spacing-xxs);;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-m);
+  padding: var(--spacing-m);
 `;
 
 export const CertificateCard = styled.div`
   background: rgba(255, 255, 255, 0.95);
-  /* border-radius: 18px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   padding: var(--spacing-m) var(--spacing-l);
   min-width: 270px;
-  max-width: 220px;
+  max-width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +36,7 @@ export const CertificateCard = styled.div`
   transition:
     transform 0.18s,
     box-shadow 0.18s;
-  border: 2px solid var(--medPink);
+  border: 2px solid var(--pink-4);
 
   &:hover {
     transform: scale(1.06);
@@ -61,30 +50,14 @@ export const CertificateImage = styled.img`
   object-fit: contain;
   /* border-radius: 10px; */
   border-radius: var(--borderRadius);
-  margin-bottom: var(--spacing-s); 
+  margin-bottom: var(--spacing-s);
   box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
 `;
 
-export const CertificateTitle = styled.div`
-  font-size: 1.1rem;
+export const CertificateTitle = styled.p`
   /* color: var(--darkPink); */
   text-align: center;
-  font-family: var(--headerFont);
-  font-weight: 700;
-  margin-bottom: var(--spacing-xxxs);
-  letter-spacing: 0.01em;
-  line-height: 1.3;
-`;
-
-export const CertificateProvider = styled.div`
-  font-size: 1rem;
-  /* color: var(--medBrown); */
-  text-align: center;
-  font-family: var(--mainFont);
-  font-weight: 500;
-  margin-bottom: var(--spacing-xxxs);
-  letter-spacing: 0.01em;
-  opacity: 0.92;
+  font-weight: 600;
 `;
 
 export const SeeCertificatesButton = styled.button`
