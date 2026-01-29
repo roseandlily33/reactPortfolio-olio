@@ -158,7 +158,7 @@ export const TimelineIcon = styled.div`
 `;
 
 export const TimelineTitle = styled.h4`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   font-size: 1.13rem;
   margin-bottom: var(--spacing-xs);
@@ -171,7 +171,7 @@ export const TimelineTitle = styled.h4`
 `;
 
 export const TimelineDesc = styled.p`
-  /* color: var(--medBrown); */
+  /* color: var(--orange-7); */
   font-size: var(--spacing-m);
   text-align: center;
   margin: 0;
@@ -197,7 +197,7 @@ export const ProcessSectionContainer = styled.section`
     text-align: left;
     /* font-size: 2.1rem; */
     letter-spacing: 0.04em;
-    color: var(--darkPink);
+    color: var(--pink-5);
     text-transform: capitalize;
   }
   @media screen and (max-width: 768px) {
@@ -273,7 +273,7 @@ export const ProcessIcon = styled.div`
 `;
 
 export const ProcessTitle = styled.h4`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   font-size: 1.18rem;
   margin-bottom: var(--spacing-s);
@@ -282,7 +282,7 @@ export const ProcessTitle = styled.h4`
 `;
 
 export const ProcessDesc = styled.p`
-  color: var(--medBrown);
+  color: var(--orange-7);
   font-size: 1.01rem;
   text-align: center;
   margin: 0;

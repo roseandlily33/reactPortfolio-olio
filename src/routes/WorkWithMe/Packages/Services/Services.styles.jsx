@@ -97,7 +97,7 @@ export const ServiceCard = styled.div`
 `;
 
 export const ServiceIcon = styled.div`
-  color: var(--darkBrown);
+  color: var(--orange-7);
   font-size: 2.1rem;
   margin-bottom: var(--spacing-s);
   @media (max-width: 900px) {
@@ -110,7 +110,7 @@ export const ServiceIcon = styled.div`
 `;
 
 export const ServiceTitle = styled.h4`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   font-size: 1.08rem;
   margin-bottom: var(--spacing-xs);

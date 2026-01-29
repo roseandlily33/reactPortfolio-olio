@@ -252,7 +252,6 @@ export const PackageDetails = styled.details`
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-m);
-    /* color: ${({ $accent }) => $accent || "var(--darkPink)"}; */
     color: var(--pink-7);
     font-weight: 600;
     background: transparent;

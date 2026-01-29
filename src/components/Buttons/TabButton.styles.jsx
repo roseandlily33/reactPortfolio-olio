@@ -11,21 +11,21 @@ export const TabButtonContainer = styled.button`
   background-color: transparent;
   border-radius: 0;
   border: none;
-  border-bottom: 3px solid var(--lightPink);
+  border-bottom: 3px solid var(--pink-2);
   cursor: pointer;
   transition: all 0.3s ease;
   /* Hover Effect */
   &:hover {
-    color: var(--darkPink);
-    border-bottom: 3px solid var(--darkPink);
+    color: var(--pink-6);
+    border-bottom: 3px solid var(--pink-3);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
   }
 
   /* Active State */
   &.active {
-    color: var(--darkPink);
-    border-bottom: 3px solid var(--darkPink);
+    color: var(--pink-5);
+    border-bottom: 3px solid var(--pink-4);
     font-weight: bold;
   }
 
@@ -40,7 +40,7 @@ export const TabButtonContainer = styled.button`
     left: 50%;
     width: 0;
     height: 3px;
-    background: var(--darkPink);
+    background: var(--pink-4);
     transition: all 0.3s ease;
     transform: translateX(-50%);
   }

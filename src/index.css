@@ -285,7 +285,7 @@ html {
 
 /* For Forms */
 label {
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-weight: 700;
   font-size: 1.18rem;
   letter-spacing: 0.04em;
@@ -296,7 +296,7 @@ label {
 
 input,
 select {
-  border: 1.5px solid var(--lightPink);
+  border: 1.5px solid var(--pink-2);
   /* border-radius: 999px; */
   border-radius: var(--borderRadius);
   padding: 0.7rem 1rem;
@@ -304,7 +304,7 @@ select {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
-  color: var(--darkBerry);
+  color: var(--pink-7);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.05);
   transition:
     box-shadow 0.3s,
@@ -313,8 +313,8 @@ select {
 }
 input:focus,
 select:focus {
-  box-shadow: 0 0 10px var(--lightPink);
-  border-color: var(--darkPink);
+  box-shadow: 0 0 10px var(--pink-1);
+  border-color: var(--pink-4);
 }
 
 textarea {
@@ -326,7 +326,7 @@ textarea {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
-  color: var(--darkBerry);
+  color: var(--pink-7);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.05);
   transition:
     box-shadow 0.3s,
@@ -337,8 +337,8 @@ textarea {
   max-height: 220px;
 }
 textarea:focus {
-  box-shadow: 0 0 10px var(--lightPink);
-  border-color: var(--darkPink);
+  box-shadow: 0 0 10px var(--pink-1);
+  border-color: var(--pink-4);
 }
 /* New Fonts sizes:
  */

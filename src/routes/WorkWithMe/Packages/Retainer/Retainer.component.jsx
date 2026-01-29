@@ -52,7 +52,7 @@ const RetainerComponent = () => (
                 {ret.features.map((feature, i) => (
                   <li key={i}>
                     <FaCheckCircle
-                      style={{ color: "var(--darkPink)", marginRight: "0.5em" }}
+                      style={{ color: "var(--pink-5)", marginRight: "var(--spacing-xs)" }}
                     />
                     {feature}
                   </li>

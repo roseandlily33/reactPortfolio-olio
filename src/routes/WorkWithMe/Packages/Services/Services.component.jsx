@@ -79,25 +79,25 @@ const ServicesComponent = () => {
   return (
     <ServicesSection>
       <ServicesTitle>Other Services</ServicesTitle>
-      <p style={{ fontWeight: 500, marginBottom: "1.5rem" }}>
+      <p style={{ fontWeight: 500, marginBottom: "var(--spacing-l)" }}>
         These services can be added to any project or requested on their own.
         Need something custom? Just ask—I’m happy to tailor solutions to your
         needs!
       </p>
-      <div style={{ display: "flex", gap: "1.2rem", marginBottom: "2rem" }}>
+      <div style={{ display: "flex", gap: "var(--spacing-m)", marginBottom: "var(--spacing-xl)" }}>
         {tabOrder.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             style={{
-              background: activeTab === tab ? "var(--darkPink)" : "#fff",
-              color: activeTab === tab ? "#fff" : "var(--darkPink)",
-              border: "1.5px solid var(--darkPink)",
+              background: activeTab === tab ? "var(--pink-4)" : "#fff",
+              color: activeTab === tab ? "#fff" : "var(--pink-5)",
+              border: "1.5px solid var(--pink-5)",
               borderRadius: "999px",
               fontWeight: 700,
               fontFamily: "var(--headerFont)",
               fontSize: "1.05rem",
-              padding: "0.5rem 1.5rem",
+              padding: "var(--spacing-xs) var(--spacing-l)",
               cursor: "pointer",
               boxShadow:
                 activeTab === tab

@@ -12,7 +12,7 @@ export const RetainerSection = styled.section`
 `;
 
 export const RetainerTitle = styled.h2`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   /* font-size: 2rem; */
   margin-bottom: var(--spacing-s);
@@ -69,7 +69,7 @@ export const RetainerCard = styled.div`
 `;
 
 export const RetainerCardTitle = styled.h2`
-  color: var(--darkPink);
+  color: var(--pink-5);
   font-family: var(--headerFont);
   font-size: 1.55rem;
   margin-bottom: var(--spacing-xs);
@@ -83,7 +83,7 @@ export const RetainerCardBase = styled.div`
   align-items: center;
   gap: var(--spacing-s);
   font-size: var(--spacing-m);
-  color: var(--medBrown);
+  color: var(--orange-5);
   font-weight: 500;
   margin-bottom: var(--spacing-s);
   .base-line {
@@ -130,16 +130,16 @@ export const RetainerIncludes = styled.details`
   }
   summary:hover,
   summary:focus {
-    color: var(--darkPink);
+    color: var(--pink-4);
   }
   summary:hover .chev,
   summary:focus .chev {
-    color: var(--darkPink);
+    color: var(--pink-5);
     transform: scale(1.18) rotate(10deg);
   }
   &[open] .chev {
     transform: rotate(180deg) scale(1.08);
-    color: var(--darkPink);
+    color: var(--pink-5);
   }
   .includes-content {
     max-height: 0;
@@ -156,7 +156,7 @@ export const RetainerIncludes = styled.details`
 `;
 
 export const RetainerPrice = styled.div`
-  color: var(--darkBrown);
+  color: var(--orange-7);
   font-size: 1.15rem;
   font-weight: bold;
   margin-bottom: var(--spacing-s);
