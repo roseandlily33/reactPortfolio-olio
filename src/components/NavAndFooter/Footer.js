@@ -78,7 +78,10 @@ const Footer = () => {
       >
         <span>
           Email:{" "}
-          <a href="mailto:vrose834@email.com" style={{ color: "var(--pink-4)" }}>
+          <a
+            href="mailto:vrose834@email.com"
+            style={{ color: "var(--pink-4)" }}
+          >
             vrose834@gmail.com
           </a>
         </span>
