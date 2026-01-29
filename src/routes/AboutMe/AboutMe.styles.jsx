@@ -2,19 +2,19 @@ import styled from "styled-components";
 
 // Very outer container
 export const AboutMeComponent = styled.main`
-  margin-inline: var(--spacing-m);
-  margin-top: var(--spacing-m);
+  /* margin-inline: var(--spacing-m); */
+  /* margin-top: var(--spacing-m); */
   height: 100%;
 `;
 // Top container with the picture
 export const AboutMePicture = styled.section`
   /* border-radius: 25px; */
-  border-radius: var(--borderRadius);
+  /* border-radius: var(--borderRadius); */
   /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
   margin-bottom: var(--spacing-xl);
   svg {
     /* border-radius: 25px; */
-    border-radius: var(--borderRadius);
+    /* border-radius: var(--borderRadius); */
   }
   h2 {
     position: relative;
