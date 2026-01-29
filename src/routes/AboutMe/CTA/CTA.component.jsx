@@ -1,11 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import {
-  CTASection,
-  CTAButton,
-  CTABannerIcon,
-  CTATrusted,
-} from "./CTA.styles";
+import { CTASection, CTABannerIcon, CTATrusted } from "./CTA.styles";
 import { FaHandshake } from "react-icons/fa";
+import CTAButton from "../../../components/Buttons/CTAButton/CTAButton";
 
 const CTA = () => {
   const navigate = useNavigate();
@@ -27,20 +23,18 @@ const CTA = () => {
             From idea to launch, I help brands and people create web experiences
             that stand out and convert.
           </p>
-          <CTAButton onClick={handleClick}>
-            Ready to work together? <span className="cta-arrow">→</span>
-          </CTAButton>
+          <CTAButton handleClick={handleClick} />
           <CTATrusted>
             <span>Trusted by:</span>
-            <ul>
+            <ul style={{ display: "flex", flexWrap: "wrap" }}>
               <li>
-                <a href="/projects/501">Yoda Safety Services</a>
+                <a href="/project/501">Yoda Safety Services</a>
               </li>
               <li>
-                <a href="/projects/502">Ariel Boesener Performance Horses</a>
+                <a href="/project/502">Ariel Boesener Performance Horses</a>
               </li>
               <li>
-                <a href="/projects/503">InspectionPal</a>
+                <a href="/project/503">InspectionPal</a>
               </li>
             </ul>
           </CTATrusted>

@@ -239,28 +239,3 @@ export const CaseStudyTitle = styled.h6`
     width: 100%;
     /* border: 2px solid red; */
 `;
-
-export const CaseStudyButton = styled.button`
-  background: var(--pink-5);
-  color: #fff;
-  border: none;
-  /* border-radius: 999px; */
-  border-radius: var(--borderRadius);
-  padding: var(--spacing-s) var(--spacing-xl);
-  font-size: 1.08rem;
-  font-family: var(--headerFont);
-  font-weight: 600;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.12);
-  cursor: pointer;
-  margin-top: var(--spacing-m);
-  transition:
-    background 0.2s,
-    color 0.2s,
-    transform 0.18s;
-
-  &:hover {
-    background: var(--pink-5);
-    color: var(--orange-7);
-    transform: scale(1.05);
-  }
-`;

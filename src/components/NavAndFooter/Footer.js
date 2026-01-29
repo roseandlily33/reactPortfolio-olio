@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FooterComponent } from "./Footer.styles";
-import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,7 +26,7 @@ const Footer = () => {
         >
           <FaGithub
             size={36}
-            style={{ marginRight: "var(--spacing-m)", color: "var(--pink-3)" }}
+            style={{ marginRight: "var(--spacing-m)", color: "var(--pink-2)" }}
           />
         </a>
         <a
@@ -36,15 +35,42 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin size={36} style={{ color: "var(--pink-3)" }} />
+          <FaLinkedin size={36} style={{ color: "var(--pink-2)" }} />
         </a>
       </div>
-      {/* Footer Navigation */}
+      {/* Contact Info */}
+      <div
+        style={{
+          marginBottom: "var(--spacing-xs)",
+          color: "var(--grey-7)",
+          fontSize: "var(--spacing-m)",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        <span>
+          Email:{" "}
+          <a
+            href="mailto:vrose834@email.com"
+            style={{ color: "var(--orange-6)" }}
+          >
+            vrose834@gmail.com
+          </a>
+        </span>
+        <span style={{ marginLeft: "1.5rem" }}>
+          Phone:{" "}
+          <a href="tel:9028171001" style={{ color: "var(--orange-6)" }}>
+            902-817-1001
+          </a>
+        </span>
+      </div>
+      {/* Footer Navigation (commented out for comparison)
       <nav
         style={{
           marginBottom: "var(--spacing-xs)",
           display: "flex",
-          gap: "var(--spacing-m)",
+          gap: "var(--spacing-l)",
           flexWrap: "wrap",
           justifyContent: "center",
         }}
@@ -68,30 +94,8 @@ const Footer = () => {
           Certificates
         </NavLink>
       </nav>
-      {/* Contact Info */}
-      <div
-        style={{
-          marginBottom: "var(--spacing-xs)",
-          color: "var(--grey-7)",
-          fontSize: "var(--spacing-m)",
-        }}
-      >
-        <span>
-          Email:{" "}
-          <a
-            href="mailto:vrose834@email.com"
-            style={{ color: "var(--pink-4)" }}
-          >
-            vrose834@gmail.com
-          </a>
-        </span>
-        <span style={{ marginLeft: "1.5rem" }}>
-          Phone:{" "}
-          <a href="tel:9028171001" style={{ color: "var(--pink-4)" }}>
-            902-817-1001
-          </a>
-        </span>
-      </div>
+      */}
+      {/* Copyright */}
       <div
         style={{
           color: "var(--grey-7)",

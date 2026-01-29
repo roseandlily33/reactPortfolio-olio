@@ -8,7 +8,7 @@ import { projectListFrontEndMentor } from "./ProjectLists/projectsFEM";
 import { projectListClient } from "./ProjectLists/projectsClient";
 import SingleProject from "../../components/SingleProject/EachProject";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
-import TabButton from "../../components/Buttons/TabButton.component";
+import TabButton from "../../components/Buttons/TabButton/TabButton.component";
 
 const tabOptions = [
   { key: "client", label: "Client" },
@@ -68,7 +68,7 @@ const Projects = () => {
             ))}
           </div>
         </TopContainer>
-          <SingleProject projectList={projectList} />
+        <SingleProject projectList={projectList} />
       </CertificateContainer>
     </>
   );

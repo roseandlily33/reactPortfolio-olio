@@ -88,7 +88,7 @@ export const projectListClient = [
     technologies: {
       frontend: [],
       backend: [],
-      extra: [],
+      extra: ["Figma"],
     },
   },
   {

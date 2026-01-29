@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-
 const CertificateSelect = ({ tagChange, selectedTag, filteredTags }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);

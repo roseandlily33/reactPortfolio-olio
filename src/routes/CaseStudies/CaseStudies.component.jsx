@@ -12,6 +12,7 @@ import {
   CaseStudyButton,
 } from "./CaseStudies.styles";
 import { useNavigate } from "react-router-dom";
+import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
 
 const CaseStudies = () => {
   const navigate = useNavigate();
@@ -54,9 +55,10 @@ const CaseStudies = () => {
               />
             )}
             <CaseStudyTitle>{study?.title}</CaseStudyTitle>
-            <CaseStudyButton onClick={() => navigate(study?.link)}>
-              View Case Study
-            </CaseStudyButton>
+            <SecondaryButton
+              onClick={() => navigate(study?.link)}
+              span={"View Case Study"}
+            />
           </CaseStudyCard>
         ))}
       </CaseStudiesGrid>

@@ -6,9 +6,9 @@ import {
   SkillCard,
   SkillIcon,
   SkillName,
-  SeeSkillsButton,
 } from "./SkillsPreview.styles";
 import { useNavigate } from "react-router-dom";
+import SecondaryButton from "../../../components/Buttons/SecondaryButton/SecondaryButton.jsx";
 
 const getTopSkills = () => {
   return [
@@ -34,9 +34,7 @@ const SkillsPreview = () => {
           </SkillCard>
         ))}
       </SkillsGrid>
-      <SeeSkillsButton onClick={() => navigate("/Skills")}>
-        See My Skills &rarr;
-      </SeeSkillsButton>
+      <SecondaryButton onClick={() => navigate("/Skills")} span={"See My Skills →"} />
     </SkillsPreviewSection>
   );
 };

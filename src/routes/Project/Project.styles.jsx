@@ -11,10 +11,14 @@ export const ProjectDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
+  overflow-x: scroll;
   @media screen and (max-width: 600px) {
-    margin: var(--spacing-l);
+    margin: 0;
+    width: 100%;
+    height: 100%;
     padding: var(--spacing-xl) var(--spacing-l);
-    gap: var(--spacing-xl);
+    gap: var(--spacing-l);
+    border-radius: 0;
   }
 `;
 export const ProjectBreadcrumbs = styled.nav`
@@ -123,9 +127,16 @@ export const ProjectDetailsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
   @media (max-width: 900px) {
     flex-direction: column;
     gap: var(--spacing-l);
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-m);
   }
 `;
 
@@ -185,6 +196,7 @@ export const ProjectDetailStatus = styled.span`
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
+  flex-wrap: wrap;
   .status-badge {
     display: inline-block;
     padding: var(--spacing-xxxs) var(--spacing-m);
@@ -210,6 +222,20 @@ export const ProjectDetailStatus = styled.span`
     }
     /* Unified badge style */
   }
+  @media (max-width: 600px) {
+    /* border: 2px solid red; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    .status-badge {
+      margin-right: 0;
+      margin-bottom: var(--spacing-xs);
+      width: auto;
+      max-width: 90vw;
+      display: block;
+    }
+  }
 `;
 
 export const ProjectDetailType = styled.span`
@@ -228,6 +254,15 @@ export const ProjectDetailType = styled.span`
   margin-right: var(--spacing-s);
   box-shadow: 0 2px 8px rgba(241, 116, 150, 0.07);
   align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: 600px) {
+    margin-right: 0;
+    margin-bottom: var(--spacing-xs);
+    width: auto;
+    max-width: 90vw;
+    display: block;
+    align-self: center;
+  }
   /* Unified badge style */
 `;
 

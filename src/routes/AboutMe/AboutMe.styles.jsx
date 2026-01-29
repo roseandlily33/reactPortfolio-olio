@@ -5,6 +5,9 @@ export const AboutMeComponent = styled.main`
   /* margin-inline: var(--spacing-m); */
   /* margin-top: var(--spacing-m); */
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* border: 2px solid orange; */
 `;
 // Top container with the picture
 export const AboutMePicture = styled.section`

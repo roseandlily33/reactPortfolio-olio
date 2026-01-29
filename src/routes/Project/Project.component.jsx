@@ -117,10 +117,10 @@ const Project = () => {
               >
                 {project?.status === true ? "Complete" : "Under Development"}
               </span>
+              {project?.type && (
+                <ProjectDetailType>{project?.type}</ProjectDetailType>
+              )}
             </ProjectDetailStatus>
-            {project?.type && (
-              <ProjectDetailType>{project?.type}</ProjectDetailType>
-            )}
           </div>
           <div className="project-detail-links">
             {project?.deployed && (
@@ -210,8 +210,7 @@ const Project = () => {
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
               style={{
-                background:
-                  activeTab === tab.key ? "var(--pink-3)" : "#f8f8f8",
+                background: activeTab === tab.key ? "var(--pink-3)" : "#f8f8f8",
                 color: activeTab === tab.key ? "#fff" : "var(--pink-4)",
                 border: "none",
                 borderRadius: "999px",

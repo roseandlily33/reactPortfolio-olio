@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CertificateContainer } from "../../Certificates/Certificates.styles";
 import { YodaCaseStudyInfoData } from "./YodaCaseStudyInfoData";
-import TabButton from "../../../components/Buttons/TabButton.component";
+import TabButton from "../../../components/Buttons/TabButton/TabButton.component";
 import { EachCaseStudyContainer, TopContainer } from "../CaseStudies.styles";
 import {
   SectionHeader,

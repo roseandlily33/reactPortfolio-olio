@@ -7,7 +7,7 @@ import {
   ContactInfoCol,
   ContactInfo,
 } from "./Contact.styles";
-import PrimaryButton from "../../../components/Buttons/PrimaryButton.component";
+import PrimaryButton from "../../../components/Buttons/PrimaryButton/PrimaryButton.component";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -53,7 +53,8 @@ const ContactMe = () => {
       <div className="contact-intro">
         Ready to start your project or have questions? Select a service or just say hello—let’s connect and make something great!
       </div>
-      <ContactRow>
+      <p>Form is currently unavailable</p>
+      {/* <ContactRow>
         <ContactFormCol>
           <form ref={form} onSubmit={handleFormSubmit}>
             <label>Name: </label>
@@ -153,7 +154,7 @@ const ContactMe = () => {
             </div>
           </ContactInfo>
         </ContactInfoCol>
-      </ContactRow>
+      </ContactRow> */}
     </ContactMeSection>
   );
 };

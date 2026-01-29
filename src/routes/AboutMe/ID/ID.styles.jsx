@@ -7,7 +7,7 @@ export const IDCardContainer = styled.div`
   background: var(--lightPinkBackground);
   padding: var(--spacing-xxl) var(--spacing-xxxl);
   gap: var(--spacing-xxl);
-  width: 100%;
+  min-width: 100%;
   /* border: 2px solid red; */
   @media screen and (max-width: 1200px) {
     padding: var(--spacing-xl) var(--spacing-m);

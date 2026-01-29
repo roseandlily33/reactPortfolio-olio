@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
-import PrimaryButton from "../../components/Buttons/PrimaryButton.component";
+import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton.component";
 
 const SelectedCertificate = ({
   modalIsOpen,

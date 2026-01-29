@@ -1,8 +1,13 @@
 import styled from "styled-components";
 export const CTASection = styled.section`
-  background: linear-gradient(120deg, var(--orangeBackground) 60%, var(--pinkBackground) 100%);
+  background: linear-gradient(
+    120deg,
+    var(--orangeBackground) 60%,
+    var(--pinkBackground) 100%
+  );
   /* box-shadow: 0 6px 32px 0 rgba(241, 116, 150, 0.10); */
-  padding: var(--spacing-xxxl ) var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
+  padding: var(--spacing-xxxl) var(--spacing-xl) var(--spacing-xl)
+    var(--spacing-xl);
   /* margin: 3rem auto 2.5rem auto; */
   display: flex;
   flex-direction: column;
@@ -37,7 +42,8 @@ export const CTASection = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: var(--spacing-xl) var(--spacing-s) var(--spacing-l) var(--spacing-s);
+    padding: var(--spacing-xl) var(--spacing-s) var(--spacing-l)
+      var(--spacing-s);
     .cta-content {
       flex-direction: column;
       gap: var(--spacing-m);
@@ -55,7 +61,6 @@ export const CTASection = styled.section`
     }
   }
 `;
-
 export const CTABannerIcon = styled.div`
   background: linear-gradient(135deg, var(--pink-5) 60%, var(--orange-4) 100%);
   border-radius: 50%;
@@ -79,77 +84,44 @@ export const CTABannerIcon = styled.div`
   }
 `;
 
-export const CTAButton = styled.button`
-  background: linear-gradient(90deg, var(--orange-4) 0%, var(--pink-5) 100%);
-  color: #fff;
-  border: none;
-  /* border-radius: 999px; */
-  border-radius: var(--borderRadius);
-  padding: var(--spacing-m) var(--spacing-xxl);
-  font-size: 1.35rem;
-  font-family: var(--headerFont);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  box-shadow: 0 4px 18px 0 rgba(241, 116, 150, 0.13);
-  cursor: pointer;
-  transition:
-    background 0.3s,
-    transform 0.2s,
-    color 0.3s;
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-s);
-  .cta-arrow {
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-left: var(--spacing-xs);
-    color: var(--yellow);
-    transition: color 0.3s;
-  }
-  &:hover {
-    background: linear-gradient(90deg, var(--pink-5) 0%, var(--orange-4) 100%);
-    color: var(--yellow);
-    transform: scale(1.06);
-    .cta-arrow {
-      color: var(--pink-4);
-    }
-  }
-
-  @media (max-width: 768px) {
-    padding: var(--spacing-m) var(--spacing-xxl);
-    font-size: 1rem;
-    .cta-arrow {
-      font-size: 1.1em;
-      margin-left: var(--spacing-xs);
-    }
-  }
-`;
-
 export const CTATrusted = styled.div`
   margin-top: var(--spacing-l);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+
   span {
     color: var(--grey-8);
-    margin-bottom: var(--spacing-s);
     font-size: 1.05rem;
     font-family: var(--headerFont);
     font-weight: 600;
-    margin-right: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+    margin-right: 0;
   }
   ul {
-    display: inline-flex;
-    gap: var(--spacing-l);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-s);
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
     li {
       font-family: var(--headerFont);
-      /* font-size: 1.1rem; */
-      color: var(--orange-4);
+      color: var(--lightOrangeBackground);
       font-weight: 700;
+      background: var(--orange-4);
+      border-radius: var(--borderRadius);
+      padding: 0.4em 1.1em;
+      margin-bottom: var(--spacing-xs);
+      box-shadow: 0 1px 6px rgba(241, 116, 150, 0.07);
+      font-size: 1.01rem;
       a {
-        color: var(--orange-4);
+        color: var(--white);
         text-decoration: none;
+        letter-spacing: 0.02rem;
         transition: color 0.2s;
       }
       a:hover {
@@ -162,12 +134,15 @@ export const CTATrusted = styled.div`
     margin-top: var(--spacing-m);
     span {
       font-size: 0.93rem;
-      margin-right: var(--spacing-xs)
+      margin-bottom: var(--spacing-xs);
     }
     ul {
-      gap: var(--spacing-xs)
+      gap: var(--spacing-xs);
       li {
         font-size: 0.97rem;
+        width: 100%;
+        margin-bottom: var(--spacing-xs);
+        text-align: left;
       }
     }
   }

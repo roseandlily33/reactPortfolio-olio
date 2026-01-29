@@ -10,13 +10,11 @@ import {
 import { useNavigate } from "react-router-dom";
 import { projectListMERN } from "../../Projects/ProjectLists/projectsMERN";
 import { projectListClient } from "../../Projects/ProjectLists/projectsClient";
+import SecondaryButton from "../../../components/Buttons/SecondaryButton/SecondaryButton";
 
 const ProjectsPreview = () => {
   const navigate = useNavigate();
-  const allCerts = [
-    ...projectListClient,
-    ...projectListMERN,
-  ];
+  const allCerts = [...projectListClient, ...projectListMERN];
 
   const importantCerts = allCerts.filter((cert) => cert.showMainPage === true);
 
@@ -25,15 +23,19 @@ const ProjectsPreview = () => {
       <h4>Top Projects</h4>
       <CertificatesGrid>
         {importantCerts?.map((cert) => (
-          <CertificateCard key={cert.id} onClick={() => navigate(`/Project/${cert.id}`)}>
+          <CertificateCard
+            key={cert.id}
+            onClick={() => navigate(`/Project/${cert.id}`)}
+          >
             <CertificateImage src={cert.img} alt={cert.title} />
             <CertificateTitle>{cert.title}</CertificateTitle>
           </CertificateCard>
         ))}
       </CertificatesGrid>
-      <SeeCertificatesButton onClick={() => navigate("/Projects")}>
-        See All Projects &rarr;
-      </SeeCertificatesButton>
+      <SecondaryButton
+        onClick={() => navigate("/Projects")}
+        span={"See All Projects →"}
+      />
     </CertificatesPreviewSection>
   );
 };
