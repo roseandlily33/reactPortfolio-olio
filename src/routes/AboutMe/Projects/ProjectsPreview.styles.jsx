@@ -55,7 +55,6 @@ export const CertificateImage = styled.img`
 `;
 
 export const CertificateTitle = styled.p`
-  /* color: var(--darkPink); */
   text-align: center;
   font-weight: 600;
 `;

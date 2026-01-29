@@ -68,7 +68,7 @@ export const PaletteCarousel = styled.div`
       border-radius: 4px;
     }
     &::-webkit-scrollbar-thumb {
-      background: var(--medPink);
+      background: var(--pink-4);
       border-radius: 4px;
     }
   }

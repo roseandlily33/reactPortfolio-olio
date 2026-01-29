@@ -7,7 +7,7 @@ export const PrimaryButtonContainer = styled.button`
   padding: 0 2rem;
   /* border-radius: 1.5rem; */
   border-radius: var(--borderRadius);
-  background: var(--darkPink);
+  background: var(--pink-5);
   background-size: 400%;
   color: var(--white);
   border: none;
@@ -40,7 +40,7 @@ export const PrimaryButtonContainer = styled.button`
     height: inherit;
     /* border-radius: inherit; */
     border-radius: var(--borderRadius);
-    background: linear-gradient(82.3deg, var(--yellow), var(--medBrown) 94.3%);
+    background: linear-gradient(82.3deg, var(--yellow), var(--orange-5) 94.3%);
     transition: all 0.475s;
   }
 `;

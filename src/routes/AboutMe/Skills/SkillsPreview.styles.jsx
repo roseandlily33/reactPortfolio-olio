@@ -59,7 +59,7 @@ export const SeeSkillsButton = styled.button`
   border: none;
   /* border-radius: 999px; */
   border-radius: var(--borderRadius);
-  padding: 0.7em 2em;
+  padding: var(--spacing-s) var(--spacing-xl);
   font-size: 1.15rem;
   font-family: var(--headerFont);
   font-weight: 600;
@@ -72,8 +72,8 @@ export const SeeSkillsButton = styled.button`
     transform 0.18s;
 
   &:hover {
-    background: var(--medPink);
-    color: var(--darkBrown);
+    background: var(--pink-4);
+    color: var(--orange-7);
     transform: scale(1.05);
   }
 `;

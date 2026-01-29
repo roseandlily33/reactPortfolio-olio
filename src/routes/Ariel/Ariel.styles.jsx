@@ -281,8 +281,8 @@ export const CTASection = styled.section`
       transform 0.18s;
 
     &:hover {
-      background: var(--medPink);
-      color: var(--darkBrown);
+      background: var(--pink-4);
+      color: var(--orange-7);
       transform: scale(1.05);
     }
   }

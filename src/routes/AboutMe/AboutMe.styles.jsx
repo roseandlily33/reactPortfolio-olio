@@ -26,7 +26,7 @@ export const AboutMePicture = styled.section`
     position: relative;
     z-index: 1;
     left: var(--spacing-m);
-    color: ${({ theme }) => theme.colors.lightPink};
+    color: var(--pink-2);
     font-size: 1.3rem;
     font-weight: 500;
     width: 100%;
@@ -62,7 +62,7 @@ export const AboutMePicture = styled.section`
   }
   @media screen and (max-width: 768px) {
     h2 {
-      left:0;
+      left: 0;
     }
   }
 `;

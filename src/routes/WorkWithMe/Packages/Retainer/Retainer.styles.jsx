@@ -8,13 +8,11 @@ export const RetainerSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border-top: 5px dotted var(--lightBrown); */
 `;
 
 export const RetainerTitle = styled.h2`
   color: var(--pink-5);
   font-family: var(--headerFont);
-  /* font-size: 2rem; */
   margin-bottom: var(--spacing-s);
   letter-spacing: 0.08em;
   text-align: left;
@@ -163,13 +161,11 @@ export const RetainerPrice = styled.div`
 `;
 
 export const RetainerDescription = styled.p`
-  /* color: var(--medBrown); */
   font-size: var(--spacing-m);
   margin-bottom: var(--spacing-m);
 `;
 
 export const RetainerFeatures = styled.ul`
-  /* color: var(--darkBrown); */
   font-size: var(--spacing-m);
   margin: 0;
   padding-left: var(--spacing-m);

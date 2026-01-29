@@ -16,7 +16,7 @@ import { Retainer } from "./RetainerInfo";
 
 const RetainerComponent = () => (
   <RetainerSection>
-    <RetainerTitle style={{ color: "var(--darkOrange)" }}>
+    <RetainerTitle style={{ color: "var(--orange-5)" }}>
       Retainer Packages
     </RetainerTitle>
     <p

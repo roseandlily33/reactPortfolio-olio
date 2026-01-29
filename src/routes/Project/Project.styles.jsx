@@ -254,7 +254,6 @@ export const ProjectDetailDescription = styled.p`
 
 export const ProjectDetailRole = styled.p`
   font-size: 1.01rem;
-  /* color: var(--darkPink); */
 `;
 
 export const ProjectDetailSection = styled.div`

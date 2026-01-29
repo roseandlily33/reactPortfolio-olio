@@ -197,7 +197,7 @@ export const PackageTitle = styled.h3`
 `;
 
 export const PackagePrice = styled.div`
-  /* color: var(--darkBrown); */
+  /* color: var(--); */
   color: var(--pink-7);
   font-size: 1.3rem;
   font-weight: 700;

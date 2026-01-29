@@ -4,12 +4,12 @@ export const BerryAndBloomMain = styled.main`
   min-height: 100vh;
   position: relative;
   display: flex;
-  flex-direction: column; /* Ensures elements stack vertically */
-  align-items: center; /* Centers elements horizontally */
+  flex-direction: column; 
+  align-items: center; 
 `;
 
 export const BerryLogo = styled.aside`
-  margin-top: 5rem; /* Adds spacing below the navbar */
+  margin-top: var(--spacing-xxxxl); 
   width: 300px;
   height: 300px;
   clip-path: polygon(50%);
@@ -83,19 +83,19 @@ export const BerryLogo = styled.aside`
 `;
 
 export const BerryAboutUs = styled.section`
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-xl);
   width: 80%;
   text-align: center;
   background-color: #fdfaf6;
   /* border-radius: 20px; */
   border-radius: var(--borderRadius);
-  padding-block: 4rem;
+  padding-block: var(--spacing-xxxl);
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   .scallop {
     position: relative;
-    background: var(--medPink);
+    background: var(--pink-4);
     padding: 50px;
   }
   .scallop p {
@@ -114,7 +114,7 @@ export const BerryAboutUs = styled.section`
     content: " ";
     background: radial-gradient(
       circle at 50% 0%,
-      var(--medPink) 25%,
+      var(--pink-4) 25%,
       #fdfaf6 26%,
       #fdfaf6 40%
     );
@@ -142,13 +142,13 @@ export const BerryAboutUs = styled.section`
     color: var(--yellow);
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-l)
   }
 `;
 
 export const BerryOurJuices = styled.section`
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-xl);
   width: 80%;
   text-align: center;
   background-color: #fdfaf6;
@@ -157,8 +157,8 @@ export const BerryOurJuices = styled.section`
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
   .juice {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    margin-bottom: var(--spacing-l);
+    padding: var(--spacing-m);
     background-color: #fff;
     /* border-radius: 10px; */
     border-radius: var(--borderRadius);
@@ -166,13 +166,13 @@ export const BerryOurJuices = styled.section`
 
     h4 {
       color: #f38ca9;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+      font-size: var(--spacing-l);
+      margin-bottom: var(--spacing-xs);
     }
 
     p {
       color: #333;
-      font-size: 1rem;
+      font-size: var(--spacing-m);
       line-height: 1.6;
     }
   }

@@ -211,7 +211,7 @@ const Project = () => {
               onClick={() => setActiveTab(tab.key)}
               style={{
                 background:
-                  activeTab === tab.key ? "var(--medPink)" : "#f8f8f8",
+                  activeTab === tab.key ? "var(--pink-3)" : "#f8f8f8",
                 color: activeTab === tab.key ? "#fff" : "var(--pink-4)",
                 border: "none",
                 borderRadius: "999px",
@@ -243,7 +243,7 @@ const Project = () => {
                 <div
                   style={{
                     fontWeight: 600,
-                    color: "var(--medPink)",
+                    color: "var(--pink-4)",
                     fontSize: "1.05em",
                     marginBottom: "var(--spacing-xxs) ",
                     textTransform: "capitalize",

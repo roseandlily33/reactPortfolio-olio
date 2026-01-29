@@ -80,7 +80,7 @@ export const PillTab = styled.button`
   display: inline-flex;
   align-items: center;
   background: #fff;
-  color: var(--medPink);
+  color: var(--pink-3);
   border: none;
   border-radius: 999px;
   padding: var(--spacing-s) var(--spacing-l);
@@ -95,7 +95,7 @@ export const PillTab = styled.button`
     box-shadow 0.2s;
   outline: none;
   svg {
-    color: var(--lightPink);
+    color: var(--pink-2);
     font-size: 1.25em;
     margin-right: var(--spacing-xs);
   }

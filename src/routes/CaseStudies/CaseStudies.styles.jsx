@@ -121,8 +121,6 @@ export const TopContainer = styled.div`
   }
   p {
     text-align: center;
-    /* font-size: 1.2rem; */
-    /* color: var(--medBrown); */
     font-style: italic;
   }
 
@@ -227,7 +225,7 @@ export const CaseStudyImage = styled.img`
   margin-bottom: 0;
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
   cursor: pointer;
-  background: var(--lightPink);
+  background: var(--pink-1);
   display: block;
 `;
 
@@ -262,7 +260,7 @@ export const CaseStudyButton = styled.button`
 
   &:hover {
     background: var(--pink-5);
-    color: var(--darkBrown);
+    color: var(--orange-7);
     transform: scale(1.05);
   }
 `;

@@ -110,7 +110,7 @@ const CertificateList = ({ openModal, CertList, selectedTag }) => {
                   className="certificate-provider"
                   style={{
                     fontSize: "1.08rem",
-                    color: "var(--medPink)",
+                    color: "var(--pink-4)",
                     fontWeight: 700,
                     fontFamily: "var(--headerFont)",
                     background: "rgba(241, 116, 150, 0.08)",
