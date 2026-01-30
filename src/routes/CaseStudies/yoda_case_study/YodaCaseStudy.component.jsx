@@ -5,10 +5,9 @@ import TabButton from "../../../components/Buttons/TabButton/TabButton.component
 import { EachCaseStudyContainer, TopContainer } from "../CaseStudies.styles";
 import {
   SectionHeader,
-  SubHeader,
   SectionText,
-  SectionList,
 } from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
+import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs.component";
 
 const YodaCaseStudy = () => {
   const [selectedTab, setSelectedTab] = useState(0); // Track the selected tab
@@ -22,7 +21,9 @@ const YodaCaseStudy = () => {
   return (
     <CertificateContainer>
       <TopContainer>
+        <h2>Yoda Safety Services</h2>
         <h2>Case Studies</h2>
+
         {/* Tabs Navigation */}
         <div className="tabs">
           {YodaCaseStudyInfoData.map((caseStudy, index) => (
@@ -36,11 +37,23 @@ const YodaCaseStudy = () => {
 
       {/* Case Study Content */}
       <EachCaseStudyContainer>
+        <Breadcrumbs
+          prev="Case Studies"
+          prevLink="/CaseStudies"
+          current="Yoda Safety Services"
+        />
         <div>
           <h3 style={{ color: "var(--orange-6)", marginBottom: "1rem" }}>
             Overview
           </h3>
-          <h4 style={{marginBottom: 'var(--spacing-m)', color: 'var(--orange-5)'}}>{selectedCaseStudy?.title}</h4>
+          <h4
+            style={{
+              marginBottom: "var(--spacing-m)",
+              color: "var(--orange-5)",
+            }}
+          >
+            {selectedCaseStudy?.title}
+          </h4>
           <SectionText>{selectedCaseStudy?.overview}</SectionText>
         </div>
         <div>

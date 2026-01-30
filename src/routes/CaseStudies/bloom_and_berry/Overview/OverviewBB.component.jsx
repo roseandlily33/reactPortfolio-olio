@@ -1,56 +1,60 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   SectionHeader,
   SubHeader,
   SectionText,
 } from "../Campaign/CampaignBB.styles";
 import { FaSeedling, FaBookOpen, FaUserFriends, FaHeart } from "react-icons/fa";
+import Breadcrumbs from "../../../../components/Breadcrumbs/Breadcrumbs.component";
+import PrimaryButton from "../../../../components/Buttons/PrimaryButton/PrimaryButton.component";
 
 const OverviewBB = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <SectionHeader
-        as="h2"
-        style={{
-          textTransform: "uppercase",
-          fontWeight: 400,
-          fontSize: "2rem",
-          letterSpacing: "0.04em",
-          marginBottom: "var(--spacing-xs);",
-        }}
-      >
-        <FaSeedling
-          style={{
-            marginRight: 12,
-            fontSize: "1.3em",
-            verticalAlign: "middle",
-          }}
+      <div style={{ marginBottom: "var(--spacing-m)" }}>
+        <Breadcrumbs
+          prev="Case Studies"
+          prevLink="/CaseStudies"
+          current="Bloom & Berry"
         />
-        Case Study for Bloom & Berry
-      </SectionHeader>
-      <a
-        href="/BloomAndBerry"
-        className="completed-link"
-        target="_blank"
-        rel="noopener noreferrer"
+      </div>
+      <div
         style={{
-          background: "var(--pink-4)",
-          color: "#fff",
-          fontWeight: 700,
-          textDecoration: "none",
-          borderRadius: 999,
-          padding: "var(--spacing-xs) var(--spacing-l)",
-          fontSize: "1rem",
-          fontFamily: "var(--headerFont)",
-          boxShadow: "0 2px 12px rgba(241, 116, 150, 0.12)",
-          marginBottom: "var(--spacing-m);",
-          marginTop: "var(--spacing-xs)",
-          display: "inline-block",
-          border: "2px solid var(--pink-4)",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          // border: "2px solid red",
+          marginBottom: "var(--spacing-xl)",
         }}
       >
-        See Completed Version &rarr; <br />
-      </a>
+        <SectionHeader
+          as="h2"
+          style={{
+            textTransform: "uppercase",
+            fontWeight: 400,
+            fontSize: "2rem",
+            letterSpacing: "0.04em",
+            marginBottom: "var(--spacing-xs);",
+          }}
+        >
+          <FaSeedling
+            style={{
+              marginRight: 12,
+              fontSize: "1em",
+              verticalAlign: "middle",
+            }}
+          />
+          Case Study for Bloom & Berry
+        </SectionHeader>
+        <PrimaryButton
+          onClick={() => navigate("/BloomAndBerry")}
+          span="See Completed Version &rarr;"
+        />
+      </div>
+
       <SectionHeader>
         <FaBookOpen
           style={{

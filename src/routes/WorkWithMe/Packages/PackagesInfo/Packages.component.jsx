@@ -60,7 +60,15 @@ const PackagesComponent = () => {
   return (
     <PackagesSection>
       <RetainerTitle>Project Packages</RetainerTitle>
-      <p style={{ fontWeight: 500, marginBottom: "1.5rem" }}>
+      <p
+        style={{
+          fontWeight: 500,
+          marginBottom: "1.5rem",
+          textAlign: "left",
+          // border: "2px solid black",
+          width: "100%",
+        }}
+      >
         Package prices are starting rates and include core deliverables. For a
         tailored quote or to discuss your needs, just get in touch!
       </p>

@@ -21,46 +21,6 @@ export const ProjectDetailContainer = styled.div`
     border-radius: 0;
   }
 `;
-export const ProjectBreadcrumbs = styled.nav`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: var(--spacing-m);
-  margin-bottom: var(--spacing-m);
-  /* padding: 0.5em 0.2em; */
-  width: fit-content;
-  /* border: 1px solid red; */
-  a {
-    color: var(--orange-5);
-    text-decoration: none;
-    font-weight: 600;
-    /* font-size: 1rem; */
-    /* padding: 0.32em 1.1em; */
-    margin: 0 var(--spacing-xxs);
-    transition:
-      background 0.2s,
-      color 0.2s;
-  }
-  span {
-    color: var(--orange-5);
-    font-weight: 700;
-    font-size: 1rem;
-    padding: var(--spacing-xxxs) var(--spacing-xs);
-    margin: 0 var(--spacing-xxs);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: var(--spacing-m);
-    padding: 0;
-    margin-bottom: var(--spacing-xs);
-    a,
-    span {
-      padding: var(--spacing-xxs);
-    }
-  }
-`;
 
 export const ProjectDetailHeader = styled.div`
   display: flex;

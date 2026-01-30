@@ -14,7 +14,6 @@ import { projectListFrontEndMentor } from "../Projects/ProjectLists/projectsFEM"
 import { projectListClient } from "../Projects/ProjectLists/projectsClient";
 import {
   ProjectDetailContainer,
-  ProjectBreadcrumbs,
   ProjectDetailHeader,
   ProjectDetailMain,
   ProjectDetailImageWrapper,
@@ -31,6 +30,7 @@ import {
   ProjectTestimonial,
   ProjectDetailsContainer,
 } from "./Project.styles.jsx";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.component.jsx";
 
 const Project = () => {
   const { id } = useParams();
@@ -92,13 +92,11 @@ const Project = () => {
 
   return (
     <ProjectDetailContainer>
-      <ProjectBreadcrumbs aria-label="Breadcrumb">
-        <a href="/">Home</a>
-        <span>&gt;</span>
-        <a href="/projects">Projects</a>
-        <span>&gt;</span>
-        <span>{project?.title ?? "Project"}</span>
-      </ProjectBreadcrumbs>
+      <Breadcrumbs
+        prev="Projects"
+        prevLink="/Projects"
+        current={project?.title}
+      />
       <ProjectDetailHeader>
         <h2>{project?.title}</h2>
         <ProjectDetailsContainer>
