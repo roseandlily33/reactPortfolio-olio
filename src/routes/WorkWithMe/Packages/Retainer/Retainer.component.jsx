@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import {
   RetainerSection,
   RetainerTitle,
@@ -44,8 +45,15 @@ const RetainerComponent = () => (
           )}
           <RetainerDescription>{ret.description}</RetainerDescription>
           <RetainerIncludes>
-            <summary>
-              Includes <span className="chev">⌄</span>
+            <summary
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}
+              onClick={e => {
+                // Remove focus after click to prevent lingering :focus styles
+                e.currentTarget.blur();
+              }}
+            >
+              <span>Includes</span>
+              <FaChevronDown className="chev" />
             </summary>
             <div className="includes-content">
               <RetainerFeatures>

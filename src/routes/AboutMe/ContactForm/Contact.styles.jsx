@@ -133,12 +133,7 @@ export const ContactMeSection = styled.section`
   backdrop-filter: blur(14px) saturate(120%);
   overflow: hidden;
 
-  /* Remove float animation backgrounds above 768px */
-  &::before,
-  &::after {
-    display: none;
-  }
-  /* @media screen and (max-width: 768px) { */
+  /* Floating bubbles only on desktop */
   &::before,
   &::after {
     content: "";
@@ -172,7 +167,12 @@ export const ContactMeSection = styled.section`
       transform: translateY(0) scale(1);
     }
   }
-  /* } */
+  @media screen and (max-width: 768px) {
+    &::before,
+    &::after {
+      display: none !important;
+    }
+  }
 
   h3 {
     color: var(--pink-5);

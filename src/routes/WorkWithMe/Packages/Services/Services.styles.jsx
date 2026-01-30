@@ -1,5 +1,50 @@
 import styled from "styled-components";
 
+// Responsive tab bar for services
+export const ServicesTabs = styled.div`
+  display: flex;
+  gap: var(--spacing-m);
+  margin-bottom: var(--spacing-xl);
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 2px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  button {
+    background: #fff;
+    color: var(--pink-5);
+    border: 1.5px solid var(--pink-5);
+    border-radius: 999px;
+    font-weight: 700;
+    font-family: var(--headerFont);
+    font-size: 1.05rem;
+    padding: var(--spacing-xs) var(--spacing-l);
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.18s;
+    white-space: nowrap;
+    scroll-snap-align: start;
+    min-width: 120px;
+    margin-right: 0;
+  }
+  button.active {
+    background: var(--pink-4);
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
+  }
+  @media (max-width: 600px) {
+    gap: var(--spacing-s);
+    button {
+      font-size: 0.97rem;
+      padding: var(--spacing-xs) var(--spacing-m);
+      min-width: 100px;
+    }
+  }
+`;
+
 export const ServicesSection = styled.section`
   background: var(--lightGrey);
   padding: var(--spacing-xxxl) var(--spacing-xl);

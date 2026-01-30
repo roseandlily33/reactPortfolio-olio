@@ -22,6 +22,7 @@ import {
   ServiceIcon,
   ServicesTitle,
   ServiceTitle,
+  ServicesTabs,
 } from "./Services.styles.jsx";
 import { ServicesList } from "./Services.jsx";
 
@@ -84,32 +85,17 @@ const ServicesComponent = () => {
         Need something custom? Just ask—I’m happy to tailor solutions to your
         needs!
       </p>
-      <div style={{ display: "flex", gap: "var(--spacing-m)", marginBottom: "var(--spacing-xl)" }}>
+      <ServicesTabs>
         {tabOrder.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            style={{
-              background: activeTab === tab ? "var(--pink-4)" : "#fff",
-              color: activeTab === tab ? "#fff" : "var(--pink-5)",
-              border: "1.5px solid var(--pink-5)",
-              borderRadius: "999px",
-              fontWeight: 700,
-              fontFamily: "var(--headerFont)",
-              fontSize: "1.05rem",
-              padding: "var(--spacing-xs) var(--spacing-l)",
-              cursor: "pointer",
-              boxShadow:
-                activeTab === tab
-                  ? "0 2px 12px rgba(241,116,150,0.10)"
-                  : "none",
-              transition: "all 0.18s",
-            }}
+            className={activeTab === tab ? "active" : ""}
           >
             {tab}
           </button>
         ))}
-      </div>
+      </ServicesTabs>
       <ServicesGrid>
         {filteredServices.map((service) => (
           <ServiceCard key={service.title}>

@@ -14,7 +14,6 @@ export const RetainerTitle = styled.h2`
   color: var(--pink-5);
   font-family: var(--headerFont);
   margin-bottom: var(--spacing-s);
-  letter-spacing: 0.08em;
   text-align: left;
   width: 100%;
   font-weight: 800;
@@ -100,9 +99,10 @@ export const RetainerIncludes = styled.details`
   summary {
     list-style: none;
     cursor: pointer;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: var(--spacing-xs);
+    justify-content: space-between;
+    width: 100%;
     color: var(--medBerry);
     font-weight: 600;
     background: transparent;
@@ -114,9 +114,6 @@ export const RetainerIncludes = styled.details`
     vertical-align: middle;
   }
   .chev {
-    display: inline-flex;
-    align-items: center;
-    margin-left: var(--spacing-xxxs);
     transition:
       transform 340ms cubic-bezier(0.77, 0, 0.18, 1),
       color 180ms;
@@ -125,6 +122,7 @@ export const RetainerIncludes = styled.details`
     will-change: transform, color;
     line-height: 1;
     height: var(--spacing-m);
+    margin-left: auto;
   }
   summary:hover,
   summary:focus {
@@ -138,6 +136,11 @@ export const RetainerIncludes = styled.details`
   &[open] .chev {
     transform: rotate(180deg) scale(1.08);
     color: var(--pink-5);
+  }
+  .chev:not(:hover):not(:focus) {
+    /* Reset transform and color if not hovered/focused/open */
+    /* This ensures the arrow returns to normal when not active */
+    /* No extra styles needed, just ensures specificity */
   }
   .includes-content {
     max-height: 0;
