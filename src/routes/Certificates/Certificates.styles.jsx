@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CertificateContainer = styled.main`
   margin: 0 auto;
-  width:100%;
+  width: 100%;
   height: 100%;
   /* border: 2px solid red; */
   section {
@@ -114,6 +114,7 @@ export const CertificateContainer = styled.main`
     top: unset;
     right: unset;
   }
+
   @media screen and (max-width: 1500px) {
     #certContainer {
       min-width: 350px;
@@ -269,6 +270,7 @@ export const CertificateContainer = styled.main`
   }
 
   @media screen and (max-width: 768px) {
+    /* border: 2px solid red; */
     section {
       display: flex;
       flex-wrap: nowrap;
@@ -276,6 +278,8 @@ export const CertificateContainer = styled.main`
       gap: var(--spacing-m);
       height: 100%;
       padding-top: var(--spacing-m);
+      padding: var(--spacing-l);
+
       /* border: 1px solid red; */
     }
   }
@@ -291,4 +295,62 @@ export const CertificateContainer = styled.main`
       min-height: 100px;
     }
   }
+`;
+
+export const CertificateSelectContainer = styled.div`
+  position: relative;
+  display: flex;
+  min-width: 160px;
+  width: 100%;
+  justify-content: end;
+  button {
+    background: var(--grey2);
+    border: 2px solid var(--orange-5);
+    border-radius: var(--borderRadius);
+    box-shadow: 0 2px 8px rgba(241, 116, 150, 0.13);
+    color: var(--pink-8);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.6em 2.2em 0.6em 1.2em;
+    font-size: 1.08rem;
+    cursor: pointer;
+    outline: none;
+    min-width: 140px;
+    position: relative;
+  }
+  span {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2em;
+    color: var(--orange-5);
+    transition: transform 0.2s;
+    position: "absolute";
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    z-index: 10;
+    background: #fff;
+    border: 2px solid var(--orange-5);
+    border-radius: var(--borderRadius);
+    box-shadow: 0 4px 16px rgba(241, 116, 150, 0.13);
+    margin: 0;
+    padding: 0.3em 0;
+    min-width: 140px;
+    list-style: none;
+  }
+  li {
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--darkBerry);
+    background: #fff;
+    border-bottom: 1px solid #ffe07c;
+    outline: none;
+  }
+ 
 `;

@@ -80,7 +80,7 @@ export const PackagesGrid = styled.div`
   }
   @media (max-width: 600px) {
     gap: var(--spacing-m);
-    padding: var(--spacing-s) var(--spacing-xxs);
+    padding: var(--spacing-m) var(--spacing-m);
     .scroll-arrow {
       right: var(--spacing-xxxs);
       width: var(--spacing-l);
@@ -137,28 +137,13 @@ export const PackageCard = styled.div`
       rgba(255, 255, 255, 0.22) 0%,
       rgba(255, 255, 255, 0.04) 100%
     );
-    border-radius: 0 0 80px 80px / 0 0 40px 40px;
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius) / 0 0 calc(var(--borderRadius) / 2) calc(var(--borderRadius) / 2);
     z-index: 3;
     pointer-events: none;
     opacity: 0.7;
     filter: blur(0.5px);
   }
 
-  /* accent bar at the top (gradient from accent color to softer pink) */
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 8px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    background: ${({ $accent, $accentSoft }) =>
-      `linear-gradient(90deg, ${$accent || "var(--pink-5)"}, ${$accentSoft || "rgba(241,116,150,0.12)"})`};
-    z-index: 2;
-    transition: background 0.5s cubic-bezier(0.77, 0, 0.18, 1);
-  }
   &:hover::before {
     background: ${({ $accent }) =>
       `linear-gradient(90deg, ${$accent || "var(--pink-5)"} 0%, #fff0 100%)`};
@@ -175,10 +160,10 @@ export const PackageCard = styled.div`
     min-width: 140px;
     max-width: 90vw;
     width: 90vw;
-    padding:  var(--spacing-s) var(--spacing-xs);
+    padding: var(--spacing-m) var(--spacing-m);
     padding-top: var(--spacing-s);
-    /* Remove debug border */
-    border: none;
+    /* border: 2px solid red; */
+    /* border: none; */
   }
 `;
 

@@ -205,6 +205,7 @@ export const CaseStudyCard = styled.div`
     transform 0.18s,
     box-shadow 0.18s;
   overflow: hidden;
+  padding-bottom: var(--spacing-l);
 
   &:hover {
     transform: translateY(-8px) scale(1.03);

@@ -11,6 +11,9 @@ export const ArielLayout = styled.div`
   margin: 0 auto;
   padding: var(--spacing-m);
   box-sizing: border-box;
+   @media screen and (max-width: 768px){
+    padding: 0;
+  }
 `;
 
 export const ArielMain = styled.main`
@@ -33,6 +36,10 @@ export const ArielMain = styled.main`
     padding: var(--spacing-xl) var(--spacing-m);
     gap: var(--spacing-m);
     height: 100%;
+  }
+  @media screen and (max-width: 768px){
+    border-radius: 0;
+    gap: var(--spacing-s);
   }
 `;
 
@@ -260,7 +267,7 @@ export const CTASection = styled.section`
   flex-direction: column;
   align-items: center;
   color: var(--white);
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
 
   button {
     background: var(--pink-5);

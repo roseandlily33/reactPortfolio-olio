@@ -6,7 +6,7 @@ export const CTAButton = styled.button`
   border: none;
   /* border-radius: 999px; */
   border-radius: var(--borderRadius);
-  padding:var(--spacing-m) var(--spacing-xl) 2em;
+  padding:var(--spacing-m) var(--spacing-l);
   font-size: 1.15rem;
   font-family: var(--headerFont);
   font-weight: 600;

@@ -7,6 +7,8 @@ import ProcessTimelineAriel from "./Timeline/TimelineAriel.component";
 import { ArielMain, ArielLayout, Section } from "./Ariel.styles";
 import Testimonial from "./Testimonial/Testimonial.component";
 import CTASection from "./CTA/Cta.component";
+import BackToTopButton from "../../components/BackToTop/BackToTop.button";
+
 
 const sectionIds = [
   "goal",
@@ -45,6 +47,7 @@ const ArielHome = () => {
           <CTASection />
         </Section>
       </ArielMain>
+      <BackToTopButton />
     </ArielLayout>
   );
 };

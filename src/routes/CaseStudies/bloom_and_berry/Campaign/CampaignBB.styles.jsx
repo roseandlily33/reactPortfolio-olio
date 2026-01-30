@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const SectionHeader = styled.h3`
+export const SectionHeader = styled.h4`
   color: var(--orange-7);
   font-family: var(--headerFont);
-  font-size: var(--spacing-l);
   font-weight: 700;
   margin-bottom: var(--spacing-xl);
   display: flex;
@@ -22,7 +21,6 @@ export const SectionHeader = styled.h3`
     flex-shrink: 0;
   }
   @media (max-width: 600px) {
-    font-size: 1.18rem;
     white-space: normal;
     overflow-x: visible;
     text-overflow: unset;
@@ -30,7 +28,7 @@ export const SectionHeader = styled.h3`
   }
 `;
 
-export const SubHeader = styled.h4`
+export const SubHeader = styled.h5`
   color: var(--orange-6);
   font-size: 1.13rem;
   font-weight: 600;

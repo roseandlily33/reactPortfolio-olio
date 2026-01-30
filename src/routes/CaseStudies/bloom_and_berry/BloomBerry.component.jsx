@@ -7,6 +7,8 @@ import CampaignBB from "./Campaign/CampaignBB.component";
 import ContentStrategyBB from "./ContentStrategy/ContentStrategyBB.component";
 import JuiceBB from "./Juice/juicebb.component";
 import GalleryBB from "./Gallery/gallerybb.component";
+import BackToTopButton from "../../../components/BackToTop/BackToTop.button";
+
 // import { BloomStudyCase } from "./Bloom.styles";
 
 const BloomAndBerry = () => {
@@ -30,6 +32,7 @@ const BloomAndBerry = () => {
           <GalleryBB />
         </Section>
       </ArielMain>
+      <BackToTopButton />
     </ArielLayout>
   );
 };

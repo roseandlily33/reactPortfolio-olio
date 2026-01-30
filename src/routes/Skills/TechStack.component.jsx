@@ -32,7 +32,7 @@ const TechStack = () => {
 
   return (
     <TechStackContainer>
-      <h3 className="accent-heading">Tech Stack & Process</h3>
+      {/* <h3 className="accent-heading">Tech Stack & Process</h3> */}
       <div className="section-card">
         <div className="title-stack">
           {techStack?.map((tech, index) => (
@@ -115,12 +115,7 @@ const TechStack = () => {
           application.
         </p>
       </div>
-      <button
-        className="back-to-top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        Back to Top
-      </button>
+      
     </TechStackContainer>
   );
 };

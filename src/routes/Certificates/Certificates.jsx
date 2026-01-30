@@ -1,7 +1,7 @@
 import { CertificateContainer } from "./Certificates.styles";
 import { CertList } from "./Certs";
 import { useState } from "react";
-
+import BackToTopButton from "../../components/BackToTop/BackToTop.button";
 import { TopContainer } from "../CaseStudies/CaseStudies.styles";
 import SelectedCertificate from "./SelectedCertificate";
 import CertificateList from "./CertificateList";
@@ -45,6 +45,8 @@ const Certificates = () => {
         setSelectedCert={setSelectedCert}
         setModalIsOpen={setModalIsOpen}
       />
+      className="back-to-top"
+      <BackToTopButton />
     </>
   );
 };

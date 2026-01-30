@@ -1,5 +1,4 @@
 import {
-  FaRegQuestionCircle,
   FaMapMarkedAlt,
   FaRocket,
   FaChartLine,
@@ -43,13 +42,13 @@ const packageDescriptions = [
 const NotSure = () => (
   <NotSureSection>
     <NotSureTitleRow>
-      <FaRegQuestionCircle
+      {/* <FaRegQuestionCircle
         style={{
           color: "var(--medGrey)",
           fontSize: "1.5rem",
           marginRight: "0.7rem",
         }}
-      />
+      /> */}
       <NotSureTitle>Not sure which package fits?</NotSureTitle>
     </NotSureTitleRow>
     <NotSureList>

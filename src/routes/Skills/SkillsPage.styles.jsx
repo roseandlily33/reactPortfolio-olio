@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const SkillsTabsLegendCard = styled.div`
   background: var(--lightCream);
-  /* border-radius: 22px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 6px 32px rgba(241, 116, 150, 0.13);
   padding: var(--spacing-xl);
@@ -15,31 +14,10 @@ export const SkillsTabsLegendCard = styled.div`
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  // Faded category icon background wrapper
-  /* .category - bg - wrapper {
-  position: relative;
-  width: 100 %;
-  min - height: 320px;
-}
-.category - bg - icon {
-  position: absolute;
-  top: 50 %;
-  left: 50 %;
-  transform: translate(-50 %, -50 %);
-  font - size: 10rem;
-  color: var(--lightPinkBackground);
-  opacity: 0.25;
-  pointer - events: none;
-  z - index: 0;
-  user - select: none;
-}
-.category - bg - wrapper ul {
-  position: relative;
-  z - index: 1;
-} */
   @media (max-width: 900px) {
     padding: var(--spacing-m) var(--spacing-xs);
     gap: var(--spacing-m);
+    /* border: 2px solid red; */
   }
 `;
 
@@ -233,6 +211,10 @@ export const TechStackContainer = styled.div`
     var(--spacing-xs);
   width: 100%;
   background-color: var(--pinkBackground);
+  .tech-icon {
+    font-size: 1rem;
+    color: var(--pink-2);
+  }
 
   .accent-heading {
     color: var(--pink-5);
@@ -331,37 +313,9 @@ export const TechStackContainer = styled.div`
     line-height: 1.5;
     margin-bottom: var(--spacing-m);
   }
-
-  .back-to-top {
-    position: fixed;
-    bottom: var(--spacing-xl);
-    right: var(--spacing-xl);
-    background: var(--pink-5);
-    color: #fff;
-    border: none;
-    border-radius: 999px;
-    padding: var(--spacing-s) var(--spacing-l);
-    font-size: 1.1rem;
-    font-family: var(--headerFont);
-    font-weight: 700;
-    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.13);
-    cursor: pointer;
-    z-index: 100;
-    transition:
-      background 0.2s,
-      color 0.2s,
-      box-shadow 0.2s;
-    opacity: 0.92;
-  }
-  .back-to-top:hover {
-    background: var(--pink-2);
-    color: var(--pink-5);
-    opacity: 1;
-  }
-
   @media screen and (max-width: 600px) {
     .section-card {
-      padding: var(--spacing-m) var(--spacing-xs);
+      padding: var(--spacing-m) var(--spacing-s);
       margin-bottom: var(--spacing-l);
     }
     .overview p {
@@ -371,11 +325,6 @@ export const TechStackContainer = styled.div`
     .accent-heading {
       font-size: 1.3rem;
     }
-    .back-to-top {
-      bottom: var(--spacing-m);
-      right: var(--spacing-m);
-      font-size: 0.98rem;
-      padding: var(--spacing-xs) var(--spacing-m);
-    }
+   
   }
 `;

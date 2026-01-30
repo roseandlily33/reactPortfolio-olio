@@ -4,6 +4,7 @@ import x from "../../routes/CaseStudies/bloom_and_berry/bloom_images/Background.
 import Logo from "../../routes/CaseStudies/bloom_and_berry/bloom_images/Logo.png";
 import { juiceFlavors } from "./Juice";
 
+
 const BloomAndBerryPage = () => {
   return (
     <BerryAndBloomMain

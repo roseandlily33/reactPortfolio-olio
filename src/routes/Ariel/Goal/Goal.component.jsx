@@ -7,7 +7,8 @@ const GoalAriel = () => {
   const link = "https://www.arielboesenerperformancehorses.com/";
   return (
     <>
-      <h2 style={{ marginBottom: "var(--spacing-m)" }}>
+      <div style={{marginBottom: 'var(--spacing-l)'}}>
+        <h2 style={{ marginBottom: "var(--spacing-m)" }}>
         <a
           href={link}
           target="_blank"
@@ -17,9 +18,10 @@ const GoalAriel = () => {
           Ariel Boesener Performance Horses
         </a>
       </h2>
-      <p style={{ marginBottom: "var(--spacing-l);", fontStyle: "italic" }}>
+      <p style={{ fontStyle: "italic" }}>
         September 7, 2025 &ndash; Currently in progress
       </p>
+      </div>
       <SectionHeader>Project Goal</SectionHeader>
 
       <SectionText>

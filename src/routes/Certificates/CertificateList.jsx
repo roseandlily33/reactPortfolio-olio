@@ -88,9 +88,9 @@ const CertificateList = ({ openModal, CertList, selectedTag }) => {
                 style={{
                   fontFamily: "var(--headerFont)",
                   color: "var(--pink-4)",
-                  fontWeight: 600,
+                  fontWeight: 700,
                   margin: "0 0 var(--spacing-xs) 0",
-                  textAlign: "left",
+                  textAlign: "center",
                   letterSpacing: "0.01em",
                   width: "100%",
                 }}

@@ -17,6 +17,8 @@ import {
   SkillsContainer,
 } from "./SkillsPage.styles";
 import { FaRegStar, FaStar } from "react-icons/fa";
+import BackToTopButton from "../../components/BackToTop/BackToTop.button";
+
 
 import TechStack from "./TechStack.component";
 import { skills } from "./SkillsList";
@@ -67,31 +69,33 @@ const SkillsPage = () => {
           </StarLegendCard>
         </SkillsTabsLegendCard>
 
-        <div className="category-bg-wrapper">
+        <div className="category-bg-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: 'var(--spacing-m)' }}>
           {categoryIcons[activeTab]}
-          <SkillList>
-            {skills[activeTab]?.map((skill, index) => (
-              <SkillItem key={index}>
-                <SkillInfo>
-                  <p className="skill-icon">
-                    {skill?.icon}
-                    <span className="skill-name">{skill?.name}</span>
-                  </p>
-                </SkillInfo>
-                <SkillRating>
-                  {[...Array(3)]?.map((_, i) =>
-                    i < skill?.rating ? (
-                      <FaStar key={i} />
-                    ) : (
-                      <FaRegStar key={i} />
-                    ),
-                  )}
-                </SkillRating>
-              </SkillItem>
-            ))}
-          </SkillList>
+          <span style={{ fontWeight: 700, fontSize: '1.3rem', color: 'var(--pink-5)' }}>{activeTab}</span>
         </div>
+        <SkillList>
+          {skills[activeTab]?.map((skill, index) => (
+            <SkillItem key={index}>
+              <SkillInfo>
+                <p className="skill-icon">
+                  {skill?.icon}
+                  <span className="skill-name">{skill?.name}</span>
+                </p>
+              </SkillInfo>
+              <SkillRating>
+                {[...Array(3)]?.map((_, i) =>
+                  i < skill?.rating ? (
+                    <FaStar key={i} />
+                  ) : (
+                    <FaRegStar key={i} />
+                  ),
+                )}
+              </SkillRating>
+            </SkillItem>
+          ))}
+        </SkillList>
       </SkillsContainer>
+      <BackToTopButton />
     </CertificateContainer>
   );
 };
