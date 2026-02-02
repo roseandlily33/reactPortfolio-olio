@@ -201,6 +201,7 @@ export const CaseStudyCard = styled.div`
   align-items: center;
   width: 100%;
   max-width: 370px;
+  max-height: 320px;
   transition:
     transform 0.18s,
     box-shadow 0.18s;

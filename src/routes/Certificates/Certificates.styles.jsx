@@ -11,6 +11,8 @@ export const CertificateContainer = styled.main`
     justify-content: space-evenly;
     gap: var(--spacing-xl);
     height: 100%;
+    min-height: 100vh;
+
     padding-top: var(--spacing-xxxxl);
     background-color: var(--pinkBackground);
     /* border: 1px solid red; */
@@ -27,6 +29,8 @@ export const CertificateContainer = styled.main`
   }
   #certContainer {
     min-width: 450px;
+    min-height: 350px;
+    max-height: 350px;
     margin-block: var(--spacing-m);
     opacity: 0;
     transform: translateY(20px);

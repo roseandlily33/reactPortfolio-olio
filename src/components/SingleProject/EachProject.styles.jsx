@@ -12,6 +12,7 @@ export const EntityContainer = styled.section`
 export const ProjectCard = styled.div`
   max-width: 26%;
   min-width: 260px;
+  max-height: 300px;
   /* border-radius: 22px; */
   border-radius: var(--borderRadius);
   box-shadow:
