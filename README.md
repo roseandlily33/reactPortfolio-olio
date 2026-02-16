@@ -3,8 +3,6 @@ My Personal Portfolio
 
 ## Description:
 Welcome to my portfolio
-- NOTE: My portfolio is currently under development as I am tidying up certain projects and am deploying them. Most of them at this time are deployed and completed. 
-- NOTE: Some of the group applications have been taken down and are not under my control, feel free to check out the attatched repo to those projects
 
 ## Deployed Link:
 [My Portfolio](https://victoriabenoit-portfolio.onrender.com)

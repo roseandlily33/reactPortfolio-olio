@@ -16,13 +16,13 @@ export const projectListClient = [
       "A custom-built training and certification platform for YODA Safety Services. Enables users to create accounts, enroll in online safety courses, purchase training, and download certificates. Built for scalability and security, with a focus on user experience.",
     keyFeatures: [
       "Course enrollment and progress tracking",
-      "Secure online payments and certificate downloads",
+      "Secure online payments with paypal and certificate downloads with user details",
       "Automated email notifications and reminders",
-      "Company Management",
+      "Company Management; manager can assign courses, track progress, and manage company details, as well as a form management system",
       "Subcontractor Management",
-      "Responsive design for mobile and desktop",
-      "Admin dashboard for course and user management",
-      "Interactive Form Upload & Instance System",
+      "Responsive design for mobile, tablet, and desktop",
+      "Admin dashboard for course, company, newsletter and user management",
+      "Interactive Form Upload & Instance System, saves the completed form, can query, filter and search on all the forms for a company",
     ],
     role: "Lead developer: collaborated with client to define requirements, built and deployed the platform.",
     challenges: [
