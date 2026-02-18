@@ -89,6 +89,7 @@ export const projectListMERN = [
     status: false,
     important: true,
     showMainPage: true,
+    designUrl: 'https://design-template-eotn.onrender.com/shared/6995ee3aa24be7c5e9bee9cc',
     description:
       "* There is currently an issue with the Login that I will fix eventually when I have time. Lemon-Lime is a robust recipe management platform built with the MERN stack, offering users a seamless way to create, share, edit, and discover recipes. The app features secure authentication, advanced search and filtering, and the ability to favorite and manage recipes. Integrated image upload and optimization ensure fast performance and beautiful displays. Designed for both desktop and mobile, Lemon-Lime is a one-stop solution for food enthusiasts and home cooks alike.",
     keyFeatures: [

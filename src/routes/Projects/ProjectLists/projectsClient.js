@@ -12,6 +12,8 @@ export const projectListClient = [
     status: true,
     showMainPage: true,
     important: true,
+    designUrl:
+      "https://design-template-eotn.onrender.com/shared/696e6c56f7dd92602402f3b7",
     description:
       "A custom-built training and certification platform for YODA Safety Services. Enables users to create accounts, enroll in online safety courses, purchase training, and download certificates. Built for scalability and security, with a focus on user experience.",
     keyFeatures: [
@@ -64,6 +66,8 @@ export const projectListClient = [
     status: false,
     showMainPage: true,
     important: true,
+    designUrl:
+      "https://design-template-eotn.onrender.com/shared/698223630b3c1ac1f24ea7fa",
     description:
       "A design project for Ariel Boesener Performance Horses. A responsive website built to showcase Ariel's training services, achievements, and available horses for sale. Focused on clean design and user experience.",
     keyFeatures: [
