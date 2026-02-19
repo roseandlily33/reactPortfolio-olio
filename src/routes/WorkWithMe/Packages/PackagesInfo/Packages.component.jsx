@@ -65,6 +65,7 @@ const PackagesComponent = () => {
           fontWeight: 500,
           marginBottom: "1.5rem",
           textAlign: "left",
+          // textAlign: 'center',
           // border: "2px solid black",
           width: "100%",
         }}

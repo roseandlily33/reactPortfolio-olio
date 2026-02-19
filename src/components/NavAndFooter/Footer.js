@@ -52,10 +52,10 @@ const Footer = () => {
         <span>
           Email:{" "}
           <a
-            href="mailto:vrose834@email.com"
+            href="mailto:victoria.benoit.dev@gmail.com"
             style={{ color: "var(--orange-6)" }}
           >
-            vrose834@gmail.com
+            victoria.benoit.dev@gmail.com
           </a>
         </span>
         <span style={{ marginLeft: "1.5rem" }}>

@@ -14,7 +14,7 @@ export const AboutMePicture = styled.section`
   /* border-radius: 25px; */
   /* border-radius: var(--borderRadius); */
   /* box-shadow: inset 1px 4px 5px rgba(0, 0, 0, 0.1); */
-  margin-bottom: var(--spacing-xl);
+  /* margin-bottom: var(--spacing-xl); */
   svg {
     /* border-radius: 25px; */
     /* border-radius: var(--borderRadius); */
@@ -24,6 +24,7 @@ export const AboutMePicture = styled.section`
     z-index: 1;
     top: 0;
     left: var(--spacing-m);
+    padding-left: var(--spacing-l);
   }
   p {
     position: relative;
@@ -34,6 +35,7 @@ export const AboutMePicture = styled.section`
     font-weight: 500;
     width: 100%;
     font-style: italic;
+    padding-left: var(--spacing-l);
   }
   .animate-charcter {
     text-transform: uppercase;
@@ -75,7 +77,7 @@ export const AboutMeSection = styled.section`
   justify-content: space-evenly;
   background-color: #fff;
   /* border: 2px solid red; */
-  padding: var(--spacing-xxl);
+  /* padding: var(--spacing-xxl); */
   a {
     color: var(--pink-5);
     font-weight: bold;

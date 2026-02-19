@@ -12,7 +12,7 @@ export const NavbarOuter = styled.header`
   align-items: center;
   position: relative;
   padding-left: var(--spacing-m);
-  margin-inline: var(--spacing-m);
+  /* margin-inline: var(--spacing-m); */
   padding-bottom: var(--spacing-m);
   padding-top: var(--spacing-m);
   /* border-bottom-left-radius: var(--borderRadius); */

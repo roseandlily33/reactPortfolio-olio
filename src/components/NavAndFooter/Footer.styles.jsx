@@ -12,20 +12,22 @@ export const FooterComponent = styled.footer`
   justify-content: end;
   align-items: center;
   padding-left: var(--spacing-m);
-  margin-inline: var(--spacing-m);
+  padding: var(--spacing-xxxl) var(--spacing-xxl);
   background-color: var(--grey-2);
+  gap: var(--spacing-xs);
   background-image: radial-gradient(
     circle,
     rgba(240, 128, 160, 0.2) 1px,
     transparent 1px
   );
   background-size: 20px 20px;
-  padding: var(--spacing-m);
+  /* padding: var(--spacing-m); */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 
   @media screen and (max-width: 768px) {
-    margin-inline: var(--spacing-xs);
+    /* margin-inline: var(--spacing-xs); */
+    padding: var(--spacing-xxl) var(--spacing-xl);
   }
 `;

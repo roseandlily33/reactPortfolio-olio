@@ -1,61 +1,69 @@
 import styled from "styled-components";
-
-export const CertificatesPreviewSection = styled.section`
-  padding: var(--spacing-xl);
-  width: 100%;
+export const ProjectsPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  background: var(--pinkBackground);
-  h4 {
-    color: var(--pink-5);
+  justify-content: center;
+  gap: 1.5rem;
+  background: #fbede5;
+  padding: var(--spacing-xxxxl) var(--spacing-xxxl);
+  h3 {
+    font-weight: 620;
   }
 `;
 
-export const CertificatesGrid = styled.div`
+export const ProjectsGrid = styled.div`
   display: flex;
   overflow-x: scroll;
-  max-width: 100%;
-  gap: var(--spacing-l);
-  margin-top: var(--spacing-m);
-  padding: var(--spacing-m);
+  gap: 1.5rem;
+  /* border: 2px solid red; */
 `;
 
-export const CertificateCard = styled.div`
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: var(--borderRadius);
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
+export const ProjectCard = styled.div`
+  background: #fdf4f0;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
   padding: var(--spacing-m) var(--spacing-l);
-  min-width: 270px;
-  max-width: 270px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
-  transition:
-    transform 0.18s,
-    box-shadow 0.18s;
-  border: 2px solid var(--pink-4);
-
+  align-items: flex-start;
+  cursor: pointer;
+  transition: box-shadow 0.18s;
+  min-width: 350px;
+  gap: 0.8rem;
+  /* border: 2px solid blue; */
   &:hover {
-    transform: scale(1.06);
-    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
+    box-shadow: 0 4px 24px rgba(243, 140, 169, 0.13);
+    transform: translateY(-2px) scale(1.02);
   }
 `;
 
-export const CertificateImage = styled.img`
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  /* border-radius: 10px; */
-  border-radius: var(--borderRadius);
-  margin-bottom: var(--spacing-s);
-  box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
 `;
 
-export const CertificateTitle = styled.p`
-  text-align: center;
-  font-weight: 600;
+export const ProjectTitle = styled.div`
+  font-weight: 700;
+  font-size: 1.18rem;
+  color: var(--orange-7);
+  margin-bottom: 0.2rem;
 `;
 
+export const ProjectDescription = styled.p`
+  font-size: 0.98rem;
+  color: var(--pink-7);
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+`;
+
+export const ProjectMeta = styled.div`
+  display: flex;
+  gap: 0.7rem;
+  font-size: 0.93rem;
+  color: var(--orange-5);
+  margin-bottom: 0.1rem;
+`;

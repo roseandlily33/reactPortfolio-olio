@@ -4,8 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
-  /* --headerFont: 'Abril Fatface', serif;
-   --mainFont: 'Playfair', sans-serif; */
   --titleFont: "Pacifico", cursive;
   --headerFont: "Raleway", sans-serif;
   --mainFont: "Open Sans", sans-serif;
@@ -27,9 +25,9 @@
   --lightBrown: #ff933d;
   /* Pinks */
 
-  --pinkBackground: rgba(252, 169, 193, 0.1);
+  --pinkBackground: #FBF0F6;
   /* Yellow & Accent */
-  --lightYellowBackground: #fff7d6;
+  --lightYellowBackground: hsla(48, 80%, 79%, 0.4);
   --yellow: #ffb400;
   --green: #4bbf6b;
   --borderRadius: 25px;
@@ -53,44 +51,19 @@
   --lightestPink: #f6a9be;
   /* Border Radius */
   --borderRadius: 24px;
-  /* --grey-1: #ffffff;
-  --grey-2: #f9f9f6;
-  --grey-3: #f4f2ee;
-  --grey-4: #eeece5;
-  --grey-5: #dcdad3;
-  --grey-6: #c0beb6;
-  --grey-7: #575757;
-  --grey-8: #484847;
-  --yellow2: #2c2a2a;
-
-  --pink-1: #ffafd1;
-  --pink-2: #fc94b5;
-  --pink-3: #f87799;
-  --pink-4: #f1587f;
-  --pink-5: #dd3d66;
-  --pink-6: #bc2b4d;
-  --pink-7: #9d1736;
-  --pink-8: #7e0021;
-  --orange-1: #ffe07c;
-  --orange-2: #ffc461;
-  --orange-3: #ffa845;
-  --orange-4: #ff8b27;
-  --orange-5: #ee6e11;
-  --orange-6: #cd530a;
-  --orange-7: #ad3804;
-  --orange-8: #8e1b00; */
   --yellow1: #fff7d6;
   --yellow: #ffb400;
   --green: #4bbf6b;
   /* New colours */
-  --grey-1: #fff9ff;
+  --grey-1: #f7f7f8;
   --grey-2: #fffbff;
-  --grey-3: #fffdff;
+  --grey-3:  #d6d6d8;
   --grey-4: #fffeff;
-  --grey-5: #ffffff;
+  /* --grey-5: #ffffff; */
   --grey-6: #baa3a9;
   --grey-7: #8d6a74;
   --grey-8: #613543;
+  --grey-9: #1e1e22;
   /* These are the new pinks */
   --pink-1: #fff9ff;
   --pink-2: #fcc7d1;
@@ -114,14 +87,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 body {
   background-color: var(--lightCream);
-  /* background-color: var(--darkCream); */
-  /* font-size: 16px; */
-  font-weight: 400;
-  color: var(--pink-8);
   font-family: var(--mainFont);
+  font-size: 16px;
+  color: var(--grey-8);
 }
 a {
   text-decoration: none;
@@ -157,58 +129,6 @@ nav a.active:not(h1 a),
   box-shadow: var(--boxShadow);
 }
 
-/* SMALLEST SCREENS */
-@media screen and (width <= 768px) {
-  body {
-    font-size: 16px;
-    overflow-x: hidden;
-  }
-  /* 1.067 Minor Second with a 16px body */
-
-  p {
-    font-size: 1rem;
-  }
-  span,
-  .italicSpan {
-    font-size: 0.9rem;
-  }
-  a {
-    font-size: 1rem;
-    font-family: var(--mainFont);
-    text-decoration: none;
-  }
-  main {
-    height: 100vh;
-  }
-  textarea {
-    resize: none;
-    height: 50px;
-    width: 150px;
-  }
-  label {
-    font-size: 1rem;
-  }
-  .thumbnail {
-    max-width: 200px;
-    min-width: 200px;
-    width: 200px;
-    max-height: 150px;
-    min-height: 150px;
-    height: auto;
-  }
-  .icon {
-    height: 30px;
-    width: 30px;
-  }
-  .iconMenu {
-    height: 35px;
-    width: 35px;
-  }
-}
-
-html {
-  font-size: 16px;
-}
 .pill {
   display: inline-flex;
   align-items: center;
@@ -295,92 +215,85 @@ textarea:focus {
   box-shadow: 0 0 10px var(--pink-1);
   border-color: var(--pink-4);
 }
-/* New Fonts sizes:
- */
 
 /* Desktop styles */
-
-
 
 h1 {
   font-size: 3.7rem;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0.03rem;
-  color: #dd3d66;
+  /* color: #dd3d66; */
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 600;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0.02rem;
-  color: #ee6e11;
+  /* color: #ee6e11; */
 }
 
 h3 {
   font-size: 2.4rem;
   font-weight: 600;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #bc2b4d;
+  /* color: #bc2b4d; */
 }
 
 h4 {
   font-size: 1.9rem;
   font-weight: 500;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #7e0021;
+  /* color: #7e0021; */
 }
 
 h5 {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #7e0021;
+  /* color: #7e0021; */
 }
 
 h6 {
   font-size: 1.4rem;
   font-weight: 400;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #7e0021;
+  /* color: #7e0021; */
 }
 
 p {
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #7e0021;
 }
 
 small {
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #7e0021;
 }
 
 blockquote {
-  font-size: 0.4rem;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0rem;
-  color: #7e0021;
 }
 
 /* Tablet styles */
@@ -389,18 +302,16 @@ blockquote {
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: capitalize;
-    line-height: 1.2;
+    line-height: 1.6;
     letter-spacing: 0.03rem;
-    color: #dd3d66;
   }
 
   h2 {
     font-size: 2.938rem;
     font-weight: 600;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0.02rem;
-    color: #ee6e11;
   }
   #welcome {
     font-size: 2.5rem;
@@ -410,63 +321,56 @@ blockquote {
     font-size: 2.449rem;
     font-weight: 600;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #bc2b4d;
   }
 
   h4 {
     font-size: 2.04rem;
     font-weight: 500;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   h5 {
     font-size: 1.75rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.2;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   h6 {
     font-size: 1.417rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   p {
     font-size: 1.181rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   small {
     font-size: 0.984rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   blockquote {
     font-size: 0.82rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.3;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #8e1b00;
   }
 }
 
@@ -476,18 +380,16 @@ blockquote {
     font-size: 3rem;
     font-weight: 700;
     text-transform: capitalize;
-    line-height: 1.2;
+    line-height: 1.6;
     letter-spacing: 0.3rem;
-    color: #dd3d66;
   }
 
   h2 {
     font-size: 2.437rem;
     font-weight: 600;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #ee6e11;
   }
   #welcome {
     font-size: 3rem;
@@ -498,62 +400,55 @@ blockquote {
     font-size: 2.03rem;
     font-weight: 600;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0.03rem;
-    color: #bc2b4d;
   }
 
   h4 {
     font-size: 1.692rem;
     font-weight: 500;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   h5 {
     font-size: 1.375rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.2;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   h6 {
     font-size: 1.175rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   p {
-    font-size: 0.979rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #9d1736;
   }
 
   small {
-    font-size: 0.816rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 
   blockquote {
-    font-size: 0.68rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: none;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0rem;
-    color: #7e0021;
   }
 }

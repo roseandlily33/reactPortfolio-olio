@@ -17,4 +17,4 @@ The first thing that I did was create a vision board of the colours, fonts, and 
 MIT
 
 ## Contact Me:
-Email: vrose834@gmail.com
+Email: victoria.benoit.dev@gmail.com

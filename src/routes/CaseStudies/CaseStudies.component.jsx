@@ -3,19 +3,11 @@ import { CertificateContainer } from "../Certificates/Certificates.styles";
 import YodaPic from "../../images/projects/YODA.png";
 import Logo from "./bloom_and_berry/bloom_images/Logo.png";
 import Ariel from "../Ariel/ArielImages/TrainingCapture.png";
-import {
-  TopContainer,
-  CaseStudiesGrid,
-  CaseStudyCard,
-  CaseStudyImage,
-  CaseStudyTitle,
-  CaseStudyButton,
-} from "./CaseStudies.styles";
-import { useNavigate } from "react-router-dom";
-import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
+import { TopContainer } from "./CaseStudies.styles";
+import { CardsBackground } from "../../components/Cards/CardsBackground.styles";
+import CaseStudyCard from "../../components/Cards/CaseStudyCard/CaseStudyCard.component";
 
 const CaseStudies = () => {
-  const navigate = useNavigate();
   const caseStudies = [
     {
       title: "Yoda Safety Services",
@@ -38,30 +30,11 @@ const CaseStudies = () => {
       <TopContainer>
         <h2>Case Studies</h2>
       </TopContainer>
-      <CaseStudiesGrid>
+      <CardsBackground>
         {caseStudies?.map((study, index) => (
-          <CaseStudyCard key={index}>
-            {study?.src ? (
-              <CaseStudyImage
-                src={study?.src}
-                alt={study?.title}
-                onClick={() => navigate(study?.link)}
-              />
-            ) : (
-              <CaseStudyImage
-                src="https://via.placeholder.com/300x180/FFD6E0/3D4249?text=No+Image"
-                alt="No image available"
-                onClick={() => navigate(study?.link)}
-              />
-            )}
-            <CaseStudyTitle>{study?.title}</CaseStudyTitle>
-            <SecondaryButton
-              onClick={() => navigate(study?.link)}
-              span={"View Case Study"}
-            />
-          </CaseStudyCard>
+          <CaseStudyCard study={study} key={index} />
         ))}
-      </CaseStudiesGrid>
+      </CardsBackground>
     </CertificateContainer>
   );
 };

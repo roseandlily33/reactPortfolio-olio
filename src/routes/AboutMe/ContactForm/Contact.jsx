@@ -111,12 +111,12 @@ const ContactMe = () => {
         <ContactInfo>
           <div className="contact-row-item">
             <a
-              href="mailto:vrose834@email.com"
+              href="mailto:victoria.benoit.dev@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaEnvelope /> <span className="contact-label">Email</span>{" "}
-              vrose834@gmail.com
+              victoria.benoit.dev@gmail.com
             </a>
           </div>
           <div className="contact-row-item">

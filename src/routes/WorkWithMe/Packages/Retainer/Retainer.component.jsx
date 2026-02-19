@@ -17,13 +17,17 @@ import { Retainer } from "./RetainerInfo";
 
 const RetainerComponent = () => (
   <RetainerSection>
-    <RetainerTitle style={{ color: "var(--orange-5)" }}>
+    <RetainerTitle style={{ color: "var(--grey-8)", textAlign: 'center' }}>
       Retainer Packages
     </RetainerTitle>
     <p
       style={{
-        marginBottom: "1.5rem",
+        // marginBottom: "1.5rem",
         fontWeight: 500,
+        // textAlign: "left",
+        textAlign: 'center',
+        width: "100%",
+        marginBottom: "var(--spacing-xxl)",
       }}
     >
       Retainer packages offer ongoing support and updates for your website.
@@ -31,7 +35,7 @@ const RetainerComponent = () => (
       anytime.
     </p>
     <RetainerGrid>
-      {Retainer.map((ret, idx) => (
+      {Retainer?.map((ret, idx) => (
         <RetainerCard key={ret.name || idx}>
           <RetainerCardTitle>{ret.name}</RetainerCardTitle>
           <RetainerCardBase>
@@ -46,8 +50,13 @@ const RetainerComponent = () => (
           <RetainerDescription>{ret.description}</RetainerDescription>
           <RetainerIncludes>
             <summary
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}
-              onClick={e => {
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "100%",
+              }}
+              onClick={(e) => {
                 // Remove focus after click to prevent lingering :focus styles
                 e.currentTarget.blur();
               }}
@@ -60,7 +69,10 @@ const RetainerComponent = () => (
                 {ret.features.map((feature, i) => (
                   <li key={i}>
                     <FaCheckCircle
-                      style={{ color: "var(--pink-5)", marginRight: "var(--spacing-xs)" }}
+                      style={{
+                        color: "var(--pink-5)",
+                        marginRight: "var(--spacing-xs)",
+                      }}
                     />
                     {feature}
                   </li>

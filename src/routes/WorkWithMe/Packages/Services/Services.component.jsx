@@ -17,12 +17,13 @@ import {
 } from "react-icons/fa";
 import {
   ServicesSection,
-  ServicesGrid,
-  ServiceCard,
+  ServicesLayout,
+  ServicesListColumn,
+  ServiceListItem,
+  ServiceDetailCard,
   ServiceIcon,
   ServicesTitle,
   ServiceTitle,
-  ServicesTabs,
 } from "./Services.styles.jsx";
 import { ServicesList } from "./Services.jsx";
 
@@ -43,68 +44,43 @@ const iconMap = {
   "Website Redesign": <FaGlobe />,
 };
 
-// Categorize services
-const serviceCategories = {
-  Optimization: [
-    "Performance Optimization",
-    "SEO Setup",
-    "Maintenance & Support",
-    "Cyber Security Review",
-  ],
-  Development: [
-    "API Integration",
-    "Blog Setup",
-    "Content Management System (CMS)",
-    "E-Commerce Integration",
-    "Hosting & Deployment",
-    "Custom Email Solutions",
-  ],
-  Design: [
-    "UI/UX Audit",
-    "Website Redesign",
-    "Branding & Logo Design",
-    "Training & Documentation",
-  ],
-};
-
-const tabOrder = ["Optimization", "Development", "Design"];
-
 const ServicesComponent = () => {
-  const [activeTab, setActiveTab] = useState("Optimization");
-
-  // Filter services for the current tab
-  const filteredServices = ServicesList.filter((service) =>
-    serviceCategories[activeTab].includes(service.title),
-  );
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const selectedService = ServicesList[selectedIndex];
 
   return (
     <ServicesSection>
       <ServicesTitle>Other Services</ServicesTitle>
-      <p style={{ fontWeight: 500, marginBottom: "var(--spacing-l)" }}>
+      <p style={{ fontWeight: 500 }}>
         These services can be added to any project or requested on their own.
         Need something custom? Just ask—I’m happy to tailor solutions to your
         needs!
       </p>
-      <ServicesTabs>
-        {tabOrder.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={activeTab === tab ? "active" : ""}
-          >
-            {tab}
-          </button>
-        ))}
-      </ServicesTabs>
-      <ServicesGrid>
-        {filteredServices.map((service) => (
-          <ServiceCard key={service.title}>
-            <ServiceIcon>{iconMap[service.title] || <FaCogs />}</ServiceIcon>
-            <ServiceTitle>{service.title}</ServiceTitle>
-            <div style={{ textAlign: "center" }}>{service.description}</div>
-          </ServiceCard>
-        ))}
-      </ServicesGrid>
+      <ServicesLayout>
+        <ServicesListColumn>
+          {ServicesList.map((service, idx) => (
+            <ServiceListItem
+              key={service.title}
+              className={selectedIndex === idx ? "active" : ""}
+              onClick={() => setSelectedIndex(idx)}
+            >
+              <ServiceIcon>{iconMap[service.title] || <FaCogs />}</ServiceIcon>
+              <span>{service.title}</span>
+            </ServiceListItem>
+          ))}
+        </ServicesListColumn>
+        <ServiceDetailCard>
+          <ServiceIcon style={{ fontSize: "2.5rem", marginBottom: 12 }}>
+            {iconMap[selectedService.title] || <FaCogs />}
+          </ServiceIcon>
+          <ServiceTitle style={{ fontSize: "1.18rem", marginBottom: 8 }}>
+            {selectedService.title}
+          </ServiceTitle>
+          <div style={{ textAlign: "center", fontSize: "1.05rem" }}>
+            {selectedService.description}
+          </div>
+        </ServiceDetailCard>
+      </ServicesLayout>
     </ServicesSection>
   );
 };

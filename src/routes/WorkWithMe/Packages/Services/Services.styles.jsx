@@ -1,62 +1,115 @@
 import styled from "styled-components";
 
-// Responsive tab bar for services
-export const ServicesTabs = styled.div`
+// Two-column layout for services
+export const ServicesLayout = styled.div`
   display: flex;
-  gap: var(--spacing-m);
-  margin-bottom: var(--spacing-xl);
+  flex-direction: row;
   width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 2px;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  button {
-    background: #fff;
-    color: var(--pink-5);
-    border: 1.5px solid var(--pink-5);
-    border-radius: 999px;
-    font-weight: 700;
-    font-family: var(--headerFont);
-    font-size: 1.05rem;
-    padding: var(--spacing-xs) var(--spacing-l);
-    cursor: pointer;
-    box-shadow: none;
-    transition: all 0.18s;
-    white-space: nowrap;
-    scroll-snap-align: start;
-    min-width: 120px;
-    margin-right: 0;
-  }
-  button.active {
-    background: var(--pink-4);
-    color: #fff;
-    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-  }
-  @media (max-width: 600px) {
-    gap: var(--spacing-s);
-    button {
-      font-size: 0.97rem;
-      padding: var(--spacing-xs) var(--spacing-m);
-      min-width: 100px;
-    }
+  margin-top: var(--spacing-xl);
+  /* max-width: 1200px; */
+  /* min-height: 340px; */
+  gap: var(--spacing-xxxl);
+  /* margin: var(--spacing-xl) auto 0 auto; */
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    min-height: 0;
   }
 `;
 
+export const ServicesListColumn = styled.div`
+  /* flex: 1 1 260px; */
+  /* max-width: 320px; */
+  /* min-width: 200px; */
+  min-width: 30%;
+  max-width: 50%;
+  max-height: 300px;
+  /* border: 2px solid red; */
+  background: var(--lightPinkBackground);
+  border-radius: var(--borderRadius);
+  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
+  padding: var(--spacing-l) var(--spacing-m);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  overflow-y: auto;
+  @media (max-width: 900px) {
+    flex-direction: row;
+    max-width: 100%;
+    min-width: 0;
+    padding: var(--spacing-m) var(--spacing-xs);
+    overflow-x: auto;
+    overflow-y: visible;
+    gap: var(--spacing-xs);
+  }
+`;
+
+export const ServiceListItem = styled.button`
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: var(--spacing-m);
+  background: none;
+  border: none;
+  border-radius: var(--borderRadius);
+  font-family: var(--headerFont);
+  font-size: 1.05rem;
+  color: var(--pink-5);
+  font-weight: 600;
+  padding: var(--spacing-xs) var(--spacing-m);
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  &.active, &:hover {
+    background: var(--pink-4);
+    color: #fff;
+  }
+  @media (max-width: 900px) {
+    min-width: 160px;
+    font-size: 0.97rem;
+    padding: var(--spacing-xs) var(--spacing-s);
+    gap: var(--spacing-xs);
+  }
+`;
+
+export const ServiceDetailCard = styled.div`
+  /* flex: 2 1 400px; */
+  background: #fff;
+  border-radius: var(--borderRadius);
+  box-shadow: 0 4px 24px var(--pink-2);
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 70%;
+  min-height: 260px;
+  @media (max-width: 900px) {
+    min-width: 0;
+    max-width: 100%;
+    padding: var(--spacing-l) var(--spacing-m);
+  }
+`;
+
+
+
 export const ServicesSection = styled.section`
-  background: var(--lightGrey);
-  padding: var(--spacing-xxxl) var(--spacing-xl);
+  /* background: var(--grey-1); */
+  background: #fff;
+  padding: var(--spacing-xxxxxl) var(--spacing-xxxl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  gap: var(--spacing-m);
+  gap: var(--spacing-s);
   p {
     text-align: left;
+    /* text-align: center; */
     /* border: 1px solid red; */
     width: 100%;
   }
@@ -73,21 +126,21 @@ export const ServicesSection = styled.section`
 `;
 
 export const ServicesTitle = styled.h2`
-  color: var(--medGrey);
-  font-family: var(--headerFont);
+  color: var(--grey-8);
   /* font-size: 2.2rem; */
   /* margin-bottom: 1.5rem; */
-  margin-bottom: var(--spacing-s);
-  letter-spacing: 0.08em;
+  margin-bottom: var(--spacing-xs);
+  /* letter-spacing: 0.05em; */
   text-align: left;
+  /* text-align: center; */
   width: 100%;
-  font-weight: 800;
+  font-weight: 600;
 `;
 
 export const ServicesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-xl);
+  gap: var(--spacing-xxl);
   width: 100%;
   max-width: 1400px;
 
@@ -112,7 +165,8 @@ export const ServicesGrid = styled.div`
 `;
 
 export const ServiceCard = styled.div`
-  background: rgba(255, 255, 255, 0.7);
+  /* background: rgba(255, 255, 255, 0.7); */
+  background: var(--lightPinkBackground);
   backdrop-filter: blur(8px) saturate(120%);
   /* border-radius: 24px; */
   border-radius: var(--borderRadius);

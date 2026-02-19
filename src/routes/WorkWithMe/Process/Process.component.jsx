@@ -18,25 +18,25 @@ const processSteps = [
         title: "Strategy & Clarity",
         icon: <FaLightbulb />,
         desc: "We start with a deep-dive into your goals, audience, and vision to set a clear direction.",
-        color: "#f17496",
+        color: "#f7b6c6", // softer pink
     },
     {
         title: "Design with Intention",
         icon: <FaPencilRuler />,
         desc: "Thoughtful, user-focused design brings your brand and ideas to life with purpose.",
-        color: "#f7b267",
+        color: "#f7b6c6", // softer pink
     },
     {
         title: "Build for Longevity",
         icon: <FaTools />,
         desc: "Robust, scalable development ensures your site is fast, secure, and easy to maintain.",
-        color: "#7ec4cf",
+        color: "#f7b6c6", // softer pink
     },
     {
         title: "Support Beyond Launch",
         icon: <FaRocket />,
         desc: "Ongoing support, updates, and guidance help your project thrive long after launch.",
-        color: "#b388eb",
+        color: "#f7b6c6", // softer pink
     },
 ];
 
@@ -60,7 +60,7 @@ const ProcessSection = () => {
 
     return (
         <ProcessSectionContainer>
-            <h3>What to expect</h3>
+            <h4>What to expect</h4>
             <TimelineWrapper>
                 <TimelineLine steps={stepsCount} activeStep={activeStep} />
                 <TimelineLineWhite steps={stepsCount} activeStep={activeStep} />

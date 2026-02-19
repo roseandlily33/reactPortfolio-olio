@@ -1,8 +1,8 @@
 import { CTAButtonContainer } from "./CTAButton.styles";
-const CTAButton = ({ handleClick }) => {
+const CTAButton = ({ handleClick, span = "Ready to work together?" }) => {
   return (
     <CTAButtonContainer onClick={handleClick}>
-      Ready to work together? <span className="cta-arrow">→</span>
+      {span} <span className="cta-arrow">→</span>
     </CTAButtonContainer>
   );
 };

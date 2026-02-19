@@ -1,104 +1,30 @@
-import { AboutMeSection } from "../AboutMe.styles";
-import { FaUserAstronaut, FaTools, FaHeart } from "react-icons/fa";
-import { CardIcon, CardTitle, EachCard, SummarySection } from "./Summary.styles";
+import {
+  HowIWorkColumn,
+  AboutMeColumn,
+  SummarySection,
+} from "./Summary.styles";
 
 const SummaryComponent = () => {
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = "/path/to/VictoriaBenoitResume.pdf"; // Replace with your actual resume path
-    link.download = "VictoriaBenoitResume.pdf";
-    link.click();
-  };
-
   return (
     <SummarySection>
-      {/* Block 1: Who I am */}
-      <EachCard>
-        <CardIcon as={FaUserAstronaut} title="Who I am" />
-        <CardTitle>Who I am</CardTitle>
-        <p>Full Stack Developer &amp; UX/UI Designer</p>
-        <p>
-          <span className="bold">Certified</span> by University of New
-          Brunswick, Codecademy, and Zero to Mastery.
+      <AboutMeColumn>
+        <h3>Who I am</h3>
+        <p style={{ maxWidth: "80%" }}>
+          <strong>Full Stack Developer & UX/UI Designer</strong> with 4+ years
+          building scalable, accessible web solutions.
+          <br />I specialize in clean architecture, performance-focused builds,
+          and thoughtful interface design.
         </p>
-        <p>
-          <span className="bold">4+ years</span> experience building web
-          solutions.
-        </p>
-      </EachCard>
-      {/* Block 2: What I do */}
-      <EachCard>
-        <CardIcon as={FaTools} title="What I do" />
-        <CardTitle>What I do</CardTitle>
+      </AboutMeColumn>
+      <HowIWorkColumn>
+        <h3>How I Work</h3>
         <ul>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            <span>
-              <span className="bold">Front-end:</span> React, CSS, Responsive
-              Design, UI/UX
-            </span>
-          </li>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            <span>
-              <span className="bold">Back-end:</span> Node.js , Express,
-              MongoDB, MySQL
-            </span>
-          </li>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            <span>
-              <span className="bold">DevOps:</span> CI/CD, secure deployments,
-              cloud hosting
-            </span>
-          </li>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            <span>
-              <span className="bold">Specialties:</span> Accessibility, SEO,
-              Email Systems
-            </span>
-          </li>
+          <li>Strategy before design</li>
+          <li>Design with intention</li>
+          <li>Accessibility baked in</li>
+          <li>Support beyond launch</li>
         </ul>
-        <p>
-          <span className="bold">Toolkit:</span> Payment integrations, custom
-          email templates (MJML, Handlebars, Nodemailer)
-        </p>
-      </EachCard>
-      {/* Block 3: What I care about */}
-      <EachCard>
-        <CardIcon as={FaHeart} title="What I care about" />
-        <CardTitle>What I care about</CardTitle>
-        <ul>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            People-first design &amp; accessibility
-          </li>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            <span>Performance, SEO, and clean code</span>
-          </li>
-          <li>
-            <span style={{ color: "var(--pink-3)", fontSize: "1.1rem" }}>
-              ▸
-            </span>
-            <span>Collaboration, learning, and creative solutions</span>
-          </li>
-        </ul>
-        <p>“Let’s turn your vision into a web experience people love.”</p>
-      </EachCard>
+      </HowIWorkColumn>
     </SummarySection>
   );
 };

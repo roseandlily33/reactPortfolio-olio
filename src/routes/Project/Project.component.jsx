@@ -145,6 +145,19 @@ const Project = () => {
                 GitHub
               </a>
             )}
+            {project?.designUrl && (
+              <a
+                href={project?.designUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", gap: 6 }}
+              >
+                <FaExternalLinkAlt
+                  style={{ marginRight: 5, fontSize: "1em" }}
+                />
+                Design Url
+              </a>
+            )}
             {CaseStudies[project?.title] && (
               <a
                 href={CaseStudies[project?.title]}
@@ -191,6 +204,11 @@ const Project = () => {
             <ProjectTestimonial>
               <strong>Testimonial:</strong> {project?.testimonial}
             </ProjectTestimonial>
+          )}
+          {project?.school && (
+            <ProjectDetailRole>
+              This project was developed as part of my coursework.
+            </ProjectDetailRole>
           )}
         </ProjectDetailInfo>
       </ProjectDetailMain>

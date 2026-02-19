@@ -183,25 +183,35 @@ export const TimelineDesc = styled.p`
 `;
 
 export const ProcessSectionContainer = styled.section`
-  background-color: var(--pinkBackground);
-  padding: var(--spacing-xxxl) var(--spacing-xl);
+  background-color: #FFF;
+  background-color: rgba(178, 58, 72, 0.1);
+  /* background: #f9eaea; */
+  padding: var(--spacing-xxxxxl) var(--spacing-xxxl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  h3 {
+  h4 {
     margin-bottom: var(--spacing-xl);
-    font-weight: 800;
+    font-weight: 600;
     width: 100%;
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
     /* font-size: 2.1rem; */
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     color: var(--pink-5);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    color: var(--pink-5);
+    font-family: var(--headerFont);
+    /* font-size: 1.25rem; */
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    width: 100%;
   }
   @media screen and (max-width: 768px) {
-    padding: var(--spacing-xxl) var(--spacing-xl);
+    padding: var(--spacing-xxxl) var(--spacing-xl);
     h3 {
       margin-bottom: var(--spacing-xxs);
     }

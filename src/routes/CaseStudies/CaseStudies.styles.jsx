@@ -115,13 +115,16 @@ export const TopContainer = styled.div`
     box-shadow 0.3s ease;
 
   h2 {
-    color: var(--pink-5);
+    color: var(--pink-6);
     text-align: center;
-    margin-bottom: var(--spacing-m);
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    margin-bottom: var(--spacing-l);
   }
   p {
     text-align: center;
     font-style: italic;
+    font-size: 1.1rem;
   }
 
   .tabs {
@@ -177,67 +180,4 @@ export const TopContainer = styled.div`
       padding: var(--spacing-xs) var(--spacing-s);
     }
   }
-`;
-
-export const CaseStudiesGrid = styled.section`
-  display: flex;
-  gap: var(--spacing-xl);
-  width: 100%;
-  padding: var(--spacing-xl) var(--spacing-m);
-  justify-items: center;
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-export const CaseStudyCard = styled.div`
-  background: rgba(255, 255, 255, 0.92);
-  /* border-radius: 24px; */
-  border-radius: var(--borderRadius);
-  box-shadow: 0 4px 24px rgba(241, 116, 150, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 370px;
-  max-height: 320px;
-  transition:
-    transform 0.18s,
-    box-shadow 0.18s;
-  overflow: hidden;
-  padding-bottom: var(--spacing-l);
-
-  &:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-  }
-`;
-
-export const CaseStudyImage = styled.img`
-  width: 100%;
-  max-width: 370px;
-  height: 180px;
-  object-fit: cover;
-  object-position: top;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.1);
-  cursor: pointer;
-  background: var(--pink-1);
-  display: block;
-`;
-
-export const CaseStudyTitle = styled.h6`
-    font-family: var(--headerFont);
-    color: var(--pink-4);
-    font-weight: 600;
-    margin: var(--spacing-s) ;
-    text-align: center;
-    letter-spacing: 0.01em;
-    width: 100%;
-    /* border: 2px solid red; */
 `;

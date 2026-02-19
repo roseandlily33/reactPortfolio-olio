@@ -1,42 +1,50 @@
 import React from "react";
 import {
-  CertificatesPreviewSection,
-  CertificatesGrid,
-  CertificateCard,
-  CertificateImage,
-  CertificateTitle,
-  SeeCertificatesButton,
+  ProjectsPreviewContainer,
+  ProjectsGrid,
+  ProjectCard,
+  ProjectImage,
+  ProjectTitle,
+  ProjectDescription,
+  ProjectMeta,
 } from "./ProjectsPreview.styles";
 import { useNavigate } from "react-router-dom";
 import { projectListMERN } from "../../Projects/ProjectLists/projectsMERN";
 import { projectListClient } from "../../Projects/ProjectLists/projectsClient";
-import SecondaryButton from "../../../components/Buttons/SecondaryButton/SecondaryButton";
 
 const ProjectsPreview = () => {
   const navigate = useNavigate();
-  const allCerts = [...projectListClient, ...projectListMERN];
+  const allProjects = [...projectListClient, ...projectListMERN];
 
-  const importantCerts = allCerts.filter((cert) => cert.showMainPage === true);
+  const importantProjects = allProjects.filter(
+    (project) => project.showMainPage === true,
+  );
 
   return (
-    <CertificatesPreviewSection>
-      <h4>Top Projects</h4>
-      <CertificatesGrid>
-        {importantCerts?.map((cert) => (
-          <CertificateCard
-            key={cert.id}
-            onClick={() => navigate(`/Project/${cert.id}`)}
+    <ProjectsPreviewContainer>
+      <h3 style={{ textAlign: "center", marginBottom: "var(--spacing-m)" }}>
+        Selected Work
+      </h3>
+      <ProjectsGrid>
+        {importantProjects?.map((project) => (
+          <ProjectCard
+            key={project.id}
+            onClick={() => navigate(`/Project/${project.id}`)}
           >
-            <CertificateImage src={cert.img} alt={cert.title} />
-            <CertificateTitle>{cert.title}</CertificateTitle>
-          </CertificateCard>
+            <ProjectImage src={project.img} alt={project.title} />
+            <ProjectTitle>{project.title}</ProjectTitle>
+            <ProjectDescription>
+              {project.description.slice(0, 80)}
+              {project.description.length > 80 ? "…" : ""}
+            </ProjectDescription>
+            <ProjectMeta>
+              <span>{project.year}</span>
+              <span>{project.type}</span>
+            </ProjectMeta>
+          </ProjectCard>
         ))}
-      </CertificatesGrid>
-      <SecondaryButton
-        onClick={() => navigate("/Projects")}
-        span={"See All Projects →"}
-      />
-    </CertificatesPreviewSection>
+      </ProjectsGrid>
+    </ProjectsPreviewContainer>
   );
 };
 

@@ -1,28 +1,36 @@
 import styled from "styled-components";
 
 export const RetainerSection = styled.section`
-  background: var(--orangeBackground);
-  padding: var(--spacing-xxxl) var(--spacing-xl);
+  /* background: var(--orangeBackground); */
+  background: #fff;
+  padding: var(--spacing-xxxxxl) var(--spacing-xxxl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: var(--spacing-s);
 `;
 
 export const RetainerTitle = styled.h2`
-  color: var(--pink-5);
+  /* color: var(--pink-5); */
+  color: var(--grey-8);
   font-family: var(--headerFont);
-  margin-bottom: var(--spacing-s);
+  margin-bottom: var(--spacing-xs);
   text-align: left;
+  /* text-align: center; */
   width: 100%;
-  font-weight: 800;
+  font-weight: 600;
 `;
 
 export const RetainerGrid = styled.div`
   display: flex;
+  justify-content: center;
   gap: var(--spacing-xxl);
   width: 100%;
+  /* padding: var(--spacing-xl); */
+  /* border: 2px solid red; */
   @media (max-width: 900px) {
     flex-direction: column;
     gap: var(--spacing-xl);
@@ -65,10 +73,10 @@ export const RetainerCard = styled.div`
   }
 `;
 
-export const RetainerCardTitle = styled.h2`
+export const RetainerCardTitle = styled.h5`
   color: var(--pink-5);
   font-family: var(--headerFont);
-  font-size: 1.55rem;
+  /* font-size: 1.55rem; */
   margin-bottom: var(--spacing-xs);
   font-weight: 800;
   display: block;
@@ -80,14 +88,14 @@ export const RetainerCardBase = styled.div`
   align-items: center;
   gap: var(--spacing-s);
   font-size: var(--spacing-m);
-  color: var(--orange-5);
+  color: var(--orange-6);
   font-weight: 500;
   margin-bottom: var(--spacing-s);
   .base-line {
     display: inline-block;
     height: 2px;
     width: 32px;
-    background: #ff8c40;
+    background: var(--orange-7);
     border-radius: 2px;
     margin-left: var(--spacing-s);
   }

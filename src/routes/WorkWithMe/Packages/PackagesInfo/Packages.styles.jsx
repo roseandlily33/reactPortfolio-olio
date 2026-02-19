@@ -1,21 +1,24 @@
 import styled from "styled-components";
 
 export const PackagesSection = styled.section`
-  background-color: var(--pinkBackground);
-  /* padding: 4rem 2rem 1rem 2rem; */
-  padding: var(--spacing-xxxxl) var(--spacing-xl);
+  /* background-color: var(--pinkBackground); */
+  background: #FFF;
+  padding: var(--spacing-xxxxxl) var(--spacing-xxxl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: var(--spacing-s);
   h2 {
-    /* margin-bottom: 2rem; */
-    margin-bottom: var(--spacing-s);
-    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
     /* border: 1px solid red; */
     width: 100%;
     text-align: left;
+   /* letter-spacing: 0.05em; */
+
   }
 `;
 
@@ -28,6 +31,7 @@ export const PackagesGrid = styled.div`
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   position: relative;
+  /* justify-content: center; */
   /* border: 2px solid blue; */
 
   & > div {
