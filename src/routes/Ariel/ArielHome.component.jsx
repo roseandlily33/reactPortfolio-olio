@@ -43,9 +43,9 @@ const ArielHome = () => {
         <Section id="testimonial">
           <Testimonial />
         </Section>
-        <Section id="cta">
+        <div id="cta">
           <CTASection />
-        </Section>
+        </div>
       </ArielMain>
       <BackToTopButton />
     </ArielLayout>

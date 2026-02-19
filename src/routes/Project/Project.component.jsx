@@ -98,7 +98,7 @@ const Project = () => {
         current={project?.title}
       />
       <ProjectDetailHeader>
-        <h2>{project?.title}</h2>
+        <h1>{project?.title}</h1>
         <ProjectDetailsContainer>
           <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
             <ProjectDetailStatus>
@@ -270,7 +270,7 @@ const Project = () => {
                   {category === "frontend" && (
                     <FaTools
                       style={{
-                        color: "var(--pink-1)",
+                        color: "var(--pink-2)",
                         marginRight: "var(--spacing-s)",
                       }}
                       title="Frontend"
@@ -279,7 +279,7 @@ const Project = () => {
                   {category === "backend" && (
                     <FaPuzzlePiece
                       style={{
-                        color: "var(--pink-1)",
+                        color: "var(--pink-2)",
                         marginRight: "var(--spacing-s)",
                       }}
                       title="Backend"
@@ -288,7 +288,7 @@ const Project = () => {
                   {category === "extra" && (
                     <FaStar
                       style={{
-                        color: "var(--pink-1)",
+                        color: "var(--pink-2)",
                         marginRight: "var(--spacing-s)",
                       }}
                       title="Extra"
@@ -297,7 +297,7 @@ const Project = () => {
                   {category}
                 </div>
                 <ProjectDetailList>
-                  {techs.map((tech, idx) => (
+                  {techs?.map((tech, idx) => (
                     <li
                       key={idx}
                       style={{
@@ -306,7 +306,6 @@ const Project = () => {
                         gap: "var(--spacing-xxs)",
                       }}
                     >
-                      {/* Optionally add a tech icon here if you want to map specific techs to icons */}
                       <span style={{ fontWeight: 500 }}>{tech}</span>
                     </li>
                   ))}
@@ -320,7 +319,7 @@ const Project = () => {
         <ProjectDetailSection>
           <ProjectDetailSectionTitle>Key Features:</ProjectDetailSectionTitle>
           <ProjectDetailList>
-            {project.keyFeatures.map((feature, idx) => (
+            {project?.keyFeatures.map((feature, idx) => (
               <li key={idx}>{feature}</li>
             ))}
           </ProjectDetailList>

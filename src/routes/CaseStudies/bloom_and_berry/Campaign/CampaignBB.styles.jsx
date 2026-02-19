@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const SectionHeader = styled.h4`
-  color: var(--orange-7);
+  /* color: var(--orange-7); */
+  color: var(--grey-8);
   font-family: var(--headerFont);
   font-weight: 700;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-s);
   display: flex;
   align-items: center;
   gap:var(--spacing-s); 
@@ -15,7 +16,7 @@ export const SectionHeader = styled.h4`
   padding: var(--spacing-xxxs) ;
   box-sizing: border-box;
   svg {
-    color: var(--orange-7);
+    color: var(--grey-8);
     font-size: 1.2em;
     vertical-align: middle;
     flex-shrink: 0;
@@ -29,10 +30,9 @@ export const SectionHeader = styled.h4`
 `;
 
 export const SubHeader = styled.h5`
-  color: var(--orange-6);
-  font-size: 1.13rem;
+  color: var(--grey-7);
   font-weight: 600;
-  margin: var(--spacing-s)  0 var(--spacing-xxs) 0;
+  margin-bottom: var(--spacing-s);
   display: flex;
   align-items: center;
   gap: var(--spacing-xs); 

@@ -26,17 +26,9 @@ export const ProjectDetailHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-m);
-  margin-bottom: var(--spacing-m);
+  gap: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
   position: relative;
-  h2 {
-    font-family: var(--headerFont);
-    color: var(--pink-5);
-    margin-bottom: var(--spacing-xxs);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-m);
-  }
   .featured-badge {
     display: inline-block;
     background: var(--orangeBackground);
@@ -72,7 +64,7 @@ export const ProjectDetailHeader = styled.div`
     }
   }
   @media screen and (max-width: 600px) {
-    h2 {
+    h1 {
       flex-direction: column;
       align-items: flex-start;
       gap: var(--spacing-m);
@@ -88,7 +80,7 @@ export const ProjectDetailsContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
-  gap: var(--spacing-m);
+  gap: var(--spacing-xl);
   @media (max-width: 900px) {
     flex-direction: column;
     gap: var(--spacing-l);
@@ -139,7 +131,10 @@ export const ProjectDetailInfo = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-m);
+  @media (max-width: 900px) {
+    gap: var(--spacing-s);
+  }
 `;
 
 export const ProjectDetailStatusType = styled.div`
@@ -253,20 +248,21 @@ export const ProjectDetailRole = styled.p`
 
 export const ProjectDetailSection = styled.div`
   /* margin: 1.2rem 0 0.5rem 0; */
-  background: var(--lightestGrey);
-  padding: var(--spacing-l) var(--spacing-xl);
+  background: var(--grey-1);
+  padding: var(--spacing-xl) var(--spacing-xxl);
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-m);
+  /* border: 1px solid red; */
 `;
 
 export const ProjectDetailSectionTitle = styled.h4`
-  margin-bottom: var(--spacing-xxs);
+  /* margin-bottom: var(--spacing-xxs); */
   font-weight: 600;
-  color: var(--pink-4);
+  /* color: var(--pink-4); */
 `;
 
 export const ProjectDetailList = styled.ul`
@@ -277,7 +273,7 @@ export const ProjectDetailList = styled.ul`
   li {
     position: relative;
     font-size: 1rem;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-s);
     font-weight: 350;
     padding-left: var(--spacing-l);
   }

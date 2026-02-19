@@ -37,11 +37,11 @@ export const PaletteCarousel = styled.div`
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid var(--pink-3);
+    border: 2px solid var(--grey-5);
     transition: box-shadow 0.18s, border 0.18s;
     &:hover {
       box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-      border: 2px solid var(--pink-5);
+      border: 2px solid var(--grey-5);
     }
   }
 

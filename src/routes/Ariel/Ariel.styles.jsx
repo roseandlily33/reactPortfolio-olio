@@ -21,11 +21,11 @@ export const ArielMain = styled.main`
   /* max-width: 1000px; */
   width: 85%;
   box-sizing: border-box;
-  padding: var(--spacing-xxl) var(--spacing-xl);
-  background: var(--pink-2);
+  /* padding: var(--spacing-xxl) var(--spacing-xl); */
+  /* background: var(--grey-5); */
   /* border-radius: 25px; */
-  border-radius: var(--borderRadius);
-  box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13);
+  /* border-radius: var(--borderRadius); */
+  /* box-shadow: 0 8px 48px rgba(241, 116, 150, 0.13); */
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xl);
@@ -45,16 +45,14 @@ export const ArielMain = styled.main`
 
 export const Section = styled.section`
   width: 100%;
-  margin-bottom: var(--spacing-xl);
+  /* margin-bottom: var(--spacing-l); */
   padding: var(--spacing-xxl) var(--spacing-xl);
-  background: rgba(255, 255, 255, 0.92);
+  background: #fff;
   /* border-radius: 25px; */
   border-radius: var(--borderRadius);
-  box-shadow: 0 2px 24px rgba(241, 116, 150, 0.1);
+  /* box-shadow: 0 2px 24px rgba(241, 116, 150, 0.1); */
   transition: box-shadow 0.2s;
-  &:hover {
-    box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-  }
+  
 `;
 
 export const PaletteCarousel = styled.div`
@@ -78,10 +76,6 @@ export const PaletteCarousel = styled.div`
     min-width: 250px;
     max-width: 340px;
     transition: transform 0.18s;
-    &:hover {
-      transform: scale(1.04);
-      box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    }
   }
 
   img {
@@ -152,7 +146,7 @@ export const PhaseCarousel = styled.div`
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.1);
     object-fit: cover;
     cursor: pointer;
-    border: 2px solid var(--pink-2);
+    border: 2px solid var(--grey-5);
   }
 
   @media (max-width: 900px) {
@@ -179,7 +173,7 @@ export const CarouselNav = styled.button`
   background: none;
   border: none;
   font-size: 2.2rem;
-  color: var(--pink-5);
+  color: var(--grey-5);
   cursor: pointer;
   align-self: center;
   padding: 0 var(--spacing-m);
@@ -208,7 +202,7 @@ export const CarouselImageModal = styled.div`
     /* border-radius: 18px; */
     border-radius: var(--borderRadius);
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.18);
-    border: 3px solid var(--pink-3);
+    border: 3px solid var(--grey-5);
   }
 `;
 

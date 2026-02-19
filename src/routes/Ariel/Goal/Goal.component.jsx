@@ -14,16 +14,16 @@ const GoalAriel = () => {
           prevLink="/CaseStudies"
           current="Ariel Boesener Performance Horses"
         />
-        <h2 style={{ marginBottom: "var(--spacing-m)" }}>
+        <h1 style={{ marginBlock: "var(--spacing-m)" }}>
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontSize: "var(--spacing-xl)", color: "var(--pink-5)" }}
+            style={{ fontSize: "var(--spacing-xxl)" }}
           >
             Ariel Boesener Performance Horses
           </a>
-        </h2>
+        </h1>
         <p style={{ fontStyle: "italic" }}>
           September 7, 2025 &ndash; Currently in progress
         </p>

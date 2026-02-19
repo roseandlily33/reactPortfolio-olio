@@ -21,7 +21,7 @@ export const TimelineItem = styled.li`
   /* color: var(--darkGrey); */
   line-height: 1.7;
   transition: box-shadow 0.18s;
-  border: 2px solid var(--pink-5);
+  border: 2px solid var(--grey-6);
 
   strong {
     color: var(--pink-5);
