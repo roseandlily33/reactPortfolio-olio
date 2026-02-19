@@ -2,9 +2,8 @@ import {
   ProjectCardContainer,
   ProjectImage,
   ProjectTitle,
-  ProjectMeta,
-  StatusBadge,
-  TypeBadge
+  ProjectTagRow,
+  Tag,
 } from "./ProjectCard.styles";
 import { useNavigate } from "react-router-dom";
 
@@ -26,14 +25,22 @@ const ProjectCard = ({ project }) => {
       )}
       <ProjectImage src={project?.img} alt={project?.alt} />
       <ProjectTitle>{project?.title}</ProjectTitle>
-      <ProjectMeta>
-        <StatusBadge status={project?.status === true ? 'complete' : 'in-progress'}>
-          {project?.status === true ? "Complete" : "Under Development"}
-        </StatusBadge>
-        {project?.type && (
-          <TypeBadge>{project?.type}</TypeBadge>
-        )}
-      </ProjectMeta>
+      <Tag status={project?.status === true ? "complete" : "in-progress"}>
+        {project?.status === true ? "Complete" : "Under Development"}
+      </Tag>
+      <ProjectTagRow>
+        {project?.type && <Tag type>{project?.type}</Tag>}
+        <span style={{
+          display: 'inline-block',
+          width: '7px',
+          height: '7px',
+          borderRadius: '50%',
+          background: 'var(--grey-6)',
+          margin: '0 0.18em',
+          verticalAlign: 'middle',
+        }} />
+        <span style={{ color: 'var(--grey-7)', fontWeight: 500 }}>{project.year}</span>
+      </ProjectTagRow>
     </ProjectCardContainer>
   );
 };

@@ -9,6 +9,7 @@ export const NotSureSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 `;
 
 export const NotSureTitleRow = styled.div`

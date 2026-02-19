@@ -5,7 +5,8 @@ export const CardsBackground = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xl);
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 500px;
   justify-content: center;
-  padding: var(--spacing-xl) var(--spacing-m) var(--spacing-xxl) var(--spacing-m);
+  padding: var(--spacing-xl) var(--spacing-m);
 `;

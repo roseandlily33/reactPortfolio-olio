@@ -15,6 +15,7 @@ export const projectListMERN = [
     status: false,
     showMainPage: true,
     important: true,
+    year: 2026,
     description:
       "AlgoAtlas is a comprehensive algorithm practice platform built with Next.js and MongoDB, designed to help users master coding challenges in a supportive environment. Users can register accounts, solve algorithm problems in an integrated code editor, track their progress over time, and discover new challenges tailored to their skill level. The platform features secure authentication, persistent user profiles, and a scalable backend. *Responsive design in progress.",
     keyFeatures: [
@@ -54,6 +55,7 @@ export const projectListMERN = [
     deployed: "https://design-template-eotn.onrender.com",
     status: true,
     important: true,
+    year: 2026,
     showMainPage: true,
     description:
       "A fully customizable design system builder that empowers users to create, preview, and export unique design templates. Users can mix and match fonts, color palettes, spacing, and button styles, visualizing their choices in real time on a predesigned template. The platform includes accessibility tools, export features, and persistent user accounts for saving projects. Built with Next.js and MongoDB for a seamless, modern experience.",
@@ -88,8 +90,10 @@ export const projectListMERN = [
     deployed: "https://lemon-lime.onrender.com",
     status: false,
     important: true,
+    year: 2024,
     showMainPage: true,
-    designUrl: 'https://design-template-eotn.onrender.com/shared/6995ee3aa24be7c5e9bee9cc',
+    designUrl:
+      "https://design-template-eotn.onrender.com/shared/6995ee3aa24be7c5e9bee9cc",
     description:
       "* There is currently an issue with the Login that I will fix eventually when I have time. Lemon-Lime is a robust recipe management platform built with the MERN stack, offering users a seamless way to create, share, edit, and discover recipes. The app features secure authentication, advanced search and filtering, and the ability to favorite and manage recipes. Integrated image upload and optimization ensure fast performance and beautiful displays. Designed for both desktop and mobile, Lemon-Lime is a one-stop solution for food enthusiasts and home cooks alike.",
     keyFeatures: [
@@ -141,7 +145,8 @@ export const projectListMERN = [
     github: "https://github.com/roseandlily33/sunshine_boutique",
     deployed: "https://superb-croquembouche-bbcbcb.netlify.app/",
     status: true,
-    important: true,
+    important: false,
+    year: 2024,
     description:
       "A modern e-commerce platform for boutique shopping, offering a curated product catalog, real-time inventory, and a secure, streamlined checkout process. Built with React, Redux, and Firebase for instant updates and user authentication, and Stripe for payment processing. The site features a responsive design, intuitive navigation, and a focus on user experience from browsing to purchase.",
     keyFeatures: [
@@ -174,7 +179,8 @@ export const projectListMERN = [
     github: "https://github.com/roseandlily33/space-doodle",
     deployed: "https://space-doodle-nasa.onrender.com",
     status: true,
-    important: true,
+    important: false,
+    year: 2024,
     description:
       "NASA - To The Stars is an interactive space exploration dashboard that brings live NASA data to users in a visually engaging format. Users can browse spaceship names, track launch statuses, and review mission outcomes in real time. Built with Node, GraphQL, and React, informative experience.",
     keyFeatures: [

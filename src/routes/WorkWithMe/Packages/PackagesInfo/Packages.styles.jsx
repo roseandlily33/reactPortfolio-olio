@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PackagesSection = styled.section`
   /* background-color: var(--pinkBackground); */
   background: #FFF;
-  padding: var(--spacing-xxxxxl) var(--spacing-xxxl);
+  padding: var(--spacing-l) var(--spacing-xxxl) var(--spacing-xxxl) var(--spacing-xxxl);
   width: 100%;
   box-sizing: border-box;
   display: flex;

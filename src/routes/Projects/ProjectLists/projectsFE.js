@@ -22,7 +22,8 @@ export const projectListFrontEnd = [
     img: Quiz,
     type: "Front End",
     school: true,
-    important: true,
+    year: 2023,
+    important: false,
     alt: "Javascript quiz application",
     technologies: {
       frontend: ["HTML", "CSS", "JS"],
@@ -40,7 +41,8 @@ export const projectListFrontEnd = [
       "Weather dashboard that fetches real-time data from the OpenWeather API, allowing users to search for current conditions and forecasts by city. Built as a school project with a focus on API integration, responsive design, and user-friendly UI using HTML, CSS, and JavaScript.",
     img: Weather,
     type: "Front End",
-    important: true,
+    important: false,
+    year: 2023,
     school: true,
     alt: "Weather application",
     technologies: {
@@ -77,6 +79,7 @@ export const projectListFrontEnd = [
       "Modern React application that connects with the Spotify API, enabling users to search for tracks, create custom playlists, and save them directly to their Spotify account. Features authentication, real-time search, and playlist management. Project highlights API integration, React hooks, and asynchronous data handling. Ongoing development for enhanced features.",
     img: Jammin,
     type: "Front End",
+    year: 2024,
     important: true,
     alt: "Jammin Application",
     technologies: {
@@ -95,6 +98,7 @@ export const projectListFrontEnd = [
       "Fun and interactive Magic 8 Ball simulation that provides random answers to user questions. Built with HTML, CSS, and JavaScript, this project demonstrates DOM manipulation, event handling, and simple animations for an engaging user experience.",
     img: Magic8,
     type: "Front End",
+    year: 2023,
     alt: "Magic 8 Ball",
     technologies: {
       frontend: ["HTML", "CSS", "JS"],
@@ -112,6 +116,7 @@ export const projectListFrontEnd = [
       "Generates and displays random inspirational quotes at the click of a button. Built with HTML, CSS, and JavaScript, this project highlights array manipulation, randomization logic, and clean UI design for a simple but effective user tool.",
     img: Quote,
     type: "Front End",
+    year: 2023,
     alt: "Quote Generator",
     technologies: {
       frontend: ["HTML", "CSS", "JS"],
@@ -129,6 +134,7 @@ export const projectListFrontEnd = [
       "Implements the Picture-in-Picture web API to allow users to pop out a video into a floating, always-on-top window. Built with HTML, CSS, and JavaScript, this project demonstrates working with browser APIs and enhancing user multitasking capabilities.",
     img: Pictureinpicture,
     type: "Front End",
+    year: 2023,
     alt: "Picture in Picture",
     technologies: {
       frontend: ["HTML", "CSS", "JS"],
@@ -162,6 +168,7 @@ export const projectListFrontEnd = [
       "Customizable password generator that creates secure, random passwords based on user-selected criteria such as length and character types. Built with HTML, CSS, and JavaScript, this project demonstrates form handling, validation, and randomization for practical security tools.",
     img: Password,
     type: "Front End",
+    year: 2023,
     alt: "Password Generator",
     technologies: {
       frontend: ["HTML", "CSS", "JS"],

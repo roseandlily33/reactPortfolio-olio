@@ -59,15 +59,15 @@ const PackagesComponent = () => {
 
   return (
     <PackagesSection>
-      <RetainerTitle>Project Packages</RetainerTitle>
+      {/* <RetainerTitle>Project Packages</RetainerTitle> */}
       <p
         style={{
           fontWeight: 500,
           marginBottom: "1.5rem",
-          textAlign: "left",
-          // textAlign: 'center',
-          // border: "2px solid black",
-          width: "100%",
+          textAlign: 'center',
+          borderTop: '2px solid var(--grey-3)',
+          width: "40%",
+          paddingTop: 'var(--spacing-xl)',
         }}
       >
         Package prices are starting rates and include core deliverables. For a

@@ -1,7 +1,10 @@
 import React from "react";
-import { ProjectCardContainer, ProjectTitle } from "../ProjectCard/ProjectCard.styles";
+import {
+  ProjectCardContainer,
+  ProjectTitle,
+} from "../ProjectCard/ProjectCard.styles";
 import styled from "styled-components";
-
+import SecondaryButton from "../../Buttons/SecondaryButton/SecondaryButton";
 
 const CaseStudyImage = styled.img`
   width: 100%;
@@ -17,44 +20,28 @@ const CaseStudyTitle = styled(ProjectTitle)`
 `;
 
 const CaseStudyCard = ({ index, study }) => {
-    const handleClick = () => {
-        if (study?.link) window.location.href = study.link;
-    };
-    return (
-        <ProjectCardContainer key={index}>
-            {study?.src ? (
-                <CaseStudyImage
-                    src={study?.src}
-                    alt={study?.title}
-                    onClick={handleClick}
-                />
-            ) : (
-                <CaseStudyImage
-                    src="https://via.placeholder.com/300x180/FFD6E0/3D4249?text=No+Image"
-                    alt="No image available"
-                    onClick={handleClick}
-                />
-            )}
-            <CaseStudyTitle>{study?.title}</CaseStudyTitle>
-            <button
-                style={{
-                    background: "var(--orange-5)",
-                    color: "#fff",
-                    border: "none",
-                    borderRadius: "999px",
-                    padding: "0.5em 1.3em",
-                    fontWeight: 700,
-                    fontFamily: "var(--headerFont)",
-                    fontSize: "1rem",
-                    cursor: "pointer",
-                    marginTop: "0.5rem"
-                }}
-                onClick={handleClick}
-            >
-                View Case Study
-            </button>
-        </ProjectCardContainer>
-    );
+  const handleClick = () => {
+    if (study?.link) window.location.href = study.link;
+  };
+  return (
+    <ProjectCardContainer key={index}>
+      {study?.src ? (
+        <CaseStudyImage
+          src={study?.src}
+          alt={study?.title}
+          onClick={handleClick}
+        />
+      ) : (
+        <CaseStudyImage
+          src="https://via.placeholder.com/300x180/FFD6E0/3D4249?text=No+Image"
+          alt="No image available"
+          onClick={handleClick}
+        />
+      )}
+      <CaseStudyTitle>{study?.title}</CaseStudyTitle>
+      <SecondaryButton onClick={handleClick} span="Read More" />
+    </ProjectCardContainer>
+  );
 };
 
 export default CaseStudyCard;
