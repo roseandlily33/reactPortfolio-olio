@@ -14,6 +14,8 @@ const SummaryComponent = () => {
           building scalable, accessible web solutions.
           <br />I specialize in clean architecture, performance-focused builds,
           and thoughtful interface design.
+          <br /> My mission is to create web products that are as delightful as
+          they are functional.
         </p>
       </AboutMeColumn>
       <HowIWorkColumn>

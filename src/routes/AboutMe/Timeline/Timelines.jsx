@@ -42,13 +42,16 @@ const Timeline = () => {
 
   return (
     <TimelineContainer>
-      {events?.map((event, index) => (
-        <TimelineItem key={index}>
-          <div className="bubble"></div>
-          <h4>{event?.year}</h4>
-          <p>{event?.description}</p>
-        </TimelineItem>
-      ))}
+      {events?.map((event, index) => {
+        const align = index % 2 === 0 ? 'left' : 'right';
+        return (
+          <TimelineItem key={index} align={align}>
+            <div className="bubble" />
+            <h4>{event?.year}</h4>
+            <p>{event?.description}</p>
+          </TimelineItem>
+        );
+      })}
     </TimelineContainer>
   );
 };

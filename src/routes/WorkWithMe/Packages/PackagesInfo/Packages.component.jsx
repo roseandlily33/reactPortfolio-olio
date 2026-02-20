@@ -68,6 +68,7 @@ const PackagesComponent = () => {
           borderTop: '2px solid var(--grey-3)',
           width: "40%",
           paddingTop: 'var(--spacing-xl)',
+          paddingBottom: 'var(--spacing-xl)',
         }}
       >
         Package prices are starting rates and include core deliverables. For a

@@ -184,7 +184,8 @@ export const TimelineDesc = styled.p`
 
 export const ProcessSectionContainer = styled.section`
   background-color: #FFF;
-  background-color: rgba(178, 58, 72, 0.1);
+  /* background-color: rgba(178, 58, 72, 0.1); */
+  background: var(--pinkBackground);
   /* background: #f9eaea; */
   padding: var(--spacing-xxxxxl) var(--spacing-xxxl);
   width: 100%;

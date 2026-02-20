@@ -26,8 +26,8 @@ export const ProjectDetailHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-l);
-  margin-bottom: var(--spacing-l);
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
   position: relative;
   .featured-badge {
     display: inline-block;

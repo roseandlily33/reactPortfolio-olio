@@ -45,7 +45,6 @@ const Certificates = () => {
         setSelectedCert={setSelectedCert}
         setModalIsOpen={setModalIsOpen}
       />
-      className="back-to-top"
       <BackToTopButton />
     </>
   );

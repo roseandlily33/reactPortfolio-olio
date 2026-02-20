@@ -16,12 +16,13 @@ const WorkHome = () => {
         style={{
           background: "white",
           textAlign: "center",
-          paddingTop: "var(--spacing-l)",
+          paddingTop: "var(--spacing-xxxl)",
           backgroundColor: "#fff",
         }}
       >
         <h1
           style={{
+            color: "var(--pink-6)",
             // color: "var(--pink-6)",
           }}
         >

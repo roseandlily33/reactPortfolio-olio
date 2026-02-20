@@ -22,9 +22,24 @@ const ProjectsPreview = () => {
 
   return (
     <ProjectsPreviewContainer>
-      <h3 style={{ textAlign: "center", marginBottom: "var(--spacing-m)" }}>
-        Selected Work
-      </h3>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h3 style={{ textAlign: "center", marginBottom: 'var(--spacing-m)', position: 'relative' }}>
+          Portfolio Highlights
+        </h3>
+        <span
+          style={{
+            display: 'block',
+            height: '2px',
+            width: '68%',
+            minWidth: '120px',
+            maxWidth: '220px',
+            background: 'var(--berry)',
+            borderRadius: '2px',
+            margin: '0.35em auto var(--spacing-s) auto',
+          }}
+        />
+      </div>
+      <p style={{ textAlign: "center", marginBottom: "var(--spacing-m)" }}>A selection of projects that showcase my approach to design and development</p>
       <ProjectsGrid>
         {importantProjects?.map((project) => (
           <ProjectCard

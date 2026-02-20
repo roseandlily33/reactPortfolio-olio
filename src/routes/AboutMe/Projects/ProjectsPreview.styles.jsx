@@ -4,7 +4,8 @@ export const ProjectsPreviewContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  background: #fbede5;
+  /* background: #fbede5; */
+  background: var(--lightPinkBackground);
   padding: var(--spacing-xxxxl) var(--spacing-xxxl);
   h3 {
     font-weight: 620;
@@ -19,7 +20,7 @@ export const ProjectsGrid = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  background: #fdf4f0;
+  background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
   padding: var(--spacing-m) var(--spacing-l);
@@ -64,6 +65,6 @@ export const ProjectMeta = styled.div`
   display: flex;
   gap: 0.7rem;
   font-size: 0.93rem;
-  color: var(--orange-5);
+  color: var(--orange-6);
   margin-bottom: 0.1rem;
 `;

@@ -46,9 +46,10 @@ export const HowIWorkColumn = styled.div`
     list-style: none;
     li {
       margin-bottom: var(--spacing-s);
-      line-height: 1.5;
+      line-height: 1.6;
       position: relative;
       padding-left: var(--spacing-m);
+      font-weight: 550;
     }
     li::before {
       content: "";
