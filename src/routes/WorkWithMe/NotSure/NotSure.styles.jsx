@@ -26,6 +26,7 @@ export const NotSureTitle = styled.h4`
   /* font-size: 1.25rem; */
   font-weight: 600;
   margin: 0;
+  margin-bottom: var(--spacing-xxs);
   text-align: center;
   width: 100%;
 `;

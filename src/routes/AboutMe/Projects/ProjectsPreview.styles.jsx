@@ -5,7 +5,8 @@ export const ProjectsPreviewContainer = styled.div`
   justify-content: center;
   gap: 1.5rem;
   /* background: #fbede5; */
-  background: var(--lightPinkBackground);
+  /* background: var(--lightPinkBackground); */
+  background: var(--pinkBackground);
   padding: var(--spacing-xxxxl) var(--spacing-xxxl);
   h3 {
     font-weight: 620;

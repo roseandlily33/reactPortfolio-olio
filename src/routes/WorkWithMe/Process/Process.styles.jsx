@@ -193,6 +193,7 @@ export const ProcessSectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--spacing-m);
   h4 {
     margin-bottom: var(--spacing-xl);
     font-weight: 600;

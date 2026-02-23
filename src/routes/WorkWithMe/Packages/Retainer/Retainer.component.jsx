@@ -17,15 +17,27 @@ import { Retainer } from "./RetainerInfo";
 
 const RetainerComponent = () => (
   <RetainerSection>
-    <RetainerTitle style={{ color: "var(--grey-8)", textAlign: 'center' }}>
+    <RetainerTitle style={{ color: "var(--grey-8)", textAlign: "center" }}>
       Retainer Packages
     </RetainerTitle>
+    <span
+      style={{
+        display: "block",
+        height: "2px",
+        width: "88%",
+        minWidth: "120px",
+        maxWidth: "320px",
+        background: "var(--berry)",
+        borderRadius: "2px",
+        margin: "0.35rem auto var(--spacing-s) auto",
+      }}
+    />
     <p
       style={{
         // marginBottom: "1.5rem",
         fontWeight: 500,
         // textAlign: "left",
-        textAlign: 'center',
+        textAlign: "center",
         width: "100%",
         marginBottom: "var(--spacing-xxl)",
       }}

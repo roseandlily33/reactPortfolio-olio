@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { FaCode, FaDatabase, FaPaintBrush, FaCogs } from "react-icons/fa";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
-import {
-  TopContainer,
-} from "../CaseStudies/CaseStudies.styles";
+import { TopContainer } from "../CaseStudies/CaseStudies.styles";
 import StarLegend from "./Legend.component";
 import {
   SkillList,
@@ -18,7 +17,6 @@ import {
 } from "./SkillsPage.styles";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import BackToTopButton from "../../components/BackToTop/BackToTop.button";
-
 
 import TechStack from "./TechStack.component";
 import { skills } from "./SkillsList";
@@ -38,7 +36,11 @@ const SkillsPage = () => {
   return (
     <CertificateContainer>
       <TopContainer>
-        <h2>Skills</h2>
+        <h1>Skills</h1>
+        <p>
+          Full-stack developer focused on scalable MERN and Next.js
+          applications, performance optimization, and clean UI architecture.
+        </p>
       </TopContainer>
       <TechStack />
 
@@ -69,31 +71,56 @@ const SkillsPage = () => {
           </StarLegendCard>
         </SkillsTabsLegendCard>
 
-        <div className="category-bg-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: 'var(--spacing-m)' }}>
+        <div
+          className="category-bg-wrapper"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            marginBottom: "var(--spacing-m)",
+          }}
+        >
           {categoryIcons[activeTab]}
-          <span style={{ fontWeight: 700, fontSize: '1.3rem', color: 'var(--pink-5)' }}>{activeTab}</span>
+          <span
+            style={{
+              fontWeight: 700,
+              fontSize: "1.3rem",
+              color: "var(--pink-5)",
+            }}
+          >
+            {activeTab}
+          </span>
         </div>
-        <SkillList>
-          {skills[activeTab]?.map((skill, index) => (
-            <SkillItem key={index}>
-              <SkillInfo>
-                <p className="skill-icon">
-                  {skill?.icon}
-                  <span className="skill-name">{skill?.name}</span>
-                </p>
-              </SkillInfo>
-              <SkillRating>
-                {[...Array(3)]?.map((_, i) =>
-                  i < skill?.rating ? (
-                    <FaStar key={i} />
-                  ) : (
-                    <FaRegStar key={i} />
-                  ),
-                )}
-              </SkillRating>
-            </SkillItem>
-          ))}
-        </SkillList>
+        <SwitchTransition mode="out-in">
+          <CSSTransition
+            key={activeTab}
+            timeout={350}
+            classNames="fade"
+            unmountOnExit
+          >
+            <SkillList>
+              {skills[activeTab]?.map((skill, index) => (
+                <SkillItem key={index}>
+                  <SkillInfo>
+                    <p className="skill-icon">
+                      {skill?.icon}
+                      <span className="skill-name">{skill?.name}</span>
+                    </p>
+                  </SkillInfo>
+                  <SkillRating>
+                    {[...Array(3)]?.map((_, i) =>
+                      i < skill?.rating ? (
+                        <FaStar key={i} />
+                      ) : (
+                        <FaRegStar key={i} />
+                      ),
+                    )}
+                  </SkillRating>
+                </SkillItem>
+              ))}
+            </SkillList>
+          </CSSTransition>
+        </SwitchTransition>
       </SkillsContainer>
       <BackToTopButton />
     </CertificateContainer>

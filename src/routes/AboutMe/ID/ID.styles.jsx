@@ -5,15 +5,15 @@ export const IDCardContainer = styled.div`
   flex-direction: column;
   padding: var(--spacing-s) var(--spacing-xxl);
   min-width: 100%;
-  gap: var(--spacing-m);
-  margin-bottom: var(--spacing-xxl);
+  gap: var(--spacing-s);
+  margin-bottom: var(--spacing-xl);
   h4 {
     font-weight: 600;
   }
   /* border: 2px solid red; */
   @media screen and (max-width: 1200px) {
     padding: var(--spacing-xl) var(--spacing-m);
-    gap: var(--spacing-m);
+    gap: var(--spacing-x);
   }
 `;
 
@@ -38,7 +38,7 @@ export const IDCardContainer = styled.div`
 export const IDInfo = styled.div`
   display: flex;
   gap: var(--spacing-m);
-  margin-block: var(--spacing-s);
+  margin-block: var(--spacing-m);
   /* border: 2px solid red; */
 `;
 
@@ -109,5 +109,3 @@ export const IDSocials = styled.div`
     justify-content: end;
   }
 `;
-
-

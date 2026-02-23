@@ -1,93 +1,68 @@
-import React, { useState } from "react";
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
+import React from "react";
+import {
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaLightbulb,
+  FaCogs,
+  FaRocket,
+} from "react-icons/fa";
+import { SiExpress, SiNextdotjs, SiMongodb } from "react-icons/si";
 import { TechStackContainer } from "./SkillsPage.styles";
 
 const TechStack = () => {
-  const techStack = [
-    { name: "M", icon: <FaDatabase /> },
-    { name: "E", icon: <SiExpress /> },
-    { name: "R", icon: <FaReact /> },
-    { name: "N", icon: <FaNodeJs /> },
+  const mernStack = [
+    { name: "M", label: "MongoDB", icon: <FaDatabase /> },
+    { name: "E", label: "Express.js", icon: <SiExpress /> },
+    { name: "R", label: "React", icon: <FaReact /> },
+    { name: "N", label: "Node.js", icon: <FaNodeJs /> },
   ];
 
-  // Tools & Platforms
-  const toolsPlatforms = [
-    { name: "VS Code", icon: "📝" },
-    { name: "Figma", icon: "🎨" },
-    { name: "GitHub", icon: "🐙" },
-    { name: "AWS", icon: "☁️" },
-    { name: "Netlify", icon: "🌐" },
-    { name: "MySQL", icon: "🗄️" },
-    { name: "MongoDB", icon: "🍃" },
-    { name: "PayPal", icon: "💸" },
-    { name: "TanStack Query", icon: "🔄" },
-    { name: "JWT", icon: "🔑" },
-    { name: "Gatsby", icon: "⚡" },
-    { name: "Next.js", icon: "⏭️" },
+  const nextMongoStack = [
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "+", icon: null },
+    { name: "MongoDB", icon: <SiMongodb /> },
   ];
-
-  // Collapsible state for Tools & Platforms
-  const [showTools, setShowTools] = useState(false);
 
   return (
     <TechStackContainer>
-      {/* <h3 className="accent-heading">Tech Stack & Process</h3> */}
       <div className="section-card">
-        <div className="title-stack">
-          {techStack?.map((tech, index) => (
-            <div key={index}>
-              <p>
-                {tech?.name}
-                <span className="tech-icon animated-icon">{tech?.icon}</span>
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="section-card tools-platforms">
-        <h4
-          className="accent-heading"
+        <div
+          className="title-stack"
           style={{
             display: "flex",
+            flexDirection: "column",
+            gap: "1.2em",
             alignItems: "center",
-            justifyContent: "space-between",
-            width: "100%",
           }}
         >
-          <span>Tools & Platforms</span>
-          <button
-            className="tools-toggle-btn"
-            aria-expanded={showTools}
-            aria-controls="tools-platforms-list"
-            onClick={() => setShowTools((prev) => !prev)}
-            style={{
-              marginLeft: "auto",
-              background: "none",
-              border: "none",
-              color: "var(--pink-5",
-              fontWeight: 700,
-              fontSize: "1.1rem",
-              cursor: "pointer",
-            }}
-          >
-            {showTools ? "Hide" : "Show"}
-          </button>
-        </h4>
-        {showTools && (
-          <div className="tools-row" id="tools-platforms-list">
-            {toolsPlatforms.map((tool, idx) => (
-              <span
-                className="tool-pill"
-                key={tool.name + idx}
-                title={tool.name}
-              >
-                <span className="tool-icon">{tool.icon}</span> {tool.name}
-              </span>
+          {/* MERN Stack */}
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7em" }}>
+            {mernStack.map((tech, idx) => (
+              <div key={idx} style={{ textAlign: "center" }}>
+                <span className="tech-icon animated-icon">{tech.icon}</span>
+                <div style={{ fontSize: "0.92em", color: "var(--grey-7)" }}>
+                  {tech.label}
+                </div>
+              </div>
             ))}
           </div>
-        )}
+          {/* Next.js + MongoDB Stack */}
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7em" }}>
+            {nextMongoStack.map((tech, idx) => (
+              <div key={idx} style={{ textAlign: "center" }}>
+                {tech.icon && (
+                  <span className="tech-icon animated-icon">{tech.icon}</span>
+                )}
+                <div style={{ fontSize: "0.92em", color: "var(--grey-7)" }}>
+                  {tech.name}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
       <div className="section-card overview">
         <h4 className="accent-heading">Tech Stack Overview</h4>
         <p>
@@ -98,9 +73,113 @@ const TechStack = () => {
           management, have dealt with JWTs for authentication, and have used
           Paypal for payment processing. I have also worked with MySQL and
           MongoDB for database management, and have experience with AWS for
-          cloud services for storing image and pdf data.
+          cloud services for storing image and pdf data. Recently I have been
+          expanding on my knowledge of Next.js doing projects with that
+          framework and MongoDB as the database.
         </p>
         <h4 className="accent-heading">Development Process</h4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "2.5em",
+            margin: "2em 0 1.5em 0",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* Stage 1: Plan */}
+          <div
+            style={{
+              background: "var(--pink-1)",
+              borderRadius: "18px",
+              boxShadow: "0 2px 12px rgba(241, 116, 150, 0.09)",
+              padding: "2em 1.5em",
+              minWidth: "160px",
+              maxWidth: "220px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0.7em",
+            }}
+          >
+            <FaLightbulb
+              style={{ color: "var(--pink-3)", fontSize: "2.2em" }}
+            />
+            <div
+              style={{
+                fontWeight: 700,
+                color: "var(--pink-5)",
+                fontSize: "1.1em",
+              }}
+            >
+              Plan & Design
+            </div>
+            <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
+              Strategy, requirements, and architecture for scalable, thoughtful
+              solutions.
+            </div>
+          </div>
+          {/* Stage 2: Build */}
+          <div
+            style={{
+              background: "var(--pink-2)",
+              borderRadius: "18px",
+              boxShadow: "0 2px 12px rgba(241, 116, 150, 0.09)",
+              padding: "2em 1.5em",
+              minWidth: "160px",
+              maxWidth: "220px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0.7em",
+            }}
+          >
+            <FaCogs style={{ color: "var(--pink-4)", fontSize: "2.2em" }} />
+            <div
+              style={{
+                fontWeight: 700,
+                color: "var(--pink-5)",
+                fontSize: "1.1em",
+              }}
+            >
+              Build & Develop
+            </div>
+            <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
+              Iterative coding, testing, and integration of backend and frontend
+              features.
+            </div>
+          </div>
+          {/* Stage 3: Launch */}
+          <div
+            style={{
+              background: "var(--pink-3)",
+              borderRadius: "18px",
+              boxShadow: "0 2px 12px rgba(241, 116, 150, 0.09)",
+              padding: "2em 1.5em",
+              minWidth: "160px",
+              maxWidth: "220px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0.7em",
+            }}
+          >
+            <FaRocket style={{ color: "var(--pink-6)", fontSize: "2.2em" }} />
+            <div
+              style={{
+                fontWeight: 700,
+                color: "var(--pink-5)",
+                fontSize: "1.1em",
+              }}
+            >
+              Launch & Support
+            </div>
+            <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
+              Deploy, monitor, and support for a smooth, successful launch and
+              beyond.
+            </div>
+          </div>
+        </div>
         <p>
           My development process begins with understanding the project
           requirements and designing a scalable architecture from how the
@@ -115,7 +194,6 @@ const TechStack = () => {
           application.
         </p>
       </div>
-      
     </TechStackContainer>
   );
 };

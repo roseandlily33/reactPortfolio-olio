@@ -36,16 +36,10 @@ export const TabsPillRow = styled.div`
   }
 `;
 export const StarLegendCard = styled.div`
-  background: #fff;
   /* border-radius: 16px; */
-  border-radius: var(--borderRadius);
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
-  padding: var(--spacing-l) var(--spacing-xl);
   width: 100%;
-  max-width: 420px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: var(--spacing-m);
   @media (max-width: 900px) {
@@ -105,7 +99,36 @@ export const SkillList = styled.ul`
   padding: 0;
   margin: 0;
   /* border: 1px solid red; */
-  width: 100%;
+  width: 50%;
+  min-width: 260px;
+  max-width: 600px;
+  position: relative;
+  transition:
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  &.fade-exit {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    pointer-events: none;
+  }
+  &.fade-enter {
+    opacity: 0;
+    transform: translateY(-24px) scale(0.98);
+  }
+  &.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition:
+      opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &.fade-exit-active {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    transition:
+      opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 `;
 
 export const SkillItem = styled.li`
@@ -174,6 +197,7 @@ export const SkillRating = styled.p`
 `;
 
 export const StarLegendContainer = styled.div`
+  /* border: 2px solid red; */
   .skill-icon {
     color: var(--pink-5);
     display: flex;
@@ -183,6 +207,7 @@ export const StarLegendContainer = styled.div`
   span {
     font-style: italic;
     font-size: 0.9rem;
+    color: var(--grey-7);
   }
 `;
 export const SkillsContainer = styled.div`
@@ -211,13 +236,14 @@ export const TechStackContainer = styled.div`
     var(--spacing-xs);
   width: 100%;
   background-color: var(--pinkBackground);
+  /* border: 2px solid red; */
   .tech-icon {
     font-size: 1rem;
     color: var(--pink-2);
   }
 
   .accent-heading {
-    color: var(--pink-5);
+    color: var(--grey-7);
     font-weight: 700;
     /* letter-spacing: 0.03em; */
     margin-bottom: var(--spacing-m);
@@ -261,49 +287,6 @@ export const TechStackContainer = styled.div`
     transform: scale(1.25) rotate(-8deg);
     color: var(--pink-4);
   }
-
-  .tools-platforms {
-    background: var(--lightPinkBackground);
-    border: 1.5px solid var(--pink-2);
-    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
-    align-items: center;
-    padding: var(--spacing-m) var(--spacing-l);
-  }
-  .tools-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-s);
-    width: 100%;
-    justify-content: flex-start;
-    margin-top: var(--spacing-xxs);
-  }
-  .tool-pill {
-    display: inline-flex;
-    align-items: center;
-    background: #fff;
-    color: var(--pink-5);
-    border-radius: 999px;
-    border: 1.2px solid var(--pink-2);
-    padding: var(--spacing-xs) var(--spacing-m);
-    font-size: 1.01rem;
-    font-family: var(--headerFont);
-    font-weight: 600;
-    box-shadow: 0 1px 6px rgba(241, 116, 150, 0.07);
-    cursor: default;
-    transition:
-      background 0.2s,
-      color 0.2s,
-      box-shadow 0.2s;
-    min-width: 0;
-    white-space: nowrap;
-    margin-bottom: var(--spacing-xxs);
-    gap: var(--spacing-xs);
-  }
-  .tool-icon {
-    font-size: 1.15em;
-    margin-right: var(--spacing-xxs);
-  }
-
   .overview {
     width: 100%;
   }
@@ -325,6 +308,5 @@ export const TechStackContainer = styled.div`
     .accent-heading {
       font-size: 1.3rem;
     }
-   
   }
 `;

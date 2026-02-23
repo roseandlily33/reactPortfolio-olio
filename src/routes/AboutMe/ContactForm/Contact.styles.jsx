@@ -180,6 +180,7 @@ export const ContactMeSection = styled.section`
     padding-bottom: var(--spacing-xxs);
     transition: color 0.3s ease;
     text-transform: capitalize;
+    font-weight: 700;
     @media screen and (max-width: 768px) {
       padding-bottom: var(--spacing-xxxs);
     }

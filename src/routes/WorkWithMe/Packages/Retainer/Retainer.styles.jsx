@@ -17,7 +17,7 @@ export const RetainerTitle = styled.h2`
   /* color: var(--pink-5); */
   color: var(--grey-8);
   font-family: var(--headerFont);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-xxxs);
   text-align: left;
   /* text-align: center; */
   width: 100%;

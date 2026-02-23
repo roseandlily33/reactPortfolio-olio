@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 // Very outer container
 export const AboutMeComponent = styled.main`
   height: 100%;
@@ -8,28 +9,25 @@ export const AboutMeComponent = styled.main`
 `;
 // Top container with the picture
 export const AboutMePicture = styled.section`
-  h2 {
+  h1, h2 {
     position: relative;
     z-index: 1;
     top: 0;
     left: var(--spacing-m);
-    padding-left: var(--spacing-l);
+    padding-left: var(--spacing-xl);
   }
-  p {
-    position: relative;
-    z-index: 1;
-    left: var(--spacing-m);
-    color: var(--pink-2);
-    font-size: 1.3rem;
-    font-weight: 500;
-    width: 100%;
-    font-style: italic;
-    padding-left: var(--spacing-l);
+  @keyframes rotateGradient {
+    0% {
+      --rotate: -225deg;
+    }
+    100% {
+      --rotate: 135deg;
+    }
   }
   .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(
-      -225deg,
+      var(--rotate, -225deg),
       var(--pink-1) 0%,
       var(--pink-5) 29%,
       var(--orange-5) 67%,
@@ -46,8 +44,10 @@ export const AboutMePicture = styled.section`
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-size: 8rem;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-s);
   }
+
+
 
   @keyframes textclip {
     to {
@@ -60,6 +60,7 @@ export const AboutMePicture = styled.section`
     }
   }
 `;
+
 //This is the part that has my pic and info about me
 export const AboutMeSection = styled.section`
   display: flex;
@@ -142,3 +143,4 @@ export const AboutMeSkills = styled.section`
   gap: var(--spacing-xl);
   /* margin-bottom: 3rem; */
 `;
+
