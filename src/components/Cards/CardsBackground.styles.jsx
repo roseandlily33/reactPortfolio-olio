@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardsBackground = styled.div`
-  background: var(--pinkBackground, #fff);
+  /* background: var(--pinkBackground, #fff); */
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xl);

@@ -30,16 +30,20 @@ const ProjectCard = ({ project }) => {
       </Tag>
       <ProjectTagRow>
         {project?.type && <Tag type>{project?.type}</Tag>}
-        <span style={{
-          display: 'inline-block',
-          width: '7px',
-          height: '7px',
-          borderRadius: '50%',
-          background: 'var(--grey-6)',
-          margin: '0 0.18em',
-          verticalAlign: 'middle',
-        }} />
-        <span style={{ color: 'var(--grey-7)', fontWeight: 500 }}>{project.year}</span>
+        <span
+          style={{
+            display: "inline-block",
+            width: "7px",
+            height: "7px",
+            borderRadius: "50%",
+            background: "var(--grey-6)",
+            margin: "0 0.18em",
+            verticalAlign: "middle",
+          }}
+        />
+        <span style={{ color: "var(--grey-7)", fontWeight: 500 }}>
+          {project.year}
+        </span>
       </ProjectTagRow>
     </ProjectCardContainer>
   );

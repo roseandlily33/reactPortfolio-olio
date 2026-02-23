@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 // Very outer container
 export const AboutMeComponent = styled.main`
   height: 100%;
@@ -9,45 +8,74 @@ export const AboutMeComponent = styled.main`
 `;
 // Top container with the picture
 export const AboutMePicture = styled.section`
-  h1, h2 {
+  h1,
+  h2 {
     position: relative;
     z-index: 1;
     top: 0;
     left: var(--spacing-m);
-    padding-left: var(--spacing-xl);
+    margin-left: var(--spacing-l);
   }
   @keyframes rotateGradient {
     0% {
-      --rotate: -225deg;
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
     }
     100% {
-      --rotate: 135deg;
+      background-position: 0% 50%;
     }
   }
   .animate-charcter {
-    text-transform: uppercase;
-    background-image: linear-gradient(
-      var(--rotate, -225deg),
-      var(--pink-1) 0%,
-      var(--pink-5) 29%,
-      var(--orange-5) 67%,
-      var(--yellow) 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 100% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
+    position: relative;
     display: inline-block;
+    color: transparent;
     font-size: 8rem;
-    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 1;
   }
 
+  .animate-charcter::before {
+    content: "Welcome";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      120deg,
+      hsl(330, 100%, 99%),
+      /* --pink-1 */ hsl(348, 89%, 77%),
+      /* --pink-3 */ hsl(343, 67%, 63%),
+      /* --pink-5 */ hsl(33, 100%, 74%),
+      /* --orange-3 */ hsl(29, 100%, 56%),
+      /* --orange-5 */ hsl(45, 100%, 50%),
+      /* --yellow */ hsl(330, 100%, 99%) /* --pink-1 again for loop */
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: rotateGradient 4s linear infinite;
+    z-index: 2;
+    pointer-events: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    display: block;
+  }
 
+  @keyframes rotateGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 
   @keyframes textclip {
     to {
@@ -143,4 +171,3 @@ export const AboutMeSkills = styled.section`
   gap: var(--spacing-xl);
   /* margin-bottom: 3rem; */
 `;
-

@@ -47,9 +47,26 @@ const Projects = () => {
   return (
     <>
       <CertificateContainer>
-        <TopContainer>
-          <h2>Projects</h2>
-          <div className="tabs">
+        {/* <TopContainer> */}
+        <div
+          style={{
+            background: "white",
+            textAlign: "center",
+            paddingTop: "var(--spacing-xxxl)",
+            backgroundColor: "#fff",
+            marginBottom: "var(--spacing-xxl)",
+          }}
+        >
+          <h1
+            style={{
+              color: "var(--pink-6)",
+              marginBottom: "var(--spacing-xl)",
+              // color: "var(--pink-6)",
+            }}
+          >
+            Projects
+          </h1>
+          <div>
             {tabOptions.map((tab) => (
               <TabButton
                 key={tab.key}
@@ -59,7 +76,12 @@ const Projects = () => {
               />
             ))}
           </div>
-        </TopContainer>
+        </div>
+        {/* <h1>Projects</h1> */}
+        {/* <div className="tabs"> */}
+
+        {/* </div> */}
+        {/* </TopContainer> */}
         <CardsBackground>
           {projectList.map((project) => (
             <ProjectCard key={project.id} project={project} />

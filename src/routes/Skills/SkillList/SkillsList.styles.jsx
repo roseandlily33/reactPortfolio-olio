@@ -1,19 +1,34 @@
 import styled from "styled-components";
-export const SkillsTabsLegendCard = styled.div`
-  background: var(--lightCream);
-  border-radius: var(--borderRadius);
-  box-shadow: 0 6px 32px rgba(241, 116, 150, 0.13);
-  padding: var(--spacing-xl);
+export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: var(--spacing-xl);
+  /* margin: 2rem auto; */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  /* border: 2px solid orange; */
   gap: var(--spacing-xl);
+  height: 100%;
+  padding: var(--spacing-xl);
+  padding-bottom: var(--spacing-xxxxl);
+  /* background-color: var(--pinkBackground); */
+  background: white;
+  h4 {
+    color: var(--pink-7);
+    font-weight: 700;
+    /* letter-spacing: 0.03em; */
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+  }
+`;
+export const SkillsTabsLegendCard = styled.div`
+  /* border: 2px solid blue; */
   margin-bottom: var(--spacing-xl);
-  width: 100%;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
   @media (max-width: 900px) {
     padding: var(--spacing-m) var(--spacing-xs);
     gap: var(--spacing-m);
@@ -52,7 +67,7 @@ export const PillTab = styled.button`
   display: inline-flex;
   align-items: center;
   background: #fff;
-  color: var(--pink-3);
+  color: var(--pink-6);
   border: none;
   border-radius: 999px;
   padding: var(--spacing-s) var(--spacing-l);
@@ -67,42 +82,47 @@ export const PillTab = styled.button`
     box-shadow 0.2s;
   outline: none;
   svg {
-    color: var(--pink-2);
+    color: var(--pink-6);
     font-size: 1.25em;
     margin-right: var(--spacing-xs);
   }
   &.activeTab,
   &:hover {
-    background: var(--lightPinkBackground);
-    color: var(--pink-5);
+    background: var(--pink-2);
+    color: var(--pink-7);
     box-shadow: 0 4px 16px rgba(241, 116, 150, 0.13);
   }
 `;
 
-export const SkillsHeaderRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: var(--spacing-xl);
-  flex-wrap: wrap;
-  width: 100%;
-  @media (max-width: 700px) {
-    flex-direction: column;
-    gap: var(--spacing-m);
-    align-items: stretch;
-  }
-`;
+// export const SkillsHeaderRow = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: flex-start;
+//   gap: var(--spacing-xl);
+//   flex-wrap: wrap;
+//   width: 100%;
+//   border: 1px solid red;
+//   @media (max-width: 700px) {
+//     flex-direction: column;
+//     gap: var(--spacing-m);
+//     align-items: stretch;
+//   }
+// `;
 
 export const SkillList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
   /* border: 1px solid red; */
-  width: 50%;
+  width: 100%;
   min-width: 260px;
-  max-width: 600px;
+  max-width: 800px;
   position: relative;
+  display: flex;
+  gap: var(--spacing-l);
+  flex-wrap: wrap;
+  justify-content: center;
   transition:
     opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,12 +153,23 @@ export const SkillList = styled.ul`
 
 export const SkillItem = styled.li`
   display: flex;
-  border-bottom: 1px solid #cac7c7;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: var(--spacing-xs) 0;
-
+  background-color: #fff;
+  border-radius: 8px;
+  padding: var(--spacing-m);
+  /* width: 100%; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* padding: var(--spacing-xs) 0; */
+  /* border: 2px solid blue; */
+  width: 200px;
+  text-align: center;
+  /* height: 300px; */
+  &:hover {
+    background: var(--grey-1);
+  }
   @media (max-width: 600px) {
     /* flex-direction: column; */
     padding: var(--spacing-s) 0;
@@ -147,8 +178,9 @@ export const SkillItem = styled.li`
 
 export const SkillInfo = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-m);
 
   .skill-icon {
@@ -198,115 +230,22 @@ export const SkillRating = styled.p`
 
 export const StarLegendContainer = styled.div`
   /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  width: 100%;
+  margin-top: var(--spacing-l);
+
   .skill-icon {
     color: var(--pink-5);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: var(--spacing-m);
+    gap: var(--spacing-xxs);
   }
   span {
     font-style: italic;
     font-size: 0.9rem;
     color: var(--grey-7);
-  }
-`;
-export const SkillsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--spacing-xl);
-  /* margin: 2rem auto; */
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  /* border: 2px solid orange; */
-  gap: var(--spacing-xl);
-  height: 100%;
-  padding: var(--spacing-xl);
-  background-color: var(--pinkBackground);
-`;
-
-export const TechStackContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--spacing-l) var(--spacing-xs) var(--spacing-xl)
-    var(--spacing-xs);
-  width: 100%;
-  background-color: var(--pinkBackground);
-  /* border: 2px solid red; */
-  .tech-icon {
-    font-size: 1rem;
-    color: var(--pink-2);
-  }
-
-  .accent-heading {
-    color: var(--grey-7);
-    font-weight: 700;
-    /* letter-spacing: 0.03em; */
-    margin-bottom: var(--spacing-m);
-    font-size: 2rem;
-    text-align: left;
-    width: 100%;
-  }
-
-  .section-card {
-    background: #fff;
-    /* border-radius: 18px; */
-    border-radius: var(--borderRadius);
-    box-shadow: 0 2px 12px rgba(241, 116, 150, 0.09);
-    padding: var(--spacing-l) var(--spacing-xl);
-    margin-bottom: var(--spacing-xl);
-    width: 100%;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-m);
-    position: relative;
-  }
-
-  .title-stack {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    gap: var(--spacing-xxs);
-    width: 100%;
-  }
-  .animated-icon {
-    transition:
-      transform 0.18s,
-      color 0.18s;
-    will-change: transform, color;
-  }
-  .animated-icon:hover {
-    transform: scale(1.25) rotate(-8deg);
-    color: var(--pink-4);
-  }
-  .overview {
-    width: 100%;
-  }
-  .overview p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: var(--spacing-m);
-  }
-  @media screen and (max-width: 600px) {
-    .section-card {
-      padding: var(--spacing-m) var(--spacing-s);
-      margin-bottom: var(--spacing-l);
-    }
-    .overview p {
-      font-size: 1rem;
-      margin-bottom: var(--spacing-m);
-    }
-    .accent-heading {
-      font-size: 1.3rem;
-    }
   }
 `;

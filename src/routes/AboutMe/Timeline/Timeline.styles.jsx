@@ -30,21 +30,52 @@ export const TimelineContainer = styled.div`
 `;
 
 export const TimelineItem = styled.div`
+  @keyframes fadeInSlideLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+  @keyframes fadeInSlideRight {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) translateX(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+  }
   position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: ${({ align }) => (align === 'left' ? 'flex-end' : 'flex-start')};
+  align-items: ${({ align }) => (align === "left" ? "flex-end" : "flex-start")};
   margin: 0;
   padding: 2.5rem 2.5rem 2.5rem 2.5rem;
   z-index: 1;
-  margin-left: ${({ align }) => (align === 'left' ? '0' : '50%')};
-  margin-right: ${({ align }) => (align === 'left' ? '50%' : '0')};
+  margin-left: ${({ align }) => (align === "left" ? "0" : "50%")};
+  margin-right: ${({ align }) => (align === "left" ? "50%" : "0")};
+
+  &.fade-in-left {
+    animation: fadeInSlideLeft 0.7s cubic-bezier(0.4, 2, 0.6, 1) forwards;
+  }
+  &.fade-in-right {
+    animation: fadeInSlideRight 0.7s cubic-bezier(0.4, 2, 0.6, 1) forwards;
+  }
+  &.hidden {
+    opacity: 0;
+  }
 
   .bubble {
     position: absolute;
     top: 2.5rem;
-    ${({ align }) => align === 'left' ? 'right: -18px;' : 'left: -18px;'}
+    ${({ align }) => (align === "left" ? "right: -18px;" : "left: -18px;")}
     width: 18px;
     height: 18px;
     background: var(--pink-5);
@@ -58,12 +89,12 @@ export const TimelineItem = styled.div`
     margin-bottom: var(--spacing-xs);
     font-size: 1.22rem;
     font-weight: 700;
-    text-align: ${({ align }) => (align === 'left' ? 'right' : 'left')};
+    text-align: ${({ align }) => (align === "left" ? "right" : "left")};
   }
   p {
     color: var(--grey-7);
     font-size: 1.08rem;
-    text-align: ${({ align }) => (align === 'left' ? 'right' : 'left')};
+    text-align: ${({ align }) => (align === "left" ? "right" : "left")};
     margin: 0;
     max-width: 340px;
   }
@@ -77,7 +108,8 @@ export const TimelineItem = styled.div`
       left: -18px;
       right: auto;
     }
-    h4, p {
+    h4,
+    p {
       text-align: left;
     }
   }

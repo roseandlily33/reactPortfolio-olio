@@ -17,10 +17,32 @@ export const ProjectCardContainer = styled.div`
   max-height: 320px;
   gap: var(--spacing-s);
   position: relative;
+  overflow: hidden;
   /* border: 2px solid blue; */
+
+  /* Shine sweep effect */
+  &::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.45) 70%, rgba(255,255,255,0) 80%);
+    transform: translateX(-100%) rotate(25deg);
+    pointer-events: none;
+    z-index: 3;
+    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+  }
+
   &:hover {
     box-shadow: 0 4px 24px rgba(243, 140, 169, 0.13);
     transform: translateY(-2px) scale(1.02);
+    border: 2px solid var(--pink-4);
+  }
+  &:hover::after {
+    transform: translateX(80%) rotate(25deg);
+    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
   }
 
   .important-badge {
@@ -64,6 +86,7 @@ export const ProjectImage = styled.img`
   object-position: top;
   border-radius: 10px;
   margin-bottom: var(--spacing-s);
+ 
 `;
 
 export const ProjectTitle = styled.div`
@@ -87,13 +110,13 @@ export const Tag = styled.span`
   font-weight: 600;
   font-family: var(--headerFont);
   color: ${({ status, type }) =>
-        status === "complete"
-            ? "var(--green)"
-            : status === "in-progress"
-                ? "var(--yellow)"
-                : type
-                    ? "var(--grey-5)"
-                    : "var(--grey-7)"};
+    status === "complete"
+      ? "var(--green)"
+      : status === "in-progress"
+        ? "var(--yellow)"
+        : type
+          ? "var(--grey-5)"
+          : "var(--grey-7)"};
   letter-spacing: 0.01em;
   text-align: center;
 `;

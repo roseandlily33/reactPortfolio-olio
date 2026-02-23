@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TimelineContainer, TimelineItem } from "./Timeline.styles";
 
 const Timeline = () => {
@@ -40,12 +40,49 @@ const Timeline = () => {
     },
   ];
 
+  // Animation: reveal on scroll into view
+  const [visibleIndexes, setVisibleIndexes] = useState([]);
+  const itemRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const idx = Number(entry.target.getAttribute('data-index'));
+            setVisibleIndexes((prev) =>
+              prev.includes(idx) ? prev : [...prev, idx]
+            );
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    itemRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <TimelineContainer>
       {events?.map((event, index) => {
-        const align = index % 2 === 0 ? 'left' : 'right';
+        const align = index % 2 === 0 ? "left" : "right";
+        const isVisible = visibleIndexes.includes(index);
+        const animationClass = isVisible
+          ? align === "left"
+            ? "fade-in-left"
+            : "fade-in-right"
+          : "hidden";
         return (
-          <TimelineItem key={index} align={align}>
+          <TimelineItem
+            key={index}
+            align={align}
+            className={animationClass}
+            style={{ transitionDelay: `${index * 0.12}s` }}
+            ref={el => (itemRefs.current[index] = el)}
+            data-index={index}
+          >
             <div className="bubble" />
             <h4>{event?.year}</h4>
             <p>{event?.description}</p>

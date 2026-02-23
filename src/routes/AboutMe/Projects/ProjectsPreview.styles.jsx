@@ -17,6 +17,7 @@ export const ProjectsGrid = styled.div`
   display: flex;
   overflow-x: scroll;
   gap: 1.5rem;
+  padding: var(--spacing-m) 0;
   /* border: 2px solid red; */
 `;
 
@@ -24,7 +25,7 @@ export const ProjectCard = styled.div`
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  padding: var(--spacing-m) var(--spacing-l);
+  padding: var(--spacing-xl) var(--spacing-l);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,10 +33,33 @@ export const ProjectCard = styled.div`
   transition: box-shadow 0.18s;
   min-width: 350px;
   gap: 0.8rem;
+  position: relative;
+  overflow: hidden;
   /* border: 2px solid blue; */
+
+  /* Shine sweep effect */
+  &::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.45) 70%, rgba(255,255,255,0) 80%);
+    transform: translateX(-100%) rotate(25deg);
+    pointer-events: none;
+    z-index: 3;
+    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+  }
+
   &:hover {
     box-shadow: 0 4px 24px rgba(243, 140, 169, 0.13);
     transform: translateY(-2px) scale(1.02);
+    border: 2px solid var(--pink-4);
+  }
+  &:hover::after {
+    transform: translateX(80%) rotate(25deg);
+    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
   }
 `;
 

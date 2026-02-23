@@ -27,11 +27,11 @@ export const skills = {
   Frontend: [
     { name: "HTML", icon: <FaHtml5 />, rating: 3 },
     { name: "CSS", icon: <FaCss3Alt />, rating: 3, top: true },
-    {
-      name: "CSS Libraries: Bootstrap, Styled Components, Pure.css",
-      icon: <SiStyledcomponents />,
-      rating: 3,
-    },
+    // {
+    //   name: "CSS Libraries",
+    //   icon: <SiStyledcomponents />,
+    //   rating: 3,
+    // },
     { name: "Responsive Design", icon: <FaRegStar />, rating: 3 },
     { name: "JavaScript", icon: <SiJavascript />, rating: 3, top: true },
     { name: "APIs", icon: <FaRegStar />, rating: 3 },

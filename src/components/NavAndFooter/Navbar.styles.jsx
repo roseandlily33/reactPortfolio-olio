@@ -12,15 +12,8 @@ export const NavbarOuter = styled.header`
   align-items: center;
   position: relative;
   padding-left: var(--spacing-m);
-  /* margin-inline: var(--spacing-m); */
   padding-bottom: var(--spacing-m);
   padding-top: var(--spacing-m);
-  /* border-bottom-left-radius: var(--borderRadius); */
-  /* border-bottom-right-radius: var(--borderRadius); */
-  background-color: var(--grey-2);
-  /* transform: translateY(0) rotateX(0deg); */
-  /* transform-origin: top; */
-  /* transition: transform 0.5s ease; */
   background-color: var(--grey-2);
   background-image: radial-gradient(
     circle,
