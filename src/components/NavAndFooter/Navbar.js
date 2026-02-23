@@ -30,7 +30,8 @@ const Navbar = () => {
   const styles = {
     navLink: {
       textDecoration: "none",
-      color: "var(--grey-7)",
+      color: "var(--grey-8)",
+      fontWeight: 600,
       padding: "var(--spacing-s)",
     },
   };

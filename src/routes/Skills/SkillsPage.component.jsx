@@ -1,6 +1,5 @@
 import React from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
-// import { TopContainer } from "../CaseStudies/CaseStudies.styles";
 import DevelopmentProcess from "./DevelopmentProcess/DevelopmentProcess.component";
 import BackToTopButton from "../../components/BackToTop/BackToTop.button";
 import TechStack from "./TechStack/TechStack.component";
@@ -11,16 +10,16 @@ const SkillsPage = () => {
     <CertificateContainer >
       <div
         style={{
-          background: "white",
+          // background: "white",
           textAlign: "center",
           paddingTop: "var(--spacing-xxxl)",
-          backgroundColor: "#fff",
+          // backgroundColor: "#fff",
         }}
       >
         <h1
           style={{
             color: "var(--pink-6)",
-            // color: "var(--pink-6)",
+            marginBottom: 'var(--spacing-m)',
           }}
         >
           Skills
@@ -30,7 +29,6 @@ const SkillsPage = () => {
           applications, performance optimization, and clean UI architecture.
         </p>
       </div>
-      {/* </TopContainer> */}
       <TechStack />
       <DevelopmentProcess />
       <SkillsList />

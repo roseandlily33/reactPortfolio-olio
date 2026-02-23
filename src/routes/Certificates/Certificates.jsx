@@ -2,7 +2,6 @@ import { CertificateContainer } from "./Certificates.styles";
 import { CertList } from "./Certs";
 import { useState } from "react";
 import BackToTopButton from "../../components/BackToTop/BackToTop.button";
-import { TopContainer } from "../CaseStudies/CaseStudies.styles";
 import SelectedCertificate from "./SelectedCertificate";
 import CertificateList from "./CertificateList";
 import CertificateSelect from "./CertificateSelect";
@@ -25,14 +24,29 @@ const Certificates = () => {
   return (
     <>
       <CertificateContainer>
-        <TopContainer>
-          <h2>Certificates</h2>
-          <CertificateSelect
-            tagChange={tagChange}
-            selectedTag={selectedTag}
-            filteredTags={filteredTags}
-          />
-        </TopContainer>
+        <div
+          style={{
+            background: "white",
+            textAlign: "center",
+            paddingTop: "var(--spacing-xxxl)",
+            backgroundColor: "#fff",
+            marginBottom: "var(--spacing-xxl)",
+          }}
+        >
+          <h1
+            style={{
+              color: "var(--pink-6)",
+              marginBottom: "var(--spacing-xl)",
+            }}
+          >
+            Certificates
+          </h1>
+        </div>
+        <CertificateSelect
+          tagChange={tagChange}
+          selectedTag={selectedTag}
+          filteredTags={filteredTags}
+        />
         <CertificateList
           openModal={openModal}
           CertList={CertList}

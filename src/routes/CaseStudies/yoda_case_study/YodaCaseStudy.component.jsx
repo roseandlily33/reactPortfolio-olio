@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CertificateContainer } from "../../Certificates/Certificates.styles";
 import { YodaCaseStudyInfoData } from "./YodaCaseStudyInfoData";
 import TabButton from "../../../components/Buttons/TabButton/TabButton.component";
-import { EachCaseStudyContainer, TopContainer } from "../CaseStudies.styles";
+import { EachCaseStudyContainer } from "../CaseStudies.styles";
 import {
   SectionHeader,
   SectionText,
@@ -20,21 +20,17 @@ const YodaCaseStudy = () => {
 
   return (
     <CertificateContainer>
-      <TopContainer>
-        <h2>Yoda Safety Services</h2>
-        <h2>Case Studies</h2>
-
-        {/* Tabs Navigation */}
-        <div className="tabs">
-          {YodaCaseStudyInfoData.map((caseStudy, index) => (
-            <TabButton
-              span={caseStudy.tabName}
-              onClick={() => handleTabClick(index)}
-            />
-          ))}
-        </div>
-      </TopContainer>
-
+      <h1 style={{ textAlign: "center" }}>Case Study for </h1>
+      <h2 style={{ textAlign: "center" }}>Yoda Safety Services</h2>
+      {/* Tabs Navigation */}
+      <div className="tabs">
+        {YodaCaseStudyInfoData.map((caseStudy, index) => (
+          <TabButton
+            span={caseStudy.tabName}
+            onClick={() => handleTabClick(index)}
+          />
+        ))}
+      </div>
       {/* Case Study Content */}
       <EachCaseStudyContainer>
         <Breadcrumbs

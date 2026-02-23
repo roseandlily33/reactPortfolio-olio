@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const ProjectDetailContainer = styled.div`
   max-width: 1100px;
   margin: var(--spacing-xl) auto;
-  background: #fff;
   /* border-radius: 28px; */
-  border-radius: var(--borderRadius);
-  box-shadow: 0 4px 32px rgba(241, 116, 150, 0.1);
   padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
@@ -248,14 +245,15 @@ export const ProjectDetailRole = styled.p`
 
 export const ProjectDetailSection = styled.div`
   /* margin: 1.2rem 0 0.5rem 0; */
-  background: var(--grey-1);
-  padding: var(--spacing-xl) var(--spacing-xxl);
+  /* background: var(--grey-1); */
+  /* padding: var(--spacing-xl) var(--spacing-xxl); */
   /* border-radius: 18px; */
-  border-radius: var(--borderRadius);
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
+  /* border-radius: var(--borderRadius); */
+  /* box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07); */
   display: flex;
   flex-direction: column;
   gap: var(--spacing-m);
+  margin-top: var(--spacing-l);
   /* border: 1px solid red; */
 `;
 

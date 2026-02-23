@@ -7,7 +7,7 @@ export const NavbarOuter = styled.header`
   z-index: 1000;
   overflow: visible;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -15,14 +15,14 @@ export const NavbarOuter = styled.header`
   padding-bottom: var(--spacing-m);
   padding-top: var(--spacing-m);
   background-color: var(--grey-2);
+  position: sticky;
   background-image: radial-gradient(
     circle,
-    rgba(240, 128, 160, 0.2) 1px,
+    rgba(240, 128, 160, 0.1) 1px,
     transparent 1px
   );
   background-size: 20px 20px;
   padding: var(--spacing-m);
-
 
   @media screen and (max-width: 900px) {
     margin-inline: var(--spacing-xs);
@@ -30,13 +30,7 @@ export const NavbarOuter = styled.header`
   }
   h2 {
     font-family: var(--titleFont);
-    /* font-size: 2rem; */
-    background: linear-gradient(
-      45deg,
-      var(--orange-5),
-      var(--pink-5),
-      var(--orange-5)
-    );
+    background: var(--berry);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -44,6 +38,7 @@ export const NavbarOuter = styled.header`
     transition: transform 0.3s ease; /* Optional hover effect */
     /* border: 2px solid blue; */
     padding: var(--spacing-m);
+    font-weight: 750;
   }
 
   h2:hover {
@@ -137,8 +132,12 @@ export const NavBarComponent = styled.nav`
     letter-spacing: 0.04rem;
     text-decoration: none;
     transition: transform 0.2s ease;
+    &:hover {
+      border-bottom: 2px solid var(--orange-5);
+    }
     /* No animation on hover */
   }
+  
 `;
 
 const Navbar = ({ navLinks }) => {

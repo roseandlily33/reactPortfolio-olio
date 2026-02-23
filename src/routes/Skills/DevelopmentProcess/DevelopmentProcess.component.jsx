@@ -1,205 +1,167 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { FaLightbulb, FaCogs, FaRocket } from "react-icons/fa";
 import {
   DevProcessContainer,
   DevProcessCircleContainer,
   DevProcessCircle,
+  DevProcessNumber,
 } from "./DevelopmentProcess.styles";
+
+// Animation on scroll logic
+const steps = [
+  {
+    number: 1,
+    gradient: "linear-gradient(120deg, var(--pink-2), var(--pink-1))",
+    border: "radial-gradient(circle, var(--pink-2) 60%, transparent 100%)",
+    divider: "linear-gradient(to bottom, var(--pink-2), transparent)",
+    icon: (
+      <FaLightbulb
+        style={{
+          color: "var(--pink-3)",
+          fontSize: "2.2em",
+          marginBottom: "0.3em",
+        }}
+      />
+    ),
+    title: "Plan & Design",
+    desc: "Strategy, requirements, and architecture for scalable, thoughtful solutions.",
+  },
+  {
+    number: 2,
+    gradient: "linear-gradient(120deg, var(--pink-3), var(--pink-2))",
+    border: "radial-gradient(circle, var(--pink-3) 60%, transparent 100%)",
+    divider: "linear-gradient(to bottom, var(--pink-3), transparent)",
+    icon: (
+      <FaCogs
+        style={{
+          color: "var(--pink-4)",
+          fontSize: "2.2em",
+          marginBottom: "0.3em",
+        }}
+      />
+    ),
+    title: "Build & Develop",
+    desc: "Iterative coding, testing, and integration of backend and frontend features.",
+  },
+  {
+    number: 3,
+    gradient: "linear-gradient(120deg, var(--pink-4), var(--pink-3))",
+    border: "radial-gradient(circle, var(--pink-4) 60%, transparent 100%)",
+    divider: "linear-gradient(to bottom, var(--pink-4), transparent)",
+    icon: (
+      <FaRocket
+        style={{
+          color: "var(--pink-6)",
+          fontSize: "2.2em",
+          marginBottom: "0.3em",
+        }}
+      />
+    ),
+    title: "Launch & Support",
+    desc: "Deploy, monitor, and support for a smooth, successful launch and beyond.",
+  },
+];
+
 const DevelopmentProcess = () => {
+  const refs = useRef([]);
+  const [visible, setVisible] = useState([false, false, false]);
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" ? window.innerWidth <= 900 : false,
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 900);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    // Only observe after refs are set and DOM is ready
+    if (!refs.current.length) return;
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const idx = Number(entry.target.getAttribute("data-step"));
+            setVisible((prev) => {
+              if (prev[idx]) return prev;
+              const updated = [...prev];
+              updated[idx] = true;
+              return updated;
+            });
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+    const currentRefs = refs.current;
+    currentRefs.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+    return () => {
+      currentRefs.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, [refs]);
+
   return (
     <DevProcessContainer>
       <h4>Development Process</h4>
       <DevProcessCircleContainer>
-        {/* Step 1: Plan */}
-        <DevProcessCircle
-          style={{
-            background: "none",
-            boxShadow: "none",
-            position: "relative",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "flex-start",
-            width: "380px",
-            height: "auto",
-            minHeight: "180px",
-            padding: "var(--spacing-m) var(--spacing-xl)",
-          }}
-        >
-          <div
+        {steps.map((step, idx) => (
+          <DevProcessCircle
+            key={idx}
+            ref={(el) => (refs.current[idx] = el)}
+            data-step={idx}
+            className={visible[idx] ? "visible" : ""}
             style={{
-              fontSize: "12rem",
-              fontWeight: 900,
-              color: "var(--pink-2)",
-              lineHeight: 1,
-              marginRight: "0.5em",
-              marginTop: "-0.3em",
-              flexShrink: 0,
-              zIndex: 1,
-              minWidth: "120px",
-              textAlign: "right",
-              filter: "drop-shadow(0 2px 8px rgba(255, 0, 128, 0.08))"
+              flexDirection: isMobile ? "column" : "row",
+              alignItems: isMobile ? "flex-start" : "center",
             }}
           >
-            1
-          </div>
-          {/* Vertical divider */}
-          <div style={{
-            width: "2px",
-            height: "80px",
-            background: "linear-gradient(to bottom, var(--pink-2), transparent)",
-            marginRight: "2.5rem",
-            borderRadius: "2px",
-            opacity: 0.25
-          }} />
-          <div style={{ zIndex: 2, flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <FaLightbulb
+            <DevProcessNumber
+              $gradient={step.gradient}
+              $border={step.border}
               style={{
-                color: "var(--pink-3)",
-                fontSize: "2.2em",
-                marginBottom: "0.3em",
-              }}
-            />
-            <div
-              style={{
-                fontWeight: 700,
-                color: "var(--pink-5)",
-                fontSize: "1.1em",
+                fontSize: "12rem",
+                marginRight: "0.8rem",
+                marginBottom: isMobile ? "-1.5rem" : 0,
+                textAlign: isMobile ? "left" : "right",
+                alignSelf: isMobile ? "flex-start" : undefined,
               }}
             >
-              Plan & Design
-            </div>
-            <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
-              Strategy, requirements, and architecture for scalable, thoughtful solutions.
-            </div>
-          </div>
-        </DevProcessCircle>
-        {/* Step 2: Build */}
-        <DevProcessCircle
-          style={{
-            background: "none",
-            boxShadow: "none",
-            position: "relative",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "flex-start",
-            width: "380px",
-            height: "auto",
-            minHeight: "180px",
-            padding: "var(--spacing-m) var(--spacing-xl)",
-          }}
-        >
-          <div
-            style={{
-              fontSize: "12rem",
-              fontWeight: 900,
-              color: "var(--pink-3)",
-              lineHeight: 1,
-              marginRight: "0.5em",
-              marginTop: "-0.3em",
-              flexShrink: 0,
-              zIndex: 1,
-              minWidth: "120px",
-              textAlign: "right",
-              filter: "drop-shadow(0 2px 8px rgba(255, 0, 128, 0.08))"
-            }}
-          >
-            2
-          </div>
-          {/* Vertical divider */}
-          <div style={{
-            width: "2px",
-            height: "80px",
-            background: "linear-gradient(to bottom, var(--pink-3), transparent)",
-            marginRight: "2.5rem",
-            borderRadius: "2px",
-            opacity: 0.25
-          }} />
-          <div style={{ zIndex: 2, flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <FaCogs
-              style={{
-                color: "var(--pink-4)",
-                fontSize: "2.2em",
-                marginBottom: "0.3em",
-              }}
-            />
+              {step.number}
+            </DevProcessNumber>
             <div
               style={{
-                fontWeight: 700,
-                color: "var(--pink-5)",
-                fontSize: "1.1em",
+                zIndex: 2,
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                gap: "0.2em",
+                marginLeft: isMobile ? 0 : "-0.5em"
               }}
             >
-              Build & Develop
+              {step.icon}
+              <div
+                style={{
+                  fontWeight: 700,
+                  color: "var(--pink-5)",
+                  fontSize: "1.5rem",
+                }}
+              >
+                {step.title}
+              </div>
+              <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
+                {step.desc}
+              </div>
             </div>
-            <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
-              Iterative coding, testing, and integration of backend and frontend features.
-            </div>
-          </div>
-        </DevProcessCircle>
-        {/* Step 3: Launch */}
-        <DevProcessCircle
-          style={{
-            background: "none",
-            boxShadow: "none",
-            position: "relative",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "flex-start",
-            width: "380px",
-            height: "auto",
-            minHeight: "180px",
-            padding: "var(--spacing-m) var(--spacing-xl)",
-          }}
-        >
-          <div
-            style={{
-              fontSize: "12rem",
-              fontWeight: 900,
-              color: "var(--pink-4)",
-              lineHeight: 1,
-              marginRight: "0.5em",
-              marginTop: "-0.3em",
-              flexShrink: 0,
-              zIndex: 1,
-              minWidth: "120px",
-              textAlign: "right",
-              filter: "drop-shadow(0 2px 8px rgba(255, 0, 128, 0.08))"
-            }}
-          >
-            3
-          </div>
-          {/* Vertical divider */}
-          <div style={{
-            width: "2px",
-            height: "80px",
-            background: "linear-gradient(to bottom, var(--pink-4), transparent)",
-            marginRight: "2.5rem",
-            borderRadius: "2px",
-            opacity: 0.25
-          }} />
-          <div style={{ zIndex: 2, flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <FaRocket
-              style={{
-                color: "var(--pink-6)",
-                fontSize: "2.2em",
-                marginBottom: "0.3em",
-              }}
-            />
-            <div
-              style={{
-                fontWeight: 700,
-                color: "var(--pink-5)",
-                fontSize: "1.1em",
-              }}
-            >
-              Launch & Support
-            </div>
-            <div style={{ color: "var(--grey-7)", fontSize: "0.98em" }}>
-              Deploy, monitor, and support for a smooth, successful launch and beyond.
-            </div>
-          </div>
-        </DevProcessCircle>
-
+          </DevProcessCircle>
+        ))}
       </DevProcessCircleContainer>
     </DevProcessContainer>
   );

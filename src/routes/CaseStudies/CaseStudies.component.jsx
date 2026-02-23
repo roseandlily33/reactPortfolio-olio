@@ -3,7 +3,6 @@ import { CertificateContainer } from "../Certificates/Certificates.styles";
 import YodaPic from "../../images/projects/YODA.png";
 import Logo from "./bloom_and_berry/bloom_images/Logo.png";
 import Ariel from "../Ariel/ArielImages/TrainingCapture.png";
-import { TopContainer } from "./CaseStudies.styles";
 import { CardsBackground } from "../../components/Cards/CardsBackground.styles";
 import CaseStudyCard from "../../components/Cards/CaseStudyCard/CaseStudyCard.component";
 
@@ -27,9 +26,24 @@ const CaseStudies = () => {
   ];
   return (
     <CertificateContainer>
-      <TopContainer>
-        <h2>Case Studies</h2>
-      </TopContainer>
+       <div
+          style={{
+            background: "white",
+            textAlign: "center",
+            paddingTop: "var(--spacing-xxxl)",
+            backgroundColor: "#fff",
+            marginBottom: "var(--spacing-xxl)",
+          }}
+        >
+          <h1
+            style={{
+              color: "var(--pink-6)",
+              marginBottom: "var(--spacing-xl)",
+            }}
+          >
+            Case Studies
+          </h1>
+          </div>
       <CardsBackground>
         {caseStudies?.map((study, index) => (
           <CaseStudyCard study={study} key={index} />

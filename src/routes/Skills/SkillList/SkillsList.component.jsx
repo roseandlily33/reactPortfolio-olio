@@ -8,13 +8,12 @@ import {
   SkillInfo,
   SkillRating,
   SkillsTabsLegendCard,
-  TabsPillRow,
   PillTab,
-  StarLegendCard,
   SkillsContainer,
+  SkillsSplitLayout,
+  SkillsTabsColumn,
 } from "./SkillsList.styles";
-import { FaRegStar, FaStar } from "react-icons/fa";
-import StarLegend from "./Legend.component";
+
 
 const SkillsList = () => {
   const [activeTab, setActiveTab] = useState("Frontend");
@@ -22,8 +21,8 @@ const SkillsList = () => {
     <>
       <SkillsContainer>
         <h4>{activeTab}</h4>
-        <SkillsTabsLegendCard>
-          <TabsPillRow>
+        <SkillsSplitLayout>
+          <SkillsTabsColumn>
             {Object.keys(skills)?.map((category) => {
               let icon = <FaCogs />;
               if (category.toLowerCase().includes("front")) icon = <FaCode />;
@@ -36,46 +35,51 @@ const SkillsList = () => {
                   key={category}
                   className={activeTab === category ? "activeTab" : ""}
                   onClick={() => setActiveTab(category)}
+                  style={{ width: '100%', marginBottom: '0.5em' }}
                 >
                   {icon}
                   <span>{category}</span>
                 </PillTab>
               );
             })}
-          </TabsPillRow>
-          <StarLegendCard>
-            <StarLegend />
-          </StarLegendCard>
-        </SkillsTabsLegendCard>
-
-        <SwitchTransition mode="out-in">
-          <CSSTransition
-            key={activeTab}
-            timeout={350}
-            classNames="fade"
-            unmountOnExit
-          >
-            <SkillList>
-              {skills[activeTab]?.map((skill, index) => (
-                <SkillItem key={index}>
-                  <SkillInfo>
-                    <p className="skill-icon">{skill?.icon}</p>
-                    <p className="skill-name">{skill?.name}</p>
-                  </SkillInfo>
-                  <SkillRating>
-                    {[...Array(3)]?.map((_, i) =>
-                      i < skill?.rating ? (
-                        <FaStar key={i} />
-                      ) : (
-                        <FaRegStar key={i} />
-                      ),
-                    )}
-                  </SkillRating>
-                </SkillItem>
-              ))}
-            </SkillList>
-          </CSSTransition>
-        </SwitchTransition>
+          </SkillsTabsColumn>
+          <SwitchTransition mode="out-in">
+            <CSSTransition
+              key={activeTab}
+              timeout={350}
+              classNames="fade"
+              unmountOnExit
+            >
+              <SkillList>
+                {skills[activeTab]?.map((skill, index) => (
+                  <SkillItem key={index}>
+                    <SkillInfo>
+                      <span className="skill-icon">{skill?.icon}</span>
+                      <span className="skill-name">{skill?.name}</span>
+                    </SkillInfo>
+                    <SkillRating>
+                      {[...Array(3)].map((_, i) => (
+                        <span
+                          key={i}
+                          style={{
+                            display: 'inline-block',
+                            width: '0.85em',
+                            height: '0.85em',
+                            borderRadius: '50%',
+                            margin: '0 0.13em',
+                            background: i < skill?.rating ? 'var(--pink-5)' : 'var(--grey-3)',
+                            opacity: i < skill?.rating ? 1 : 0.45,
+                            transition: 'background 0.2s',
+                          }}
+                        />
+                      ))}
+                    </SkillRating>
+                  </SkillItem>
+                ))}
+              </SkillList>
+            </CSSTransition>
+          </SwitchTransition>
+        </SkillsSplitLayout>
       </SkillsContainer>
     </>
   );

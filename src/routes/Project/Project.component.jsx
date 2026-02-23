@@ -226,8 +226,8 @@ const Project = () => {
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
               style={{
-                background: activeTab === tab.key ? "var(--pink-3)" : "#f8f8f8",
-                color: activeTab === tab.key ? "#fff" : "var(--pink-4)",
+                background: activeTab === tab.key ? "var(--pink-5)" : "#f8f8f8",
+                color: activeTab === tab.key ? "#fff" : "var(--pink-6)",
                 border: "none",
                 borderRadius: "999px",
                 padding: "var(--spacing-xs) var(--spacing-m)",
@@ -258,7 +258,7 @@ const Project = () => {
                 <div
                   style={{
                     fontWeight: 600,
-                    color: "var(--pink-4)",
+                    color: "var(--pink-6)",
                     fontSize: "1.05em",
                     marginBottom: "var(--spacing-xxs) ",
                     textTransform: "capitalize",
@@ -270,7 +270,7 @@ const Project = () => {
                   {category === "frontend" && (
                     <FaTools
                       style={{
-                        color: "var(--pink-2)",
+                        color: "var(--pink-7)",
                         marginRight: "var(--spacing-s)",
                       }}
                       title="Frontend"
@@ -279,7 +279,7 @@ const Project = () => {
                   {category === "backend" && (
                     <FaPuzzlePiece
                       style={{
-                        color: "var(--pink-2)",
+                        color: "var(--pink-7)",
                         marginRight: "var(--spacing-s)",
                       }}
                       title="Backend"
@@ -288,7 +288,7 @@ const Project = () => {
                   {category === "extra" && (
                     <FaStar
                       style={{
-                        color: "var(--pink-2)",
+                        color: "var(--pink-7)",
                         marginRight: "var(--spacing-s)",
                       }}
                       title="Extra"

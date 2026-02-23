@@ -1,4 +1,16 @@
+import { keyframes } from "styled-components";
 import styled from "styled-components";
+
+const stackFadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+`;
 export const TechStackContainer = styled.div`
   display: flex;
   align-items: center;
@@ -41,12 +53,9 @@ export const TechRight = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: var(--spacing-xxl);
-    /* align-items: center; */
   gap: var(--spacing-l);
   /* border: 2px solid blue; */
   width: 30%;
-  min-height: 250px;
-  justify-content: end;
   div {
     display: flex;
     /* gap: 1rem; */
@@ -54,12 +63,30 @@ export const TechRight = styled.div`
   }
   .techStack {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    animation: ${stackFadeIn} 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  .techStack:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+  .techStack:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  .techStack:nth-child(3) {
+    animation-delay: 0.25s;
+  }
+  .techStack:nth-child(4) {
+    animation-delay: 0.35s;
+  }
+  .letter {
+    color: var(--pink-6);
+    font-weight: 600;
+    font-size: 1.3rem;
   }
   span {
     color: var(--pink-5);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 `;

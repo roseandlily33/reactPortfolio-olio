@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const ProjectCardContainer = styled.div`
   /* background: #fdf4f0; */
-  background: #fff;
+  background: var(--lightCream);
+  /* background: rgba(255, 255, 255, 0.85); */
+  backdrop-filter: blur(4px);
   border-radius: var(--borderRadius);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 32px 0 rgba(61, 43, 46, 0.1), 0 1.5px 8px 0 rgba(97, 53, 67, 0.06);
   padding: var(--spacing-m) var(--spacing-s);
   display: flex;
   flex-direction: column;
@@ -28,11 +30,16 @@ export const ProjectCardContainer = styled.div`
     left: -60%;
     width: 120%;
     height: 120%;
-    background: linear-gradient(120deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.45) 70%, rgba(255,255,255,0) 80%);
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.45) 70%,
+      rgba(255, 255, 255, 0) 80%
+    );
     transform: translateX(-100%) rotate(25deg);
     pointer-events: none;
     z-index: 3;
-    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+    transition: transform 0.7s cubic-bezier(0.4, 2, 0.6, 1);
   }
 
   &:hover {
@@ -42,7 +49,7 @@ export const ProjectCardContainer = styled.div`
   }
   &:hover::after {
     transform: translateX(80%) rotate(25deg);
-    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+    transition: transform 0.7s cubic-bezier(0.4, 2, 0.6, 1);
   }
 
   .important-badge {
@@ -86,7 +93,6 @@ export const ProjectImage = styled.img`
   object-position: top;
   border-radius: 10px;
   margin-bottom: var(--spacing-s);
- 
 `;
 
 export const ProjectTitle = styled.div`

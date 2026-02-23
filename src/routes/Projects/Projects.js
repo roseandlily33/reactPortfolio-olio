@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { projectListFrontEnd } from "./ProjectLists/projectsFE";
-import { TopContainer } from "../CaseStudies/CaseStudies.styles";
 import { projectListMERN } from "./ProjectLists/projectsMERN";
 import { projectListFrontEndMentor } from "./ProjectLists/projectsFEM";
 import { projectListClient } from "./ProjectLists/projectsClient";
@@ -47,7 +46,6 @@ const Projects = () => {
   return (
     <>
       <CertificateContainer>
-        {/* <TopContainer> */}
         <div
           style={{
             background: "white",
@@ -77,11 +75,6 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        {/* <h1>Projects</h1> */}
-        {/* <div className="tabs"> */}
-
-        {/* </div> */}
-        {/* </TopContainer> */}
         <CardsBackground>
           {projectList.map((project) => (
             <ProjectCard key={project.id} project={project} />

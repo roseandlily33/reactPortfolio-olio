@@ -5,10 +5,10 @@ import { TechStackContainer, TechLeft, TechRight } from "./TechStack.styles";
 
 const TechStack = () => {
   const mernStack = [
-    { name: "M", label: "MongoDB", icon: <FaDatabase /> },
-    { name: "E", label: "Express.js", icon: <SiExpress /> },
-    { name: "R", label: "React", icon: <FaReact /> },
-    { name: "N", label: "Node.js", icon: <FaNodeJs /> },
+    { name: "M", icon: <FaDatabase /> },
+    { name: "E", icon: <SiExpress /> },
+    { name: "R", icon: <FaReact /> },
+    { name: "N", icon: <FaNodeJs /> },
   ];
 
   const nextMongoStack = [
@@ -39,7 +39,7 @@ const TechStack = () => {
               style={{ textAlign: "center" }}
             >
               <span>{tech.icon}</span>
-              <p>{tech.label}</p>
+              <span className="letter">{tech?.name} </span>
             </div>
           ))}
         </div>
@@ -51,7 +51,7 @@ const TechStack = () => {
               style={{ textAlign: "center" }}
             >
               {tech.icon && <span>{tech.icon}</span>}
-              <p>{tech.name}</p>
+              <span className="letter">{tech.name}</span>
             </div>
           ))}
         </div>
