@@ -30,13 +30,12 @@ export const NavbarOuter = styled.header`
   }
   h2 {
     font-family: var(--titleFont);
-    background: var(--berry);
+    background: linear-gradient(90deg, var(--pink-5) 0%, var(--orange-5) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    transition: transform 0.3s ease; /* Optional hover effect */
-    /* border: 2px solid blue; */
+    transition: transform 0.3s ease;
     padding: var(--spacing-m);
     font-weight: 750;
   }

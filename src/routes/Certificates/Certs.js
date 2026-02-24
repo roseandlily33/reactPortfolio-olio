@@ -166,7 +166,7 @@ export const CertList = [
     id: 120,
     photo: zwebDev,
     title: "Web Development",
-    provider: "Zero To Mastry",
+    provider: "Zero To Mastery",
     important: true,
     date: "June 8, 2024",
     tags: [

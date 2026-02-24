@@ -35,7 +35,6 @@ const SelectedCertificate = ({
               maxHeight: "90vh",
               borderRadius: "var(--borderRadius)",
               backgroundColor: "var(--grey-2)",
-              border: "1.5px solid var(--orange-4)",
               boxShadow:
                 "0 8px 40px 0 rgba(60,60,60,0.18), 0 1.5px 6px rgba(241,116,150,0.10)",
               overflow: "auto",
@@ -70,7 +69,8 @@ const SelectedCertificate = ({
                 borderRadius: "var(--borderRadius)",
                 boxShadow:
                   "0 4px 24px rgba(241,116,150,0.13), 0 1.5px 6px rgba(60,60,60,0.08)",
-                marginBottom: "var(--spacing-l) ",
+                marginBlock: "var(--spacing-l) ",
+
                 objectFit: "contain",
                 background: "#fff",
                 padding: "var(--spacing-xs) ",
@@ -81,7 +81,7 @@ const SelectedCertificate = ({
               style={{
                 fontSize: "1.35rem",
                 fontFamily: "var(--headerFont)",
-                color: "var(--pink-5)",
+                color: "var(--grey-5)",
                 fontWeight: 700,
                 margin: "0 0 var(--spacing-s)  0",
                 textAlign: "center",
@@ -95,12 +95,9 @@ const SelectedCertificate = ({
               <span
                 style={{
                   fontSize: "1.08rem",
-                  color: "var(--pink-4)",
+                  color: "var(--grey-7)",
                   fontWeight: 700,
-                  fontFamily: "var(--headerFont)",
-                  background: "rgba(241, 116, 150, 0.08)",
-                  borderRadius: "999px",
-                  padding: "var(--spacing-xxxs)  var(--spacing-m) ",
+                  padding: "var(--spacing-xxs)  var(--spacing-m) ",
                   letterSpacing: "0.01em",
                   minWidth: 110,
                   textAlign: "center",

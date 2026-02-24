@@ -28,14 +28,16 @@ export const PackagesGrid = styled.div`
   width: 100%;
   overflow-x: auto;
   padding: var(--spacing-xl);
+  padding-left: var(--spacing-xxxxl);
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   position: relative;
+  
   /* justify-content: center; */
   /* border: 2px solid blue; */
 
   & > div {
-    flex: 0 0 340px;
+    flex: 0 0 380px;
     max-width: 100vw;
     scroll-snap-align: start;
     /* border: 2px solid red; */

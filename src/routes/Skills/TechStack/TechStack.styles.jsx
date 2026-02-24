@@ -18,7 +18,6 @@ export const TechStackContainer = styled.div`
   padding: var(--spacing-xxxxl) var(--spacing-xs);
   width: 100%;
   /* background-color: var(--pinkBackground); */
-  background: white;
   margin: 0 auto;
   /* border: 2px solid green; */
   /* height: 300px; */
@@ -42,7 +41,7 @@ export const TechLeft = styled.div`
   flex-direction: column;
   gap: var(--spacing-m);
   /* border: 2px solid red; */
-  width: 32%;
+  width: 60%;
   p {
     border-right: 2px solid var(--berry);
     padding-right: var(--spacing-xxl);
@@ -55,7 +54,9 @@ export const TechRight = styled.div`
   padding-left: var(--spacing-xxl);
   gap: var(--spacing-l);
   /* border: 2px solid blue; */
-  width: 30%;
+  height: 250px;
+  justify-content: end;
+  /* width: 40%; */
   div {
     display: flex;
     /* gap: 1rem; */
