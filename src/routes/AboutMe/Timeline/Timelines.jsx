@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TimelineContainer, TimelineItem } from "./Timeline.styles";
 
 const Timeline = () => {
@@ -40,28 +40,18 @@ const Timeline = () => {
     },
   ];
 
-  // Animation: reveal on scroll into view
+  // Animation: staggered reveal
   const [visibleIndexes, setVisibleIndexes] = useState([]);
-  const itemRefs = useRef([]);
-
   useEffect(() => {
-    const observer = new window.IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const idx = Number(entry.target.getAttribute('data-index'));
-            setVisibleIndexes((prev) =>
-              prev.includes(idx) ? prev : [...prev, idx]
-            );
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-    itemRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
+    let timeouts = [];
+    events.forEach((_, idx) => {
+      timeouts.push(
+        setTimeout(() => {
+          setVisibleIndexes((prev) => [...prev, idx]);
+        }, idx * 250),
+      );
     });
-    return () => observer.disconnect();
+    return () => timeouts.forEach(clearTimeout);
   }, []);
 
   return (
@@ -69,19 +59,21 @@ const Timeline = () => {
       {events?.map((event, index) => {
         const align = index % 2 === 0 ? "left" : "right";
         const isVisible = visibleIndexes.includes(index);
-        const animationClass = isVisible
-          ? align === "left"
-            ? "fade-in-left"
-            : "fade-in-right"
-          : "hidden";
         return (
           <TimelineItem
             key={index}
             align={align}
-            className={animationClass}
-            style={{ transitionDelay: `${index * 0.12}s` }}
-            ref={el => (itemRefs.current[index] = el)}
-            data-index={index}
+            style={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible
+                ? "translateY(0)"
+                : align === "left"
+                  ? "translateY(40px) translateX(-40px)"
+                  : "translateY(40px) translateX(40px)",
+              transition:
+                "opacity 0.7s cubic-bezier(.4,2,.6,1), transform 0.7s cubic-bezier(.4,2,.6,1)",
+              transitionDelay: `${index * 0.12}s`,
+            }}
           >
             <div className="bubble" />
             <h4>{event?.year}</h4>

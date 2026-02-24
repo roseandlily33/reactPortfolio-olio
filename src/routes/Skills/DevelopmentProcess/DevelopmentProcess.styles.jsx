@@ -13,9 +13,16 @@ export const DevProcessContainer = styled.div`
     /* letter-spacing: 0.03em; */
     margin-bottom: var(--spacing-xxxl);
     font-size: 2.6rem;
-    text-align: left;
+    /* text-align: left; */
     width: 100%;
     text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    padding: var(--spacing-xxl) var(--spacing-l);
+    h4 {
+      text-align: left;
+      font-size: 2.2rem;
+    }
   }
 `;
 

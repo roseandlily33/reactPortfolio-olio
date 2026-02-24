@@ -48,6 +48,7 @@ export const SkillsTabsColumn = styled.div`
     flex-direction: row;
     min-width: unset;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-m);
     padding: var(--spacing-m) var(--spacing-xs);

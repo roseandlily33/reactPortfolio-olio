@@ -19,12 +19,12 @@ const SkillsPage = () => {
         <h1
           style={{
             color: "var(--pink-6)",
-            marginBottom: 'var(--spacing-m)',
+            marginBottom: 'var(--spacing-l)',
           }}
         >
           Skills
         </h1>
-         <p>
+         <p style={{padding: "0 var(--spacing-l)", maxWidth: "600px", margin: "0 auto"}}>
           Full-stack developer focused on scalable MERN and Next.js
           applications, performance optimization, and clean UI architecture.
         </p>

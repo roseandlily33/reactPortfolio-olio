@@ -223,7 +223,7 @@ h1 {
   font-weight: 700;
   text-transform: capitalize;
   line-height: 1.6;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
   /* border: 2px solid red; */
 }
 
@@ -304,7 +304,7 @@ blockquote {
     font-weight: 700;
     text-transform: capitalize;
     line-height: 1.6;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
   }
 
   h2 {
@@ -315,7 +315,9 @@ blockquote {
     letter-spacing: 0.02rem;
   }
   #welcome {
-    font-size: 2.5rem;
+    font-size: 5.5rem;
+    margin-left: 0rem;
+    /* border: 1px solid red; */
   }
 
   h3 {
@@ -382,7 +384,7 @@ blockquote {
     font-weight: 700;
     text-transform: capitalize;
     line-height: 1.6;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.02rem;
   }
 
   h2 {
@@ -390,11 +392,12 @@ blockquote {
     font-weight: 600;
     text-transform: none;
     line-height: 1.6;
-    letter-spacing: 0rem;
+    letter-spacing: 0.02rem;
   }
   #welcome {
-    font-size: 3rem;
+    font-size: 3.8rem;
     margin-left: 1rem;
+    /* border: 1px solid blue; */
   }
 
   h3 {

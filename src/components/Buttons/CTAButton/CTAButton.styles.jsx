@@ -4,12 +4,11 @@ export const CTAButtonContainer = styled.button`
   background: linear-gradient(90deg, var(--orange-4) 0%, var(--pink-5) 100%);
   color: #fff;
   border: none;
-  /* border-radius: 999px; */
-  border-radius: var(--borderRadius);
-  padding: var(--spacing-s) var(--spacing-l);
-  font-size: 1.35rem;
+  border-radius: 25px;
+  padding: 10px 22px;
+  font-size: 18px;
   font-family: var(--headerFont);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.04em;
   box-shadow: 0 4px 18px 0 rgba(241, 116, 150, 0.13);
   cursor: pointer;
@@ -19,7 +18,9 @@ export const CTAButtonContainer = styled.button`
     color 0.3s;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-s);
+  line-height: 1.2;
   .cta-arrow {
     font-size: 1.5em;
     font-weight: 900;

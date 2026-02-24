@@ -64,7 +64,7 @@ const Projects = () => {
           >
             Projects
           </h1>
-          <div>
+          <div style={{ display: 'flex', gap: 'var(--spacing-m)', justifyContent: 'center', flexWrap: 'wrap' }}>
             {tabOptions.map((tab) => (
               <TabButton
                 key={tab.key}

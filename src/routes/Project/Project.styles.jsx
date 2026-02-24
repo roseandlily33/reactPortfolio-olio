@@ -14,7 +14,7 @@ export const ProjectDetailContainer = styled.div`
     width: 100%;
     height: 100%;
     padding: var(--spacing-xl) var(--spacing-l);
-    gap: var(--spacing-l);
+    gap: var(--spacing-m);
     border-radius: 0;
   }
 `;
@@ -26,6 +26,7 @@ export const ProjectDetailHeader = styled.div`
   gap: var(--spacing-xl);
   margin-bottom: var(--spacing-xxl);
   position: relative;
+  /* border: 2px solid red; */
   .featured-badge {
     display: inline-block;
     background: var(--orangeBackground);
@@ -65,6 +66,7 @@ export const ProjectDetailHeader = styled.div`
       flex-direction: column;
       align-items: flex-start;
       gap: var(--spacing-m);
+      font-size: 2.8rem;
     }
     .featured-badge {
       margin-left: 0;
@@ -78,14 +80,10 @@ export const ProjectDetailsContainer = styled.div`
   width: 100%;
   flex-wrap: wrap;
   gap: var(--spacing-xl);
+  /* border: 1px solid red; */
   @media (max-width: 900px) {
     flex-direction: column;
     gap: var(--spacing-l);
-  }
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--spacing-m);
   }
 `;
 

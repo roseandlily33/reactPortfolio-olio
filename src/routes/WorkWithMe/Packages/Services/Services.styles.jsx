@@ -114,7 +114,7 @@ export const ServicesSection = styled.section`
     width: 100%;
   }
   @media (max-width: 900px) {
-    padding: var(--spacing-xl) var(--spacing-m);
+    padding: var(--spacing-xxl) var(--spacing-xl);
     &::before,
     &::after {
       display: none !important;

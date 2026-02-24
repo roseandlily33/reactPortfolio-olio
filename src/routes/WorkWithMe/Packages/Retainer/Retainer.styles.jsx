@@ -11,6 +11,9 @@ export const RetainerSection = styled.section`
   align-items: center;
   justify-content: center;
   gap: var(--spacing-s);
+   @media screen and (max-width: 600px) {
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
 `;
 
 export const RetainerTitle = styled.h2`

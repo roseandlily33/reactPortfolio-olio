@@ -46,6 +46,7 @@ const Footer = () => {
           fontSize: "var(--spacing-m)",
           display: "flex",
           flexWrap: "wrap",
+          gap: "var(--spacing-m)",
           justifyContent: "center",
         }}
       >

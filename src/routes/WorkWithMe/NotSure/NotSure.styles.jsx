@@ -9,6 +9,9 @@ export const NotSureSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+   @media screen and (max-width: 600px) {
+    padding: var(--spacing-xxxxl) var(--spacing-xl);
+  }
   
 `;
 

@@ -6,18 +6,15 @@ export const SummarySection = styled.section`
   padding: var(--spacing-xxxxl) var(--spacing-xxxl);
   gap: var(--spacing-xl);
   align-items: flex-start;
-   h3 {
+  h3 {
     font-family: var(--headerFont);
     margin-bottom: 6px;
     letter-spacing: 0.01em;
     font-weight: 700;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
+    padding: var(--spacing-s) var(--spacing-l);
     flex-direction: column;
-    gap: 24px;
-    padding: 24px 8px;
-    border-radius: 0;
-    box-shadow: none;
   }
 `;
 
@@ -31,6 +28,11 @@ export const AboutMeColumn = styled.div`
   height: 230px;
   h3 {
     font-family: var(--headerFont);
+  }
+  @media screen and (max-width: 768px) {
+    border-right: none;
+    padding-right: 0;
+    height: auto;
   }
 `;
 

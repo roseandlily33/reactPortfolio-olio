@@ -57,11 +57,11 @@ export const TimelineLineWhite = styled.div`
     top: 0;
     height: 100%;
     width: ${({ steps, activeStep }) =>
-      activeStep < 0
-        ? "0%"
-        : steps === 1
-          ? "100%"
-          : `${(activeStep / (steps - 1)) * 100}%`};
+    activeStep < 0
+      ? "0%"
+      : steps === 1
+        ? "100%"
+        : `${(activeStep / (steps - 1)) * 100}%`};
     background: #fff;
     border-radius: 3px;
     transition: width 1s cubic-bezier(0.4, 1.4, 0.6, 1);
@@ -89,10 +89,11 @@ export const TimelineStep = styled.div`
     min-width: 0;
     max-width: none;
     margin: var(--spacing-xl) 0 var(--spacing-m) 0;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+    gap: var(--spacing-m);
     & > div,
     & > h4,
     & > p {
@@ -152,8 +153,9 @@ export const TimelineIcon = styled.div`
   justify-content: center;
   z-index: 3;
   @media (max-width: 900px) {
-    margin-bottom: 0;
-    margin-right: var(--spacing-m);
+    /* display: none; */
+    border-top: 2px solid var(--berry);
+    padding-top: var(--spacing-xxl);
   }
 `;
 
@@ -178,7 +180,8 @@ export const TimelineDesc = styled.p`
   font-weight: 500;
   z-index: 3;
   @media (max-width: 900px) {
-    text-align: left;
+    /* text-align: left; */
+    text-align: center !important;
   }
 `;
 

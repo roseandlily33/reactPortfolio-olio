@@ -11,9 +11,9 @@ export const IDCardContainer = styled.div`
     font-weight: 600;
   }
   /* border: 2px solid red; */
-  @media screen and (max-width: 1200px) {
-    padding: var(--spacing-xl) var(--spacing-m);
-    gap: var(--spacing-x);
+  @media screen and (max-width: 768px) {
+    padding: var(--spacing-s) var(--spacing-l);
+    gap: var(--spacing-xxs);
   }
 `;
 
@@ -40,6 +40,9 @@ export const IDInfo = styled.div`
   gap: var(--spacing-m);
   margin-block: var(--spacing-m);
   /* border: 2px solid red; */
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const IDRow = styled.div`
@@ -62,7 +65,7 @@ export const IDName = styled.h2`
   margin: 0 0 var(--spacing-xxs) 0;
   display: flex;
   align-items: center;
-  font-weight: 650;
+  font-weight: 700;
   gap: var(--spacing-m);
   svg {
     color: var(--orange-3);
@@ -78,34 +81,5 @@ export const IDOccupation = styled.p`
   gap: var(--spacing-m);
   svg {
     color: var(--orange-3);
-  }
-`;
-
-export const IDSocials = styled.div`
-  display: flex;
-  gap: var(--spacing-m);
-  margin-top: var(--spacing-s);
-  a {
-    color: var(--pink-3);
-    background: var(--white, #fff);
-    border-radius: 50%;
-    padding: var(--spacing-xs);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:
-      background 0.2s,
-      color 0.2s;
-    &:hover {
-      background: var(--pink-7);
-      color: var(--white, #fff);
-    }
-    svg {
-      width: 32px;
-      height: 32px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    justify-content: end;
   }
 `;

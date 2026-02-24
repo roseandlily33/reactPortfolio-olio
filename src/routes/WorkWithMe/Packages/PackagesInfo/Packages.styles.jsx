@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const PackagesSection = styled.section`
   /* background-color: var(--pinkBackground); */
-  background: #FFF;
-  padding: var(--spacing-l) var(--spacing-xxxl) var(--spacing-xxxl) var(--spacing-xxxl);
+  background: #fff;
+  padding: var(--spacing-l) var(--spacing-xxxl) var(--spacing-xxxl)
+    var(--spacing-xxxl);
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -17,8 +18,25 @@ export const PackagesSection = styled.section`
     /* border: 1px solid red; */
     width: 100%;
     text-align: left;
-   /* letter-spacing: 0.05em; */
-
+    /* letter-spacing: 0.05em; */
+  }
+  .priceP {
+    /* border: 2px solid red; */
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-top: 2px solid var(--grey-3);
+    width: 40%;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+  }
+  @media screen and (max-width: 900px) {
+    .priceP {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: var(--spacing-s) var(--spacing-l);
   }
 `;
 
@@ -32,7 +50,7 @@ export const PackagesGrid = styled.div`
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   position: relative;
-  
+
   /* justify-content: center; */
   /* border: 2px solid blue; */
 
@@ -143,7 +161,8 @@ export const PackageCard = styled.div`
       rgba(255, 255, 255, 0.22) 0%,
       rgba(255, 255, 255, 0.04) 100%
     );
-    border-radius: 0 0 var(--borderRadius) var(--borderRadius) / 0 0 calc(var(--borderRadius) / 2) calc(var(--borderRadius) / 2);
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius) / 0 0
+      calc(var(--borderRadius) / 2) calc(var(--borderRadius) / 2);
     z-index: 3;
     pointer-events: none;
     opacity: 0.7;

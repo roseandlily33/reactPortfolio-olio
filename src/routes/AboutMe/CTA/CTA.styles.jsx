@@ -120,12 +120,14 @@ export const CTATrusted = styled.div`
     }
     ul {
       gap: var(--spacing-xs);
-      justify-content: flex-start;
+      /* border: 2px solid red; */
+      justify-content: center;
       li {
         font-size: 0.97rem;
         width: 100%;
         margin-bottom: var(--spacing-xs);
-        text-align: left;
+        /* text-align: left; */
+        text-align: center;
       }
     }
   }

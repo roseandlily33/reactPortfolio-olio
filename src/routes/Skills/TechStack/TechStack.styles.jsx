@@ -33,6 +33,11 @@ export const TechStackContainer = styled.div`
     /* margin-top: var(--spacing-l); */
   }
   @media screen and (max-width: 600px) {
+    padding: var(--spacing-xl) var(--spacing-l);
+    flex-direction: column;
+    h4 {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -45,6 +50,13 @@ export const TechLeft = styled.div`
   p {
     border-right: 2px solid var(--berry);
     padding-right: var(--spacing-xxl);
+  }
+  @media screen and (max-width: 600px) {
+    /* padding: var(--spacing-s) var(--spacing-l); */
+    width: 100%;
+    p {
+      border: none;
+    }
   }
 `;
 
@@ -89,5 +101,12 @@ export const TechRight = styled.div`
   span {
     color: var(--pink-5);
     font-size: 1.6rem;
+  }
+  @media screen and (max-width: 600px) {
+    /* padding: var(--spacing-s) var(--spacing-l); */
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: var(--spacing-l);
   }
 `;

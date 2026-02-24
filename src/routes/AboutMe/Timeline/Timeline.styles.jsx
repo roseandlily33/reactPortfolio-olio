@@ -27,6 +27,12 @@ export const TimelineContainer = styled.div`
     opacity: 0.18;
     z-index: 0;
   }
+  @media (max-width: 900px) {
+    padding: var(--spacing-l) 0;
+    &::before {
+      display: none;
+    }
+  }
 `;
 
 export const TimelineItem = styled.div`
@@ -112,5 +118,8 @@ export const TimelineItem = styled.div`
     p {
       text-align: left;
     }
+  }
+  @media (max-width: 768px) {
+    padding: var(--spacing-s) var(--spacing-l);
   }
 `;
