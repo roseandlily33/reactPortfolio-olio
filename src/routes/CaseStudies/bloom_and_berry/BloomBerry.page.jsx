@@ -6,7 +6,7 @@ import OverviewBB from "./Overview/OverviewBB.component";
 import CampaignBB from "./Campaign/CampaignBB.component";
 import ContentStrategyBB from "./ContentStrategy/ContentStrategyBB.component";
 import JuiceBB from "./Juice/juicebb.component";
-import GalleryBB from "./Gallery/Gallerybb.component";
+import GalleryBB from "./Gallery/gallerybb.component";
 import BackToTopButton from "../../../components/BackToTop/BackToTop.button";
 
 // import { BloomStudyCase } from "./Bloom.styles";
