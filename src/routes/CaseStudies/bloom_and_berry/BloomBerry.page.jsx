@@ -5,7 +5,7 @@ import { ArielLayout, ArielMain, Section } from "../../Ariel/Ariel.styles";
 import OverviewBB from "./Overview/OverviewBB.component";
 import CampaignBB from "./Campaign/CampaignBB.component";
 import ContentStrategyBB from "./ContentStrategy/ContentStrategyBB.component";
-import JuiceBB from "./Juice/Juicebb.component";
+import JuiceBB from "./Juice/juicebb.component";
 import GalleryBB from "./Gallery/Gallerybb.component";
 import BackToTopButton from "../../../components/BackToTop/BackToTop.button";
 
