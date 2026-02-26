@@ -15,7 +15,7 @@ import {
   FaLinkedin,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { contactServices } from "./ContactServices";
+import { contactServices } from "./ContactServices.info";
 
 const ContactMe = () => {
   const [name, setName] = useState("");

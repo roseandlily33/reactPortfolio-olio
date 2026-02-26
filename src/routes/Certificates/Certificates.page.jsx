@@ -1,10 +1,10 @@
 import { CertificateContainer } from "./Certificates.styles";
-import { CertList } from "./Certs";
+import { CertList } from "./Certs.info";
 import { useState } from "react";
 import BackToTopButton from "../../components/BackToTop/BackToTop.button";
-import SelectedCertificate from "./SelectedCertificate";
-import CertificateList from "./CertificateList";
-import CertificateSelect from "./CertificateSelect";
+import SelectedCertificate from "./SelectedCertificate.component";
+import CertificateList from "./CertificateList.component";
+import CertificateSelect from "./CertificateSelect.component";
 
 const Certificates = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -31,6 +31,7 @@ const Certificates = () => {
             paddingTop: "var(--spacing-xxxl)",
             backgroundColor: "#fff",
             marginBottom: "var(--spacing-xxl)",
+            marginInline: "var(--spacing-xl)",
           }}
         >
           <h1
@@ -41,12 +42,13 @@ const Certificates = () => {
           >
             Certificates
           </h1>
+          <CertificateSelect
+            tagChange={tagChange}
+            selectedTag={selectedTag}
+            filteredTags={filteredTags}
+          />
         </div>
-        <CertificateSelect
-          tagChange={tagChange}
-          selectedTag={selectedTag}
-          filteredTags={filteredTags}
-        />
+
         <CertificateList
           openModal={openModal}
           CertList={CertList}

@@ -43,6 +43,14 @@ const GoalAriel = () => {
         and support her through each step of the redesign process, ensuring
         every decision aligns with her brand and goals.
       </SectionText>
+      <SubHeader>Key Note</SubHeader>
+      <SectionText>
+        <em>
+          The design notes and visuals shown here are rough drafts and works in
+          progress. Information, navigation, and layouts are still being
+          organized and refined. 
+        </em>
+      </SectionText>
     </>
   );
 };

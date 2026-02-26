@@ -5,7 +5,6 @@ import {
   SubHeader,
   SectionText,
 } from "../Campaign/CampaignBB.styles";
-import { FaSeedling, FaBookOpen, FaUserFriends, FaHeart } from "react-icons/fa";
 import Breadcrumbs from "../../../../components/Breadcrumbs/Breadcrumbs.component";
 import PrimaryButton from "../../../../components/Buttons/PrimaryButton/PrimaryButton.component";
 
@@ -13,7 +12,7 @@ const OverviewBB = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div style={{ marginBottom: "var(--spacing-m)" }}>
+      <div style={{ marginBottom: "var(--spacing-s)" }}>
         <Breadcrumbs
           prev="Case Studies"
           prevLink="/CaseStudies"
@@ -33,20 +32,10 @@ const OverviewBB = () => {
         <SectionHeader
           as="h2"
           style={{
-            textTransform: "uppercase",
-            fontWeight: 400,
-            fontSize: "2rem",
             letterSpacing: "0.04em",
-            marginBottom: "var(--spacing-xs);",
+            marginBottom: "var(--spacing-s);",
           }}
         >
-          <FaSeedling
-            style={{
-              marginRight: 12,
-              fontSize: "1em",
-              verticalAlign: "middle",
-            }}
-          />
           Case Study for Bloom & Berry
         </SectionHeader>
         <PrimaryButton
@@ -54,15 +43,8 @@ const OverviewBB = () => {
           span="See Completed Version &rarr;"
         />
       </div>
-
       <SectionHeader>
-        <FaBookOpen
-          style={{
-            marginRight: 10,
-            fontSize: "1.1em",
-            verticalAlign: "middle",
-          }}
-        />
+       
         Overview
       </SectionHeader>
       <SectionText>
@@ -83,9 +65,6 @@ const OverviewBB = () => {
         script fonts, delicate illustrations, and a warm, handcrafted tone.
       </SectionText>
       <SubHeader>
-        <FaUserFriends
-          style={{ marginRight: 8, fontSize: "1em", verticalAlign: "middle" }}
-        />
         Owners Story Angle
       </SubHeader>
       <SectionText>
@@ -95,9 +74,6 @@ const OverviewBB = () => {
         bottle.
       </SectionText>
       <SubHeader>
-        <FaHeart
-          style={{ marginRight: 8, fontSize: "1em", verticalAlign: "middle" }}
-        />
         Brand Essence
       </SubHeader>
       <SectionText>

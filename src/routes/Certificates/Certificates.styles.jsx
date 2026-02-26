@@ -23,7 +23,6 @@ export const CertificateContainer = styled.main`
     border-radius: var(--borderRadius);
     border: 3px solid var(--orange-5);
     background-color: #f7b064;
-    box-shadow: ${({ theme }) => theme.boxShadow};
     text-transform: uppercase;
     font-weight: 550;
   }
@@ -308,8 +307,8 @@ export const CertificateSelectContainer = styled.div`
   width: 100%;
   justify-content: end;
   button {
-    background: var(--grey2);
-    border: 2px solid var(--orange-5);
+    background: var(--pink-1);
+    border: 2px solid var(--pink-4);
     border-radius: var(--borderRadius);
     box-shadow: 0 2px 8px rgba(241, 116, 150, 0.13);
     color: var(--pink-8);
@@ -329,7 +328,7 @@ export const CertificateSelectContainer = styled.div`
     transform: translateY(-50%);
     pointer-events: none;
     font-size: 1.2em;
-    color: var(--orange-5);
+    color: var(--pink-4);
     transition: transform 0.2s;
     position: "absolute";
   }
@@ -339,7 +338,7 @@ export const CertificateSelectContainer = styled.div`
     top: 110%;
     z-index: 10;
     background: #fff;
-    border: 2px solid var(--orange-5);
+    border: 2px solid var(--pink-4);
     border-radius: var(--borderRadius);
     box-shadow: 0 4px 16px rgba(241, 116, 150, 0.13);
     margin: 0;
@@ -353,7 +352,7 @@ export const CertificateSelectContainer = styled.div`
     font-weight: 500;
     color: var(--darkBerry);
     background: #fff;
-    border-bottom: 1px solid #ffe07c;
+    border-bottom: 1px solid var(--pink-2);
     outline: none;
   }
  

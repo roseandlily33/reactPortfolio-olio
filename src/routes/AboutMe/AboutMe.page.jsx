@@ -2,7 +2,7 @@ import { AboutMeComponent } from "./AboutMe.styles";
 import SummaryComponent from "./Summary/Summary.component";
 import ImageAboutMe from "./ImageAboutMe";
 import IDSection from "./ID/ID.component";
-import Timeline from "./Timeline/Timelines";
+import Timeline from "./Timeline/Timelines.info";
 import ProjectsPreview from "./Projects/ProjectsPreview.component";
 import CTA from "./CTA/CTA.component";
 

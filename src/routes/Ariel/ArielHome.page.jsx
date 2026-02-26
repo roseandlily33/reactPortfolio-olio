@@ -1,4 +1,4 @@
-import SideMenu from "./SideMenu/SideMenu.component";
+// import SideMenu from "./SideMenu/SideMenu.component";
 import ColorPalettesAriel from "./ColourPalette/ColourPalettes.component";
 import BeforeAndAfter from "./BeforeAndAfter/BeforeAndAfter.component";
 import GoalAriel from "./Goal/Goal.component";
@@ -10,20 +10,20 @@ import CTASection from "./CTA/Cta.component";
 import BackToTopButton from "../../components/BackToTop/BackToTop.button";
 
 
-const sectionIds = [
-  "goal",
-  "before-after",
-  "timeline",
-  "color-palettes",
-  "phases",
-  "testimonial",
-  "cta",
-];
+// const sectionIds = [
+//   "goal",
+//   "before-after",
+//   "timeline",
+//   "color-palettes",
+//   "phases",
+//   "testimonial",
+//   "cta",
+// ];
 
 const ArielHome = () => {
   return (
     <ArielLayout>
-      <SideMenu sectionIds={sectionIds} />
+      {/* <SideMenu sectionIds={sectionIds} /> */}
       <ArielMain>
         <Section id="goal">
           <GoalAriel />

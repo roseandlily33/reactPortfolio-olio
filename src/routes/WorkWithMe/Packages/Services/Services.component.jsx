@@ -25,7 +25,7 @@ import {
   ServicesTitle,
   ServiceTitle,
 } from "./Services.styles.jsx";
-import { ServicesList } from "./Services.jsx";
+import { ServicesList } from "./Services.info.jsx";
 
 const iconMap = {
   "API Integration": <FaCogs />,

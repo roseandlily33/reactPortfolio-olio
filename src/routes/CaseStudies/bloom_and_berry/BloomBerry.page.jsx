@@ -1,12 +1,12 @@
 import React from "react";
 import { ArielLayout, ArielMain, Section } from "../../Ariel/Ariel.styles";
-import BBSideMenu from "./BBSideMenu.component";
+// import BBSideMenu from "./BBSideMenu.component";
 
 import OverviewBB from "./Overview/OverviewBB.component";
 import CampaignBB from "./Campaign/CampaignBB.component";
 import ContentStrategyBB from "./ContentStrategy/ContentStrategyBB.component";
-import JuiceBB from "./Juice/juicebb.component";
-import GalleryBB from "./Gallery/gallerybb.component";
+import JuiceBB from "./Juice/Juicebb.component";
+import GalleryBB from "./Gallery/Gallerybb.component";
 import BackToTopButton from "../../../components/BackToTop/BackToTop.button";
 
 // import { BloomStudyCase } from "./Bloom.styles";
@@ -14,7 +14,7 @@ import BackToTopButton from "../../../components/BackToTop/BackToTop.button";
 const BloomAndBerry = () => {
   return (
     <ArielLayout>
-      <BBSideMenu />
+      {/* <BBSideMenu /> */}
       <ArielMain>
         <Section id="overview">
           <OverviewBB />

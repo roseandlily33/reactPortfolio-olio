@@ -6,7 +6,7 @@ import { EachCaseStudyContainer } from "../CaseStudies.styles";
 import {
   SectionHeader,
   SectionText,
-} from "../../CaseStudies/bloom_and_berry/Campaign/CampaignBB.styles";
+} from "../bloom_and_berry/Campaign/CampaignBB.styles";
 import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs.component";
 
 const YodaCaseStudy = () => {
@@ -20,36 +20,59 @@ const YodaCaseStudy = () => {
 
   return (
     <CertificateContainer>
-      <h1 style={{ textAlign: "center" }}>Case Study for </h1>
-      <h2 style={{ textAlign: "center" }}>Yoda Safety Services</h2>
-      {/* Tabs Navigation */}
-      <div className="tabs">
-        {YodaCaseStudyInfoData.map((caseStudy, index) => (
-          <TabButton
-            span={caseStudy.tabName}
-            onClick={() => handleTabClick(index)}
-          />
-        ))}
-      </div>
-      {/* Case Study Content */}
-      <EachCaseStudyContainer>
+      <div
+        style={{
+          marginLeft: "var(--spacing-xl)",
+          marginTop: "var(--spacing-xl)",
+        }}
+      >
         <Breadcrumbs
           prev="Case Studies"
           prevLink="/CaseStudies"
           current="Yoda Safety Services"
         />
+      </div>
+      <div
+        style={{
+          background: "white",
+          textAlign: "center",
+          paddingTop: "var(--spacing-xxxl)",
+          backgroundColor: "#fff",
+          marginBottom: "var(--spacing-xxl)",
+        }}
+      >
+        <h1
+          style={{
+            color: "var(--pink-6)",
+            marginBottom: "var(--spacing-xl)",
+          }}
+        >
+          Case Study for Yoda Safety Services
+        </h1>
+        <div className="tabs">
+          {YodaCaseStudyInfoData?.map((caseStudy, index) => (
+            <TabButton
+              span={caseStudy.tabName}
+              onClick={() => handleTabClick(index)}
+            />
+          ))}
+        </div>
+      </div>
+      {/* Case Study Content */}
+      <EachCaseStudyContainer>
         <div>
-          <h3 style={{ color: "var(--orange-6)", marginBottom: "1rem" }}>
-            Overview
-          </h3>
-          <h4
+          <h3
             style={{
               marginBottom: "var(--spacing-m)",
-              color: "var(--orange-5)",
+              textAlign: "center",
+              width: "100%",
+              color: "var(--grey-8)",
+              fontWeight: "700",
             }}
           >
             {selectedCaseStudy?.title}
-          </h4>
+          </h3>
+          <SectionHeader>Overview</SectionHeader>
           <SectionText>{selectedCaseStudy?.overview}</SectionText>
         </div>
         <div>

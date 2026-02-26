@@ -1,5 +1,5 @@
 import React from "react";
-import ContactMe from "../AboutMe/ContactForm/Contact";
+import ContactMe from "../AboutMe/ContactForm/Contact.component";
 import PackagesComponent from "./Packages/PackagesInfo/Packages.component";
 import ServicesComponent from "./Packages/Services/Services.component";
 import RetainerComponent from "./Packages/Retainer/Retainer.component";

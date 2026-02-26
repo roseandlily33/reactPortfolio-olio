@@ -19,7 +19,7 @@ import {
   PackageDetails,
   TimelineBadge,
 } from "./Packages.styles";
-import { PackageInfo } from "./PackageInfo";
+import { PackageInfo } from "./PackageInfo.info";
 import { RetainerTitle } from "../Retainer/Retainer.styles";
 
 const glassBg = "rgba(255,255,255,0.45)";

@@ -33,6 +33,7 @@ export const SubHeader = styled.h5`
   color: var(--grey-7);
   font-weight: 600;
   margin-bottom: var(--spacing-s);
+  margin-top: var(--spacing-l);
   display: flex;
   align-items: center;
   gap: var(--spacing-xs); 

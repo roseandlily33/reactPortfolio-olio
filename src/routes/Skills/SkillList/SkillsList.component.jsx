@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { FaCode, FaDatabase, FaPaintBrush, FaCogs } from "react-icons/fa";
-import { skills } from "./SkillsList";
+import { skills } from "./SkillsList.info";
 import {
   SkillList,
   SkillItem,

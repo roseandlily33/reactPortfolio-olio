@@ -14,10 +14,8 @@ export const EachCaseStudyContainer = styled.div`
   gap: var(--spacing-xl);
   height: 100%;
   padding: var(--spacing-l);
-  background-color: var(--pinkBackground);
-
+  /* background-color: var(--pinkBackground); */
   /* background: linear-gradient(135deg, var(--lightCream) 50%, var(--lightGrey) 50%); */
-
   div {
     /* border: 1px solid red; */
     display: flex;

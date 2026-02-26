@@ -9,8 +9,8 @@ import {
   ProjectMeta,
 } from "./ProjectsPreview.styles";
 import { useNavigate } from "react-router-dom";
-import { projectListMERN } from "../../Projects/ProjectLists/projectsMERN";
-import { projectListClient } from "../../Projects/ProjectLists/projectsClient";
+import { projectListMERN } from "../../Projects/ProjectLists/projectsMERN.info";
+import { projectListClient } from "../../Projects/ProjectLists/projectsClient.info";
 
 const ProjectsPreview = () => {
   const navigate = useNavigate();

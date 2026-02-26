@@ -4,37 +4,19 @@ import {
   SectionText,
   SectionList,
 } from "../Campaign/CampaignBB.styles";
-import { FaPenFancy, FaPalette, FaHashtag, FaLayerGroup } from "react-icons/fa";
 
 const ContentStrategyBB = () => {
   return (
     <>
       <SectionHeader>
-        <FaPenFancy
-          style={{
-            marginRight: 10,
-            fontSize: "1.1em",
-            verticalAlign: "middle",
-          }}
-        />
         Strategy for Content Creation for Social Media
       </SectionHeader>
-      <SubHeader>
-        <FaPalette
-          style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-        />
-        Tone & Style
-      </SubHeader>
+      <SubHeader>Tone & Style</SubHeader>
       <SectionText>
         Whimsical, heartfelt, nature-rooted. Earthy but not preachy. Think
         wildflower fields, gentle humor, and poetic captions.
       </SectionText>
-      <SubHeader>
-        <FaHashtag
-          style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-        />
-        Channels & Frequency
-      </SubHeader>
+      <SubHeader>Channels & Frequency</SubHeader>
       <SectionText>
         Instagram <span>4-5x per week</span>
       </SectionText>
@@ -51,12 +33,7 @@ const ContentStrategyBB = () => {
         Youtube Shorts/Reels <span>1-2x per week</span>
       </SectionText>
       <div style={{ marginBottom: "1rem" }}>
-        <SubHeader>
-          <FaLayerGroup
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
-          Content Pillars
-        </SubHeader>
+        <SubHeader>Content Pillars</SubHeader>
         <SectionList>
           <li>Behind-the-scenes flower and juice making</li>
           <li>Seasonal juice recipes and pairings</li>

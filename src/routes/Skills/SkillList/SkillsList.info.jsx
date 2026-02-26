@@ -2,7 +2,6 @@ import {
   SiRedux,
   SiGraphql,
   SiExpress,
-  SiStyledcomponents,
   SiMongodb,
   SiMysql,
   SiGatsby,

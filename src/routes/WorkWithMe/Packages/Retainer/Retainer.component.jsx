@@ -13,7 +13,7 @@ import {
   RetainerFeatures,
   RetainerIncludes,
 } from "./Retainer.styles";
-import { Retainer } from "./RetainerInfo";
+import { Retainer } from "./RetainerInfo.info";
 
 const RetainerComponent = () => (
   <RetainerSection>

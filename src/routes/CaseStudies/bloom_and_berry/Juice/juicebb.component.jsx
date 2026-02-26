@@ -3,24 +3,13 @@ import {
   SubHeader,
   SectionText,
 } from "../Campaign/CampaignBB.styles";
-import {
-  FaTint,
-  FaLeaf,
-  FaSun,
-  FaSeedling,
-  FaLemon,
-  FaHeart,
-  FaPlus,
-} from "react-icons/fa";
 import styled from "styled-components";
 
 const JuiceFlavorSection = styled.div`
-  background: ${({ color }) => color || "#fff"};
   /* border-radius: 18px; */
   border-radius: var(--borderRadius);
   margin-bottom: 1.2rem;
   padding: 1.2rem 1rem;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -35,20 +24,10 @@ const JuiceBB = () => {
   return (
     <>
       <SectionHeader>
-        <FaTint
-          style={{
-            marginRight: 10,
-            fontSize: "1.1em",
-            verticalAlign: "middle",
-          }}
-        />
         Each Flavor of Juice
       </SectionHeader>
       <JuiceFlavorSection color="#f8c1d8" textColor="#c72c6c">
         <SubHeader>
-          <FaHeart
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           1. Blush Garden
         </SubHeader>
         <SectionText className="italic">Rose, Strawberry & Honey</SectionText>
@@ -64,9 +43,6 @@ const JuiceBB = () => {
       </JuiceFlavorSection>
       <JuiceFlavorSection color="#ffe9a7" textColor="#bfa600">
         <SubHeader>
-          <FaSun
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           2. Golden Glow
         </SubHeader>
         <SectionText className="italic">
@@ -81,9 +57,6 @@ const JuiceBB = () => {
       </JuiceFlavorSection>
       <JuiceFlavorSection color="#d6c1f8" textColor="#6c2cc7">
         <SubHeader>
-          <FaLeaf
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           3. Velvet Bloom
         </SubHeader>
         <SectionText className="italic">Violet, Raspberry & Almond</SectionText>
@@ -94,11 +67,8 @@ const JuiceBB = () => {
           smooth almond notes for a lush, almost dessert-like treat.
         </SectionText>
       </JuiceFlavorSection>
-      <JuiceFlavorSection color="#c1f8d6" textColor="#2cc76c">
+      <JuiceFlavorSection textColor="#2cc76c">
         <SubHeader>
-          <FaSeedling
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           4. Fresh Root
         </SubHeader>
         <SectionText className="italic">Mint, Lemon & Ginger</SectionText>
@@ -111,9 +81,6 @@ const JuiceBB = () => {
       </JuiceFlavorSection>
       <JuiceFlavorSection color="#ffe5c1" textColor="#c77c2c">
         <SubHeader>
-          <FaLemon
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           5. Peach Petal
         </SubHeader>
         <SectionText className="italic">Lavender, Peach & Honey</SectionText>
@@ -128,9 +95,6 @@ const JuiceBB = () => {
       </JuiceFlavorSection>
       <JuiceFlavorSection color="#ffd6a1" textColor="#c76c2c">
         <SubHeader>
-          <FaSun
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           6. Sunny Stem
         </SubHeader>
         <SectionText className="italic">Marigold, Carrot & Lime</SectionText>
@@ -143,9 +107,6 @@ const JuiceBB = () => {
       </JuiceFlavorSection>
       <JuiceFlavorSection color="#f8c1d8" textColor="#2cc76c">
         <SubHeader>
-          <FaPlus
-            style={{ marginRight: 7, fontSize: "1em", verticalAlign: "middle" }}
-          />
           For a new flavor of juice try combining:
         </SubHeader>
         <SectionText>A mix of Blush Garden + Fresh Root</SectionText>

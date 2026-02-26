@@ -12,11 +12,11 @@ const ProcessTimelineAriel = () => (
       <TimelineItem>
         <SubHeader>Phase 1 (Sept 7, 2025):</SubHeader>
         <SectionText>
-          Ariel started with her own design. I created mockups, color palettes,
-          font options, and a logo to unify the brand. After a discovery call,
-          we clarified the target audience, streamlined navigation, and
-          identified unnecessary pages. I provided a detailed list of
-          recommendations for improvement.
+          Ariel started with her own design. I created mockups of a rough draft
+          of what it could look like, color palettes, font options, and a logo
+          to unify the brand. After a discovery call, we clarified the target
+          audience, streamlined navigation, and identified unnecessary pages. I
+          provided a detailed list of recommendations for improvement.
         </SectionText>
       </TimelineItem>
       <TimelineItem>
@@ -25,7 +25,7 @@ const ProcessTimelineAriel = () => (
           Ariel implemented the new color palette, fonts, and many
           recommendations. I reviewed the updated site, suggested further
           refinements, and helped combine and reorganize content for clarity.
-          The brand is now visually cohesive and much more engaging.
+          The brand is now visually cohesive and much more engaging. 
         </SectionText>
       </TimelineItem>
       <TimelineItem>

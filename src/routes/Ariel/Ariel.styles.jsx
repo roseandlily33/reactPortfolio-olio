@@ -19,7 +19,8 @@ export const ArielLayout = styled.div`
 export const ArielMain = styled.main`
   /* width: 100%; */
   /* max-width: 1000px; */
-  width: 85%;
+  /* width: 85%; */
+  width: 80%;
   box-sizing: border-box;
   /* padding: var(--spacing-xxl) var(--spacing-xl); */
   /* background: var(--grey-5); */
@@ -31,6 +32,7 @@ export const ArielMain = styled.main`
   gap: var(--spacing-xl);
   align-items: center;
   min-height: 100vh;
+  margin: 0 auto;
   @media screen and (max-width: 950px) {
     width: 100%;
     padding: var(--spacing-xl) var(--spacing-m);
@@ -45,14 +47,8 @@ export const ArielMain = styled.main`
 
 export const Section = styled.section`
   width: 100%;
-  /* margin-bottom: var(--spacing-l); */
   padding: var(--spacing-xxl) var(--spacing-xl);
-  background: #fff;
-  /* border-radius: 25px; */
-  border-radius: var(--borderRadius);
-  /* box-shadow: 0 2px 24px rgba(241, 116, 150, 0.1); */
   transition: box-shadow 0.2s;
-  
 `;
 
 export const PaletteCarousel = styled.div`

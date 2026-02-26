@@ -7,11 +7,11 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { useParams } from "react-router-dom";
-import { projectListMERN } from "../Projects/ProjectLists/projectsMERN";
-import { projectListBackEnd } from "../Projects/ProjectLists/projectsBE";
-import { projectListFrontEnd } from "../Projects/ProjectLists/projectsFE";
-import { projectListFrontEndMentor } from "../Projects/ProjectLists/projectsFEM";
-import { projectListClient } from "../Projects/ProjectLists/projectsClient";
+import { projectListMERN } from "../Projects/ProjectLists/projectsMERN.info.jsx";
+import { projectListBackEnd } from "../Projects/ProjectLists/projectsBE.info.jsx";
+import { projectListFrontEnd } from "../Projects/ProjectLists/projectsFE.info.jsx";
+import { projectListFrontEndMentor } from "../Projects/ProjectLists/projectsFEM.info.jsx";
+import { projectListClient } from "../Projects/ProjectLists/projectsClient.info.jsx";
 import {
   ProjectDetailContainer,
   ProjectDetailHeader,
@@ -240,7 +240,7 @@ const Project = () => {
                 cursor: "pointer",
                 transition: "background 0.2s, color 0.2s",
               }}
-              // aria-selected removed for lint compliance
+            // aria-selected removed for lint compliance
             >
               {tab.icon}
               {tab.label}

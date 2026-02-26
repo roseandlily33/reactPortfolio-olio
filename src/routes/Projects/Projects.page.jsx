@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { projectListFrontEnd } from "./ProjectLists/projectsFE";
-import { projectListMERN } from "./ProjectLists/projectsMERN";
-import { projectListFrontEndMentor } from "./ProjectLists/projectsFEM";
-import { projectListClient } from "./ProjectLists/projectsClient";
+import { projectListFrontEnd } from "./ProjectLists/projectsFE.info";
+import { projectListMERN } from "./ProjectLists/projectsMERN.info";
+import { projectListFrontEndMentor } from "./ProjectLists/projectsFEM.info";
+import { projectListClient } from "./ProjectLists/projectsClient.info";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import TabButton from "../../components/Buttons/TabButton/TabButton.component";
 import ProjectCard from "../../components/Cards/ProjectCard/ProjectCard.component";
