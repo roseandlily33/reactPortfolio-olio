@@ -44,7 +44,6 @@ export const SubHeader = styled.h5`
 `;
 
 export const SectionText = styled.p`
-  /* color: var(--darkGrey); */
   font-size: 1.05rem;
   font-weight: 400;
   margin-bottom: var(--spacing-s);
@@ -61,7 +60,6 @@ export const SectionList = styled.ul`
 	li {
 		position: relative;
 		font-size: var(--spacing-m);
-		/* color: var(--darkGrey); */
 		font-weight: 400;
 		padding-left: var(--spacing-l); 
 		margin-bottom: var(--spacing-xxs);

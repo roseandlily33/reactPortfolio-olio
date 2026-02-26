@@ -7,7 +7,7 @@ export const TabButtonContainer = styled.button`
   font-family: var(--headerFont);
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--darkGrey);
+  color: var(--grey-7);
   background-color: transparent;
   border-radius: 0;
   border: none;

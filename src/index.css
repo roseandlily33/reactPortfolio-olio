@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
@@ -6,31 +6,19 @@
   --titleFont: "Raleway", cursive;
   --headerFont: "Raleway", sans-serif;
   --mainFont: "Open Sans", sans-serif;
+  /* Old Colours that are still being used */
   --lightCream: #f6f5f2;
-  --medCream: #f3f2ee;
-  --darkCream: #e6e5e0;
   --white: #f6f6f6;
-  --lightestGrey: #f0efed;
   --lightGrey: #ebe9e1;
-  --medGrey: #8f8e8e;
-  --darkGrey: #323232;
-  --black: #181713;
-  /* Berries for fonts */
   --berry: #b23a48;
   --darkBerry: #6d4c41;
-  /* Oranges */
   --orangeBackground: #fff3e6;
-  --lightestBrown: #ffe4c2;
-  --lightBrown: #ff933d;
-  /* Pinks */
-
-  --pinkBackground: #FBF0F6;
-  /* Yellow & Accent */
+  --pinkBackground: #fbf0f6;
+  --lightPinkBackground: #ffeaea;
+  --lightestPink: #f6a9be;
   --lightYellowBackground: hsla(48, 80%, 79%, 0.4);
-  --yellow: #ffb400;
-  --green: #4bbf6b;
   --borderRadius: 25px;
-  --boxShadow: 12px 12px 19px 7px var(--lightGrey);
+  --boxShadow: 12px 12px 19px 7px var(--grey-2);
   /* Spacing Scale */
   --spacing-xxxs: 0.15rem;
   --spacing-xxs: 0.25rem;
@@ -46,17 +34,14 @@
   --spacing-xxxxxxl: 12rem;
   --spacing-xxxxxxxl: 16rem;
   --spacing-xxxxxxxxl: 24rem;
-    --lightPinkBackground: #ffeaea;
-  --lightestPink: #f6a9be;
-  /* Border Radius */
-  --borderRadius: 24px;
+  /* New Colours */
   --yellow1: #fff7d6;
   --yellow: #ffb400;
   --green: #4bbf6b;
   /* New colours */
   --grey-1: #f7f7f8;
   --grey-2: #fffbff;
-  --grey-3:  #ececee;
+  --grey-3: #ececee;
   --grey-4: #fffeff;
   /* --grey-5: #ffffff; */
   --grey-6: #baa3a9;
@@ -86,7 +71,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 body {
   /* background-color: var(--lightCream); */

@@ -215,7 +215,6 @@ export const PackagePrice = styled.div`
 `;
 
 export const PackageDescription = styled.p`
-  /* color: var(--darkGrey); */
   font-size: 1.1rem;
   margin-bottom: var(--spacing-m);
 `;
