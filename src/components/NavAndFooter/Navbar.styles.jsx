@@ -27,6 +27,7 @@ export const NavbarOuter = styled.header`
   @media screen and (max-width: 900px) {
     /* margin-inline: var(--spacing-xs); */
     flex-direction: row;
+    padding: var(--xs);
   }
   h2 {
     font-family: var(--titleFont);
@@ -137,7 +138,6 @@ export const NavBarComponent = styled.nav`
     }
     /* No animation on hover */
   }
-  
 `;
 
 const Navbar = ({ navLinks }) => {
