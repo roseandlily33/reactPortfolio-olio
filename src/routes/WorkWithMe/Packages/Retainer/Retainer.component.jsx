@@ -34,9 +34,7 @@ const RetainerComponent = () => (
     />
     <p
       style={{
-        // marginBottom: "1.5rem",
         fontWeight: 500,
-        // textAlign: "left",
         textAlign: "center",
         width: "100%",
         marginBottom: "var(--spacing-xxl)",

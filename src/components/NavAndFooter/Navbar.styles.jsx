@@ -52,10 +52,11 @@ export const Hamburger = styled.button`
   align-items: center;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.85);
+  /* background: rgba(255, 255, 255, 0.85); */
+  background: transparent;
   border: none;
-  border-radius: 50%;
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.13);
+  /* border-radius: 50%; */
+  /* box-shadow: 0 2px 12px rgba(241, 116, 150, 0.13); */
   cursor: pointer;
   z-index: 1200;
   transition:

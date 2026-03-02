@@ -111,7 +111,7 @@ const DevelopmentProcess = () => {
     <DevProcessContainer>
       <h4>Development Process</h4>
       <DevProcessCircleContainer>
-        {steps.map((step, idx) => (
+        {steps?.map((step, idx) => (
           <DevProcessCircle
             key={idx}
             ref={(el) => (refs.current[idx] = el)}
