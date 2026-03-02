@@ -101,10 +101,10 @@ export const ProjectDetailMain = styled.div`
 `;
 
 export const ProjectDetailImageWrapper = styled.div`
-  min-width: 320px;
-  max-width: 420px;
+  /* min-width: 320px; */
+  /* max-width: 420px; */
   width: 100%;
-  height: 260px;
+  /* height: 260px; */
   overflow: hidden;
   background: var(--grey-1);
   display: flex;

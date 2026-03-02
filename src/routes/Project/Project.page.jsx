@@ -93,6 +93,12 @@ const Project = () => {
         prevLink="/Projects"
         current={project?.title}
       />
+      <ProjectDetailImageWrapper>
+        <ProjectDetailImage
+          src={project?.img}
+          alt={project?.alt || project?.title}
+        />
+      </ProjectDetailImageWrapper>
       <ProjectDetailHeader>
         <h1>{project?.title}</h1>
         <ProjectDetailsContainer>
@@ -170,13 +176,8 @@ const Project = () => {
           </div>
         </ProjectDetailsContainer>
       </ProjectDetailHeader>
+
       <ProjectDetailMain>
-        <ProjectDetailImageWrapper>
-          <ProjectDetailImage
-            src={project?.img}
-            alt={project?.alt || project?.title}
-          />
-        </ProjectDetailImageWrapper>
         <ProjectDetailInfo>
           <p style={{ fontWeight: "500" }}>{project?.year}</p>
           <ProjectDetailStatusType>
