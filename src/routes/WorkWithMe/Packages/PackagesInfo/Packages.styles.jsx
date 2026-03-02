@@ -91,6 +91,7 @@ export const PackagesGrid = styled.div`
   @media (max-width: 768px) {
     gap: var(--spacing-xl);
     padding: var(--spacing-m) var(--spacing-xs);
+    padding-left: var(--spacing-xs);
     .scroll-arrow {
       right: var(--spacing-xxxs);
       width: var(--spacing-xl);
@@ -105,6 +106,7 @@ export const PackagesGrid = styled.div`
   @media (max-width: 600px) {
     gap: var(--spacing-m);
     padding: var(--spacing-m) var(--spacing-m);
+    padding-left: var(--spacing-m);
     .scroll-arrow {
       right: var(--spacing-xxxs);
       width: var(--spacing-l);
@@ -125,7 +127,7 @@ export const PackageCard = styled.div`
   /* border-radius: 16px; */
   border-radius: var(--borderRadius);
   border: none;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
   padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
@@ -171,7 +173,7 @@ export const PackageCard = styled.div`
 
   &:hover::before {
     background: ${({ $accent }) =>
-      `linear-gradient(90deg, ${$accent || "var(--pink-5)"} 0%, #fff0 100%)`};
+    `linear-gradient(90deg, ${$accent || "var(--pink-5)"} 0%, #fff0 100%)`};
   }
 
   @media (max-width: 768px) {

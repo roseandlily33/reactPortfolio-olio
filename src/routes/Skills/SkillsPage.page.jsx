@@ -7,24 +7,31 @@ import SkillsList from "./SkillList/SkillsList.component";
 
 const SkillsPage = () => {
   return (
-    <CertificateContainer >
+    <CertificateContainer>
       <div
         style={{
           // background: "white",
           textAlign: "center",
           paddingTop: "var(--spacing-xxxl)",
+          paddingBottom: "var(--spacing-l)",
           // backgroundColor: "#fff",
         }}
       >
         <h1
           style={{
             color: "var(--pink-6)",
-            marginBottom: 'var(--spacing-l)',
+            marginBottom: "var(--spacing-l)",
           }}
         >
           Skills
         </h1>
-         <p style={{padding: "0 var(--spacing-l)", maxWidth: "600px", margin: "0 auto"}}>
+        <p
+          style={{
+            padding: "0 var(--spacing-l)",
+            maxWidth: "600px",
+            margin: "0 auto",
+          }}
+        >
           Full-stack developer focused on scalable MERN and Next.js
           applications, performance optimization, and clean UI architecture.
         </p>

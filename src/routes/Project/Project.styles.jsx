@@ -93,7 +93,7 @@ export const ProjectDetailMain = styled.div`
   gap: var(--spacing-xxl);
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: var(--spacing-l);
+    gap: var(--spacing-xxl);
   }
 `;
 
@@ -287,4 +287,32 @@ export const ProjectDetailList = styled.ul`
 `;
 export const ProjectTestimonial = styled.div`
   line-height: 1.6;
+`;
+// Tab bar styles
+export const ProjectTabBar = styled.div`
+  display: flex;
+  gap: var(--spacing-m);
+  margin: var(--spacing-l) 0 var(--spacing-s) 0;
+  border-bottom: 2px solid var(--grey-3);
+  background: none;
+  button {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: var(--spacing-xs) var(--spacing-xl);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--pink-6);
+    cursor: pointer;
+    transition:
+      color 0.2s,
+      border-bottom 0.2s;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+  }
+  button.active {
+    color: var(--pink-5);
+    border-bottom: 3px solid var(--pink-5);
+    background: none;
+  }
 `;

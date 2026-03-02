@@ -57,6 +57,9 @@ export const TechLeft = styled.div`
     p {
       border: none;
     }
+    h4 {
+      font-size: 2.5rem;
+    }
   }
 `;
 
@@ -107,6 +110,6 @@ export const TechRight = styled.div`
     width: 100%;
     height: auto;
     padding: 0;
-    margin-top: var(--spacing-l);
+    margin-top: var(--spacing-xxxl);
   }
 `;

@@ -11,7 +11,7 @@ import { CardsBackground } from "../../components/Cards/CardsBackground.styles";
 const tabOptions = [
   { key: "client", label: "Client" },
 
-  { key: "mern", label: "Main MERN " },
+  { key: "mern", label: "MERN " },
   {
     key: "frontend",
     label: "Front End ",
@@ -64,7 +64,14 @@ const Projects = () => {
           >
             Projects
           </h1>
-          <div style={{ display: 'flex', gap: 'var(--spacing-m)', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div
+            style={{
+              display: "flex",
+              gap: "var(--spacing-m)",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
+          >
             {tabOptions.map((tab) => (
               <TabButton
                 key={tab.key}

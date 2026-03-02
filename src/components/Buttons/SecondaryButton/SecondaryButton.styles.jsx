@@ -15,8 +15,13 @@ export const SecondaryButtonContainer = styled.button`
   cursor: pointer;
   transition: background 0.2s;
   line-height: 1.2;
-  &:hover {
-  background: var(--orange-2);
-}
 
+  &:hover {
+    background: var(--orange-2);
+  }
+
+  @media (max-width: 768px) {
+    padding: var(--spacing-m) var(--spacing-xxl);
+    font-size: 1rem;
+  }
 `;

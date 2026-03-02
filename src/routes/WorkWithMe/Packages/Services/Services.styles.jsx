@@ -79,7 +79,7 @@ export const ServiceDetailCard = styled.div`
   /* flex: 2 1 400px; */
   background: #fff;
   border-radius: var(--borderRadius);
-  box-shadow: 0 4px 24px var(--pink-2);
+  box-shadow: 0 4px 20px var(--pink-2);
   padding: var(--spacing-xxl) var(--spacing-xl);
   display: flex;
   flex-direction: column;

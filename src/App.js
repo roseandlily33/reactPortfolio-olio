@@ -1,5 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/NavAndFooter/Navbar";
 import Footer from "./components/NavAndFooter/Footer";
 import AboutMe from "./routes/AboutMe/AboutMe.page";
@@ -15,9 +16,17 @@ import ArielHome from "./routes/Ariel/ArielHome.page";
 import Project from "./routes/Project/Project.page";
 
 function App() {
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
+  }
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route index path="/" element={<AboutMe />}></Route>

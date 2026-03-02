@@ -29,6 +29,7 @@ import {
   ProjectDetailList,
   ProjectTestimonial,
   ProjectDetailsContainer,
+  ProjectTabBar,
 } from "./Project.styles.jsx";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.component.jsx";
 
@@ -59,21 +60,16 @@ const Project = () => {
     {
       key: "technologies",
       label: "Technologies",
-      icon: <FaTools style={{ marginRight: 6, verticalAlign: "middle" }} />,
       show: !!project?.technologies,
     },
     {
       key: "keyFeatures",
       label: "Key Features",
-      icon: <FaStar style={{ marginRight: 6, verticalAlign: "middle" }} />,
       show: !!project?.keyFeatures,
     },
     {
       key: "challenges",
       label: "Challenges",
-      icon: (
-        <FaPuzzlePiece style={{ marginRight: 6, verticalAlign: "middle" }} />
-      ),
       show: !!project?.challenges,
     },
   ];
@@ -214,39 +210,17 @@ const Project = () => {
       </ProjectDetailMain>
       {/* Tab Buttons */}
       {visibleTabs.length > 0 && (
-        <div
-          style={{
-            margin: "var(--spacing-l)  0 var(--spacing-s) 0",
-            display: "flex",
-            gap: "var(--spacing-m) ",
-          }}
-        >
+        <ProjectTabBar>
           {visibleTabs.map((tab) => (
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              style={{
-                background: activeTab === tab.key ? "var(--pink-5)" : "#f8f8f8",
-                color: activeTab === tab.key ? "#fff" : "var(--pink-6)",
-                border: "none",
-                borderRadius: "999px",
-                padding: "var(--spacing-xs) var(--spacing-m)",
-                fontWeight: 600,
-                fontSize: "1.05rem",
-                boxShadow:
-                  activeTab === tab.key
-                    ? "0 2px 8px rgba(241, 116, 150, 0.12)"
-                    : "none",
-                cursor: "pointer",
-                transition: "background 0.2s, color 0.2s",
-              }}
-            // aria-selected removed for lint compliance
+              className={activeTab === tab.key ? "active" : ""}
             >
-              {tab.icon}
               {tab.label}
             </button>
           ))}
-        </div>
+        </ProjectTabBar>
       )}
       {/* Tab Content */}
       {activeTab === "technologies" && project?.technologies && (

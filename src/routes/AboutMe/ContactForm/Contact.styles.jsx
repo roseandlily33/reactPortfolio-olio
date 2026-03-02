@@ -37,6 +37,9 @@ export const ContactInfoCol = styled.div`
   align-items: flex-start;
   margin-top: var(--spacing-xxs);
   @media screen and (max-width: 900px) {
+    /* margin: 0; */
+    width: 100%;
+    /* border: 2px solid red; */
     max-width: 100%;
     min-width: 0;
   }
@@ -99,6 +102,35 @@ export const ContactInfo = styled.div`
     width: 100%;
     justify-content: flex-start;
   }
+  @media screen and (max-width: 600px) {
+    .contact-row-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      font-size: 1.05rem;
+      margin-bottom: var(--spacing-xs);
+      svg {
+        font-size: 1.18rem;
+        min-width: 1.18rem;
+      }
+    }
+    .icon-link-row {
+      flex-direction: row;
+      align-items: center;
+      gap: var(--spacing-xs);
+      width: 100%;
+      margin: var(--spacing-s) 0 0 0;
+      padding-top: var(--spacing-xs);
+      border-top: 1px solid var(--grey-3);
+    }
+    .icon-link {
+      width: var(--spacing-xl);
+      height: var(--spacing-xl);
+      font-size: 1.3rem;
+      margin-top: var(--spacing-xxs);
+    }
+  }
   .icon-link {
     color: var(--pink-7);
     font-size: 1.13rem;
@@ -128,7 +160,8 @@ export const ContactMeSection = styled.section`
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-l);
-  padding: var(--spacing-xxl) var(--spacing-xl) var(--spacing-xxl) var(--spacing-l);
+  padding: var(--spacing-xxl) var(--spacing-xl) var(--spacing-xxl)
+    var(--spacing-l);
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(14px) saturate(120%);
   overflow: hidden;

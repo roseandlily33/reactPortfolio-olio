@@ -25,7 +25,7 @@ export const NavbarOuter = styled.header`
   padding: var(--spacing-m);
 
   @media screen and (max-width: 900px) {
-    margin-inline: var(--spacing-xs);
+    /* margin-inline: var(--spacing-xs); */
     flex-direction: row;
   }
   h2 {

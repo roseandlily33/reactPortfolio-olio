@@ -82,6 +82,7 @@ const Navbar = () => {
           boxShadow: "0 2px 12px rgba(241,116,150,0.12)",
           border: "2px solid var(--pink-5)",
           transition: "background 0.2s, color 0.2s",
+          textAlign: 'center'
         }}
         onClick={() => setMenuOpen(false)}
       >

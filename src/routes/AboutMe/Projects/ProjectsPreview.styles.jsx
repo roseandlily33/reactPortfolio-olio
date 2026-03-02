@@ -11,6 +11,9 @@ export const ProjectsPreviewContainer = styled.div`
   h3 {
     font-weight: 620;
   }
+  @media screen and (max-width: 768px) {
+    padding: var(--spacing-xl) var(--spacing-l);
+  }
 `;
 
 export const ProjectsGrid = styled.div`
@@ -18,6 +21,10 @@ export const ProjectsGrid = styled.div`
   overflow-x: scroll;
   gap: 1.5rem;
   padding: var(--spacing-m) 0;
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+    padding: var(--spacing-xs) 0;
+  }
   /* border: 2px solid red; */
 `;
 
@@ -45,11 +52,16 @@ export const ProjectCard = styled.div`
     left: -60%;
     width: 120%;
     height: 120%;
-    background: linear-gradient(120deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.45) 70%, rgba(255,255,255,0) 80%);
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.45) 70%,
+      rgba(255, 255, 255, 0) 80%
+    );
     transform: translateX(-100%) rotate(25deg);
     pointer-events: none;
     z-index: 3;
-    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+    transition: transform 0.7s cubic-bezier(0.4, 2, 0.6, 1);
   }
 
   &:hover {
@@ -59,7 +71,7 @@ export const ProjectCard = styled.div`
   }
   &:hover::after {
     transform: translateX(80%) rotate(25deg);
-    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+    transition: transform 0.7s cubic-bezier(0.4, 2, 0.6, 1);
   }
 `;
 
