@@ -48,13 +48,13 @@ const ProjectsPreview = () => {
           >
             <ProjectImage src={project.img} alt={project.title} />
             <ProjectTitle>{project.title}</ProjectTitle>
-            <ProjectDescription>
+            <ProjectDescription className="project-description">
               {project.description.slice(0, 80)}
               {project.description.length > 80 ? "…" : ""}
             </ProjectDescription>
             <ProjectMeta>
               <span>{project.year}</span>
-              <span>{project.type}</span>
+              <span style={{fontWeight: 'bold'}}>{project.type}</span>
             </ProjectMeta>
           </ProjectCard>
         ))}

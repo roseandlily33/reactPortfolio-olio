@@ -57,7 +57,7 @@ export const ContactInfo = styled.div`
   border-radius: var(--borderRadius);
   padding: var(--spacing-l);
   box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
-  width: 100%;
+  min-width: 100%;
   .contact-row-item {
     color: var(--pink-6);
     font-weight: 500;
@@ -71,14 +71,15 @@ export const ContactInfo = styled.div`
   }
   a {
     color: var(--pink-7);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    font-size: 1.13rem;
+    /* font-size: 1.13rem; */
     line-height: 1.5;
     transition: color 0.2s;
+    /* border: 1px solid red; */
   }
   a:hover {
     color: var(--pink-4);
@@ -118,11 +119,11 @@ export const ContactInfo = styled.div`
     .icon-link-row {
       flex-direction: row;
       align-items: center;
-      gap: var(--spacing-xs);
+      /* gap: var(--spacing-xs); */
       width: 100%;
-      margin: var(--spacing-s) 0 0 0;
-      padding-top: var(--spacing-xs);
-      border-top: 1px solid var(--grey-3);
+      /* margin: var(--spacing-s) 0 0 0; */
+      /* padding-top: var(--spacing-xs); */
+      /* border-top: 1px solid var(--grey-3); */
     }
     .icon-link {
       width: var(--spacing-xl);

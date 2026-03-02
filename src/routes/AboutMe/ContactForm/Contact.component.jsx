@@ -115,8 +115,7 @@ const ContactMe = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaEnvelope /> <span className="contact-label">Email</span>{" "}
-              victoria.benoit.dev@gmail.com
+              <FaEnvelope /> victoria.benoit.dev@gmail.com
             </a>
           </div>
           <div className="contact-row-item">
@@ -125,15 +124,13 @@ const ContactMe = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaPhoneAlt /> <span className="contact-label">Phone</span> +1
-              (902) 817-1001
+              <FaPhoneAlt /> +1 (902) 817-1001
             </a>
           </div>
           <div className="icon-link-row">
             <div className="contact-row-item">
               <span>
-                <FaMapMarkerAlt />{" "}
-                <span className="contact-label">Location</span> Halifax NS, CA
+                <FaMapMarkerAlt /> Halifax NS, CA
               </span>
             </div>
             <a

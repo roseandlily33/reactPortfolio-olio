@@ -102,8 +102,9 @@ export const MobileMenu = styled.nav`
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: var(--spacing-m);
-    left: var(--spacing-m);
+    right: 0;
+    left: 0;
+    width: 100vw;
     background: var(--grey-2);
     border-radius: 0 0 18px 18px;
     box-shadow: 0 8px 32px rgba(241, 116, 150, 0.1);
@@ -115,6 +116,12 @@ export const MobileMenu = styled.nav`
       /* font-size: 1.1rem; */
       text-align: left;
     }
+  }
+  @media (max-width: 600px) {
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: var(--spacing-s);
   }
 `;
 

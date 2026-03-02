@@ -127,7 +127,7 @@ export const PackageCard = styled.div`
   /* border-radius: 16px; */
   border-radius: var(--borderRadius);
   border: none;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
   padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
@@ -173,38 +173,36 @@ export const PackageCard = styled.div`
 
   &:hover::before {
     background: ${({ $accent }) =>
-    `linear-gradient(90deg, ${$accent || "var(--pink-5)"} 0%, #fff0 100%)`};
+      `linear-gradient(90deg, ${$accent || "var(--pink-5)"} 0%, #fff0 100%)`};
   }
+
 
   @media (max-width: 768px) {
     min-width: 180px;
     max-width: 80vw;
     width: 80vw;
-    padding: var(--spacing-m) var(--spacing-s);
-    padding-top: var(--spacing-m);
+    padding: var(--spacing-xl) var(--spacing-l);
+    padding-top: var(--spacing-xl);
+    /* border: 2px solid red; */
+
   }
   @media (max-width: 600px) {
     min-width: 140px;
     max-width: 90vw;
     width: 90vw;
-    padding: var(--spacing-m) var(--spacing-m);
-    padding-top: var(--spacing-s);
     /* border: 2px solid red; */
     /* border: none; */
   }
 `;
 
-export const PackageTitle = styled.h3`
+export const PackageTitle = styled.h2`
   font-family: var(--headerFont);
-  font-size: 1.85rem;
-  font-weight: 700;
   margin-bottom: var(--spacing-s);
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
   /* text-transform: uppercase; */
   text-transform: capitalize;
-  letter-spacing: 0.03em;
   color: ${({ $titleColor }) => $titleColor || "inherit"};
 `;
 

@@ -20,7 +20,7 @@ const SkillsList = () => {
   return (
     <>
       <SkillsContainer>
-        <h4>{activeTab}</h4>
+        <h5>{activeTab}</h5>
         <SkillsSplitLayout>
           <SkillsTabsColumn>
             {Object.keys(skills)?.map((category) => {

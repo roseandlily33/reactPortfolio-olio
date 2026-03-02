@@ -16,7 +16,7 @@ export const TimelineWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     min-height: 0;
-    padding: var(--spacing-l) 0 var(--spacing-l) 0;
+    padding: var(--spacing-m) 0 var(--spacing-m) 0;
   }
 `;
 
@@ -154,8 +154,8 @@ export const TimelineIcon = styled.div`
   z-index: 3;
   @media (max-width: 900px) {
     /* display: none; */
-    border-top: 2px solid var(--berry);
-    padding-top: var(--spacing-xxl);
+    /* border-top: 2px solid var(--berry); */
+    padding-top: var(--spacing-l);
   }
 `;
 
@@ -201,23 +201,16 @@ export const ProcessSectionContainer = styled.section`
     margin-bottom: var(--spacing-xl);
     font-weight: 600;
     width: 100%;
-    /* text-align: left; */
     text-align: center;
-    /* font-size: 2.1rem; */
     letter-spacing: 0.03em;
     color: var(--pink-5);
-    /* text-transform: capitalize; */
-    color: var(--pink-5);
     font-family: var(--headerFont);
-    /* font-size: 1.25rem; */
-    font-weight: 600;
     margin: 0;
-    text-align: center;
-    width: 100%;
   }
   @media screen and (max-width: 768px) {
     padding: var(--spacing-xxxl) var(--spacing-xl);
-    h3 {
+    gap: var(--spacing-xxxs);
+    h4 {
       margin-bottom: var(--spacing-xxs);
     }
   }
@@ -236,7 +229,8 @@ export const ProcessGrid = styled.div`
   }
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
-    gap: var(--spacing-m);
+    gap: var(--spacing-xs);
+    /* border: 2px solid red; */
   }
 `;
 

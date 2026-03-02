@@ -377,13 +377,13 @@ blockquote {
     letter-spacing: 0.02rem;
   }
   #welcome {
-    font-size: 2.4rem;
-    margin-left: 1rem;
+    font-size: 3.2rem;
+    margin-left: 1.1rem;
     /* border: 1px solid blue; */
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: none;
     line-height: 1.4;
@@ -391,7 +391,7 @@ blockquote {
   }
 
   h4 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-transform: none;
     line-height: 1.4;
@@ -399,7 +399,7 @@ blockquote {
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-transform: none;
     line-height: 1.4;
@@ -407,7 +407,7 @@ blockquote {
   }
 
   h6 {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: none;
     line-height: 1.4;
@@ -415,7 +415,7 @@ blockquote {
   }
 
   p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: none;
     line-height: 1.5;

@@ -9,10 +9,10 @@ export const ProjectsPreviewContainer = styled.div`
   background: var(--pinkBackground);
   padding: var(--spacing-xxxxl) var(--spacing-xxxl);
   h3 {
-    font-weight: 620;
+    font-weight: 600;
   }
   @media screen and (max-width: 768px) {
-    padding: var(--spacing-xl) var(--spacing-l);
+    padding: var(--spacing-xxl) var(--spacing-l);
   }
 `;
 
@@ -73,6 +73,19 @@ export const ProjectCard = styled.div`
     transform: translateX(80%) rotate(25deg);
     transition: transform 0.7s cubic-bezier(0.4, 2, 0.6, 1);
   }
+
+  @media screen and (max-width: 900px) {
+    min-width: 260px;
+    padding: var(--spacing-l) var(--spacing-s);
+    gap: 0.6rem;
+  }
+  @media screen and (max-width: 600px) {
+    min-width: 180px;
+    max-width: 80vw;
+    width: 80vw;
+    padding: var(--spacing-m) var(--spacing-s);
+    gap: 0.5rem;
+  }
 `;
 
 export const ProjectImage = styled.img`
@@ -82,26 +95,35 @@ export const ProjectImage = styled.img`
   object-position: top;
   border-radius: 10px;
   margin-bottom: 0.7rem;
+  @media screen and (max-width: 900px) {
+    height: 110px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 80px;
+  }
 `;
 
-export const ProjectTitle = styled.div`
+export const ProjectTitle = styled.h6`
   font-weight: 700;
-  font-size: 1.18rem;
-  color: var(--orange-7);
+  color: var(--darkBerry);
   margin-bottom: 0.2rem;
 `;
 
 export const ProjectDescription = styled.p`
   font-size: 0.98rem;
-  color: var(--pink-7);
+  color: var(--darkBerry);
   margin-bottom: 0.2rem;
   line-height: 1.4;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const ProjectMeta = styled.div`
   display: flex;
   gap: 0.7rem;
   font-size: 0.93rem;
-  color: var(--orange-6);
+  /* color: var(--orange-6); */
   margin-bottom: 0.1rem;
+  flex-wrap: wrap;
 `;

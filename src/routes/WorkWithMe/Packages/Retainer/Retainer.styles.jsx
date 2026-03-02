@@ -11,8 +11,8 @@ export const RetainerSection = styled.section`
   align-items: center;
   justify-content: center;
   gap: var(--spacing-s);
-   @media screen and (max-width: 600px) {
-    padding: var(--spacing-xxl) var(--spacing-l);
+  @media screen and (max-width: 600px) {
+    padding: var(--spacing-l) var(--spacing-xs);
   }
 `;
 
@@ -36,7 +36,11 @@ export const RetainerGrid = styled.div`
   /* border: 2px solid red; */
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-m);
+  }
+  @media (max-width: 600px) {
+    gap: var(--spacing-s);
+    padding: 0;
   }
 `;
 
@@ -52,8 +56,8 @@ export const RetainerCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 250px;
-  max-width: 350px;
+  min-width: 220px;
+  max-width: 100%;
   width: 100%;
   transition:
     transform 0.18s,
@@ -73,6 +77,13 @@ export const RetainerCard = styled.div`
   }
   @media (max-width: 900px) {
     min-width: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 600px) {
+    padding: var(--spacing-s) var(--spacing-xxs);
+    min-width: 100%;
+    max-width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   }
 `;
 
@@ -80,10 +91,13 @@ export const RetainerCardTitle = styled.h5`
   color: var(--pink-5);
   font-family: var(--headerFont);
   /* font-size: 1.55rem; */
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-xxs);
   font-weight: 800;
   display: block;
   text-transform: uppercase;
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 export const RetainerCardBase = styled.div`
@@ -101,6 +115,13 @@ export const RetainerCardBase = styled.div`
     background: var(--orange-7);
     border-radius: 2px;
     margin-left: var(--spacing-s);
+  }
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+    gap: var(--spacing-xs);
+    .base-line {
+      width: 24px;
+    }
   }
 `;
 
@@ -134,6 +155,10 @@ export const RetainerIncludes = styled.details`
     line-height: 1;
     height: var(--spacing-m);
     margin-left: auto;
+    @media (max-width: 600px) {
+      font-size: 1.1rem;
+      height: var(--spacing-l);
+    }
   }
   summary:hover,
   summary:focus {
@@ -165,27 +190,52 @@ export const RetainerIncludes = styled.details`
     max-height: 480px;
     padding-top: var(--spacing-s);
   }
+  @media (max-width: 600px) {
+    font-size: 0.98rem;
+    summary {
+      font-size: 1rem;
+      padding: var(--spacing-xxxs) 0;
+    }
+    .includes-content {
+      padding-top: var(--spacing-xs);
+    }
+  }
 `;
 
 export const RetainerPrice = styled.div`
   color: var(--orange-7);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: bold;
   margin-bottom: var(--spacing-s);
+  @media (max-width: 600px) {
+    font-size: 0.98rem;
+    margin-bottom: var(--spacing-xs);
+  }
 `;
 
 export const RetainerDescription = styled.p`
-  font-size: var(--spacing-m);
-  margin-bottom: var(--spacing-m);
+  font-size: 0.98rem;
+  margin-bottom: var(--spacing-s);
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-xs);
+  }
 `;
 
 export const RetainerFeatures = styled.ul`
-  font-size: var(--spacing-m);
+  font-size: 0.98rem;
   margin: 0;
   padding-left: var(--spacing-m);
   li {
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-xxs);
     display: flex;
     align-items: center;
+  }
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+    padding-left: var(--spacing-xs);
+    li {
+      margin-bottom: var(--spacing-xxxs);
+    }
   }
 `;

@@ -110,6 +110,7 @@ export const TimelineItem = styled.div`
     margin-left: 0;
     margin-right: 0;
     align-items: flex-start;
+    margin-bottom: var(--spacing-xl);
     .bubble {
       left: -18px;
       right: auto;
@@ -121,5 +122,6 @@ export const TimelineItem = styled.div`
   }
   @media (max-width: 768px) {
     padding: var(--spacing-s) var(--spacing-l);
+    margin-bottom: var(--spacing-xxl);
   }
 `;
