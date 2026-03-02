@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const ProjectDetailContainer = styled.div`
   max-width: 1100px;
   margin: var(--spacing-xl) auto;
-  /* border-radius: 28px; */
   padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
@@ -23,9 +22,10 @@ export const ProjectDetailHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-xxl);
+  gap: var(--spacing-l);
+  margin-block: var(--spacing-xl);
   position: relative;
+  
   /* border: 2px solid red; */
   .featured-badge {
     display: inline-block;
@@ -50,6 +50,9 @@ export const ProjectDetailHeader = styled.div`
   .project-detail-links {
     display: flex;
     gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+
     a {
       color: var(--orange-7);
       font-weight: 600;
@@ -65,8 +68,8 @@ export const ProjectDetailHeader = styled.div`
     h1 {
       flex-direction: column;
       align-items: flex-start;
-      gap: var(--spacing-m);
-      font-size: 2.8rem;
+      /* gap: var(--spacing-m); */
+      /* font-size: 2.8rem; */
     }
     .featured-badge {
       margin-left: 0;
@@ -295,6 +298,18 @@ export const ProjectTabBar = styled.div`
   margin: var(--spacing-l) 0 var(--spacing-s) 0;
   border-bottom: 2px solid var(--grey-3);
   background: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-6) var(--grey-3);
+  &::-webkit-scrollbar {
+    height: 4px;
+    background: var(--grey-3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--grey-6);
+    border-radius: 2px;
+  }
   button {
     background: none;
     border: none;
@@ -309,10 +324,20 @@ export const ProjectTabBar = styled.div`
       border-bottom 0.2s;
     border-bottom: 3px solid transparent;
     margin-bottom: -2px;
+    white-space: nowrap;
   }
   button.active {
     color: var(--pink-5);
     border-bottom: 3px solid var(--pink-5);
     background: none;
+  }
+  @media (max-width: 600px) {
+    gap: var(--spacing-xs);
+    margin: var(--spacing-m) 0 var(--spacing-xs) 0;
+    padding-bottom: 2px;
+    button {
+      padding: var(--spacing-xxs) var(--spacing-m);
+      font-size: 0.98rem;
+    }
   }
 `;
