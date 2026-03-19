@@ -53,7 +53,7 @@ export const projectListMERN = [
     title: "Design Template",
     github: "https://github.com/roseandlily33/design-template/",
     deployed: "https://design-template-eotn.onrender.com",
-    status: true,
+    status: false,
     important: true,
     year: 2026,
     showMainPage: true,
