@@ -27,12 +27,12 @@ export const TechStackContainer = styled.div`
     font-weight: 700;
     /* letter-spacing: 0.03em; */
     margin-bottom: var(--spacing-m);
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: left;
     width: 100%;
     /* margin-top: var(--spacing-l); */
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     padding: var(--spacing-xl) var(--spacing-l);
     flex-direction: column;
     h4 {
@@ -51,14 +51,19 @@ export const TechLeft = styled.div`
     border-right: 2px solid var(--berry);
     padding-right: var(--spacing-xxl);
   }
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 900px) {
+    border: 2px solid red;
+  } */
+  @media screen and (max-width: 700px) {
     /* padding: var(--spacing-s) var(--spacing-l); */
     width: 100%;
     p {
       border: none;
+      width: 100%;
+      /* border: 2px solid red; */
     }
     h4 {
-      font-size: 2.5rem;
+      font-size: 2.1rem;
     }
   }
 `;
@@ -111,5 +116,8 @@ export const TechRight = styled.div`
     height: auto;
     padding: 0;
     margin-top: var(--spacing-xxxl);
+    span {
+      font-size: 1rem;
+    }
   }
 `;

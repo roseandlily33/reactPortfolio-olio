@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const SummarySection = styled.section`
   display: flex;
   flex-direction: row;
-  padding: var(--spacing-xxxxl) var(--spacing-xxxl);
+  padding: var(--spacing-xxxxl) var(--spacing-xxl);
   gap: var(--spacing-xl);
   align-items: flex-start;
   h3 {
     font-family: var(--headerFont);
-    margin-bottom: 6px;
+    margin-bottom: var(--spacing-xxs);
     letter-spacing: 0.01em;
     font-weight: 700;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     padding: var(--spacing-s) var(--spacing-l);
     flex-direction: column;
   }
@@ -29,7 +29,7 @@ export const AboutMeColumn = styled.div`
   h3 {
     font-family: var(--headerFont);
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     border-right: none;
     padding-right: 0;
     height: auto;

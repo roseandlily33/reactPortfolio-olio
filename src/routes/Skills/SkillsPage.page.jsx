@@ -1,7 +1,7 @@
 import React from "react";
 import { CertificateContainer } from "../Certificates/Certificates.styles";
 import DevelopmentProcess from "./DevelopmentProcess/DevelopmentProcess.component";
-import BackToTopButton from "../../components/BackToTop/BackToTop.button";
+// import BackToTopButton from "../../components/BackToTop/BackToTop.button";
 import TechStack from "./TechStack/TechStack.component";
 import SkillsList from "./SkillList/SkillsList.component";
 
@@ -13,7 +13,7 @@ const SkillsPage = () => {
           // background: "white",
           textAlign: "center",
           paddingTop: "var(--spacing-xxxl)",
-          paddingBottom: "var(--spacing-l)",
+          paddingBottom: "var(--spacing-xl)",
           // backgroundColor: "#fff",
         }}
       >
@@ -39,7 +39,7 @@ const SkillsPage = () => {
       <TechStack />
       <DevelopmentProcess />
       <SkillsList />
-      <BackToTopButton />
+      {/* <BackToTopButton /> */}
     </CertificateContainer>
   );
 };

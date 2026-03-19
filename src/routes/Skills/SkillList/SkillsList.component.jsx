@@ -7,7 +7,7 @@ import {
   SkillItem,
   SkillInfo,
   SkillRating,
-  SkillsTabsLegendCard,
+  // SkillsTabsLegendCard,
   PillTab,
   SkillsContainer,
   SkillsSplitLayout,
@@ -20,7 +20,7 @@ const SkillsList = () => {
   return (
     <>
       <SkillsContainer>
-        <h5>{activeTab}</h5>
+        {/* <h5>{activeTab}</h5> */}
         <SkillsSplitLayout>
           <SkillsTabsColumn>
             {Object.keys(skills)?.map((category) => {

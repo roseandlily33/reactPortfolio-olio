@@ -126,7 +126,6 @@ const DevelopmentProcess = () => {
               $gradient={step.gradient}
               $border={step.border}
               style={{
-                fontSize: "12rem",
                 marginRight: "0.8rem",
                 marginBottom: isMobile ? "-1.5rem" : 0,
                 textAlign: isMobile ? "left" : "right",
@@ -143,7 +142,7 @@ const DevelopmentProcess = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 gap: "0.2em",
-                marginLeft: isMobile ? 0 : "-0.5em"
+                marginLeft: isMobile ? 0 : "-0.5em",
               }}
             >
               {step.icon}

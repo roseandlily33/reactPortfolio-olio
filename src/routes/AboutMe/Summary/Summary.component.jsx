@@ -9,7 +9,7 @@ const SummaryComponent = () => {
     <SummarySection>
       <AboutMeColumn>
         <h3>Who I am</h3>
-        <p style={{ maxWidth: "80%" }}>
+        <p style={{ maxWidth: "100%" }}>
           <strong>Full Stack Developer & UX/UI Designer</strong> with 4+ years
           building scalable, accessible web solutions.
           <br />I specialize in clean architecture, performance-focused builds,

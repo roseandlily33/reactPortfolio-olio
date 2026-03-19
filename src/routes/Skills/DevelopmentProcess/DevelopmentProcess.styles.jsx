@@ -6,7 +6,6 @@ export const DevProcessContainer = styled.div`
   padding: var(--spacing-xxxl) var(--spacing-xs);
   width: 100%;
   margin: 0 auto;
-  /* border: 2px solid green; */
   h4 {
     color: var(--grey-8);
     font-weight: 700;
@@ -18,10 +17,11 @@ export const DevProcessContainer = styled.div`
     text-align: center;
   }
   @media screen and (max-width: 600px) {
-    padding: var(--spacing-xxl) var(--spacing-l);
+  /* border: 2px solid green; */
+    padding: var(--spacing-xl) var(--spacing-m);
     h4 {
       text-align: left;
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 `;
@@ -38,6 +38,7 @@ export const DevProcessCircleContainer = styled.div`
     flex-direction: column;
     gap: var(--spacing-l);
   }
+   
 `;
 
 // Animation keyframes
@@ -81,6 +82,9 @@ export const DevProcessCircle = styled.div`
     min-height: unset;
     padding: var(--spacing-m) var(--spacing-m);
   }
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+   }
 `;
 
 export const DevProcessNumber = styled.div`
@@ -91,6 +95,7 @@ export const DevProcessNumber = styled.div`
   /* margin-left: -0.3em; */
   flex-shrink: 0;
   z-index: 1;
+  font-size: 12rem;
   /* min-width: 120px; */
   text-align: right;
   filter: drop-shadow(0 2px 8px rgba(255, 0, 128, 0.08));
@@ -105,7 +110,11 @@ export const DevProcessNumber = styled.div`
     margin-bottom: -1.5rem;
     min-width: unset;
     text-align: left;
+    font-size: 10rem;
     align-self: flex-start;
   }
+  @media screen and (max-width: 600px) {
+    font-size: 8rem;
+   }
   /* border: 2px solid rebeccapurple; */
 `;

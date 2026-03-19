@@ -18,6 +18,11 @@ export const SkillsContainer = styled.div`
     width: 100%;
     /* margin-bottom: var(--spacing-xl); */
   }
+  @media (max-width: 500px) {
+    padding: var(--spacing-xs);
+    gap: var(--spacing-xs);
+    font-size: 0.95rem;
+  }
 `;
 
 export const SkillsSplitLayout = styled.div`
@@ -52,6 +57,11 @@ export const SkillsTabsColumn = styled.div`
     justify-content: center;
     gap: var(--spacing-m);
     padding: var(--spacing-m) var(--spacing-xs);
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: var(--spacing-xs);
+    gap: var(--spacing-xs);
   }
 `;
 
@@ -98,9 +108,9 @@ export const SkillList = styled.ul`
   flex-direction: column;
   gap: var(--spacing-xs);
   /* background: var(--lightPinkBackground); */
-  background: white;
-  border-radius: var(--borderRadius);
-  box-shadow: 0 2px 12px rgba(40, 39, 39, 0.07);
+  /* background: white; */
+  /* border-radius: var(--borderRadius); */
+  /* box-shadow: 0 2px 12px rgba(40, 39, 39, 0.07); */
   padding: var(--spacing-l) var(--spacing-m);
   justify-content: flex-start;
   transition:
