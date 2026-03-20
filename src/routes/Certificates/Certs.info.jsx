@@ -76,6 +76,29 @@ import uxcomponents2 from "../../images/certificates/uxui/UX_UI_Components.png";
 import uxwireframing from "../../images/certificates/uxui/UX_Wireframing.png";
 import uxwriting from "../../images/certificates/uxui/UX_Writing.png";
 
+// Yoda
+import cso1 from "../../images/certificates/yoda/CSO1.png";
+import cso2 from "../../images/certificates/yoda/CSO2.png";
+import cso3 from "../../images/certificates/yoda/CSO3.png";
+import cso4 from "../../images/certificates/yoda/CSO4.png";
+import cso5 from "../../images/certificates/yoda/CSO5.png";
+import cso6 from "../../images/certificates/yoda/CSO6.png";
+import cso7 from "../../images/certificates/yoda/CSO7.png";
+import cso8 from "../../images/certificates/yoda/CSO8.png";
+import cso9 from "../../images/certificates/yoda/CSO9.png";
+import cso10 from "../../images/certificates/yoda/CSO10.png";
+import backCare from "../../images/certificates/yoda/BackCare.png";
+import basicElec from "../../images/certificates/yoda/BasicElectrical.png";
+import complacency from "../../images/certificates/yoda/Complacency.png";
+import driving from "../../images/certificates/yoda/Driving.png";
+import erg from "../../images/certificates/yoda/Erg.png";
+import fireExt from "../../images/certificates/yoda/FireExt.png";
+import firePre from "../../images/certificates/yoda/FirePre.png";
+import fireWarden from "../../images/certificates/yoda/FireWarden.png";
+import psych from "../../images/certificates/yoda/Psych.png";
+import rick from "../../images/certificates/yoda/Risk.png";
+import whmis from "../../images/certificates/yoda/WHMIS.png";
+
 // Other
 import IT_PRO from "../../images/certificates/other/IT_PRO.jpeg";
 import UNB from "../../images/certificates/other/UNB.jpeg";
@@ -721,6 +744,174 @@ export const CertList = [
     provider: "Uxcel",
     date: "March 28, 2024",
     tags: ["Design (UX/UI)"],
+  },
+  {
+    id: 70,
+    photo: cso1,
+    title: "CSO 1 - Introduction & Legislation",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 3, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 71,
+    photo: cso2,
+    title: "CSO  - Ethics",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 72,
+    photo: cso3,
+    title: "CSO 3 - Team Building Communication",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 73,
+    photo: cso4,
+    title: "CSO 4 - PPE Ergonomics Stress",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 74,
+    photo: cso5,
+    title: "CSO 5 - Return to Work",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 75,
+    photo: cso6,
+    title: "CSO 6 - Management Systems",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 77,
+    photo: cso7,
+    title: "CSO 7 - HRC & JSA",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 78,
+    photo: cso8,
+    title: "CSO 8 - Investigations",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 79,
+    photo: cso9,
+    title: "CSO 9 - Inspections",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 80,
+    photo: cso10,
+    title: "CSO 10 - WHMIS 2015",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 13, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 81,
+    photo: backCare,
+    title: "Back Care & Injury Prevention",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 3, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 82,
+    photo: basicElec,
+    title: "Basic Electrical Safety Awareness",
+    provider: "Yoda Safety Services Inc.",
+    date: "October 30, 2025",
+    tags: ["Safety"],
+  },
+  {
+    id: 83,
+    photo: complacency,
+    title: "Complacency",
+    provider: "Yoda Safety Services Inc.",
+    date: "October 30,2025",
+    tags: ["Safety"],
+  },
+  {
+    id: 84,
+    photo: driving,
+    title: "Defensive Driving Refresher Overview",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 11, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 85,
+    photo: erg,
+    title: "Office Ergonomics",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 25, 2025",
+    tags: ["Safety"],
+  },
+  {
+    id: 86,
+    photo: fireExt,
+    title: "Fire Extinguisher Training",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 87,
+    photo: firePre,
+    title: "Fire Prevention & Control",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 11, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 88,
+    photo: fireWarden,
+    title: "Fire Warden Training",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 10, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 89,
+    photo: psych,
+    title: "Fundamentals of Psychological Health & Safety",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 3, 2026",
+    tags: ["Safety"],
+  },
+  {
+    id: 90,
+    photo: rick,
+    title: "Risk Tolerant Behaviour",
+    provider: "Yoda Safety Services Inc.",
+    date: "October 30, 2025",
+    tags: ["Safety"],
+  },
+  {
+    id: 91,
+    photo: whmis,
+    title: "WHMIS",
+    provider: "Yoda Safety Services Inc.",
+    date: "March 3, 2026",
+    tags: ["Safety"],
   },
   // {
   //   id: 12,
