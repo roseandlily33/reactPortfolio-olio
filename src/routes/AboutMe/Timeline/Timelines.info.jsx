@@ -16,12 +16,12 @@ const Timeline = () => {
     {
       year: "2022",
       description:
-        "Enrolled in and successfully completed the UNB Coding Boot Camp, gaining hands-on experience in full-stack development.",
+        "Completed several Codecademy courses, focusing on JavaScript and web development fundamentals.",
     },
     {
       year: "2023",
       description:
-        "Started advanced programming courses with Zero to Mastery to deepen my expertise in modern web technologies.",
+        "Enrolled in and successfully completed the UNB Coding Boot Camp, gaining hands-on experience in full-stack development. Started advanced programming courses with Zero to Mastery to deepen my expertise in modern web technologies.",
     },
     {
       year: "2024",

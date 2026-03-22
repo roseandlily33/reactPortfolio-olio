@@ -1,26 +1,45 @@
 import styled from "styled-components";
 
 export const ProjectCardContainer = styled.div`
-  /* background: #fdf4f0; */
-  background: var(--lightCream);
-  /* background: rgba(255, 255, 255, 0.85); */
+  background: linear-gradient(
+    120deg,
+    var(--lightCream) 70%,
+    var(--pink-1) 100%
+  );
   backdrop-filter: blur(4px);
   border-radius: var(--borderRadius);
-  box-shadow: 0 6px 32px 0 rgba(61, 43, 46, 0.1), 0 1.5px 8px 0 rgba(97, 53, 67, 0.06);
+  box-shadow:
+    0 6px 32px 0 rgba(61, 43, 46, 0.1),
+    0 1.5px 8px 0 rgba(97, 53, 67, 0.06);
   padding: var(--spacing-m) var(--spacing-s);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   cursor: pointer;
-  transition: box-shadow 0.18s;
+  transition:
+    box-shadow 0.18s,
+    transform 0.18s,
+    border 0.18s;
   min-width: 350px;
   max-width: 350px;
   min-height: 300px;
   max-height: 320px;
+  /* border: 2px solid red; */
   gap: var(--spacing-s);
   position: relative;
   overflow: hidden;
-  /* border: 2px solid blue; */
+  animation: fadeInCard 0.5s cubic-bezier(0.4, 0.2, 0.6, 1);
+
+  @keyframes fadeInCard {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
 
   /* Shine sweep effect */
   &::after {
@@ -43,8 +62,10 @@ export const ProjectCardContainer = styled.div`
   }
 
   &:hover {
-    box-shadow: 0 4px 24px rgba(243, 140, 169, 0.13);
-    transform: translateY(-2px) scale(1.02);
+    box-shadow:
+      0 8px 32px rgba(243, 140, 169, 0.18),
+      0 2px 8px rgba(61, 43, 46, 0.1);
+    transform: translateY(-4px) scale(1.035);
     border: 2px solid var(--pink-4);
   }
   &:hover::after {
@@ -83,6 +104,16 @@ export const ProjectCardContainer = styled.div`
     color: #fff;
     filter: drop-shadow(0 1px 2px rgba(60, 60, 60, 0.08));
     margin: auto;
+  }
+
+  /* Card footer for actions */
+  .card-footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-xs);
+    padding-top: var(--spacing-xs);
   }
 `;
 

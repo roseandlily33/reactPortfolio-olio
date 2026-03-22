@@ -2,7 +2,7 @@ import { CertificateContainer } from "./Certificates.styles";
 import { CertList } from "./Certs.info";
 import { useState } from "react";
 import BackToTopButton from "../../components/BackToTop/BackToTop.button";
-import SelectedCertificate from "./SelectedCertificate.component";
+import SelectedCertificate from "./CertificateModal/SelectedCertificate.component";
 import CertificateList from "./CertificateList.component";
 import CertificateSelect from "./CertificateSelect.component";
 
