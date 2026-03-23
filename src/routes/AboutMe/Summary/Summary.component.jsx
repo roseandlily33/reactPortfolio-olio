@@ -3,6 +3,7 @@ import {
   AboutMeColumn,
   SummarySection,
 } from "./Summary.styles";
+import ResumeButton from "../../../components/ResumeButton/ResumeButton.component";
 
 const SummaryComponent = () => {
   return (
@@ -17,6 +18,7 @@ const SummaryComponent = () => {
           <br /> My mission is to create web products that are as delightful as
           they are functional.
         </p>
+        <ResumeButton />
       </AboutMeColumn>
       <HowIWorkColumn>
         <h3>How I Work</h3>

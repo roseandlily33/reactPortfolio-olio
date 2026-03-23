@@ -29,10 +29,16 @@ export const AboutMeColumn = styled.div`
   h3 {
     font-family: var(--headerFont);
   }
+  button {
+    margin-top: var(--spacing-xl);
+  }
   @media screen and (max-width: 900px) {
     border-right: none;
     padding-right: 0;
     height: auto;
+    button {
+      width: 100%;
+    }
   }
 `;
 
