@@ -40,8 +40,8 @@ export const ArielMain = styled.main`
     height: 100%;
   }
   @media screen and (max-width: 768px){
-    border-radius: 0;
     gap: var(--spacing-s);
+    padding: var(--spacing-xs) var(--spacing-s);
   }
 `;
 
