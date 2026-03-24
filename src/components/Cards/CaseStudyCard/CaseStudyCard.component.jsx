@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   ProjectCardContainer,
   ProjectTitle,
@@ -20,8 +21,9 @@ const CaseStudyTitle = styled(ProjectTitle)`
 `;
 
 const CaseStudyCard = ({ index, study }) => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    if (study?.link) window.location.href = study.link;
+    if (study?.link) navigate(study.link);
   };
   return (
     <ProjectCardContainer key={index}>
