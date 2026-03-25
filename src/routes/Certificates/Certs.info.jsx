@@ -102,6 +102,8 @@ import whmis from "../../images/certificates/yoda/WHMIS.png";
 // Other
 import IT_PRO from "../../images/certificates/other/IT_PRO.jpeg";
 import UNB from "../../images/certificates/other/UNB.jpeg";
+import CSO from "../../images/certificates/other/CSO.jpeg";
+import ISO from "../../images/certificates/other/ISO.jpeg";
 
 export const CertList = [
   {
@@ -121,6 +123,24 @@ export const CertList = [
     date: "2023",
     important: true,
     tags: ["Front End", "Back End", "HTML", "CSS", "Javascript"],
+  },
+  {
+    id: 1003,
+    photo: CSO,
+    title: "Certified Safety Officer",
+    provider: "Occupational Health and Educational Services",
+    date: "May 11, 2022",
+    important: true,
+    tags: ["Safety"],
+  },
+  {
+    id: 1004,
+    photo: ISO,
+    title: "ISO 9001:2015 Internal Auditor Training",
+    provider: "Gorveatte Consulting Inc.",
+    date: "December 9, 2019",
+    important: false,
+    tags: ["ISO 9001:2015 Quality Management Systems"],
   },
   // {
   //   id: 1003,
