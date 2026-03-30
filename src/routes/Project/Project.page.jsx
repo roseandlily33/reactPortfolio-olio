@@ -147,7 +147,7 @@ const Project = () => {
                 GitHub
               </a>
             )}
-            {project?.designUrl && (
+            {/* {project?.designUrl && (
               <a
                 href={project?.designUrl}
                 target="_blank"
@@ -159,7 +159,7 @@ const Project = () => {
                 />
                 Design Url
               </a>
-            )}
+            )} */}
             {CaseStudies[project?.title] && (
               <a
                 href={CaseStudies[project?.title]}
