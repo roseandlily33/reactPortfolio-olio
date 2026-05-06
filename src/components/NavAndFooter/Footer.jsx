@@ -38,33 +38,35 @@ const Footer = () => {
           <FaLinkedin size={36} style={{ color: "var(--pink-2)" }} />
         </a>
       </div>
-      {/* Contact Info */}
+      {/* Contact Button for Professional Inquiries */}
       <div
         style={{
           marginBottom: "var(--spacing-xs)",
-          color: "var(--grey-7)",
-          fontSize: "var(--spacing-m)",
           display: "flex",
-          flexWrap: "wrap",
-          gap: "var(--spacing-m)",
           justifyContent: "center",
         }}
       >
-        <span>
-          Email:{" "}
-          <a
-            href="mailto:victoria.benoit.dev@gmail.com"
-            style={{ color: "var(--orange-6)" }}
-          >
-            victoria.benoit.dev@gmail.com
-          </a>
-        </span>
-        <span style={{ marginLeft: "1.5rem" }}>
-          Phone:{" "}
-          <a href="tel:9028171001" style={{ color: "var(--orange-6)" }}>
-            902-817-1001
-          </a>
-        </span>
+        <a
+          href="https://vrbwebdesignanddev.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            background: "linear-gradient(90deg, var(--pink-5) 0%, var(--pink-3) 100%)",
+            color: "#fff",
+            fontWeight: 700,
+            fontSize: "1.08rem",
+            padding: "0.7em 2em",
+            border: "none",
+            borderRadius: "30px",
+            boxShadow: "0 2px 12px rgba(255, 0, 128, 0.08)",
+            cursor: "pointer",
+            textDecoration: "none",
+            transition: "background 0.2s, transform 0.2s",
+            display: "inline-block",
+          }}
+        >
+          Contact Me / Book Now
+        </a>
       </div>
       {/* Footer Navigation (commented out for comparison)
       <nav

@@ -1,173 +1,18 @@
 import styled from "styled-components";
 
-export const ContactRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--spacing-xxl);
-  width: 100%;
-  margin: var(--spacing-xl) 0 0 0;
-  @media screen and (max-width: 900px) {
-    flex-direction: column;
-    gap: var(--spacing-l);
-    align-items: stretch;
-  }
-`;
-
-export const ContactFormCol = styled.div`
-  flex: 2;
-  min-width: 270px;
-  max-width: 420px;
-  padding-right: var(--spacing-xxl);
-  border-right: 4px solid var(--pink-5);
-  @media screen and (max-width: 900px) {
-    max-width: 100%;
-    min-width: 0;
-    border-right: none;
-  }
-`;
-export const ContactInfoCol = styled.div`
-  flex: 1.2;
-  min-width: 260px;
-  max-width: 420px;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-l);
-  align-items: flex-start;
-  margin-top: var(--spacing-xxs);
-  @media screen and (max-width: 900px) {
-    /* margin: 0; */
-    width: 100%;
-    /* border: 2px solid red; */
-    max-width: 100%;
-    min-width: 0;
-  }
-`;
-
-export const ContactInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-s);
-  font-family: var(--headerFont);
-  font-size: 1.13rem;
-  color: var(--pink-7);
-  background: var(--lightPinkBackground);
-  /* border-radius: 18px; */
-  border-radius: var(--borderRadius);
-  padding: var(--spacing-l);
-  box-shadow: 0 2px 12px rgba(241, 116, 150, 0.07);
-  min-width: 100%;
-  .contact-row-item {
-    color: var(--pink-6);
-    font-weight: 500;
-    svg {
-      color: var(--pink-7);
-      font-size: 1.18rem;
-      margin-right: var(--spacing-xs);
-      vertical-align: middle;
-      transition: color 0.2s;
-    }
-  }
-  a {
-    color: var(--pink-7);
-    font-weight: 600;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-    /* font-size: 1.13rem; */
-    line-height: 1.5;
-    transition: color 0.2s;
-    /* border: 1px solid red; */
-  }
-  a:hover {
-    color: var(--pink-4);
-    svg {
-      color: var(--pink-5);
-    }
-  }
-  .contact-label {
-    font-weight: 600;
-    color: var(--pink-6);
-    margin-right: var(--spacing-xxxs);
-    font-size: 1.03rem;
-  }
-  .icon-link-row {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-s);
-    margin: var(--spacing-xxs) 0 var(--spacing-xxxs) 0;
-    padding-top: var(--spacing-xxs);
-    border-top: 1px solid var(--grey-3);
-    width: 100%;
-    justify-content: flex-start;
-  }
-  @media screen and (max-width: 600px) {
-    .contact-row-item {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-xs);
-      font-size: 1.05rem;
-      margin-bottom: var(--spacing-xs);
-      svg {
-        font-size: 1.18rem;
-        min-width: 1.18rem;
-      }
-    }
-    .icon-link-row {
-      flex-direction: row;
-      align-items: center;
-      /* gap: var(--spacing-xs); */
-      width: 100%;
-      /* margin: var(--spacing-s) 0 0 0; */
-      /* padding-top: var(--spacing-xs); */
-      /* border-top: 1px solid var(--grey-3); */
-    }
-    .icon-link {
-      width: var(--spacing-xl);
-      height: var(--spacing-xl);
-      font-size: 1.3rem;
-      margin-top: var(--spacing-xxs);
-    }
-  }
-  .icon-link {
-    color: var(--pink-7);
-    font-size: 1.13rem;
-    transition:
-      color 0.2s,
-      transform 0.2s,
-      background 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--spacing-xl);
-    height: var(--spacing-xl);
-    border-radius: 50%;
-    background: none;
-    padding: var(--spacing-xxxs);
-  }
-  .icon-link:hover {
-    color: var(--pink-5);
-    background: rgba(241, 116, 150, 0.08);
-    transform: scale(1.11);
-  }
-`;
-// Contact me section
 export const ContactMeSection = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-l);
-  padding: var(--spacing-xxl) var(--spacing-xl) var(--spacing-xxl)
-    var(--spacing-l);
-  background: rgba(255, 255, 255, 0.7);
+  justify-content: center;
+  min-height: 60vh;
+  padding: var(--spacing-xxl) var(--spacing-xl);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(14px) saturate(120%);
   overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
 
-  /* Floating bubbles only on desktop */
   &::before,
   &::after {
     content: "";
@@ -177,17 +22,18 @@ export const ContactMeSection = styled.section`
     height: 120px;
     background-color: var(--pink-2);
     border-radius: 50%;
-    opacity: 0.4;
+    opacity: 0.25;
     animation: float 7s infinite ease-in-out;
+    z-index: 0;
   }
   &::before {
     top: -40px;
-    left: 18%;
+    left: 10%;
     animation-delay: 0s;
   }
   &::after {
     bottom: -60px;
-    right: 18%;
+    right: 10%;
     animation-delay: 3.5s;
   }
   @keyframes float {
@@ -195,7 +41,7 @@ export const ContactMeSection = styled.section`
       transform: translateY(0) scale(1);
     }
     50% {
-      transform: translateY(-50px) scale(1.5);
+      transform: translateY(-50px) scale(1.2);
     }
     100% {
       transform: translateY(0) scale(1);
@@ -206,39 +52,94 @@ export const ContactMeSection = styled.section`
     &::after {
       display: none !important;
     }
+    padding: var(--spacing-xl) var(--spacing-m);
   }
 
   h3 {
     color: var(--pink-5);
     text-align: center;
-    padding-bottom: var(--spacing-xxs);
-    transition: color 0.3s ease;
-    text-transform: capitalize;
-    font-weight: 700;
+    padding-bottom: var(--spacing-m);
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    z-index: 1;
     @media screen and (max-width: 768px) {
-      padding-bottom: var(--spacing-xxxs);
+      font-size: 1.4rem;
+      padding-bottom: var(--spacing-s);
     }
   }
+`;
 
-  .contact-intro {
-    margin-bottom: var(--spacing-xxxs);
-    font-weight: 400;
-    font-size: 1.08rem;
-    text-align: center;
+export const InfoBox = styled.div`
+  padding: var(--spacing-xl) var(--spacing-l);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-m);
+  max-width: 540px;
+  width: 100%;
+  z-index: 1;
+  .contact-text {
     color: var(--pink-7);
-    max-width: 600px;
-    @media screen and (max-width: 768px) {
-      font-size: 1.01rem;
-      margin-bottom: var(--spacing-xxxs);
+    font-size: 1.13rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: var(--spacing-xs);
+    p {
+      margin: 0 0 var(--spacing-xs) 0;
+    }
+    strong {
+      color: var(--pink-5);
+      font-weight: 700;
+    }
+    em {
+      color: var(--pink-4);
+      font-style: italic;
     }
   }
+  .note {
+    color: var(--pink-4);
+    font-size: 0.98rem;
+    margin-top: var(--spacing-xs);
+    text-align: center;
+    opacity: 0.85;
+  }
+  @media screen and (max-width: 768px) {
+    padding: var(--spacing-m) var(--spacing-xs);
+    font-size: 1.01rem;
+    max-width: 100%;
+  }
+`;
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-m);
-    width: 100%;
-    max-width: 600px;
-    align-items: center;
+export const BookingButton = styled.button`
+  background: linear-gradient(90deg, var(--pink-5) 0%, var(--pink-3) 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.85em 2.2em;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px rgba(255, 0, 128, 0.08);
+  cursor: pointer;
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  &:hover, &:focus {
+    background: linear-gradient(90deg, var(--pink-4) 0%, var(--pink-2) 100%);
+    transform: translateY(-2px) scale(1.03);
+    color: #fff;
+    outline: none;
+  }
+`;
+
+export const VRBLogoImg = styled.img`
+  width: 180px;
+  height: auto;
+  margin-bottom: var(--spacing-s);
+  margin-top: var(--spacing-xs);
+  @media screen and (max-width: 768px) {
+    width: 120px;
   }
 `;

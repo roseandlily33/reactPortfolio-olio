@@ -1,16 +1,16 @@
 import React from "react";
 import ContactMe from "../AboutMe/ContactForm/Contact.component";
-import PackagesComponent from "./Packages/PackagesInfo/Packages.component";
-import ServicesComponent from "./Packages/Services/Services.component";
-import RetainerComponent from "./Packages/Retainer/Retainer.component";
+// import PackagesComponent from "./Packages/PackagesInfo/Packages.component";
+// import ServicesComponent from "./Packages/Services/Services.component";
+// import RetainerComponent from "./Packages/Retainer/Retainer.component";
 import { AboutMeComponent } from "../AboutMe/AboutMe.styles";
-import ProcessSection from "./Process/Process.component";
-import NotSure from "./NotSure/NotSure.component";
+// import ProcessSection from "./Process/Process.component";
+// import NotSure from "./NotSure/NotSure.component";
 
 const WorkHome = () => {
   return (
     <AboutMeComponent>
-      <div
+      {/* <div
         style={{
           background: "white",
           textAlign: "center",
@@ -26,12 +26,12 @@ const WorkHome = () => {
           Work With Me
         </h1>
         <p>Thoughtful design and development for growing businesses</p>
-      </div>
-      <PackagesComponent />
-      <NotSure />
-      <RetainerComponent />
-      <ProcessSection />
-      <ServicesComponent />
+      </div> */}
+      {/* <PackagesComponent /> */}
+      {/* <NotSure /> */}
+      {/* <RetainerComponent /> */}
+      {/* <ProcessSection /> */}
+      {/* <ServicesComponent /> */}
       <ContactMe />
     </AboutMeComponent>
   );
