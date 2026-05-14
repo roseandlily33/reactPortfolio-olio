@@ -57,6 +57,6 @@ MIT
 
 ## Contact Me:
 
-Email: victoria.benoit.dev@gmail.com
+Email: victoria@webdesignanddev.com
 
 Resume: https://1drv.ms/w/c/9eb0d1a969eb7134/IQDtJn9avoybQrVBMJGc4sWcARLM2nDDPnrgRaFwy8Sm7F8?e=63MZzt
