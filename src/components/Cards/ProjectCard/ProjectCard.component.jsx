@@ -23,28 +23,40 @@ const ProjectCard = ({ project }) => {
           </svg>
         </div>
       )}
+
       <ProjectImage src={project?.img} alt={project?.alt} />
-      <ProjectTitle>{project?.title}</ProjectTitle>
-      <Tag status={project?.status === true ? "complete" : "in-progress"}>
-        {project?.status === true ? "Complete" : "Under Development"}
-      </Tag>
-      <ProjectTagRow>
-        {project?.type && <Tag type>{project?.type}</Tag>}
-        <span
-          style={{
-            display: "inline-block",
-            width: "7px",
-            height: "7px",
-            borderRadius: "50%",
-            background: "var(--grey-6)",
-            margin: "0 0.18em",
-            verticalAlign: "middle",
-          }}
-        />
-        <span style={{ color: "var(--grey-7)", fontWeight: 500 }}>
-          {project.year}
-        </span>
-      </ProjectTagRow>
+
+      <div className="card-content">
+        <ProjectTitle>{project?.title}</ProjectTitle>
+
+        <Tag status={project?.status === true ? "complete" : "in-progress"}>
+          {project?.status === true ? "Complete" : "Under Development"}
+        </Tag>
+
+        <ProjectTagRow>
+          {project?.type && <Tag type>{project?.type}</Tag>}
+
+          <span
+            style={{
+              display: "inline-block",
+              width: "6px",
+              height: "6px",
+              borderRadius: "50%",
+              background: "var(--grey-6)",
+            }}
+          />
+
+          <span
+            style={{
+              color: "var(--grey-7)",
+              fontWeight: 550,
+              fontSize: "0.92rem",
+            }}
+          >
+            {project.year}
+          </span>
+        </ProjectTagRow>
+      </div>
     </ProjectCardContainer>
   );
 };

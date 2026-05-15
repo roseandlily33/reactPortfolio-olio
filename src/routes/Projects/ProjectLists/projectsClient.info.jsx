@@ -1,5 +1,5 @@
 import YODA from "../../../images/projects/YODA.png";
-import AB from "../../Ariel/ArielImages/Phase2/HomeV.png";
+import AB from "../../Ariel/ArielImages/HomeDone.png";
 import IP from "../../InspectionPal/IPImages/FinalHome.png";
 
 export const projectListClient = [

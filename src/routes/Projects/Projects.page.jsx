@@ -59,7 +59,6 @@ const Projects = () => {
             style={{
               color: "var(--pink-6)",
               marginBottom: "var(--spacing-xl)",
-              // color: "var(--pink-6)",
             }}
           >
             Projects

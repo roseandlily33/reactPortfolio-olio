@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const ProjectCardContainer = styled.div`
-  background: linear-gradient(
-    120deg,
-    var(--lightCream) 70%,
-    var(--pink-1) 100%
-  );
+  background: linear-gradient(180deg, var(--grey-4) 0%, var(--pink-1) 100%);
+
+  border: 1px solid var(--grey-3);
+  border-radius: 18px;
   backdrop-filter: blur(4px);
   border-radius: var(--borderRadius);
   box-shadow:
@@ -144,16 +143,44 @@ export const ProjectTagRow = styled.div`
 `;
 
 export const Tag = styled.span`
-  font-weight: 600;
-  font-family: var(--headerFont);
-  color: ${({ status, type }) =>
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--spacing-xs) 0;
+  padding: 0.22rem 0.55rem;
+
+  border-radius: 7px;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+
+  border: 1px solid transparent;
+
+  ${({ status, type }) =>
     status === "complete"
-      ? "var(--green)"
+      ? `
+        color: var(--green);
+        background: rgba(75, 191, 107, 0.08);
+        border-color: rgba(75, 191, 107, 0.16);
+      `
       : status === "in-progress"
-        ? "var(--yellow)"
+        ? `
+          color: var(--orange-6);
+          background: rgba(255, 180, 0, 0.08);
+          border-color: rgba(255, 180, 0, 0.16);
+        `
         : type
-          ? "var(--grey-5)"
-          : "var(--grey-7)"};
-  letter-spacing: 0.01em;
-  text-align: center;
+          ? `
+            color: var(--pink-6);
+            background: rgba(230, 94, 122, 0.07);
+            border-color: rgba(230, 94, 122, 0.12);
+          `
+          : `
+            color: var(--grey-7);
+            background: var(--grey-1);
+            border-color: var(--grey-3);
+          `}
 `;
