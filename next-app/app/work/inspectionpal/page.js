@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './inspectionpal.module.css';
+import styles from './page.module.css';
 
 export const metadata = {
   title: 'InspectionPal Case Study',
