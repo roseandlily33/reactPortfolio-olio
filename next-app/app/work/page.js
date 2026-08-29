@@ -30,7 +30,7 @@ const projects = [
     description:
       "A custom online safety training platform with course purchasing, user accounts, company management, employee assignments, certificate tracking and Stripe checkout workflows.",
     href: "/work/yoda-safety-services",
-    image: "/images/projects/yoda-safety-services.jpg",
+    image: "/images/work/YodaHome.png",
     alt: "Yoda Safety Services online training platform interface",
     tags: ["React", "Node.js", "Express", "MongoDB", "Stripe", "UX/UI"],
     featured: true,
@@ -38,40 +38,27 @@ const projects = [
   {
     number: "02",
     title: "InspectionPal",
-    category: "Product Design & Development",
+    category: "Web Design & Development",
     year: "2026",
     description:
       "A forms-based digital platform designed around streamlined inspections, configurable inputs, management workflows and clear user experiences.",
     href: "/work/inspectionpal",
-    image: "/images/projects/inspectionpal.jpg",
+    image: "/images/work/IPHome.png",
     alt: "InspectionPal digital forms platform interface",
-    tags: ["React", "UX/UI", "Forms", "Product Design"],
+    tags: ["Gatsby", "UX/UI", "Web Design"],
     featured: true,
   },
   {
     number: "03",
     title: "Ariel Boesener Performance Horses",
-    category: "Website Design & Development",
+    category: "Website Design",
     year: "2025",
     description:
-      "A responsive equestrian website designed to create a stronger visual identity, improve hierarchy and present services and horses more clearly.",
+      "A design project helping to organize the UI, improve hierarchy and present services and horses more clearly.",
     href: "/work/ariel-boesener-performance-horses",
-    image: "/images/projects/ariel-boesener.jpg",
+    image: "/images/work/ArielHome.png",
     alt: "Ariel Boesener Performance Horses website",
     tags: ["Web Design", "Development", "Responsive UI"],
-    featured: false,
-  },
-  {
-    number: "04",
-    title: "Social Media Case Study",
-    category: "Digital Strategy & Design",
-    year: "2026",
-    description:
-      "A visual case study documenting social media strategy, content systems, creative direction and performance across an ongoing client account.",
-    href: "/work/social-media-case-study",
-    image: "/images/projects/social-media-case-study.jpg",
-    alt: "Social media strategy and design case study",
-    tags: ["Strategy", "Content Design", "Social Media", "Analytics"],
     featured: false,
   },
 ];
@@ -204,7 +191,51 @@ export default function WorkPage() {
           </div>
         </div>
       </section>
+      <section className={styles.moreWork}>
+        <div className={styles.moreWorkInner}>
+          <div className={styles.moreWorkMeta}>
+            <span>04</span>
+            <p>More Work</p>
+          </div>
 
+          <div className={styles.moreWorkGrid}>
+            <div>
+              <h2>
+                Looking for
+                <span> the full archive?</span>
+              </h2>
+            </div>
+
+            <div className={styles.moreWorkCopy}>
+              <p className={styles.moreWorkLead}>
+                These case studies are a curated look at my development and
+                UX/UI work.
+              </p>
+
+              <p>
+                For a broader collection of client projects, website design,
+                digital design and other professional work, visit my studio, VRB
+                Web Design & Development.
+              </p>
+
+              <a
+                href="https://vrbwebdesignanddev.com"
+                // target="_blank"
+                rel="noopener"
+                className={styles.moreWorkLink}
+              >
+                Explore more work at VRB
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.moreWorkMark} aria-hidden="true">
+            VB
+          </div>
+        </div>
+      </section>
+      {/* 
       <section className={styles.closing}>
         <div className={styles.inner}>
           <div className={styles.closingGrid}>
@@ -231,7 +262,7 @@ export default function WorkPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

@@ -1,101 +1,101 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './page.module.css';
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export const metadata = {
-  title: 'Yoda Safety Services Case Study',
+  title: "Yoda Safety Services Case Study",
   description:
-    'A full-stack web development case study covering the design and development of a custom online safety training platform using React, Node.js, Express, MongoDB and Stripe.',
+    "A full-stack web development case study covering the design and development of a custom online safety training platform using React, Node.js, Express, MongoDB and Stripe.",
   alternates: {
-    canonical: '/work/yoda-safety-services',
+    canonical: "/work/yoda-safety-services",
   },
   openGraph: {
-    title: 'Yoda Safety Services Case Study | Victoria Benoit',
+    title: "Yoda Safety Services Case Study | Victoria Benoit",
     description:
-      'Explore the design and full-stack development of a custom online safety training platform built with React, Node.js, Express, MongoDB and Stripe.',
-    url: '/work/yoda-safety-services',
-    type: 'article',
+      "Explore the design and full-stack development of a custom online safety training platform built with React, Node.js, Express, MongoDB and Stripe.",
+    url: "/work/yoda-safety-services",
+    type: "article",
   },
 };
 
 const projectDetails = [
   {
-    label: 'Project Type',
-    value: 'Full-Stack Web Application',
+    label: "Project Type",
+    value: "Full-Stack Web Application",
   },
   {
-    label: 'Role',
-    value: 'Design + Development',
+    label: "Role",
+    value: "Design + Development",
   },
   {
-    label: 'Year',
-    value: '2026',
+    label: "Year",
+    value: "2024 - Present",
   },
   {
-    label: 'Focus',
-    value: 'Training + Company Management',
+    label: "Focus",
+    value: "Training + Company Management",
   },
 ];
 
 const technologies = [
-  'React',
-  'Node.js',
-  'Express',
-  'MongoDB',
-  'Stripe',
-  'UX/UI',
-  'REST APIs',
-  'Authentication',
+  "React",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "Stripe",
+  "UX/UI",
+  "REST APIs",
+  "Authentication",
 ];
 
 const features = [
   {
-    number: '01',
-    title: 'Online Course Purchasing',
+    number: "01",
+    title: "Online Course Purchasing",
     description:
-      'A streamlined purchase experience for individual users, including course selection, secure Stripe checkout and account-based access.',
+      "A streamlined purchase experience for individual users, including course selection, secure Stripe checkout and account-based access.",
   },
   {
-    number: '02',
-    title: 'Company Training Management',
+    number: "02",
+    title: "Company Training Management",
     description:
-      'Company accounts can manage employees, assign training and purchase courses for multiple workers from one centralized workflow.',
+      "Company accounts can manage employees, assign training and purchase courses for multiple workers from one centralized workflow.",
   },
   {
-    number: '03',
-    title: 'Certificate Tracking',
+    number: "03",
+    title: "Certificate Tracking",
     description:
-      'Training completion, certificates and expiry information are tied to user accounts to make ongoing compliance easier to manage.',
+      "Training completion, certificates and expiry information are tied to user accounts to make ongoing compliance easier to manage.",
   },
   {
-    number: '04',
-    title: 'Flexible Course System',
+    number: "04",
+    title: "Flexible Course System",
     description:
-      'The platform supports a growing library of training courses, language variations and structured course data without requiring separate systems.',
+      "The platform supports a growing library of training courses, language variations and structured course data without requiring separate systems.",
   },
 ];
 
 const decisions = [
   {
-    number: '01',
-    label: 'Design',
-    title: 'Make a complex platform feel simple.',
+    number: "01",
+    label: "Design",
+    title: "Make a complex platform feel simple.",
     description:
-      'The interface was designed around clear steps, strong hierarchy and predictable patterns so users could move through purchasing and training workflows without unnecessary friction.',
+      "The interface was designed around clear steps, strong hierarchy and predictable patterns so users could move through purchasing and training workflows without unnecessary friction.",
   },
   {
-    number: '02',
-    label: 'Development',
-    title: 'Build for more than one kind of user.',
+    number: "02",
+    label: "Development",
+    title: "Build for more than one kind of user.",
     description:
-      'The platform supports individual learners as well as companies managing multiple employees, which meant designing data and checkout flows that could accommodate both experiences cleanly.',
+      "The platform supports individual learners as well as companies managing multiple employees, which meant designing data and checkout flows that could accommodate both experiences cleanly.",
   },
   {
-    number: '03',
-    label: 'System',
-    title: 'Keep the architecture flexible.',
+    number: "03",
+    label: "System",
+    title: "Keep the architecture flexible.",
     description:
-      'Reusable course, user and transaction structures make it easier to add new languages, course formats and company functionality as the platform continues to evolve.',
+      "Reusable course, user and transaction structures make it easier to add new languages, course formats and company functionality as the platform continues to evolve.",
   },
 ];
 
@@ -114,9 +114,7 @@ export default function YodaSafetyServicesPage() {
 
           <div className={styles.heroGrid}>
             <div className={styles.heroHeading}>
-              <p className={styles.eyebrow}>
-                Full-Stack Development
-              </p>
+              <p className={styles.eyebrow}>Full-Stack Development</p>
 
               <h1 className={styles.title}>
                 Yoda Safety
@@ -131,9 +129,9 @@ export default function YodaSafetyServicesPage() {
               </p>
 
               <p>
-                The project brings together e-commerce, course delivery,
-                account management and company training workflows in one
-                scalable application.
+                The project brings together e-commerce, course delivery, account
+                management and company training workflows in one scalable
+                application.
               </p>
             </div>
           </div>
@@ -157,7 +155,7 @@ export default function YodaSafetyServicesPage() {
         <div className={styles.inner}>
           <div className={styles.featuredImage}>
             <Image
-              src="/images/projects/yoda/yoda-hero.jpg"
+              src="/images/work/YodaHome.png"
               alt="Yoda Safety Services online training platform"
               fill
               priority
@@ -198,14 +196,14 @@ export default function YodaSafetyServicesPage() {
               <p>
                 That meant thinking beyond a typical course website. The
                 application needed to handle purchasing, accounts, training
-                records, company relationships and certificate information
-                while still feeling straightforward to the person using it.
+                records, company relationships and certificate information while
+                still feeling straightforward to the person using it.
               </p>
 
               <p>
                 I worked across both the interface and the underlying
-                application structure, allowing design and development
-                decisions to evolve together.
+                application structure, allowing design and development decisions
+                to evolve together.
               </p>
             </div>
           </div>
@@ -235,14 +233,14 @@ export default function YodaSafetyServicesPage() {
 
             <div className={styles.challengeCopy}>
               <p>
-                Individual users need a simple way to purchase courses,
-                complete training and access their records.
+                Individual users need a simple way to purchase courses, complete
+                training and access their records.
               </p>
 
               <p>
                 Companies need a very different level of control, including
-                selecting employees, assigning training and keeping track of
-                who has completed what.
+                selecting employees, assigning training and keeping track of who
+                has completed what.
               </p>
 
               <p>
@@ -274,47 +272,21 @@ export default function YodaSafetyServicesPage() {
 
             <p>
               Each major feature was designed around something users actually
-              needed to accomplish rather than adding functionality for its
-              own sake.
+              needed to accomplish rather than adding functionality for its own
+              sake.
             </p>
           </div>
 
           <div className={styles.featureGrid}>
             {features.map((feature) => (
               <article className={styles.featureCard} key={feature.number}>
-                <span className={styles.featureNumber}>
-                  {feature.number}
-                </span>
+                <span className={styles.featureNumber}>{feature.number}</span>
 
                 <h3>{feature.title}</h3>
 
                 <p>{feature.description}</p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.imageSpread}>
-        <div className={styles.inner}>
-          <div className={styles.imageLarge}>
-            <Image
-              src="/images/projects/yoda/yoda-dashboard.jpg"
-              alt="Yoda Safety Services training dashboard"
-              fill
-              className={styles.image}
-              sizes="(max-width: 800px) 100vw, 65vw"
-            />
-          </div>
-
-          <div className={styles.imageSmall}>
-            <Image
-              src="/images/projects/yoda/yoda-checkout.jpg"
-              alt="Yoda Safety Services course checkout"
-              fill
-              className={styles.image}
-              sizes="(max-width: 800px) 100vw, 35vw"
-            />
           </div>
         </div>
       </section>
@@ -335,10 +307,7 @@ export default function YodaSafetyServicesPage() {
 
           <div className={styles.decisionList}>
             {decisions.map((decision) => (
-              <article
-                className={styles.decision}
-                key={decision.number}
-              >
+              <article className={styles.decision} key={decision.number}>
                 <div className={styles.decisionMeta}>
                   <span>{decision.number}</span>
                   <p>{decision.label}</p>
@@ -382,6 +351,50 @@ export default function YodaSafetyServicesPage() {
                 beginning.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.moreProject}>
+        <div className={styles.inner}>
+          <div className={styles.moreProjectMeta}>
+            <span>Continue Exploring</span>
+            <span>Yoda Safety Services</span>
+          </div>
+
+          <div className={styles.moreProjectGrid}>
+            <div className={styles.moreProjectHeading}>
+              <h2>
+                Want to see more
+                <span> of this project?</span>
+              </h2>
+            </div>
+
+            <div className={styles.moreProjectContent}>
+              <p className={styles.moreProjectLead}>
+                There&apos;s more behind the build.
+              </p>
+
+              <p>
+                Explore the extended Yoda Safety Services project on VRB for a
+                closer look at the work, design decisions and development behind
+                the platform.
+              </p>
+
+              <a
+                href="https://vrbwebdesignanddev.com/case-study/yoda-safety-services"
+                target="_blank"
+                rel="noopener"
+                className={styles.moreProjectLink}
+              >
+                View the full project on VRB
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.moreProjectMark} aria-hidden="true">
+            VB
           </div>
         </div>
       </section>

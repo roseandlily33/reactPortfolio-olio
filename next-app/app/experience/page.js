@@ -489,7 +489,7 @@ export default function ExperiencePage() {
               </Link>
 
               <a
-                href="/Victoria-Benoit-Resume.pdf"
+                href="https://1drv.ms/w/c/9eb0d1a969eb7134/IQAJviBLZ8IOTotteZbovW6NASqDormKzXI4l4-6i-AVk-Y?e=e4QbMa"
                 target="_blank"
                 rel="noopener noreferrer"
               >

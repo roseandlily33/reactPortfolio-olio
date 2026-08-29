@@ -7,11 +7,11 @@ const projects = [
     number: "01",
     title: "Yoda Safety Services",
     type: "Full-Stack Platform",
-    year: "2026",
+    year: "2024-Present",
     description:
       "A custom safety training platform built with React, Node.js, Express, MongoDB and Stripe, including course purchasing, company management and employee training workflows.",
     href: "/work/yoda-safety-services",
-    image: "/images/projects/yoda-safety-services.jpg",
+    image: "/images/work/YodaHome.png",
     alt: "Yoda Safety Services training platform interface",
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "UX/UI"],
   },
@@ -23,7 +23,7 @@ const projects = [
     description:
       "A polished equestrian website focused on clear content hierarchy, responsive design and a stronger visual identity.",
     href: "/work/ariel-boesener-performance-horses",
-    image: "/images/projects/ariel-boesener.jpg",
+    image: "/images/work/ArielHome.png",
     alt: "Ariel Boesener Performance Horses website",
     technologies: ["Web Design", "Development", "Responsive UI"],
   },
@@ -35,7 +35,7 @@ const projects = [
     description:
       "A forms-based digital product designed to make inspections, submissions and management workflows easier to navigate.",
     href: "/work/inspectionpal",
-    image: "/images/projects/inspectionpal.jpg",
+    image: "/images/work/IPHome.png",
     alt: "InspectionPal application interface",
     technologies: ["React", "UX/UI", "Forms", "Product Design"],
   },

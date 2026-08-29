@@ -3,16 +3,16 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'InspectionPal Case Study',
+  title: 'InspectionPal Website Case Study',
   description:
-    'A product design and web development case study for InspectionPal, a digital forms and inspection management platform focused on configurable workflows, usability and structured data.',
+    'Website design and development case study for InspectionPal, a dealership-focused digital platform. Designed and developed with Gatsby by Victoria Benoit.',
   alternates: {
     canonical: '/work/inspectionpal',
   },
   openGraph: {
-    title: 'InspectionPal Case Study | Victoria Benoit',
+    title: 'InspectionPal Website Case Study | Victoria Benoit',
     description:
-      'Explore the UX/UI and development of a digital forms and inspection management platform.',
+      'Explore the design and Gatsby development of a website for a dealership-focused digital platform.',
     url: '/work/inspectionpal',
     type: 'article',
   },
@@ -21,83 +21,86 @@ export const metadata = {
 const projectDetails = [
   {
     label: 'Project Type',
-    value: 'Digital Product',
+    value: 'Website',
   },
   {
     label: 'Role',
-    value: 'UX/UI + Development',
+    value: 'Design + Development',
   },
   {
     label: 'Year',
-    value: '2026',
+    value: '2025',
   },
   {
     label: 'Focus',
-    value: 'Forms + Workflows',
+    value: 'Product + Brand',
   },
 ];
 
 const toolkit = [
-  'React',
-  'UX/UI',
+  'Gatsby',
   'JavaScript',
-  'Forms',
+  'UX/UI',
   'Responsive Design',
-  'Product Design',
-  'Data Workflows',
+  'Web Design',
+  'Front-End Development',
 ];
 
 const workflow = [
   {
     number: '01',
-    title: 'Create',
+    title: 'Understand',
     description:
-      'Administrators can build structured forms using configurable input types and define what information needs to be collected.',
+      'Start with the product, its audience and the information the website needs to communicate clearly.',
   },
   {
     number: '02',
-    title: 'Publish',
+    title: 'Structure',
     description:
-      'Forms can be activated when they are ready for use, creating a clear distinction between setup and live workflows.',
+      'Organize the content into a clear hierarchy that introduces the product before moving into its benefits and supporting information.',
   },
   {
     number: '03',
-    title: 'Complete',
+    title: 'Design',
     description:
-      'Users can open active forms, enter information and work through a consistent interface designed for clarity.',
+      'Build a visual direction around the existing brand while giving each section enough distinction to keep a long page engaging.',
   },
   {
     number: '04',
-    title: 'Manage',
+    title: 'Develop',
     description:
-      'Completed submissions can be stored, reviewed and surfaced later as part of a larger management workflow.',
+      'Translate the design into a responsive Gatsby website with reusable front-end patterns and layouts.',
   },
 ];
 
 const designPrinciples = [
   {
     number: '01',
-    title: 'Keep the interface predictable.',
+    title: 'Make the product understandable.',
     copy:
-      'Forms can become complicated quickly, so repeated interaction patterns and consistent visual hierarchy help users understand what to do next.',
+      'The website needed to communicate what InspectionPal offers without overwhelming visitors with too much information at once.',
   },
   {
     number: '02',
-    title: 'Separate creation from completion.',
+    title: 'Give a long page rhythm.',
     copy:
-      'The experience for administrators building forms is fundamentally different from the experience for users completing them, so each workflow needs its own priorities.',
+      'Alternating layouts, typography, product visuals and supporting sections help break the content into smaller, easier-to-scan moments.',
   },
   {
     number: '03',
-    title: 'Design for repeat use.',
+    title: 'Keep the brand consistent.',
     copy:
-      'Inspection and form software is often used repeatedly, which makes speed, familiar controls and low-friction navigation especially important.',
+      'Repeated typography, spacing, colour and interface patterns create continuity as visitors move through different parts of the website.',
   },
 ];
 
 export default function InspectionPalPage() {
   return (
     <main className={styles.page}>
+      {/* =====================================================
+          HERO
+      ====================================================== */}
+
       <section className={styles.hero}>
         <div className={styles.inner}>
           <div className={styles.topMeta}>
@@ -111,7 +114,7 @@ export default function InspectionPalPage() {
           <div className={styles.heroContent}>
             <div>
               <p className={styles.eyebrow}>
-                Product Design + Development
+                Website Design + Development
               </p>
 
               <h1 className={styles.title}>
@@ -122,14 +125,15 @@ export default function InspectionPalPage() {
 
             <div className={styles.heroIntro}>
               <p className={styles.lead}>
-                Turning configurable forms and inspection workflows into a
-                product that feels straightforward to use.
+                Creating a clear digital home for a dealership-focused
+                platform.
               </p>
 
               <p>
-                InspectionPal is designed around creating, managing and
-                completing digital forms while keeping the experience clear
-                for different types of users.
+                InspectionPal needed a website that could introduce its
+                product, communicate its value and guide visitors through
+                the platform in a way that felt approachable and easy to
+                understand.
               </p>
             </div>
           </div>
@@ -149,12 +153,16 @@ export default function InspectionPalPage() {
         </div>
       </section>
 
+      {/* =====================================================
+          HERO IMAGE
+      ====================================================== */}
+
       <section className={styles.heroImageSection}>
         <div className={styles.inner}>
           <div className={styles.heroImage}>
             <Image
-              src="/images/projects/inspectionpal/inspectionpal-hero.jpg"
-              alt="InspectionPal digital forms dashboard"
+              src="/images/work/IPHome.png"
+              alt="InspectionPal website homepage"
               fill
               priority
               className={styles.image}
@@ -164,39 +172,43 @@ export default function InspectionPalPage() {
 
           <div className={styles.caption}>
             <span>InspectionPal</span>
-            <span>Digital Forms / Product Interface</span>
+            <span>Website Design / Gatsby Development</span>
           </div>
         </div>
       </section>
 
+      {/* =====================================================
+          INTRODUCTION
+      ====================================================== */}
+
       <section className={styles.introduction}>
         <div className={styles.inner}>
-          <SectionLabel number="01" label="The Product" />
+          <SectionLabel number="01" label="The Website" />
 
           <div className={styles.introGrid}>
             <div>
               <h2 className={styles.sectionTitle}>
-                Forms are simple.
-                <span> Form systems aren&apos;t.</span>
+                A technical product needs
+                <span> a clear introduction.</span>
               </h2>
             </div>
 
             <div className={styles.copy}>
               <p className={styles.largeCopy}>
-                What looks like a form on the surface can involve several
-                different workflows behind the scenes.
+                The website needed to explain the product without making
+                the experience feel overly technical.
               </p>
 
               <p>
-                Administrators need to define fields and manage which forms are
-                available. Users need a fast, understandable way to complete
-                them. Managers need the resulting information to remain useful
-                after submission.
+                The design uses a strong content hierarchy to move from the
+                primary product message into supporting benefits, features
+                and additional information.
               </p>
 
               <p>
-                The design challenge was making those connected workflows feel
-                like parts of one coherent product.
+                Rather than presenting everything with the same visual
+                weight, the page is broken into distinct sections that help
+                visitors understand the product piece by piece.
               </p>
             </div>
           </div>
@@ -209,29 +221,37 @@ export default function InspectionPalPage() {
         </div>
       </section>
 
+      {/* =====================================================
+          PROCESS
+      ====================================================== */}
+
       <section className={styles.workflow}>
         <div className={styles.inner}>
           <div className={styles.workflowHeader}>
             <div>
               <p className={styles.lightEyebrow}>
-                02 / Core Workflow
+                02 / Design + Development
               </p>
 
               <h2>
-                From setup
-                <span> to submission.</span>
+                From information
+                <span> to experience.</span>
               </h2>
             </div>
 
             <p>
-              Instead of treating each screen as an isolated interface, the
-              product was designed around the full lifecycle of a form.
+              The project combined UX/UI design with front-end development,
+              allowing the structure, visual direction and final Gatsby
+              implementation to be considered as one connected experience.
             </p>
           </div>
 
           <div className={styles.workflowGrid}>
             {workflow.map((item) => (
-              <article className={styles.workflowItem} key={item.number}>
+              <article
+                className={styles.workflowItem}
+                key={item.number}
+              >
                 <div className={styles.workflowNumber}>
                   {item.number}
                 </div>
@@ -240,7 +260,10 @@ export default function InspectionPalPage() {
 
                 <p>{item.description}</p>
 
-                <span className={styles.workflowArrow} aria-hidden="true">
+                <span
+                  className={styles.workflowArrow}
+                  aria-hidden="true"
+                >
                   ↘
                 </span>
               </article>
@@ -253,13 +276,17 @@ export default function InspectionPalPage() {
         </div>
       </section>
 
+      {/* =====================================================
+          WEBSITE SPREAD
+      ====================================================== */}
+
       <section className={styles.productSpread}>
         <div className={styles.inner}>
           <div className={styles.spreadTop}>
             <div className={styles.largeScreenshot}>
               <Image
-                src="/images/projects/inspectionpal/form-builder.jpg"
-                alt="InspectionPal configurable form builder"
+                src="/images/work/IPHome.png"
+                alt="InspectionPal responsive website design"
                 fill
                 className={styles.image}
                 sizes="(max-width: 850px) 100vw, 65vw"
@@ -270,18 +297,17 @@ export default function InspectionPalPage() {
               <p className={styles.annotationNumber}>01</p>
 
               <p className={styles.annotationLabel}>
-                Administrator Experience
+                Content Hierarchy
               </p>
 
               <h2>
-                Build the structure without making the interface feel
-                technical.
+                Lead with the message, then support it.
               </h2>
 
               <p>
-                The form-building experience needs enough flexibility to
-                configure useful data while still being understandable to
-                people who are not developers.
+                The homepage establishes the product and its purpose early,
+                then uses supporting sections to introduce more information
+                as the visitor moves through the page.
               </p>
             </div>
           </div>
@@ -291,24 +317,24 @@ export default function InspectionPalPage() {
               <p className={styles.annotationNumber}>02</p>
 
               <p className={styles.annotationLabel}>
-                User Experience
+                Visual Direction
               </p>
 
               <h2>
-                Keep completion focused.
+                Give each section its own moment.
               </h2>
 
               <p>
-                Once a form is active, the user experience shifts away from
-                configuration and toward completing the task as efficiently as
-                possible.
+                A long product page can become repetitive quickly. Changes
+                in layout, scale and content presentation create visual
+                rhythm while keeping the overall design cohesive.
               </p>
             </div>
 
             <div className={styles.smallScreenshot}>
               <Image
-                src="/images/projects/inspectionpal/form-completion.jpg"
-                alt="InspectionPal form completion interface"
+                src="/images/work/IPHome.png"
+                alt="InspectionPal website content sections"
                 fill
                 className={styles.image}
                 sizes="(max-width: 850px) 100vw, 55vw"
@@ -318,23 +344,27 @@ export default function InspectionPalPage() {
         </div>
       </section>
 
+      {/* =====================================================
+          DESIGN PRINCIPLES
+      ====================================================== */}
+
       <section className={styles.principles}>
         <div className={styles.inner}>
           <SectionLabel
             number="03"
-            label="Product Decisions"
+            label="Design Decisions"
           />
 
           <div className={styles.principlesHeading}>
             <h2 className={styles.sectionTitle}>
-              Designing for
-              <span> repeated use.</span>
+              Designing around
+              <span> the message.</span>
             </h2>
 
             <p>
-              This kind of software succeeds when it gets out of the user&apos;s
-              way. The design system needed to feel familiar enough that
-              repeated tasks required less thought over time.
+              The visual design supports the content rather than competing
+              with it, using consistent patterns to make a detailed product
+              website easier to navigate.
             </p>
           </div>
 
@@ -357,42 +387,10 @@ export default function InspectionPalPage() {
         </div>
       </section>
 
-      <section className={styles.detailSpread}>
-        <div className={styles.inner}>
-          <div className={styles.detailIntro}>
-            <p className={styles.eyebrow}>
-              Interface Details
-            </p>
 
-            <h2 className={styles.sectionTitle}>
-              Small patterns,
-              <span> clearer systems.</span>
-            </h2>
-          </div>
-
-          <div className={styles.detailImages}>
-            <div className={styles.detailImageLarge}>
-              <Image
-                src="/images/projects/inspectionpal/forms-list.jpg"
-                alt="InspectionPal forms management interface"
-                fill
-                className={styles.image}
-                sizes="(max-width: 800px) 100vw, 60vw"
-              />
-            </div>
-
-            <div className={styles.detailImageSmall}>
-              <Image
-                src="/images/projects/inspectionpal/form-detail.jpg"
-                alt="InspectionPal form detail interface"
-                fill
-                className={styles.image}
-                sizes="(max-width: 800px) 100vw, 35vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* =====================================================
+          OUTCOME
+      ====================================================== */}
 
       <section className={styles.outcome}>
         <div className={styles.inner}>
@@ -403,26 +401,74 @@ export default function InspectionPalPage() {
           <div className={styles.outcomeGrid}>
             <div>
               <h2>
-                A flexible product without
-                <span> a cluttered experience.</span>
+                A clearer home for
+                <span> the product.</span>
               </h2>
             </div>
 
             <div className={styles.outcomeCopy}>
               <p className={styles.outcomeLead}>
-                InspectionPal brings form creation, activation, completion and
-                management into one connected system.
+                The finished website gives InspectionPal a structured,
+                professional way to introduce the platform and communicate
+                its value.
               </p>
 
               <p>
-                The interface is built around reusable patterns so the product
-                can expand while preserving consistency for the people using
-                it repeatedly.
+                Designed and developed as one connected project, the site
+                combines responsive layouts, clear content hierarchy and
+                Gatsby development into a cohesive digital experience.
               </p>
             </div>
           </div>
         </div>
       </section>
+      <section className={styles.moreProject}>
+  <div className={styles.inner}>
+    <div className={styles.moreProjectMeta}>
+      <span>Continue Exploring</span>
+      <span>InspectionPal</span>
+    </div>
+
+    <div className={styles.moreProjectGrid}>
+      <div className={styles.moreProjectHeading}>
+        <h2>
+          Want to see more
+          <span> of this project?</span>
+        </h2>
+      </div>
+
+      <div className={styles.moreProjectContent}>
+        <p className={styles.moreProjectLead}>
+          There&apos;s more behind the build.
+        </p>
+
+        <p>
+          Explore the full InspectionPal project on VRB for a closer look
+          at the website, design decisions and development behind the
+          finished experience.
+        </p>
+
+        <a
+          href="https://vrbwebdesignanddev.com/case-study/inspection-pal"
+          target="_blank"
+          rel="noopener"
+          className={styles.moreProjectLink}
+        >
+          View the full project on VRB
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div className={styles.moreProjectMark} aria-hidden="true">
+      VB
+    </div>
+  </div>
+</section>
+
+      {/* =====================================================
+          NEXT PROJECT
+      ====================================================== */}
 
       <section className={styles.nextProject}>
         <div className={styles.inner}>

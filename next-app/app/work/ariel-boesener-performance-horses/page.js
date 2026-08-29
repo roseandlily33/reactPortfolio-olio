@@ -1,69 +1,69 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './page.module.css';
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export const metadata = {
-  title: 'Ariel Boesener Performance Horses Case Study',
+  title: "Ariel Boesener Performance Horses Case Study",
   description:
-    'A website design and development case study for Ariel Boesener Performance Horses, focused on visual hierarchy, responsive design and a stronger digital brand presence.',
+    "A website design and development case study for Ariel Boesener Performance Horses, focused on visual hierarchy, responsive design and a stronger digital brand presence.",
   alternates: {
-    canonical: '/work/ariel-boesener-performance-horses',
+    canonical: "/work/ariel-boesener-performance-horses",
   },
   openGraph: {
-    title: 'Ariel Boesener Performance Horses Case Study | Victoria Benoit',
+    title: "Ariel Boesener Performance Horses Case Study | Victoria Benoit",
     description:
-      'Explore the website design and development process behind a polished, responsive equestrian website.',
-    url: '/work/ariel-boesener-performance-horses',
-    type: 'article',
+      "Explore the website design and development process behind a polished, responsive equestrian website.",
+    url: "/work/ariel-boesener-performance-horses",
+    type: "article",
   },
 };
 
 const projectDetails = [
   {
-    label: 'Project Type',
-    value: 'Website Design & Development',
+    label: "Project Type",
+    value: "Website Design & Development",
   },
   {
-    label: 'Role',
-    value: 'Design + Development',
+    label: "Role",
+    value: "Design + Development",
   },
   {
-    label: 'Year',
-    value: '2025',
+    label: "Year",
+    value: "2025",
   },
   {
-    label: 'Focus',
-    value: 'Brand + Responsive UX',
+    label: "Focus",
+    value: "Brand + Responsive UX",
   },
 ];
 
 const services = [
-  'Web Design',
-  'Responsive Development',
-  'UX/UI',
-  'Content Hierarchy',
-  'Visual Direction',
-  'Front-End Development',
+  "Web Design",
+  "Responsive Development",
+  "UX/UI",
+  "Content Hierarchy",
+  "Visual Direction",
+  "Front-End Development",
 ];
 
 const goals = [
   {
-    number: '01',
-    title: 'Create a stronger first impression.',
+    number: "01",
+    title: "Create a stronger first impression.",
     description:
-      'The website needed to feel established, professional and visually aligned with the quality of the business.',
+      "The website needed to feel established, professional and visually aligned with the quality of the business.",
   },
   {
-    number: '02',
-    title: 'Make information easier to navigate.',
+    number: "02",
+    title: "Make information easier to navigate.",
     description:
-      'Services, horses and business information needed clearer hierarchy so visitors could quickly understand what was available.',
+      "Services, horses and business information needed clearer hierarchy so visitors could quickly understand what was available.",
   },
   {
-    number: '03',
-    title: 'Bring consistency across the site.',
+    number: "03",
+    title: "Bring consistency across the site.",
     description:
-      'Typography, imagery, spacing and page structure were brought into one visual system to make the overall experience feel more intentional.',
+      "Typography, imagery, spacing and page structure were brought into one visual system to make the overall experience feel more intentional.",
   },
 ];
 
@@ -82,9 +82,7 @@ export default function ArielCaseStudyPage() {
 
           <div className={styles.heroGrid}>
             <div className={styles.titleWrap}>
-              <p className={styles.eyebrow}>
-                Website Design + Development
-              </p>
+              <p className={styles.eyebrow}>Website Design + Development</p>
 
               <h1 className={styles.title}>
                 Ariel Boesener
@@ -125,7 +123,7 @@ export default function ArielCaseStudyPage() {
         <div className={styles.inner}>
           <div className={styles.heroImage}>
             <Image
-              src="/images/projects/ariel/ariel-hero.jpg"
+              src="/images/work/ArielHome.png"
               alt="Ariel Boesener Performance Horses website homepage"
               fill
               priority
@@ -165,14 +163,14 @@ export default function ArielCaseStudyPage() {
 
               <p>
                 The design direction balanced strong imagery with restrained
-                typography and generous spacing, allowing the horses,
-                services and business story to remain the focus.
+                typography and generous spacing, allowing the horses, services
+                and business story to remain the focus.
               </p>
 
               <p>
                 The goal was not simply to make the website look newer. It was
-                to make the business easier to understand and more credible
-                from the first interaction.
+                to make the business easier to understand and more credible from
+                the first interaction.
               </p>
             </div>
           </div>
@@ -204,7 +202,7 @@ export default function ArielCaseStudyPage() {
 
           <div className={styles.statementImage}>
             <Image
-              src="/images/projects/ariel/ariel-editorial.jpg"
+              src="/images/work/ArielHome.png"
               alt="Editorial website section for Ariel Boesener Performance Horses"
               fill
               className={styles.image}
@@ -229,58 +227,21 @@ export default function ArielCaseStudyPage() {
 
             <p>
               The redesign focused on a small number of decisions that would
-              have the biggest impact on how the business was perceived and
-              how easily the site could be used.
+              have the biggest impact on how the business was perceived and how
+              easily the site could be used.
             </p>
           </div>
 
           <div className={styles.goalGrid}>
             {goals.map((goal) => (
               <article className={styles.goal} key={goal.number}>
-                <span className={styles.goalNumber}>
-                  {goal.number}
-                </span>
+                <span className={styles.goalNumber}>{goal.number}</span>
 
                 <h3>{goal.title}</h3>
 
                 <p>{goal.description}</p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.imageGallery}>
-        <div className={styles.inner}>
-          <div className={styles.galleryLarge}>
-            <Image
-              src="/images/projects/ariel/ariel-home.jpg"
-              alt="Ariel Boesener Performance Horses homepage design"
-              fill
-              className={styles.image}
-              sizes="(max-width: 900px) 100vw, 65vw"
-            />
-          </div>
-
-          <div className={styles.gallerySide}>
-            <div className={styles.gallerySmall}>
-              <Image
-                src="/images/projects/ariel/ariel-mobile.jpg"
-                alt="Ariel Boesener Performance Horses mobile website"
-                fill
-                className={styles.image}
-                sizes="(max-width: 900px) 100vw, 30vw"
-              />
-            </div>
-
-            <div className={styles.galleryNote}>
-              <p>Responsive by design</p>
-
-              <h2>
-                The same visual language,
-                <span> not just a smaller layout.</span>
-              </h2>
-            </div>
           </div>
         </div>
       </section>
@@ -294,13 +255,9 @@ export default function ArielCaseStudyPage() {
 
           <div className={styles.detailGrid}>
             <div className={styles.detailCopy}>
-              <p className={styles.detailKicker}>
-                Typography
-              </p>
+              <p className={styles.detailKicker}>Typography</p>
 
-              <h2>
-                Editorial enough to feel elevated.
-              </h2>
+              <h2>Editorial enough to feel elevated.</h2>
 
               <p>
                 Typography was used to introduce personality without
@@ -310,41 +267,32 @@ export default function ArielCaseStudyPage() {
             </div>
 
             <div className={styles.detailCopy}>
-              <p className={styles.detailKicker}>
-                Hierarchy
-              </p>
+              <p className={styles.detailKicker}>Hierarchy</p>
 
-              <h2>
-                Less competing for attention.
-              </h2>
+              <h2>Less competing for attention.</h2>
 
               <p>
                 Stronger spacing, section structure and content grouping helped
-                make the page easier to scan and gave important information
-                more room to breathe.
+                make the page easier to scan and gave important information more
+                room to breathe.
               </p>
             </div>
 
             <div className={styles.detailCopy}>
-              <p className={styles.detailKicker}>
-                Responsiveness
-              </p>
+              <p className={styles.detailKicker}>Responsiveness</p>
 
-              <h2>
-                Designed for the change in context.
-              </h2>
+              <h2>Designed for the change in context.</h2>
 
               <p>
-                Mobile layouts were treated as their own experience rather
-                than simply compressing desktop sections into narrower
-                columns.
+                Mobile layouts were treated as their own experience rather than
+                simply compressing desktop sections into narrower columns.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.finalVisual}>
+      {/* <section className={styles.finalVisual}>
         <div className={styles.inner}>
           <div className={styles.finalImage}>
             <Image
@@ -356,7 +304,7 @@ export default function ArielCaseStudyPage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.result}>
         <div className={styles.inner}>
@@ -391,17 +339,57 @@ export default function ArielCaseStudyPage() {
           </div>
         </div>
       </section>
+      <section className={styles.moreProject}>
+        <div className={styles.inner}>
+          <div className={styles.moreProjectMeta}>
+            <span>Continue Exploring</span>
+            <span>Ariel Boesener Performance Horses</span>
+          </div>
+
+          <div className={styles.moreProjectGrid}>
+            <div className={styles.moreProjectHeading}>
+              <h2>
+                Want to see more
+                <span> of this project?</span>
+              </h2>
+            </div>
+
+            <div className={styles.moreProjectContent}>
+              <p className={styles.moreProjectLead}>
+                There&apos;s more behind the build.
+              </p>
+
+              <p>
+                Explore the full Ariel Boesener Performance Horses project on
+                VRB for a closer look at the website, design decisions and
+                development behind the finished experience.
+              </p>
+
+              <a
+                href="https://vrbwebdesignanddev.com/case-study/ariel-performance-horses"
+                target="_blank"
+                rel="noopener"
+                className={styles.moreProjectLink}
+              >
+                View the full project on VRB
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.moreProjectMark} aria-hidden="true">
+            VB
+          </div>
+        </div>
+      </section>
 
       <section className={styles.nextProject}>
         <div className={styles.inner}>
           <p>Next Project / 04</p>
 
-          <Link
-            href="/work/social-media-case-study"
-            className={styles.nextLink}
-          >
+          <Link href="/work/yoda-safety-services" className={styles.nextLink}>
             <span>
-              Social Media
+              Yoda Safety Services
               <em> Case Study</em>
             </span>
 
