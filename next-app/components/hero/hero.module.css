@@ -1,0 +1,507 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background: var(--paper);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+.heroInner {
+  /* width: min(
+    calc(100% - (var(--page-padding) * 2)),
+    var(--page-width)
+  ); */
+  /* margin-inline: auto; */
+
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+
+/* =========================================================
+   TOP META
+   ========================================================= */
+
+.topMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+
+  padding-bottom: var(--space-s);
+}
+
+.issue,
+.location {
+  color: var(--text-secondary);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.dot {
+  color: var(--mulberry);
+}
+
+
+/* =========================================================
+   RULES
+   ========================================================= */
+
+.rule {
+  width: 100%;
+  height: 1px;
+
+  background: var(--border);
+}
+
+.ruleStrong {
+  width: 100%;
+  height: 2px;
+
+  background: var(--mulberry-dark);
+}
+
+
+/* =========================================================
+   MASTHEAD
+   ========================================================= */
+
+.mastheadWrap {
+  position: relative;
+
+  min-height: clamp(200px, 27vw, 410px);
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.monogram {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -48%);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(16rem, 34vw, 38rem);
+  font-weight: var(--weight-regular);
+  line-height: 0.7;
+
+  letter-spacing: -0.09em;
+
+  color: var(--monogram-strong);
+
+  white-space: nowrap;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.masthead {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+
+  color: var(--mulberry-dark);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 12vw, 12rem);
+  font-weight: var(--weight-regular);
+  line-height: 0.8;
+
+  letter-spacing: -0.065em;
+
+  text-transform: uppercase;
+}
+
+.masthead span {
+  font-style: italic;
+  font-weight: var(--weight-regular);
+}
+
+
+/* =========================================================
+   MAIN HERO GRID
+   ========================================================= */
+
+.heroGrid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(260px, 0.7fr)
+    minmax(250px, 0.55fr);
+
+  gap: 0;
+
+  border-bottom: var(--rule);
+}
+
+.roleBlock,
+.introBlock,
+.dispatch {
+  padding-block: clamp(2rem, 4vw, 4rem);
+}
+
+.roleBlock {
+  padding-right: clamp(2rem, 5vw, 5rem);
+}
+
+.introBlock {
+  padding-inline: clamp(2rem, 4vw, 4rem);
+
+  border-left: var(--rule);
+}
+
+.dispatch {
+  padding-left: clamp(2rem, 4vw, 4rem);
+
+  border-left: var(--rule);
+}
+
+
+/* =========================================================
+   ROLE
+   ========================================================= */
+
+.kicker {
+  margin-bottom: var(--space-l);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.roleTitle {
+  max-width: 750px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.7rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+  line-height: 0.96;
+
+  letter-spacing: var(--tracking-tight);
+}
+
+.italic {
+  color: var(--mulberry);
+
+  font-style: italic;
+  font-weight: var(--weight-regular);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.introBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-2xl);
+}
+
+.intro {
+  max-width: 440px;
+
+  color: var(--text-secondary);
+
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+}
+
+.primaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  padding: 0.9rem 1.1rem;
+
+  background: var(--mulberry);
+  color: var(--paper);
+
+  border: 1px solid var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+
+  transition: var(--transition-button);
+}
+
+.primaryLink:hover {
+  background: var(--mulberry-dark);
+
+  transform: translateY(-1px);
+}
+
+.primaryLink span {
+  transition: transform var(--transition-base);
+}
+
+.primaryLink:hover span {
+  transform: translate(2px, -2px);
+}
+
+.secondaryLink {
+  position: relative;
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.secondaryLink::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+
+  width: 100%;
+  height: 1px;
+
+  background: var(--mulberry);
+
+  transition: transform var(--transition-base);
+  transform-origin: right;
+}
+
+.secondaryLink:hover::after {
+  transform: scaleX(0);
+}
+
+
+/* =========================================================
+   DISPATCH / NEWSPAPER SIDEBAR
+   ========================================================= */
+
+.dispatch {
+  display: flex;
+  flex-direction: column;
+}
+
+.dispatchLabel {
+  margin-bottom: var(--space-l);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.dispatchItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-m);
+
+  padding-block: var(--space-l);
+
+  border-top: var(--rule);
+}
+
+.dispatchItem:last-child {
+  border-bottom: var(--rule);
+}
+
+.dispatchNumber {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: var(--text-lg);
+  font-style: italic;
+}
+
+.dispatchItem p {
+  color: var(--text-secondary);
+
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   BOTTOM BAR
+   ========================================================= */
+
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+
+  padding-top: var(--space-m);
+}
+
+.bottomBar p,
+.scrollLink {
+  color: var(--text-secondary);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.scrollLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  color: var(--mulberry);
+
+  transition: color var(--transition-fast);
+}
+
+.scrollLink:hover {
+  color: var(--mulberry-dark);
+}
+
+.scrollLink span {
+  transition: transform var(--transition-base);
+}
+
+.scrollLink:hover span {
+  transform: translateY(3px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+    padding-block: 2rem;
+  }
+
+  .masthead span {
+    margin-left: 12vw;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .roleBlock {
+    grid-column: 1 / -1;
+
+    padding-right: 0;
+
+    border-bottom: var(--rule);
+  }
+
+  .introBlock {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .topMeta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .location {
+    flex-wrap: wrap;
+  }
+
+  .mastheadWrap {
+    min-height: 250px;
+  }
+
+  .monogram {
+    left: 55%;
+
+    font-size: clamp(15rem, 70vw, 22rem);
+  }
+
+  .masthead {
+    padding-block: 2.5rem;
+
+    font-size: clamp(4rem, 19vw, 7rem);
+  }
+
+  .masthead span {
+    margin-left: 0;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roleBlock,
+  .introBlock,
+  .dispatch {
+    padding-inline: 0;
+    padding-block: 2.5rem;
+
+    border-left: 0;
+  }
+
+  .roleBlock,
+  .introBlock {
+    border-bottom: var(--rule);
+  }
+
+  .bottomBar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
