@@ -5,8 +5,8 @@ export default function robots() {
       allow: '/',
     },
 
-    sitemap: 'YOUR-REAL-DOMAIN/sitemap.xml',
+    sitemap: 'https://victoriabenoit-portfolio.onrender.com/sitemap.xml',
 
-    host: 'YOUR-REAL-DOMAIN',
+    host: 'https://victoriabenoit-portfolio.onrender.com',
   };
 }

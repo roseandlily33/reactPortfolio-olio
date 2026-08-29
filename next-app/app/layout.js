@@ -17,7 +17,7 @@ const sans = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://victoriabenoit.ca"),
+  metadataBase: new URL("https://victoriabenoit-portfolio.onrender.com"),
 
   title: {
     default: "Victoria Benoit | Full-Stack Web Developer & UX/UI Designer",
@@ -63,7 +63,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://victoriabenoit.ca",
+    url: "https://victoriabenoit-portfolio.onrender.com",
     siteName: "Victoria Benoit",
     title: "Victoria Benoit | Full-Stack Web Developer & UX/UI Designer",
     description:

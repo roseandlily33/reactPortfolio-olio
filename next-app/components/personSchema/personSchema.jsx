@@ -3,7 +3,7 @@ export default function PersonSchema() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Victoria Benoit',
-    url: 'https://www.vrbwebdesignanddev.com',
+    url: 'https://victoriabenoit-portfolio.onrender.com',
     jobTitle: 'Web Developer and UX/UI Designer',
     knowsAbout: [
       'Web Development',

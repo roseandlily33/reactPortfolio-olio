@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import CertificateCard from '../../components/CertificateCard/CertificateCard';
+import CertificateCard from './certificateCard.component';
 import { certificates } from '../data/Certs.info';
 import styles from './page.module.css';
 

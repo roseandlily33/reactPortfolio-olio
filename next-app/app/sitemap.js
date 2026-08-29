@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'YOUR-REAL-DOMAIN';
+  const baseUrl = 'https://victoriabenoit-portfolio.onrender.com';
 
   return [
     {
