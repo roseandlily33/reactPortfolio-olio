@@ -1,0 +1,1132 @@
+/* =========================================================
+   VRB BUSINESS OPERATIONS — SECTION 05
+   PAYMENTS + EDGE CASES
+   ========================================================= */
+
+.edgeCasesSection {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.edgeCasesSection .inner {
+  width: min(
+    calc(100% - (var(--page-padding) * 2)),
+    var(--page-width)
+  );
+
+  margin-inline: auto;
+  padding-block: var(--section-space);
+}
+
+
+/* =========================================================
+   META
+   ========================================================= */
+
+.edgeCasesMeta {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-m);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: var(--rule-strong);
+}
+
+.edgeCasesMeta span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.edgeCasesMeta p {
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.edgeCasesIntro {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.55fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+
+  padding-block: clamp(5rem, 9vw, 9rem);
+}
+
+.edgeCasesEyebrow {
+  margin-bottom: var(--space-l);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.edgeCasesIntro h2 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(4.5rem, 8vw, 8rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.82;
+}
+
+.edgeCasesIntro h2 span {
+  margin-left: clamp(3rem, 9vw, 9rem);
+
+  color: var(--mulberry);
+
+  font-style: italic;
+}
+
+.edgeCasesIntroCopy {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-l);
+}
+
+.edgeCasesIntroCopy p {
+  max-width: 520px;
+
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.edgeCasesIntroCopy .edgeCasesLead {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   IDEAL VS REAL
+   ========================================================= */
+
+.paymentReality {
+  padding-block: clamp(5rem, 9vw, 9rem);
+
+  border-top: var(--rule-strong);
+}
+
+.paymentRealityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  gap: var(--space-xl);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: var(--rule);
+}
+
+.paymentRealityHeader span {
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.paymentRealityHeader p {
+  color: var(--ink-soft);
+
+  font-size: 0.68rem;
+  font-style: italic;
+}
+
+.paymentRealityGrid {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr;
+
+  gap: clamp(2rem, 5vw, 5rem);
+
+  margin-top: clamp(3rem, 6vw, 6rem);
+}
+
+.paymentIdeal,
+.paymentActual {
+  padding: clamp(2rem, 4vw, 4rem);
+
+  border: var(--rule-strong);
+}
+
+.paymentIdeal {
+  background: var(--paper-warm);
+}
+
+.paymentActual {
+  background: var(--mulberry);
+  color: var(--paper);
+}
+
+.paymentRealityLabel {
+  display: flex;
+  justify-content: space-between;
+
+  gap: var(--space-l);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: 1px solid currentColor;
+}
+
+.paymentRealityLabel span {
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.paymentIdeal .paymentRealityLabel span {
+  color: var(--mulberry);
+}
+
+.paymentActual .paymentRealityLabel span {
+  color: var(--butter);
+}
+
+.paymentRealityLabel p {
+  font-size: 0.62rem;
+
+  opacity: 0.7;
+}
+
+.paymentSimpleFlow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  gap: var(--space-xl);
+
+  align-items: center;
+
+  margin-top: clamp(4rem, 8vw, 8rem);
+}
+
+.paymentSimpleFlow > div {
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: var(--space-l);
+
+  background: var(--paper);
+
+  border: var(--rule);
+}
+
+.paymentSimpleFlow > div span,
+.paymentActualFlow > div span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+}
+
+.paymentSimpleFlow strong {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: var(--weight-regular);
+}
+
+.paymentSimpleFlow > span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 2rem;
+}
+
+.paymentActualFlow {
+  display: grid;
+  grid-template-columns:
+    1fr
+    auto
+    1fr
+    auto
+    1fr
+    auto
+    1fr;
+
+  gap: var(--space-m);
+
+  align-items: center;
+
+  margin-top: clamp(4rem, 8vw, 8rem);
+}
+
+.paymentActualFlow > div:not(.paymentFlowLine) {
+  min-height: 160px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--space-l);
+
+  border: 1px solid rgba(255, 250, 242, 0.38);
+}
+
+.paymentActualFlow > div > span {
+  color: var(--butter);
+}
+
+.paymentActualFlow strong {
+  margin-top: auto;
+
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: var(--weight-regular);
+}
+
+.paymentActualFlow p {
+  margin-top: 0.25rem;
+
+  color: rgba(255, 250, 242, 0.68);
+
+  font-size: 0.62rem;
+}
+
+.paymentFlowLine {
+  width: 28px;
+  height: 1px;
+
+  background: var(--butter);
+}
+
+
+/* =========================================================
+   PAYMENT WORKFLOW
+   ========================================================= */
+
+.paymentWorkflow {
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  border-top: var(--rule-strong);
+}
+
+.paymentWorkflowHeading {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 0.45fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+}
+
+.paymentWorkflowHeading > div > span {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.paymentWorkflowHeading h3 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.92;
+}
+
+.paymentWorkflowHeading h3 em {
+  color: var(--mulberry);
+
+  font-weight: var(--weight-regular);
+}
+
+.paymentWorkflowHeading > p {
+  max-width: 500px;
+
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.paymentWorkflowGrid {
+  display: grid;
+  grid-template-columns:
+    1fr
+    auto
+    1fr
+    auto
+    1fr
+    auto
+    1fr;
+
+  gap: clamp(1rem, 2vw, 2rem);
+
+  align-items: center;
+
+  margin-top: clamp(4rem, 7vw, 7rem);
+}
+
+.paymentWorkflowGrid article {
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--space-l);
+
+  background: var(--paper-warm);
+
+  border: var(--rule-strong);
+}
+
+.paymentWorkflowGrid article > span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+}
+
+.paymentWorkflowGrid strong {
+  margin-top: auto;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  font-weight: var(--weight-regular);
+}
+
+.paymentWorkflowGrid p {
+  margin-top: var(--space-s);
+
+  color: var(--ink-soft);
+
+  font-size: 0.68rem;
+  line-height: 1.65;
+}
+
+.paymentWorkflowArrow {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 2rem;
+}
+
+
+/* =========================================================
+   EDGE CASE GRID
+   ========================================================= */
+
+.edgeCaseExamples {
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  border-top: var(--rule-strong);
+}
+
+.edgeCaseExamplesHeading {
+  max-width: 1000px;
+}
+
+.edgeCaseExamplesHeading > span {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.edgeCaseExamplesHeading h3 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.92;
+}
+
+.edgeCaseExamplesHeading h3 em {
+  color: var(--mulberry);
+
+  font-weight: var(--weight-regular);
+}
+
+.edgeCaseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-top: clamp(4rem, 7vw, 7rem);
+
+  border-top: var(--rule-strong);
+  border-left: var(--rule-strong);
+}
+
+.edgeCaseGrid article {
+  min-height: 390px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: clamp(2rem, 4vw, 4rem);
+
+  background: var(--paper-warm);
+
+  border-right: var(--rule-strong);
+  border-bottom: var(--rule-strong);
+}
+
+.edgeCaseNumber {
+  color: rgba(100, 28, 56, 0.12);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(4rem, 7vw, 7rem);
+  font-style: italic;
+
+  line-height: 0.8;
+}
+
+.edgeCaseGrid article > span {
+  margin-top: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.edgeCaseGrid h4 {
+  max-width: 500px;
+
+  margin-top: auto;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 1.05;
+}
+
+.edgeCaseGrid p {
+  max-width: 540px;
+
+  margin-top: var(--space-l);
+
+  color: var(--ink-soft);
+
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   AUTOMATION VS CONTROL
+   ========================================================= */
+
+.controlBalance {
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  border-top: var(--rule-strong);
+}
+
+.controlBalanceHeading {
+  max-width: 1050px;
+}
+
+.controlBalanceHeading > span {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.controlBalanceHeading h3 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.92;
+}
+
+.controlBalanceHeading h3 em {
+  color: var(--mulberry);
+
+  font-weight: var(--weight-regular);
+}
+
+.controlBalanceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  max-width: 1100px;
+
+  margin-top: clamp(4rem, 7vw, 7rem);
+
+  border: var(--rule-strong);
+}
+
+.controlAutomated,
+.controlManual {
+  min-height: 390px;
+
+  padding: clamp(2rem, 4vw, 4rem);
+}
+
+.controlAutomated {
+  background: var(--mulberry);
+  color: var(--paper);
+}
+
+.controlManual {
+  background: var(--butter-soft);
+}
+
+.controlAutomated > span,
+.controlManual > span {
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.controlAutomated > span {
+  color: var(--butter);
+}
+
+.controlManual > span {
+  color: var(--mulberry);
+}
+
+.controlAutomated > div,
+.controlManual > div {
+  margin-top: var(--space-3xl);
+
+  border-top: 1px solid currentColor;
+}
+
+.controlAutomated p,
+.controlManual p {
+  padding-block: var(--space-m);
+
+  border-bottom: 1px solid currentColor;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.controlAutomated p {
+  color: var(--paper);
+}
+
+.controlManual p {
+  color: var(--ink);
+}
+
+.controlBalanceCopy {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+
+  gap: clamp(2rem, 5vw, 5rem);
+
+  max-width: 900px;
+
+  margin: var(--space-3xl) 0 0 auto;
+
+  padding-top: var(--space-l);
+
+  border-top: var(--rule);
+}
+
+.controlBalanceCopy span {
+  color: var(--mulberry);
+
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.controlBalanceCopy p {
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PAYMENT SCREEN
+   ========================================================= */
+
+.paymentScreenFeature {
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  border-top: var(--rule-strong);
+}
+
+.paymentScreenHeading {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 0.45fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+}
+
+.paymentScreenHeading > div > span {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.paymentScreenHeading h3 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.92;
+}
+
+.paymentScreenHeading h3 em {
+  color: var(--mulberry);
+
+  font-weight: var(--weight-regular);
+}
+
+.paymentScreenHeading > p {
+  max-width: 500px;
+
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.paymentScreenGrid {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.8fr)
+    minmax(280px, 0.45fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+
+  align-items: start;
+
+  max-width: 1200px;
+
+  margin: clamp(4rem, 7vw, 7rem) auto 0;
+}
+
+.paymentScreenBrowser {
+  overflow: hidden;
+
+  background: var(--white);
+
+  border: var(--rule-strong);
+
+  box-shadow: 0 28px 75px rgba(69, 17, 38, 0.09);
+}
+
+.paymentScreenBrowserBar {
+  min-height: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+
+  padding-inline: var(--space-l);
+
+  background: var(--paper-warm);
+
+  border-bottom: var(--rule);
+}
+
+.paymentScreenBrowserBar > div {
+  display: flex;
+
+  gap: 0.4rem;
+}
+
+.paymentScreenBrowserBar > div span {
+  width: 7px;
+  height: 7px;
+
+  border: 1px solid var(--mulberry);
+
+  border-radius: 50%;
+}
+
+.paymentScreenBrowserBar p {
+  color: var(--ink-soft);
+
+  font-size: 0.55rem;
+  font-weight: var(--weight-medium);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.paymentScreenImage {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.paymentScreenNotes {
+  border-top: var(--rule-strong);
+}
+
+.paymentScreenNotes article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  gap: var(--space-l);
+
+  padding-block: var(--space-xl);
+
+  border-bottom: var(--rule);
+}
+
+.paymentScreenNotes article > span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+}
+
+.paymentScreenNotes strong {
+  display: block;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: var(--weight-regular);
+}
+
+.paymentScreenNotes p {
+  margin-top: var(--space-xs);
+
+  color: var(--ink-soft);
+
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   DESIGN ENGINEERING DECISION
+   ========================================================= */
+
+.edgeCaseDecision {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+
+  gap: clamp(2rem, 6vw, 6rem);
+
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  border-top: var(--rule-strong);
+}
+
+.edgeCaseDecisionNumber span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(4rem, 7vw, 7rem);
+  font-style: italic;
+
+  line-height: 0.8;
+
+  opacity: 0.18;
+}
+
+.edgeCaseDecisionNumber p {
+  margin-top: var(--space-xs);
+
+  color: var(--mulberry);
+
+  font-size: 0.55rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.edgeCaseDecisionContent {
+  max-width: 1050px;
+}
+
+.edgeCaseDecisionContent h3 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.95;
+}
+
+.edgeCaseDecisionContent h3 span {
+  color: var(--mulberry);
+
+  font-style: italic;
+}
+
+.edgeCaseDecisionContent > p {
+  max-width: 700px;
+
+  margin-top: var(--space-2xl);
+
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PRINCIPLE
+   ========================================================= */
+
+.edgeCasesPrinciple {
+  padding:
+    clamp(4rem, 8vw, 8rem)
+    clamp(2rem, 6vw, 6rem);
+
+  background: var(--mulberry);
+  color: var(--paper);
+}
+
+.edgeCasesPrinciple > span {
+  display: block;
+
+  margin-bottom: clamp(2rem, 5vw, 5rem);
+
+  color: var(--butter);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.edgeCasesPrinciple p {
+  max-width: 1200px;
+
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5.5vw, 6rem);
+
+  line-height: 0.98;
+}
+
+.edgeCasesPrinciple strong {
+  display: block;
+
+  margin-top: var(--space-s);
+
+  color: var(--butter);
+
+  font-weight: var(--weight-regular);
+  font-style: italic;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .edgeCasesIntro,
+  .paymentWorkflowHeading,
+  .paymentScreenHeading {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentRealityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentWorkflowGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentWorkflowArrow {
+    text-align: center;
+
+    transform: rotate(90deg);
+  }
+
+  .paymentActualFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentFlowLine {
+    width: 1px;
+    height: 35px;
+
+    margin-inline: auto;
+  }
+
+  .paymentScreenGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .edgeCaseGrid,
+  .controlBalanceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentActualFlow > div:not(.paymentFlowLine) {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: 700px) {
+  .edgeCasesIntro h2 {
+    font-size: clamp(4.5rem, 19vw, 7rem);
+  }
+
+  .edgeCasesIntro h2 span {
+    margin-left: 0;
+  }
+
+  .paymentRealityHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .paymentSimpleFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentSimpleFlow > span {
+    text-align: center;
+
+    transform: rotate(90deg);
+  }
+
+  .controlBalanceCopy,
+  .edgeCaseDecision {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentScreenBrowserBar {
+    grid-template-columns: auto 1fr;
+  }
+
+  .paymentScreenBrowserBar > span {
+    display: none;
+  }
+
+  .paymentScreenBrowserBar p {
+    text-align: right;
+  }
+
+  .edgeCasesPrinciple {
+    padding-inline: var(--space-xl);
+  }
+}

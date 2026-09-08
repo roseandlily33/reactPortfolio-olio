@@ -1,0 +1,700 @@
+/* =========================================================
+   INSPECTIONPAL — SECTION 01
+   PRODUCT OVERVIEW
+   ========================================================= */
+
+.overviewSection {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+
+  width: min(
+    calc(100% - (var(--page-padding) * 2)),
+    var(--page-width)
+  );
+
+  margin-inline: auto;
+  padding-block: var(--section-space);
+}
+
+
+/* =========================================================
+   BACKGROUND MONOGRAM
+   ========================================================= */
+
+.overviewMonogram {
+  position: absolute;
+  top: 7rem;
+  right: -0.05em;
+
+  color: var(--monogram);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(18rem, 38vw, 42rem);
+  font-weight: var(--weight-semibold);
+
+  line-height: 0.7;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   PROJECT META
+   ========================================================= */
+
+.projectMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: var(--space-xl);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: var(--rule-strong);
+}
+
+.projectNumber,
+.projectType {
+  display: flex;
+  align-items: baseline;
+
+  gap: var(--space-s);
+}
+
+.projectNumber span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.projectNumber p,
+.projectType span {
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.projectType p {
+  color: var(--ink-soft);
+
+  font-size: var(--text-xs);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(300px, 0.5fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+
+  padding-block: clamp(5rem, 9vw, 9rem);
+}
+
+.eyebrow {
+  margin-bottom: var(--space-l);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.heroHeading h1 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(6rem, 12vw, 13rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.67;
+  letter-spacing: -0.055em;
+}
+
+.heroHeading h1 span {
+  margin-left: clamp(4rem, 12vw, 12rem);
+
+  color: var(--mulberry);
+
+  font-style: italic;
+}
+
+.heroIntro {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-l);
+}
+
+.heroIntro > p {
+  max-width: 500px;
+
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.heroIntro .heroLead {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   PROJECT DETAILS
+   ========================================================= */
+
+.projectDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: var(--rule-strong);
+  border-bottom: var(--rule-strong);
+}
+
+.projectDetails > div {
+  padding: var(--space-l);
+
+  border-right: var(--rule);
+}
+
+.projectDetails > div:first-child {
+  padding-left: 0;
+}
+
+.projectDetails > div:last-child {
+  border-right: 0;
+}
+
+.projectDetails span {
+  display: block;
+
+  margin-bottom: var(--space-s);
+
+  color: var(--mulberry);
+
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.projectDetails p {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.25rem, 1.8vw, 1.8rem);
+
+  line-height: 1.15;
+}
+
+
+/* =========================================================
+   WEBSITE FEATURE
+   ========================================================= */
+
+.websiteFeature {
+  padding-block: clamp(5rem, 9vw, 9rem);
+}
+
+.websiteFeatureHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: var(--space-xl);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: var(--rule);
+}
+
+.websiteFeatureHeader > div {
+  display: flex;
+  align-items: baseline;
+
+  gap: var(--space-m);
+}
+
+.websiteFeatureHeader span,
+.websiteFeatureHeader > p {
+  color: var(--mulberry);
+
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.websiteFeatureHeader > div p {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.25rem;
+}
+
+.browser {
+  margin-top: var(--space-l);
+
+  overflow: hidden;
+
+  background: var(--white);
+
+  border: var(--rule-strong);
+
+  box-shadow: 0 30px 70px rgba(69, 17, 38, 0.1);
+}
+
+.browserBar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  gap: var(--space-m);
+
+  align-items: center;
+
+  min-height: 46px;
+
+  padding-inline: var(--space-m);
+
+  background: var(--paper-warm);
+
+  border-bottom: var(--rule);
+}
+
+.browserDots {
+  display: flex;
+
+  gap: 0.35rem;
+}
+
+.browserDots span {
+  width: 7px;
+  height: 7px;
+
+  border: 1px solid var(--mulberry-soft);
+  border-radius: 50%;
+}
+
+.browserAddress {
+  padding: 0.35rem 1.5rem;
+
+  color: var(--ink-soft);
+
+  border: var(--rule);
+
+  font-size: 0.58rem;
+
+  letter-spacing: 0.04em;
+}
+
+.browserSpacer {
+  display: block;
+}
+
+.websiteImage {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: var(--white);
+}
+
+.websiteImage .image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+
+/* =========================================================
+   PROJECT CONTEXT
+   ========================================================= */
+
+.context {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.55fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  border-top: var(--rule-strong);
+}
+
+.contextHeading > span {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.contextHeading h2 {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 850px;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.9;
+}
+
+.contextHeading h2 em {
+  margin-left: clamp(2rem, 6vw, 6rem);
+
+  color: var(--mulberry);
+
+  font-weight: var(--weight-regular);
+}
+
+.contextCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  gap: var(--space-l);
+}
+
+.contextCopy p {
+  max-width: 520px;
+
+  color: var(--ink-soft);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.contextCopy .contextLead {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   OWNERSHIP
+   ========================================================= */
+
+.ownership {
+  padding-block: clamp(5rem, 8vw, 8rem);
+
+  border-top: var(--rule-strong);
+}
+
+.ownershipIntro {
+  display: flex;
+  justify-content: space-between;
+
+  gap: var(--space-xl);
+
+  align-items: baseline;
+}
+
+.ownershipIntro span {
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.ownershipIntro p {
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2.4vw, 2.4rem);
+}
+
+.ownershipFlow {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
+
+  gap: clamp(1rem, 2vw, 2rem);
+
+  align-items: center;
+
+  margin-top: var(--space-3xl);
+}
+
+.ownershipFlow > div:not(.flowArrow) {
+  min-height: 180px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: var(--space-l);
+
+  background: var(--paper-warm);
+
+  border: var(--rule);
+}
+
+.ownershipFlow > div > span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.ownershipFlow > div > p {
+  margin-top: auto;
+  padding-top: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-size: 0.6rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.ownershipFlow > div > strong {
+  margin-top: 0.35rem;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 1.15;
+}
+
+.flowArrow {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 2rem;
+}
+
+
+/* =========================================================
+   PRINCIPLE
+   ========================================================= */
+
+.overviewPrinciple {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+
+  gap: clamp(2rem, 6vw, 6rem);
+
+  padding: clamp(3rem, 6vw, 6rem);
+
+  background: var(--mulberry);
+
+  color: var(--paper);
+}
+
+.overviewPrinciple > span {
+  color: var(--butter);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.overviewPrinciple > p {
+  max-width: 1050px;
+
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+
+  line-height: 1.05;
+}
+
+.overviewPrinciple strong {
+  display: block;
+
+  margin-top: var(--space-s);
+
+  color: var(--butter);
+
+  font-weight: var(--weight-regular);
+  font-style: italic;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .hero,
+  .context {
+    grid-template-columns: 1fr;
+  }
+
+  .projectDetails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projectDetails > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .projectDetails > div:nth-child(-n + 2) {
+    border-bottom: var(--rule);
+  }
+
+  .projectDetails > div:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .ownershipFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .ownershipFlow > div:not(.flowArrow) {
+    min-height: 150px;
+  }
+
+  .flowArrow {
+    transform: rotate(90deg);
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .projectMeta,
+  .websiteFeatureHeader,
+  .ownershipIntro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .projectType {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .heroHeading h1 {
+    font-size: clamp(5.5rem, 26vw, 8rem);
+  }
+
+  .heroHeading h1 span {
+    margin-left: 0;
+  }
+
+  .projectDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .projectDetails > div,
+  .projectDetails > div:nth-child(3) {
+    padding-inline: 0;
+
+    border-right: 0;
+    border-bottom: var(--rule);
+  }
+
+  .projectDetails > div:last-child {
+    border-bottom: 0;
+  }
+
+  .browserBar {
+    grid-template-columns: auto 1fr;
+  }
+
+  .browserAddress {
+    overflow: hidden;
+
+    padding-inline: var(--space-s);
+
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .browserSpacer {
+    display: none;
+  }
+
+  .contextHeading h2 em {
+    margin-left: 0;
+  }
+
+  .overviewPrinciple {
+    grid-template-columns: 1fr;
+
+    padding-inline: var(--space-xl);
+  }
+
+  .overviewMonogram {
+    top: 10rem;
+    right: -0.2em;
+  }
+}

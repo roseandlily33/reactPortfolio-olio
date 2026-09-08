@@ -1,0 +1,914 @@
+/* =========================================================
+   SECTION 02 — PRODUCT ARCHITECTURE
+   ========================================================= */
+
+.architecture {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--mulberry);
+  color: var(--paper);
+}
+
+.architecture .inner {
+  position: relative;
+
+  width: min(calc(100% - (var(--page-padding) * 2)), var(--page-width));
+
+  margin-inline: auto;
+
+  padding-block: var(--section-space);
+}
+
+/* =========================================================
+   SECTION META
+   ========================================================= */
+
+.architectureMeta {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: 1px solid rgba(255, 250, 242, 0.35);
+}
+
+.architectureMeta span {
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.architectureMeta p {
+  color: var(--paper);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.architectureIntro {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(300px, 0.55fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  padding-block: clamp(4rem, 8vw, 8rem);
+}
+
+.architectureEyebrow {
+  margin-bottom: var(--space-l);
+
+  color: var(--butter);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.architectureIntro h2 {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 900px;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.82;
+  letter-spacing: -0.05em;
+}
+
+.architectureIntro h2 span {
+  margin-left: clamp(2rem, 7vw, 7rem);
+
+  color: var(--butter);
+
+  font-style: italic;
+}
+
+.architectureIntroCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  gap: var(--space-l);
+}
+
+.architectureIntroCopy p {
+  max-width: 520px;
+
+  color: rgba(255, 250, 242, 0.7);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.architectureLead {
+  color: var(--paper) !important;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2vw, 2rem) !important;
+  line-height: 1.25 !important;
+}
+
+/* =========================================================
+   DECISION 01
+   ========================================================= */
+
+.contextDecision {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 0.42fr)
+    minmax(0, 1fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+
+  padding-block: clamp(4rem, 7vw, 7rem);
+
+  border-top: 1px solid rgba(255, 250, 242, 0.35);
+}
+
+.decisionNumber {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-style: italic;
+
+  line-height: 1;
+}
+
+.decisionLabel {
+  margin-bottom: var(--space-l);
+
+  color: var(--butter);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.decisionIntro h3,
+.permissionHeading h3,
+.growthHeading h3 {
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.95;
+  letter-spacing: var(--tracking-heading);
+}
+
+.decisionIntro h3 {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: var(--space-xl);
+}
+
+.decisionIntro h3 em,
+.permissionHeading h3 em,
+.growthHeading h3 em {
+  color: var(--butter);
+
+  font-weight: var(--weight-regular);
+}
+
+.decisionIntro > p:not(.decisionLabel) {
+  max-width: 480px;
+
+  color: rgba(255, 250, 242, 0.72);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.decisionReason {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  gap: var(--space-m);
+
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-l);
+
+  border-top: 1px solid rgba(255, 250, 242, 0.2);
+}
+
+.decisionReason > span {
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.decisionReason p {
+  max-width: 430px;
+
+  color: var(--paper);
+
+  font-size: 0.72rem;
+  font-weight: var(--weight-semibold);
+
+  line-height: 1.65;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   MANAGER ARCHITECTURE DIAGRAM
+   ========================================================= */
+
+.managerDiagram {
+  position: relative;
+
+  padding-top: var(--space-l);
+}
+
+.diagramAccount {
+  position: relative;
+
+  width: min(100%, 380px);
+
+  margin-inline: auto;
+
+  padding: var(--space-l);
+
+  background: var(--butter);
+  color: var(--mulberry-deep);
+
+  text-align: center;
+}
+
+.diagramAccount span {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  font-size: 0.62rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.diagramAccount strong {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.7rem, 2.5vw, 2.4rem);
+  font-weight: var(--weight-medium);
+}
+
+.diagramStem {
+  width: 1px;
+  height: 55px;
+
+  margin-inline: auto;
+
+  background: rgba(246, 207, 114, 0.65);
+}
+
+.diagramBranches {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: var(--space-l);
+}
+
+.diagramBranches::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  left: 25%;
+  right: 25%;
+
+  height: 1px;
+
+  background: rgba(246, 207, 114, 0.65);
+}
+
+.contextCard {
+  position: relative;
+
+  min-height: 410px;
+
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+
+  border: 1px solid rgba(255, 250, 242, 0.28);
+
+  background: rgba(255, 250, 242, 0.045);
+}
+
+.contextCard::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  left: 50%;
+
+  width: 1px;
+  height: 24px;
+
+  transform: translateY(-100%);
+
+  background: rgba(246, 207, 114, 0.65);
+}
+
+.contextCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-m);
+
+  padding-bottom: var(--space-m);
+
+  border-bottom: 1px solid rgba(255, 250, 242, 0.18);
+}
+
+.contextCardTop > span:first-child {
+  color: rgba(255, 250, 242, 0.6);
+
+  font-size: 0.6rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.contextStatus {
+  padding: 0.35rem 0.55rem;
+
+  border: 1px solid rgba(246, 207, 114, 0.5);
+
+  color: var(--butter);
+
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.contextCard h4 {
+  margin-top: var(--space-xl);
+
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: var(--weight-regular);
+}
+
+.contextCard > p {
+  max-width: 390px;
+
+  margin-top: var(--space-s);
+
+  color: rgba(255, 250, 242, 0.62);
+
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+.contextCard ul {
+  display: grid;
+  gap: 0.7rem;
+
+  margin-top: var(--space-xl);
+
+  list-style: none;
+}
+
+.contextCard li {
+  position: relative;
+
+  padding-left: 1.2rem;
+
+  color: var(--paper);
+
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.contextCard li::before {
+  content: "↳";
+
+  position: absolute;
+
+  left: 0;
+
+  color: var(--butter);
+}
+
+.sameAccountNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--space-l);
+
+  margin-top: var(--space-l);
+  padding: var(--space-m);
+
+  border: 1px solid rgba(246, 207, 114, 0.35);
+
+  color: var(--butter);
+
+  font-size: 0.65rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   DECISION 02 — PERMISSIONS
+   ========================================================= */
+
+.permissionSection {
+  position: relative;
+  z-index: 2;
+
+  padding-block: clamp(4rem, 7vw, 7rem);
+
+  border-top: 1px solid rgba(255, 250, 242, 0.35);
+}
+
+.permissionHeading {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 0.42fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+}
+
+.permissionHeading h3 {
+  max-width: 700px;
+}
+
+.permissionHeading > p {
+  max-width: 460px;
+
+  color: rgba(255, 250, 242, 0.7);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.roleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: clamp(3rem, 6vw, 6rem);
+
+  border-top: 1px solid rgba(255, 250, 242, 0.3);
+  border-bottom: 1px solid rgba(255, 250, 242, 0.3);
+}
+
+.roleCard {
+  min-height: 390px;
+
+  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+
+  border-right: 1px solid rgba(255, 250, 242, 0.22);
+}
+
+.roleCard:last-child {
+  border-right: 0;
+}
+
+.roleCardFuture {
+  background: rgba(246, 207, 114, 0.06);
+}
+
+.roleTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-s);
+}
+
+.roleTop > span:first-child {
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.roleBadge {
+  color: rgba(255, 250, 242, 0.55);
+
+  font-size: 0.55rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.roleBadgeFuture {
+  color: var(--butter);
+}
+
+.roleCard h4 {
+  margin-top: clamp(2.5rem, 4vw, 4rem);
+
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  font-weight: var(--weight-regular);
+}
+
+.roleType {
+  margin-top: 0.25rem;
+
+  color: var(--butter);
+
+  font-size: 0.65rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.roleCard ul {
+  display: grid;
+  gap: 0.75rem;
+
+  margin-top: var(--space-xl);
+
+  list-style: none;
+}
+
+.roleCard li {
+  padding-bottom: 0.75rem;
+
+  border-bottom: 1px solid rgba(255, 250, 242, 0.12);
+
+  color: rgba(255, 250, 242, 0.72);
+
+  font-size: 0.75rem;
+}
+
+/* =========================================================
+   DECISION 03 — GROWTH
+   ========================================================= */
+
+.growthSection {
+  position: relative;
+  z-index: 2;
+
+  padding-top: clamp(4rem, 7vw, 7rem);
+
+  border-top: 1px solid rgba(255, 250, 242, 0.35);
+}
+
+.growthHeading {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+}
+
+.growthHeading h3 {
+  max-width: 800px;
+}
+
+.growthContent {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.45fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  margin-top: clamp(4rem, 7vw, 7rem);
+}
+
+/* Timeline */
+
+.growthTimeline {
+  position: relative;
+}
+
+.growthTimeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 24px;
+
+  width: 1px;
+
+  background: rgba(246, 207, 114, 0.35);
+}
+
+.growthItem {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  gap: var(--space-xl);
+
+  padding-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.growthMarker {
+  position: relative;
+  z-index: 2;
+
+  width: 49px;
+  height: 49px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--mulberry);
+
+  border: 1px solid var(--butter);
+
+  border-radius: 50%;
+}
+
+.growthMarker span {
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.growthLabel {
+  margin-bottom: var(--space-xs);
+
+  color: var(--butter);
+
+  font-size: 0.62rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.growthItem h4 {
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+  font-weight: var(--weight-regular);
+}
+
+.growthItem > div:last-child > p:last-child {
+  max-width: 600px;
+
+  margin-top: var(--space-s);
+
+  color: rgba(255, 250, 242, 0.65);
+
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+/* Outcome */
+
+.growthOutcome {
+  align-self: start;
+
+  padding: clamp(2rem, 4vw, 4rem);
+
+  background: var(--butter);
+
+  color: var(--mulberry-deep);
+}
+
+.growthOutcomeLabel {
+  margin-bottom: var(--space-xl);
+
+  font-size: 0.62rem;
+  font-weight: var(--weight-bold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.growthOutcome blockquote {
+  margin: 0;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: var(--weight-medium);
+
+  line-height: 1.05;
+  letter-spacing: var(--tracking-heading);
+}
+
+.growthOutcome > p:not(.growthOutcomeLabel) {
+  margin-top: var(--space-xl);
+
+  color: rgba(47, 11, 26, 0.72);
+
+  font-size: var(--text-sm);
+  line-height: 1.75;
+}
+
+.growthPrinciple {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  gap: var(--space-m);
+
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-l);
+
+  border-top: 1px solid rgba(47, 11, 26, 0.28);
+}
+
+.growthPrinciple span {
+  font-size: 0.8rem;
+}
+
+.growthPrinciple p {
+  font-size: 0.68rem;
+  font-weight: var(--weight-bold);
+
+  line-height: 1.55;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   BACKGROUND MARK
+   ========================================================= */
+
+.architectureMark {
+  position: absolute;
+
+  right: -0.12em;
+  top: 31%;
+
+  z-index: 1;
+
+  color: var(--monogram-on-dark);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(22rem, 45vw, 48rem);
+
+  line-height: 0.7;
+  letter-spacing: -0.1em;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .architectureIntro,
+  .contextDecision,
+  .permissionHeading,
+  .growthContent {
+    grid-template-columns: 1fr;
+  }
+
+  .growthHeading {
+    grid-template-columns: 1fr;
+  }
+
+  .roleGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roleCard:nth-child(2) {
+    border-right: 0;
+  }
+
+  .roleCard:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(255, 250, 242, 0.22);
+  }
+
+  .growthOutcome {
+    max-width: 650px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .architectureIntro h2 {
+    font-size: clamp(4rem, 18vw, 6rem);
+  }
+
+  .architectureIntro h2 span {
+    margin-left: 0;
+  }
+
+  .diagramBranches {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-xl);
+  }
+
+  .diagramBranches::before {
+    display: none;
+  }
+
+  .contextCard::before {
+    left: 24px;
+  }
+
+  .diagramStem {
+    height: 35px;
+  }
+
+  .contextCard {
+    min-height: auto;
+  }
+
+  .sameAccountNote {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: var(--space-xs);
+  }
+
+  .sameAccountNote span:nth-child(2) {
+    transform: rotate(90deg);
+  }
+
+  .roleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roleCard {
+    min-height: auto;
+
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 250, 242, 0.22);
+  }
+
+  .roleCard:last-child {
+    border-bottom: 0;
+  }
+
+  .growthContent {
+    gap: var(--space-3xl);
+  }
+
+  .growthOutcome {
+    padding: var(--space-xl);
+  }
+}

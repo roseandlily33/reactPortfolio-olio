@@ -17,14 +17,14 @@ const projects = [
   },
   {
     number: "02",
-    title: "Ariel Boesener Performance Horses",
+    title: "VRB Web Design and Development",
     type: "Website Design & Development",
-    year: "2025",
+    year: "2026",
     description:
-      "A polished equestrian website focused on clear content hierarchy, responsive design and a stronger visual identity.",
-    href: "/work/ariel-boesener-performance-horses",
-    image: "/images/work/ArielHome.png",
-    alt: "Ariel Boesener Performance Horses website",
+      "A book keeping and business operations platform designed to track invoices, payments, expenses and client services with a clear user experience.",
+    href: "/work/vrb",
+    image: "/images/work/VRBHome.png",
+    alt: "VRB Web Design and Development website",
     technologies: ["Web Design", "Development", "Responsive UI"],
   },
   {

@@ -52,7 +52,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/work/ariel-boesener-performance-horses`,
+      url: `${baseUrl}/work/vrb`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8,

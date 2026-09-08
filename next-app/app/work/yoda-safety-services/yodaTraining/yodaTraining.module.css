@@ -1,0 +1,892 @@
+/* =========================================================
+   SECTION 04 — TRAINING LIFECYCLE
+   ========================================================= */
+
+.lifecycleSection {
+  position: relative;
+  background: var(--paper-warm);
+  color: var(--ink);
+}
+
+.lifecycleSection .inner {
+  width: min(
+    calc(100% - (var(--page-padding) * 2)),
+    var(--page-width)
+  );
+
+  margin-inline: auto;
+  padding-block: var(--section-space);
+}
+
+
+/* =========================================================
+   SECTION META
+   ========================================================= */
+
+.lifecycleMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: var(--rule-strong);
+}
+
+.lifecycleMeta span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.lifecycleMeta p {
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.lifecycleIntro {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(300px, 0.55fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  padding-block: clamp(4rem, 8vw, 8rem);
+}
+
+.lifecycleEyebrow {
+  margin-bottom: var(--space-l);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.lifecycleIntro h2 {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 950px;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(4rem, 7.5vw, 7.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.86;
+  letter-spacing: var(--tracking-tight);
+}
+
+.lifecycleIntro h2 span {
+  margin-left: clamp(2rem, 7vw, 7rem);
+
+  color: var(--mulberry);
+
+  font-style: italic;
+}
+
+.lifecycleIntroCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  gap: var(--space-l);
+}
+
+.lifecycleIntroCopy p {
+  max-width: 500px;
+
+  color: var(--text-secondary);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.lifecycleLead {
+  color: var(--ink) !important;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2vw, 2rem) !important;
+  line-height: 1.25 !important;
+}
+
+
+/* =========================================================
+   LIFECYCLE FLOW
+   ========================================================= */
+
+.lifecycleFlow {
+  display: grid;
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr;
+
+  align-items: stretch;
+
+  border-top: var(--rule-strong);
+  border-bottom: var(--rule-strong);
+}
+
+.flowItem {
+  min-width: 0;
+
+  padding: clamp(1.5rem, 2.5vw, 2.5rem) var(--space-m);
+}
+
+.flowNumber {
+  display: block;
+
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.flowItem p {
+  margin-bottom: 0.35rem;
+
+  color: var(--mulberry);
+
+  font-size: 0.58rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.flowItem strong {
+  display: block;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+  font-weight: var(--weight-medium);
+
+  line-height: 1.1;
+}
+
+.flowArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   INDIVIDUAL PURCHASE
+   ========================================================= */
+
+.workflowFeature {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(300px, 0.55fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+
+  align-items: center;
+
+  padding-block: clamp(6rem, 10vw, 10rem);
+}
+
+.visualHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-l);
+
+  padding-bottom: var(--space-s);
+
+  border-bottom: var(--rule);
+}
+
+.visualHeader span,
+.visualHeader p {
+  color: var(--text-secondary);
+
+  font-size: 0.6rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.workflowImage {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1.3 / 1;
+
+  margin-top: var(--space-m);
+
+  overflow: hidden;
+
+  background: var(--paper);
+
+  border: var(--rule);
+
+  box-shadow: var(--shadow-window);
+}
+
+.workflowNumber {
+  display: block;
+
+  margin-bottom: var(--space-xl);
+
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-style: italic;
+
+  line-height: 1;
+}
+
+.workflowLabel {
+  margin-bottom: var(--space-l);
+
+  color: var(--mulberry);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.workflowCopy h3,
+.companyHeading h3,
+.completionHeading h3 {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.95;
+  letter-spacing: var(--tracking-heading);
+}
+
+.workflowCopy h3 {
+  margin-bottom: var(--space-xl);
+}
+
+.workflowCopy h3 em,
+.companyHeading h3 em,
+.completionHeading h3 em {
+  color: var(--mulberry);
+
+  font-weight: var(--weight-regular);
+}
+
+.workflowCopy > p:not(.workflowLabel) {
+  max-width: 480px;
+
+  color: var(--text-secondary);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   MICRO FLOW
+   ========================================================= */
+
+.microFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 0.55rem;
+
+  margin-top: var(--space-xl);
+  padding-block: var(--space-l);
+
+  border-top: var(--rule);
+  border-bottom: var(--rule);
+}
+
+.microFlow span {
+  padding: 0.45rem 0.6rem;
+
+  background: var(--butter-soft);
+
+  color: var(--mulberry);
+
+  font-size: 0.6rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.microFlow b {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: var(--weight-regular);
+}
+
+.workflowNote {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  gap: var(--space-m);
+
+  margin-top: var(--space-xl);
+}
+
+.workflowNote span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.workflowNote p {
+  color: var(--ink);
+
+  font-size: 0.7rem;
+  font-weight: var(--weight-semibold);
+
+  line-height: 1.6;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   COMPANY WORKFLOW
+   ========================================================= */
+
+.companyWorkflow {
+  padding-block: clamp(5rem, 9vw, 9rem);
+
+  border-top: var(--rule-strong);
+}
+
+.companyHeading {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 0.45fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+
+  align-items: end;
+}
+
+.companyHeading h3 {
+  max-width: 700px;
+}
+
+.companyHeading > p {
+  max-width: 480px;
+
+  color: var(--text-secondary);
+
+  font-size: var(--text-sm);
+  line-height: 1.8;
+}
+
+.companyContent {
+  display: grid;
+  grid-template-columns:
+    minmax(300px, 0.55fr)
+    minmax(0, 1fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+
+  align-items: center;
+
+  margin-top: clamp(4rem, 7vw, 7rem);
+}
+
+.companySteps {
+  border-top: var(--rule-strong);
+}
+
+.companySteps article {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+  gap: var(--space-l);
+
+  padding-block: var(--space-l);
+
+  border-bottom: var(--rule);
+}
+
+.companySteps article > span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.companySteps p {
+  margin-bottom: 0.2rem;
+
+  color: var(--mulberry);
+
+  font-size: 0.6rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.companySteps strong {
+  color: var(--ink);
+
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.companyImage {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1.25 / 1;
+
+  margin-top: var(--space-m);
+
+  overflow: hidden;
+
+  background: var(--paper);
+
+  border: var(--rule);
+
+  box-shadow: var(--shadow-window);
+}
+
+.companyVisualCaption {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+
+  gap: var(--space-xl);
+
+  margin-top: var(--space-l);
+  padding-top: var(--space-l);
+
+  border-top: var(--rule);
+}
+
+.companyVisualCaption span {
+  color: var(--mulberry);
+
+  font-size: 0.6rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.companyVisualCaption p {
+  max-width: 500px;
+
+  color: var(--text-secondary);
+
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   COMPLETION
+   ========================================================= */
+
+.completionSection {
+  padding-block: clamp(5rem, 9vw, 9rem);
+
+  border-top: var(--rule-strong);
+}
+
+.completionHeading {
+  max-width: 850px;
+}
+
+.completionHeading h3 {
+  margin-top: var(--space-l);
+}
+
+.completionVisuals {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.55fr);
+
+  gap: clamp(2rem, 4vw, 4rem);
+
+  align-items: end;
+
+  margin-top: clamp(4rem, 7vw, 7rem);
+}
+
+.courseImage {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1.35 / 1;
+
+  margin-top: var(--space-m);
+
+  overflow: hidden;
+
+  background: var(--paper);
+
+  border: var(--rule);
+}
+
+.certificateImage {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 0.78 / 1;
+
+  margin-top: var(--space-m);
+
+  overflow: hidden;
+
+  background: var(--paper);
+
+  border: var(--rule);
+
+  box-shadow: var(--shadow-window);
+}
+
+.completionDetails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: clamp(4rem, 6vw, 6rem);
+
+  border-top: var(--rule-strong);
+  border-bottom: var(--rule-strong);
+}
+
+.completionDetails article {
+  min-height: 310px;
+
+  padding: clamp(1.5rem, 3vw, 3rem);
+
+  border-right: var(--rule);
+}
+
+.completionDetails article:first-child {
+  padding-left: 0;
+}
+
+.completionDetails article:last-child {
+  border-right: 0;
+}
+
+.completionDetails article > span {
+  color: var(--mulberry);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.completionDetails h4 {
+  margin-top: var(--space-xl);
+
+  color: var(--ink);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-weight: var(--weight-regular);
+}
+
+.completionDetails p {
+  margin-top: var(--space-s);
+
+  color: var(--text-secondary);
+
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SYSTEM LAYER
+   ========================================================= */
+
+.systemLayer {
+  padding: clamp(3rem, 6vw, 6rem);
+
+  background: var(--mulberry);
+
+  color: var(--paper);
+}
+
+.systemHeading {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+
+  gap: clamp(2rem, 6vw, 6rem);
+
+  align-items: end;
+}
+
+.systemHeading > p {
+  color: var(--butter);
+
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.systemHeading h3 {
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: var(--weight-regular);
+
+  line-height: 0.9;
+}
+
+.systemHeading h3 span {
+  color: var(--butter);
+
+  font-style: italic;
+}
+
+.systemDiagram {
+  display: grid;
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr auto
+    1fr;
+
+  gap: var(--space-m);
+
+  align-items: stretch;
+
+  margin-top: clamp(3rem, 6vw, 6rem);
+}
+
+.systemNode {
+  min-height: 180px;
+
+  padding: var(--space-l);
+
+  border: 1px solid rgba(255, 250, 242, 0.25);
+}
+
+.systemNode span {
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.systemNode strong {
+  display: block;
+
+  margin-top: var(--space-xl);
+
+  color: var(--paper);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: var(--weight-regular);
+}
+
+.systemNode p {
+  margin-top: 0.4rem;
+
+  color: rgba(255, 250, 242, 0.6);
+
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.systemConnector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--butter);
+
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.systemFootnote {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+
+  gap: clamp(2rem, 6vw, 6rem);
+
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-xl);
+
+  border-top: 1px solid rgba(255, 250, 242, 0.25);
+}
+
+.systemFootnote span {
+  color: var(--butter);
+
+  font-size: 0.62rem;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.systemFootnote p {
+  max-width: 700px;
+
+  color: rgba(255, 250, 242, 0.72);
+
+  font-size: var(--text-sm);
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .lifecycleIntro,
+  .workflowFeature,
+  .companyHeading,
+  .companyContent {
+    grid-template-columns: 1fr;
+  }
+
+  .lifecycleFlow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .flowArrow {
+    display: none;
+  }
+
+  .flowItem {
+    border-right: var(--rule);
+    border-bottom: var(--rule);
+  }
+
+  .completionDetails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .completionDetails article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .completionDetails article:nth-child(-n + 2) {
+    border-bottom: var(--rule);
+  }
+
+  .systemDiagram {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .systemConnector {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .lifecycleIntro h2 {
+    font-size: clamp(4rem, 17vw, 6rem);
+  }
+
+  .lifecycleIntro h2 span {
+    margin-left: 0;
+  }
+
+  .lifecycleFlow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .completionVisuals {
+    grid-template-columns: 1fr;
+  }
+
+  .certificateVisual {
+    width: min(80%, 360px);
+    margin-inline: auto;
+  }
+
+  .completionDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .completionDetails article,
+  .completionDetails article:first-child {
+    min-height: auto;
+
+    padding-inline: 0;
+    padding-block: var(--space-xl);
+
+    border-right: 0;
+    border-bottom: var(--rule);
+  }
+
+  .completionDetails article:last-child {
+    border-bottom: 0;
+  }
+
+  .systemLayer {
+    padding-inline: var(--space-xl);
+  }
+
+  .systemHeading,
+  .systemFootnote {
+    grid-template-columns: 1fr;
+  }
+
+  .systemDiagram {
+    grid-template-columns: 1fr;
+  }
+
+  .companyVisualCaption {
+    grid-template-columns: 1fr;
+  }
+}
