@@ -81,7 +81,7 @@ export const certificates = [
   },
   {
     id: 110,
-    photo: '/images/certificates/zerotomastery/ZJtos.png',
+    photo: '/images/certificates/ztm/ZTM_JtoS.png',
     important: true,
     title: "Junior to Senior",
     provider: "Zero To Mastery",
@@ -99,7 +99,7 @@ export const certificates = [
   },
   {
     id: 120,
-    photo: '/images/certificates/zerotomastery/ZWebDev.png',
+    photo: '/images/certificates/ztm/ZTM_Web_Dev.png',
     title: "Web Development",
     provider: "Zero To Mastery",
     important: true,
@@ -117,7 +117,7 @@ export const certificates = [
   },
   {
     if: 45246,
-    photo: '/images/certificates/codecademy/DesignPath.png',
+    photo: '/images/certificates/codecademy/CC_Design_Path.png',
     title: "UX Designer Career Path",
     provider: "Codecademy",
     date: "July 28, 2025",
@@ -126,7 +126,7 @@ export const certificates = [
   },
   {
     id: 3,
-    photo: '/images/certificates/codecademy/React.png',
+    photo: '/images/certificates/codecademy/CC_REACT.png',
     title: "Learn React Course",
     provider: "Codecademy",
     date: "September 29, 2024",
@@ -134,7 +134,7 @@ export const certificates = [
   },
   {
     id: 4,
-    photo: '/images/certificates/codecademy/AdvReact.png',
+    photo: '/images/certificates/codecademy/CC_ADV_REACT.png',
     title: "Learn Advanced React",
     provider: "Codecademy",
     date: "October 1, 2024",
@@ -143,7 +143,7 @@ export const certificates = [
 
   {
     id: 5,
-    photo: '/images/certificates/codecademy/Alg.png',
+    photo: '/images/certificates/codecademy/CC_ALG.png',
     title: "Pass the Technical Interview with Javascript",
     provider: "Codecademy",
     date: "November 19, 2024",
@@ -151,7 +151,7 @@ export const certificates = [
   },
   {
     id: 6,
-    photo: '/images/certificates/codecademy/Defending.png',
+    photo: '/images/certificates/codecademy/CC_DEFENDING.png',
     title: "Defending Node Applications",
     provider: "Codecademy",
     date: "October 25, 2024",
@@ -160,7 +160,7 @@ export const certificates = [
 
   {
     id: 7,
-    photo: '/images/certificates/codecademy/DesigningDB.png',
+    photo: '/images/certificates/codecademy/CC_DESIGNING_DB.png',
     title: "Design Databases",
     provider: "Codecademy",
     date: "October 25, 2024",
@@ -168,7 +168,7 @@ export const certificates = [
   },
   {
     id: 8,
-    photo: '/images/certificates/codecademy/DesignCC.png',
+    photo: '/images/certificates/codecademy/CC_Design_Path.png',
     title: "Intro to UX/UI Design Course",
     provider: "Codecademy",
     date: "April 11, 2023",
@@ -176,7 +176,7 @@ export const certificates = [
   },
   {
     id: 9,
-    photo: '/images/certificates/codecademy/Devops.png',
+    photo: '/images/certificates/codecademy/CC_DEVOPS.png',
     title: "Intro to DevOps",
     provider: "Codecademy",
     date: "November 18, 2024",
@@ -184,7 +184,7 @@ export const certificates = [
   },
   {
     id: 10,
-    photo: '/images/certificates/codecademy/Express.png',
+    photo: '/images/certificates/codecademy/CC_EXPRESS.png',
     title: "Learn Express.js",
     provider: "Codecademy",
     date: "April 12, 2023",
@@ -193,7 +193,7 @@ export const certificates = [
 
   {
     id: 12,
-    photo: '/images/certificates/codecademy/FEandBE.png',
+    photo: '/images/certificates/codecademy/CC_FE_BE.png',
     title: "Connecting Front End & Back End",
     provider: "Codecademy",
     date: "October 28, 2024",
@@ -201,7 +201,7 @@ export const certificates = [
   },
   {
     id: 13,
-    photo: '/images/certificates/codecademy/Git.png',
+    photo: '/images/certificates/codecademy/CC_GITHUB.png',
     title: "Learn Git & Github",
     provider: "Codecademy",
     date: "October 31, 2024",
@@ -209,7 +209,7 @@ export const certificates = [
   },
   {
     id: 14,
-    photo: '/images/certificates/codecademy/Html.png',
+    photo: '/images/certificates/codecademy/CC_HTML.png',
     title: "Learn HTML",
     provider: "Codecadmey",
     date: "October 25, 2024",
@@ -217,7 +217,7 @@ export const certificates = [
   },
   {
     id: 15,
-    photo: '/images/certificates/codecademy/IntCss.png',
+    photo: '/images/certificates/codecademy/CC_INT_CSS.png',
     title: "Learn Intermediate CSS",
     provider: "Codecademy",
     date: "October 28, 2024",
@@ -225,7 +225,7 @@ export const certificates = [
   },
   {
     id: 16,
-    photo: '/images/certificates/codecademy/IntJs.png',
+    photo: '/images/certificates/codecademy/CC_INT_JS.png',
     title: "Learn Intermediate Javascript",
     provider: "Codecademy",
     date: "October 30, 2024",
@@ -233,7 +233,7 @@ export const certificates = [
   },
   {
     id: 17,
-    photo: '/images/certificates/codecademy/JSCert.png',
+    photo: '/images/certificates/codecademy/CC_JS.png',
     title: "Learn Javascript",
     provider: "Codecademy",
     date: "September 16, 2024",
@@ -241,7 +241,7 @@ export const certificates = [
   },
   {
     id: 18,
-    photo: '/images/certificates/codecademy/NextCert.png',
+    photo: '/images/certificates/codecademy/CC_NEXT.png',
     title: "Intro to Next.js",
     provider: "Codecademy",
     date: "October 25, 2024",
@@ -249,7 +249,7 @@ export const certificates = [
   },
   {
     id: 19,
-    photo: '/images/certificates/codecademy/Owasp.png',
+    photo: '/images/certificates/codecademy/CC_OWASP.png',
     title: "OWASP Top 10: Insecure Design",
     provider: "Codecademy",
     date: "October 18, 2024",
@@ -257,7 +257,7 @@ export const certificates = [
   },
   {
     id: 20,
-    photo: '/images/certificates/codecademy/Node.png',
+    photo: '/images/certificates/codecademy/CC_NODE.png',
     title: "Learn Node.js",
     provider: "Codecademy",
     date: "January 4, 2024",
@@ -265,7 +265,7 @@ export const certificates = [
   },
   {
     id: 21,
-    photo: '/images/certificates/codecademy/Redux.png',
+    photo: '/images/certificates/codecademy/CC_REDUX.png',
     title: "Learn Redux",
     provider: "Codecademy",
     date: "October 28, 2024",
@@ -273,7 +273,7 @@ export const certificates = [
   },
   {
     id: 22,
-    photo: '/images/certificates/codecademy/Sass.png',
+    photo: '/images/certificates/codecademy/CC_SASS.png',
     title: "Learn SASS",
     provider: "Codecademy",
     date: "October 29, 2024",
@@ -281,7 +281,7 @@ export const certificates = [
   },
   {
     id: 23,
-    photo: '/images/certificates/codecademy/SQL.png',
+    photo: '/images/certificates/codecademy/CC_SQL.png',
     title: "Learn SQL",
     provider: "Codecademy",
     date: "September 16, 2024",
@@ -289,7 +289,7 @@ export const certificates = [
   },
   {
     id: 24,
-    photo: '/images/certificates/codecademy/SoftwareDes.png',
+    photo: '/images/certificates/codecademy/CC_SD.png',
     title: "Software Design Principles",
     provider: "Codecademy",
     date: "March 3, 2025",
@@ -297,7 +297,7 @@ export const certificates = [
   },
   {
     id: 25,
-    photo: '/images/certificates/codecademy/Secure.png',
+    photo: '/images/certificates/codecademy/CC_SECURE.png',
     title: "Securing Express Applications",
     provider: "Codecademy",
     date: "October 25, 2024",
@@ -305,7 +305,7 @@ export const certificates = [
   },
   {
     id: 26,
-    photo: '/images/certificates/codecademy/SQLinj.png',
+    photo: '/images/certificates/codecademy/CC_SQLINJ.png',
     title: "Prevent SQL Injection Attacks",
     provider: "Codecademy",
     date: "October 25, 2024",
@@ -313,7 +313,7 @@ export const certificates = [
   },
   {
     id: 27,
-    photo: '/images/certificates/codecademy/WebBasics.png',
+    photo: '/images/certificates/codecademy/CC_WEB_BASICS.png',
     title: "Web Basics",
     provider: "Codecademy",
     date: "September 16, 2024",
@@ -321,15 +321,15 @@ export const certificates = [
   },
   {
     id: 28,
-    photo: '/images/certificates/codecademy/CrossSite.png',
-    title: "Prevent Cross-Site Scipting",
+    photo: '/images/certificates/codecademy/CC_XSS.png',
+    title: "Prevent Cross-Site Scripting",
     provider: "Codecademy",
     date: "October 25, 2024",
     tags: ["Security"],
   },
   {
     id: 29,
-    photo: '/images/certificates/zerotomastery/ZCss.png',
+    photo: '/images/certificates/ztm/ZTM_CSS.png',
     title: "CSS Bootcamp",
     provider: "Zero To Mastery",
     date: "March 7, 2024",
@@ -337,7 +337,7 @@ export const certificates = [
   },
   {
     id: 30,
-    photo: '/images/certificates/zerotomastery/ZSecurity.png',
+    photo: '/images/certificates/ztm/ZTM_Cybersecurity.png',
     title: "Complete Cybersecurity Bootcamp",
     provider: "Zero To Mastery",
     date: "January 12, 2024",
@@ -345,7 +345,7 @@ export const certificates = [
   },
   {
     id: 31,
-    photo: '/images/certificates/zerotomastery/ZDesign.png',
+    photo: '/images/certificates/ztm/ZTM_Design.png',
     title: "Complete Web & Mobile Designer",
     provider: "Zero To Mastery",
     date: "December 1, 2023",
@@ -354,7 +354,7 @@ export const certificates = [
   },
   {
     id: 32,
-    photo: '/images/certificates/zerotomastery/ZDS.png',
+    photo: '/images/certificates/ztm/ZTM_DS.png',
     title: "Master Coding Interview: DS&A",
     provider: "Zero To Mastery",
     date: "July 3, 2024",
@@ -362,7 +362,7 @@ export const certificates = [
   },
   {
     id: 33,
-    photo: '/images/certificates/zerotomastery/ZJs.png',
+    photo: '/images/certificates/ztm/ZTM_JS.png',
     title: "Javascript The Advanced Concepts",
     provider: "Zero To Mastery",
     date: "December 15, 2023",
@@ -370,7 +370,7 @@ export const certificates = [
   },
   {
     id: 34,
-    photo: '/images/certificates/zerotomastery/ZNode.png',
+    photo: '/images/certificates/ztm/ZTM_Node.png',
     title: "Complete Node.js Developer",
     provider: "Zero To Mastery",
     date: "March 15, 2024",
@@ -378,7 +378,7 @@ export const certificates = [
   },
   {
     id: 35,
-    photo: '/images/certificates/zerotomastery/ZPython.png',
+    photo: '/images/certificates/ztm/ZTM_python.png',
     title: "Complete Python Developer",
     provider: "Zero To Mastery",
     date: "July 22, 2024",
@@ -386,7 +386,7 @@ export const certificates = [
   },
   {
     id: 36,
-    photo: '/images/certificates/zerotomastery/ZReact.png',
+    photo: '/images/certificates/ztm/ZTM_React.png',
     title: "Complete React Developer ",
     provider: "Zero To Mastery",
     date: "January 31, 2024",
@@ -394,7 +394,7 @@ export const certificates = [
   },
   {
     id: 37,
-    photo: '/images/certificates/zerotomastery/ZSEO.png',
+    photo: '/images/certificates/ztm/ZTM_SEO.png',
     title: "Search Engine Optimization",
     provider: "Zero To Mastery",
     important: true,
@@ -403,7 +403,7 @@ export const certificates = [
   },
   {
     id: 38,
-    photo: '/images/certificates/zerotomastery/ZSQL.png',
+    photo: '/images/certificates/ztm/ZTM_SQL.png',
     title: "Complete SQL & Database Bootcamp",
     provider: "Zero To Mastery",
     date: "January 26, 2024",
@@ -411,7 +411,7 @@ export const certificates = [
   },
   {
     id: 39,
-    photo: '/images/certificates/zerotomastery/ZSystemArch.png',
+    photo: '/images/certificates/ztm/ZTM_System_Arch.png',
     title: "System Design & Architecture",
     provider: "Zero To Mastery",
     date: "December 11, 2023",
@@ -419,7 +419,7 @@ export const certificates = [
   },
   {
     id: 40,
-    photo: '/images/certificates/zerotomastery/ZTesting.png',
+    photo: '/images/certificates/ztm/ZTM_Testing.png',
     title: "Testing",
     provider: "Zero To Mastery",
     date: "January 12, 2024",
@@ -427,7 +427,7 @@ export const certificates = [
   },
   {
     id: 41,
-    photo: '/images/certificates/zerotomastery/ZTypescript.png',
+    photo: '/images/certificates/ztm/ZTM_Typescript.png',
     title: "Typescript Bootcamp",
     provider: "Zero To Mastery",
     date: "March 21, 2024",
@@ -435,7 +435,7 @@ export const certificates = [
   },
   {
     id: 42,
-    photo: '/images/certificates/zerotomastery/ZFAANG.png',
+    photo: '/images/certificates/ztm/ZTM_FAANG.png',
     title: "FAANG Interviews",
     provider: "Zero To Mastery",
     date: "August 3, 2024",
@@ -443,7 +443,7 @@ export const certificates = [
   },
   {
     id: 43,
-    photo: '/images/certificates/uxcel/UXAI.png',
+    photo: '/images/certificates/uxcel/UX_AI.png',
     title: "AI in UX/UI Design",
     provider: "Uxcel",
     date: "January 4, 2025",
@@ -451,7 +451,7 @@ export const certificates = [
   },
   {
     id: 44,
-    photo: '/images/certificates/uxcel/UXChurn.png',
+    photo: '/images/certificates/uxcel/UX_Churn.png',
     title: "Churn Bursting",
     provider: "Uxcel",
     date: "February 4, 2025",
@@ -459,7 +459,7 @@ export const certificates = [
   },
   {
     id: 45,
-    photo: '/images/certificates/uxcel/UXColor.png',
+    photo: '/images/certificates/uxcel/UX_Color.png',
     title: "Color Psychology",
     provider: "Uxcel",
     date: "March 1, 2025",
@@ -467,7 +467,7 @@ export const certificates = [
   },
   {
     id: 46,
-    photo: '/images/certificates/uxcel/UXCommonDesign.png',
+    photo: '/images/certificates/uxcel/UX_Common_Design.png',
     title: "Common Design Patterns",
     provider: "Uxcel",
     date: "March 10, 2025",
@@ -475,7 +475,7 @@ export const certificates = [
   },
   {
     id: 47,
-    photo: '/images/certificates/uxcel/UXCrossFunction.png',
+    photo: '/images/certificates/uxcel/UX_Cross-Function.png',
     title: "Cross Functional Design & Product Teams",
     provider: "Uxcel",
     date: "February 6, 2025",
@@ -483,7 +483,7 @@ export const certificates = [
   },
   {
     id: 48,
-    photo: '/images/certificates/uxcel/UXCSS.png',
+    photo: '/images/certificates/uxcel/UX_CSS.png',
     title: "CSS for Designers",
     provider: "Uxcel",
     date: "February 24, 2024",
@@ -491,7 +491,7 @@ export const certificates = [
   },
   {
     id: 49,
-    photo: '/images/certificates/uxcel/UXDesignAccess.png',
+    photo: '/images/certificates/uxcel/UX_Design_Access.png',
     title: "Design Accessibility",
     provider: "Uxcel",
     date: "March 11, 2024",
@@ -499,7 +499,7 @@ export const certificates = [
   },
   {
     id: 50,
-    photo: '/images/certificates/uxcel/UXDesignComposition.png',
+    photo: '/images/certificates/uxcel/UX_Design_Composition.png',
     title: "Design Composition",
     provider: "Uxcel",
     date: "May 13, 2024",
@@ -507,7 +507,7 @@ export const certificates = [
   },
   {
     id: 51,
-    photo: '/images/certificates/uxcel/UXDesignPatterns.png',
+    photo: '/images/certificates/uxcel/UX_Design_Patterns.png',
     title: "UX Design Patterns with Checklist Design",
     provider: "Uxcel",
     date: "March 7, 2024",
@@ -515,7 +515,7 @@ export const certificates = [
   },
   {
     id: 52,
-    photo: '/images/certificates/uxcel/UXDesignPsych.png',
+    photo: '/images/certificates/uxcel/UX_Design_Psychology.png',
     title: "UX Design Psychology",
     provider: "Uxcel",
     date: "January 3, 2025",
@@ -523,7 +523,7 @@ export const certificates = [
   },
   {
     id: 53,
-    photo: '/images/certificates/uxcel/UXDesignTerm.png',
+    photo: '/images/certificates/uxcel/UX_Design_Terminology.png',
     title: "Design Terminology",
     provider: "Uxcel",
     date: "February 28, 2024",
@@ -531,7 +531,7 @@ export const certificates = [
   },
   {
     id: 54,
-    photo: '/images/certificates/uxcel/UXDesignThinking.png',
+    photo: '/images/certificates/uxcel/UX_Design_Thinking.png',
     title: "Design Thinking",
     provider: "Uxcel",
     date: "March 12, 2024",
@@ -539,7 +539,7 @@ export const certificates = [
   },
   {
     id: 55,
-    photo: '/images/certificates/uxcel/UXDesignWorkshop.png',
+    photo: '/images/certificates/uxcel/UX_Design_Workshop.png',
     title: "Design Workshop Facilitation",
     provider: "Uxcel",
     date: "January 31, 2025",
@@ -547,23 +547,23 @@ export const certificates = [
   },
   {
     id: 56,
-    photo: '/images/certificates/uxcel/UXFigma.png',
-    title: "Intoduction to Figma",
+    photo: '/images/certificates/uxcel/UX_Figma.png',
+    title: "Introduction to Figma",
     provider: "Uxcel",
     date: "January 20, 2025",
     tags: ["Design (UX/UI)"],
   },
   {
     id: 57,
-    photo: '/images/certificates/uxcel/UXGame.png',
+    photo: '/images/certificates/uxcel/UX_Gamification.png',
     title: "Gamification in Design Context",
     provider: "Uxcel",
-    date: "Septemeber 13, 2024",
+    date: "September 13, 2024",
     tags: ["Design (UX/UI)"],
   },
   {
     id: 58,
-    photo: '/images/certificates/uxcel/UXHTML.png',
+    photo: '/images/certificates/uxcel/UX_HTML.png',
     title: "HTML for Designers",
     provider: "Uxcel",
     date: "February 22, 2024",
@@ -571,7 +571,7 @@ export const certificates = [
   },
   {
     id: 59,
-    photo: '/images/certificates/uxcel/UXIA.png',
+    photo: '/images/certificates/uxcel/UX_IA.png',
     title: "Information Architecture",
     provider: "Uxcel",
     date: "January 18, 2025",
@@ -579,7 +579,7 @@ export const certificates = [
   },
   {
     id: 60,
-    photo: '/images/certificates/uxcel/UXMobileDesign.png',
+    photo: '/images/certificates/uxcel/UX_Mobile_Design.png',
     title: "Mobile Design",
     provider: "Uxcel",
     date: "March 22, 2024",
@@ -587,7 +587,7 @@ export const certificates = [
   },
   {
     id: 61,
-    photo: '/images/certificates/uxcel/UXProductAnalytics.png',
+    photo: '/images/certificates/uxcel/UX_Product_Analytics.png',
     title: "Product Analytics",
     provider: "Uxcel",
     date: "February 9, 2025",
@@ -595,7 +595,7 @@ export const certificates = [
   },
   {
     id: 62,
-    photo: '/images/certificates/uxcel/UXProductDiscovery.png',
+    photo: '/images/certificates/uxcel/UX_Product_Discovery.png',
     title: "Product Discovery",
     provider: "Uxcel",
     date: "January 26, 2025",
@@ -603,7 +603,7 @@ export const certificates = [
   },
   {
     id: 63,
-    photo: '/images/certificates/uxcel/UXResearch.png',
+    photo: '/images/certificates/uxcel/UX_Research.png',
     title: "UX Research",
     provider: "Uxcel",
     date: "January 29, 2025",
@@ -611,7 +611,7 @@ export const certificates = [
   },
   {
     id: 64,
-    photo: '/images/certificates/uxcel/UXServiceDesign.png',
+    photo: '/images/certificates/uxcel/UX_Service_Design.png',
     title: "Service Design",
     provider: "Uxcel",
     date: "May 13, 2024",
@@ -619,7 +619,7 @@ export const certificates = [
   },
   {
     id: 65,
-    photo: '/images/certificates/uxcel/UXTypography.png',
+    photo: '/images/certificates/uxcel/UX_Typography.png',
     title: "Typography",
     provider: "Uxcel",
     date: "March 3, 2024",
@@ -627,7 +627,7 @@ export const certificates = [
   },
   {
     id: 66,
-    photo: '/images/certificates/uxcel/UXComponents.png',
+    photo: '/images/certificates/uxcel/UX_UI_Components_1.png',
     title: "UI Components 1",
     provider: "Uxcel",
     date: "May 2, 2024",
@@ -635,7 +635,7 @@ export const certificates = [
   },
   {
     id: 67,
-    photo: '/images/certificates/uxcel/UXComponents2.png',
+    photo: '/images/certificates/uxcel/UX_UI_Components.png',
     title: "UI Components 2",
     provider: "Uxcel",
     date: "May 6, 2024",
@@ -643,7 +643,7 @@ export const certificates = [
   },
   {
     id: 68,
-    photo: '/images/certificates/uxcel/UXWireframing.png',
+    photo: '/images/certificates/uxcel/UX_Wireframing.png',
     title: "Wireframing",
     provider: "Uxcel",
     date: "March 6, 2024",
@@ -651,7 +651,7 @@ export const certificates = [
   },
   {
     id: 69,
-    photo: '/images/certificates/uxcel/UXWriting.png',
+    photo: '/images/certificates/uxcel/UX_Writing.png',
     title: "UX Writing",
     provider: "Uxcel",
     date: "March 28, 2024",
@@ -747,7 +747,7 @@ export const certificates = [
   },
   {
     id: 82,
-    photo: '/images/certificates/yoda/BasicElectricalSafetyAwareness.png',
+    photo: '/images/certificates/yoda/BasicElectrical.png',
     title: "Basic Electrical Safety Awareness",
     provider: "Yoda Safety Services Inc.",
     date: "October 30, 2025",
@@ -763,7 +763,7 @@ export const certificates = [
   },
   {
     id: 84,
-    photo: '/images/certificates/yoda/DefensiveDrivingRefresherOverview.png',
+    photo: '/images/certificates/yoda/DefensiveDrivingRefresher.png',
     title: "Defensive Driving Refresher Overview",
     provider: "Yoda Safety Services Inc.",
     date: "March 11, 2026",
@@ -779,7 +779,7 @@ export const certificates = [
   },
   {
     id: 86,
-    photo: '/images/certificates/yoda/FireExtinguisherTraining.png',
+    photo: '/images/certificates/yoda/FireExt.png',
     title: "Fire Extinguisher Training",
     provider: "Yoda Safety Services Inc.",
     date: "March 10, 2026",
@@ -787,7 +787,7 @@ export const certificates = [
   },
   {
     id: 87,
-    photo: '/images/certificates/yoda/FirePreventionAndControl.png',
+    photo: '/images/certificates/yoda/FirePre.png',
     title: "Fire Prevention & Control",
     provider: "Yoda Safety Services Inc.",
     date: "March 11, 2026",
@@ -795,7 +795,7 @@ export const certificates = [
   },
   {
     id: 88,
-    photo: '/images/certificates/yoda/FireWardenTraining.png',
+    photo: '/images/certificates/yoda/FireWarden.png',
     title: "Fire Warden Training",
     provider: "Yoda Safety Services Inc.",
     date: "March 10, 2026",
@@ -803,7 +803,7 @@ export const certificates = [
   },
   {
     id: 89,
-    photo: '/images/certificates/yoda/FundamentalsOfPsychologicalHealthAndSafety.png',
+    photo: '/images/certificates/yoda/Psych.png',
     title: "Fundamentals of Psychological Health & Safety",
     provider: "Yoda Safety Services Inc.",
     date: "March 3, 2026",
@@ -811,7 +811,7 @@ export const certificates = [
   },
   {
     id: 90,
-    photo: '/images/certificates/yoda/RiskTolerantBehaviour.png',
+    photo: '/images/certificates/yoda/Risk.png',
     title: "Risk Tolerant Behaviour",
     provider: "Yoda Safety Services Inc.",
     date: "October 30, 2025",
@@ -883,15 +883,44 @@ export const certificates = [
   },
   {
     id: 99,
-    photo: '/images/certificates/semrush/Semrush_AI_Visibility.png',
-    title: "Semrush SEO Competitive Research",
+    photo: '/images/certificates/semrush/Semrush_AI_Visability.png',
+    title: "Semrush AI Visibility",
     provider: "Semrush",
     date: "August 25, 2026",
     tags: ["SEO"],
   },
   {
-
-  }
+    id: 100,
+    photo: '/images/certificates/semrush/Semrush_Technical_SEO.png',
+    title: "Semrush Technical SEO",
+    provider: "Semrush",
+    date: "September 7, 2026",
+    tags: ["SEO"],
+  },
+  {
+    id: 101,
+    photo: '/images/certificates/semrush/Semrush_Content.png',
+    title: "Semrush Content Marketing",
+    provider: "Semrush",
+    date: "September 7, 2026",
+    tags: ["SEO"],
+  },
+  {
+    id: 102,
+    photo: '/images/certificates/semrush/Semrush_SEO_Strategy.png',
+    title: "Semrush SEO Strategy",
+    provider: "Semrush",
+    date: "September 2, 2026",
+    tags: ["SEO"],
+  },
+  {
+    id: 103,
+    photo: '/images/certificates/semrush/Semrush_Local_SEO.png',
+    title: "Semrush Local SEO",
+    provider: "Semrush",
+    date: "September 3, 2026",
+    tags: ["SEO"],
+  },
   
   // {
   //   id: 12,
