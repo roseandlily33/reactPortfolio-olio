@@ -333,6 +333,7 @@ export default function AboutPage() {
                 experience feel more thoughtful.
               </p>
 
+
               <p>
                 That same curiosity is probably what keeps me interested in
                 development, design and everything in between.
