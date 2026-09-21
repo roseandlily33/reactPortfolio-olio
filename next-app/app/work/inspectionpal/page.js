@@ -2,7 +2,7 @@
 import IPOverview from "./ipOverview/ipOverview";
 import IPUnderstandable from "./ipUnderstandable/ipUnderstandable";
 import IPRedesign from "./ipRedesign/ipRedesign";
-import IPVisual from "./ipVisual/ipVisual";
+import IPVisualSystem from "./ipVisualSystem/ipVisualSystem";
 import IPExpanding from "./ipExpanding/ipExpanding";
 import IPFinal from "./ipFinal/ipFinal";
 
@@ -28,7 +28,7 @@ const InspectionPalPage = () => {
       <IPOverview />
       <IPUnderstandable />
       <IPRedesign />
-      <IPVisual />
+      <IPVisualSystem />
       <IPExpanding />
       <IPFinal />
     </>

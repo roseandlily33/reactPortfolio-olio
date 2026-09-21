@@ -32,7 +32,7 @@ export default function HomePage() {
       <main
         style={{
           minHeight: "100vh",
-          padding: "2rem",
+          padding: "1rem",
         }}
       >
         <Hero />
