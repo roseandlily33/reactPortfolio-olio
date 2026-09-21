@@ -25,7 +25,6 @@
   --grey-500: #897b7f;
   --grey-700: #514448;
 
-
   /* -------------------------------------------------------
      SEMANTIC COLOURS
      Use these in components instead of hardcoding colours.
@@ -53,7 +52,6 @@
   --selection-bg: var(--butter);
   --selection-text: var(--mulberry-deep);
 
-
   /* -------------------------------------------------------
      VB MONOGRAM
      The oversized background VB used throughout the site.
@@ -62,7 +60,6 @@
   --monogram: rgba(100, 28, 56, 0.055);
   --monogram-strong: rgba(100, 28, 56, 0.09);
   --monogram-on-dark: rgba(255, 250, 242, 0.055);
-
 
   /* -------------------------------------------------------
      TYPOGRAPHY
@@ -97,7 +94,6 @@
   --tracking-wide: 0.08em;
   --tracking-label: 0.12em;
 
-
   /* -------------------------------------------------------
      FONT WEIGHTS
   ------------------------------------------------------- */
@@ -106,7 +102,6 @@
   --weight-medium: 500;
   --weight-semibold: 600;
   --weight-bold: 700;
-
 
   /* -------------------------------------------------------
      SPACING
@@ -128,7 +123,6 @@
 
   --page-padding: clamp(1.25rem, 4vw, 4rem);
 
-
   /* -------------------------------------------------------
      LAYOUT
   ------------------------------------------------------- */
@@ -139,7 +133,6 @@
   --text-width-small: 560px;
 
   --header-height: 78px;
-
 
   /* -------------------------------------------------------
      BORDER RADIUS
@@ -154,7 +147,6 @@
   --radius-lg: 14px;
   --radius-pill: 999px;
 
-
   /* -------------------------------------------------------
      BORDERS
   ------------------------------------------------------- */
@@ -165,22 +157,17 @@
   --rule: 1px solid rgba(69, 17, 38, 0.3);
   --rule-strong: 1px solid var(--mulberry-dark);
 
-
   /* -------------------------------------------------------
      SHADOWS
      
      Minimal. Most elements should use borders instead.
   ------------------------------------------------------- */
 
-  --shadow-sm:
-    0 2px 8px rgba(47, 11, 26, 0.05);
+  --shadow-sm: 0 2px 8px rgba(47, 11, 26, 0.05);
 
-  --shadow-md:
-    0 8px 30px rgba(47, 11, 26, 0.08);
+  --shadow-md: 0 8px 30px rgba(47, 11, 26, 0.08);
 
-  --shadow-window:
-    0 14px 40px rgba(47, 11, 26, 0.1);
-
+  --shadow-window: 0 14px 40px rgba(47, 11, 26, 0.1);
 
   /* -------------------------------------------------------
      TRANSITIONS
@@ -191,15 +178,11 @@
   --transition-slow: 400ms ease;
 
   --transition-link:
-    color var(--transition-fast),
-    opacity var(--transition-fast);
+    color var(--transition-fast), opacity var(--transition-fast);
 
   --transition-button:
-    background-color var(--transition-base),
-    color var(--transition-base),
-    border-color var(--transition-base),
-    transform var(--transition-base);
-
+    background-color var(--transition-base), color var(--transition-base),
+    border-color var(--transition-base), transform var(--transition-base);
 
   /* -------------------------------------------------------
      Z-INDEX
@@ -211,7 +194,6 @@
   --z-dropdown: 200;
   --z-modal: 1000;
 }
-
 
 /* =========================================================
    RESET
@@ -244,7 +226,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 /* =========================================================
    TYPOGRAPHY RESET
@@ -286,7 +267,6 @@ button {
   color: inherit;
 }
 
-
 /* =========================================================
    MEDIA
    ========================================================= */
@@ -300,7 +280,6 @@ svg {
   max-width: 100%;
 }
 
-
 /* =========================================================
    LISTS
    ========================================================= */
@@ -311,7 +290,6 @@ ol {
   padding: 0;
 }
 
-
 /* =========================================================
    SELECTION
    ========================================================= */
@@ -321,7 +299,6 @@ ol {
   color: var(--selection-text);
 }
 
-
 /* =========================================================
    FOCUS
    ========================================================= */
@@ -330,7 +307,6 @@ ol {
   outline: 2px solid var(--mulberry);
   outline-offset: 4px;
 }
-
 
 /* =========================================================
    SCROLLBAR
@@ -353,7 +329,6 @@ ol {
   background: var(--mulberry-dark);
 }
 
-
 /* =========================================================
    GLOBAL LAYOUT UTILITIES
    ========================================================= */
@@ -365,19 +340,13 @@ ol {
 }
 
 .pageInner {
-  width: min(
-    calc(100% - (var(--page-padding) * 2)),
-    var(--page-width)
-  );
+  width: min(calc(100% - (var(--page-padding) * 2)), var(--page-width));
 
   margin-inline: auto;
 }
 
 .contentInner {
-  width: min(
-    calc(100% - (var(--page-padding) * 2)),
-    var(--content-width)
-  );
+  width: min(calc(100% - (var(--page-padding) * 2)), var(--content-width));
 
   margin-inline: auto;
 }
@@ -385,7 +354,6 @@ ol {
 .section {
   padding-block: var(--section-space);
 }
-
 
 /* =========================================================
    EDITORIAL UTILITIES
@@ -414,7 +382,6 @@ ol {
   text-transform: uppercase;
 }
 
-
 /* =========================================================
    NEWSPAPER RULE
    ========================================================= */
@@ -431,7 +398,6 @@ ol {
 .ruleStrong {
   background: var(--mulberry-dark);
 }
-
 
 /* =========================================================
    ACCESSIBILITY
@@ -454,7 +420,6 @@ ol {
   border: 0;
 }
 
-
 /* =========================================================
    REDUCED MOTION
    ========================================================= */
@@ -471,7 +436,6 @@ ol {
     transition-duration: 0.01ms !important;
   }
 }
-
 
 /* =========================================================
    MOBILE
