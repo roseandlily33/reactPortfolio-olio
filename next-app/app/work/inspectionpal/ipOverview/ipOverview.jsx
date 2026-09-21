@@ -1,4 +1,5 @@
 import styles from "./ipOverview.module.css";
+import Image from "next/image";
 
 const IPOverview = () => {
   return (
